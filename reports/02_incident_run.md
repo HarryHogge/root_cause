@@ -9,7 +9,7 @@
 ## 1. Progress
 
 <!-- PROGRESS -->
-Batches done: 28 of 41 (280 of 409 tickets). Batch list: `results/02_batches.json`. Results: `results/02/batch_NNN.jsonl`. Every finished batch passes `scripts/check_results.py`.
+Batches done: 32 of 41 (320 of 409 tickets). Batch list: `results/02_batches.json`. Results: `results/02/batch_NNN.jsonl`. Every finished batch passes `scripts/check_results.py`.
 
 Tickets not done or not readable: none so far, apart from the batches not yet run.
 <!-- /PROGRESS -->
