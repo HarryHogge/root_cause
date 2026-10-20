@@ -10,7 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Greg Fryer
 - **Creator:** Cameron Chapman
-- **Issue color:** purple
 
 ## Description
 

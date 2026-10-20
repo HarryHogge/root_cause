@@ -11,7 +11,6 @@
 - **Assignee:** Ted Trowbridge
 - **Creator:** Michael Mohr
 - **Labels:** Software, USSS, Weekly-incident-tracker
-- **Issue color:** purple
 - **Asset type:** SGCS-1
 - **Customer:** PMA263
 - **Part Number(s):** 96X-3-14-7400

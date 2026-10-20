@@ -13,9 +13,6 @@
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
 - **Links:** is cloned by VXEP-1275 (Final Review & Preparation for Shipping)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 - **Target start:** 2025-04-16
 
 ## Description

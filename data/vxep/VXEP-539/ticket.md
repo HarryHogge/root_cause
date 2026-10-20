@@ -11,7 +11,6 @@
 - **Assignee:** Hayden Jeanor
 - **Creator:** Hayden Jeanor
 - **Links:** relates to VXEP-432 (Define Lifetime Fail Criteria for AS150 Anti spark connector resistance); relates to VXEP-540 (Recent AS150 Connectors causing intermittency and difficulty to connect and disconnect correctly and safely (AS150 Socket Issues))
-- **Issue color:** purple
 - **Corrective Action:** https://jenaero.atlassian.net/browse/VXEP-540
 
 ## Description
@@ -50,8 +49,8 @@ cell voltages:
 ### Hayden Jeanor, 2024-08-14
 
 Vehicle side connector shows no visible signs of damage
-[embedded image-20240814-225530.png]
-[embedded image-20240814-225522.png]
+[embedded: image-20240814-225530.png]
+[embedded: image-20240814-225522.png]
 
 ### Cameron Chapman, 2024-08-14
 

@@ -254,13 +254,13 @@ A login page will appear:
  
 The default credentials are: 
 Username: amsuser 
-Password: AthenaAMS 
+Password: [password removed] 
  
 If an Athena Vision Management Service was previously installed at some point (< version 1.0) then 
 the default credentials would be: 
  
 Username: vmsuser 
-Password: AthenaVMS 
+Password: [password removed] 
  
 For security purposes, it is recommended to alter these credentials. See Account for more 
 information.

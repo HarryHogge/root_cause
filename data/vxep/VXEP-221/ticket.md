@@ -12,7 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** INL
 - **Links:** relates to ENG-1750 (MPU-9250 Chips have high failure rate, are obsolete, and have a high rate of conterfeits.)
-- **Issue color:** dark_yellow
 - **Customer:** INL
 - **Vehicle Tail Number:** 398
 - **Other Stakeholder (as required):** Connor Peebles

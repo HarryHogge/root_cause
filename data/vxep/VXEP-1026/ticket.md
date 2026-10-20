@@ -14,7 +14,6 @@
 - **Parent:** VA-1935 HIL Box Updates 
 - **Links:** relates to VA-2397 (BOM Change: 107-107735 GPS Board)
 - **Epic Link:** VA-1935
-- **Issue color:** purple
 - **Target start:** 2024-07-09
 - **Production Stakeholder:** Desiray Johnston
 - **Other Stakeholder (as required):** Ben Hansen
@@ -60,7 +59,7 @@ Please assign to Gerrit to update once problems are listed
 
 107-104091 is now in Engineering Change Request state on the vault. @Cameron Chapman do you have permissions to push through to ME EDIT so I can begin these changes?
 
-[embedded image-20240731-173821.png]
+[embedded: image-20240731-173821.png]
 Here is the file state workflow, I just dont have permissions to push out of ECR or into production release.
 
 ### Cameron Chapman, 2024-07-31
@@ -78,13 +77,13 @@ Here is the file state workflow, I just dont have permissions to push out of ECR
 
 ### Gerrit Sperling, 2024-08-01
 
-[embedded file]
+[embedded: REVB DRAFT1 107-104091 XE VTOL HIL Box Assembly.pdf]
 @Cameron Chapman @Emalee Johnson Are either of you able to review and approve the changes made here? Then I can push it through.
 
 ### Cameron Chapman, 2024-08-01
 
 @Barry Mendez is anyone documenting the changes Scott is making to workflows? I think we should (example, who should perform what functions). 
-[embedded file]
+[embedded: image-20240731-173821 (8fed58c3-1267-4f2a-9d32-9dc861678d29).png]
 
 ### Emalee Johnson, 2024-08-01
 

@@ -16,7 +16,6 @@
 - **Links:** blocks VXEP-696 (Practice Build - 101-115866-01, VXE30 Std Config, Wing Utility "Pylon")
 - **Epic Link:** VXEP-696
 - **Start date:** 2024-09-18
-- **Issue color:** purple
 
 ## Comments (0)
 

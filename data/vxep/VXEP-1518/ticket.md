@@ -9,7 +9,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
 - **Epic Link:** VXEP-1549
-- **Issue color:** dark_yellow
 
 ## Comments (0)
 

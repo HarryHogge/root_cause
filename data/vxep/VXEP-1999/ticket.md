@@ -11,7 +11,6 @@
 - **Assignee:** Jeremy Kostel
 - **Creator:** Jeremy Kostel
 - **Links:** relates to XKIT-5172 (B40 CAN Issues Investigation); relates to VXEP-1880 (LEMB CAN EE Investigation); is fixed by FS2-5124 (Block 30 XComm : Mitigate XComm and BMS using the same CAN frame IDs, leading to bus errors)
-- **Issue color:** green
 
 ## Description
 
@@ -56,7 +55,7 @@ A timing conflict on CAN ID 0x5000 caused occasional collisions between XCOM com
 
 ### Eric Brewer, 2026-09-15
 
-[embedded file]
+[embedded: U_AAR_V689_B30N_20260915T185606Z.zip]
 Lab data (ground power) for V689.
 
 ### Jeremy Kostel, 2026-09-15
@@ -66,13 +65,13 @@ Recording details:
 - First recording: Powered only by the bench supply (no batteries in the loop). This log is completely error‑free.
 - Second recording: Powered from batteries with the HLB smart connector connected. This log does show CAN errors.
 
-During CANJAM, the buses were saturated with errors even on the ground, so the presence of errors in the battery‑powered configuration here may be an early indicator of the same behavior.[embedded file] [embedded file] 
-[embedded image-20260915-202020.png]
+During CANJAM, the buses were saturated with errors even on the ground, so the presence of errors in the battery‑powered configuration here may be an early indicator of the same behavior.[embedded: V686_No_HLB_CANlog.asc] [embedded: V686_With_HLB_CANlog.asc] 
+[embedded: image-20260915-202020.png]
 
 ### Jeremy Kostel, 2026-09-15
 
 Here is a roughly 10 minute long log from the B30 advanced NAV iron bird with the HLB smart connection connected
-[embedded file]
+[embedded: B30_IB_With_HLB_L1.asc]
 
 ## Attachments (5)
 

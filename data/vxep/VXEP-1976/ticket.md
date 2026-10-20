@@ -28,8 +28,8 @@ Determine HLB SN to report to AA. How many cycles on battery?
 ## Issue Status
 
 HLB cell 6 appears to have failed resulting in uncontrollable descent rate while in VTOL landing with subsequent collision with terrain. 
-[embedded image-20260806-134357.png]
-[embedded image-20260806-133024.png]
+[embedded: image-20260806-134357.png]
+[embedded: image-20260806-133024.png]
 
 ## Executive Summary
 
@@ -41,12 +41,12 @@ Instructed them not to use that battery again. Part of the Systemic HLB investig
 
 @Alexander Alan Arnold it looks to me like the battery ran low right at the end and the vehicle couldn’t make enough thrust to arrest the descent.  It impacted the ground at 20fps vertical speed. 
 
-[embedded image-20260806-133024.png]
+[embedded: image-20260806-133024.png]
 
 ### Eric Brewer, 2026-08-06
 
 @Alexander Alan Arnold looks like cell 6 died. 
-[embedded image-20260806-134357.png]
+[embedded: image-20260806-134357.png]
 
 ### Alexander Alan Arnold, 2026-08-06
 

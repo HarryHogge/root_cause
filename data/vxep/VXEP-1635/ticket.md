@@ -12,9 +12,6 @@
 - **Creator:** Michael Mohr
 - **Labels:** NSW, Weekly-incident-tracker
 - **Links:** relates to VXEP-1639 (E95 S/N E8093 experienced multiple issues during NSW IQT); relates to VXEP-1637 (E95 S/N E8090 experienced multiple issues during NSW IQT); relates to PLD-139 (E95 SN 8098 and  8115 Vector nav not responding when tested with 987.)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Customer:** NSW
 
 ## Description

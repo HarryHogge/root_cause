@@ -17,3 +17,16 @@ Scott's decisions for root_cause, with reasons where given. Newest sections at t
 | Attachments: CSV | Column headers and row count only, not the data. Specific ones can be asked for later. |
 | Attachments: skipped | AAR packages and other archives, and videos: listed, not downloaded. |
 | Vocabulary | The first results come before any fixed component list. Scott may find a Confluence glossary; that is a step after the initial results. |
+
+## October 20, 2026: after report 01
+
+| Topic | Decision |
+| --- | --- |
+| Position convention | Motor number plus words, for example "motor 3 (rear right)". Numbering as in the log glossary on VXEP-272: 1 front left, 2 front right, 3 rear right, 4 rear left. |
+| Result format | As proposed in report 01, Part C, including `event`, `tail`, `initiating_cause`, `contributing`, `team_view_in_comments`, `disagreement`, `attachments_read`, `reasoning` and `notes`. |
+| `determined`, `narrowed`, `not_determined`, `no_fault_found` | Meanings as proposed in report 01, Part C. |
+| Designed aborts | An abort that worked as designed because an input degraded (for example GPS quality) is scored on that input: `narrowed`, not `no_fault_found`. |
+| Exporter changes | All six from report 01, question 3: the duplicated and missing comments, headings inside fields, embedded image names, CSV headers below comment lines, email notices and signature phone numbers, bookkeeping fields. |
+| Scope of the full run | The 409 Incident (8D) tickets only. |
+| AAR packages | A later step, after the full text run: look at what a few packages hold, then decide whether a text summary of their logs is worth exporting. |
+| Linked tickets in other projects | Export only the specific tickets that VXEP incidents point to (VA, FS2, RMA, ENG, XKIT and others), not whole projects. They go in `data/linked/`. |

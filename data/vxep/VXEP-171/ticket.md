@@ -13,14 +13,13 @@
 - **Parent:** VA-960 Composite updates to support workflow
 - **Links:** relates to VXEP-210 (Engineering Requests to Enable Production Scheduling)
 - **Epic Link:** VA-960
-- **Issue color:** purple
 
 ## Description
 
 The drawing for the Vertical Tail, Foam Core 107-102064 has a note detailing information about the rudder portion of the core (from 107-102064-1 hotwired stage) so that it is still captured in the overall drawing as one part number. This is not the case for the Horizontal Stab Core, as it loses view of the rudder portion once the core moves from 107-101870-1 (Hotwired stage) to the 107-101879-2 (Machined stage) drawings. Production is requesting that either a note and rudder image be added to drawing 107-102064-2 for the Horizontal Stab or a new drawing (107-102064) that captures both the main core and rudder core.
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: Vert Foam Core Full.JPG]
+[embedded: Vert Foam Core Note.JPG]
+[embedded: Horizontal Stab Core Full.JPG]
 
 ## Comments (11)
 
@@ -51,7 +50,7 @@ Awesome!  Thanks @Luca Lauritzen
 ### Hans Hershberger, 2024-02-02
 
 @Luca Lauritzen do we have a part number for the attached note on 107-101870-2?
-[embedded file]
+[embedded: Screenshot 2024-02-02 113652.png]
 
 ### Luca Lauritzen, 2024-02-02
 

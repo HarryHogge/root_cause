@@ -13,10 +13,7 @@
 - **Creator:** Trevor Gronner
 - **Labels:** Voron
 - **Parent:** VXEP-501 Release Voron Documentation and Files Necessary for Future
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
 - **Start date:** 2024-08-12
-- **Issue color:** dark_green
 - **Target start:** 2024-08-12
 - **Target end:** 2024-08-16
 

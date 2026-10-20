@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** XKIT-926 MAGNSS Design
 - **Links:** duplicates XKIT-2065 (Pre-MAGNSS Design Completion and Production Release)
-- **Issue color:** purple
 
 ## Description
 

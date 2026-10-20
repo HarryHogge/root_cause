@@ -8,7 +8,6 @@
 - **Reporter:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Change risk:** Low
-- **Issue color:** purple
 - **Asset type:** Air data pod
 - **Customer:** Edge_Asset
 
@@ -21,8 +20,8 @@ ARR Data:
 AAR_V689_20241115T200405Z.zip
 AAR_V689_20241115T212916Z.zip
 AAR_V689_20241115T213432Z.zip
-[embedded dc104759-36bc-4c54-a81d-5f4c4d197b50.jpg]
-[embedded 3c393c47-e690-4df0-acee-b9bed8aa22e5.jpg]
+[embedded: dc104759-36bc-4c54-a81d-5f4c4d197b50.jpg]
+[embedded: 3c393c47-e690-4df0-acee-b9bed8aa22e5.jpg]
 
 ## Comments (1)
 

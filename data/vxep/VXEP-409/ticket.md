@@ -12,7 +12,6 @@
 - **Creator:** Pat Wells
 - **Labels:** TIQUILA
 - **Links:** relates to ENG-3029 (516 Lift Rotor Noise)
-- **Issue color:** purple
 - **Customer:** TIQUILA
 - **Vehicle Tail Number:** 516
 - **Issue Status:** Noise and data log not concerning. CAs may focus around training and manual notes about identifying good vs bad motors.
@@ -45,7 +44,7 @@ The SCO and flight ops personnel I asked also are not concerned with this noise.
 Noise sounds normal to me. Nothing that would cause me to be concerned. 
 
 Also Plotted the boom currents during LW tests, and current spike magnitudes look normal (~4A sustained). The only strange thing is that the current sensors arent zeroed out in the data - not sure if i have ever seen that before, but it wouldnt have any effect on a noisy motor
-[embedded image-20240516-173727.png]
+[embedded: image-20240516-173727.png]
 Also, Jeremy is out the rest of the week @Cameron Chapman
 
 ### Pat Wells, 2024-05-16

@@ -33,7 +33,7 @@ Altium project complete; 2135337 saved to Altium workspace for review at some po
 
 2135337 Rev “A01” attached. FYI @Ben Norris 
 
-[embedded file]
+[embedded: 2135337_A01 DRAFT FOR REVIEW 4.3.2026 (ff9433cb-8bd2-4659-9e47-ce3d08595b7d).pdf]
 
 ## Attachments (1)
 

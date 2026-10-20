@@ -52,7 +52,7 @@ Longer term
 
 - Based on the tolerance stack up of the 1% resistors on this board, an actual voltage of 29.32V could read anywhere from 28.74-29.86V (not including any variation in the autopilot, temperature, etc.). See https://jenaero.sharepoint.com/:x:/r/sites/JAI_Operations/Shared%20Documents/NCR%20Investigations/VXEP-1785B30%20Multiple%20HLB%20Voltage%20Measurements%20Outside%20of%20Voltage%20Limits.%20Suspect%20VTOL%20AP%20or%20voltage%20sense%20circuit%20(harness,%20ground%20iso,%20etc).xlsx?d=w3a1a0159e9ca4c189338a55f176ca42b&csf=1&web=1&e=sIm69U 
 - This tolerance range referenced below does mean that operators might see anywhere from <90% (and not be able to launch) or >100% on a fully charged battery, which would lead to frustration and lost time/assets. Should be rare as that is worst case. If that is not acceptable, then one of the CAs in the linked JIRA could be pursued.
-- [embedded image-20260505-225101.png]
+- [embedded: image-20260505-225101.png]
 
 ## Comments (5)
 

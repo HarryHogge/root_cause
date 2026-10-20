@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Mike DeJesus
 - **Creator:** Cameron Chapman
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 
 ## Description
 
@@ -34,7 +31,7 @@ I think the best current way to get the Latvia drawing changed is to release our
 
 @William Dresser Here is the redline that represents what I did to the harness for the 4 E95 gimbals from this NCR: EPS.95 Functional Discrepancies
 
-This redline is in the vault, file name 101-111082-02. Functionally it is the same as 101-111082, but it does have 4 pig tails wires encapsulated in epoxy now (two wires cut in half), so this redline captures that configuration. I recommend that we DO NOT make a whole new drawing just for this configuration, and simply get Latvia to remove J1-10 and J1-51 wires from their drawing # EH-0091-012-00. Let this 101-111082-02 redline live in the vault as proof of that configuration, for now.[embedded file] 
+This redline is in the vault, file name 101-111082-02. Functionally it is the same as 101-111082, but it does have 4 pig tails wires encapsulated in epoxy now (two wires cut in half), so this redline captures that configuration. I recommend that we DO NOT make a whole new drawing just for this configuration, and simply get Latvia to remove J1-10 and J1-51 wires from their drawing # EH-0091-012-00. Let this 101-111082-02 redline live in the vault as proof of that configuration, for now.[embedded: 101-111082-02.pdf] 
 @Mike DeJesus Can you help us get Latvia to change their drawing as to how I describe above.
 FYI @Cameron Chapman
 

@@ -46,7 +46,7 @@ Safely landed with no damage to persons/property 1528.
 
 ### Alexander Alan Arnold, 2026-06-04
 
-[embedded image-20260604-202232.png]
+[embedded: image-20260604-202232.png]
 The debug aligns with operator statement of issues during recovery Lift system fault in debug after start of transition
 
 ### Alexander Alan Arnold, 2026-06-04
@@ -64,7 +64,7 @@ Based on a conversation with Cody S, he stated there was a WD reset when the AV 
 WDT shows line 623 of datalog.c, which doesn’t seem to make sense.  @Scott Hunter @Scott Whitney FYI.
 
 
-[embedded image-20260605-151503.png]
+[embedded: image-20260605-151503.png]
 
 ### David Grosher, 2026-06-05
 

@@ -15,7 +15,6 @@
 - **Parent:** VXEP-708 Functional Testing - 101-115866-01, VXE30 Std Config, Wing Utility "Pylon"
 - **Epic Link:** VXEP-708
 - **Start date:** 2024-10-03
-- **Issue color:** purple
 
 ## Comments (0)
 

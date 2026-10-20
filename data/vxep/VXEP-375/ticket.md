@@ -9,7 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
-- **Issue color:** purple
 - **Planned Milestone(s):** Preliminary Design Review (PDR), Detailed Design/Critical Design Review (CDR)
 - **Product/Tech Owner:** David Grosher
 - **Program (Marquee):** VXE30 Aircraft Sustainment

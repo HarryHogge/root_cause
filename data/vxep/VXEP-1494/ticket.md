@@ -9,9 +9,6 @@
 - **Assignee:** Ryan Forcier
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1452 New E140 Assemblies video quality issues
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-9
-- **Issue color:** orange
 
 ## Description
 

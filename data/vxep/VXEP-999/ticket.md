@@ -64,10 +64,104 @@ Some evidence of fuse power harness damage due to OOS socket contacts on the bat
 
 ## Comments (35)
 
+### Alexander Alan Arnold, 2025-02-11
+
+@Greg Fryer I am waiting on the data from the customer. I have created this so I can upload as soon as we have the files. The Incident date is 30Jan2025 according to email traffic.
+
+### Alexander Alan Arnold, 2025-02-11
+
+@David Grosher  Data has been uploaded 
+
+FYSA @Pat Wells
+
+### Pat Wells, 2025-02-11
+
+@David Grosher please see attached statement.  There are differences from the initial report we received.
+
+### Alexander Alan Arnold, 2025-02-13
+
+@David Grosher  Do you want the batteries as well? The Aircraft should hopefully be on its way to SLO by tomorrow. 
+Main battery SN: 3-1817 and the HLB was SN: 2-2561
+
+### David Grosher, 2025-02-13
+
+@Alexander Alan Arnold Yes, we will want to inspect those as well.  Assuming they didn’t sustain any obvious damage in the crash and can be shipped safely.
+
+### Alexander Alan Arnold, 2025-02-14
+
+According to recent email traffic from the Customer Equipment manager the Aircraft and batteries from my understanding will arriving Monday or Tuesday.
+I will update you when the receive the equipment. @David Grosher
+
+### Pat Wells, 2025-02-18
+
+@David Grosher aircraft delivered to engineering with batteries.
+
+### Jeremy Kostel, 2025-02-18
+
+Findings from dyno investigation can be located here: V598 Dyno Testing Results.docx
+Next step is hardware inspection now that it has been delivered
+
+### Adrian Garcia, 2025-02-18
+
+The main battery cell voltage readings indicate an abnormal condition. The total voltage is measured at 12.97V, but Cell 0 is not being detected, and the remaining cells are all operating below their nominal voltage levels of 3.6V. It is unclear whether this issue happened during flight or resulted from the crash.
+Additionally, the vehicle was not located until several hours after the crash. During this time, it remained powered on, gradually depleting its battery voltage. Just before the vehicle shut down, the main battery registered a voltage of 25.2V.
+Moreover, analysis of the most recent XCOM log reveals that the battery voltage initially measured 29.3V and steadily declined to 27.6V over a span of 2.2 hours. This suggests a slow discharge process leading up to the final recorded values.
+Images illustrating these findings are provided below.
+
+For safety I placed the Main Battery in the red bin containing kitty litter 
+[embedded: image-20250218-215850.png]
+[embedded: image-20250218-215946.png]
+[embedded: image-20250218-220059.png]
+[embedded: image-20250218-220123.png]
+[embedded: image-20250218-223022.png]
+FYSA @Cameron Chapman @David Grosher @Pat Wells @Jeremy Kostel @Hayden Jeanor
+
+### Cameron Chapman, 2025-02-18
+
+Thanks @Adrian Garcia good findings. 
+Please always update plan and status fields.
+The battery could be a cause of the issue, or just discharged from being left connected. Please continue with inspecting and testing power wiring to avbox. 
+For the battery, we can evaluate the safety and possibility of doing the following:
+- Attempting recharge. I have done this before, but not with voltages so low.
+- Taking the lid off with Laszlo’s method and inspecting.
+
+### Adrian Garcia, 2025-02-19
+
+Hardware inspection linked here: https://jenaero.atlassian.net/browse/VXEP-1035 . FYSA @Cameron Chapman @David Grosher
+
+### Adrian Garcia, 2025-02-20
+
+Updates on the battery: 
+The main battery sockets measured 0.273 and 0.272, which are out of spec for the AS150 contacts (0.275–0.276). Additionally, I conducted a pull test on the battery, yielding an average force of 43 lbs, which exceeds the qualified specification of 34 lbs.
+
+### Adrian Garcia, 2025-02-21
+
+I inspected the Main Battery and did not observe any visible damage. I also tested the cell voltages on the harness connected to the cell taps, and the readings aligned with those from the charger. @Hayden Jeanor suggested that a minor short may have occurred after the crash, potentially causing a slow discharge over time, which could explain the current cell voltage levels. @Cody Smisek and @Hayden Jeanor suggested to measure the resistance from the black alden to the fuse power harness so that will be my next steps. However, as highlighted in the root cause section, I believe the root cause is due to bad mating on the main battery. This would explain the brown out at the higher altitude and the voltage drop seen in the logs. 
+[embedded: image-20250221-211831.png]
+[embedded: image-20250221-211840.png]
+[embedded: image-20250221-211846.png]
+[embedded: image-20250221-211853.png]
+FYSA @Cameron Chapman @David Grosher
+
+### Cameron Chapman, 2025-02-21
+
+@Adrian GarciaI think there is a decent amount of evidence that the issue was caused by a bad AS150 mate and OOS socket contacts. We could focus next steps investigating that.
+
+Based on the flight data, the mate seemed complete enough for a normal profile at first, then it dropped off. This may indicate the connection was good enough at first, but due to higher impedance, it started to overheat and degrade until the voltage dropped off. In such a case, I would guess that the damage is still somewhat present after. An impedance measurement of the AS150 contacts, then from the AS150 pins to the black alden may be informative. We could also run this power profile through that exact harness and monitor temps and voltages. 
+We could also compare mating force and impedance of that specific pair of connectors at various insertion depths compared to normal. 
+This part of the graph is pretty strange. Usually voltage will drop with current, but in this case it stays low after the current is removed. This could indicate a bad connection that was fixed when the aircraft hit the ground.
+[embedded: image-20250221-230954.png]
+
+Agreed, the low battery voltages may not be related to the incident. They could be a result of the crash and being left plugged in.
+
+### Pat Wells, 2025-02-24
+
+@Adrian Garcia could you post the manufacture date of the main battery?
+
 ### Adrian Garcia, 2025-02-24
 
 @Pat Wells 
-[embedded image-20250224-205554.png]
+[embedded: image-20250224-205554.png]
 
 ### Adrian Garcia, 2025-02-24
 
@@ -90,81 +184,7 @@ Was this made before your comment below stating that you agree?  Trying to bring
 ### Cameron Chapman, 2025-03-17
 
 @Hayden Jeanor  can you please ensure all of these fields are updates and any further actions that can be done after the investigation are linked in separate tasks? 
-[embedded image-20250317-210500.png]
-
-### Hayden Jeanor, 2025-03-17
-
-@Cameron Chapman once the proposed action items are reviewed and determined by stakeholders, i can create the tasks
-
-### Pat Wells, 2025-04-09
-
-@David Grosher can we add a corrective action task for the software that Provides an Operator Warning if climb thresholds from the Operators Manual are exceeded in operation?
-
-### David Grosher, 2025-04-09
-
-@Pat Wells Yes that is fine.
-
-### Alexander Alan Arnold, 2025-04-15
-
-@Steve Gonzales Should this be moved to D6 since there is a CA linked?
-
-### Steve Gonzales, 2025-04-18
-
-4/18 attached surface profile report of as150 contacts.
-
-### Cody Smisek, 2025-11-18
-
-was assigned to steve, reassigned to @Greg Fryer just to assign to someone that works here. vehicle still in engineering, can we move to RMA? @Drew Hildreth @Lauren Velasquez 
-FYI @Cameron Chapman
-
-### Cameron Chapman, 2025-11-19
-
-@Greg Fryer, I recommend @Jacob Troyer  review and clean up the investigation status and plan when available per priority list
-
-### Lauren Velasquez, 2026-01-08
-
-@Jacob Troyer Where are we with this investigation? This AC is in the RMA area pending disposition.
-@Drew Hildreth  FYSA
-
-### Jacob Troyer, 2026-01-08
-
-@Lauren Velasquez I unfortunately haven’t had time to look into this investigation yet. @Samuel Lopez might be able to look into this more, but I know he has a lot of investigations on his plate too. This is where getting some of these investigations on the engineering priority list might be helpful.
-Is there a deadline (or similar) so that I can try to prioritize this with my other work? Anticipating it might take some time to get through this as the primary people who worked this are gone.
-
-### Jacob Troyer, 2026-01-08
-
-@Lauren Velasquez Sammy said he can start looking into this soon once VXE-697 wraps up
-
-### Samuel Lopez, 2026-01-14
-
-@Lauren Velasquez and @Drew Hildreth 
-
-VXE-598 aircraft not recommended to go back to the customer. 
-- Visibly Physically damaged.  The aircraft crash landed and most everything is has some signs of fracture – internally or externally.  At most, the Center Wing has no heavy damage (that can be observed).  Nothing else can be trusted to go back to the customer and perform reliably.
-- Electrically damaged.  Even the things that aren't broken, there is a high likelihood for that many things are not electrically sound.  Per the user manual, the AC should only ascend 2000 ft before a 5-minute break.  Instead, this aircraft pulled 58A during an ascent for 4000 feet.  At a minimum, the Fixed Wing AP stopped working (and for reasons that are not super clear, if they can even be ascertained).  The fact that the failure was probably caused by the FWD ESC circuit means everything is subject.  All motors, servos, etc, must be replaced.  All motors heavily smell of burn and it’s unknown if it’s from damage or heavy usage.  The XCOMM is ‘probably’ fine, but as a reminder, whatever caused the FW AP to turn off also connects to the XCOMM.  Why risk it?  Quite frankly, it'd be easier to name the components that don't need to be replaced.
-- Invisible physical damage.  By the photos, the impact of the frontal force destroyed the nose.  Even if the Center Wing 'looks' okay, there may be unseen damage, particularly to the pitotubes.  Also, the harness took more current for longer than it should have.  More trouble than it’s worth with an uncertain outcome.
-
- 
-Recommend VXE-598 to be marked as scrap.  Quote the customer new aircraft minus case.  However, do NOT discard electrical components Avionics Box, CSB Harness, FW ESC and VTOL boards for the time being.
-
-### Lauren Velasquez, 2026-02-04
-
-@Samuel Lopez Sammy- May we retrieve this AC from you?
-
-### Samuel Lopez, 2026-02-05
-
-@Lauren Velasquez 
-
-Yes, omw now
-
-### Jackson Riley Curvin, 2026-07-13
-
-Report sent corrective action canceled
-
-### Cameron Chapman, 2025-03-17
-
-@Hayden Jeanor  can you please ensure all of these fields are updates and any further actions that can be done after the investigation are linked in separate tasks? 
-[embedded image-20250317-210500.png]
+[embedded: image-20250317-210500.png]
 
 ### Hayden Jeanor, 2025-03-17
 

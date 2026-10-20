@@ -10,7 +10,6 @@
 - **Reporter:** Nina Menon
 - **Creator:** Nina Menon
 - **Links:** relates to VXEP-266 (VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components)
-- **Issue color:** grey
 
 ## Description
 

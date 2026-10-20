@@ -11,9 +11,6 @@
 - **Assignee:** Abel J. Markow
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-183 Establish aircraft grounding, bonding, shielding, etc. status and roadmap.
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 
 ## Plan
 
@@ -23,7 +20,7 @@
 Idea: create a Jira subtask for each issue. Assign priority. Use plan and status fields. View and sort all of them at once with a custom search to show these fields. Add search link here. 
 - Example search link https://jenaero.atlassian.net/issues/?jql=parent%3DVXEP-456 ORDER BY rank
 
-[embedded image-20240702-213823.png]
+[embedded: image-20240702-213823.png]
 
 ## Comments (2)
 

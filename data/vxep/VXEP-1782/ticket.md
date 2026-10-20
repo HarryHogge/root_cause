@@ -29,13 +29,13 @@ I think the RP* pins are remappable peripheral pins, that can be used for output
  RPB3 for example looks unused
 The FW AP will no longer be used and the RX line is connected to RPB15
  output pin table
-[embedded image-20260320-220737.png]
+[embedded: image-20260320-220737.png]
 
-[embedded image-20260320-220534.png]
+[embedded: image-20260320-220534.png]
 
 I think this means we can turn RPB15 into OC5 or OC8....glad we are testing this but I think it makes sense
 The other half, input table
-[embedded image-20260320-220542.png]
+[embedded: image-20260320-220542.png]
 
 ## Comments (3)
 
@@ -44,13 +44,13 @@ The other half, input table
 Dave and Kurt recommended using something like RPB15 above (U2RX) This would require
 - Cut trace between processor and U15. Difficult and risky.
 - Skywire processor pin (difficult) to Alden
-- [embedded image-20260320-222123.png]
+- [embedded: image-20260320-222123.png]
 
 Would one of these be an option? Ex: RC2=RPC2. This would require 
 - Pull R190, skywire from R190 pad to Alden. No cutting traces or small processor pins required. Longer skywire run for PWM line, which may cause issues. We can look for shorter options.
 
-[embedded image-20260320-222217.png]
-[embedded image-20260320-222549.png]
+[embedded: image-20260320-222217.png]
+[embedded: image-20260320-222549.png]
 
 ### Connor Peebles, 2026-03-30
 
@@ -58,7 +58,7 @@ Would one of these be an option? Ex: RC2=RPC2. This would require
 
 ### Cameron Chapman, 2026-03-31
 
-[embedded image-20260331-211726.png]
+[embedded: image-20260331-211726.png]
 
 ## Attachments (7)
 

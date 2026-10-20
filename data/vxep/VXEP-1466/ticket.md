@@ -8,7 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Links:** relates to VXEP-1454 (E140 gimbal getting hot when connected to aircraft.)
-- **Issue color:** purple
 
 ## Issue Status
 

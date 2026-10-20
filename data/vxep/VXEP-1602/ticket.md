@@ -10,7 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** William Dresser
 - **Creator:** Cameron Chapman
-- **Issue color:** dark_teal
 
 ## Description
 
@@ -21,7 +20,7 @@ Should Be:
 | Wing | BLOS | GND_BLOS | 341252, Alden 52 POS Plug (Black) | 22 | 26 AWG PTFE | BLACK | 31.5-32.5" | A12YAR-P26XCD0-0000 | 4 |
 
 Is: 
-[embedded image-20251114-222023.png]
+[embedded: image-20251114-222023.png]
 
 ## Comments (0)
 

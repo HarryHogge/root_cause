@@ -22,8 +22,8 @@ Reviewed with Cam. Combining other eng review with prod review.
 ### Laszlo Juhasz, 2022-12-16
 
 Just a couple of capturing prior to the reviewing with team. 
-[embedded file]
-[embedded file]
+[embedded: ESC_Load_Test.mp4]
+[embedded: Test SetUp BLK.jpg]
 
 ## Attachments (2)
 

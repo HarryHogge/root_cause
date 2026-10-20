@@ -18,7 +18,7 @@
 A365 Link here: Project 2124708-01 VBN Board Rigid
 Sharepoint Link here: Engineering Team - 2124708-01 VBN Board Rigid - All Documents
 Vault Location: "C:\JAI Vault 1\Projects\129 - LRR\Electrical Design\PCB\2124708-01 VBN Board Rigid"
-Quote from Sierra: [embedded file]
+Quote from Sierra: [embedded: Q1654417-2.pdf]
 
 ## Plan
 

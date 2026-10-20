@@ -9,15 +9,12 @@
 - **Creator:** Eric Brewer
 - **Parent:** VXEP-792 Visual Based Navigation (VBN)
 - **Links:** relates to VXEP-1237 (Apex Must Haves (VBN))
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 
 ## Description
 
 TODO, add these: 
 
-[embedded image-20250616-173440.png]
+[embedded: image-20250616-173440.png]
 
 ## Comments (0)
 

@@ -12,9 +12,6 @@
 - **Creator:** Carl Graf
 - **Labels:** LRR-March
 - **Parent:** VXEP-872 Updated Silvus Ground Control Station (SGCS1), increased performance and security
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 - **Sprint:** Havoc 2/12-3/4
 - **Leadership Stakeholder:** Jessica Meyers
 - **Components (EA Aircraft):** SGCS1

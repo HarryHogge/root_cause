@@ -37,6 +37,14 @@ The stack was still in cooldown when initialization was attempted, which caused 
 
 ## Comments (22)
 
+### Jackson Riley Curvin, 2026-07-07
+
+@Charles Sweet Can you take a look at this please?
+
+### Charles Sweet, 2026-07-08
+
+@Jackson Riley Curvin The ambient temp is running in the upper 80s here prior to what appears to be FC components failing. I suspect an issue with the nose cone fan.
+
 ### Jackson Riley Curvin, 2026-07-08
 
 @Charles Sweet Thank you for the quick response. How would we go about testing this?
@@ -50,12 +58,12 @@ We came to this conclusion due to the AmbTemp on the Fuel Cell reaching 88C whic
 
 ### Charles Sweet, 2026-07-08
 
-[embedded image-20260708-143637.png]
+[embedded: image-20260708-143637.png]
 @Sean Wendling Ambient temperature is plotted on the secondary axis to the right.
 
 ### Charles Sweet, 2026-07-08
 
-[embedded image-20260708-154339.png]
+[embedded: image-20260708-154339.png]
 
 ### Cody Smisek, 2026-07-08
 
@@ -65,12 +73,12 @@ We came to this conclusion due to the AmbTemp on the Fuel Cell reaching 88C whic
 ### Cody Smisek, 2026-07-08
 
 Seems we’ve got a software issue. I’d start chasing why did the fan enable set to off. @Sean Wendling @Charles Sweet @Jackson Riley Curvin 
-[embedded image-20260708-170217.png]
+[embedded: image-20260708-170217.png]
 
 ### Cody Smisek, 2026-07-08
 
-[embedded image-20260708-173231.png]
-[embedded image-20260708-173325.png]
+[embedded: image-20260708-173231.png]
+[embedded: image-20260708-173325.png]
 
 Probably something to do with the state the FC was in prior to all of this. It looks like it was running then shut down then started back up?
 
@@ -85,7 +93,7 @@ Probably something to do with the state the FC was in prior to all of this. It l
 ### Cody Smisek, 2026-07-20
 
 @Jackson Riley Curvin See comments from July 8. 
-[embedded image-20260720-150105.png]
+[embedded: image-20260720-150105.png]
 Next steps are for software teams from AA and SLO to collaborate and determine how/why state machines of the system missed enabling the fan.
 
 ### Drew Hildreth, 2026-08-27
@@ -122,15 +130,7 @@ Next steps are for software teams from AA and SLO to collaborate and determine h
 
 ### Charles Sweet, 2026-09-11
 
-[embedded file]
-
-### Stephan Johnson, 2026-10-05
-
-An unconcluded cooldown cycle prior to initialization of the fuel cell.
-
-### Charles Sweet, 2026-09-11
-
-[embedded file]
+[embedded: InvestigationReport VXEP 1803.docx]
 
 ### Stephan Johnson, 2026-10-05
 

@@ -11,7 +11,6 @@
 - **Assignee:** Matt Philley
 - **Creator:** Greg Fryer
 - **Parent:** SP-109 Transition Stalker Block 30 Advanced Navigation to Production and deliver Prototypes
-- **Is this ticket a Design Project?:** No
 
 ## Comments (0)
 

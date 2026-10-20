@@ -26,7 +26,7 @@ HLB had 28 cycles.
 
 ### Jackson Riley Curvin, 2025-07-17
 
-[embedded image-20250717-175346.png]
+[embedded: image-20250717-175346.png]
 
 ### David Grosher, 2025-07-17
 

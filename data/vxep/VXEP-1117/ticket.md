@@ -11,9 +11,6 @@
 - **Assignee:** Jack Waeschle
 - **Creator:** Matt Philley
 - **Parent:** VXEP-1113 Update Wet Layup Components to Pre-Preg due to Urethane Obsolescence
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 
 ## Plan
 

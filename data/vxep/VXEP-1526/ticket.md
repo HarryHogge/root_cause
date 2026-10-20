@@ -9,9 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Grant Goodman
 - **Links:** relates to FS2-3688 (Resolve issues found in Wing Utility Pylon Drop Test)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 
 ## Description
 

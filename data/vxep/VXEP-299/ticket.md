@@ -10,7 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Matt Philley
 - **Creator:** Cameron Chapman
-- **Issue color:** purple
 - **Supply Chain Stakeholder:** Victor Vandor
 - **Other Stakeholder (as required):** Matt Philley
 
@@ -26,7 +25,7 @@ Alt: 
 JST requirement: .055-.067" insulation diameter. (1.39mm min)
 
 Used 10900 Telemeter Outer Diameter: 1,17 mm (min); 1,42 mm (max)
-[embedded file]
+[embedded: image-20240311-170350.png]
 
 ## Plan
 
@@ -53,8 +52,8 @@ Reference: 110-115192 JST Termination Specification
 | Description | Internal PN | Vendor PN |
 | HEAT SHRINK, NON-ADHESIVE, POLYOLEFIN, 2:1, CLEAR, 1/16" | 100-106697 | FP301-1/16-100'-CLEAR-SPOOL |
 
-[embedded file]
-[embedded file]
+[embedded: image-20240311-183152.png]
+[embedded: image-20240311-183211.png]
 
 ### Matt Philley, 2024-03-11
 
@@ -68,11 +67,11 @@ There are 2 concerns with the “Type E” insulation wire and recommendations o
 
 Recommend we pull test to get a gut-check using same “Type E” spec wire such as 100-107261, which is Alpha Wire 5855. If those pass then we have a good indication that the servos are all acceptable for our application.
 In addition we pull Qty 10 servos, de-pin all contacts, and perform a visual Crimp Inspection. If they all pass then we are satisfied.
-[embedded external]
+[embedded file, not matched to an attachment]
 - The smaller diameter wire does not weather seal on the blue boot well.
 
 Recommend we use RTV similar to 107-102095 Boom Signal Harness so seal boot around the wires. This way we dont need to de-pin every JST and the work can be done in Final Assy instead of Electronics. 
-[embedded file]
+[embedded: image-20240311-210815.png]
 
 ### Matt Philley, 2024-03-12
 
@@ -83,14 +82,14 @@ Application Method:
 Goal is to add additional material between blue gasket and PTFE wires to promote a moisture barrier for the contacts. We will do this by applying a small amount of RTV in and around the wires and gasket. 
 NOTE: The holes in the gasket are ~0.040” and the wires a minimum of 0.046” so there is some amount of interference already.
 Open up a small gap by pulling wires “away” and apply a small amount of RTV in these gaps to promote RTV flowing a small amount into the gasket. Repeat this for the other side to promote a small amount of RTV flowing fully around each wire.
-[embedded file]
+[embedded: image-20240312-182049.png]
 After RTV has been applied clean off excess to reduce the amount of RTV visible. However, there should be a small amount visible around each wire to provide sealing.
-[embedded file]
+[embedded: image-20240312-182305.png]
 
 Verification:
 To verify the RTV seal was successful wait until the RTV has cured. Then, mount the connector vertical so a small amount of alcohol can be added to the connector. If alcohol leaks through the seal then it was not successful. 
 NOTE: The standard wire passes this test. The thin wire does not pass this test without RTV. 
-[embedded file]
+[embedded: image-20240312-182546.png]
 
 ### Matt Philley, 2024-03-12
 
@@ -102,9 +101,9 @@ Update:
 Use 100-106125, Adhesive Heat Shrink Tubing, 3/8" (0.375"), 3:1, Black (alt. vendor PN: 7861K54 - 4ft long)
 Cut a short length (final length TBD, but approx. 0.5”) and position it with (final length TBD, but approx. 0.150”) off the back side of the JST
 Shrink down and squeeze back side to seal the back of the connector
-[embedded file]
+[embedded: image-20240312-221824.png]
 This does reduce the bend off the back of the connector, however the tightest bend is on the Left Wing Tip and that should fit just fine as long as we control and inspect that. 
-[embedded file]
+[embedded: image-20240312-221909.png]
 
 ### Matt Philley, 2024-03-13
 
@@ -116,8 +115,8 @@ I have asked for the following clarifying details:
 
 
 @Cameron Chapman  this looks like what you have been suggesting… I am curious to see how they did it to make sure it does not “leak” into the front of the connector. 
-[embedded file]
-[embedded file]
+[embedded: image-20240313-142159.png]
+[embedded: image-20240313-142214.png]
 
 ### Matt Philley, 2024-03-13
 
@@ -125,7 +124,7 @@ Vendor proposing to use the following material which is apparently very thick an
 I “potted” a JST with our black RTV and was able to verify it is possible to pot a thin layer and still get the gasket to fully seat… seems reasonable? 
 https://eclecticproducts.com/product/amazing-goop-automotive/ 
 
-[embedded file]
+[embedded: tds-amazing-goop-automotive-english.pdf]
 
 ### Matt Philley, 2024-03-13
 
@@ -141,7 +140,7 @@ Approval for rework has been passed to vendor as well
 ### Matt Philley, 2024-03-18
 
 Adding more info from Vendor on their troubleshooting and investigation of rework methods:
-[embedded file][embedded file]
+[embedded: PoC thin Wire Issue Method1.pdf][embedded: Suggestion Method3.pdf]
 
 ### Matt Philley, 2024-03-18
 

@@ -11,7 +11,6 @@
 - **Assignee:** Maxime Jeanneau
 - **Creator:** Cameron Chapman
 - **Links:** relates to XKIT-2263 (Draft Payload ICD for MCM interface - PreMAGNSS); relates to XKIT-1104 (Update ICD when MCM+AGNSS avionics box are released)
-- **Issue color:** purple
 
 ## Description
 

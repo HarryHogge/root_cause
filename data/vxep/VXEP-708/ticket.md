@@ -12,11 +12,7 @@
 - **Assignee:** Brendan Palmer
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Testing Development - 101-115866-01, VXE30 Std Config, Wing Utility "Pylon"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
 - **Start date:** 2024-11-11
-- **Issue color:** yellow
 
 ## Comments (2)
 

@@ -68,7 +68,7 @@ FYSA @David Grosher
 ### Levi Purdy, 2026-08-28
 
 @David Grosher After many rounds of investigating I’m pretty sure this is isolated to the VSM, because the VSM doesn’t currently consume the initial fuel system state from the embedded side. 
-[embedded image-20260828-205730.png]
+[embedded: image-20260828-205730.png]
 VSM appears to construct its own fuel remaining status from a user entered initial fuel and then a GBurn rate. 
 
 The errant values don’t occur in the xcomm datalogs. 
@@ -76,7 +76,7 @@ The errant values don’t occur in the xcomm datalogs.
 We probably need a revisit of https://jenaero.atlassian.net/browse/FS2-3497  and an audit of how the fuel system works for a full fix. The temporary fix is just to init the inital fuel correctly, as my PR does. 
 
 See the attached .zip for the full investigation notes
-[embedded file]
+[embedded: fs2-5043-vxe1003-review-bundle.zip]
 
 ### Zachary Mann, 2026-10-07
 

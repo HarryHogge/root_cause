@@ -35,7 +35,7 @@ UPDATE: Flight Crew has had two successful landings without issue after repositi
 ### David Grosher, 2026-06-04
 
 @Kurt Burian There are indications of FW AP WD Boot in these AARs, although it doesn’t appear to be happening during the flights. Can you chase down the code that is dumped with the WD boots? Also, there are a lot of power cycles in the FDR, so I’m not sure when these issues occurred. It may not align with the other data in the AAR. @Scott Whitney FYSA
-[embedded image-20260604-215000.png]
+[embedded: image-20260604-215000.png]
 
 ### Kurt Burian, 2026-06-14
 
@@ -44,8 +44,8 @@ I was wondering if we have any information on what payload was plugged in to the
 
 It seems like the vehicle was having issues with the fixed AP connection that may have presented as a Silvus link issue or at minimum happened concurrently. The device on the ‘diagnostic port’, XCOMM Switch 1 Port 2, gets its network connection reset numerous times. I don't know if its related, but the AP serial link experiences issues around the same time, causing status flags to show AP link failure. I would normally blame this on the AAR data collection, but this event happens prior to the start of the landing task on both flights.
 I tried to track down the source of the WD_BOOT messages in the FDR, but the breadcrumbs provided little help so far as they all appeared normal, will revisit.
-[embedded image-20260615-054130.png]
-[embedded image-20260615-054141.png]
+[embedded: image-20260615-054130.png]
+[embedded: image-20260615-054141.png]
 
 ### Alexander Alan Arnold, 2026-06-16
 
@@ -70,7 +70,7 @@ Did the AC crash and will get a new Incident Ticket but you are tagging on this 
 ### Eric Brewer, 2026-07-10
 
 @Alexander Alan Arnold reviewed the flight log, there was definitely a good bit of vibe in the pitch and roll axes on the transition out.  The climb looked on the high side of normal (our abort limits are above 1 for Axyz and 30 for rpy for more than a second, so it was below that during the climbout).  It’s hard to know if the vibe was due to the hardware failure or if the vibe caused the hardware failure.  hopefully physical inspection would yield some clues here.
-[embedded image-20260710-185856.png]
+[embedded: image-20260710-185856.png]
 
 ### Eric Brewer, 2026-07-10
 
@@ -91,7 +91,7 @@ Moving to ticket here.[VXEP-1951] VXE 996 RR Motor fail - Jira
 ### Kurt Burian, 2026-09-24
 
 @Alexander Alan Arnold Please see linked task https://jenaero.atlassian.net/browse/FS2-4701 
-Here's a hard copy in pdf form.[embedded file]
+Here's a hard copy in pdf form.[embedded: V996_FINAL_REPORT.pdf]
 
 ### Zachary K Malik, 2026-10-13
 

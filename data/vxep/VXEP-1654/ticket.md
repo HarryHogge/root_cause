@@ -12,7 +12,6 @@
 - **Creator:** Michael Mohr
 - **Labels:** GS_Closed, PMA263, RCCA, Software, Weekly-incident-tracker
 - **Links:** relates to RMA-873 (A799 RMA 260105-1); relates to XKIT-5360 (B40 913 Crash (2026/03/04))
-- **Issue color:** teal
 - **Customer:** PMA263
 - **Vehicle Tail Number:** 799
 - **Corrective Action:** Replaced Fixed Wing AP on Avionics box with firmware version 6.50s
@@ -60,6 +59,14 @@ Provided Sammy with additional input on what to check. Connect to IB, VTOL is no
 Next steps recommend determining why CAN is not working.
 
 ## Comments (22)
+
+### David Grosher, 2025-12-29
+
+@Michael Mohr, unfortunately without the FDR log there is no data on the commanded value of the left aileron.  So it is impossible to identify which portion of the avionics failed. But based on the chart I agree on the assessment. The avionics box should be RMA’d and then we can swap the internal components.
+
+### Michael Mohr, 2025-12-30
+
+@David Grosher That sounds good. I’ll get that process rolling.
 
 ### Greg Fryer, 2025-12-30
 
@@ -143,22 +150,6 @@ I have updated status with today’s updates.
 ### Cameron Chapman, 2026-03-06
 
 @Cody Smisek This one seems less likely. Same issue happened with 2 wings, unless they were both affected. We can still check the servo involved to make sure. @Samuel Lopez
-
-### Samuel Lopez, 2026-04-03
-
-The problem has been recreated on the iron bird bench.
-- When moving the avionics box, only the servo going to the Right Aileron moves.  The servo going to the Left Aileron stays static.
-- The PWM measured on the right servo measured 6.29V DC voltage rail and 50 Hz on the PWM line.  However, the same mesurements on the left servo are 6.29V DC and 0 Hz on the PWM line.
-- The same setup was already used to confirm that the servos do work, albeit with a V30 Advanced NAv
-
-
-This confirms that the issue is the Fixed Wing Auto Pilot.  There is a small chance that the problem could be the series resistor network R24, which is highly doubtful.  The likeliest explanation is that the microcontroller on the FWAP has broken down.
-*One nagging concern.  The XCOMM page takes a full minute (or a bit more) to come on.  Once it does it works normally though.
-Will reach out to Lauren to see if the customer wants a replacement back, if so, will petition production to replace the FWAP and close the box.
-
-### Alexander Alan Arnold, 2026-08-07
-
-Fixed wing autopilot failure. closing since FWAP was replaced.
 
 ### Samuel Lopez, 2026-04-03
 

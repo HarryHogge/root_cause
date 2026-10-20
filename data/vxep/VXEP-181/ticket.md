@@ -31,7 +31,7 @@ These connectors are part of the poor quality PO from Amass. Might need to be in
 ### Hayden Jeanor, 2023-11-03
 
 per our conversation: 
-[embedded file]
+[embedded: image-20231103-170737.png]
 
 ### Cameron Chapman, 2023-11-03
 
@@ -45,7 +45,7 @@ That sounds like we should test some sample first and determine if we have a pro
 Here at the PNs that are associated? That go into.. 
 107-109521 Nose Power Harness
 107-102110 FWD Motor
-[embedded file]
+[embedded: image-20231107-222148.png]
 
 ### Cameron Chapman, 2023-11-07
 

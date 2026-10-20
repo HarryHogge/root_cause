@@ -28,9 +28,9 @@ Contact Height:
  
 Different color housings seem to correspond to a more shallow pin depth:
  
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded file, not matched to an attachment]
+[embedded file, not matched to an attachment]
+[embedded file, not matched to an attachment]
  
 Some with very poor machining quality & discoloration at the base of pins some on "solder" side and some on "mating" side:
 

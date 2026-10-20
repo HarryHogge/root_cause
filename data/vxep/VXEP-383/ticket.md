@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Links:** duplicates XKIT-2065 (Pre-MAGNSS Design Completion and Production Release)
-- **Issue color:** purple
 
 ## Comments (0)
 

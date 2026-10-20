@@ -63,7 +63,7 @@ FYSA @Pat Wells @Alexander Alan Arnold
 ### Adrian Garcia, 2025-04-01
 
 @Steve Gonzales There is the State of charge curve captured by the vehicle vs the battery model used and the desired SoC model. One thing to note is that the model is based off an unloaded battery. 
-[embedded image-20250401-174156.png]
+[embedded: image-20250401-174156.png]
 V557 XCL00198 SoC model Attempt .xlsx
 Main battery_model_ESR_Data_analysis.xlsx
 

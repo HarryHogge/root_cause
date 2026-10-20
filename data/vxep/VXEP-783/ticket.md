@@ -11,9 +11,6 @@
 - **Assignee:** Tom Westrich
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-752 Integrate Amprius Heavy Payload Main Battery for Hatchet+AEWE demos and future use 
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 - **Other Stakeholder (as required):** Rodney Linch
 - **Leadership Stakeholder:** Jeremy White
 

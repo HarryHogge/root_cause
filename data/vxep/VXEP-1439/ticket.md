@@ -11,16 +11,13 @@
 - **Assignee:** Stephen Peters
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1437 Evaluate B40 configuration optimized for 55lb (B30 successor)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Plan:** Will continue to refine as needed @Cameron Chapman
 - **Issue Status:** First draft estimates uploaded
 
 ## Description
 
 Evaluate HLB mass deltasEvaluate MB massEvaluate mixed chem. mass
-### HLB Configs. and Mass Deltas
+**HLB Configs. and Mass Deltas**
 
 Assumptions:
 - ME and EE designs/system remain same as SB35/40 HLB
@@ -38,7 +35,7 @@ Assumptions:
 | 14 | 1 | 2.2Ah | 114Wh | 52g | 728g | -1.48lbs* |
 | *Requires HW changes (both ME & EE), tracking 80% of battery only mass delta. 1.2Ah cell in mixed chem. is not expected as to be a feasible solution. |
 
-### Main Battery Configs. and Mass Deltas
+**Main Battery Configs. and Mass Deltas**
 
 Assumptions:
 - ME and EE designs/system remain same as SB35/40 HLB

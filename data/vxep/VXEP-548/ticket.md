@@ -25,16 +25,16 @@
 Videos with and without wing shift kit. 
 @Cody Smisek please ensure 689 CW is checked with fuselage to ensure it is not an issue with the fuselage.
 300CW with 689 fuselage
-[embedded MicrosoftTeams-video.mp4]
+[embedded: MicrosoftTeams-video.mp4]
 689 fuse with 300CW+wing shift bracket
-[embedded MicrosoftTeams-video (1).mp4]
+[embedded: MicrosoftTeams-video (1).mp4]
 
 
 
 689 with 689 CW. 
-[embedded MicrosoftTeams-video (3).mp4]
+[embedded: MicrosoftTeams-video (3).mp4]
 689 with 689 wing shift bracket
-[embedded MicrosoftTeams-video (2).mp4]
+[embedded: MicrosoftTeams-video (2).mp4]
 
 ## Corrective Action
 
@@ -77,7 +77,7 @@ Root cause determined: Threaded 1/4-20 holes on wing shift bracket are not fully
 
 ### Jack Waeschle, 2024-08-22
 
-[embedded image-20240822-182706.png]
+[embedded: image-20240822-182706.png]
 
 ### Cameron Chapman, 2024-08-29
 
@@ -101,7 +101,7 @@ Can you evaluate these center wings without a wing shift bracket to determine if
 
 Havoc flight test we experienced the same issue with center wings SN005/006 on fuse & wing shift bracket 376.  I could not replicate the issue again.  As mentioned before: the wing shift bracket is tapped poorly and the screws feel like they bottom out before they actually do.  I will go try on 689 if it is in the building.
 Update: I tested 689 CW and found that the retaining washers are not free-spinning and can bind on the nylon screw when they are too low on the thread, once again feeling like the screw is bottomed out before it actually is.  Even if the washers are placed higher, back up inside the pocket, the washer jumps the threads and returns to the place shown when the screw is pushed from the bottom (i.e. wing placed on fuselage).  
-[embedded image-20240830-202924.png]
+[embedded: image-20240830-202924.png]
 
 ### Greg Fryer, 2024-08-30
 
@@ -126,11 +126,11 @@ It does not seem this is widely used by Customers, so hopefully not too painful 
 @Noah Chavez completed a complete inspection of wing shift brackets in inventory: https://jenaero.sharepoint.com/sites/JAI_Operations/Lists/NCR%20List/DispForm.aspx?ID=4211&commentId=1&e=--vBXpAxbEquodwf454FPg&at=15&xsdata=MDV8MDJ8andhZXNjaGxlQGVkZ2VhdXRvbm9teS5pb3w1MjQ2NDRiMWI5YzM0ZTA5YTRkYjA4ZGNjYzU2ZjU4ZnwxODc2ZjYxYTNiZGI0ODQzYWU3MDc1ZWQwY2NiNzQwNHwwfDB8NjM4NjA5OTIxMDcyMjQ3MTA0fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazFoYVd3aUxDSlhWQ0k2TW4wPXwwfHx8&sdata=UjBmY1A0ZE9UOHJkWHRUS1ZIV0N6akpBNzNndWUrc01oTFIwdUpGMEx5MD0%3D&clickparams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgT3V0bG9vayIsICJYLUFwcFZlcnNpb24iIDogIjE2LjAuMTc4MzAuMjAxMzgiLCAiT1MiIDogIldpbmRvd3MiIH0%3D  
 Out of 133 wing shift brackets in inventory, 11 had insufficiently tapped holes.
 I inspected Vehicle 689 wing shift bracket and found the holes are insufficiently tapped, as seen below. The bolt bottoms out at this point.
-[embedded image-20240903-222837.png]
+[embedded: image-20240903-222837.png]
 Vehicle 300 also has a non conforming wing shift bracket:
-[embedded image-20240903-222853.png]
+[embedded: image-20240903-222853.png]
 As a random spot check, the wing shift bracket for 695 does feature fully tapped holes. Note screw pictured is not typically inserted into this hole, however it is also a 1/4 20 bolt so I used it for this spot check. This is how all wing shift bracket threaded holes should be (fully threaded).
-[embedded image-20240903-222902.png]
+[embedded: image-20240903-222902.png]
 
 ### Jack Waeschle, 2024-09-04
 

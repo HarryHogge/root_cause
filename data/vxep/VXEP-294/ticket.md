@@ -9,7 +9,6 @@
 - **Resolved:** 2026-03-30
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
-- **Issue color:** purple
 
 ## Description
 

@@ -9,7 +9,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-434 Wing Utility Drop & Integration of ESAD/Fires support
-- **Is this ticket a Design Project?:** No
 - **Project Tier:** Tier 2
 
 ## Comments (0)

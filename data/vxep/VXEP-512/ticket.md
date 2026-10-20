@@ -61,6 +61,76 @@ Closed: Operator error
 
 ## Comments (27)
 
+### Pat Wells, 2024-07-19
+
+@David Grosher @Cameron Chapman FYSA, received data files today.  Attached.
+
+### David Grosher, 2024-07-19
+
+@Pat Wells Initial look at the XCOMM log shows that a goto was commanded to IP4 about 30 seconds prior to VTOL transition starting. Can you request the GCS logs? I want to be careful about implying operator error because we could probably have checks on AGL prior to a VTOL transition.  
+[17:24:47.152 3909.152] GoTo m,w 1  3  (Note: 1=Primary Landing, 3 = IP4)
+[17:25:15.002 3937.002] ap dbg: start landing: : 7
+
+### Pat Wells, 2024-07-22
+
+Added statement from operators and requested GCS logs.  @David Grosher
+
+### Alexander Alan Arnold, 2024-07-22
+
+@David Grosher Attached GCS AAR File from Customer
+
+### David Grosher, 2024-07-22
+
+@Jason Scherer When you are back, please take a look at this.  It appears that the operator issue a GOTO to IP4 when the vehicle was at close to 3000ft AGL and it then fell from 1200 ft AGL when the battery ran out of energy. We need to confirm that the goto went to IP4 versus the RTB command that was claimed in the witness statement.
+
+### David Grosher, 2024-07-29
+
+@Wesley Reynolds See my comments for Jason below.
+
+### Wesley Reynolds, 2024-07-29
+
+Notes for this investigation:
+During this flight, the vehicle was commanded to GoTo IP4. The vehicle was not commanded to RTB.
+The following line in the XCEVLOG.txt file (submitted from the customer) indicates that a GoTo was issued to IP4:
+```
+[17:24:47.152 3909.152] GoTo m,w 1  3
+```
+The logic to defend the previous statement can be found in our source code under XComm/UplinkParser.cpp:
+```
+bool DispatchSystemCommand(const SYSTEM_COMMAND* sc)
+{
+    ...
+    case COMMAND_MISSION:
+        AddMessageInt2("GoTo m,w", cmd.Parm1, cmd.Parm2);
+    ...
+} 
+```
+The stack trace to see how cmd gets populated is very large, but the critical information for how this data got populated lies in sams/Mission.cpp:
+```
+enum MissionNames { LAUNCH = 0, PRI_LAND, ALT_LAND, LOSIG, PRIMARY, OVERRIDE, NMISSIONS, LOSIGALT = NMISSIONS };
+...
+CWaypointArray* CMission::WaypointArray(MissionNames mission)
+{
+    switch(mission)
+    {
+        ...
+        case PRI_LAND:
+        return &m_land1;
+        ...
+    }
+    ...
+}
+```
+Each waypoint in a mission can be uniquely identified using 2 parameters: Parameter 1 and Parameter 2. In each case, Parameter 1 indicates which pattern the waypoint is in, and Parameter 2 indicates which waypoint within the pattern is being identified. A mission waypoint in the Primary Landing Pattern is indicated by Parameter 1 = 1 (see the enumeration MissionNames). Within the Primary Landing Pattern, there are always 6 waypoints (IP1, IP2, IP3, IP4, IP5, PLZ ).
+The names IP2 and IP3 are not rendered within the GCS Software, but they exist in the mission file. 
+
+Using 0-based indexing for Parameter 2, it follows that IP1 is identified by a waypoint with Parameter 1 = 1 and Parameter 2 = 0. Moreover, it follows that IP4 is identified by a waypoint with Parameter 1 = 1 and Parameter 2 = 3.
+Thus, the existence of the line in XCEVLOG.txt:
+```
+[17:24:47.152 3909.152] GoTo m,w 1  3
+```
+serves as evidence that the vehicle was issued a GoTo command that commanded the vehicle to GoTo IP4.
+
 ### Pat Wells, 2024-07-29
 
 @Wesley Reynolds Thanks for the detailed explanation of what occurred. 
@@ -103,7 +173,7 @@ I have attached an Incident Investigation Report that outlines:
 - What the customer can do right now to prevent this in the future
 
 Let me know if anything needs to be adjusted before we can present this to the customer @David Grosher @Pat Wells
-[embedded file]
+[embedded: AC556_Investigation.pptx]
 
 ### Pat Wells, 2024-07-31
 
@@ -143,9 +213,9 @@ To comment on “Override Cancelled” (068:05.141 and 068:23.375) means:
 
 @David Grosher 
 Here is an image that shows the AGL altitude at the time of the GoTo event (~3,909 s). The vehicle is ~2,950 ft AGL.
-[embedded GoTo-event.png]
+[embedded: GoTo-event.png]
 Here is an image that shows the AGL altitude at the time of the VTOL transition (~3,937 s). The vehicle is ~2,552 ft AGL.
-[embedded Transition-event.png]
+[embedded: Transition-event.png]
 I can update the Vehicle Incident Investigation Report to include this if wanted. There are 0 events in between these 2 events, and none of the events that follow the VTOL transition seem extremely interesting to me, but I can plot some more events if wanted.
 
 ### Jeremy White, 2024-08-07
@@ -154,40 +224,7 @@ I can update the Vehicle Incident Investigation Report to include this if wanted
 
 Is FDR000065 the correct datalog report? If so, did the event begin around line 222? I want to make sure I point them at the correct datalog for the tangential plane.
 
-[embedded image-20240807-122838.png]
-
-### Wesley Reynolds, 2024-08-12
-
-@Jeremy White yes, FDR000065 is the correct datalog report.
-
-### Alexander Alan Arnold, 2024-12-10
-
-@Ted Trowbridge Can this investigation be closed based on the findings?
-
-### Ted Trowbridge, 2024-12-10
-
-@Alexander Alan Arnold 
-The corrective actions are being implemented as a change to the GCS that will ship in the next release planned for January.  Should the ticket stay open until then or can it be closed now?
-
-### Alexander Alan Arnold, 2024-12-10
-
-I would check with David G, but if you have nothing left to investigate and we know the CA will be implemented in a future release then I do not see why we can't close it and then the CA item would just stay opened until it is implemented. @Ted Trowbridge
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Ted Trowbridge @David Grosher Are we fine with closing this item since the CA is being worked?
-
-### David Grosher, 2025-01-10
-
-@Alexander Alan Arnold We will close this issue following the release of the software update that fixes it. The release is undergoing testing.
-
-### Jeremy White, 2024-08-07
-
-@David Grosher @Wesley Reynolds Thanks for your thorough replies! I will pass to the customer and I don’t see a need to redo any reports.
-
-Is FDR000065 the correct datalog report? If so, did the event begin around line 222? I want to make sure I point them at the correct datalog for the tangential plane.
-
-[embedded image-20240807-122838.png]
+[embedded: image-20240807-122838.png]
 
 ### Wesley Reynolds, 2024-08-12
 

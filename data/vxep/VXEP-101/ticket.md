@@ -46,6 +46,34 @@ https://jenaero.atlassian.net/browse/VA-573
 
 ## Comments (25)
 
+### Pat Wells, 2023-10-03
+
+@Greg Fryer AAR files received and attached to: https://jenaero.atlassian.net/browse/VIT2-451 
+Still pending coordination with LM for the RMA of the ACFT. 
+@Sean Odell
+
+### Greg Fryer, 2023-10-03
+
+@Pat Wells I’ve added a plan (click into the Epic to see it) and moved the files to the investigation folders we usually use. Requested analysis of the log for any obvious discrepancies.
+
+### David Grosher, 2023-11-08
+
+@Greg Fryer @Cameron Chapman The data from the customer is incomplete. There are no logs from the VTOL AP, FW AP or XCOMM
+
+### Cameron Chapman, 2023-11-08
+
+@David Grosher understood. In that case, the investigation plan could say: 
+- Additional steps to do while we only have limited data.
+- Return aircraft or have customer pull all logs.
+- Review data and determine plan once aircraft or more logs arrive.
+
+Updated plan.
+
+### Sean Odell, 2023-11-08
+
+@Cameron Chapman Aircraft finally came in. Brendan and I are completing initial evaluation and I will deliver to Engineering tomorrow morning. 
+@Pat Wells FYSA
+
 ### Sean Odell, 2023-11-09
 
 @Greg Fryer @Cameron Chapman  Aircraft intake complete and aircraft delivered to Engineering for your continued evaluation. Photos are on the RMA ticket linked.
@@ -108,27 +136,6 @@ Thanks @Jason Scherer .
 
 @Cameron Chapman @Greg Fryer 
 Is the final report releasable to the end user customer (PMA263)?  It’s currently marked as proprietary.
-
-### Greg Fryer, 2023-12-18
-
-@Pat Wells Yes, it’s releasable. Proprietary just means they can’t share it beyond the USG. (Technically there is a bunch of marking stuff we should do, but it’s never been required on our orders/contracts.) If/when you deliver it, you could ask them if they need it marked any particular way. (Most like would be a Distribution Statement).
-
-### Pat Wells, 2023-12-18
-
-@Greg Fryer understood.
-
-### Greg Fryer, 2023-12-18
-
-@Pat Wells That one should get tied up with our service bulletin on contacts.
-
-### Greg Fryer, 2023-12-18
-
-@Cameron Chapman @Jason Scherer @Pat Wells I made some minor updates to the fields, to keep them crisp. e.g. the root cause was bleeding into investigation status. Status can just be “Complete”. 🙂 
-@Pat Wells Once you have communicated to the customer, we will fully close this, so please let Cameron and I know when done.
-
-### Pat Wells, 2023-12-18
-
-@Greg Fryer @Cameron Chapman communication to customer is complete.
 
 ### Greg Fryer, 2023-12-18
 

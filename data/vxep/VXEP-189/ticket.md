@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Mike Jercich
 - **Labels:** EndOfLife
-- **Issue color:** purple
 - **Part Number(s):** 100-106344
 - **Supply Chain Stakeholder:** Irfan Sultan
 

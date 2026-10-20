@@ -10,9 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-932 Concept evaluation for colder weather operation
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 - **Issue Status:** Pausing due to lower priority. Ready to resume when priority again
 - **Job Number:** J100112 - VXE Heated Pitot
 

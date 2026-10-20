@@ -15,7 +15,7 @@
 ## Description
 
 The fixed wing will auto RTB when low on energy. The warning “Low Energy RTB” will be displayed to the operator. This fault and warning applies to both fuel cell and non-fuel cell configurations.
-[embedded image-20250322-204147.png]
+[embedded: image-20250322-204147.png]
 
 ## Comments (1)
 

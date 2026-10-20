@@ -51,7 +51,7 @@ DO you need anything else from the GCS for the investigation? @Scott Whitney
 
 @Alexander Alan Arnold @Jackson Riley Curvin  - could you try re-installing 6.4 onto the GCS. When you run the installer select “repair” to reinstall. Then when you go through the mag check and start to open the magfit make sure to hit ‘Allow Access’ on the windows security alert
 
-[embedded image-20250422-204557.png]
+[embedded: image-20250422-204557.png]
 
 ### Alexander Alan Arnold, 2025-04-22
 
@@ -60,7 +60,7 @@ Will do. Our only asset was sent to the team at the AEWE demo. Once we have an a
 ### Scott Whitney, 2025-05-06
 
 @Alexander Alan Arnold  - any update on this? We recently ran into this issue in the field and if you go into the windows defender firewall → allowed apps the MagFit private needs to be checked
-[embedded image-20250506-212943.png]
+[embedded: image-20250506-212943.png]
 
 ### Calvin Rogers, 2025-05-08
 

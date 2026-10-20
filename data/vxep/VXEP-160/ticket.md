@@ -43,12 +43,12 @@ FYI @Ben Triplett
 
 See powerpoint for more details: V501 Vehicle Investigation December 2023.pptx
 The behavior of the AV is better described as an excursion rather than drift. On the map it looks like a drift but closer inspection shows that the air vehicle turns 90 degrees to the right and then flies in typical fixed wing fashion to a position about 150 meters from the target landing spot.  The following video is clearer if downloaded to your local computer. 
-[embedded file]
+[embedded: vxe30smooth.mp4]
 
 The FW helper aileron to roll control loop is inverted. Insufficient information available to determine whether or not this is intentional. This is a cascaded loop in which a roll rate setpoint is computed from the roll angle error, and then the aileron response is proportional to the subsequent roll rate error. See lines 401 to 438 in McFwHelper.c. 
 The FW helper roll control was not inverted during the excursion. On second look, the right wing appears to have stalled leading to the hard roll to the right. The evidence for this is the high windspeed at low groundspeed, greater than 20kt, combined with greater than 10 degree pitch angle leading to the main wing carrying most of the weight of the AV. In this situation, the VTOL control spools down near zero. A small roll to the right increases the relative AoA of the right wing compared to the left wing, and the response to this which is to move the right aileron down. This downward deflection of the right aileron increases its camber which shifts the stall angle of the wing in that section down. All together, this puts the AV in a situation in which one wing will stall before the other, and was in conditions in which stall was likely. 
 The following figure shows pitch angle and estimated AoA of the vehicle, as well as the AoA at each wingtip (difference due to rollrate):
-[embedded file]
+[embedded: image-20240125-000050.png]
 
 ## Root Cause
 
@@ -63,7 +63,7 @@ The root cause of the excursion is complex. The AV has found itself in a situati
 ### Jason Scherer, 2023-10-30
 
 @David Grosher I don’t see the same behavior in this flight. This landing was in position hold mode until it landed.
-[embedded file]
+[embedded: image-20231030-183257.png]
 
 ### Pat Wells, 2023-11-01
 

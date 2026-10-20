@@ -14,9 +14,6 @@
 - **Labels:** EndOfLife, GFProject, Production-Priority, Raj
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
 - **Links:** relates to VXEP-94 (SA Camera EM18911 (100-100835) and EM19821 (100-101235) are obsolete (closed with buy)); is blocked by VA-124 (SA Cam Replacement Define and document requirements. ); relates to VA-989 (Evaluate alternate SA cameras); relates to ENGPRJA-46 (Air data pod design improvements - heated pitot tube); relates to VXEP-266 (VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components); relates to XKIT-2037 (Identify look down camera option(s))
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
-- **Issue color:** dark_purple
 - **Part Number(s):** 100-100835 100-101235
 - **Production Stakeholder:** Emalee Johnson
 - **Supply Chain Stakeholder:** Kenneth Weber
@@ -72,6 +69,380 @@ SA Camera remaining tasks-12/19:
 11/18 Runout status: If purchase is successful, these will fulfill demand through most of June 2025. This is with increasing June and July to 20 units each month.
 
 ## Comments (33)
+
+### Greg Fryer, 2023-09-19
+
+@Former user @Mike Jercich I interpreted the email of the order to mean we would have sufficient cameras to get through 2024. Thus by mid 2024 (end of June) we must have a replacement released.
+Please let me know (update the “Due date” field and comment) if that is wrong.
+
+### Cameron Chapman, 2023-11-06
+
+Thanks Jai.
+We are tracking the replacement here https://jenaero.atlassian.net/browse/VXEP-93  . Nadia was working on it.
+Unless we get new requirements, we are not planning to change the SA cam until we run out of existing inventory ~end of 2024, so we would likely start working on a replacement mid 2024, or pair with the heated pitot effort if that drives ADP changes.
+ 
+Nadia, do you have any questions for them?
+Our goal would be to find something with as little impact to the ADP as possible.
+ 
+ 
+Thank you,
+|  | Cameron Chapman Electrical Engineering Supervisor Edge Autonomy – SLO (formerly Jennings Aeronautics) Email: cchapman@edgeautonomy.io Phone: (970)389-5904 |
+
+ 
+Confidentiality Notice
+This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments.
+ 
+Export Control Notice
+This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government.
+ 
+From: Jaimal Hanson <jhanson@edgeautonomy.io> 
+Sent: Monday, November 6, 2023 11:34 AM
+To: Cameron Chapman <cchapman@edgeautonomy.io>; Sam Miller <smiller@edgeautonomy.io>
+Subject: FW: Sony and More Follow Up
+ 
+Does anyone want to meet with Intertest guys and get updates on  latest developments from Sony and Atomas/ IO Nodes interface boards? I am out of the loop on SA Cam redesign or other payload development priorities, so just giving heads up from Eddie passing through SLO on Wed.
+ 
+-Jai
+ 
+From: Eddie Park <epark@intertest.com> 
+Sent: Monday, November 6, 2023 8:59 AM
+To: Jaimal Hanson <jhanson@edgeautonomy.io>
+Cc: Brian Hamilton <bhamilton@intertest.com>
+Subject: RE: Sony and More Follow Up
+ 
+Hi Jai,
+ 
+Just following up with you. Will you be free this Wed AM to meet up?
+ 
+We are flexible as we’ll be passing through SLO.
+ 
+Best regards,
+ 
+Eddie Park
+Sales Engineer
+
+InterTest, Inc. I 303 Route 94 I Columbia, NJ  07832   Headquarters
+InterTest, Inc. I 445 South Figueroa Street, Suite 3100 I Los Angeles, CA  90071  Remote
+Cell: +1 (213) 215-5838
+www.intertest.com
+ISO 9001:2015 Certified
+ 
+From: Eddie Park 
+Sent: Wednesday, November 1, 2023 7:54 AM
+To: Jaimal Hanson <jhanson@edgeautonomy.io>
+Cc: Brian Hamilton <bhamilton@intertest.com>
+Subject: Sony and More Follow Up
+ 
+Hi Jai,
+ 
+Brian and I will be visiting customers after the Sony biannual meeting next week in San Jose.
+ 
+We’re getting updates on their latest and greatest. FYI they released a lighter, UAV purposed industrial version of their Alpha camera series called the ILX-LR1 which is causing a stir in the market:
+https://intertest.com/products/sony-ilx-lr1-industrial-camera
+ 
+We would like to update you on this and everything else we’ve discussed related to block cameras, interface boards, etc.
+ 
+Are you available next week. Wed (11/8) at 11am?
+ 
+Best regards,
+ 
+Eddie Park
+Sales Engineer
+
+InterTest, Inc. I 303 Route 94 I Columbia, NJ  07832   Headquarters
+InterTest, Inc. I 445 South Figueroa Street, Suite 3100 I Los Angeles, CA  90071  Remote
+Cell: +1 (213) 215-5838
+www.intertest.com
+ISO 9001:2015 Certified
+
+### Cameron Chapman, 2023-12-07
+
+Updating due date 
+
+Based on the numbers that I see today:
+ 
+TOTAL DEMAND:  197 pcs
+ 
+TOTAL INVENTORY ON HANDS:  174 PCS
+ 
+Run out by June-July 2024
+ 
+Apparently, the PO we had for 500 pcs will not ship so we don’t have anything on order at this time until we can make something work.
+ 
+ 
+Victor Vandor
+Supply Chain Manager
+Edge Autonomy
+Previously Jennings Aeronautics
+P: +1-805-544-0932
+Email: vvandor@edgeautonomy.io
+
+Confidentiality Notice
+This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments.
+ 
+Export Control Notice
+This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government.
+ 
+ 
+From: Cameron Chapman <cchapman@edgeautonomy.io> 
+Sent: Thursday, December 7, 2023 2:02 PM
+To: Victor Vandor <vvandor@edgeautonomy.io>; Greg Fryer <gfryer@edgeautonomy.io>
+Cc: Nadia Brown <nbrown@edgeautonomy.io>; Dave Grosher <Dgrosher@edgeautonomy.io>
+Subject: RE: Atomos Micro order (IMPORTANT)
+ 
+Hi Victor,
+ 
+Not counting their suggested alternate which will take design work to integrate, when will our current inventory and any we are able to order run out?
+It will help us set a due date for a replacement.
+ 
+Thank you,
+|  | Cameron Chapman Electrical Engineering Supervisor Edge Autonomy – SLO (formerly Jennings Aeronautics) Email: cchapman@edgeautonomy.io Phone: (970)389-5904 |
+
+ 
+Confidentiality Notice
+This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments.
+ 
+Export Control Notice
+This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government.
+ 
+From: Victor Vandor <vvandor@edgeautonomy.io> 
+Sent: Thursday, December 7, 2023 10:23 AM
+To: Cameron Chapman <cchapman@edgeautonomy.io>; Greg Fryer <gfryer@edgeautonomy.io>
+Subject: FW: Atomos Micro order (IMPORTANT)
+ 
+FYI….
+ 
+Victor Vandor
+Supply Chain Manager
+Edge Autonomy
+Previously Jennings Aeronautics
+P: +1-805-544-0932
+Email: vvandor@edgeautonomy.io
+
+Confidentiality Notice
+This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments.
+ 
+Export Control Notice
+This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government.
+ 
+ 
+From: Brian Hamilton <bhamilton@intertest.com> 
+Sent: Thursday, December 7, 2023 9:37 AM
+To: Victor Vandor <vvandor@edgeautonomy.io>; Nadia Brown <nbrown@edgeautonomy.io>; Jaimal Hanson <jhanson@edgeautonomy.io>; Eddie Park <epark@intertest.com>
+Subject: Atomos Micro order
+ 
+|  | Some people who received this message don't often get email from bhamilton@intertest.com. Learn why this is important |  |
+
+All,
+ 
+We unfortunately have run into an issue regarding your order for the Atomos Micro Interface Boards, the supplier we had lined up for the long-discontinued MA-132 cameras pulled the rug out from under us, so we have your last time buy of Atomos Micro boards here without the MA-132’s to accompany them.
+ 
+We do however have a more modern alternate camera that we had designed for us when the Sony modules were discontinued in the first place, and we confirmed we can supply this camera without issue.
+ 
+It’s a better camera with regards to low light and video, it does not have the large snapshot mode I am not sure if you used that or not.
+ 
+We need to work with you to see if you can fit this into your design as an alternative, as we have this order for 500 units of the Atomos Micro board that is not cancellable, and we don’t have the matching cameras. 
+ 
+Can you please take a look at the attachment and let me know how I can help to make this transition as smooth as possible?
+ 
+If need be, I am willing to come out to show you how this sensor works and walk you through anything you feel uncertain about.  Look forward to hearing back from you, Thanks!
+ 
+ 
+ 
+Brian Hamilton 
+Intertest Inc.
+303 State Route 94
+Columbia, NJ 
+07832
+Cell- 973-219-4890
+Office – 908 496 – 8008 ext. 104
+bhamilton@intertest.com
+
+InterTest, Inc. I 303 Route 94  I Columbia, NJ  07832
+ISO 9001:2015 Certified
+
+### Cameron Chapman, 2023-12-11
+
+Oh and encoder should work with our video software, skyview and Mediaclient. SWaP is smaller the better, maybe 5-10W(I don’t know what the current one pulls but it gets HOT!, check datasheet for numbers or use a bench supply) off 12.8V. Whatever heat you generate you will need to remove. Weatherization makes this difficult especially with the lack of airflow on the ground. I got around this by adding a ‘thermostat’ that shuts off the camera on overheat to protect it from destruction as well as potting the encoder of thermal compound. Our network connection is 100BaseTx ethernet.
+ 
+Kurt
+ 
+From: Kurt Burian <kburian@edgeautonomy.io> 
+Sent: Monday, December 11, 2023 10:03 AM
+To: Travis Storm <tstorm@edgeautonomy.io>; Cameron Chapman <cchapman@edgeautonomy.io>; Jaimal Hanson <jhanson@edgeautonomy.io>; Ben Norris <bnorris@edgeautonomy.io>; Kelly Furlong <kfurlong@edgeautonomy.io>; Sam Miller <smiller@edgeautonomy.io>; Nadia Brown <nbrown@edgeautonomy.io>; Carl Graf <cgraf@edgeautonomy.io>; Kat Gulstad <kgulstad@edgeautonomy.io>; Scott Stuckey <sstuckey@edgeautonomy.io>
+Cc: Dave Grosher <Dgrosher@edgeautonomy.io>
+Subject: RE: Atomos Micro order
+ 
+The old encoder/camera combo were selected to provide the best situational awareness image possible, without excessively loading down the network, adding latency, and ensuring functionality over the entire flight envelope. The solution we previously landed on was the MA132/133 camera with the Atomas encoder. The encoder was able to generate a 30fps 720p H264 stream over MPEG-TS and encapsulated with RTSP for handshaking with the client. The stream is initialized by connection from the client.
+ 
+Requirements:
+Wide angle, but narrow as we can get. ~60-90 degree FOV would be adequate
+H264 encoding, constant bitrate, ~2Mbps preferred.
+RTSP protocol support, we want it to establish UDP MPEG-TS stream, TCP probably fine but not preferred due to timing latency
+DHCP Client – Needs to pick up system provided IP
+Weatherization of PCB provided by enclosure. Camera and encoder need to work under all system environmental range.
+Resolution – 30 fps 720p
+Daylight camera, any low light added bonus.
+ 
+https://www.ivsimaging.com/Products/ProdID/4129/CatID/1097 - Camera
+https://intertest.com/products/ionodes-atomas-micro-cnct-atomas-micro-h-264-ip-interface-board - Encoder
+ 
+Let me know what type of information you still need. Hope this gets you a start.
+ 
+Kurt
+
+### Cameron Chapman, 2023-12-11
+
+The old encoder/camera combo were selected to provide the best situational awareness image possible, without excessively loading down the network, adding latency, and ensuring functionality over the entire flight envelope. The solution we previously landed on was the MA132/133 camera with the Atomas encoder. The encoder was able to generate a 30fps 720p H264 stream over MPEG-TS and encapsulated with RTSP for handshaking with the client. The stream is initialized by connection from the client.
+ 
+Requirements:
+Wide angle, but narrow as we can get. ~60-90 degree FOV would be adequate
+H264 encoding, constant bitrate, ~2Mbps preferred.
+RTSP protocol support, we want it to establish UDP MPEG-TS stream, TCP probably fine but not preferred due to timing latency
+DHCP Client – Needs to pick up system provided IP
+Weatherization of PCB provided by enclosure. Camera and encoder need to work under all system environmental range.
+Resolution – 30 fps 720p
+Daylight camera, any low light added bonus.
+ 
+https://www.ivsimaging.com/Products/ProdID/4129/CatID/1097 - Camera
+https://intertest.com/products/ionodes-atomas-micro-cnct-atomas-micro-h-264-ip-interface-board - Encoder
+ 
+Let me know what type of information you still need. Hope this gets you a start.
+ 
+Kurt
+
+### Cameron Chapman, 2023-12-11
+
+Oh and encoder should work with our video software, skyview and Mediaclient. SWaP is smaller the better, maybe 5-10W(I don’t know what the current one pulls but it gets HOT!, check datasheet for numbers or use a bench supply) off 12.8V. Whatever heat you generate you will need to remove. Weatherization makes this difficult especially with the lack of airflow on the ground. I got around this by adding a ‘thermostat’ that shuts off the camera on overheat to protect it from destruction as well as potting the encoder of thermal compound. Our network connection is 100BaseTx ethernet.
+ 
+Kurt
+
+### Cameron Chapman, 2023-12-11
+
+Both are obsolete. The supplier is planning to ship 500 of the boards from our “not cancellable” order, but can no longer supply the matching cameras. More info below and on JIRA. https://jenaero.atlassian.net/browse/VXEP-93 
+ 
+Travis, we would need to research more to provide specific specs, and approve with stakeholders, but I have added what I think will be the requirements/goals/scope going forward.
+ 
+ 
+ 
+Thank you,
+|  | Cameron Chapman Electrical Engineering Supervisor Edge Autonomy – SLO (formerly Jennings Aeronautics) Email: cchapman@edgeautonomy.io Phone: (970)389-5904 |
+
+ 
+Confidentiality Notice
+This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments.
+ 
+Export Control Notice
+This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government.
+ 
+From: Kurt Burian <kburian@edgeautonomy.io> 
+Sent: Monday, December 11, 2023 9:42 AM
+To: Travis Storm <tstorm@edgeautonomy.io>; Cameron Chapman <cchapman@edgeautonomy.io>; Jaimal Hanson <jhanson@edgeautonomy.io>; Ben Norris <bnorris@edgeautonomy.io>; Kelly Furlong <kfurlong@edgeautonomy.io>; Sam Miller <smiller@edgeautonomy.io>; Nadia Brown <nbrown@edgeautonomy.io>; Carl Graf <cgraf@edgeautonomy.io>; Kat Gulstad <kgulstad@edgeautonomy.io>; Scott Stuckey <sstuckey@edgeautonomy.io>
+Subject: RE: Atomos Micro order
+ 
+Camera out of production or encoder or both?
+ 
+Kurt
+ 
+From: Travis Storm <tstorm@edgeautonomy.io> 
+Sent: Monday, December 11, 2023 8:46 AM
+To: Cameron Chapman <cchapman@edgeautonomy.io>; Jaimal Hanson <jhanson@edgeautonomy.io>; Ben Norris <bnorris@edgeautonomy.io>; Kelly Furlong <kfurlong@edgeautonomy.io>; Sam Miller <smiller@edgeautonomy.io>; Kurt Burian <kburian@edgeautonomy.io>; Nadia Brown <nbrown@edgeautonomy.io>; Carl Graf <cgraf@edgeautonomy.io>; Kat Gulstad <kgulstad@edgeautonomy.io>; Scott Stuckey <sstuckey@edgeautonomy.io>
+Subject: RE: Atomos Micro order
+ 
+I suspect I know the answer to this question without asking it… but, does this item have a specification?
+ 
+If not, who knows the system best? I’d like to know more about it to develop (the presumably non-existent) specification.
+ 
+Here’s a notional list of the types of questions I have:
+ 
+- Performance Requirements:
+- What is the required resolution of the camera? Similar or better than current.
+- What frame rate is needed for the intended use? Similar to current. Not very fast on the GCS side. Compatible with aircraft.
+- Is there a specific sensor size or type (e.g., CMOS, CCD) that is preferred or required?
+- What level of low-light performance is required? Similar or better than current.
+- Optical Characteristics:
+- What focal length or zoom range is necessary? Similar or better than current. Useful to see prop blades and terrain ahead.
+- Is there a need for a fixed or variable aperture?
+- Are there specific requirements for depth of field or field of view?
+- Is image stabilization required?
+- Physical Attributes:
+- What are the size and weight limitations for the camera?
+- Does the camera need to be ruggedized or weatherproof? Yes. Rainproof.
+- Are there specific mounting requirements or constraints? Minimize changes to current ADP.
+- What are the power supply requirements or limitations? Current supply is 12V. SW Limits ~1.5A. May be shared with heated pitot design.
+- Connectivity and Integration:
+- What type of interface is needed for connecting the camera to the aircraft's systems (e.g., HDMI, USB, Ethernet)? Ethernet currently.
+- Is wireless connectivity required? No.
+- How will the camera integrate with the existing onboard systems and software?
+- Are there requirements for remote control or configuration of the camera?
+- Environmental and Operational Conditions:
+- What are the temperature and humidity ranges the camera must operate in? Match aircraft manual/published specs.
+- Is the camera expected to perform in specific environmental conditions (e.g., high altitude, underwater, extreme weather)? Match aircraft manual/published specs.
+- What are the vibration and shock tolerance levels? Quantify and match aircraft loads.
+- Image Processing and Storage:
+- Is onboard image processing required (e.g., compression, image enhancement)?
+- What are the storage requirements or limitations for captured images or video?
+- Regulatory and Compliance Considerations:
+- Are there any specific industry standards or regulations the camera must comply with?
+- Is certification required for certain aspects of the camera (e.g., aviation safety, electromagnetic compatibility)?
+- Budget and Cost Considerations:
+- What is the budget for the camera system?
+- Are there cost constraints for maintenance and operation?
+- Future Proofing:
+- What is the expected lifespan of the camera? As long as feasible/as long as we use that ADP design.
+- Are there any anticipated future requirements or technological advancements that should be considered?
+- User and Operational Feedback:
+- Have there been any issues or limitations with the current camera that should be addressed? Interface board overheats on the ground in hot environments.
+- Are there any specific features or improvements requested by the operators or users?
+
+### Cameron Chapman, 2023-12-12
+
+Last thoughts, latency should be around 250ms max. After that, the ability to fly off the screen will get pretty tough.
+ 
+The general idea for the downselect is that you need a small low latency camera that works in most daylight conditions and outputs h264 over ethernet. That should narrow your choices down to a few items. We can modify the 12.8V to make a smaller voltage at the board and change the package/heat sink to deal with power draw, but the closer you can find to what we used originally, the easier this will be.
+ 
+I may have overstated the existing encoders current, its closer to ~0.3A@12.8V if I’m remembering right. I can dig it up if needed, but that should get you in the ballpark.
+ 
+Kurt
+
+### Cameron Chapman, 2023-12-12
+
+Hi all,
+ 
+Here is my two cents: if Intertest is unable to find another source for MA-132 cameras, the replacement would ideally be a drop in SWAP-wise.  At a minimum it MUST have the equivalent FOV, operate at 720p resolution, and plug and play with the 500 Atomas boards that we’ve ordered.  It’s not our problem that they have a non-cancellable order with IONODES.
+ 
+-Sam
+
+### Greg Fryer, 2024-01-31
+
+Intertest has a camera board that looks close to drop in, unclear if it comes with the actual lens barrel (but I can’t image it doesn’t). See PDF attached. They also sent us a step file which @Eric Rinell is evaluating for physical fit. The data sheet does not include the interface, but they say they specifically made it to go with the Atomas boards.
+
+### Eric Rinell, 2024-01-31
+
+The STEP file from Intertest only shows the board (atc-ps2802), so I cannot show whether a reasonable mounting solution exists for the new lens barrel. 
+
+Regarding board fit in the air data pod: with some modification to the machined SA Camera pod tray (107-101847), we can make the board fit without changing the 3d printed shells. However, we’ll probably have to modify the design of the top shell anyway to fit a different camera barrel.  
+The light blue square board is the replacement recommendation (atc-ps2802), the green rectangle is our existing board (ATOMAS-MICRO-CNCT sku: EM19821)
+[embedded: image-20240201-005303.png]
+I can ask Eddie Park to send us the camera STL/STP
+As an additional note, it looks like the connector on this board is not compatible with our harness. It would be helpful to have a sample in our hands.
+
+### Eric Rinell, 2024-02-02
+
+I was mistaken in my previous comment that the board they sent CAD of was a replacement for the interface board, ATOMAS-MICRO-CNCT. In reality, it is the replacement camera chip (Ps2808 and MA132). It will not fit in the air data pod without a giant bubble. We shouldn’t investigate using this board any further.
+
+[embedded: image-20240202-185013.png]
+[embedded: side by side (002)-20240202-072116.jpg]
+
+### Cameron Chapman, 2024-02-05
+
+Greg,
+ 
+Based on Victor’s comments below, I believe this should get us into the start of August. This assumes no scrap, no changes to the production plan, etc.
+ 
+Thanks,
+ 
+Trevor
 
 ### Cameron Chapman, 2024-02-16
 
@@ -135,141 +506,7 @@ If you agree, please cancel this (with 500 qty, our run out moves out past 2026 
 
 @Kenneth Weber can you please confirm the ETA for the order, now that the supplier can fill our demand? Can you also please provide an updated runout projection of these two components? That will set the due date for this project. 
 Placing this one on hold until then. FYI @Rajesh Budhabhatti. You are still welcome to document the current options vs requirements while the information is fresh, but please hold on work past that until further notice.
-[embedded file]
-
-### Rajesh Budhabhatti, 2024-02-22
-
-OK, will do.
-From: Cameron Chapman (Jira) <jira@jenaero.atlassian.net>
-Sent: Thursday, February 22, 2024 10:23 AM
-To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io>
-Subject: [JIRA] Cameron Chapman mentioned you on https://jenaero.atlassian.net/browse/VXEP-93#icft=VXEP-93
-You don't often get email from jira@jenaero.atlassian.net. Learn why this is important<https://aka.ms/LearnAboutSenderIdentification>
-Cameron Chapman mentioned you on an issue
-VXE Problems/https://jenaero.atlassian.net/browse/VXEP-93#icft=VXEP-93 SA Camera EM18911 (100-100835) and EM19821 (100-101235) are obsolete  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-Cameron Chapman mentioned you on an issue
-VXE Problems<https://jenaero.atlassian.net/browse/VXEP?atlOrigin=eyJpIjoiOGYwY2VkMjJhNjdmNDNhNzhhMTAxMzQ4ZTg1NDA0ZTciLCJwIjoiaiJ9>
-/
-VXEP-93<https://jenaero.atlassian.net/browse/VXEP-93?atlOrigin=eyJpIjoiOGYwY2VkMjJhNjdmNDNhNzhhMTAxMzQ4ZTg1NDA0ZTciLCJwIjoiaiJ9>
-SA Camera EM18911 (100-100835) and EM19821 (100-101235) are obsolete <https://jenaero.atlassian.net/browse/VXEP-93?atlOrigin=eyJpIjoiOGYwY2VkMjJhNjdmNDNhNzhhMTAxMzQ4ZTg1NDA0ZTciLCJwIjoiaiJ9>
-[Image removed by sender.]
-Cameron Chapman 10:23 AM PST
-@Kenneth Weber can you please confirm the ETA for the order, now that the supplier can fill our demand? Can you also please provide an updated runout projection of these two components? That will set the due date for this project.
-Placing this one on hold until then. FYI @Rajesh Budhabhatti. You are still welcome to document the current options vs requirements while the information is fresh, but please hold on work past that until further notice.
-[cid:image001.png@01DA6579.60D9B6E0]
-[View issue]
-Get Jira notifications on your phone! Download the Jira Cloud app for Android<https://play.google.com/store/apps/details?id=com.atlassian.android.jira.core&referrer=utm_source%3DNotificationLink%26utm_medium%3DEmail> or iOS<https://itunes.apple.com/app/apple-store/id1006972087?pt=696495&ct=EmailNotificationLink&mt=8>.
-Manage notifications<https://jenaero.atlassian.net/jira/settings/personal/notifications?emailPreferences=true&atlOrigin=eyJpIjoiOGYwY2VkMjJhNjdmNDNhNzhhMTAxMzQ4ZTg1NDA0ZTciLCJwIjoiaiJ9#emailpreferences>  •  Give feedback<https://surveys.atlassian.com/jfe/form/SV_9X3zi1X4q1gKsqF>  •  Privacy policy<https://www.atlassian.com/legal/privacy-policy>
-[cid:image003.png@01DA6579.60D9B6E0]
-[cid:image003.png@01DA6579.60D9B6E0]
-- - WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
-
-### Cameron Chapman, 2024-02-22
-
-Hi Emalee,
- 
-David is reaching out to the vendor and will give us an update tomorrow. This is for PO 230824-05.
- 
-My understanding is that it is still open.
- 
-Regards,
- 
-|  | Ken Weber Supply Chain Manager Edge Autonomy – San Luis Obispo, CA Phone: +1-832-326-0866 (mobile) Email: kweber@edgeautonomy.io 831 Buckley Road, San Luis Obispo, CA 93401 |
-
- 
-Confidentiality Notice 
-This e-mail message, including any attachments, may contain confidential information which is intended only for the use of the intended recipient(s). Any unauthorized review, use, disclosure, distribution, dissemination or action taken in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you are not the intended recipient and this message has been addressed to you in error, please promptly notify the sender by email reply and destroy all copies of the message and any attachments. 
- 
-Export Control Notice 
-This document and attachments may contain technical data as defined in the International Traffic In Arms Regulations (ITAR) 22 CFR 120.10 or the Export Administration Regulations (EAR) 15 CFR Parts 730 – 780. Export of this material may be controlled by these regulations and may not be exported or transferred to non-U.S. persons without prior written approval from the U.S. government. 
- 
-From: Emalee Johnson <ejohnson@edgeautonomy.io> 
-Sent: Thursday, February 22, 2024 2:16 PM
-To: Ken Weber <kweber@edgeautonomy.io>; Cameron Chapman <cchapman@edgeautonomy.io>
-Cc: David Johantgen <djohantgen@edgeautonomy.io>; Greg Fryer <gfryer@edgeautonomy.io>
-Subject: RE: [JIRA] Cameron Chapman mentioned you on VXEP-93
- 
-Hey Ken,
- 
-It looks like Cameron and Greg weren’t on that original email.
- 
-According to the Jira ticket Greg is saying we have 500 additional Cameras on order. I see in this attachment that there was a cancelled PO, PO 230824-05.
- 
-Is there a new PO of qty of 500 for 100-100835? If so, what is our ETA?
- 
-|  | Emalee Johnson Production Engineer Edge Autonomy – SLO https://edgeautonomy.io/ Email: ejohnson@edgeautonomy.io |
-
-### Cameron Chapman, 2024-02-23
-
-Emalee,
- 
-I spoke with the supplier today and they will be able to support the PO after all. They said they would give me a schedule on when they plan to ship cameras.
- 
- 
-|  | David Johantgen Procurement Specialist III Edge Autonomy 831 Buckley Road, SLO, CA 93401 Office: +1 805.868-0201 Email: djohantgen@edgeautonomy.io |
-
-### Cameron Chapman, 2024-02-23
-
-Greg,
- 
-Good news. 280 cameras are shipping out next week. That will bring them up to schedule. They will ship per PO : April1, May 1 and June 1.
- 
-I’ll reload the PO 230824-05
- 
- 
-|  | David Johantgen Procurement Specialist III Edge Autonomy 831 Buckley Road, SLO, CA 93401 Office: +1 805.868-0201 Email: djohantgen@edgeautonomy.io |
-
-### Cameron Chapman, 2024-07-09
-
-Latest projections per Perry are that we’ll run out in December-January. @Perry Richardson @Greg Fryer does our development plan match this?
-
-### Greg Fryer, 2024-07-09
-
-@Cameron Chapman Let’s see if any of the project engineers have bandwidth to pick this up. I do not know if we need two solutions (or two implementations of hte same solution) one with heated pitot and one without. Probably depends on the burden (any power in normal conditions, any weight)?
-Not sure I’m answering your question.
-@Carl Graf @Scott Whitney @Grant Goodman @Ryan Babigian
-
-### Greg Fryer, 2024-07-10
-
-I asked @Grant Goodman to start building/tracking the plan for this. Covering the linked set of issues:
-- Obsolete SA Camera for VXE30 STD ADP
-- Integrate into Heated Pitot for VXE30 STD ADP
-- Integrate into VXE30 Havoc ADP
-- (Hopefully) also act as a look-down camera for VXE30 Havoc (perhaps different config, certainly different mounting). Also optional (e.g. only if that is selected as needed for exotic landings, or if it has other value.)
-
-### Rajesh Budhabhatti, 2024-08-26
-
-Meeting scheduled 9/10 at 9:00 am with Brian Harrison and Eddie Park from Intertest to identify potential replacements for current SA cameras. We may be needing two cameras per vehicle.
-
-### Perry Richardson, 2024-09-10
-
-Just an Update on the SA Camera and stock runout.  A current demand today we have stock to cover until end of February 2025.
-
-### Cameron Chapman, 2024-12-02
-
-@Perry Richardson @Grant Goodman did you complete the Czech purchase? Can you please update a new runout date when complete?
-
-### Perry Richardson, 2024-12-02
-
-Cameron
-Will have an answer to you in the morning. Still trying to get documents in place to send the $$$$$.
-[A picture containing icon  Description automatically generated]
-Perry Richardson
-Procurement Specialist
-Edge Autonomy – San Luis Obispo, CA
-Phone: +1-805-592-1163 x123
-Email : prichardson@edgeautonomy.io
-831 Buckley Road, San Luis Obispo, CA 93401
-
-### Greg Fryer, 2024-02-22
-
-@Emalee Johnson The vendor that took the order for qty 500 (lifetime buy) just came back this morning and said they found a source. Def not in inventory yet.
-
-### Cameron Chapman, 2024-02-22
-
-@Kenneth Weber can you please confirm the ETA for the order, now that the supplier can fill our demand? Can you also please provide an updated runout projection of these two components? That will set the due date for this project. 
-Placing this one on hold until then. FYI @Rajesh Budhabhatti. You are still welcome to document the current options vs requirements while the information is fresh, but please hold on work past that until further notice.
-[embedded file]
+[embedded: image-20240222-182058.png]
 
 ### Rajesh Budhabhatti, 2024-02-22
 

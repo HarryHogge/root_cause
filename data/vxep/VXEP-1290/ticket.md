@@ -37,7 +37,7 @@ AN to document workaround, first decrease transition out altitude then second th
 
 he Jennings GCS was loaded with factory DTED and the launch altitude was specified as 300 ft exactly.  This issue appears to have the same symptoms as the but in MCM, namely a slightly negative reported AGL on the ground is additive to the launch altitude goal, which exceeds the climb limit + margin in the autopilot.  In this case, the reported altitude was -1 to -5 feet:
  
-[embedded file]
+[embedded: slightly-negative-agl (51204c15-c816-420b-9b18-60c3600cc775).png]
 
 ## Comments (12)
 
@@ -45,7 +45,7 @@ he Jennings GCS was loaded with factory DTED and the launch altitude was specifi
 
 [21:27:10.273 1737.273] alt request too high, RTL 333
 [21:27:10.274 1737.275] DebugMsg Altitude request too high, launch aborted
-[embedded image-20250519-153340.png]
+[embedded: image-20250519-153340.png]
 @Alexander Alan Arnold This was observed during the OGCS development, you may want to talk with @Craig Burton.  I believe it had to do with the initial altitude calibration and slight errors with the DTED data. The threshold was 331 feet but the request was for 333.
 
 ### Alexander Alan Arnold, 2025-05-19
@@ -56,7 +56,7 @@ he Jennings GCS was loaded with factory DTED and the launch altitude was specifi
 
 Alexander and I communicated via email.  The Jennings GCS was loaded with factory DTED and the launch altitude was specified as 300 ft exactly.  This issue appears to have the same symptoms as the but in MCM, namely a slightly negative reported AGL on the ground is additive to the launch altitude goal, which exceeds the climb limit + margin in the autopilot.  In this case, the reported altitude was -1 to -5 feet:
 
-[embedded file]
+[embedded: slightly-negative-agl.png]
 This should not ground the aircraft, but it is a very time-consuming issue for operations to have to deal with, namely after going to through preflight and launching, only to have the vehicle land immediately.  The workaround used in OGCS is to specify a slightly lower launch altitude, perhaps 5 to 10% lower, such that the margin in the AP will accommodate the requested (and adjusted) altitude.  The recommended workaround for the Jennings GCS is the same.
 @Ted Trowbridge FYSA, I believe that this is the first time I’ve observed this with the Jennings GCS.
 

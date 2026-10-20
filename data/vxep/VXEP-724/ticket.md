@@ -11,11 +11,7 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Practice Build - 2119719-01, Servo Assy Wing Drop
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
 - **Start date:** 2024-10-07
-- **Issue color:** purple
 
 ## Comments (0)
 

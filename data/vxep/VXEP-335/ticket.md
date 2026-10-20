@@ -10,7 +10,6 @@
 - **Reporter:** Eric Brewer
 - **Creator:** Eric Brewer
 - **Links:** relates to FS2-1672 (V459 Incident Investigation)
-- **Issue color:** purple
 
 ## Description
 
@@ -52,7 +51,7 @@ State 8:
 -Once timeout is 0 if retries are 0 it aborts, if retries are not 0 it sets the timeout to 10 (1s)
 -This gives a total timeout time of 5 seconds if retries is decremented, I dont see though where retries is decremented, there is a portion of code that is commented outthat would decrement retries.
 
-[embedded image-20240416-182044.png]
+[embedded: image-20240416-182044.png]
 State 10:
 Same with state 10, a commented out retries decrement however if it was to decrement it resets the timeout to 3s rather than 1s for a total time of 9s
 State 14:
@@ -78,7 +77,7 @@ Ah ok thanks.  Per our side discussion I was looking at the Autopilot_605j folde
 
 @David Grosher @Eric Brewer 
 Moving APVTOL_LANDPREP and APVTOL_TRANSITION into one of the return false groups might also help
-[embedded image-20240418-190853.png]
+[embedded: image-20240418-190853.png]
 It would stop the fw helper from running in the fly in state.
 
 ## Attachments (2)

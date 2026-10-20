@@ -47,6 +47,22 @@ Appears operator may have issued a Go To IP2 during the RTB. At time of command,
 
 ## Comments (24)
 
+### Cameron Chapman, 2024-09-26
+
+@Pat Wells @Sean Odell thank you for logging. Can you please add ETAs and tracking numbers to tickets like these when you have them?
+
+### Sean Odell, 2024-10-22
+
+@David Grosher  @Greg Fryer @Pat Wells Aircraft evaluated (Paperwork in case) and delivered to Engineering for your investigation efforts.
+
+### David Grosher, 2024-12-04
+
+@Cameron Chapman Can you have the data pulled from this aircraft?
+
+### Cameron Chapman, 2024-12-04
+
+@Adrian Garcia @Giovanni Gonzalez  Can you please ensure this aircraft is safe to power, report any inspection anomalies, then pull data from in and post it?
+
 ### Adrian Garcia, 2024-12-06
 
 @Cameron Chapman @David Grosher tried getting logs off the XCOMM but will not connect through Ethernet. I checked wires shark to see if it was getting any communication and it was not. The center wing has a ripped harness. I can unplug the vtol ap board and then hook it up to the iron bird to get the logs that way but I do not want to unplug anything without consent since this is an investigation and needs to be examined first. 
@@ -66,13 +82,13 @@ Fuel cell or main battery config? We may want to also ask what batteries were in
 ### Adrian Garcia, 2024-12-12
 
 @Cameron Chapman @David Grosher this is the state of the harness. It looks to me like a strain rip. Additionally the AS150 do not seem to have any damage to them and the anti-spark was still measuring 6 ohms. 
-[embedded d44e5757-d053-45eb-914a-57f2b35dd8ff.jpg]
-[embedded 1538eb77-01b5-4107-a74e-c568598ba2b3.jpg]
-[embedded caa06421-a95c-4e7c-be84-6369bb77e328.jpg]
+[embedded: d44e5757-d053-45eb-914a-57f2b35dd8ff.jpg]
+[embedded: 1538eb77-01b5-4107-a74e-c568598ba2b3.jpg]
+[embedded: caa06421-a95c-4e7c-be84-6369bb77e328.jpg]
 
 
 
-[embedded image-20241209-164141.png]
+[embedded: image-20241209-164141.png]
 
 ### Cameron Chapman, 2024-12-17
 
@@ -80,18 +96,18 @@ Thanks @Adrian Garcia  please photograph under the cover once removed, then pull
 
 ### Adrian Garcia, 2024-12-19
 
-[embedded 52824188-3944-456d-ae6e-b93d26ab294e.jpg]
-[embedded 3cc3263e-4cdb-4dfb-af0b-0246936fa4d3.jpg]
-[embedded 89d892e7-c884-4806-bf99-1115253e6b8a.jpg]
-[embedded 1e23b507-a2b2-4e3a-9995-f415e4bc26d3.jpg]
-[embedded 2afd333b-63e5-4f7d-9104-515b8b224138.jpg]
-[embedded d80d1e89-af27-4ff8-abd4-acdee45d1b13.jpg]
-[embedded 2afd333b-63e5-4f7d-9104-515b8b224138.jpg]
-[embedded 1e817c5b-5bf0-4a20-a59d-ba65c9abdbb5.jpg]
-[embedded bf7be34f-12b1-491d-bd04-4e3834ae871d.jpg]
-[embedded aa756cd6-fbd6-474b-b630-cbca1ce40636.jpg]
-[embedded c278ceca-0491-40aa-86a9-507f31ba3cba.jpg]
-[embedded 39207fa9-45dd-458c-a337-731a6eb64756.jpg]
+[embedded: 52824188-3944-456d-ae6e-b93d26ab294e.jpg]
+[embedded: 3cc3263e-4cdb-4dfb-af0b-0246936fa4d3.jpg]
+[embedded: 89d892e7-c884-4806-bf99-1115253e6b8a.jpg]
+[embedded: 1e23b507-a2b2-4e3a-9995-f415e4bc26d3.jpg]
+[embedded: 2afd333b-63e5-4f7d-9104-515b8b224138.jpg]
+[embedded: d80d1e89-af27-4ff8-abd4-acdee45d1b13.jpg]
+[embedded: 2afd333b-63e5-4f7d-9104-515b8b224138.jpg]
+[embedded: 1e817c5b-5bf0-4a20-a59d-ba65c9abdbb5.jpg]
+[embedded: bf7be34f-12b1-491d-bd04-4e3834ae871d.jpg]
+[embedded: aa756cd6-fbd6-474b-b630-cbca1ce40636.jpg]
+[embedded: c278ceca-0491-40aa-86a9-507f31ba3cba.jpg]
+[embedded: 39207fa9-45dd-458c-a337-731a6eb64756.jpg]
 
 ### Cody Smisek, 2024-12-19
 
@@ -149,9 +165,9 @@ I mention this because the Root Cause specifies that the operator may have chose
 ### Craig Burton, 2024-12-26
 
 @Cody Smisek, I think I understand what is happening with the AGL after looking at your PPT, specifically the map overlay showing the impact location 5.75 miles from launch:
-[embedded file]
+[embedded: impact-map.png]
 My theory is that this is not DTED related, but is rather VTED related.  VTED is a compressed (lossy) form of DTED unique (I think) to the Jennings AP.  VTED data is loaded immediately after the missions/routes in the launch wizard.  The GCS calculates a matrix of elevations for an ~11.9 x ~11.9 mile area, centered about the vehicle's reference latitude and longitude.  Using the map overlay from your PPT, the circular orbit lies outside of the VTED area:
-[embedded file]
+[embedded: orbit-outside-vted-coverage.jpg]
 As such, the autopilot takes the highest elevation within the VTED area that it has encountered so far and assumes that every point outside the area is at that elevation -- that's why the AGL dropped:  the ground elevation outside the VTED area was 'raised':
 ```
 short GPSNavigation::GetVtedMaxElevation(long x1, long y1, long x2, long y2)
@@ -182,23 +198,6 @@ short GPSNavigation::GetVtedMaxElevation(long x1, long y1, long x2, long y2)
 }
 ```
 @David Grosher This has implications for LRR.
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Pat Wells see below
-
-### Pat Wells, 2025-01-10
-
-@Cody Smisek @Craig Burton @Alexander Alan Arnold We’ve already released the AN and the required updates have been made to the operator’s manual that will be published on the next release.
-Suggest moving this forward and closing it out.
-
-### Cody Smisek, 2025-01-10
-
-@Pat Wells Sure, I don’t see where that is stated but I will close out the ticket.
-
-### Pat Wells, 2025-01-10
-
-@Alexander Alan Arnold FYSA
 
 ### Alexander Alan Arnold, 2025-01-10
 

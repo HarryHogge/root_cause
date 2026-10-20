@@ -11,7 +11,6 @@
 - **Assignee:** Sam Omiotek
 - **Creator:** Sam Omiotek
 - **Links:** relates to VXEP-328 (Create one linked task for each of the procedures without this tolerance to reference the tolerance.)
-- **Issue color:** purple
 - **Part Number(s):** 96X-3-09-0011
 
 ## Description

@@ -73,7 +73,7 @@ Good morning @Rajesh Budhabhatti @Gary Angelus , can both of you please ensure b
 
 ### Cameron Chapman, 2024-12-30
 
-[embedded file]
+[embedded: Photo 2024-12-30 12_23_12.jpg]
 @Gary Angelus redlines so far.
 
 ### John Gober, 2025-01-03

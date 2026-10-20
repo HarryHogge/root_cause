@@ -10,7 +10,6 @@
 - **Reporter:** Everett Werner
 - **Creator:** Everett Werner
 - **Links:** relates to VXEP-748 (VXE 674 734 main battery percentage reporting incorrectly S/N's 2101 & 2088); relates to VXEP-720 (VXE 490 main battery percentage reporting incorrectly during flight with MB's (S/N's 1967 and 1737))
-- **Issue color:** purple
 - **Impacted Disciplines:** Software, Training
 - **Impacted Core Subsystems:** Ground Systems
 

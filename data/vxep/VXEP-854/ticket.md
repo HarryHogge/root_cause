@@ -11,9 +11,6 @@
 - **Assignee:** Grant Goodman
 - **Creator:** Grant Goodman
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 - **Job Number:** J100078 - Sustainment: VXE-30
 
 ## Description

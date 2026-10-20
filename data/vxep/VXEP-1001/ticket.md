@@ -11,9 +11,6 @@
 - **Assignee:** Rajesh Budhabhatti
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Issue Status:** 2/25: “I just finished the flight mode thermal testing and would be compiling the results in the test report. “ Raj
 
 ## Description

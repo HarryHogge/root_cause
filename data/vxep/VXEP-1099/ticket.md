@@ -12,9 +12,6 @@
 - **Assignee:** Brendan Palmer
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 - **Issue Status:** 4/11/25: Order 5 cases with pick foam from https://www.pelican.com/us/en/product/cases/protector/1610/?sku=1610-020-110
 
 ## Description
@@ -25,7 +22,7 @@ Ensure secure, professional packaging for safe shipment to the customer.
 
 ## Plan
 
-#### Deliverables:
+**Deliverables:**
 
 Finalized packaging designShipping durability tests completedPackaging ready for productionInclude controller 2121528-01 along with cable 2122211-01 and also LRR <PN> laptop in the case
 

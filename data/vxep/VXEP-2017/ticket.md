@@ -9,9 +9,6 @@
 - **Assignee:** Sean Wendling
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-2009 Inpsection Criteria for Cross-Site RW Products 
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 
 ## Issue Status
 

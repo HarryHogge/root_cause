@@ -10,7 +10,6 @@
 - **Creator:** Greg Fryer
 - **Labels:** Drop-ESAD
 - **Parent:** SP-67 (Support) ESAD/Fires & Drop Payloads
-- **Issue color:** purple
 
 ## Description
 

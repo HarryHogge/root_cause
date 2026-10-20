@@ -13,11 +13,7 @@
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
 - **Links:** is blocked by ENG-2799 (Gen1 Utility Dropper - Track Final Release and CCB of "Production Release" Drawings)
-- **Epic Name:** CCB Drawing Release - All Drawings Released through CCB
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
 - **Start date:** 2024-12-25
-- **Issue color:** purple
 
 ## Comments (0)
 

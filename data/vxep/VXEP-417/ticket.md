@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** EE-Active
 - **Parent:** VXEP-183 Establish aircraft grounding, bonding, shielding, etc. status and roadmap.
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 - **Other Stakeholder (as required):** Garrett O'Neill
 
 ## Issue Status
@@ -30,7 +27,7 @@ I think we could benefit from reviewing and summarizing the overall shielding re
 ### Cameron Chapman, 2024-06-13
 
 @Garrett O'Neill 
-Garrett bonding review[embedded file] 
+Garrett bonding review[embedded: VXE30 + MAGNSS Shield Architecture 1.pdf] 
 Comments:
 - We should create a similar diagram for low side signal and power connections (in addition to shields). Color code on the same diagram?
 - Does the 19P ODU fit mated in MB config?

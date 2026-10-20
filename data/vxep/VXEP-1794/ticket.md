@@ -46,7 +46,7 @@ Fuel cell was making 450W the entire time. HLB draw was fluctuating.
 ### Sean Wendling, 2026-03-25
 
 Battery Performance as recorded by “FuelCellLog” on GCS. Battery was getting recharged.
-[embedded image-20260325-184424.png]
+[embedded: image-20260325-184424.png]
 
 ### Ronnie Baker, 2026-04-06
 

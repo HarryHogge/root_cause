@@ -54,19 +54,19 @@ It appears that the VTOL AP, SA camera and airdata board were lost at 9126 XCOMM
 
 Logs indicate that no SAFE commands were sent to VTOL which typically happen after loss of stability due to ATT fault.
 However, after a few pauses during the landing, the XComm log shows Fixed Wing reporting an airspeed fault then the CW network link goes down. (9126-9127 XComm CPU time)
-[embedded image-20250606-161410.png]
+[embedded: image-20250606-161410.png]
 Fixed Wing altitude at the time shows 120'
-[embedded image-20250606-161102.png]
+[embedded: image-20250606-161102.png]
 VTOL Rel Altitude shows ~40' at the time, then flat lines.
-[embedded image-20250606-161244.png]
+[embedded: image-20250606-161244.png]
 VTOL LRF does not appear to be functional during landing. 
-[embedded image-20250606-161751.png]
+[embedded: image-20250606-161751.png]
 Zoomed during landing
-[embedded image-20250606-161814.png]
+[embedded: image-20250606-161814.png]
 Zoomed out and showing max value
-[embedded image-20250606-161832.png]
+[embedded: image-20250606-161832.png]
 However, the LRF did seem to be working during launch. 
-[embedded image-20250606-161935.png]
+[embedded: image-20250606-161935.png]
 
 ### Jason Scherer, 2025-06-06
 
@@ -75,11 +75,11 @@ However, the LRF did seem to be working during launch.
 ### Jason Scherer, 2025-06-06
 
 VTOL Throttles during landing from VTOL Log
-[embedded image-20250606-163502.png]
-[embedded image-20250606-163830.png]
-[embedded image-20250606-165009.png]
-[embedded image-20250606-164214.png]
-[embedded image-20250606-164450.png]
+[embedded: image-20250606-163502.png]
+[embedded: image-20250606-163830.png]
+[embedded: image-20250606-165009.png]
+[embedded: image-20250606-164214.png]
+[embedded: image-20250606-164450.png]
 
 ### Jason Scherer, 2025-06-06
 
@@ -101,10 +101,10 @@ Based on this we can assume:
 - Can air reports stop at 9126
 - VTOL can message stop a 9127
 
-[embedded image-20250606-171019.png]
-[embedded image-20250606-173403.png]
+[embedded: image-20250606-171019.png]
+[embedded: image-20250606-173403.png]
 It looks like the last HLB BMS can data update occurred at 9125.178. It’s a little hard to tell since the BMS data doesn’t change much, but there is no value differences in BMS data after 9125.178.
-[embedded image-20250606-172251.png]
+[embedded: image-20250606-172251.png]
 
 ### Connor Peebles, 2025-06-06
 
@@ -119,7 +119,7 @@ P.S. seeing that you posted Ibatt 1 and 2 above it haha. Yeah I would say that t
 
 @Jason Scherer it looks like about 9126.  That’s when I see AGL go to zero, vertspeed decreases quickly etc.
 
-[embedded image-20250606-180628.png]
+[embedded: image-20250606-180628.png]
 
 ### Eric Brewer, 2025-06-06
 
@@ -130,7 +130,7 @@ P.S. seeing that you posted Ibatt 1 and 2 above it haha. Yeah I would say that t
 XComm shows throttles during shutdown, but VTOL data stops just before the throttles go wonky. 
 
 Top is VTOL, Bottom is XComm.
-[embedded image-20250620-003645.png]
+[embedded: image-20250620-003645.png]
 
 ### Jackson Riley Curvin, 2025-09-16
 

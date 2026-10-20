@@ -13,7 +13,6 @@
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-793 PRR - Open Actions
 - **Epic Link:** VXEP-793
-- **Issue color:** purple
 - **Plan:** See https://jenaero.atlassian.net/browse/VXEP-523
 
 ## Comments (1)

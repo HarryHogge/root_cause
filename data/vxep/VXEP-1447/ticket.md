@@ -66,8 +66,8 @@ The description does not match the data.
 I see starting fuel was set to 926, the system landed with >0g (~100g). I do see the fuel PWM railed high prior to landing but not sure how much more we want to look into this until we have a better description of events.
 @Charles Sweet 
 
-[embedded image-20260714-010015.png]
-[embedded image-20260714-010117.png]
+[embedded: image-20260714-010015.png]
+[embedded: image-20260714-010117.png]
 
 ### Cody Smisek, 2026-07-13
 
@@ -89,7 +89,7 @@ As of today, VXE systems do not have a method to measure actual fuel remaining (
 It appears we just ran out of fuel during flight with the system indicating it still had ~100g remaining. I do not see a STOP command sent in the logs, but I do see the system state go to 6 ( I believe this is cooldown) from 5 (running) with fuel PWM going high (normal ~500, and high being ~1000 indicating system asking for fuel but not getting it). Which can be further confirmed by looking at fuelset vs fuel real (fuel real dropped below set point). 
 @Charles Sweet can you remind me the accuracy of our fuel flow meter sensor? I feel like 5% comes to mind and a message with Tom from a while ago confirms that. 5% of 900g is ~45g. So right of the go, we could have up to 45g of fuel used that isn’t properly measured by the sensors. 
 
-[embedded image-20260714-012955.png]
+[embedded: image-20260714-012955.png]
 
 ### Cody Smisek, 2026-07-13
 

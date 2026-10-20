@@ -8,9 +8,6 @@
 - **Reporter:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-1512 SB40 Software (Release 6.7.0)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Description
 

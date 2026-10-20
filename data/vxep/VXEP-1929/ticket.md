@@ -35,8 +35,8 @@ Are they also losing comms during this? It seems like that is also occurring (ed
 Are they operating in an area where other RF equipment is located?
 Is this their only system? Is it occurring on only this system?
 
-[embedded image-20260623-133446.png]
-[embedded image-20260623-133537.png]
+[embedded: image-20260623-133446.png]
+[embedded: image-20260623-133537.png]
 
 ### Drew Hildreth, 2026-06-23
 
@@ -51,7 +51,7 @@ Is this their only system? Is it occurring on only this system?
 @Drew Hildreth @Cody Smisek 
 They are almost certainly experiencing jamming from a specific direction, the Cn0 is a function of heading while in an orbit. 
 
-[embedded image-20260623-191458.png]
+[embedded: image-20260623-191458.png]
 
 ### Drew Hildreth, 2026-06-23
 

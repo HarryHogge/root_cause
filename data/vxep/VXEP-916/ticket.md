@@ -60,7 +60,7 @@ Would you like me to request the other two?
 ### Jason Scherer, 2025-01-28
 
 @David Grosher This initially made me think it could be SD card failure. I found this is the log “[04:40:52.267 21361.267] uri not found POST  /outtest.stm” which means the web file was not found. The 'outtest.stm file is the web page file for motor tests.
-[embedded image-20250128-222239.png]
+[embedded: image-20250128-222239.png]
 However, given that this occurred on three separate VTOLs at the same time makes me think it’s not the hw. I noticed a lot of “Act Ovr” tasks have been run, and I’m thinking this may be more of a running out of system resources issue which would explain why the system didn’t crash. It simply lacked resources to respond to web requests (just a hunch).
 Tagging @Scott Hunter for Trace expertise. He and I both found this set of data very interesting. I think we want to try recreating the steps that caused this behavior so we can better understand it. @Pat Wells would it be possible to get the procedure that was used for motor test? I assume it was as simple as using the webpages, but I don’t want to make bad assumptions.
 

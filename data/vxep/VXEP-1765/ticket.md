@@ -15,7 +15,6 @@
 - **Links:** is cloned by VXEP-1805 (Fuselage Fuse Distribution Board AVBP1 Test Harness (2135313))
 - **Approvers:** Jeremy Kostel
 - **Epic Link:** VXEP-1762
-- **Issue color:** teal
 - **Target start:** 2026-02-26
 - **Target end:** 2026-03-31
 - **Issue Status:** Currently at step 6 of plan. Waiting on confirmation that harness is functional.

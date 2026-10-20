@@ -9,7 +9,6 @@
 - **Assignee:** Desiray Johnston
 - **Creator:** Scott Whitney
 - **Links:** relates to VXEP-1691 (VXE-576 configured to wrong IP address in IPCOMM web page)
-- **Issue color:** green
 
 ## Description
 

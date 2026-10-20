@@ -10,15 +10,12 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1692 B40/30 XCOM WDT resets 
 - **Links:** relates to ENG-346 (1607P01A Improvements. XCOM / XE240 PWR COMMS BD); relates to AV-717 (2135413-01 - XCOMM UAP - REV A01)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 
 ## Description
 
 Per @Abel J. Markow  would help with WD and processor debugging.EJTAG  
 56, 57, 58, also reset pin. 
-[embedded image-20260206-164800.png]
+[embedded: image-20260206-164800.png]
 
 ## Comments (0)
 

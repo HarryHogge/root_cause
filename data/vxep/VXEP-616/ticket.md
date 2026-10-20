@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
 - **Links:** is cloned by XKIT-2881 (Obsolete rev C of air data board or evaluate if it can be updated to 1Mbps CAN.)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 - **Supply Chain Stakeholder:** Perry Richardson
 - **Other Stakeholder (as required):** Catherine Wagner
 - **Issue Status:** Inventory purged of 1502P01C boards

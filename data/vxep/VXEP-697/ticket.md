@@ -11,10 +11,6 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Practice Build - 2118737-01, VXE30 Std Config, Wing Utility Drop Kit
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

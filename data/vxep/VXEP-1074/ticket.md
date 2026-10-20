@@ -66,7 +66,7 @@ FYSA, @J Vo @Pat Wells @Charles David Madewell
 ### Matt Weber, 2025-03-07
 
 I looked at the array mount interface and found that the nominal contact interference is less than the SMPM connection should have.  This most likely contributes to the poor connection and dB drop we see.  The shims/new holder improves the contact but doesn’t fix the problem.  The contacts look to be spring loaded to absorb excess interference, so pushing the male contacts farther out from the holder should give us a reliable mate.  This would be a new PN for the contact holder and RF cable assembly, but only a revision to the wing tip assembly.
-[embedded image-20250307-191638.png]
+[embedded: image-20250307-191638.png]
 
 ### Tobi Ogunro, 2025-03-07
 

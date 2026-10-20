@@ -24,7 +24,7 @@ Dhruti Shah
 Systems Engineer Sr
 Lockheed Martin UK, Rotary and Mission Systems
 M: +44 (0)7583095199
-E: dhruti.shah@global.lmco.com[embedded file]
+E: dhruti.shah@global.lmco.com[embedded: 672 arching (2).docx]
 
 ## Plan
 

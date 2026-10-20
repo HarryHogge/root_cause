@@ -29,9 +29,9 @@ ECN #198 - 2122866-01 DRAWING CREATION.xlsx - ADP SYSTEM ECN
 SHT 1, P1 - REAR VIEW - diagram and view swapped
 SHT 2, Pin List, W2 - Wire Color ‘BLK’ missing visual (vs. W7 with ‘BLACK’ and visual)
 SHT 1, NOTE 1 - no flag present on drawing
-[embedded Image (42)-20250624-182611.jpg]
+[embedded: Image (42)-20250624-182611.jpg]
 
-[embedded image-20250624-184417.png]
+[embedded: image-20250624-184417.png]
 
 ### Noah Chavez, 2025-06-24
 

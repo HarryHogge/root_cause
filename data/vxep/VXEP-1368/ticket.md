@@ -24,7 +24,7 @@ LM noted low Imotor and Voltage as indicated on the GCS.
 
 - Carson Buckley recommended that RMA swap out the nose cone and note Imotor and Voltage readings; and they were also low (although higher than previous measurements using v542’s nose.
 
-[embedded image-20250708-171804.png]
+[embedded: image-20250708-171804.png]
 - Cameron Chapman recommended that I test 542’s nose cone using the Iron Bird in Electronics.  The Iron Bird results indicated that there are no issues with the nose cone.
 - Given #2 above, Cameron recommended an Engineering Jira ticket be opened to track and support diagnosing the problem.
 

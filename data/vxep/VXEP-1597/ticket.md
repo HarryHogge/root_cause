@@ -30,10 +30,10 @@ Abel Markow I am predicting that aircraft controlling non-critical current limit
 "need to lookup/document, i think 7.5A per non-crit output"
 Yeah we wanted 7.5A for the switch going to the SSR board and lower payload (rating of MB output connector) and 7A to hood (rating of ODU). Also documented in Block 40 Compliance Matrix.xlsx
 
-[embedded image-20251112-215659.png]
+[embedded: image-20251112-215659.png]
 
  
-[embedded image-20251112-215654.png]
+[embedded: image-20251112-215654.png]
 7.5A makes sense for pin and wire ratings. 3x7.5A*28=630W, so I think we will want additional limiting when available
  
 Personally, I think a temporary basic non-crit limit in BMS FW is better than none until aircraft FW is ready (might be various points next year)

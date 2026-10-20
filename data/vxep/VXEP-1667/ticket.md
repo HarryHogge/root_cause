@@ -11,9 +11,9 @@
 
 ## Description
 
-## Purpose
+**Purpose**
 
-## This ticket is the central place for EE intern / new EE tasking. Use it to find available work, track rough priorities, and keep links to active tasks in one place.
+**This ticket is the central place for EE intern / new EE tasking. Use it to find available work, track rough priorities, and keep links to active tasks in one place.**
 
 How to use this ticket
 If you are looking for work, start with the highest-priority open item listed here or on the EE-Intern board. Before starting, make sure:
@@ -26,7 +26,7 @@ As work progresses, please keep this ticket updated with status, links, notes, a
 Adding new work
 Any task can be added to this board by creating a Jira ticket and applying the label EE-Intern.
 
-## Priority Board
+**Priority Board**
 
 Priority note
 This is a loose priority list and should be used as general guidance. If there are any questions on task order or whether a new item should take precedence, confirm with the EE you are paired with. Please remove items from this list once they are completed.
@@ -49,7 +49,7 @@ This is a loose priority list and should be used as general guidance. If there a
 - Make and improve design guides. Add items like these buying - AskElectronics
 
 
-## Ticket List
+**Ticket List**
 
 Here are all current EE-Intern tickets. If you are working a task that is not listed here, make sure it is tagged with the EE-Intern label so it gets added to this list.
 https://jenaero.atlassian.net/issues/?jql=labels%20%3D%20EE-Intern%20ORDER%20BY%20created%20DESC

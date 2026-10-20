@@ -11,9 +11,6 @@
 - **Assignee:** Connor Peebles
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-926 Make VXE30 and Havoc NDAA Compliant
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 - **Job Number:** J100078 - Sustainment: VXE-30
 
 ## Comments (0)

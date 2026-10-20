@@ -23,8 +23,8 @@ Updates from Ben N based on Production Practice Build 2/21/2025:
 - Add twisted pair 4 to orange-red pair (see image)
 
 
-[embedded image-20250225-160817.png]
-[embedded image-20250225-010830.png]
+[embedded: image-20250225-160817.png]
+[embedded: image-20250225-010830.png]
 
 ## Comments (14)
 
@@ -59,7 +59,7 @@ Updates from Ben N based on Production Practice Build 2/21/2025:
 - Remove “Shield” note on pinout diagram
 - Can we use PN 100-108917 in place of 2121372-01? The description in Sharepoint for 100-108917 says tin, but we buy gold.
 
-[embedded image-20250401-183208.png]
+[embedded: image-20250401-183208.png]
 
 ### Daniel Herrera, 2025-04-01
 

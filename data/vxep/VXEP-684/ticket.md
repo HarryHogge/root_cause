@@ -11,10 +11,6 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Practice Build - 0716P01 ESD11 Electronics Board
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

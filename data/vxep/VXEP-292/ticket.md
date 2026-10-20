@@ -46,129 +46,92 @@ Low airspeed measurement caused vehicle to fly too fast, resulting in not enough
 
 ## Comments (61)
 
-### Pat Wells, 2024-12-12
+### Cameron Chapman, 2024-02-29
 
-@Ted Trowbridge @David Grosher have we determined if this was operator error or a fault on our end?
-@Alexander Alan Arnold  FYSA
+@Pat Wells photos could help too if available, especially of the battery power connectors.
 
-### Greg Fryer, 2024-12-12
+### Pat Wells, 2024-02-29
 
-@Ted Trowbridge AV 477 is still on the Engineering floor. Do you need it to support corrective actions, or can we recreate/verify on HIL or with an asset AV? If yes, we can return to RMA  and they can return to user.
-@Rodney Linch @Pat Wells @Cody Smisek FYI.
+@Cameron Chapman understood.  Working all this as data comes my way from overseas.
 
-### Ted Trowbridge, 2024-12-12
+### Pat Wells, 2024-03-01
 
-@Greg Fryer @Pat Wells @David Grosher @Eric Brewer 
-Moving back to D4 - Investigating Root Cause due to LW calibration issue not fully explaining the issue.  I will pick the investigation back up today.
+Added pictures of damage to aircraft.  IMG_4070.JPG shows center wing power connector.  Connector does not appear to have mating connection label applied IAW the Airworthiness Directive.  
+Still waiting for close up pictures of wing and HLB power connectors. 
+@Cameron Chapman
 
-### Ted Trowbridge, 2024-12-12
+### John Clark, 2024-03-01
 
-After investigating, I do not believe the root cause was a GCS launch wizard calibration issue.  There are two calibrations seen in the XCOMM log that are consistent with expected behavior during preflight.
-XCEVLOG.TXT Excerpt: 1st Calibration
-```
-[14:09:54.546 909.547] DebugMsg SEND CAL          <-- LW Calibrate Page Activated (RCS_CAL)
-...
-[14:10:04.956 919.956] DebugMsg SEND AIRDATA CAL  <-- LW Calibrate Button Pressed (COMMAND_AZ)
-```
-The XCL00223.CSV logs show airspeed dropping from ~5FPS prior to calibration to 0FPS after calibration, and a subsequent large increase during pitot test.  The pitot test did appear to have been a long press (30 seconds).  Following the pitot test, airspeed returned to 0FPS and the second calibration and launch occurred:
-XCEVLOG.TXT Excerpt: 2nd Calibration, Launch, Crash
-```
-[14:11:36.955 1011.955] DebugMsg SEND CAL         <-- 2nd LW Calibrate Page Activated (RCS_CAL)
-...
-[14:11:45.297 1020.297] DebugMsg SEND AIRDATA CAL <-- 2nd LW Calibration Button Pressed (COMMAND_AZ)
-...
-[14:14:07.729 1162.729] ap dbg: arm command       <-- Launch commanded 2m22s after 2nd calibrate
-[14:14:07.730 1162.730] ap dbg: Launch Armed
-[14:14:07.734 1162.735] ap dbg: VTOL Launch Armed
-...
-[14:17:34.216 1369.216] ap dbg: airspeed fault detected <-- Vehicle crashes, airspeed fault and landing detected
-[14:17:34.247 1369.247] sw 1 port link reset 2
-[14:17:34.249 1369.251] sw 1 port link reset 4
-[14:17:36.372 1371.373] sw 2 port rx reset 5
-[14:17:36.373 1371.373] ave, flow 2784699  0
-[14:17:37.145 1372.145] landing detected
-```
-With XCOMM log events only written at 0.1Hz during preflight, it’s not possible to completely rule out operator error (improper pitot shielding) during calibration due to airspeed readings being 10s apart and no data at the exact time of calibration.
-I’ve been unable to reproduce the issue on the HIL by injecting airspeed faults during calibration, but I think we need to do additional testing on the speedgoat HIL to be confident.
-If we confirm an operator shielding error can produce this issue in the HIL a GCS corrective action may be appropriate to detect and warn the operator.
-@David Grosher @Eric Brewer
+Awaiting Flight Logs for analysis. @Pat Wells
 
-### Ted Trowbridge, 2024-12-12
+### Pat Wells, 2024-03-01
 
-It also appears that after crashing XCOMM continued running for almost 12 hours and had latched an airspeed value that caused it to spam the logs with “launch detected” and sometimes “landing detected”.  As a result, the XCL----.CSV ballooned up to 400MB (normally peaks at 4-5MB) and the FLTFILES.txt has 35,374 entries
+@Cameron Chapman added additional pictures. 1 picture is close up of center wing power connector. Still working HLB connector pictures
 
-### Eric Brewer, 2024-12-16
+### Cameron Chapman, 2024-03-05
 
-@Ted Trowbridge thanks for taking a look at this.  After reviewing your summary and the VTOL logs, I believe this was user error.  The most likely cause is the user pushing pitot during the ‘shield’ step.  See slide 7 of the investigation here.  
-I was also able to run a HIL test and reproduce a similar crash.
+Hard to tell, but there seems to be more solder visible than normal. What do you think @Laszlo Juhasz and @Connor Peebles ? 
+[embedded: image-20240305-185946.png]
 
-### Pat Wells, 2025-01-03
+### Connor Peebles, 2024-03-05
 
-@Eric Brewer & @Ted Trowbridge  can we confirm that this was user error and reflect accordingly in the investigation report?
+@Cameron Chapman @Laszlo Juhasz I would agree that on the anti-spark pin it looks like a bit more solder than usual, but because of how the AS150 is terminated it could easily look like this straight out of the E-shop (less dirty though). Would need to get a better look to be sure
 
-@Rodney Linch @Alexander Alan Arnold FYSA
+### Pat Wells, 2024-03-29
 
-### Eric Brewer, 2025-01-03
+@Cameron Chapman added flight data logs received on 3/29
+Still have not received pictures of HLB connector.
 
-@Pat Wells confirmed that’s our best guess.  I added a conclusion slide to the end of the investigation. @Ted Trowbridge @Alexander Alan Arnold
+### Pat Wells, 2024-03-29
 
-### Josh Burrell, 2025-01-07
+Added two new pictures of center wing to HLB power connector. 
+IMG_4353, IMG_4354
 
-@Dana Holley Can you please make sure we add a Caution to the OPS manual about ensuring the Piot test is completed correctly? I think that will satisfy the corrective action.
+### David Grosher, 2024-04-02
 
-### Josh Burrell, 2025-01-08
+@Cameron Chapman @Connor Peebles Initial look at the data shows that the system transitioned to FW flight and crashed two minutes after. So I don’t think it is a connector issue. I’m looking into the FW system now, no smoking guns yet.
 
-This was taken care of in another ticket that @David Grosher assigned to review the manual. Dana added some verbiage to clarify the check. @Pat Wells can we close this ticket now?
+### David Grosher, 2024-04-02
 
-### Alexander Alan Arnold, 2025-01-10
+@Pat Wells FYI, the data provided was for v460 and CW 477.  Also, the event was on 2/27.  This is different than the description of the ticket and might cause some confusion with communications in the future.
 
-@Pat Wells Please recommend next step after reviewing information
+### Pat Wells, 2024-04-04
 
-### Pat Wells, 2025-01-10
+@David Grosher I made contact with the on-site Precision FSR.  Turns out he mislabeled the file and it was in fact from v477.
+To clear up the confusion on the date.  The actual crash occurred on 2/27.  Apparently the confusion was that the operator had a similar event on 2/12 but did not crash and continued to use the v477 up until the crash on 2/27.
 
-@Alexander Alan Arnold we need to review the final report and release it to customer as operator error. 
-Otherwise this looks like it’s ready to close since the CA has been implemented.
-FYI there is also an opon RMA on this so we will need to address the issue of funding a repair with the customer.
+### Eric Brewer, 2024-04-17
 
-### Alexander Alan Arnold, 2025-01-10
+@Pat Wells @David Grosher @Cameron Chapman @Connor Peebles I took a look through the logs.  It looks to me like the air data system was reporting and airspeed that was too low.  See ppt referenced above.  We should check the pitot system for any blockage.
 
-@Eric Brewer @Ted Trowbridge Can we clean up the final report so we can brief the customer on this item?
+### Connor Peebles, 2024-04-17
 
-### Eric Brewer, 2025-01-10
+@Eric Brewer Note we do not actually have the aircraft in SLO. @Pat Wells I think you’ve already mentioned that we probably won’t be getting the aircraft back
 
-@Alexander Alan Arnold done.
-@Ted Trowbridge FYI.
+### Pat Wells, 2024-04-17
 
-### Alexander Alan Arnold, 2025-01-10
+@Connor Peebles @Eric Brewer we will eventually get the aircraft back.  It’s currently deployed overseas so that timeframe is TBD.
 
-@Pat Wells Please review report
+### Eric Brewer, 2024-04-17
 
-### Eric Brewer, 2025-02-03
+@Connor Peebles @Pat Wells understood.
 
-@Josh Burrell given this was a training issue can you look into updating our training procedures to help educate operators on push vs. shield pitot?
-@David Grosher @Jason Scherer FYI.
+### Cameron Chapman, 2024-04-17
 
-### Josh Burrell, 2025-02-04
+@Matt Weber @Artis Bertulis @Ryan Ferguson do we have any air data inspections or tests they could perform in the field? Would the typical preflight check indicate any issues? 
+@Pat Wells @Eric Brewer
 
-@Eric Brewer we have the publications piece of the puzzle but don’t have much to do with the training. I’m going to tag @Gregory Nichols and @Grace Burgess as they’re the ones that would have to implement something for training and then push that change to us in Tech Pubs to incorporate into the OPS manual. @Dana Holley FYSA
+### David Grosher, 2024-04-17
 
-### Pat Wells, 2025-02-04
+@Eric Brewer I think there may have been another similar event on 2/12 see VTL00036.csv. Can you take a look?
 
-@Eric Brewer @David Grosher @Jason Scherer @Gregory Nichols @Grace Burgess @Dana Holley @Josh Burrell 
-This is a customer training issue.  We currently do not train Marines. 
-Please clean up the final report in the proper format and we will pass along to the customer for their action.
+### Pat Wells, 2024-04-17
 
-@Alexander Alan Arnold  FYSA
+@Cameron Chapman  I don’t believe there will be the possibility of tests in the field. The aircraft is significantly damaged.  See attached pictures
 
-### Eric Brewer, 2025-02-04
+### Eric Brewer, 2024-04-17
 
-@Pat Wells updated report here.  AV477_crash.pptx  Let me know if you need anything else.
-@David Grosher @Jason Scherer @Gregory Nichols @Grace Burgess @Dana Holley @Josh Burrell
-
-### Pat Wells, 2025-02-21
-
-Report sent to customer.
-Corrective actions complete: Update training and ops manual.
+@David Grosher 0036 lost a little altitude on the transition but nothing appeared off-nominal to me about the flight in general.  Airspeed measurement looked good.  I looked at a few of the adjacent logs, 0034 looks like it took off vertically and then came back down (i didn’t see the codes to know if it was an abort or not).  How did you correlate the log file to the flight date? I didn’t see anything else in the XCEV or VTEV logs from 2024/02/12.
 
 ### Artis Bertulis, 2024-04-18
 
@@ -176,11 +139,11 @@ Do we know what kind of payload they were running? Maybe it was overweight or CG
 As far as pre-flight air-data checks @Cameron Chapman we only do pitot calibration and pitot press, but the way the software is built it would allow to proceed with the launch even if there was an issue (if after calibration altitude isn’t close to 0, or if during pitot check there’s an air leak). That being said, I don’t think that has ever caused an issue. For SCO flights we manually confirm that the pitot calibration actually “zeros” the altitude, gyros, and IAS in the “Sensor Status” window, customers are not required to do so.
 Also, note on the AS150 connectors, I’d say that’s how most of them look nowadays, I walked around and took some pictures of brand-new aircraft connectors in the SCO area, and here’s how they are looking like @Laszlo Juhasz @Connor Peebles :
 
-[embedded image-20240418-144805.png]
+[embedded: image-20240418-144805.png]
 
-[embedded image-20240418-144823.png]
+[embedded: image-20240418-144823.png]
 
-[embedded image-20240418-144839.png]
+[embedded: image-20240418-144839.png]
 
 ### David Grosher, 2024-04-18
 
@@ -190,7 +153,7 @@ Also, note on the AS150 connectors, I’d say that’s how most of them look now
 
 @Artis Bertulis @Cameron Chapman there was no evidence in the logs that the climb was slow.  10fps is typical from other logs I’ve looked at, and the change in altitude is consistent with the 10fps.  It’s possible they were referring to the climb in the fixed-wing mode.  In this case it makes sense it would climb slow since it was overspeeding.
 
-[embedded image-20240418-160458.png]
+[embedded: image-20240418-160458.png]
 
 ### Cameron Chapman, 2024-04-18
 
@@ -246,7 +209,7 @@ I was able to plot it with MATLAB.  If you need something specific let me know a
 Pitot calibration test preformed on engineering asset v300 per Pitot Quick Test plan, Pitot calibration completed within one second.  Test log attached.
 Test performed with Raj’s assistance.
  
-[embedded file]
+[embedded: T95_V300_240520_160556_pack.zip]
 
 ### Eric Brewer, 2024-05-23
 

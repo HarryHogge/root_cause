@@ -11,9 +11,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-824 Prototype LEMB Project-Long Endurance Main Battery
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Description
 

@@ -11,7 +11,6 @@
 - **Creator:** Taylor Warner
 - **Parent:** FS2-3668 Training SIL CONOPS Sim Integration
 - **Epic Link:** FS2-3668
-- **Issue color:** dark_blue
 
 ## Comments (0)
 

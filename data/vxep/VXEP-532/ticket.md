@@ -95,11 +95,11 @@ Hey @Pat Wells , I reviewed this data back a few months ago, and I saw that the 
 ### Everett Werner, 2024-12-10
 
 @Pat Wells @Sean Wendling 
-[embedded image-20241210-202509.png]
+[embedded: image-20241210-202509.png]
 There is a noticeable increase in the power integral (graph 2) during the time which we see the battery state decreasing (graph 3)
 The fuel cell is outputting full power during the time when the battery state is decreasing so I believe that the fuel cell is ok.
 The amount of wind measured by the aircraft increases throughout the flight, I think it's possible that there is a downdraft, and more power is being required to maintain altitude. The integral indicates that the vehicle is having a hard time maintaining altitude due to a constant low pressure.
-[embedded image-20241210-203423.png]
+[embedded: image-20241210-203423.png]
 
 ### Alexander Alan Arnold, 2025-01-10
 

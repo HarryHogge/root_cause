@@ -25,7 +25,7 @@
 2026-01-22Is the date of the incident but we did not create the VXEP until data was provided. 
 VXE 897 experienced issues upon landing *Awaiting Operator Statement*
 
-Report: [embedded file]
+Report: [embedded: VXEP-1699.pptx]
 
 ## Plan
 
@@ -41,15 +41,15 @@ No faults found prior to Land Immediately (addressing comment of odd behavior), 
 
 ### Jackson Riley Curvin, 2026-02-12
 
-[embedded image-20260212-164104.png]
+[embedded: image-20260212-164104.png]
 
 ### Jackson Riley Curvin, 2026-02-12
 
-[embedded image-20260212-164457.png]
+[embedded: image-20260212-164457.png]
 
 ### Alexander Alan Arnold, 2026-02-12
 
-[embedded image (4).png]
+[embedded: image (4).png]
 
 ### Alexander Alan Arnold, 2026-02-12
 
@@ -57,7 +57,7 @@ No faults found prior to Land Immediately (addressing comment of odd behavior), 
 
 ### Jackson Riley Curvin, 2026-02-12
 
-[embedded image-20260212-172041.png]
+[embedded: image-20260212-172041.png]
 
 ### Alexander Alan Arnold, 2026-02-12
 
@@ -66,7 +66,7 @@ No faults found prior to Land Immediately (addressing comment of odd behavior), 
 ### David Grosher, 2026-02-12
 
 @Alexander Alan Arnold - Land Now was commanded from the GCS. It would try to land where it is at along with any nudges that it receives. Note: extensive pauses could result in the lift system overheating. This is an emergency procedure that should only be used if the aircraft can’t otherwise be recovered. 
-[embedded image-20260212-183744.png]
+[embedded: image-20260212-183744.png]
 
 ### Alexander Alan Arnold, 2026-02-12
 

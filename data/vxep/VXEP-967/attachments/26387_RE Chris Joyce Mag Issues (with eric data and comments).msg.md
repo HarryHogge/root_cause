@@ -9,25 +9,13 @@ Subject: RE: Chris Joyce Mag Issues
 
 Thank you for sending the data.  In the VTOL data for 464 I’m seeing a pretty big difference in the total measured mag field as the vehicle spins around.  This is atypical, and usually points to an issue with the sensor or potentially some local disturbance to the magnetic field lines (either due to something electrical or magnetic in the vicinity of the mag).  Note the bottom left graph ‘mag magnitude’, that should be constant earth’s mag strength at your location in the ideal case (about 0.5).  Is anything different than stock about the vehicle configuration?  If not, there’s likely a mag cal issue and/or a sensor issue.    
 
-
 The data for 465 looks much more stable:
-
-
- 
 
 For some reason I didn’t see the xcomm logs for the associated spins to compare against.  Are you able to look on the webpages and manually download any logs close in number to the ones in the AAR? For 465 this would be near xcl00443.csv and xcl00444.csv (likely before these, but if there are later logs grab those too).  For 464 I have xcl00573.csv and xcl00574.csv.  Once I have the xcomm logs I can make a determination about the health of the fixed-wing mag.
 
- 
-
 I did have a brief internal discussion and we can send you all the calibration tools and instructions as well to do a factory recalibration if we think that will help based upon the data review.  
 
- 
-
 Thanks,
-
- 
-
-
 
 Eric Brewer
 
@@ -35,20 +23,10 @@ Lead, GNC and Autonomy
 
 Edge Autonomy – SLO (formerly Jennings Aeronautics)
 
-Email: ebrewer@edgeautonomy.io <mailto:ebrewer@edgeautonomy.io> 
-
-Mobile: 540-729-6792
-
- 
-
- 
-
-From: Kendel Godfrey <kendel.godfrey@synergy-aero.com> 
+From: Kendel Godfrey 
 Sent: Wednesday, February 19, 2025 1:46 PM
-To: Alexander Arnold <aarnold@edgeautonomy.io>; Thavirak Kong <thavirak.kong@synergy-aero.com>; Support Conference Room - Huntsville <Support-HSV@edgeautonomy.io>; Eric Brewer <ebrewer@edgeautonomy.io>; Chris Joyce <chris@trinitybend.com>
+To: Alexander Arnold; Thavirak Kong; Support Conference Room - Huntsville; Eric Brewer; Chris Joyce
 Subject: Re: Chris Joyce Mag Issues
-
- 
 
 AARs.
 
@@ -58,35 +36,23 @@ AARs.
 
 ________________________________
 
-From: Chris Joyce <chris@trinitybend.com <mailto:chris@trinitybend.com> > on behalf of aarnold@edgeautonomy.io <mailto:aarnold@edgeautonomy.io>  <aarnold@edgeautonomy.io <mailto:aarnold@edgeautonomy.io> >
+From: Chris Joyce on behalf of [email]
 Sent: Wednesday, February 19, 2025 10:25 AM
-To: Kendel Godfrey <kendel.godfrey@synergy-aero.com <mailto:kendel.godfrey@synergy-aero.com> >; Thavirak Kong <thavirak.kong@synergy-aero.com <mailto:thavirak.kong@synergy-aero.com> >; Support Conference Room - Huntsville <Support-HSV@edgeautonomy.io <mailto:Support-HSV@edgeautonomy.io> >; Eric Brewer <ebrewer@edgeautonomy.io <mailto:ebrewer@edgeautonomy.io> >; Chris Joyce <chris@trinitybend.com <mailto:chris@trinitybend.com> >
+To: Kendel Godfrey; Thavirak Kong; Support Conference Room - Huntsville; Eric Brewer; Chris Joyce
 Subject: Fw: Chris Joyce Mag Issues
 When: Wednesday, February 19, 2025 12:30 PM-1:30 PM.
 Where: Microsoft Teams Meeting; Support Conference Room - Huntsville 
-
- 
-
- 
-
- 
 
 Chris Joyce
 
 ________________________________
 
-From: Alexander Arnold <aarnold@edgeautonomy.io <mailto:aarnold@edgeautonomy.io> >
+From: Alexander Arnold
 Sent: Wednesday, February 19, 2025 6:07:17 AM
-To: Support Conference Room - Huntsville <Support-HSV@edgeautonomy.io <mailto:Support-HSV@edgeautonomy.io> >; Eric Brewer <ebrewer@edgeautonomy.io <mailto:ebrewer@edgeautonomy.io> >; Chris Joyce <chris@trinitybend.com <mailto:chris@trinitybend.com> >
+To: Support Conference Room - Huntsville; Eric Brewer; Chris Joyce
 Subject: Chris Joyce Mag Issues
 When: Wednesday, February 19, 2025 9:30 AM-10:30 AM.
 Where: Microsoft Teams Meeting; Support Conference Room - Huntsville 
-
- 
-
-
-
-
 
 ________________________________________________________________________________
 

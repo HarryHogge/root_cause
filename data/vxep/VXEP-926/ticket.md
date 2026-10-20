@@ -12,7 +12,6 @@
 - **Parent:** VXEP-1135 LRR August Delivery
 - **Links:** relates to VXEP-462 (Replace payload/nudge controller with non-Chinese part); relates to GEC-1 (Replace soon-obsolete Dell laptop - and knock on effects); blocks LRRSUAS-455 (Final 3 Systems Delivered)
 - **Start date:** 2025-05-03
-- **Issue color:** purple
 - **LRR Desired Delivery Date:** 2025-03-01
 - **LRR Required Delivery Date:** 2025-08-01
 - **Product/Tech Owner:** Greg Fryer

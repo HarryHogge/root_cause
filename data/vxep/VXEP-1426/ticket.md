@@ -44,7 +44,7 @@ Deliver all built harnesses to the integration team.
 
 assigning @Daniel Herrera to create drawing for following napkin sketch. You’ll have to create the harness document; I have not yet
 
-[embedded image-20250725-195749.png]
+[embedded: image-20250725-195749.png]
 
 ## Attachments (1)
 

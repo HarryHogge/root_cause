@@ -83,90 +83,117 @@ Next Steps:
 
 ## Comments (57)
 
-### Jeremy White, 2025-03-05
+### Alexander Alan Arnold, 2024-11-01
 
-@Adrian Garcia Thanks for the update. What is a typical or goal for RMA turn-arounds?
+Gathering additional data and pictures from Operator at this time. I will upload it when I receive it 
 
-### Adrian Garcia, 2025-03-05
+*added pictures of battery used during testing and ports/cables
 
-@Jeremy White I try my best to get them out 1-3 weeks but sometimes I that doesn't happen.
+### Cameron Chapman, 2024-11-01
 
-### Adrian Garcia, 2025-03-06
+@Alexander Alan Arnold thanks for the photos. It looks like the fuse power cable is definitely damaged. Can you please record SN of the battery used, post photos of the battery connector, and record cell voltages of this battery after the flight? 
+Where is the aircraft currently? At minimum it will need a new power harness. 
+@David Grosher do you have anyone to perform data review of this flight, specifically FW throttle, voltage, and currents?
+Most likely causes: connector not fully mated or AS150 resistance issues.
 
-@Alexander Alan Arnold do you know the batteries used from both incidents. I see 1 battery photo attached that says it was manufactured in 2023, is that battery the one where the customer saw the battery state fluctuation (oct 12) or the one where the fuselage started to smoke (oct 30)
+### Alexander Alan Arnold, 2024-11-01
 
-### Alexander Alan Arnold, 2025-03-07
+@Cameron Chapman I added a picture of the main battery they used when discovering the issue and a picture of the battery cell readout. This aircraft is OCONUS in combat operations
 
-Looking at the question for Pat  in the description that is the 12 October flight based on the description in the attached word document as far as batteries go Im not sure the main battery is the same for both incidents. We do not have the batteries. Does the FDR not have serial numbers logged in the spreadsheet? 
+### David Grosher, 2024-11-01
 
-@Adrian Garcia
+@Eric Brewer can you give the data a quick look? See Cameron’s comment below.
 
-### Adrian Garcia, 2025-03-10
+### Cameron Chapman, 2024-11-01
 
-@Cameron Chapman @David Grosher Based off the evidence I have gathered, I believe the incident that occurred on OCT 12th does not relate the the OCT 30th incident. The fluctuation in the Battery State, as described in the customer’s report, can be attributed to an inaccurate SoC model that was modeled for loads of 400W and 30A. The investigation report highlights 2 other flights from Flight Ops that show Battery State fluctuating when the load is outside of the 400W and 30A range. I do think that the OCT 30th incident is due to a bad mate between the fuse power harness and battery. The anti-spark overheating/melting is a common symptom of a bad mate. 
-Investigation Report: VXEP-761 - VXE 557 Smoking Smell from Fuselage after connecting main battery.pptx
+@Alexander Alan Arnold please recommend they do not fly this aircraft and battery until further notice.
 
-### Cameron Chapman, 2025-03-12
+### Cameron Chapman, 2024-11-01
 
-@Adrian Garcia good findings. Please update fields above and recommend next steps.
+Thanks @Alexander Alan Arnold for the images. The charger image looks to be post recharge. Are you able to ask if they remember the voltages when starting the charge? Cell 6 and 7 seem to be lagging, which could indicate weakness there and thermal damage, but we would have to compare to other batteries and possibly run a discharge test to confirm.
 
-### Adrian Garcia, 2025-03-13
+### Alexander Alan Arnold, 2024-11-01
 
-@Cameron Chapman Is it okay to send back to RMA so that they are able to replace the Fuse Power Harness?
+They do not remember the voltages from the 12th, 30th, or today when they hooked it in. 
 
-### Cameron Chapman, 2025-03-13
+I have told them do not fly or connect to a power source as of today. @Cameron Chapman
 
-@Adrian Garcia please update fields above, separate linked incidents and ppts for the two issues described, and other actions described. I don’t think we have enough information in the ppt to prove that the issue is isolated to the harness. Please add more analysis.
+### Eric Brewer, 2024-11-01
 
-### Jeremy White, 2025-03-13
+@David Grosher @Cameron Chapman attached the voltage, current, and throttle usage for the flight.  At first glance does not appear to be anything all that abnormal.  
 
-I spoke with the operators today. They used multiple batteries. @Adrian Garcia @Alexander Alan Arnold
+[embedded: image-20241101-212750.png]
 
-### Adrian Garcia, 2025-03-14
+### Alexander Alan Arnold, 2024-11-04
 
-I was able to pull the logs from the oct 30th incident and noticed that the starting voltage is 13V with a 0.8A. I spoke to @Hayden Jeanor about this and he mentioned that if there is a bad initial mating the voltage should see a 10V-6V drop with about 1.5A of current. Between 50s and 60s the voltage increases to ~15V which is likely the time where the anti-spark melted. 
-[embedded image-20250314-174427.png]
-@Cameron Chapman @David Grosher
+@Cameron Chapman Since this aircraft is down range they are asking if there is a possibility to create a field procedure to have them replace the main battery wiring harness in the aircraft.
 
-### Pat Wells, 2025-03-17
+### Cameron Chapman, 2024-11-04
 
-@Adrian Garcia @Cameron Chapman can we pull this back to RMA for repair or is there something else you need the aircraft for?
+Thanks @Alexander Alan Arnold. Ignore previous statement. I was thinking CW, not fuselage. Fuselage seems a lot more doable. Is your group available to draft such a replacement procedure based on the production process? @Trevor Gronner @Kyle England are you able to point to the fuse power cable installation procedure? 
+I recommend more data review before offering this to a customer. 
+@Eric Brewer are you able to compare the voltage and current to another flight? I am guessing the cause
 
-### Cameron Chapman, 2025-03-18
+### Pat Wells, 2024-11-04
 
-@Steve Gonzales can you please review this and determine what should be kept vs returned?
+@Cameron Chapman the aircraft is deployed OCONUS so sending an FSR is not an option.
+The issue is the main harness, not the CW.
 
-### Rodney Linch, 2025-03-31
+### Cameron Chapman, 2024-11-04
 
-@Steve Gonzales - can I return the cases to RMA and schedule work to replace power harness & SD cards?
+@Pat Wells corrected my comment for the fuse harness. See below.
 
-### Steve Gonzales, 2025-03-31
+### Eric Brewer, 2024-11-04
 
-@Rodney Linch pls replace the power harnesses.  Call me regarding the cases.  There is still an open question on the FW side, then we can give you back the avionics enclosure to replace the SD card.
+@Cameron Chapman current and voltage look pretty similar to a reference SCO flight I pulled up (this was a short flight).
+[embedded: image-20241104-231254.png]
 
-### Rodney Linch, 2025-03-31
+### Cameron Chapman, 2024-11-04
 
-@Steve Gonzales - picked up both AC cases. Verified avionics box is not in the fuselage.
+@Alexander Alan Arnold I should have read the description closer. I did not realize we didn’t have data for the incident flight. Does the customer have any other fuselages? If so, they could plug one into the 557 CW to pull the VTOL data from it, which should have some logs for this flight.
+@Eric Brewer is there any information that could be useful in any of the GCS logs? 
 
-### Alexander Alan Arnold, 2025-04-08
+@Eric Brewer related to our Heavy Payload Batt Project, this seems to be confirmation our model is not super accurate. SOC estimate should not go from 80% to 90 after a discharge. 
+We should zoom into this area and compare to VTOL current/voltage. It is strange that the vbatt does not rise as the current cuts off (causing the Vnl calc to drop). 
+[embedded: image-20241105-000157.png]
 
-@Steve Gonzales Any updates on this?
+### Eric Brewer, 2024-11-05
 
-### Rodney Linch, 2025-04-16
+@Cameron Chapman I didn’t see any GCS logs in the datalog folder.
+Good point on the battery model, it looks like when the throttle percentage goes to 0 the voltage doesn’t rebound to what we’re estimating as Vnl.  I’m not sure if that means that the motors are actually drawing some current that we’re not picking up, maybe the current calibration is off, maybe our Vnl is biased in some way, or something else.
 
-@Steve Gonzales - may I take the avionics box to get the SD card swapped?
+[embedded: image-20241105-163709.png]
 
-### Steve Gonzales, 2025-04-16
+### Trevor Gronner, 2024-11-05
 
-@Rodney Linch You can take back the Avionics box to replace the SD card.  We can still check the FW on the SOC issue apart from having the avionics box.
+@Cameron Chapman The production procedure we use for the Fuselage assembly (for VXE30 standard) is here: "C:\JAI Vault 1\Production eng\2 - Final Assembly\2 - Work Instructions & Procedures\107-111120 - Final Assembly - VXE30 Fuselage Assembly with Nose - Work Instruction.pptx". The Fuselage Power Harness is mentioned on a variety of different steps throughout the procedure.
 
-### Steve Gonzales, 2025-04-16
+### Alexander Alan Arnold, 2024-11-05
 
-@Giovanni Gonzalez pls provide Rodney in RMA dept. with the avionics box for vehicle # 557.
+@Cameron Chapman The Operators do not currently have an additional fuselage to connect the CW to. 
 
-### Rodney Linch, 2025-04-21
+Once they receive a fuselage, I will ask them to pull data from the CW. There is no current timeline for when they will have a fuselage at their mission site.
 
-@Steve Gonzales would you please describe what work you did with the avionics box?  Depending on what y’all did with the box, SCO will need to tailor their checkout based on what was done. Thank you!
+### Jeremy Kostel, 2024-11-06
+
+@Cameron Chapman I charged three main batteries this morning. One was an engineering asset battery (1st picture), one was a FLOPS battery (2nd picture), and the last was a production battery (one kept from customers as it didn't pass AS150 screening) (3rd picture).
+Cell lag is evident across all three batteries tested. According to H. Jeanor, a 40mV tolerance for cell voltages at full charge is our standard, which the customer’s battery meets. These batteries were charged to 30V, with the customer’s battery reaching 29.9V. 29.9V displays even more cell lag than 30V, as at least one cell consistently lags behind in reaching the target voltage. In each case, this delayed cell is the last to fully charge before batt voltage reaches 30V.
+Based on the testing completed this morning and just from the image of their cell voltages, I dont see any indications of cell voltage/batt issues from customer main battery. 
+[embedded: image-20241106-184907.png]
+Eng Asset Battery (C1 lag)
+[embedded: image-20241106-185805.png]
+Flops Battery (C1 & C5 lag) - doesnt meet max 40mV tolerance
+[embedded: image-20241106-185047.png]
+Production battery (C1 & C6 lag)
+
+### Cameron Chapman, 2024-11-06
+
+@Alexander Alan Arnold are they planning to send a purchased fuselage to that site, or are you referring to one we provide to warranty this aircraft? If the latter, it seems more efficient to return this equipment.
+
+### Alexander Alan Arnold, 2024-11-06
+
+They have another site in the same country with ONE working fuselage which they could use to check the CW. I am not sure they are going to want to use their only working asset to test equipment. 
+I am not sure what the plan is as far as sending them another fuselage at this time. It would either have to come from SOFSA (USASOC Warehouse) or us. I am waiting to hear back from Jeremy White (PM) on what the plan is as far fuselage replacement goes. @Cameron Chapman
 
 ### Cameron Chapman, 2024-11-06
 
@@ -177,7 +204,7 @@ I was able to pull the logs from the oct 30th incident and noticed that the star
 
 @Cameron Chapman 
 
-[embedded image-20241106-210118.png]
+[embedded: image-20241106-210118.png]
 
 ### Cameron Chapman, 2024-11-06
 
@@ -286,7 +313,7 @@ I spoke with the operators today. They used multiple batteries. @Adrian Garcia @
 ### Adrian Garcia, 2025-03-14
 
 I was able to pull the logs from the oct 30th incident and noticed that the starting voltage is 13V with a 0.8A. I spoke to @Hayden Jeanor about this and he mentioned that if there is a bad initial mating the voltage should see a 10V-6V drop with about 1.5A of current. Between 50s and 60s the voltage increases to ~15V which is likely the time where the anti-spark melted. 
-[embedded image-20250314-174427.png]
+[embedded: image-20250314-174427.png]
 @Cameron Chapman @David Grosher
 
 ### Pat Wells, 2025-03-17

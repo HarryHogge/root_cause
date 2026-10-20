@@ -15,7 +15,6 @@
 - **Parent:** VXEP-696 Practice Build - 101-115866-01, VXE30 Std Config, Wing Utility "Pylon"
 - **Epic Link:** VXEP-696
 - **Start date:** 2024-10-03
-- **Issue color:** purple
 
 ## Comments (3)
 

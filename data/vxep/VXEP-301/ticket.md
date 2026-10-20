@@ -9,7 +9,6 @@
 - **Resolved:** 2026-03-30
 - **Reporter:** Catherine Wagner
 - **Creator:** Catherine Wagner
-- **Issue color:** purple
 - **Part Number(s):** 96X-3-09-0011, 1803C03A, 1302C22A, 1803C02A, 1302C21A, 96X-3-10-1002, 96X-3-10-1003
 - **Production Stakeholder:** Emalee Johnson
 - **Other Stakeholder (as required):** Brad Crampton
@@ -32,7 +31,7 @@ SGCS2
 
 No ENG drawing or requirements besides BOM. Production and inspection requirements are driven by procedure which includes measurements not defined by engineering, such as terminal depth. ENG requirements should determine build process / procedure.
 REF 1803C03A Procedure REV A
-[embedded file]
+[embedded: image-20240109-184044.png]
 
 ## Plan
 
@@ -43,6 +42,14 @@ REF 1803C03A Procedure REV A
 - Add them to the GCS visio diagrams Travis created if applicable, or create another one for Misc GSE/spares kits, etc. See subtask
 
 ## Comments (22)
+
+### Catherine Wagner, 2024-01-09
+
+Initiated due to Inspection Call request from @Thomas McMillan and @Brad Crampton FYA @Emalee Johnson @Sam Omiotek @Matt Philley
+
+### Catherine Wagner, 2024-03-15
+
+@Barry Mendez @Greg Fryer Could you tell us if there is a pin depth requirement for 1803C03A? Or assign the request? Thank you! FYA @Thomas McMillan @Brad Crampton
 
 ### Matt Philley, 2024-03-18
 
@@ -68,12 +75,12 @@ Placing this on hold until we have drafting bandwidth to create relevant drawing
 @Cameron Chapman @Greg Fryer Current procedure no longer includes depth requirement.
 @Brad Crampton Please update inspection sheet with note referencing this Jira. My team will use it for inspection until design control is implemented. FYA @Thomas McMillan @Luis A jacinto @Sam Omiotek @Emalee Johnson 
 
-[embedded file]
+[embedded: image-20240318-204447.png]
 
 ### Sam Omiotek, 2024-03-19
 
 @Emalee Johnson @Matt Philley I removed the drawing snapshot when I revised this procedure two months ago, though I cannot remember exactly why. I added it back in with a note to verify the pin depth before sending it to inspection.
-[embedded file]
+[embedded: image-20240319-164416.png]
 
 ### Liam Limon, 2024-04-05
 
@@ -127,17 +134,17 @@ The best way to qualify if these connectors are ok in this application would be 
 @Cameron Chapman Sorry! I was hoping you had already looked into it during the original anti-spark investigation and that is all that I found for the GCS assemblies. Will you have your team look into the anti-spark functionality requirements?
 I think maybe my explanation was confusing so let me add some drawing snapshots. 
 The reference dimension I am referring to is for the antispark pin (100-102571), please see the snapshot of the drawing. I used this reference dimension to identify the tolerance issue.
-[embedded image-20240409-162921.png]
+[embedded: image-20240409-162921.png]
 I used the highlighted dimensions at their max tolerance as shown in the drawing snapshot below: 
-[embedded image-20240409-163447.png]
+[embedded: image-20240409-163447.png]
 To determine that the tolerance on the other drawing, 107-102189, is not always attainable. .755” + .27” = 1.025” - .90” = .125” which is greater then the max tolerance of .115.
-[embedded image-20240409-164138.png]
+[embedded: image-20240409-164138.png]
 Please let me know if you have any questions. I think this answers https://jenaero.atlassian.net/browse/VXEP-326 But as far as determining a work around that will have to come from engineering since that will likely be under a deviation. @Greg Fryer @Liam Limon @Catherine Wagner @Kelly J Furlong FYI
 
 ### Catherine Wagner, 2024-04-09
 
 @Emalee Johnson @Cameron Chapman The vendor specification is included in the inspection sheet. I do not see a tolerance but it’s not aligned with the drawing reference dimension at 23.70mm (.933 in).
-[embedded image-20240409-174358.png]
+[embedded: image-20240409-174358.png]
 
 ### Ben Norris, 2024-04-10
 
@@ -158,16 +165,6 @@ Thank you @Ben Norris great analysis. Are you or production engineering able to 
 ### Cameron Chapman, 2024-04-14
 
 @Brad Crampton @Liam Limon the inspection sheet brad attached looks good. Approved on my end.
-
-### Emalee Johnson, 2024-08-16
-
-Hot NCR related to this same pin depth issue. 107-102189-1/-2 Issues related to potting and Pin Depth
-These power harnesses are an active shortage for Pre-MAGNSS @Cameron Chapman @Garrett O'Neill 
-FYI @Kelly J Furlong
-
-### Cameron Chapman, 2024-08-19
-
-Reopening this. It should not be closed until the fields above are updated (plan should be complete, status should say what was done). Assigning to Gary now that Ryan left.
 
 ### Emalee Johnson, 2024-08-16
 

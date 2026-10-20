@@ -12,16 +12,12 @@
 - **Assignee:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Conduct Production Readiness Review (PRR)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
 - **Start date:** 2024-11-21
-- **Issue color:** dark_orange
 - **Issue Status:** PRR - Gen 1 Std Utility Dropper Project - WORKING COPY.pptx
 
 ## Description
 
-[embedded image-20241126-182816.png]
+[embedded: image-20241126-182816.png]
 
 ## Comments (2)
 

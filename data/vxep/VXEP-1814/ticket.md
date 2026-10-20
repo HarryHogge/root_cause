@@ -77,7 +77,7 @@ Notes:
 - This item is one in a series of items involving L/R pylon configurations and separating B35 from B40.  This Engineering Change is unique to the parts involved.
 - No open NCRs
 
-[embedded file]
+[embedded: EC Checklist VXEP-1814.docx]
 
 ### Trevor Gronner, 2026-04-17
 

@@ -9,7 +9,6 @@
 - **Assignee:** Mike DeJesus
 - **Creator:** Cody Smisek
 - **Links:** relates to VXEP-1452 (New E140 Assemblies video quality issues)
-- **Issue color:** purple
 
 ## Description
 

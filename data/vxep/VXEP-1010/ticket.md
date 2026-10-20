@@ -11,9 +11,6 @@
 - **Creator:** Tobi Ogunro
 - **Labels:** LRR-March
 - **Parent:** VXEP-891 Create Mod Payload A-Kit for VXE30 Advanced Navigation aircraft (deliveries required for LRR by 23-03-2025)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Production Stakeholder:** Trevor Gronner
 - **Other Stakeholder (as required):** Liam Limon
 - **LRR Desired Delivery Date:** 2025-03-01

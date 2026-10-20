@@ -9,7 +9,6 @@
 - **Assignee:** Josh Adams
 - **Creator:** Cameron Chapman
 - **Links:** relates to XKIT-5454 (Unclear guidance and automation to prevent MCM from overheating. )
-- **Issue color:** dark_purple
 - **Plan:** Assigning to @Josh Adams . Please update when parts ship
 
 ## Description

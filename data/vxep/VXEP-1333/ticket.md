@@ -13,7 +13,6 @@
 - **Creator:** Tobi Ogunro
 - **Labels:** APEX
 - **Parent:** SP-121 Visual Based Navigation (VBN) tech development
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Greg Fryer
 - **Project Tier:** Tier 4
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR)

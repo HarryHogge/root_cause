@@ -51,6 +51,14 @@ Root cause of overshoot is a lower than expected GPS update rate.  This low upda
 
 ## Comments (22)
 
+### David Grosher, 2024-06-11
+
+@Eric Brewer Another “drift”, this went 2k off to the side.
+
+### Eric Brewer, 2024-06-11
+
+@David Grosher this looks like the same GSP update rate issue.  See summary slides. @Jason Scherer , we saw this issue on two flights where the software is calling out a climb fault abort even though it occurs during landing.  Is this something we changed recently or existing behavior?  See slide 5 but basically the vehicle has the power setting too low because it’s going way too fast when VTOL is engaged.
+
 ### Pat Wells, 2024-06-12
 
 @Eric Brewer @David Grosher @Jason Scherer  Added another incident experienced by the customer on 6/11 to the description above.  Additionally added AAR and two GCS screenshots from this new report.
@@ -97,7 +105,7 @@ We also found some information on a ublox forum that indicates there may be an i
 @Pat Wells @David Grosher I added a slide to the end of this presentation, pasted here for convenience.  Please review.
 AV459_LandingOvershoot.pptx (sharepoint.com)
 
-[embedded image-20240617-231258.png]
+[embedded: image-20240617-231258.png]
 
 ### David Grosher, 2024-06-18
 
@@ -147,16 +155,6 @@ Let me know if you have any questions.
 Looks good on my end as well. 
 I’ve edited a bit to include all 12 Q&A’s from the customer. 
 Still outstanding on an answer to question number 2.
-
-### Eric Brewer, 2024-06-26
-
-@Pat Wells @David Grosher @Sam Miller I put some suggested wording in the powerpoint, please review.  
-“Until the GPS update rate issue is resolved in software there is risk of an overshoot occurring.  This risk can be reduced by modifying the approach procedures as described below, but not fully eliminated.  Since large overshoots such as this are still relatively rare, we have not issued a grounding order for the fleet.  The associated risk will vary according to the landing site and surroundings so we leave this to each user to determine their risk tolerance.”
-It’s also worth noting that we have not seen this level of overshoot on any of our SCO flights. The main difference is that they fly at low altitudes so there are very few orbits before the approach.
-
-### Pat Wells, 2024-07-08
-
-Report sent to customer on 7/8
 
 ### Eric Brewer, 2024-06-26
 

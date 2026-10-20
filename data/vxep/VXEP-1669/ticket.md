@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-470 Unified AP for Block 40
 - **Links:** relates to VXEP-1673 (Build and document EE ironbirds)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 - **Issue Status:** (6/11) due to last working day will be reassigning to @Matthew Aguirre upon request
 
 ## Description

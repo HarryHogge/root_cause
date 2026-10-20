@@ -12,7 +12,6 @@
 - **Creator:** Ryan Ferguson
 - **Labels:** Production, Rate#
 - **Links:** relates to FS2-1832 (VTOL AP failure to generate full-length crypto keys); relates to FS2-1831 (VTOL autopilots and X-comms fail to generate full length crypto keys); relates to FS2-1835 (X-comms fail to generate full length crypto keys); relates to ENG-2521 (TAS Release 2.0)
-- **Issue color:** purple
 - **Part Number(s):** 1409P01D 1607P01A
 - **Impacted Disciplines:** Software
 
@@ -62,7 +61,7 @@ for(0;i<6;i++){
 
 ### Ryan Ferguson, 2024-05-08
 
-[embedded file]
+[embedded: MAC to crypto key.py]
 I wrote the above script to convert the MAC address to a crypto key, minus the last two lines.  This will be used to disposition NCRs against the autopilots and X-comms which have a missing character in their crypto keys.  It uses the pseudocode provided by @Kurt Burian to generate the key without any padded zeros the way the autopilot will report them.
 
 If an autopilot has a line with a missing character in its crypto key, use this Python script to generate a correct crypto key.  Pad leading zeros to the first 3 rows to make them meet the minimum length requirement of 8 characters per line, excluding the leading ‘0x’ portion.  If the first 5 lines from the padded autopilot crypto key match the result of the above script, the autopilot can be UAI’d assuming no other failures are present.

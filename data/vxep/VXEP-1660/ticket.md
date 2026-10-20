@@ -9,9 +9,6 @@
 - **Assignee:** Nicole Hess
 - **Creator:** Cameron Chapman
 - **Links:** relates to PLD-131 (SLO+Riga Epsilon Cross-Site Project and Issue Collector)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 
 ## Description
 

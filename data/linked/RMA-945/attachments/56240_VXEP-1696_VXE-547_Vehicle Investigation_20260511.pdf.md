@@ -1,0 +1,298 @@
+# VXEP-1696_VXE-547_Vehicle Investigation_20260511.pdf
+
+Attachment 56240, pdf, 546 KB, added 2026-05-11 by Lauren Velasquez.
+
+## Page 1
+
+1
+Title: VXEP -1696 Investigation Report
+Vehicle: VXE -547
+11 May 2026
+Investigation Report
+
+## Page 2
+
+2
+Proprietary
+VXE30 - Issue Resolution Process
+D7 – Prevention
+D8 - Done
+Yes
+Add to Lessons
+Learned
+Document
+Debrief Customers
+Closed
+With
+UFRs
+UFR
+Added?
+No
+Send UFR 
+Description
+To Customer
+Closed
+User
+Creates 
+Incident 
+Report (IR)
+User Assembles After Action Report 
+(AAR)
+EA Assembles Incident Response Team (IRT)
+User Secures Aircraft
+User Packages Aircraft 
+and Ships to EA Depot
+EA Receives Aircraft
+IRT reviews IR and AAR
+IRT Inspects Aircraft
+IRT requests additional info from customer
+(phone, email, zoom, etc.)
+IRT releases first-look report (FRP)
+D1 – Form Team
+D2 – Define The Problem
+D3
+Investigate Root 
+Cause
+D4 – Find Root Cause
+D5
+Verify Root Cause
+RCIT Releases Root 
+Cause Report (RCR)
+EA Assembles Root 
+Cause Investigation 
+Team (RCIT)
+Alert Users
+IRT creates Airworthiness 
+Safety Alert (ASA)
+IRT publishes ASA
+Affected customers are 
+alerted to ASA
+Is ASA 
+Required?Yes
+D3 – Interim Containment
+D4
+No
+D4
+Is Advisory 
+Notice Req
+uired?
+IRT creates
+Advisory Notice
+IRT publishes 
+Advisory Notice
+Alert Users
+Via ICR
+IRT creates list of aircraft tail-
+numbers affected by the 
+incidents
+IRT creates list of affected 
+customers
+IRT creates Interim 
+Containment Report (ICR)
+Yes
+No
+EA Assembles Corrective Action Team (CAT)
+CAT Creates List of Corrective Actions
+Funded
+Fixes
+Unfunded
+Fixes
+Add to Prioritized 
+UFR List
+Estimate Cost & 
+Schedule
+D6
+D5 – Define Corrective Action
+D8
+Brief Customer on 
+UFR
+Are Fixes 
+Required?
+CAT Creates Corrective Action Plan and 
+Releases Corrective Action Report (CAR)
+Yes No
+No
+Yes
+Alert Users
+Funding 
+Available 
+to Fix 
+Issue
+Software
+Issue
+Hardware
+Issue
+Training
+Issue
+Maint
+Issue
+QA
+Issue
+Fix Code
+Bench
+Test
+HIL Test
+Flight
+Test
+Release
+Software
+Upgrade
+Create 
+Service 
+Bulletin
+Alert Users
+Publish 
+Service 
+Bulletin & 
+SW
+Prelim
+Design
+Final
+Design
+Build
+Prototype
+Bench Test
+Prototype
+Flight Test
+Prototype
+Create 
+Service 
+Bulletin
+Ship to 
+Customers
+Publish
+Service
+Bulletin
+Production
+Design
+Production 
+SCM Plan
+Build
+Kits
+Identify 
+Training 
+Gap
+Update 
+Training 
+Curriculum
+Update 
+User 
+Manual
+Alert Users
+Identify 
+MTBF Gaps
+Update 
+Sparing Plan
+Update 
+Mx
+Manual
+Create 
+Service 
+Bulletin
+Release 
+Updated
+Mx
+Manual
+Publish
+Service
+Bulletin
+Create 
+Correction 
+Action Plan 
+(CAP) for 
+SCM and 
+Production
+Implement 
+CAP in SCM 
+and 
+Production
+D6 – Implement and Verify Corrective Action
+Alert Users
+Create 
+HIL/Flight 
+Test Cards
+Update Regression Tests for HIL and Flight Test
+D7
+Alert User of Preliminary Assessment
+(known causes / mitigations)
+Create
+Operational 
+Supplement
+Publish 
+Operational
+Supplement
+Alert Users
+Version: Feb 2025
+
+## Page 3
+
+3
+Operator Report
+Who: 75th Rangers
+What: Abort after audible struggle leading to aircraft damage
+Where: Ft. Benning, Ga (McKenna MOUT site)
+When: February 6, 2026
+Why: Aircraft 547 mishap occurred at approximately 60ft during VTOL climb. Upon reaching the 20ft altitude level all system 
+functions appeared normal. Once the aircraft gained elevation from 20ft AGL, noticed a cell imbalance in the VTOL control window 
+and the lift motors gave an audible struggle. Could also see visually that the lift motors were not functioning properly. At this time, 
+command an ABORT Launch and the vehicle responded with an RTL command in the VTOL control window. The vehicle struggled 
+through descent and drifted about 50 ft back into the transportation boxes. The left lift boom snapped in half and several lift motor 
+propellors broke, but these were the only observed damages at this time. 
+Note: Root cause and contributing factors on next page.
+
+## Page 4
+
+4
+Executive Summary
+Problem Statement
+Aircraft 547 mishap occurred at approximately 80ft during VTOL climb. Upon reaching the 20ft altitude level all system functions appeared normal. 
+Once the aircraft gained elevation from 20ft AGL, noticed a cell imbalance in the VTOL control window and the lift motors gave an audible struggle. 
+Could also see visually that the lift motors were not functioning properly.At this time, command an ABORT Launch and the vehicle responded with an 
+RTL command in the VTOL control window. The vehicle struggled through descent and drifted about 50 ft back into the transportation boxes. 
+Root Cause 
+Cells 6 and 7 in the Hybrid Lift Battery underperformed during the VTOL assent phase and as a result, the aircraft achieved a semi-controlled decent 
+into the aircraft cases.
+Ruled out Leading Causes
+VTOL autopilot, VTOL Motors, Electronic Speed Controllers (ESC’s) were all operating within design specifications. 
+Corrective Actions
+Remove the Hybrid Lift Battery associated with this incident (S/N: 02-2768).
+
+## Page 5
+
+5
+Investigation Overview 
+Lift system could not 
+maintain assent with 
+two underperforming 
+cells in the Hybrid Lift 
+Battery.
+HLB
+(hybrid lift 
+battery) Cell 
+Imbalance
+Investigated but inconclusive
+Not the root cause or contributing factor
+Root cause or contributing factor
+Legend
+VTOL Auto-Pilot  
+Failure
+
+## Page 6
+
+6
+Onboard Log
+Aircraft 547 mishap occurred at approximately 60ft 
+during VTOL climb. Upon reaching the 20ft altitude 
+level all system functions appeared normal. Once the 
+aircraft gained elevation from 20ft AGL, noticed a cell 
+imbalance in the VTOL control window and the lift 
+motors gave an audible struggle. Could also see 
+visually that the lift motors were not functioning 
+properly. At this time, command an ABORT Launch 
+and the vehicle responded with an RTL command in 
+the VTOL control window. The vehicle struggled 
+through descent and drifted about 50 ft back into the 
+transportation boxes. The left lift boom snapped in 
+half and several lift motor propellors broke, but these 
+were the only observed damages at this time.
+Voltage in cells 6 and 7 drop below 3

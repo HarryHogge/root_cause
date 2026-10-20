@@ -91,7 +91,7 @@ Looks like plan was updated and assigned to Steve. I haven’t heard anything fu
 I don’t think there’s anything further for us to do until they reply with additional information. Depending on how serious we are about supporting this configuration (VIDAR), probably worth reviewing the schematics/wiring diagrams (if available) of their hardware to verify any obvious design issues.
  
 Here’s screenshot of network traffic on xcomm. Lost comms occurs at the drop off. 
-[embedded image-20250429-203913.png]
+[embedded: image-20250429-203913.png]
 
 
 Additionally, this ticket contains two separate issues. Recommend breaking out the Trillium issue and delegating to appropriate party.
@@ -109,7 +109,7 @@ along with some notes that placed above in the Description.
 ### Cameron Chapman, 2025-05-20
 
 @Drew Hildreth see plan field. Have we received any info if they were able to recreate or not. If unable to, then this seems low priority/closeable. 
-## Plan
+**Plan**
 
 - Operator to continue to troubleshoot.
 - last message received was that they were having difficulty replicating the issue again. Their next steps of diagnosis were to attempt to access ipcomm from direction connection to aircraft, I believe if this was to fail then this would indicate something going on with the network explicitly between xcomm and ipcomm.

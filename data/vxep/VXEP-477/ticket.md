@@ -12,7 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-386 Develop Replacement for AS150 Connections
 - **Links:** relates to VXEP-385 (New Connectors and Contacts, Overall Requirements Review); is duplicated by XKIT-760 (Main AS150 replacement issue-Develop new battery power connectors for Havoc Block 5)
-- **Issue color:** dark_teal
 
 ## Description
 
@@ -32,7 +31,7 @@ VXE-1 Cameron's Team 9-17, VXE-1 Electrical-8, VXE-2 Everything Else 2024-03, VX
 
 ### Hans Hershberger, 2023-10-17
 
-[embedded file]
+[embedded: Screenshot 2023-10-17 144301.png]
 initial concept.
 
 ### Hans Hershberger, 2024-07-29

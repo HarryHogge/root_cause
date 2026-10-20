@@ -36,7 +36,7 @@ There’s a good reason to believe that the legacy GCS software would have detec
 
 
 It looks like the pitch estimate was way off. Which explains the flip on launch. 
-[embedded image-20240805-185735.png]
+[embedded: image-20240805-185735.png]
 The actual launch event didn't get into the log. But that was the estimate up to 10 seconds prior to the VTOL event log cutting out, which does capture the launch event. 
 It also appears that the only valid status bit for GPS was GPS time.
 
@@ -51,18 +51,18 @@ It also appears that the only valid status bit for GPS was GPS time.
 
 info from duplicate issue that will be closed. 
 
-### Cameron Chapman 2 seconds ago
+**Cameron Chapman 2 seconds ago**
 
 @Matt Philley I will do what I recommended below and close this one. Thank you for reporting.
 Edit·Delete·
-### Matthew Philley 2 minutes ago
+**Matthew Philley 2 minutes ago**
 
 @Cameron Chapman whoops! you are right. Scott and I talked about making one this morning but I didnt think he got to it yet lets keep with the his since it was first
-### Cameron Chapman 3 minutes ago
+**Cameron Chapman 3 minutes ago**
 
 @Scott Whitney @Matt Philley we seem to have some duplication. I think https://jenaero.atlassian.net/browse/VXEP-525 duplicates this issue. This issue is the correct issue type, but https://jenaero.atlassian.net/browse/VXEP-525 has more information. I recommend changing https://jenaero.atlassian.net/browse/VXEP-525 to an incident, moving info from this one to that, then close this one as a duplicate.
 Edit·Delete·
-### Matthew Philley 6 minutes ago
+**Matthew Philley 6 minutes ago**
 
 @Greg Fryer @Scott Whitney @Ryan Babigian @Artis Bertulis AC 300 incident ticket created to track the resolution.
 AC 300 is still the only flyable asset with MCM only, so it is needed in order to complete MCM Software Regression Testing which is a gating activity for PreMAGNSS and MAGNSS.

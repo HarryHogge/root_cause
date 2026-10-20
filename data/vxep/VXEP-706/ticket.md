@@ -15,7 +15,6 @@
 - **Parent:** VXEP-698 Practice Build - 2118266-01, Mighty Mouse to Bulgin Adapter Harness
 - **Epic Link:** VXEP-698
 - **Start date:** 2024-10-05
-- **Issue color:** purple
 
 ## Description
 
@@ -47,7 +46,7 @@ Redlines from Practice Build 10/4:
 
 ### Gary Angelus, 2024-10-28
 
-[embedded file]
+[embedded: 2118266[B].pdf]
 @Nina Menon Hi Nina, revision B in the vault has these updates, attached.
 
 ## Attachments (1)

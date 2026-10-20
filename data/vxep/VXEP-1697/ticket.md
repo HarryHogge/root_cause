@@ -40,7 +40,7 @@ Current harness 2121520 is monochromatic (all white colors) making it very likel
 PPS1 measures as expected, pulses from 0V to 3.3V.
 PPS2 does not measure as expected.  Peak to peak voltage should be 0 to 3.3V with 1 hz spikes (active low).  Instead, the peak to peak voltage measures 0 to 1.8 V, though the frequency is correct at 1 hz.
 
-[embedded image-20260209-180651.png]
+[embedded: image-20260209-180651.png]
 
 ### Samuel Lopez, 2026-02-09
 
@@ -61,7 +61,7 @@ Monday February 9.
 
 Discovered that the MCM GPIO 12 line was behaving erratically when Ryan Smith sends a pulse signal to it.  There is a DC offset between 0 and Vcc and the pulse is having trouble reaching Vcc as shown below.  After a time, the gpio pin stopped working altogether, probing it reveals only ground noise.  
 
-[embedded image-20260211-194124.png]
+[embedded: image-20260211-194124.png]
 
 ### Samuel Lopez, 2026-02-11
 
@@ -72,7 +72,7 @@ The protection diode between the gpio and GND was found to be open.  Bethany Pon
 
 Wednesday, 2026-02-11
 With the fresh Hadron board, the MCM_GPIO_12 pin is exhibiting the same behavior as before.  It has a DC offset when pulsing as shown below.  Investigating is ongoing.
-[embedded image-20260211-200215.png]
+[embedded: image-20260211-200215.png]
 
 ## Attachments (3)
 

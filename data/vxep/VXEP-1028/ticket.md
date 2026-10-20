@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Liam Limon
 - **Labels:** Electronics_Drafting
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 - **Production Stakeholder:** Ben Norris
 - **Other Stakeholder (as required):** Ryan Ferguson
@@ -28,9 +27,9 @@ Any pertinent information that is contained within the procedure needs to be pul
 ### Catherine Wagner, 2024-04-25
 
 @Greg Fryer There are two REV E pdfs accessible in the Vault with different approval dates at minimum. I am not sure what other differences there are. FYA @Liam Limon @Ben Norris @Brad Crampton @Matt Philley @Sloan Payne 
-[embedded image-20240425-173158.png]
+[embedded: image-20240425-173158.png]
 
-[embedded image-20240425-173343.png]
+[embedded: image-20240425-173343.png]
 
 ### Greg Fryer, 2024-04-25
 
@@ -45,7 +44,7 @@ Other improvements on this ticket will wait (unfortunately).
 
 @Garrett O'Neill Is the correct one active now or does this still need update?
 
-[embedded image-20240508-163841.png]
+[embedded: image-20240508-163841.png]
 
 ### Garrett O'Neill, 2024-05-08
 

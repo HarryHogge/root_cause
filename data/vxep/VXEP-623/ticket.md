@@ -11,9 +11,6 @@
 - **Assignee:** Steve Stack
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Job Number:** J100084 - VXE Incident Investigation
 
 ## Comments (1)

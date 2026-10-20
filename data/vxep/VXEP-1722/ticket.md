@@ -9,9 +9,6 @@
 - **Assignee:** Michael Cooper
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-887 Create, Test, and Release B40 Wing Utility Pylon (FKA drop payload) PN: 2123650-01
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 - **Plan:** Needs to be in Odoo
 
 ## Description

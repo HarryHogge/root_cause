@@ -44,7 +44,7 @@ Limited additional info as of 2025-09-15 at 0930 pacific. Problem occurred on tw
 
 “MOLSON also reported GPS fix issues...That was Thursday” 
 Discussing with FLOPS and HSV, look here feature was tested during the flight test (only one unit). 
-[embedded image-20250915-175535.png]
+[embedded: image-20250915-175535.png]
 
 Was not tested on bench for all cables and gimbals. I am investigating why and improvement options to ensure all features are tested on every unit. Please let us know if you have any more info on the issues customers experienced.
 

@@ -11,7 +11,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Links:** relates to VXEP-810 (MCM v1.1.1 Point Release); relates to ENG-2966 (OGCS Software 1.2.0)
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 1
 
 ## Comments (0)

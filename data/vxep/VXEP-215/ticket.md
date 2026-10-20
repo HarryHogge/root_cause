@@ -11,7 +11,6 @@
 - **Assignee:** Matt Weber
 - **Creator:** Cody Smisek
 - **Links:** relates to VXEP-199 (VXE376 Damage During Attempted Takeoff (VXE300 Booms))
-- **Issue color:** purple
 
 ## Description
 
@@ -27,7 +26,7 @@
 ### Matt Weber, 2024-01-25
 
 The drawing and assembly procedure (107-101631) contain the information about the markings and keying of the blade mount.  A design change of the motor mount is req’d.
-[embedded file]
+[embedded: image-20240125-223903.png]
 
 ## Attachments (1)
 

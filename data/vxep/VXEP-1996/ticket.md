@@ -7,7 +7,6 @@
 - **Updated:** 2026-09-11
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
-- **Issue color:** dark_teal
 - **Plan:** Check squawk lists.
 
 ## Description

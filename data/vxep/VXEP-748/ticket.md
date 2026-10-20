@@ -25,9 +25,9 @@ AAR’s attached
 ## Root Cause
 
 The issue comes down to the use of COTS battery checkers and the Li-ion model included in the battery checkers to assess the state of charge of our Amicell battery. The cell chemistry of our Amicell batteries have a different SoC discharge curve compared to that of which the cell checkers are programmed to.
-[embedded image-20241030-204746.png]
+[embedded: image-20241030-204746.png]
 Li-ion discharge curve
-[embedded image-20241030-212419.png]
+[embedded: image-20241030-212419.png]
 Measured Amicell discharge curve
 
 ## Comments (8)
@@ -56,11 +56,11 @@ Worked with Cameron and Hayden: The issue appears to come down to the use of COT
 
 The simulation inaccuracy is a separate issue, its estimating that the vehicle will drain its entire battery capacity in a 20 minute flight, to do this it would need to consume roughly 4500W for the entire 20 minutes which is 3x more than the vehicle can output at 100% throttle.
 
-[embedded image-20241030-204746.png]
+[embedded: image-20241030-204746.png]
 Li-ion discharge curve
 
 
-[embedded image-20241030-212419.png]
+[embedded: image-20241030-212419.png]
 Measured Amicell discharge curve
 
 ### Cameron Chapman, 2024-10-30

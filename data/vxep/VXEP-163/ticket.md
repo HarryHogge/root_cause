@@ -10,7 +10,6 @@
 - **Reporter:** Carson Buckley
 - **Assignee:** Trevor Gronner
 - **Creator:** Carson Buckley
-- **Issue color:** purple
 - **Impacted Disciplines:** Quality Assurance
 
 ## Description

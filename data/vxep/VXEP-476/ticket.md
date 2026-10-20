@@ -50,7 +50,7 @@ These are some of the hubs we talked about earlier @Cameron Chapman @Greg Fryer
 
 ### Adrian Garcia, 2023-08-04
 
-[embedded file]
+[embedded: image-20230804-152450.png]
 I contacted targus asking the origin of the adapter and they told me it is from Vietnam
 
 ### Cameron Chapman, 2023-08-24

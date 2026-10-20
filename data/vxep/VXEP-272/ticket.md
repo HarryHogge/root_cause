@@ -63,7 +63,7 @@ Data review complete.  Log analysis points to power/current for vtol system goin
 See report located here.
 Images indicate the removing excess potting compound SB was not applied. 
 
-[embedded image-20240828-161137.png]
+[embedded: image-20240828-161137.png]
 - ESC PCBA completely destroyed, unable to definitively determine origin point of destruction.
 - VTOL SD card corrupted, thus far unable to pull logs from it. Trying to get mac address of VTOL CPU which would allow us to access SD card with @Kurt Burian's help. Stand by for update on this effort.
 
@@ -81,112 +81,94 @@ https://jenaero.atlassian.net/browse/VXEP-628
 
 ## Comments (52)
 
-### Mark Squillante, 2024-08-28
+### Pat Wells, 2024-02-09
 
-@Cameron Chapman EC5 contacts are good on that ESC. 
-Throttle 1 is left aft, 2 is left forward, 3 is right forward, 4 is right aft according to Cody.
+@Cameron Chapman @David Grosher FYSA
 
-### Hayden Jeanor, 2024-08-28
+### David Grosher, 2024-02-09
 
-Looks like they are working with batteries with the over application of TS23 problem on their batteries
-[embedded image-20240828-164333.png]
+@Pat Wells There is no VTOL data.
 
-### Cameron Chapman, 2024-08-28
+### David Grosher, 2024-02-09
 
-@Cody Smisek @Mark Squillante from VXE-FCD-XCOMM Log Glossary.docx 
-vtThr1                  Vt reported motor 1 (front left) throttle value, 0 – 1.
-vtThr2                  Vt reported motor 2 (front right) throttle value, 0 – 1.
-vtThr3                  Vt reported motor 3 (rear right) throttle value, 0 – 1.
-vtThr4                  Vt reported motor 4 (rear left) throttle value, 0 – 1.
-From  VXE-FCD-VTOL Log Glossary.docx
-mxM1                   Motor 1 (front left) output throttle. Logged at different points in the SW vs FL CW to see how different code paths might contribute the final throttle. May be blank when actual throttle is present. Check both. FL is closer to final throttle.
-mxM2                   Motor 2 (front right) output throttle
-mxM3                   Motor 3 (rear right) output throttle
-mxM4                   Motor 4 (rear left) output throttle
-Please let me know if you have evidence to the contrary.
+@Jason Scherer is this the same RACE condition issue that you found?
 
-### Mark Squillante, 2024-08-28
+### Pat Wells, 2024-02-09
 
-ESC PCBA destroyed, came out of enclosure in 2 pieces. I updated the ppt file with this info. See pics
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
+@David Grosher I suspected that.  Reaching out to customer for additional data.
 
-### Mark Squillante, 2024-09-03
+### Pat Wells, 2024-02-09
 
-@Cameron Chapman if you are able to point me to any thermal testing data on the lift ESC FETs that would be great. Thank you
+Added more detailed summary of incident from the operator
 
-### Cameron Chapman, 2024-09-03
+### Cameron Chapman, 2024-02-09
 
-@Mark Squillante not very organized, but some tests in this and parent folders. Lift ESC You are welcome to rearrange, create an index of tests, etc if that helps organize things.
+@Pat Wells I don’t remember if they can get the VTOL data by plugging in the center wing and running another FDR. If not, and the wing still powers up, we have a customer document to VTOL data manually. VXE-OS-22-005
 
-### Cameron Chapman, 2024-09-11
+### Pat Wells, 2024-02-09
 
-Saving findings from plan
-- How do the EC3 contacts for that motor seem? 
-- EC3 contacts look good
+@Cameron Chapman I provided them with the document explaining how to extract the data manually.  Hopefully he’s successful.
 
-@Eric Brewer would a bad aft left ESC cause this issue? Perhaps if the aft left ESC was taking too much power, it would cause the voltage to drop significantly for the front left ESC, which could then lead to the data seen below.
-@Cameron Chapman the data to me looks consistent with the whole lift system turning off.  The characteristic nose dive is consistent with other birds I’ve seen that issue on.
+### Pat Wells, 2024-02-14
 
-### Eric Brewer, 2024-09-12
+Customer completed post incident procedure to download logs.  XCOM and VTOL logs attached.  
+VTOL log does not appear to contain very much data. 
+@Cameron Chapman @David Grosher
 
-@Cameron Chapman , good question I’m not sure.  The data to me is consistent with the whole lift system losing power, but it’s possible one bad ESC could cause the others to lose power as well.  The initial attitude excursion is mostly pitch down, so either loss of power on a front motor, or total loss of power (vehicle pitches down in this case).
+### David Grosher, 2024-02-16
 
-### Cameron Chapman, 2024-09-12
+@Eric Brewer can you tackle the initial data analysis of this incident?
 
-@Eric Brewer it seems like high throttle 1 and 4 supports the idea of the left boom losing power due to an ESC 4 short, but the current does not.
+### Eric Brewer, 2024-02-16
 
-### David Grosher, 2024-09-24
+@Pat Wells is there any way to get more VTOL data or do we think this is all we have?  Concur with your assessment it’s pretty limited.
 
-@Cameron Chapman This appears to be a hardware issue.
+### Pat Wells, 2024-02-17
 
-### Jason Scherer, 2024-09-25
+@Eric Brewer this is all of the data that the operator was able to retrieve.
 
-@Eric Brewer I took a quick look at the logs and there is a landing abort that was triggered due to an attitude fault. Could be that the failed ESC caused the attitude fault. 
-[embedded image-20240925-161128.png]
+### Eric Brewer, 2024-02-19
 
-### Alexander Alan Arnold, 2024-12-10
+Report attached.  It appears that the VTOL lift system lost power for some reason.  I will continue to analyze the logs to see if I can find any clues why.
 
-@Jason Scherer Any progress on this? @Cameron Chapman
+### Eric Brewer, 2024-02-19
 
-### Cameron Chapman, 2024-12-10
+@David Grosher , who would be best able to assist?  From the logs it’s not immediately clear to me what status we have from the other subsystems on the vehicle such as the ESC’s.  See powerpoint for details but it seems like power and current went to zero all of a sudden but I can’t see any other status information that would pinpoint why.
 
-@Alexander Alan Arnold see requested next steps in the plan field.
+### David Grosher, 2024-02-19
 
-### Eric Brewer, 2024-12-11
+@Cameron Chapman FYI, see below.
 
-@Cameron Chapman initial report indicates there were 2 flights in the US and this was its first flight in country.  I reviewed some of the flight logs, the current does spike over 200A total, but in reviewing other reference flights this does not appear out of the ordinary. @Alexander Alan Arnold
+### Cameron Chapman, 2024-02-19
 
-### Eric Brewer, 2024-12-20
+@Eric Brewer thank you for the data review. Please always upload to sharepoint and link vs Jira upload. Jira uploads cannot be further edited. Please also keep fields above updated as you progress.
+@Pat Wells, this seems likely caused by a contact failure, like the others. do we have records of if the HLB connector SB was applied? 
+Are they returning this vehicle soon? If we want to confirm, we could ask them to inspect the HLB power connector for damage/melted solder. 
+ https://jenaero.atlassian.net/browse/VXEP-12
 
-@Cameron Chapman @Alexander Alan Arnold are we good to move this one to implementing corrective actions?
+### Eric Brewer, 2024-02-19
 
-### David Grosher, 2025-01-07
+@Cameron Chapman moved powerpoint and updated status.
 
-@Cameron Chapman ping on the question below.
+### Pat Wells, 2024-02-19
 
-### Cameron Chapman, 2025-01-07
+@Cameron Chapman I will ask the operator to inspect the connector and HLB in accordance with the Air Worthiness directive.  At this time we do not know if the AD was applied.
+Regarding return of equipment- the system is currently deployed so there will be a delay on it’s return.
 
-@David Grosher @Eric Brewer  yes. I encourage you to update the plan and other fields as well as an investigation proceeds. Updating them can make statuses more clear vs just comments.
+### Pat Wells, 2024-02-20
 
-### Christa Meck, 2025-08-05
+@Cameron Chapman pictures of HLB and wing connectors attached. 
+It would appear that the AD was applied based on the mating decal seen on the center wing power connector.
 
-@Cameron Chapman and/or @Pat Wells we are we at on this investigation?  Looks like some service bulletins were not applied and that resulted in the crash.  We ok to close this from here or is there any additional work to be done.
-Leaving open until 12 Aug for feedback then closing.
+### Pat Wells, 2024-02-20
 
-### Pat Wells, 2025-08-05
+@Cameron Chapman added 3 more close up pictures of HLB connector.  
+I do not believe this battery was addressed by the AD.  Additionally the operator provided me with pictures of the rest of his HLB’s.  All had extreme amounts of glue squeeze out on the black connector.  I instructed the operator on how to clean them out and to no fly with them until this was completed.
 
-@Drew Hildreth @Jackson Riley Curvin @Alexander Alan Arnold See below from Christa
-Please advise and close out if necessary.
+### Cameron Chapman, 2024-02-20
 
-### Alexander Alan Arnold, 2025-08-05
-
-@Pat Wells the root cause is unclear, and CA is not implemented, I think it would be fine to close out if CA was implemented.
+Thanks @Pat Wells I do not see any indications of typical contact damage. Did the operator report any? 
+If not, the damage is likely in the battery or the center wing. From the data, it looks like the power reconnected after the incident, which makes it harder for them to identify the issue with basic troubleshooting. We could offer directions for them to open up the center wing for inspection, but it is likely better to recommend returning the equipment to us for inspection.
 
 ### Pat Wells, 2024-02-20
 
@@ -214,8 +196,8 @@ Operator unable to locate actual HLB that was installed in ACFT during the misha
 
 @Cameron Chapman AS150 contact measured 240 uohms (limit is 235) before cleaning. After cleaning measured 205 uohms. Data recorded in AS150 spreadsheet. Anti-spark measures 6.4 ohms.
 I am also attaching pictures of the contact before and after cleaning.
-[embedded file]
-[embedded file]
+[embedded: AS150 after cleaning.jpg]
+[embedded: AS150 before cleaning.jpg]
 
 ### Mark Squillante, 2024-08-27
 
@@ -231,7 +213,7 @@ AS150 power connector a little dirty but not unreasonable and looks to me like p
 ### Mark Squillante, 2024-08-27
 
 Left aft ESC/motor not spinning up. Took cover off of ESC and it is quite cooked. 11 ohms measured between input power and ground
-[embedded file]
+[embedded: IMG_20240827_142948164_HDR.jpg]
 
 ### Cameron Chapman, 2024-08-28
 
@@ -242,14 +224,14 @@ Left aft ESC/motor not spinning up. Took cover off of ESC and it is quite cooked
  @Eric Brewer would a bad aft left ESC cause this issue? Perhaps if the aft left ESC was taking too much power, it would cause the voltage to drop significantly for the front left ESC, which could then lead to the data seen below.  
 
 
-[embedded image-20240828-161137.png]
+[embedded: image-20240828-161137.png]
 
 ### Cameron Chapman, 2024-08-28
 
 Archiving old plan:
 @Eric Brewer these plots are strange. While it does look like there was a sudden power drop, it does not behave as expected. If Thr1 and 2 are high and the voltage is measuring 22V+, there still should be power and current flowing to the ESCs. It seems like the ESCs stopped receiving commands. Was there any power fault reported?
 
-[embedded image-20240827-153642.png]
+[embedded: image-20240827-153642.png]
 
 @Mark Squillante , while the resistance is over the limit, it does not explain that behavior. can you please test the minimum voltage a lift ESC will run and add that info to confluence? https://jenaero.atlassian.net/wiki/x/AoDiF  please also inspect the power contacts, inside the CW, and report any anomalies. 
 - Minimum voltage for a lift ESC to run is 7V regardless of throttle signal. Added this info to Confluence page.
@@ -280,7 +262,7 @@ Throttle 1 is left aft, 2 is left forward, 3 is right forward, 4 is right aft ac
 ### Hayden Jeanor, 2024-08-28
 
 Looks like they are working with batteries with the over application of TS23 problem on their batteries
-[embedded image-20240828-164333.png]
+[embedded: image-20240828-164333.png]
 
 ### Cameron Chapman, 2024-08-28
 
@@ -299,13 +281,13 @@ Please let me know if you have evidence to the contrary.
 ### Mark Squillante, 2024-08-28
 
 ESC PCBA destroyed, came out of enclosure in 2 pieces. I updated the ppt file with this info. See pics
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: IMG_20240828_132917601_HDR.jpg]
+[embedded: IMG_20240828_132825252_HDR.jpg]
+[embedded: IMG_20240828_132734029_HDR.jpg]
+[embedded: IMG_20240827_142948164_HDR (4a543c46-e06f-4933-922f-207b6720a2aa).jpg]
+[embedded: IMG_20240828_132804235_HDR.jpg]
+[embedded: IMG_20240828_132843974_HDR.jpg]
+[embedded: IMG_20240828_132925040_HDR.jpg]
 
 ### Mark Squillante, 2024-09-03
 
@@ -339,7 +321,7 @@ Saving findings from plan
 ### Jason Scherer, 2024-09-25
 
 @Eric Brewer I took a quick look at the logs and there is a landing abort that was triggered due to an attitude fault. Could be that the failed ESC caused the attitude fault. 
-[embedded image-20240925-161128.png]
+[embedded: image-20240925-161128.png]
 
 ### Alexander Alan Arnold, 2024-12-10
 

@@ -15,7 +15,7 @@
 
 Vault MFG PN: SC4240E-235467-BB
 PO MFG PN: SC4240EP-235467-BB
-[embedded image-20240730-161642.png]
+[embedded: image-20240730-161642.png]
 
 ## Comments (0)
 

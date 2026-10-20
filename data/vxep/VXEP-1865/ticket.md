@@ -50,7 +50,7 @@ I see a lot of vehicle low packet percentage in the event log, how would be conn
 This flight flew an orbit until a GoTO to IP1 was received. At which point it recovered as expected. 
 [21:42:02.490 1564.490] GoTo m,w 1  0
 @Alexander Alan Arnold is tracking down whether this is the correct dataset. 
-[embedded image-20260424-194351.png]
+[embedded: image-20260424-194351.png]
 
 ### Alexander Alan Arnold, 2026-06-04
 
@@ -64,10 +64,10 @@ This flight flew an orbit until a GoTO to IP1 was received. At which point it re
 
 @Alexander Alan Arnold @David Grosher it looks like there was quite a bit of wind in this flight, I see groundspeed up to 90fps while airspeed is still around 54.  Is there a report of how high the winds were?
 
-[embedded image-20260902-144130.png]
+[embedded: image-20260902-144130.png]
 In any case I agree it seemed like it tracked the orbit ok so I’m not sure what erratic behavior was observed.
 
-[embedded image-20260902-144221.png]
+[embedded: image-20260902-144221.png]
 
 ## Attachments (5)
 

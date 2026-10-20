@@ -23,13 +23,13 @@ Vault: "C:\JAI Vault 1\Projects\129 - LRR\Electrical Design\Wire Harness\2124772
 ### Connor Peebles, 2025-07-25
 
 assigning @Daniel Herrera to create drawing for following napkin sketch. You’ll have to create the harness document; I have not yet
-[embedded image-20250725-200514.png]
+[embedded: image-20250725-200514.png]
 
 ### Connor Peebles, 2025-07-31
 
 updated napkin drawing @Daniel Herrera  we want a 10” 28awg slate wire soldered to the GNDing tab of the ODU. Left free hanging
 
-[embedded image-20250731-195559.png]
+[embedded: image-20250731-195559.png]
 
 ### Daniel Herrera, 2025-07-31
 
@@ -39,7 +39,7 @@ updated napkin drawing @Daniel Herrera  we want a 10” 28awg slate wire soldere
 
 @Daniel Herrera We’re going to release this for B40 VBN module. Can you delete the 10” grey wire and add some standard connector potting compound with HS to contain said potting compound? After that I shall release it. Thank you!
 
-[embedded image-20260312-181637.png]
+[embedded: image-20260312-181637.png]
 
 ### Connor Peebles, 2026-03-12
 

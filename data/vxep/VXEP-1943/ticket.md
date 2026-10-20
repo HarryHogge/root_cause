@@ -35,7 +35,7 @@ Field Check - confirm SD Card is not corrupted
 - connect to Jennings GCS and see if you are prompted to reformat SD Card
 - Going to XCOMM webpage and confirming the SD1 card is mounted or if you are in ROM mode
 
-[embedded image-20260630-172430.png]
+[embedded: image-20260630-172430.png]
 
 ## Comments (11)
 
@@ -74,14 +74,14 @@ Line 4763: XCOMM Logging ends (no data around landing)
 
 No more XCOMM data until 2026/07/02
 ```
-[embedded image-20260708-231643.png]
+[embedded: image-20260708-231643.png]
 
 VTOL Logs:
 - Capture entire flight on 2026-06-26
 
 - no data from a launch abort
 
-[embedded image-20260708-231707.png]
+[embedded: image-20260708-231707.png]
 
 ### Alexander Alan Arnold, 2026-07-09
 

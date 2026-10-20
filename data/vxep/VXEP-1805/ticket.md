@@ -15,7 +15,6 @@
 - **Links:** clones VXEP-1765 (Fuselage Fuse Distribution Board AVBP2 Test Harness (2130896))
 - **Approvers:** Jeremy Kostel
 - **Epic Link:** VXEP-1762
-- **Issue color:** teal
 
 ## Description
 

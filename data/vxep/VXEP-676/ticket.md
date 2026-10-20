@@ -15,7 +15,6 @@
 - **Parent:** VXEP-675 Practice Build - 101-118007-01 & -02, Wire Harness Extensions
 - **Epic Link:** VXEP-675
 - **Start date:** 2024-09-20
-- **Issue color:** purple
 
 ## Comments (0)
 

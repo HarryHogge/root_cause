@@ -40,7 +40,7 @@ Altitude Control:
 Altitude appears to be normal/ everything agrees on altitude (AV knows where it is)
 Altitude control does look a little bit wonky with some almost 800 foot errors, I will investigate this next.
 
-[embedded image-20240809-201756.png]
+[embedded: image-20240809-201756.png]
 
 Landing:
 It exits the downward orbit early and starts its landing.
@@ -48,7 +48,7 @@ The message GoTo m,w 1 3 appears in the xcomm logs and that seems to trigger the
 
 The image below (will clean up for final report) shows the location of the goto command and the subsequent entry into the landing pattern. The final landing pattern only checks 2d position to confirm that it is close enough for landing and so continued with the landing regardless of the altitude mismatch. This incident looks due to operator impatience, if they had waited for the aircraft to continue its descent it would have entered the landing pattern normally.
 
-[embedded Artifact1.png]
+[embedded: Artifact1.png]
 
 ### Pat Wells, 2024-08-14
 

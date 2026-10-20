@@ -39,221 +39,140 @@ VTOL AP process of commands to motors with existing configuration and settings i
 
 ## Comments (84)
 
-### Jackson Riley Curvin, 2025-09-16
+### John Clark, 2024-06-06
 
-@Steve Gonzales any updates on this?
+@Greg Fryer , unless you object I can look into this while I await my HIL’s return?
 
-### Steve Gonzales, 2025-09-16
+### John Clark, 2024-06-07
 
-@Jackson Riley Curvin Yes, I have been actively working this.  PPT is about 7 days lagging.  So far this is what we know:  #3 motor tested noisy or bad in production re-test. Motor homing is about 186deg. from zero. No delay has been observed with this motor.  125ms standard delay only. Flight Logs are showing 1.2 and a 3.1 sec delay and almost no delay during the landing sequence.  Motors are producing negative current before transitioning, possible some spin, but brake should be latched.  ESC is sensitive to noise.  In addition, known issue with microchip causing delay on the analog comparator in Rev L errata.  I believe we have rev L chips.
+@Greg Fryer @David Grosher I have provided an analysis of both incidents. I haven’t done incident reports for a while so it might be prudent to put a second set of eyes on my work. I am happy to discuss my findings. Note I transitioned this to “Investigating Root Cause”. It really should be “In Review” I couldnt locate that.
+- Incident June 4, seems wind related.[embedded: VXE489 June 4 Investigation (065c2f8f-3d9f-4157-9e2a-6aa99178f345).pptx] 
+- Wind speeds were about 50% higher than reported at 7mph, the AC showed peak winds of 12 and 10-11 steady
+- The weathervaning looks to be about normal under the circumstances
+- The reported altitude loss seems to occur before transitioning to VTOL not after
+- The altitude was commanded by the FW-AP. The AC did what it was programmed to
+- Actual VTOL looks as expected.
+- Incident June 5, seems like an electrical issue.[embedded: VXE489 June 5 Investigation (2f128297-62ae-4103-9a8c-855647f0ca62).pptx] 
+- The boom currents both show drops when they should be ramping up more evenly, IMO  .
+- Might be related to throttle, but I didn’t see that.
+- Why both?
+- Was not severe, AC lost 50' before recovery. Some altitude loss on transition is typical.
+- I wasnt sure if the incident was said to show yaw or course excursions? That part of the flight looked typical, and I showed a comparison.
 
-### Drew Hildreth, 2025-09-22
+### David Grosher, 2024-06-11
 
-@Steve Gonzales How are we looking on this one? This ticket is very old and I am catching a lot of questions from the customer on this? Are we to a point where RMA can have the aircraft back to get ESC’s or Motors replaced. I know you were still trying to nail down what all was effected. 
+@Eric Brewer This is related to the other issues we are seeing on transition. Can you also look into these? There are enough issues related to transition that I think we should take a step back and take a more comprehensive look at the fixes and features that we need to implement to generally implement a more consistent and stable transition.
 
-@Lauren Velasquez FYSA
+### Eric Brewer, 2024-06-12
 
-### Steve Gonzales, 2025-09-22
+@David Grosher @Pat Wells See attached powerpoint.  To me this doesn’t look related to other transition issues, this simply looks like a vehicle limitation where we cannot transition with this much tailwind.  The VTOL system is maxed out trying to counter the moments from the aero surfaces and the vehicle experiences a large roll and pitch excursion.  I will see if I can recreate this in the simulator to see if there are any potential mitigations we can recommend in the near term.
 
-@Drew Hildreth Hi, see updated notes above from Friday.  It looks like the VTOL had a flag that purposely sent #3 motor to standby/brake state, causing the delay seen.  The motor and esc are not perfect but did not cause the delay.   We ticket needs to go back to FW to understand the logic for control of the A/V.  This does not seem to be a glitch in the code but that is our current state.  I would replace all 4 esc/motor combos and replace the VTOL pcb and sensor inputs to the VTOL, but this will not address the FW control logic.  That may be a long-time FW revision fix.  Note this issue could be upstream of the FW logic and coming from a sensor input.  This behavior is not new.  It was seen in 2023 but not fully recognized or examined.  I see the same issue in the plots from 4/2023, although without plotting the flags or state condition of the vtol, the same motor 3 dark blue goes to standby/brake the flat blue lines near 0.  
-[embedded image-20250922-173936.png]
+### Eric Brewer, 2024-06-13
 
-### Drew Hildreth, 2025-09-22
+@David Grosher @Pat Wells I was not able to reproduce this in the sim, I suspect we do not have the transition/stall dynamics modeled well enough to capture the behavior we’re seeing.
 
-@Steve Gonzales Awesome. Thank you.
+### Pat Wells, 2024-06-13
 
-### Steve Gonzales, 2025-10-01
+@David Grosher @Eric Brewer are you ok with me passing your findings along to LM?  Along with the powerpoint report?
 
-@Scott Whitney @Eric Brewer @Drew Hildreth  Hi Eric, this report is ready for you to review.  I believe the flight control command sent to the motor to go to steady state is causing the delay in current seen.  VXE-489 Investigation Report Draft 01.pptx
+Root Cause
+Excessive tailwind on approach.
+**Corrective Action**
 
-### Steve Gonzales, 2025-10-27
+Avoid tailwind on approach. Examining other mitigations to see what’s possible.
 
-Report is up to date. Performed setup for flight replay 10/24/25
+### Eric Brewer, 2024-06-14
 
-### Steve Gonzales, 2025-10-28
+@Pat Wells @David Grosher I had taken a quick look at this and then moved onto another investigation.  On the June 5 flight there is not that much wind (estimate is <4 fps, 2.5 knots).  I added a few plots in backup showing the throttle and currents for each flight along with a reference flight.
+The throttle does appear maxed out on the climb and again on the transition, maybe a little moreso than a typical flight.  The MSL altitude is less than 3kft.
+See chart 7, it appears that motor 3 is not drawing any current during the excursions, almost like it has a startup lag.  @Cameron Chapman Have you seen anything like this before?
 
-Completed dyno testing 10/27
+### Eric Brewer, 2024-06-14
 
-### Steve Gonzales, 2025-10-29
+@Pat Wells @David Grosher updated recommendation slide.  It appears that motor 3 is slow to respond on transition, recommend swapping it out.
 
-Report completed, moved to D4 RCR @Drew Hildreth FYSA @Eric Brewer @Cameron Chapman
+### Pat Wells, 2024-06-17
 
-### Eric Brewer, 2025-10-29
+@Eric Brewer is the initial report about tailwind no longer applicable?
 
-@Steve Gonzales thanks for running the testing.  I created an associated ticket that we can try to get into the next software release as a corrective action.  @David Grosher @Scott Whitney FYI.
-Jira
+### Cameron Chapman, 2024-06-17
 
-### David Grosher, 2025-10-29
+@Eric Brewer please always save ppt to sharepoint and add link to description. Presentations uploaded to Jira cannot be modified, added to, commented on, etc. Please delete previous presentation attachments as well to prevent confusion. 
+The latest presentation attached does not say anything I see proving a slow motor reaction. I have not seen a slow motor reaction before. 
+I recommend holding on any action until these questions and actions are answered.  
+FYI @Pat Wells
 
-@Eric Brewer @Steve Gonzales I don’t understand the analysis or the corrective action here, more detail will need to be added to the report to connect the dots, show additional code analysis and follow on testing to confirm the hypothesis.
+### Eric Brewer, 2024-06-17
 
-### Eric Brewer, 2025-10-29
+@Cameron Chapman The link to the presentation was buried in previous comments.  The two attached were from John’s original investigation.  Here is the presentation I referenced.
+AV489_TransitionBehavior.pptx
+@Pat Wells yes that’s right, my initial look I thought the attitude excursion was due to tailwind but on closer inspection I realized that rotor 3 was not spooling up as expected.
 
-@David Grosher I think slides 20/21 show the relevant dyno data that reproduces delays with the inputs from the flight.  I think more characterization of the exact conditions that recreate the issue and subsequently what can correct the issue will be required.  I think the reproduction is sufficient to move from investigation to corrective actions.
+### Cameron Chapman, 2024-06-18
 
-Agree the report needs some consolidation/cleanup to make it more clear.
-
-### Steve Gonzales, 2025-10-30
-
-@David Grosher @Eric Brewer I updated slide 6,9 for clarity.  Improved slide 15.  Added slide 20 for code explanation.
-
-### Cameron Chapman, 2025-11-04
-
-Pasting info that no longer belongs in the plan field. 
-
-
-10/29/25
-Plan to have CA accepted or move to closed D8.  
-10/28/25
-Plan to update report by 10/28 from completed dyno testing on 10/27.
-10/23/25
-Plan to do a verification dyno flight profile test on 10/24/25 and 10/27/25 as a first step before considering tuning.  
-10/7/25
-Plan to review and respond to Eric’s comments by end of week.
-9/22/25
-Plan to update report and give to FW team for further evaluation. Please notify team when ready to review. 
-
-9/11/25
-Plan to possibly add load, lower voltage and retest for motor delay.  Understand if ESC or motor related or neither.  Scope timing from software command to input at esc to output at esc to motor open commutation to closed loop commutation cycle.  Understand if comm related or where the breakdown takes place.
-
-9/2/25
-Prepping to test today.
-8/20
-Plan to test by the end of the month. 
-8/5/25
-Extending testing to 8/11 to 8/15.  Sharing O-scope with Block 35-40 development and other priorities.
-7/23/25
-Plan to retest motor this week and send to Magicall afterwards.
-7/15/25
-Plan to send unit out to Magicall for further troubleshooting by the end of the week.  I may perform one additional test before that.  
-7/9/25
-Plan to characterize the SPI communication lines between the ESC and Motor (this may be the cause of the delay) by 07/14/25
+@Eric Brewer Thanks for sending the updated ppt. Agreed, that is good evidence of motor power not matching commanded. Since it worked after that short period, damage is unlikely, but possible. I have not seen this before. Earlier, there seems to be no response from all motors. It could be the start up time of the ESCs. If that is the case, I would think it was better to start them before they are needed (ex: throttle signal should be a flat step vs actually trying to control)
+[embedded: image-20240618-175437.png]
 Some potential causes:
 - Task or processor lock up on either the VTOL AP or motor ESC. @Eric Brewer is this possible, or would more tasks lock up/not recover in this case?
-- Loose connection in either harness or one of the PCBs. EEs can investigate.
+- Loose connection in either harness or one of the PCBs.  EEs can investigate.
 - @Eric Brewer do vbatt and other VTOL AP power signals look normal during this period?
 
-Recommended next step options for aircraft . Discussed with @Eric Brewer and he agrees. 
+Recommended next step options for aircraft .
+- Return whole aircraft for inspection and troubleshooting.
+- Return just motor assembly 3. Ground that center wing and boom until investigation has more information.  I don’t think we have yet proved it is isolated to the motor assembly.
+
+### Eric Brewer, 2024-06-18
+
+@Cameron Chapman I added some plots and a few other charts to the end of backup - nothing jumped out as a possible cause there.  I did not see any evidence of a task locking up.
+The couple second lag at the start seems pretty typical, see reference flights on slide 12.  It’s interesting too that the motors are still drawing current, just not ramping up as expected.
+
+### Cameron Chapman, 2024-06-18
+
+@Eric Brewer The couple second lag at the start seems pretty typical, see reference flights on slide 12. It’s interesting too that the motors are still drawing current, just not ramping up as expected.
+This current draw is probably from the ESC startup motor warning tones, then the idle draw as the ESCs boot, before the motors are driven.
+
+### Cameron Chapman, 2024-06-18
+
+@Pat Wells I discussed with Eric and added this potential next step. 
 - If LM operators are comfortable with the motor test page, they could test each motor sequentially, paying close attention to motor 3 to see if there is a lag from the command to the activation, or any other issues. If observed, replace motor assy 3 and see if fixed.  If not, see below.
 - Return whole aircraft for inspection and troubleshooting.
 - Return just motor assembly 3. Ground that center wing and boom until investigation has more information. I don’t think we have yet proved it is isolated to the motor assembly.
 
-Above steps completed.  Lockheed ran motor tests and saw significant delays on motor 3.  See description here:
-https://jenaero.atlassian.net/browse/VXEP-426?focusedCommentId=37781 
-Step 1: see if we can reproduce this behavior.  If we can and it is repeatable, we’ll want to go about instrumenting the system to isolate where the motor delay is coming from.
-isolate between AP VTOL and Motor 3 ESC 
-- Hook up V489 CW to Iron Bird and perform Safety Motor test using webpage 
-- If VTOL AP issue then motor 3 should lag on launch 
-- VTOL webpage would not load up - potentially SD card issue? 
-- fixed by switching to new industrial sd card
-- Hook up V489 Booms to Iron Bird and perform Safety Motor test using webpage 
-- If Motor 3 is bad then the issue should be replicated
-- No issues seen with motor 3. Motor 1 would restart when initially given throttle
-- Retest V489 motors and try to replicate issue
+### Pat Wells, 2024-06-20
 
-### Cameron Chapman, 2025-11-04
+@Cameron Chapman next steps passed to LM.
 
-Pasting info that no longer belongs in status field. 
-10/16/25
-Report is up to date. Replied to all comments.
-9/19/25
-Found flag state(s) in the vtol FW on motor 3 which brought down throttle command to idle before sending it to 93% causing the delay in current draw seen specific to motor 3.  In addition, a general delay has been found from the vtol fw control mixer to at least 3/4 motors after 1957.
-[embedded image-20250919-190452.png]
- 
+### Pat Wells, 2024-06-25
 
-9/11/25
-#3 motor tested distorted at low speed (THD ~2%) 2x good motor, higher 2nd harmonic, noisier FFT floor, some mechanical imbalance or winding asymmetry possible.  8 captured runs did not cause a delay with manual PWM injection from RC controller direct to ESC.  10+ informal runs did not cause a delay.  High speed harmonics ok.  Delay seen was 125ms, ok.  Need to check if homing is ok. 
-8/5/25
-Received magnet wire insulation removal tools.
-7/21/25
-Performed more testing with mixed results.  Not obtaining good conductivity.  Ordered proper tools to remove the insulation on the magnet wire.  
-7/15/25
-On motor #3, tested back emf on phase AB, AC, and BC.  Found reduced amplitude and waveform distortion all phases.  Possible rotor/magnet issue(s), defect(s) from the OEM.  Possible root cause found for delay seen.   
+@Cameron Chapman @Eric Brewer 
+Received feedback from LM based on the tests we asked them to perform.  
+See below: 
+I performed some motor checks and was not comfortable with the results. Will likely ask to return the wing set.
+All “motor tests” (except launch wizard checks) were performed using the VTOL controller website Motor Test page. Tests were performed with default settings; Test Throttle = 1150uS and Duration = 1000mS.
+- Motor test 1. Motor #1 started immediately, #2 immediately, #3 2-second delay, #4 immediately.
+- Motor test 2. Motor #1 started immediately, #2 didn’t start. Wing no longer responding to commands. Safed system by depressing the flashing red light on the center wing. Cycled power to the center wing.
+- Launch Wizard test 1. All motors worked normally.
+- Launch Wizard test 2. All motors worked normally. When safing the system I heard it annunciate twice. The normal beep-beep was followed quickly by another beep-beep as though the ESC’s didn’t all get the safe command at the same time. I have also heard this happen when plugging in the HLB.
+- Motor test 4. Motor #1 started immediately, #2 immediately, #3 2-second delay, #4 immediately. The web page stopped responding. Page went blank, Safed system by depressing the flashing red light on the center wing. Cycled power to the center wing. Had problems getting the web page to load, probably due to the power cycle. Closed browser and restarted.
+- Motor test 5. Motor #1 started immediately, #2 immediately, #3 didn’t start. #4 didn’t start. The web page stopped responding. Page went blank, Safed system by depressing the flashing red light on the center wing.
+- Motor test 6. Tried a different sequence. Motor #3 started immediately, #4 immediately, #1 didn’t start, #2 started immediately along with #1 which may have started after a delay. When safing the system I heard it annunciate twice.
 
-7/9/25
-VTOL motor 3 tested 3x in production per ESC/Motor checkout procedure.  Deemed as a reject due to scratchy noise while running, un-smooth manual operation, different overall tonality while running.  
+Forgot to produce the AAR until after I disconnected and closed the software. Reopened, reconnected, downloaded the FDR. The files should be there. I won’t be able to post them today.
+I have little confidence in this wing set.
 
-6/13/25
-FW check on ESC initial code check seems ok.  XTAL on ESC PCB measures 15.4Mhz or 15.94Mhz pending confirmation picture and stable through hot and cold.  
+### Pat Wells, 2024-06-27
 
-5/9/25
-Investigating VTOL current delay to PWM output of VTOL pcb to ESC-motors 1-4.  Added slide #9. 
+@Cameron Chapman @Eric Brewer added AAR to go along with motor testing in my comment below.
+AAR is from 6/25
 
-5/22/25
-VTOL motor 3 right rear esc may have not gotten programmed incorrectly and that may be why there was a delay on during the flight. Ran motor through production FW checkout test only and no issues were seen.
+### Eric Brewer, 2024-07-19
 
-Motor 3 slow to respond on transition. Cause unknown. See powerpoint here:
-https://jenaero.sharepoint.com/:p:/r/sites/FlightSafety/Shared%20Documents/Incident%20Reports/VXE489_TransitionBehavior/AV489_TransitionBehavior.pptx?d=w08391b63f9d74495832b366250a34f71&csf=1&web=1&e=mGlFLj 
+@Pat Wells has this bird been returned yet? We have seen similar issues on another bird and would like to run this to ground ASAP.  @David Grosher @Cameron Chapman
 
-VTOL AP board will not boot up to webpage 3/10/25
-- Most likely SD card issue 
-- Replacing old SD Card with newest one and uploading newest firmware to motor test
+### Pat Wells, 2024-07-22
 
-
-- Tested booms on the Iron Bird with Iron Bird’s VTOL Board and did not see an issue with motor 3. However, when initially spinning Motor 1 the ESC would reset and then I was able to command throttle normally. 
-- If the VTOL Board connects to the webpage and spins the motors normally, I believe the issue would be isolated down to the ESC/Motor
-
-3/12/25 Morning 
-SD card replaced with new Industrial card and is able to boot up webpage. Old SD card is on my (Adrian G) workbench 
-- Have not updated Firmware or flashed new SD Card. CW tested on the Iron Bird with Iron Bird’s VTOL motor and each motor spun up normally and expected. I did not see any delay in motor 3 nor did I experience any of the resets I motor 1 had when I initially tested.
-
-3/12/25 1:46 PM
-### Update: V489 SD Card and Motor Testing on Iron Bird
-
-- V489 SD Card & Firmware: The SD card was not flashed, and the firmware was not updated.
-- Iron Bird Motor Test: The CW was connected to the Iron Bird, and the IB motors were spun. No anomalies were observed, and the issue could not be replicated.
-
-### V489 Motors on IB AP Board
-
-- Motor #1 reset upon the first command but subsequently responded immediately when commanded.
-- Motor #3 did not exhibit any issues and could not replicate any previous anomalies.
-
-### V489 CW and ESC/Motors on IB
-
-- The previously reported issue where Motor #3 exhibited a 2-3 second lag could not be reproduced.
-- Various motor sequences were tested, with all motors spinning up immediately.
-
-### Motor Test Sequences & Results
-
-| Test # | Sequence | Result |
-| 1 | #1, #2, #3, #4 | All motors started immediately (required two clicks to start) |
-| 2 | #1, #2, #3, #4 | All motors started immediately (required two clicks to start) |
-| 3 | #2, #1, #3, #4 | Initial motor command caused webpage refresh |
-| 4 | #2, #1, #3, #4 | All motors started immediately |
-| 5 | #3, #1, #2, #4 | Initial motor command caused webpage refresh |
-| 6 | #3, #1, #2, #4 | All motors started immediately |
-| 7 | #4, #1, #2, #3 | All motors started immediately |
-| 8 | #4, #1, #2, #3 | All motors started immediately |
-
-### Observations:
-
-- Instances where the webpage refreshed appeared to be caused by issuing commands too quickly.
-- No significant delays or abnormalities were observed across the motor tests.
-
-
-4/1/25 Has not moved forward; no resources allocated.
-
-### Cody Smisek, 2025-11-18
-
-@Jacob Troyer @Drew Hildreth cases are over in engineering, can it be returned to RMA?
-
-### Drew Hildreth, 2025-11-18
-
-@Cody Smisek I have the report for that aircraft too. I am good with it going back to RMA.
-
-### Everett Werner, 2026-02-17
-
-I was able to cause a vxe30 esc and motor to fail to start with the following throttle input:
-[embedded image-20260217-230747.png]
-I tried again later in the day and could not get it with the same level of regularity. I recommend the next motor that has this issue be given to engineering for testing and hopeful replication on the dyno stand. It is worth noting that this isnt the exact same profile as we see in flight as the motor isnt delayed but not starting at all.
-
-### Everett Werner, 2026-02-20
-
-NCR List - AC 995 - Flight Test - Abnormal transition
-
-### Eric Brewer, 2026-05-05
-
-Incident investigation is closed.  Root cause analysis/corrective actions for the slow motor startup are ongoing but this investigation is closed.
+@Eric Brewer it has not been returned.  Would you like me to request that they return it for further investigation?  
+@Sean Odell  FYSA
 
 ### Eric Brewer, 2024-07-22
 
@@ -308,7 +227,7 @@ I noticed that ibatt2 current is consistently lower than ibatt1 by about 20 amps
 
 @Rajesh Budhabhatti see plot, let me know if you’d like to discuss.
 
-[embedded image-20240828-190117.png]
+[embedded: image-20240828-190117.png]
 
 ### Rajesh Budhabhatti, 2024-08-28
 
@@ -407,7 +326,7 @@ FYSA @Cameron Chapman @David Grosher
 
 Tested V489 motors on the iron bird and every time, on its first spin up, Motor 1 (from the VTOL Webpage) would restart and then upon testing motor 1 would spin on command. No other motor did this and all spun on command. Below I attached a video to show what happened. 
 Motor 1 is the Clock-Wise Left wing in this case 
-[embedded MicrosoftTeams-video.mp4]
+[embedded: MicrosoftTeams-video.mp4]
 @Cameron Chapman @David Grosher @Eric Brewer
 
 ### Eric Brewer, 2025-03-11
@@ -425,22 +344,22 @@ Switched SD card to the new industrial one and the CW was able to connect to the
 ### Adrian Garcia, 2025-03-12
 
 Copied from Issue Status 
-### Update: V589 SD Card and Motor Testing on Iron Bird
+**Update: V589 SD Card and Motor Testing on Iron Bird**
 
 - V589 SD Card & Firmware: The SD card was not flashed, and the firmware was not updated.
 - Iron Bird Motor Test: The CW was connected to the Iron Bird, and the IB motors were spun. No anomalies were observed, and the issue could not be replicated.
 
-### V589 Motors on IB AP Board
+**V589 Motors on IB AP Board**
 
 - Motor #1 reset upon the first command but then responded immediately when commanded.
 - Motor #3 did not exhibit any issues and could not replicate any previous anomalies.
 
-### V589 CW and ESC/Motors on IB
+**V589 CW and ESC/Motors on IB**
 
 - The previously reported issue where Motor #3 exhibited a 2-3 second lag could not be reproduced.
 - Various motor sequences were tested, with all motors spinning up immediately.
 
-### Motor Test Sequences & Results
+**Motor Test Sequences & Results**
 
 | Test # | Sequence | Result |
 | 1 | #1, #2, #3, #4 | All motors started immediately (required two clicks to start) |
@@ -452,7 +371,7 @@ Copied from Issue Status
 | 7 | #4, #1, #2, #3 | All motors started immediately |
 | 8 | #4, #1, #2, #3 | All motors started immediately |
 
-### Observations:
+**Observations:**
 
 - Instances where the webpage refreshed appeared to be caused by issuing commands too quickly.
 - No significant delays or abnormalities were observed across the motor tests.
@@ -508,7 +427,7 @@ Please advise and close out if necessary.
 ### Steve Gonzales, 2025-09-22
 
 @Drew Hildreth Hi, see updated notes above from Friday.  It looks like the VTOL had a flag that purposely sent #3 motor to standby/brake state, causing the delay seen.  The motor and esc are not perfect but did not cause the delay.   We ticket needs to go back to FW to understand the logic for control of the A/V.  This does not seem to be a glitch in the code but that is our current state.  I would replace all 4 esc/motor combos and replace the VTOL pcb and sensor inputs to the VTOL, but this will not address the FW control logic.  That may be a long-time FW revision fix.  Note this issue could be upstream of the FW logic and coming from a sensor input.  This behavior is not new.  It was seen in 2023 but not fully recognized or examined.  I see the same issue in the plots from 4/2023, although without plotting the flags or state condition of the vtol, the same motor 3 dark blue goes to standby/brake the flat blue lines near 0.  
-[embedded image-20250922-173936.png]
+[embedded: image-20250922-173936.png]
 
 ### Drew Hildreth, 2025-09-22
 
@@ -610,7 +529,7 @@ Pasting info that no longer belongs in status field.
 Report is up to date. Replied to all comments.
 9/19/25
 Found flag state(s) in the vtol FW on motor 3 which brought down throttle command to idle before sending it to 93% causing the delay in current draw seen specific to motor 3.  In addition, a general delay has been found from the vtol fw control mixer to at least 3/4 motors after 1957.
-[embedded image-20250919-190452.png]
+[embedded: image-20250919-190452.png]
  
 
 9/11/25
@@ -650,22 +569,22 @@ SD card replaced with new Industrial card and is able to boot up webpage. Old SD
 - Have not updated Firmware or flashed new SD Card. CW tested on the Iron Bird with Iron Bird’s VTOL motor and each motor spun up normally and expected. I did not see any delay in motor 3 nor did I experience any of the resets I motor 1 had when I initially tested.
 
 3/12/25 1:46 PM
-### Update: V489 SD Card and Motor Testing on Iron Bird
+**Update: V489 SD Card and Motor Testing on Iron Bird**
 
 - V489 SD Card & Firmware: The SD card was not flashed, and the firmware was not updated.
 - Iron Bird Motor Test: The CW was connected to the Iron Bird, and the IB motors were spun. No anomalies were observed, and the issue could not be replicated.
 
-### V489 Motors on IB AP Board
+**V489 Motors on IB AP Board**
 
 - Motor #1 reset upon the first command but subsequently responded immediately when commanded.
 - Motor #3 did not exhibit any issues and could not replicate any previous anomalies.
 
-### V489 CW and ESC/Motors on IB
+**V489 CW and ESC/Motors on IB**
 
 - The previously reported issue where Motor #3 exhibited a 2-3 second lag could not be reproduced.
 - Various motor sequences were tested, with all motors spinning up immediately.
 
-### Motor Test Sequences & Results
+**Motor Test Sequences & Results**
 
 | Test # | Sequence | Result |
 | 1 | #1, #2, #3, #4 | All motors started immediately (required two clicks to start) |
@@ -677,7 +596,7 @@ SD card replaced with new Industrial card and is able to boot up webpage. Old SD
 | 7 | #4, #1, #2, #3 | All motors started immediately |
 | 8 | #4, #1, #2, #3 | All motors started immediately |
 
-### Observations:
+**Observations:**
 
 - Instances where the webpage refreshed appeared to be caused by issuing commands too quickly.
 - No significant delays or abnormalities were observed across the motor tests.
@@ -696,7 +615,7 @@ SD card replaced with new Industrial card and is able to boot up webpage. Old SD
 ### Everett Werner, 2026-02-17
 
 I was able to cause a vxe30 esc and motor to fail to start with the following throttle input:
-[embedded image-20260217-230747.png]
+[embedded: image-20260217-230747.png]
 I tried again later in the day and could not get it with the same level of regularity. I recommend the next motor that has this issue be given to engineering for testing and hopeful replication on the dyno stand. It is worth noting that this isnt the exact same profile as we see in flight as the motor isnt delayed but not starting at all.
 
 ### Everett Werner, 2026-02-20

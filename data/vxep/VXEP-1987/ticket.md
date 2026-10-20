@@ -75,18 +75,18 @@ https://jenaero.atlassian.net/browse/VXEP-1987?focusedCommentId=101341
 
 TLDR, unless we are provided additional information that obviously indicates some type of problem, the aircraft appears to be operating as currently designed. 
 @Michael Lindsay Low energy RTB occurs based on the APs calculation of several variables. Described on slide 7 of this ticket and screenshot provided for easy reference. https://jenaero.atlassian.net/browse/FS2-4161 . 
-[embedded image-20260901-212646.png]
+[embedded: image-20260901-212646.png]
  The aircraft was being operated at or in exceedance of current published wind limitations for both ground and cruise. During cruise, AP indicated up to 60fps of wind (60fps = 40.9mph). On the ground the IAS was jumping from 20fps up to 32fps (32fps =21.8mph).
-[embedded image-20260901-212804.png]
+[embedded: image-20260901-212804.png]
 During orbit the aircraft was toggling in and out of our dash mode (as designed) to maintain positive/forward ground speed. Average power throughout the flight was closing in on 700W. If  
-[embedded image-20260901-213050.png]
+[embedded: image-20260901-213050.png]
 If we review our endurance section of the manual, which certainly is a finger wag estimate, we see that 14km (~8.5mi) we’d expect no more than 2hrs time on station in 40mph winds. I think that’d be generous.  
-[embedded image-20260901-213232.png]
+[embedded: image-20260901-213232.png]
 Below are a few variables plotted against time. Sorry some units / axis titles are missing. 
-[embedded image-20260901-213751.png]
+[embedded: image-20260901-213751.png]
 
 Below is from the ‘log’ file which is the Legacy GCS data. I think one could certainly argue that the estimated endurance remaining is pretty poor. But I don’t think this is something new / surprising to long time operators of this system. Dave’s team would need to weigh in on whether that aspect is ‘expected’ (I think it is) and whether they have time or resources to improve it. 
-[embedded image-20260901-220744.png]
+[embedded: image-20260901-220744.png]
 
 ### Michael Lindsay, 2026-09-01
 
@@ -107,7 +107,7 @@ Below is from the ‘log’ file which is the Legacy GCS data. I think one could
 ### Eric Brewer, 2026-09-16
 
 @David Grosher I took a quick look.  GPS was available for this entire flight, so the issue present in Churchill was not here.  The groundspeed was within bounds (though really fast due to the winds).
-[embedded image-20260916-203427.png]
+[embedded: image-20260916-203427.png]
 Another quick update on the Churchill logs - the groundspeed displayed in the apGpsGs is direct from the NovAtel, and is not (intended to be) used by the RTB calculations.
 
 There is a bug though where both DR and the receiver groundspeed and position are briefly written to the DR state, which causes a big jump in position - that was actually what caused the RTB in the Churchill case.  See ticket for details.

@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Greg Fryer
 - **Links:** duplicates VA-857 (Generate Mod Payload appendix for VXE30)
-- **Issue color:** purple
 
 ## Comments (1)
 

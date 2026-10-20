@@ -11,9 +11,6 @@
 - **Assignee:** Everett Werner
 - **Creator:** Matt Philley
 - **Parent:** VXEP-1113 Update Wet Layup Components to Pre-Preg due to Urethane Obsolescence
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 
 ## Description
 
@@ -38,11 +35,11 @@ Post-Flight - Assessment from FLOPS if after flying the prepreg wings appear any
 
 ### Everett Werner, 2025-03-19
 
-[embedded image-20250319-215748.png]
+[embedded: image-20250319-215748.png]
 Pack 13292 (Assuming that this is the original tip)
 
 
-[embedded image-20250319-215954.png]
+[embedded: image-20250319-215954.png]
 Pack 14025 (Assuming that this is the new wingtip)
 
 The integral term for roll is slightly different (positive vs negative) in the 14025 pack but nothing alarming. I would say from a flight sciences perspective this wingtip is good to go.

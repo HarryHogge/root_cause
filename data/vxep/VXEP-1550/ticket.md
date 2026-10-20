@@ -11,7 +11,6 @@
 - **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
 - **Links:** relates to XKIT-5456 (Ranked B40 firmware electrical requests); relates to FS2-2522 (B30+40: Implement 12V load shedding when vbatt gets too low or overcurrent detected. ); relates to FS2-3976 (Automatic load shedding or shutoff recommendations in certain flight phases to optimize endurance); relates to BAT-402 (MPQ600 28V Converter Thermal Shutdown); relates to BAT-1143 (Quantify the contribution of 56V load on heating up the 28V converter/reducing its capacity)
 - **Epic Link:** VXEP-1549
-- **Issue color:** orange
 - **Issue Status:** B40 Load Shedding Trade.pptx
 
 ## Description

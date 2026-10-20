@@ -15,7 +15,6 @@
 - **Parent:** VXEP-670 VXE30 Std Wing Utility Drop - Pre-Production - Supply Chain Actions
 - **Epic Link:** VXEP-670
 - **Start date:** 2024-10-07
-- **Issue color:** purple
 
 ## Comments (1)
 

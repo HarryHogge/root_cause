@@ -8,9 +8,6 @@
 - **Reporter:** Eric Brewer
 - **Creator:** Eric Brewer
 - **Parent:** VXEP-1560 LRR Software for April 2026 Final Delivery
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-9
-- **Issue color:** orange
 
 ## Comments (0)
 

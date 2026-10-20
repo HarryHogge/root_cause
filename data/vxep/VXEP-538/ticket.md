@@ -24,11 +24,11 @@ See attached TIQUILA report and photos. Snips failed on first use, need to deter
 Knipex 70 05 140 Diagonal Cutter 5,51" chrome plated - Amazon.com
 Chrome plated Knipex diagonal cutters made in Germany.
 
-[embedded image-20240911-205156.png]
+[embedded: image-20240911-205156.png]
 
 The Klein cutters we currently spec had the following review on Amazon:
 
-[embedded Screenshot 2024-09-11 134805.png]
+[embedded: Screenshot 2024-09-11 134805.png]
 
 ### Noah Richardson, 2024-09-11
 

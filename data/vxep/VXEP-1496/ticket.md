@@ -12,7 +12,6 @@
 - **Creator:** Michael Mohr
 - **Labels:** TIQUILA
 - **Links:** relates to RMA-794 (VXE-575 RMA 250902-1)
-- **Issue color:** purple
 - **Customer:** TIQUILA
 - **Corrective Action:** Upload OGCS 1.3.0
 - **Plan:** RMA completed, uploaded OGCS 1.3.0 successfully.
@@ -39,7 +38,7 @@ VXE575 MCM will not accept OGCS update. Jeff Hartsell (LM) behind RMA area repor
 
 ### Jackson Riley Curvin, 2026-01-13
 
-[embedded image-20260113-182223.png]
+[embedded: image-20260113-182223.png]
 
 ## Attachments (1)
 

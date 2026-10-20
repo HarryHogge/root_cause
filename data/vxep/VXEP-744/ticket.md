@@ -11,7 +11,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Links:** split from XKIT-1782 (MCM Software (Broker + TIQ VSM))
-- **Is this ticket a Design Project?:** No
 - **Project Tier:** Tier 1
 - **Design Plan Link:** https://jenaero.atlassian.net/wiki/x/AYC7GQ
 - **Project Schedule:** https://jenaero.sharepoint.com/:u:/s/IRAD/ETr7UFxbdbRKhVOg1eX_mCUBRTkcnJBE0XXs60PDBt3gJg?e=RVvZAC

@@ -26,7 +26,7 @@ when the user had control in web app and attempted to conduct the launch wizard 
 
 ### Alexander Alan Arnold, 2026-07-16
 
-[embedded Video.805910644.861582_9306.mp4]
+[embedded: Video.805910644.861582_9306.mp4]
 @Ted Trowbridge attached is a video of the issue
 
 ### Ted Trowbridge, 2026-07-16

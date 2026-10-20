@@ -11,7 +11,6 @@
 - **Parent:** SP-133 Block 30 and 35X transponder systems
 - **Links:** relates to XKIT-2119 (LRR Flyoff July 18); blocks LRRSUAS-455 (Final 3 Systems Delivered)
 - **Start date:** 2025-05-03
-- **Issue color:** purple
 - **LRR Desired Delivery Date:** 2025-08-01
 - **LRR Required Delivery Date:** 2025-08-01
 - **Product/Tech Owner:** Charles David Madewell

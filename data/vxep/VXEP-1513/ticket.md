@@ -36,15 +36,15 @@ Regarding reported ‘inability’ to charge HLB, it appears for this flight, op
 
 ### Jackson Riley Curvin, 2025-09-25
 
-[embedded image-20250925-140542.png]
+[embedded: image-20250925-140542.png]
 
 ### Cody Smisek, 2025-10-06
 
 @Sean Wendling 
 Just looked at the most recent flight in the logs. I see a reactor unexpected high (19472), which I’m guessing is what they’re referring to (although, I’m not sure how they know that, unless we recently implemented error deciphers in recent GCS SW). 
 Also, not sure what happened around 2100sec, looks like fuel cell stopped outputting power. Not only that, do we have a bug where in air fuel cell restart resets fuel remaining?
-[embedded image-20251007-022127.png]
-[embedded image-20251007-022823.png]
+[embedded: image-20251007-022127.png]
+[embedded: image-20251007-022823.png]
 
 ### Cody Smisek, 2025-10-06
 
@@ -57,7 +57,7 @@ Also, not sure what happened around 2100sec, looks like fuel cell stopped output
 ### Cody Smisek, 2025-10-07
 
 I was thinking that ‘GRemain’ was keeping track of actual remaining but maybe that’s not? Looks like ‘Burned’ kept track through the restart so not sure what the user would have seen for fuel remaining. 
-[embedded image-20251007-145012.png]
+[embedded: image-20251007-145012.png]
 
 ### Sean Wendling, 2025-10-07
 
@@ -65,9 +65,9 @@ All,
 First general notes, Fuel cell is a First Gen D450 / Not our latest hardware and also not running on the same software as the flagship product we are selling to the big programs right now (not that this reduces the urgency or need to address it, just want to tighten the scope of the investigation and not worry anyone about our more… vocal customers. 
 Three issues to address in this ticket:
 - Cody is correct that the “depletion” of the HLB is related to the rapid ascent and insufficient time for the fuel cell to rebound. You can see the prolonged period of ~1500W use resulting in depletion of the battery voltage while the fuel cell is still delivering power (just not enough to overcome the draw).
-[embedded image-20251007-165112.png]
+[embedded: image-20251007-165112.png]
 - The Actual fault that occurred “19742” is related to overheating reactor temperatures. This was the result of insufficient blower capacity in the first generation of fuel cells. Their Cathode blowers typically capped out at around 9,800-10,000 which I can see from the data. It flatlines bouncing off the top of that range as shown in the graph, it was not enough flow to overcome the combination of factors: (1) Ambient heat was high, (2) sat on the ground for a bit, (3) high output required leading to high fuel flow and the fuse temperature hasn't benefitted from the ram airflow for a while.
-[embedded image-20251007-170734.png]
+[embedded: image-20251007-170734.png]
 
 
 - The issue with the fuel count in the software I will need to pull the last active software config which will take some time. I am pretty concerned though given that the Gen1 D450 hasn’t had any change to the software on the fuel cell side in 2-3 years.. is this something we have seen anywhere else? @Cody Smisek @Michael Mohr @Drew Hildreth

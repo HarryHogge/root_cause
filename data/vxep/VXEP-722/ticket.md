@@ -9,7 +9,6 @@
 - **Assignee:** Craig Burton
 - **Creator:** Greg Fryer
 - **Links:** relates to ENG-3604 (DRAM Update to Jetson Orin NX 16GB AI Computer); relates to MS-871 (MCM:  Evaluate Hadron-DM carrier board)
-- **Issue color:** purple
 - **Production Stakeholder:** Desiray Johnston
 - **Supply Chain Stakeholder:** Perry Richardson
 - **Other Stakeholder (as required):** Trevor Gronner
@@ -27,7 +26,7 @@ NVIDIA sent us this document about new memory on the board, and requests agreeme
 ### Craig Burton, 2024-10-18
 
 ConnectTech will be releasing a BSP (board support package) for JetPack 5.1.4 in order to support the new DRAM from NVIDIA.  I followed up with a question about the ETA of the BSP and will update this ticket when I hear back.
-[embedded file]
+[embedded: RE NVIDIA Orin NX 16GB - DRAM product change notice.msg]
 FYSA @David Grosher @Trevor Gronner @Jo Brown
 
 ### Craig Burton, 2024-10-18
@@ -115,7 +114,7 @@ FROM ARROW:
 Here is the decoded data:
 DATAMATRIX: 1613024600330,48B02DFB92FF,699-13767-0000-301,161-0546-10X
 From the part marking specification, the format is:
-[embedded 117448-01.png]
+[embedded: 117448-01.png]
 In short, the 699 level PN on this specific module is 301. Hence, this is an older module without the new DRAM mentioned in the PCN.
 
 ### Perry Richardson, 2025-03-13

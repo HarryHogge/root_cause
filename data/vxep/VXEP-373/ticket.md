@@ -11,13 +11,12 @@
 - **Reporter:** Irfan Sultan
 - **Assignee:** Irfan Sultan
 - **Creator:** Irfan Sultan
-- **Issue color:** purple
 - **Part Number(s):** 100-105620
 - **Impacted Core Subsystems:** Payloads
 
 ## Description
 
-# P/N 100-105620 has a 21 week lead time, all demand is in the next 4 months. P/N 100-105620 is Cadmium plated, can we use Nickel plated? Even then we need around 300 and i can only procure around 150.
+**P/N 100-105620 has a 21 week lead time, all demand is in the next 4 months. P/N 100-105620 is Cadmium plated, can we use Nickel plated? Even then we need around 300 and i can only procure around 150.**
 
 ## Comments (12)
 

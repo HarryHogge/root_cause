@@ -48,7 +48,7 @@ The other two assets we have are at MFIX or this wouldn’t be quite so hot.
 
 @Drew Hildreth I took a look through the logs.  It looks like when the drift occured, the autopilot was in ‘manual nudge’ mode, and the nudge commands were 0.  That starts around time 1390 in the plot below.  Then I see the nudging commands start around 1422 (non-zero pitch and roll commands).  Is it possible that the autopilot was inadvertently placed in manual nudge during the drift?
 
-[embedded image-20250711-151535.png]
+[embedded: image-20250711-151535.png]
 
 ### Drew Hildreth, 2025-07-11
 
@@ -56,18 +56,18 @@ The other two assets we have are at MFIX or this wouldn’t be quite so hot.
 
 ### Alexander Alan Arnold, 2025-07-11
 
-[embedded image-20250711-152551.png]
+[embedded: image-20250711-152551.png]
  In the event log 2 minutes after the RTB command you see the U-Drive Activated, and then 1 minute later we see the pause commands 
 
 
-[embedded image-20250711-152931.png]
+[embedded: image-20250711-152931.png]
 
 In the debug log at 10:45:22.180 the Aircraft entered land mode 
 @Eric Brewer
 
 ### Alexander Alan Arnold, 2025-07-11
 
-[embedded image-20250711-155831.png]
+[embedded: image-20250711-155831.png]
 IN the debug again there is a line VTOLCanUdrive Now: 1 Does this line mean that the Manual Nudge is active? @Eric Brewer @Scott Whitney
 
 ### Eric Brewer, 2025-07-11

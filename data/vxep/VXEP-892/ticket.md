@@ -13,11 +13,7 @@
 - **Creator:** Greg Fryer
 - **Labels:** LRR-March
 - **Parent:** VXEP-891 Create Mod Payload A-Kit for VXE30 Advanced Navigation aircraft (deliveries required for LRR by 23-03-2025)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 - **Production Stakeholder:** Trevor Gronner
-- **Current Sprint Priority:** 16.1
 - **LRR Desired Delivery Date:** 2025-03-01
 - **Job Number:** J100132 - VXE Advanced GPS Follow On
 - **Estimated Finish Date:** 2025-02-05
@@ -45,7 +41,7 @@ Notes:
 2122036-01 MAIM OPERATION MANUAL, ADVANCED NAVIGATION
 
 Project Cartoon: Advance Navigation for MOD Payload Kit (Slide)- Requirements.pptx
-[embedded image-20250226-185501.png]
+[embedded: image-20250226-185501.png]
 
 ## Plan
 
@@ -76,7 +72,7 @@ Last Updated: 2/27/25
 ### Tobi Ogunro, 2025-02-03
 
 @Gerrit Sperling FYI, @Trevor Gronner has volunteered to help create a PN for the MOD Payload Transit Case ASSY, Advance Nav MOD Payload Installation Manual, and a Catalog/Model number for the Advance Navigation MOD Payload A-Kit. This way it frees up your time to get some other drawings done. 
-[embedded image-20250203-230639.png]
+[embedded: image-20250203-230639.png]
 
 ### Gerrit Sperling, 2025-02-03
 
@@ -110,7 +106,7 @@ Catalog Number: 500-117544 already issued
 ### Tobi Ogunro, 2025-02-04
 
 @Gerrit Sperling Also still need a PN for the Antenna Array Mount, Wing tip, Right
-[embedded image-20250204-193106.png]
+[embedded: image-20250204-193106.png]
 
 ### Gerrit Sperling, 2025-02-04
 

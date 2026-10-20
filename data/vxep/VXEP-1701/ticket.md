@@ -48,7 +48,7 @@ Actions
 - Significant occurrence of WD 128 in logs. This has been tied to the practice of hot mating the boot loader connector to the XCOM during configuration. 
 - Verify that the procedure says not to do this. 
 - It seems vague since there is not a specific step to press the on button, but I can definitely see how this seems to indicate power should be turned on before connecting the boot loader. FYI Ben Norris
-- [embedded image-20260223-233503.png]
+- [embedded: image-20260223-233503.png]
 - Train all personnel about procedure steps and ensure this is not done.
 - See if correlation to this practice and later WD failures.
 - Can we have someone help summarize failure rate, firmware run during test, if it was retested, what level they were failed? Develop a better system to track them?

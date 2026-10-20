@@ -21,7 +21,7 @@ This matrix will serve as the single source of truth for software setup, helping
 
 ## Plan
 
-### Action Items:
+**Action Items:**
 
 Define the scope of the SCM (targeted hardware, applicable software layers: Joyride, MCM, XPlane, etc.)List each software component and version (e.g., Joyride vX, XPlane 10, MCM v1.2, Software 6.4 or newer)Document repository names and branch identifiers (e.g., HIL development branch)Note any critical configuration settings (e.g., nose fan ON by default, logging enabled, IP assignments)Resolve checksum issueReview draft with software leads and test engineeringSubmit to CCB or approvers for sign-off if requiredRelease final SCM to document control (Vault, Confluence, or project folder)Distribute to project stakeholders, and link SCM in related Jira tickets
 

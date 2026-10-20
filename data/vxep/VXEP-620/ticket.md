@@ -11,7 +11,6 @@
 - **Assignee:** Giovanni Gonzalez
 - **Creator:** Giovanni Gonzalez
 - **Links:** relates to VXEP-337 (Create, Test, and Release VXE30 Standard Config Wing Utility Drop)
-- **Issue color:** purple
 
 ## Description
 
@@ -50,7 +49,7 @@ Replacement D369 Connectors.xlsx
 ### Matt Philley, 2024-09-16
 
 @Cameron Chapman @Grant Goodman gents we will need a decision if we will be incorporating these metal D369s as part of the Utility Wing Dropper Project or not. These are used on the following harnesses:
-[embedded image-20240916-142640.png]
+[embedded: image-20240916-142640.png]
 
 ### Cameron Chapman, 2024-09-16
 

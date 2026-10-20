@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-438 IRAD: VXE-30 Support/Create Octopus Gimbal kits into production
 - **Links:** blocks VXEP-584 (MOLSON supporting projects)
-- **Issue color:** purple
 - **Product/Tech Owner:** Charles David Madewell
 - **Program (Marquee):** Gimbal Payloads
 - **Job Number:** J100129 - VXE Gimbal & Payload Support & Sustainment
@@ -34,7 +33,7 @@ Adding notes for the Delivery of Qty 4 of these kits to MOLESON May 2024
 SNs: EPS6170, EPS6171, EPS6172, EPS6173
 Plan is to capture observations and improvements to this JIRA ticket and reference that on the Production Order List. Release to Shipping without CofC based on approval from PM (Tim M) and Customer.
 
-[embedded image-20240521-183259.png]
+[embedded: image-20240521-183259.png]
 
 ### Greg Fryer, 2024-06-26
 

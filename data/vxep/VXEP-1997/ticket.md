@@ -9,9 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Jeremy Kostel
 - **Parent:** VXEP-1785 B30 Multiple HLB Voltage Measurements Outside of Voltage Limits. Suspect VTOL AP or voltage sense circuit (harness, ground iso, etc)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 
 ## Description
 

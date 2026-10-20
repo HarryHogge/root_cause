@@ -39,7 +39,7 @@ Following MOLSON 7 this aircraft will have the FW AP uploaded with the 115 build
 ### Eric Brewer, 2026-06-18
 
 @Michael Lindsay thanks. Looks like it was connected to the same SGCS as 931.  Same 3 build times also.  Will be good to review those logs once we get them.
-[embedded image-20260618-153418.png]
+[embedded: image-20260618-153418.png]
 
 ### Eric Brewer, 2026-06-18
 

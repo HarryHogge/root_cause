@@ -10,7 +10,6 @@
 - **Reporter:** Connor Peebles
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-386 Develop Replacement for AS150 Connections
-- **Issue color:** dark_yellow
 
 ## Comments (0)
 

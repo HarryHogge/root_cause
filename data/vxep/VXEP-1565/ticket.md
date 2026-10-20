@@ -9,7 +9,6 @@
 - **Assignee:** Kurt Burian
 - **Creator:** Artis Bertulis
 - **Links:** relates to FS2-3867 (Investigation: SA camera combability with Trillium)
-- **Issue color:** purple
 
 ## Description
 
@@ -19,7 +18,7 @@ When SkyLink is launched, the “Media Client” (also referred to as “GCS VID
 Issue 2:
 This may already be on your radar, but the VXE-specific SkyLink software does not automatically detect the video feed from the new SA cameras, as it typically should. When SkyLink is used, the Media Client is generally not required, so this functionality is important. It appears this integration is handled on Trillium’s side, so someone may need to coordinate with them and provide the necessary details to address this in the next software release.
 Additionally, while addressing this, it would be helpful to request the implementation of a camera switch button within SkyLink, allowing users to toggle between EO and IR feeds.
-[embedded image-20251021-195812.png]
+[embedded: image-20251021-195812.png]
 
 ## Comments (7)
 
@@ -54,7 +53,7 @@ FYSA @Kurt Burian
 
 @Grant Goodman @Mike DeJesus 
 Item 2 - I created a “how to” for the skylink integrators. If you can point me to the Edge template, I’d be happy to reformat. I don't have contacts to forward this too, I was hoping either of you might know how to get this to the vendor.
-[embedded file]
+[embedded: new_adp_software_integration.docx]
 
 ## Attachments (2)
 

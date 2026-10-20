@@ -11,7 +11,6 @@
 - **Assignee:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Links:** relates to VA-770 (Huntsville phase 2 drawing fixes); relates to VA-769 (Huntsville phase 1 drawing fixes)
-- **Issue color:** purple
 - **Production Stakeholder:** Emalee Johnson
 - **Supply Chain Stakeholder:** Victor Vandor
 - **Other Stakeholder (as required):** Brad Crampton

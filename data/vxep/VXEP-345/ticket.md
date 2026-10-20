@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Assignee:** Matt Weber
 - **Creator:** Greg Fryer
-- **Issue color:** purple
 
 ## Description
 

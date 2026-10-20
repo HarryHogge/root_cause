@@ -47,7 +47,7 @@ Center wing was found to have a piece of glue in the spar.
 
 ### Cameron Chapman, 2023-09-14
 
-### Will Harris 
+**Will Harris**
 
 July 6, 2023 at 4:17 PM
 @Sean Odell and I inspected this center wing. The loose material was most likely cured CA from the joiner stop. This material has been removed. I inspected the inside of the spar down the full length with the borescope and found no signs of damage. The hole in the joiner stop was opened up to allow the borescope through. The joiner stop was then functionally tested and proof loaded to 15 lbs. with @Matt Weber joiner stop tool.

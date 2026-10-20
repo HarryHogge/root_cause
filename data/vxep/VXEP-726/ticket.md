@@ -13,7 +13,6 @@
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-724 Practice Build - 2119719-01, Servo Assy Wing Drop
 - **Epic Link:** VXEP-724
-- **Issue color:** purple
 
 ## Description
 
@@ -62,7 +61,7 @@ Redlines have been implemented and is waiting for review @Matt Philley
 - can we adjust the bom HS lengths from 1” to .75”?
 - the heat shrink segments do have some overlap, so is it possible to show that somehow? Here’s 1 potential way that I could think of:
 
-[embedded image-20250218-160009.png]
+[embedded: image-20250218-160009.png]
 - I didn’t catch this before, but the label spec in Note 1 has an extra 5 - should be 110-111957
 
 @Brendan Palmer can you attach a pic of the finished servo for Camron’s reference?
@@ -71,16 +70,16 @@ Redlines have been implemented and is waiting for review @Matt Philley
 
 @Camron Richardson Here’s the actual servo, the scale might be a little off but I think it shows the overlap / offset between the two heatshrink pieces that @Nina Menon is talking about.
 
-[embedded image-20250218-161525.png]
-[embedded image-20250218-161552.png]
+[embedded: image-20250218-161525.png]
+[embedded: image-20250218-161552.png]
 
 ### Camron Richardson, 2025-02-18
 
 @Brendan Palmer @Nina Menon @Matt Philley  Changes have been implemented. Document is now up to date. Note 1 was a duplicate, consolidated with Note 2 and fixed document number
 
-[embedded image-20250218-204910.png]
-[embedded image-20250218-204934.png]
-[embedded image-20250218-205235.png]
+[embedded: image-20250218-204910.png]
+[embedded: image-20250218-204934.png]
+[embedded: image-20250218-205235.png]
 
 ### Nina Menon, 2025-02-18
 
@@ -95,7 +94,7 @@ Redlines have been implemented and is waiting for review @Matt Philley
 Are there FA builds that EE can get our hands on to confirm dimensions, fit check, etc @Nina Menon 
 
 Also, on the inspection sheet, might be worth specifying the orgin of each color on the pinout. The drawing specifies it, so maybe not necessary - up to yall. @Brad Crampton 
-[embedded image-20250220-203232.png]
+[embedded: image-20250220-203232.png]
 
 ### Brad Crampton, 2025-02-20
 

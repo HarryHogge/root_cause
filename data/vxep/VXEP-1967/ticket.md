@@ -47,8 +47,8 @@ As for repairs, these batteries are sealed shut and would need to be cut free fr
 I will let @Stephen Peters weigh in on whether this arc damage poses a significant risk, and how/whether it should be systematically tracked. 
 Thanks,
 
-| Sean Wendling Sr. Project Engineer - Energy Systems Direct: 810.305.3244 sean.wendling@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded twitter icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Sean Wendling Sr. Project Engineer - Energy Systems Direct: 810.305.3244 sean.wendling@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: twitter icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 From: Cameron Chapman <cchapman@edgeautonomy.io>
 Sent: Thursday, July 16, 2026 11:55 AM
@@ -67,8 +67,8 @@ Hey All,
 Can you share the attachments from the original email? They didn't seem to carry over when we were added to the chain.
 Thanks!
 
-| Sean Wendling Sr. Project Engineer - Energy Systems Direct: 810.305.3244 sean.wendling@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded twitter icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Sean Wendling Sr. Project Engineer - Energy Systems Direct: 810.305.3244 sean.wendling@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: twitter icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 From: Cameron Chapman <cchapman@edgeautonomy.io>
 Sent: Tuesday, July 14, 2026 12:06 PM
@@ -89,8 +89,8 @@ Subject: Fw: 20260714-INC000000235002 Centre Wing Electrical Connector Arcing - 
 Cameron,
 Can you review the attached pictures and provide any input/reccomendations?
 
-| Alexander Alan Arnold UAS FSR Manager Direct: 205.337.0072 alexander.arnold@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded twitter icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Alexander Alan Arnold UAS FSR Manager Direct: 205.337.0072 alexander.arnold@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: twitter icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 ## Attachments (1)
 

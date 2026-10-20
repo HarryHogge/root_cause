@@ -11,9 +11,6 @@
 - **Assignee:** Matt Weber
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1254 Advanced Navigation HIL – “VXE30 Advanced Navigation Simulator” (LM Configuration)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 - **Production Stakeholder:** Trevor Gronner
 
 ## Description

@@ -34,27 +34,27 @@ created this ticket to separate 498 and 729
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204037.png]
+[embedded: image-20250331-204037.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204123.png]
+[embedded: image-20250331-204123.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204201.png]
+[embedded: image-20250331-204201.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204233.png]
+[embedded: image-20250331-204233.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204312.png]
+[embedded: image-20250331-204312.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-204351.png]
+[embedded: image-20250331-204351.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 

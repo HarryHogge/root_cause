@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-792 Visual Based Navigation (VBN)
 - **Links:** relates to VXEP-1344 (Wire harness and electrical component procurement)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 
 ## Plan
 

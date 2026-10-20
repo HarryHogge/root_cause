@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** Electronics_Drafting
 - **Parent:** VXEP-470 Unified AP for Block 40
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 
 ## Description
 

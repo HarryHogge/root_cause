@@ -13,7 +13,7 @@
 
 Vault shows Silvus MFG PN: AOV2D230515G-TM
 Purchase Order MFG PN: AOV2D235515G-TM
-[embedded image-20240730-160858.png]
+[embedded: image-20240730-160858.png]
 
 ## Comments (0)
 

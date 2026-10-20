@@ -34,7 +34,7 @@ Thank you for shipping these. Can you also help us with the following, some of w
 ### Maxime Jeanneau, 2023-06-26
 
 Response: 
-[embedded file][embedded file][embedded file][embedded file][embedded file]
+[embedded: JEN-003 Polarization Orientation.pdf][embedded: 00-0230X0 CUSTOMER.STEP][embedded: JEN-003 POC 002 Raw Data.csv][embedded: JEN-003 POC 001 Raw Data.csv][embedded: 84-0276-01 Rev X1 - JEN-003 Performance Test Report.docx]
 
 ## Attachments (5)
 

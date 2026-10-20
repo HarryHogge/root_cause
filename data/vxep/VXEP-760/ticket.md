@@ -29,11 +29,53 @@ AAR attached.  I’m aware that it’s missing data, I’ve reached out to custo
 
 ## Issue Status
 
-VTOL AP Log Files are corrupted but XCOMM files were attained. [embedded file] 
+VTOL AP Log Files are corrupted but XCOMM files were attained. [embedded: V485 XCOMM Logs.zip] 
 
 @Eric Brewer @David Grosher
 
 ## Comments (29)
+
+### Cameron Chapman, 2024-10-31
+
+@Pat Wells it looks like an image was attached. Can you please attach a video if you have it?
+
+### Pat Wells, 2024-10-31
+
+@Cameron Chapman fixed the video. It’s there now
+
+### David Grosher, 2024-10-31
+
+@Pat Wells There is no data from the VTOL, XCOMM or FW APs here.
+
+### Cameron Chapman, 2024-10-31
+
+@Pat Wells @Sam Miller@David Grosher  it looks like they are practicing hover and nudge. Didn’t we decide that was for emergency use only? Did that guidance go out? We should link to that issue.
+
+### Pat Wells, 2024-11-01
+
+@Cameron Chapman the Advisory for pause/nudge was written and is currently being reviewed.  Has not been released.
+
+### Alexander Alan Arnold, 2024-11-06
+
+@Pat Wells @David Grosher Added additional data received from operator
+
+### Pat Wells, 2024-11-07
+
+@David Grosher @Cameron Chapman @Alexander Alan Arnold I’ve requested that the customer return the aircraft to allow further investigation and data retrieval.
+
+### David Grosher, 2024-11-07
+
+@Eric Brewer We only have XCOMM data but you could start looking at this incident.
+
+### Eric Brewer, 2024-11-07
+
+@David Grosher @Cameron Chapman I took a quick look at the logs.  As you say there are no VTOL logs (in the ‘update 485’ folder there is a VTOL 485 folder but it only has xcomm logs and an FDR).   This one is odd, the logging rate on the xcomm log turns down just before the incident.  There is a ~6s gap in the event log and when it returns, these power faults are logged:
+
+[embedded: image-20241107-193321.png]
+At this point according to the attitude estimate the vehicle is still upright, then shortly after that fault is when the crash event occurs.
+Cameron - do you know what impact these faults might have on the system? This is the bitmap for the bus fault:
+
+[embedded: image-20241107-193445.png]
 
 ### Cameron Chapman, 2024-11-08
 
@@ -80,43 +122,6 @@ Random guess (maybe the logs slow down when the operator enables pause/nudge).
 ### Eric Brewer, 2024-12-20
 
 @Jason Scherer @Adrian Garcia were we able to extract VTOL logs from this flight?
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Eric Brewer Any updates on this?
-
-### Eric Brewer, 2025-01-10
-
-@Alexander Alan Arnold unfortunately without VTOL logs I don’t know that there is much more we can determine for this flight.
-@Jason Scherer @Adrian Garcia @David Grosher FYI.
-
-### Pat Wells, 2025-01-14
-
-@Jason Scherer @Eric Brewer @David Grosher did we ever have success retreiving or decrypting the VTOL logs?
-
-### Jason Scherer, 2025-01-21
-
-After pulling the image and decrypting the data, the image is not mountable. This means that there is some level of data corruption in the SD card image. It is unlikely that we will be able to get any logs from this image, but I am going to do a little more analysis to see if it’s something recoverable.
-
-### Pat Wells, 2025-01-27
-
-@Jason Scherer checking in for any updates.
-
-### David Grosher, 2025-01-28
-
-@Pat Wells We weren’t able to recover data from this aircraft. At this point we won’t be able to provide any additional information on the root cause.
-
-### Jason Scherer, 2025-02-12
-
-I was unable to get any further logs on this vehicle.
-
-### Pat Wells, 2025-02-27
-
-@David Grosher  does this need to go to the Bermuda triangle?
-
-### David Grosher, 2025-02-27
-
-@Pat Wells Yes, we unfortunately can’t resolve the investigation. The data rate on the XCOMM was unexpectedly low and there was no recoverable VTOL data.
 
 ### Alexander Alan Arnold, 2025-01-10
 

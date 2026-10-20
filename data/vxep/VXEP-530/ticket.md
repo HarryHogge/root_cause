@@ -37,7 +37,7 @@ E140 camera installed.
 
 @David Grosher confirmed looks like mag issue.  FW and VTOL heading disagree by ~100 degrees shortly after transition.  It looks better the rest of the flight so wondering what would have changed? Maybe the payload was stowed?
 
-[embedded image-20240905-173137.png]
+[embedded: image-20240905-173137.png]
 
 ### David Grosher, 2024-09-05
 

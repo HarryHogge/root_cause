@@ -9,17 +9,16 @@
 - **Assignee:** Levi Purdy
 - **Creator:** Levi Purdy
 - **Links:** is implemented by FS2-5172 (HIL Sim MVP); is implemented by FS2-5210 (HIL Sim Reach Goals)
-- **Issue color:** dark_yellow
 
 ## Description
 
-## Justification
+**Justification**
 
 - John Clark is retiring, so HIL 1.1 / HIL 1.2 will no longer receive updates.
 - HIL sim must keep supporting upcoming projects and the continual release of new sim models from Ben Triplett.
 - This is an opportunity to rearchitect HIL 1.1 into something maintainable and extensible that runs on the MCM / Linux first (Windows possibly later).
 
-## Approach
+**Approach**
 
 Replace the existing infrastructure with more maintainable infrastructure, modeled on Training SIL (VXEP-1231):
 - Container-based builds
@@ -27,14 +26,14 @@ Replace the existing infrastructure with more maintainable infrastructure, model
 - Migrate from Bitbucket to GitHub (Edge-Autonomy org)
 
 Work is tracked in FS2 epics linked to this project ("implements"). Task summaries use the hil-sim: prefix.
-## Repos
+**Repos**
 
 - Edge-Autonomy/hil-sim
 - Edge-Autonomy/hil-sim-model-repo (Ben Triplett's models, consumed as a submodule)
 
-## Scope
+**Scope**
 
-### MVP: FS2-5172 HIL Sim MVP
+**MVP: FS2-5172 HIL Sim MVP**
 
 Done when:
 - Another developer can support the project using only the repo and docs.
@@ -48,23 +47,23 @@ Scope:
 - Installable package (.deb or self-contained .tar.gz)
 - Runs on MCM / Linux
 
-### Ongoing
+**Ongoing**
 
 - Onboard new sim models from Ben Triplett as they are released
 
-### Reach goals: FS2-5210 HIL Sim Reach Goals
+**Reach goals: FS2-5210 HIL Sim Reach Goals**
 
 - Windows host support
 - Run on an RT (PREEMPT_RT) kernel
 - DTED terrain elevation. Today HIL 1.1 uses a fixed 926 ft ground and Speedgoat models use a flat plane at takeoff altitude. Candidate sources: Edge-Autonomy/sil-dted or the DTED already on the MCM (watch for circular dependency).
 - Extensibility for new features and contributors (Wesley Reynolds offered to help once the container pipeline exists)
 
-## Known problems with current infrastructure
+**Known problems with current infrastructure**
 
 - hil-1.2 stores aircraft models on orphaned branches (8 unrelated root commits: VXE, Havoc, B30, B40, ...), so there is no shared history to diff or merge across models.
 - HIL 1.1 is a Windows-only C# app + Simulink DLL, distributed from \\condor\Software\hil-1.1\build, configured through C:\Users\Public\HILStuff.txt, with pitot press triggered by a PitotPress.txt file.
 
-## Context links
+**Context links**
 
 Legacy repos (Bitbucket)
 - hil-1.1

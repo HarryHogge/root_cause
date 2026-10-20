@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1437 Evaluate B40 configuration optimized for 55lb (B30 successor)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 
 ## Comments (0)
 

@@ -46,8 +46,8 @@ During VTOL land immediately, VSM commanded fuel cell shut off (as designed). Th
 
 ### Cody Smisek, 2025-12-31
 
-[embedded image-20251231-150925.png]
-[embedded image-20251231-151647.png]
+[embedded: image-20251231-150925.png]
+[embedded: image-20251231-151647.png]
 
 @Jackson Riley Curvin I’m not seeing what you’re seeing with regards to launching. Seems it was fully producing power prior and after launch. 
 Also not seeing anything obvious about fuel starvation / regulator issues in the AAR. 
@@ -56,7 +56,7 @@ I’m not familiar with any specific OGCS / VCSI / MCM logs. So you’ll need SW
 
 ### Cody Smisek, 2025-12-31
 
-[embedded image-20251231-154616.png]
+[embedded: image-20251231-154616.png]
 
 ### Cody Smisek, 2025-12-31
 
@@ -136,7 +136,7 @@ FuelCellStatus JaiFuelCellStackStateToStanagState(int8_t stackState)
 ### Craig Burton, 2026-01-05
 
 @Cody Smisek Apologies, but no need to test with an actual vehicle.  I am not sure how it happened, but I apparently missed the fact that in Jennings, those lines are commented out.  So this is a bug in VSM, if we want the fuel cell to remain on during Land Immediately:
-[embedded image-20260106-014554.png]
+[embedded: image-20260106-014554.png]
 FYSA @Ted Trowbridge @Scott Whitney @David Grosher
 
 ### Craig Burton, 2026-01-05

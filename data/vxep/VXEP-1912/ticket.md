@@ -35,14 +35,14 @@ Location: Shepherdsville KY
 
 @Michael Lindsay @Scott Lovett it is aborting due to a position uncertainty just above the threshold.  The aircraft is tracking less satellites than I’d normally see, so wondering if it has to do with the location they are taking off.  Here is what the terrain around that site looks like, so lots of trees around:
 
-[embedded image-20260612-140312.png]
-[embedded image-20260612-140322.png]
+[embedded: image-20260612-140312.png]
+[embedded: image-20260612-140322.png]
 Also, something that’s probably a little counterintuitive, but it might help to do a position nudge a little bit on the climb out, so just after the ‘pause’ on the climb.  This will allow the INS to converge out some uncertainties.
 
 ### Michael Lindsay, 2026-06-15
 
 The below thresholds have been changed from 15 to 30 in the VTOL webpage for aircraft 1015.  This aircraft has not been tested since the threshold change.
-[embedded image-20260616-004852.png]
+[embedded: image-20260616-004852.png]
 
 ### Michael Lindsay, 2026-06-30
 

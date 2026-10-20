@@ -63,6 +63,49 @@ In investigation, possibilities identified:
 
 ## Comments (29)
 
+### Cody Smisek, 2023-08-09
+
+@Sam Miller
+
+### Cody Smisek, 2023-08-09
+
+Will work on posting video
+
+### Cody Smisek, 2023-08-09
+
+corrected to 510
+
+### Sam Miller, 2023-08-09
+
+Video uploaded.  Go to last minute showing motor checks.
+
+### Sam Miller, 2023-08-09
+
+Dave Grosher preliminary analysis shows a watchdog reset occurred.  While he does not believe that this was a vehicle specific or hardware related event, his recommendation was to perform a quick visual inspection of the VTOL autopilot.  The autopilot does not need to be removed for the inspection.  Inspect the brass weight is secured to the board as well.
+
+### Matt Philley, 2023-08-09
+
+CW is in SLO RMA area. Delivering to Final Assy for center cover removal to facilitate visual inspection.
+
+### Matt Philley, 2023-08-09
+
+Cover has been removed and @Sam Miller is inspecting with a borescope. We compared to a new assembly as well. 
+We are removing the DF3 connectors in order to view the underside of the board.
+
+### Matt Philley, 2023-08-09
+
+When comparing to a new Avionics Board Assy we noticed there was no RTV around one of the components on the bottom side of the board assy.
+We consulted with Electronics (Ben N) and the RTV is not on the drawing or procedure but we apply it to prevent conformal coat from leaking into the underside of the connector on the opposite side of the board.
+Based on this info we disassembled the board assy so we could look at the connector pins on the 107-107306 Interface board and we found conformal coat instrusion.
+Talking with Electronics it is easy to swap the interface board and keep the Autopilot board.
+We will move forward with removing the full 107-101161 Avionics Board Assy from the centerwing and then replacing the interface board. 
+THe update Avionics Board assy will be get a full new checkout in Electronics.
+@Sean Odell
+
+### Matt Philley, 2023-08-09
+
+@Sam Miller @Cameron Chapman @Marc Richardson added a ppt with pics of the conformal coat in the interface board connectors.
+
 ### Matt Philley, 2023-08-09
 
 @Sam Miller @Sean Odell @Marc Richardson 
@@ -123,49 +166,6 @@ AC 509 and AC 511 centerwings were also brought back to SLO Final Assy and found
 They were removed from the centerwing
 New avionics board assemblies have been prepared. We are working on installing those. 
 @Marc Richardson @Desiray Johnston @Sam Miller
-
-### Matt Philley, 2023-08-10
-
-“Original” Avionics Board Assy from 510 was handed off to @Cameron Chapman in our meeting this morning.
-The Replacement Avionics Board Assy SN APC-1-1375 (Corrected 8/10/23) did NOT PASS SCO checkout and Carson reported he could not connect to the autopilot. 
-Decision was made to swap Avionics Board Assy again. SN APC-1-1378 was installed and AC 510 has been inspected and handed back to SCO for checkout.
-
-### Matt Philley, 2023-08-11
-
-For recordkeeping… based on the conformal coat investigation the Avionics Board Assy was swapped once more in AC 510. The current SN of Avionics Board Assy is as follows:
-APB-1-1365
-The aircraft is currently undergoing SCO config and checkout with plan to drive it to SMR ASAP for test flight and I believe Customer handoff.
-
-### Cameron Chapman, 2023-08-13
-
-The avionics board assembly from this incident was installed in one of @John ClarkHILs and the board was marked with this incident number. They are trying to determine the cause and recreate the WD reset. @Mark Squillante, can you please confirm the board was labeled and record which HIL sn it was installed into?
-
-### Mark Squillante, 2023-08-14
-
-Red AP processor board (1409P01D; 107-107307) SN APB-1-1288 paired with interface board (1901P01B; 107-107306) SN VAPI-1-1123 will be going into HIL box SN S-S100044 (HIL PN: 107-111759). I have not had time to install this yet due to https://jenaero.atlassian.net/browse/ENG-2207 taking higher priority but will install it as soon as possible.
-
-### Mark Squillante, 2023-08-14
-
-I finished swapping out the red AP processor board on HIL box SN S-S100044 and put on @John Clark's desk. 
-@Cameron Chapman
-
-### Cameron Chapman, 2023-08-24
-
-Linking subtasks to parent
-
-### Cameron Chapman, 2023-08-24
-
-@John Clark @David Grosher What is the main WD troubleshooting issue? Can you please link it to this one?
-
-### Greg Fryer, 2023-08-30
-
-All - I have moved this over to VXEP where it should be, and I am canceling VXEP9 which duplicates it. This had more info and links, so kept it.
-@David Grosher I also added the blocking links to your Epics as discussed.
-
-### Greg Fryer, 2023-09-11
-
-@Scott Hunter @John Clark @David Grosher @Kurt Burian 
-Please review the root cause related fields of this issue, I am using it as the “master summary” of the WD issue(s) and status. I will point other known/suspected WD issues here, to avoid duplication.
 
 ### Matt Philley, 2023-08-10
 

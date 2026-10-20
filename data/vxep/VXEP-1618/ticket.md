@@ -11,9 +11,6 @@
 - **Assignee:** Josh Burrell
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1314 VXE 491 - CW 4036 - Failure in transition to VTOL
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 
 ## Comments (2)
 

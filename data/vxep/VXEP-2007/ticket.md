@@ -76,8 +76,8 @@ FW attitude diverged from vtol/novatel right at the end of the log. (fw thought 
 
 ### Jeremy Kostel, 2026-09-29
 
-@Samuel Lopez This is the one I mentioned yesterday. Taking a quick look, no obvious battery troubles. Both MB and HLB are at an acceptable voltage and everything appears to be pulling current appropriately. See Plan section for some suggested steps. Also adding in a folder with only the flight logs Eric pointed out below[embedded file] 
-[embedded image-20260929-141448.png]
+@Samuel Lopez This is the one I mentioned yesterday. Taking a quick look, no obvious battery troubles. Both MB and HLB are at an acceptable voltage and everything appears to be pulling current appropriately. See Plan section for some suggested steps. Also adding in a folder with only the flight logs Eric pointed out below[embedded: V978.zip] 
+[embedded: image-20260929-141448.png]
 
 ### Jackson Riley Curvin, 2026-10-12
 
@@ -98,7 +98,7 @@ FW attitude diverged from vtol/novatel right at the end of the log. (fw thought 
 ### Jeremy Kostel, 2026-10-12
 
 taking another look at this one, still dont see anything obvious. Voltages remain healthy, FWD motor seems to be responding fine to commands. Then everything stops logging at the same time. That mixed with the lost comms makes it look like a MB internal or connection problem. Need to troubleshoot the hardware
-[embedded image-20261012-180227.png]
+[embedded: image-20261012-180227.png]
 
 ### Jeremy Kostel, 2026-10-12
 
@@ -120,14 +120,14 @@ Find me with questions
 - Inspected AS150 connection to battery, no thermal damage seen, however, did notice some sort of grease inside of the negative terminal of the connector (picture included). Not too familiar with installation process so not totally sure if it’s just some sort of anti-corrosion grease. Will need to verify with someone more familiar with operating handbook.
 - Verified AS150 anti-spark resistor, ohmmeter measured around 6.2 ohms.
 
-[embedded AS150 Negative Term Grease (englarged).jpg]
+[embedded: AS150 Negative Term Grease (englarged).jpg]
 - Inspected harnesses and wiring in the fuselage and nose. Only major damage (wiring-wise) noticed was small nicks in the insulation to the power lines connected to xt30 connector (pictures included) branching off the fuse power harness (107-102189). After inspecting nicks on the aforementioned wires w/ a magnifying glass, it was determined the damage was contained only to the insulation and no bare wire strands were damaged. Kapton tape was added to the nicks to prevent shorting and continue with powering on fuselage and nose with benchtop power supply. Hard to say at this time if this damage was due to the crash or was caused by excessive vibration during flight. Will keep this in mind while further investigating.
 
-[embedded Fuse Power Harness Nicks.jpg]
+[embedded: Fuse Power Harness Nicks.jpg]
 - After powering only the CW and nose (with overcurrent protection), the current draw was noted to be around 0.7 A after about 3 minutes of waiting for steady-state. For comparison on the B30 Adv Nav Iron Bird (w/ CW connection disconnected), the current draw was noted to be around 1.1 A after the same amount of wait time. This difference in current draw was initially hypothesized to be due to a broken link to the silvus enclosure, as disconnecting the silvus on the B30 IB (w/ CW connection disconnected) yielded a current draw of around 0.8 A. However, this was deemed not to be the case as I was able to connect to the Silvus webpage on VXE978 when powered on. 
-[embedded VXE978 Fuse and Nose Steady State Measurements.png]
-[embedded B30 Adv Nav IB Fuse and Nose Steady State Measurements.png]
-[embedded B30 Adv Nav IB Fuse and Nose (no Silvus) Steady State Measurements.png]
+[embedded: VXE978 Fuse and Nose Steady State Measurements.png]
+[embedded: B30 Adv Nav IB Fuse and Nose Steady State Measurements.png]
+[embedded: B30 Adv Nav IB Fuse and Nose (no Silvus) Steady State Measurements.png]
 
 ### Matthew Aguirre, 2026-10-19
 
@@ -136,8 +136,8 @@ Find me with questions
 - Main differences noticed were values not being reported from ADP, UTC not iterating, and slight discrepancies in i12aux and iret readings (most likely nothing major, but will continue investigating)
 - Reached out to possibly inspect B30 batteries used during flight that resulted in crash. Expecting the materials to arrive Tuesday 2026-10-20and will perform inspection for any signs of power failure.
 
-[embedded 978 Avionics Box on B30 IB Sensor Page.png]
-[embedded B30 Adv Nav IB Sensor Page with CW Connection.png]
+[embedded: 978 Avionics Box on B30 IB Sensor Page.png]
+[embedded: B30 Adv Nav IB Sensor Page with CW Connection.png]
 
 ## Attachments (12)
 

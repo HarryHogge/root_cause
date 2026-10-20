@@ -45,14 +45,14 @@ While corrupted firmware or a faulty microcontroller cannot be ruled out, only t
 
 The baro pressure from the internal sensor goes to zero and then derivative data is not usable. It is likely this fed into the controller leading to low climb rate abort. This does not appear to be related to a poor airspeed calibration, error signatures in related bad airspeed calibration issues did not show similar data. 
 VTOL Event log has extensive baro jump warnings.
-[embedded image-20250821-165543.png]
+[embedded: image-20250821-165543.png]
 
 [21:20:31.618 1566.618] DebugMsg Climb abort, low climb rate
 
 ### David Grosher, 2025-08-21
 
 Error logic in SensorBaro identified a consistent and persistent issue with the baro prior to it being flagged bad and set to zero in SensorBaro.cpp. The error did show significant variation in the value over time. 
-[embedded image-20250821-171809.png]
+[embedded: image-20250821-171809.png]
 Need to look at a mechanism to recognize the error state and then inform the operator of the issue (WCA). 
 Also we need to throttle the message in the event log. 
 A quick check of the Trace tables does not indicate a FW issue.
@@ -97,7 +97,7 @@ If it is the VTOL AP, which it seems to be, then it is most cost effective to re
 
 @Cameron Chapman 
 - Here is the extent of the VTOL AP Baro testing in the eshop:
-[embedded image-20250911-185353.png]
+[embedded: image-20250911-185353.png]
 - Here was the suggestion from that ADB incident, put into a Jira ticket, then summarily cancelled: [VA-248] Review/ evaluate addition of anomalous value flags during initial ADB calibration and assembly - Jira. I think it would be relatively easy to include “IF BARO SEE -39999 DegreesC, THEN BAD” into the calibration code, but I am not a software person.
 
 ### David Grosher, 2025-12-11

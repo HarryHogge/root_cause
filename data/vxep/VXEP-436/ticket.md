@@ -9,7 +9,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
-- **Issue color:** purple
 - **Product/Tech Owner:** Greg Fryer
 - **Tech Lead:** Jo Brown
 - **Program (Marquee):** Comms- and Cyber-Security

@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-580 VXE30 Advanced Navigation (MAGNSS) Development and Production
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Desiray Johnston, Douglas Baker
 - **Project Tier:** Tier 1
 - **Planned Milestone(s):** Production Readiness Review (PRR)

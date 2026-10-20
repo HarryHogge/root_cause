@@ -19,7 +19,7 @@ TIQ reports (see photo) having received two different power adapters with the sa
 
 ### Greg Fryer, 2025-02-05
 
-[embedded image-20250205-220215.png]
+[embedded: image-20250205-220215.png]
 
 ## Attachments (1)
 

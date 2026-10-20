@@ -37,8 +37,8 @@ It looks like VBatt on Xcomm drops to 18V right before the FW AP resets.  Line 
 
 ### Cameron Chapman, 2024-02-16
 
-[embedded file]
-[embedded file]
+[embedded: image-20240217-054529.png]
+[embedded: image-20240217-054556.png]
 
 ### Cameron Chapman, 2024-02-16
 
@@ -203,7 +203,7 @@ Here is the last entry. It says SN 397, but the data log is titled 396. Do you k
 @Cameron Chapman 
 - It appears that the FW AP reset and then the altitude possibly was re-calibrated in the process because there is a rapid jump down to a negative value after it initialized. But I don’t see the -1400 number that they referenced.
 - ESC throttle does control altitude so if the altitude was incorrectly below the commanded altitude then it is feasible that we would see a higher than expected throttle command for an extended period of time. However, we don’t see any unusual throttle commands.  One thing to note in the plot here is there is a significant power draw that is uncommanded after the AP reset.  This could also be an artifact of the error state of the AP. 
-[embedded file]
+[embedded: image-20240221-042511.png]
 - Limited EMI testing has been performed on XE25 that I am aware of. There were documented issues with Navy testing at 200 V/m (on deck environmental specification) with VXE30.  The ESCs are driven by PWM, it is possible that noise on that bus could lead to non-deterministic behavior on the ESC. But the current pulled wasn’t significantly higher or for longer duration than the earlier portion of the flight.
 
 ### David Grosher, 2025-05-19

@@ -29,13 +29,13 @@ The weight of the system is probably 49lbs so a little on the heavy side. The wi
 
 ### Alexander Alan Arnold, 2025-07-15
 
-[embedded image-20250715-140459.png]
+[embedded: image-20250715-140459.png]
 
 This is from the flight on the 14th. There is a massive drop in cell 5 of the HLB, if I am reading this correctly
 
 ### Alexander Alan Arnold, 2025-07-15
 
-[embedded image-20250715-140642.png]
+[embedded: image-20250715-140642.png]
 The flight on the 9th displays the low climb rate message
 
 ### Greg Fryer, 2025-07-15
@@ -56,7 +56,7 @@ Please let me know what you find on the other incident, I'm not sure if it was s
 ### Jackson Riley Curvin, 2025-07-15
 
 flight from july 9th 
-[embedded image-20250715-181153.png]
+[embedded: image-20250715-181153.png]
 
 ### Scott Lovett, 2026-02-02
 

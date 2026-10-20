@@ -42,11 +42,94 @@ Jack W. provide dispo on composites Dispo Provided
 
 --Smisek writes (7/20/2026)---
 xcomm file 129 in large data pull is data for incident flight. 
-[embedded image-20260720-203927.png]
+[embedded: image-20260720-203927.png]
 Suspect some type of stack failure. Awaiting confirmation from @Charles Sweet @Sean Wendling 
 --END--
 
 ## Comments (39)
+
+### David Grosher, 2026-03-27
+
+@Michael Mohr @Drew Hildreth There is no data from the aircraft.
+
+### Drew Hildreth, 2026-03-27
+
+@David Grosher Not yet. Wrong data package.
+
+### Scott Lovett, 2026-04-01
+
+on hold for one week. if no data is collected, the ticket will be closed.
+
+### Drew Hildreth, 2026-04-15
+
+Customer has not provided any data.
+
+### Michael Lindsay, 2026-07-02
+
+@Drew Hildreth @David Grosher AAR uploaded for 26 March, 2026 that I pulled off the SGCS for the glide landing due to low HLB.  
+@Scott Lovett I uploaded this AAR in Flightdata but it doesn’t seem to be pulling all the files.
+
+### Scott Lovett, 2026-07-06
+
+@Sean Wendling We’ve got the data uploaded. Can someone on your team please review this?
+
+### Alexander Alan Arnold, 2026-07-20
+
+@Charles Sweet Can you review this one? I closed the other one relating to this aircraft. 26MAR should be the AAR that needs review.
+
+### Charles Sweet, 2026-07-20
+
+@Alexander Alan Arnold I see XCL 121-128 is from 3/26, Can you confirm that’s what needs to be reviewed?
+
+### Alexander Alan Arnold, 2026-07-20
+
+yes, based on the operator report the 26th was the date of the issue. @Charles Sweet
+
+### Alexander Alan Arnold, 2026-07-20
+
+@Charles Sweet Id also like to ask based on a brief data review we did is it possible that the SOFC was not operating at a high enough tempature at the time of launch? it also seems like it was not outputting enough energy on ground.
+
+### Charles Sweet, 2026-07-20
+
+@Alexander Alan Arnold I’m not seeing anything out of the ordinary yet. Temperatures are right where they need to be, 820 at the IC and 780 at the Rx side. Open current voltage and voltage under load looks very healthy, power produced is 450 and 500 respectively. Ambient temperatures are not unordinary. Battery voltage seems to charge and discharge normally. I’ll continue to look around.
+[embedded: image-20260720-195922.png]
+[embedded: image-20260720-200753.png]
+
+### Cody Smisek, 2026-07-20
+
+@Charles Sweet You’re looking at the wrong file. Likely xcomm 129. working on confirming
+
+### Cody Smisek, 2026-07-20
+
+@Charles Sweet stack failure?
+[embedded: image-20260720-203927.png]
+
+### Charles Sweet, 2026-07-22
+
+@Cody Smisek @Alexander Alan Arnold 
+[embedded: image-20260722-163149.png]
+Definite Stack Failure. The stack was not able to produce enough current, either from a short internally or a board issue that wasn’t allowing it to be asked to. I would need the stack back to confirm the exact root cause (and stack health) by evaluating the converter PWM on one of our test stands. Low current is driving the fuel rates to the minimum and causing the stack to operate below typical temperatures - additionally at the voltage floor, unable to produce the requested power.
+
+### Alexander Alan Arnold, 2026-08-07
+
+@Lauren Velasquez is this fuel cell in SLO or AA?
+
+### Lauren Velasquez, 2026-08-07
+
+@Alexander Alan Arnold This is not in SLO
+
+### Charles Sweet, 2026-08-27
+
+[embedded: image-20260827-154241.png]
+
+### Charles Sweet, 2026-08-27
+
+[embedded: image-20260827-170450.png]
+
+### Charles Sweet, 2026-09-11
+
+[embedded: VXEP1799 RCI Presentation.pptx]
+@Alexander Alan Arnold
 
 ### Alexander Alan Arnold, 2026-09-21
 
@@ -59,95 +142,7 @@ Suspect some type of stack failure. Awaiting confirmation from @Charles Sweet @S
 ### Jeremy Kostel, 2026-09-23
 
 Just took a quick look at the aircraft in RMA. Aircraft is mostly in tact with some minor cracks and damage to a lot of the composite structures. The structures team will need to take a look and make dispos. The electrical system looks good and is low risk of damage outside of one connector that will need repair. We can do system testing once ME team has dispo’d what needs to be taken apart. @Jack Waeschle are you able to take a look?
-[embedded bfdc8e65-3fbe-4a89-ac20-68e023f97f18.jpg]
-FYSA @David Grosher @Alexander Alan Arnold
-
-### Jack Waeschle, 2026-09-23
-
-@Jeremy Kostel I am remote today. Happy to take a look tomorrow or help find another ME to take a look today
-
-### Jeremy Kostel, 2026-09-23
-
-@Jack Waeschle Tomorrow will be fine, thank you!
-
-### Jack Waeschle, 2026-09-24
-
-Dispo is as follows:
-Fuselage: 1 ply carbon fiber with MGS resin wet layup repair on inside surface (near the fuel tank boss, obvious crack on outside surface). Extend patch 0.5 - 1 inch past edge of crack. Remove tank star foam pad if needed before repair. Permissible to tape up loose cables and leave most electronics in fuse during repair, unless wet layups deems it unreasonable to do this repair without removing all electronics.
-Tail Boom: remove and replace plastic saddle. Make sure to remove any loose pieces of plastic that may have fallen into internals of tailboom.
-Horizontal and vertical stabilizers: Remove and replace thumb screws
-All components: clean with isopropyl, touch up paint to level deemed cosmetically appropriate (Full paint booth would produce best appearance, but require significantly more component disassembly. Paint pen would cover the scratches, but it would be apparent where the paint had been touched up. Dealers choice! Mechanically, both paint methods are flightworthy).
-
-### Drew Hildreth, 2026-09-24
-
-@Jack Waeschle Thank you, Jack.
-
-@Zack Garcia @Mathew Papaleo Please action the above dispo from Jack.
-
-@Lauren Velasquez FYSA
-
-### Drew Hildreth, 2026-09-24
-
-Thank you for the report Charles.
-
-@Alexander Alan Arnold @Scott Lovett Please review the above report and get something on the calendar to discuss.
-
-### Alexander Alan Arnold, 2026-09-24
-
-@Drew Hildreth Mike L is reviewing and working with Charles to clear up any questions in the report. @Michael Lindsay
-
-### Mathew Papaleo, 2026-09-25
-
-@Drew Hildreth we got the saddle bondment on the way and me and zack are working on the fuse traveler today for composites. will also get parts cleaned up with the new requested hardware. thanks @Jack Waeschle
-
-### Michael Lindsay, 2026-09-28
-
-@Alexander Alan Arnold Closing this ticket as this fuel cell has since been RMA’d and repaired see https://jenaero.atlassian.net/browse/RMA-973.
-
-### Michael Lindsay, 2026-09-28
-
-@Alexander Alan Arnold disregard this be for ticket, it was should of been for https://jenaero.atlassian.net/browse/VXEP-1586 which I linked.
-
-### Lauren Velasquez, 2026-09-30
-
-@Mathew Papaleo @Zack Garcia Did we get a RFQ sent for the scope of work?
-
-### Zachary Mann, 2026-10-07
-
-Is there any movement on this ticket? @Michael Lindsay
-
-### Michael Lindsay, 2026-10-07
-
-@Zachary Mann This is just waiting for the report to be reviewed and finalized prior to it being closed.
-
-### Zachary Mann, 2026-10-07
-
-@Michael Lindsay Great thank you!
-
-### Christopher Ridgard, 2026-10-08
-
-@Cameron Chapman, design update is being implemented via RDW-ECR0247.
-
-### Cameron Chapman, 2026-10-08
-
-@Christopher Ridgard Thank you. Will any assets need rework when that is released?
-
-### Christopher Ridgard, 2026-10-08
-
-No, @Cameron Chapman, I think we should make this a running change.
-
-### Cameron Chapman, 2026-10-08
-
-@Christopher Ridgard ok. Please close this when that ECR is released.
-
-### David Grosher, 2026-09-21
-
-@Alexander Alan Arnold Reading this incident, I dont think there is anything to disposition here for my team. I think following any repair the system should go through system checkout.
-
-### Jeremy Kostel, 2026-09-23
-
-Just took a quick look at the aircraft in RMA. Aircraft is mostly in tact with some minor cracks and damage to a lot of the composite structures. The structures team will need to take a look and make dispos. The electrical system looks good and is low risk of damage outside of one connector that will need repair. We can do system testing once ME team has dispo’d what needs to be taken apart. @Jack Waeschle are you able to take a look?
-[embedded bfdc8e65-3fbe-4a89-ac20-68e023f97f18.jpg]
+[embedded: bfdc8e65-3fbe-4a89-ac20-68e023f97f18.jpg]
 FYSA @David Grosher @Alexander Alan Arnold
 
 ### Jack Waeschle, 2026-09-23

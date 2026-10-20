@@ -9,9 +9,6 @@
 - **Assignee:** Adrian Garcia
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-887 Create, Test, and Release B40 Wing Utility Pylon (FKA drop payload) PN: 2123650-01
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Plan
 

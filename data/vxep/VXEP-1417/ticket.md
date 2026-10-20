@@ -30,7 +30,7 @@ HLB had 28 cycles. This is the 3rd occurrence of what we suspect is a cell split
 
 @Michael Mohr Looks like the HLB again. Two cells appear to be bad. @Tom Westrich @Sean Wendling @Stephen Peters 
 
-[embedded image-20250717-174549.png]
+[embedded: image-20250717-174549.png]
 
 ### David Grosher, 2025-07-17
 

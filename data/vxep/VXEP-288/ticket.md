@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Emalee Johnson
 - **Links:** is blocked by VA-1299 (Revise SA Cam Tray (107-101649) to include Ribbon Cable (100-109705))
-- **Issue color:** purple
 
 ## Description
 
@@ -28,7 +27,7 @@ I have reached out to procurement to order since this had not been on the demand
 
 ### Emalee Johnson, 2024-02-01
 
-[embedded file]
+[embedded: image-20240201-235436.png]
 
 ### Trevor Gronner, 2024-02-02
 

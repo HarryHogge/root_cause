@@ -8,7 +8,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-438 IRAD: VXE-30 Support/Create Octopus Gimbal kits into production
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 3
 - **Product/Tech Owner:** Charles David Madewell
 - **Program (Marquee):** Gimbal Payloads

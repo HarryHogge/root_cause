@@ -14,11 +14,15 @@ Documents (pdf, docx, pptx, xlsx, txt, msg, eml, ...) are converted to text.
 CSVs get their column headers and row count only. AAR packages, videos and
 images are listed in ticket.md but not downloaded (decisions, October 20).
 
+With --linked, tickets in other projects (VA, FS2, RMA, ...) that the
+project's incident tickets point to, by Jira link or by key in the text, are
+exported the same way to data/linked/, with referenced_by in its index.
+
 Downloaded originals are kept in --cache, outside the repo, so a re-run only
 downloads what is new.
 
     .venv/bin/python scripts/export_jira.py --env ../jira-dash/.env \
-        --cache ../root_cause_local/attachments --project VXEP
+        --cache ../root_cause_local/attachments --project VXEP --linked
 
 The env file needs JIRA_URL, JIRA_EMAIL and JIRA_API_TOKEN. Nothing falls back
 to a default: a missing setting stops the run.
@@ -47,8 +51,13 @@ from dotenv import dotenv_values
 MAX_CHARS = 150_000
 MAX_CHARS_TEXT = 5_000_000
 
-# Custom fields that are Jira bookkeeping, not ticket content.
-SKIP_FIELD_NAMES = {'Rank', 'Development'}
+# Custom fields that are Jira bookkeeping, not ticket content. "Cause" holds
+# the same template sentence on all four tickets that have it (report 01).
+SKIP_FIELD_NAMES = {
+    'Rank', 'Development', 'Issue color', 'Epic Color', 'Epic Status', 'Epic Name',
+    'Current Sprint Priority', 'Story Points', 'Team', 'Company Priority',
+    'Is this ticket a Design Project?', 'Cause',
+}
 SKIP_FIELD_PREFIXES = ('[CHART]',)
 # A long value repeated on this share of tickets is template text (sign-off
 # wording, instructions), not something written about this ticket.
@@ -56,6 +65,31 @@ BOILERPLATE_SHARE = 0.2
 BOILERPLATE_MIN_CHARS = 60
 # Spreadsheet rows written per sheet.
 MAX_SHEET_ROWS = 300
+# Lines kept from above a CSV's header row (logger name, serial, firmware...).
+MAX_CSV_PREAMBLE = 200
+
+# With --linked, tickets in other projects that this issue type points to
+# (by Jira link or by key in the text) are exported to data/linked/.
+INCIDENT_TYPE = 'Incident (8D)'
+
+# Email paragraphs that are legal notices or external-sender banners, not
+# correspondence. A paragraph matching any of these is dropped whole.
+EMAIL_NOTICE = re.compile('|'.join([
+    r'^\s*(confidentiality|export control) notice\s*$',
+    r'confidentiality (notice|statement)',
+    r'intended (only )?for the (sole )?use of', r'intended recipient', r'intended solely for the addressee',
+    r'international traffic in arms', r'export administration regulations',
+    r'proprietary and non-public information',
+    r'originated from outside of the organization', r'external email warning', r'caution:\s*\[external sender\]',
+]), re.I | re.M)
+# Signature lines that hold a phone number, and phone numbers anywhere else.
+EMAIL_PHONE_LINE = re.compile(r'^\s*(p|t|m|o|f|c|ph|tel|phone|office|mobile|cell|direct|fax|main)\s*[:.]\s*\+?[\d(].*$', re.I | re.M)
+# A value written after "password", "passwd" or "pwd" ("Password: x",
+# "password is "x"", "password=x" in a logged URL, or on the next line).
+# Device and account logins appear in tickets and logs; none go in the repo.
+PASSWORD = re.compile(r'''(?i)\b(passw(?:or)?d|pwd)(\s*(?:\bis\b|:|=)\s*["\u201c\u201d']?)(?!\[password removed\])([^\s"\u201c\u201d'&,;<>]+)''')
+URL_LOGIN = re.compile(r'\b([a-z][a-z0-9+.-]*://[^\s:/@<>]+:)(?!\[password removed\])[^\s@<>]+@', re.I)   # ftp://user:pw@host
+PHONE = re.compile(r'(?<![\w-])(\+?1[\s.-]?)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}(?![\w-])')
 
 DOC_KINDS = {
     'pdf': 'pdf', 'docx': 'docx', 'pptx': 'pptx', 'xlsx': 'xlsx', 'xlsm': 'xlsx',
@@ -127,7 +161,10 @@ class Jira:
         """The search returns only some comments on busy tickets; fetch the rest."""
         comments = list((field or {}).get('comments') or [])
         total = (field or {}).get('total', len(comments))
-        start = len(comments)
+        if total <= len(comments):
+            return comments
+        # The search's partial list is not a reliable first page, so fetch them all
+        comments, start = [], 0
         while start < total:
             page = self.get('/rest/api/3/issue/%s/comment' % key, startAt=start, maxResults=100)
             got = page.get('comments') or []
@@ -136,6 +173,47 @@ class Jira:
             comments += got
             start += len(got)
         return comments
+
+    def media_id(self, att_id):
+        """The media file id that embeds in ADF refer to. Jira gives it only in
+        the redirect of the attachment's content URL."""
+        for attempt in range(5):
+            r = self.s.get('%s/rest/api/3/attachment/content/%s' % (self.url, att_id),
+                           allow_redirects=False, stream=True, timeout=60)
+            r.close()
+            if r.status_code == 429 or r.status_code >= 500:
+                time.sleep(int(r.headers.get('Retry-After', 2 ** attempt)))
+                continue
+            m = re.search(r'/file/([0-9a-f-]{36})/', r.headers.get('Location', ''))
+            return m.group(1) if m else None
+        return None
+
+    def issues_by_key(self, keys):
+        """Fetch tickets by key. Returns (issues, {asked-for key: key now}
+        for tickets moved to another project or number, keys not found)."""
+        issues = []
+        keys = sorted(set(keys))
+        for i in range(0, len(keys), 100):
+            chunk = keys[i:i + 100]
+            try:
+                issues += self.search('key in (%s)' % ', '.join(chunk))
+            except requests.HTTPError:
+                # One deleted or hidden key fails the whole search; go one at a time
+                for k in chunk:
+                    try:
+                        issues.append(self.get('/rest/api/3/issue/%s' % k))
+                    except requests.HTTPError:
+                        pass
+        got = {i['key'] for i in issues}
+        moved, missing = {}, []
+        for k in keys:
+            if k in got:
+                continue
+            try:                                # Jira follows a moved key to its new one
+                moved[k] = self.get('/rest/api/3/issue/%s' % k, fields='summary')['key']
+            except requests.HTTPError:
+                missing.append(k)
+        return issues, moved, missing
 
     def download(self, url):
         for attempt in range(5):
@@ -152,14 +230,15 @@ class Jira:
 # Rendering Jira values as text
 # ---------------------------------------------------------------------------
 
-def adf_to_text(node):
-    """Atlassian Document Format -> plain text, keeping lists, tables and breaks."""
+def adf_to_text(node, media=None):
+    """Atlassian Document Format -> plain text, keeping lists, tables and breaks.
+    media maps embed ids to attachment file names, for embeds that carry none."""
     if node is None:
         return ''
     if isinstance(node, str):
         return node
     if isinstance(node, list):
-        return ''.join(adf_to_text(n) for n in node)
+        return ''.join(adf_to_text(n, media) for n in node)
     if not isinstance(node, dict):
         return ''
     t = node.get('type')
@@ -175,7 +254,12 @@ def adf_to_text(node):
     if t in ('inlineCard', 'blockCard', 'embedCard'):
         return attrs.get('url', '')
     if t in ('media', 'mediaInline'):
-        return '[embedded %s]' % (attrs.get('alt') or attrs.get('type') or 'media')
+        name = attrs.get('alt') or (media or {}).get(attrs.get('id'))
+        if name:
+            return '[embedded: %s]' % name
+        if attrs.get('type') == 'link':
+            return '[embedded link]'
+        return '[embedded file, not matched to an attachment]'
     if t == 'date':
         try:
             return datetime.fromtimestamp(int(attrs.get('timestamp')) / 1000, timezone.utc).strftime('%Y-%m-%d')
@@ -183,7 +267,7 @@ def adf_to_text(node):
             return ''
     if t == 'status':
         return '[%s]' % attrs.get('text', '')
-    inner = adf_to_text(node.get('content', []))
+    inner = adf_to_text(node.get('content', []), media)
     if t == 'listItem':
         return '- ' + inner.strip() + '\n'
     if t == 'tableCell' or t == 'tableHeader':
@@ -193,13 +277,15 @@ def adf_to_text(node):
     if t == 'codeBlock':
         return '```\n' + inner + '\n```\n'
     if t == 'heading':
-        return '#' * int(attrs.get('level', 3)) + ' ' + inner + '\n\n'
+        # Bold, not '#': a '#' heading inside a field or comment reads as one of
+        # ticket.md's own section or comment headers
+        return '**' + inner.strip() + '**\n\n' if inner.strip() else ''
     if t in ('paragraph', 'blockquote', 'panel', 'bulletList', 'orderedList', 'table', 'mediaSingle', 'mediaGroup', 'expand', 'nestedExpand'):
         return inner + '\n'
     return inner
 
 
-def value_to_text(v):
+def value_to_text(v, media=None):
     """A Jira field value of any shape -> one string. People fields become
     display names only (addresses typed into text are left as written)."""
     if v is None or v == '' or v == [] or v == {}:
@@ -209,10 +295,10 @@ def value_to_text(v):
     if isinstance(v, (int, float, bool)):
         return str(v)
     if isinstance(v, list):
-        return ', '.join(x for x in (value_to_text(i) for i in v) if x)
+        return ', '.join(x for x in (value_to_text(i, media) for i in v) if x)
     if isinstance(v, dict):
         if v.get('type') == 'doc':
-            return adf_to_text(v).strip()
+            return adf_to_text(v, media).strip()
         if 'accountId' in v:
             return v.get('displayName', '')
         if 'value' in v:
@@ -362,15 +448,35 @@ def convert_xlsx(data):
     return '\n\n'.join(parts), {'sheets': len(wb.worksheets)}
 
 
+def redact_secrets(text):
+    text = URL_LOGIN.sub(lambda m: m.group(1) + '[password removed]@', text)
+    return PASSWORD.sub(lambda m: m.group(1) + m.group(2) + '[password removed]', text)
+
+
+def clean_email_body(body):
+    """Drop legal notices and sender banners, phone numbers and addresses;
+    keep the correspondence, including quoted earlier messages."""
+    body = (body or '').replace('\r\n', '\n').replace('\r', '\n')
+    body = re.sub(r'^[ \t\u00a0]+$', '', body, flags=re.M)
+    paragraphs = [p for p in re.split(r'\n\s*\n', body) if p.strip() and not EMAIL_NOTICE.search(p)]
+    body = '\n\n'.join(p.strip('\n') for p in paragraphs)
+    body = EMAIL_PHONE_LINE.sub('', body)
+    body = PHONE.sub('[phone]', _strip_addresses(body))
+    body = re.sub(r'^\s*e-?mail\s*:\s*(\[email\])?\s*$', '', body, flags=re.I | re.M)
+    return re.sub(r'\n{3,}', '\n\n', body).strip()
+
+
 def _email_text(sender, to, date, subject, body):
     head = '\n'.join('%s: %s' % (k, v) for k, v in
                      (('From', sender), ('To', to), ('Date', date), ('Subject', subject)) if v)
-    return head + '\n\n' + (body or '').strip()
+    return head + '\n\n' + clean_email_body(body)
 
 
 def _strip_addresses(s):
     """Keep names, drop email addresses: 'Jo Smith <jo@x.com>' -> 'Jo Smith'."""
-    s = re.sub(r'\s*<[^>]*@[^>]*>', '', s or '')
+    s, n = s or '', 1
+    while n:                                    # Outlook nests them: <a@x <mailto:a@x> >
+        s, n = re.subn(r'\s*<\s*(mailto:)?[^<>]*@[^<>]*>', '', s)
     return re.sub(r'[\w.+-]+@[\w-]+\.[\w.-]+', '[email]', s)
 
 
@@ -417,12 +523,32 @@ def convert_text(data):
 
 
 def csv_summary(data):
+    """Column headers and row count. Loggers often write '#' comment lines or
+    key,value lines (model, serial, firmware) above the header; the header is
+    taken as the first row as wide as the file's most common row width, and
+    the lines above it are kept as written."""
     text = decode_text(data)
-    reader = csv.reader(io.StringIO(text))
-    header = next(reader, [])
-    rows = sum(1 for _ in reader)
-    return ('Columns (%d):\n%s\n\nData rows: %d (data not exported)'
-            % (len(header), '\n'.join('- ' + h for h in header), rows)), {'rows': rows, 'columns': len(header)}
+    rows = [r for r in csv.reader(io.StringIO(text)) if any(c.strip() for c in r)]
+    table = [r for r in rows if not r[0].lstrip().startswith('#')]
+    widths = {}
+    for r in table:
+        n = len([c for c in r if c.strip()])
+        widths[n] = widths.get(n, 0) + 1
+    width = max(widths, key=lambda n: (widths[n], n)) if widths else 0
+    at = next((i for i, r in enumerate(rows) if not r[0].lstrip().startswith('#')
+               and len([c for c in r if c.strip()]) >= width), len(rows))
+    preamble, header, body = rows[:at], (rows[at] if at < len(rows) else []), rows[at + 1:]
+    header = [h.strip() for h in header]
+    raw = [line.rstrip() for line in text.splitlines() if line.strip()][:min(at, MAX_CSV_PREAMBLE)]
+    text = ''
+    if preamble:
+        text += 'Lines above the header:\n%s\n' % '\n'.join('    ' + line for line in raw)
+        if len(preamble) > MAX_CSV_PREAMBLE:
+            text += '    (%d more lines)\n' % (len(preamble) - MAX_CSV_PREAMBLE)
+        text += '\n'
+    text += 'Columns (%d):\n%s\n\nData rows: %d (data not exported)' % (
+        len(header), '\n'.join('- ' + h for h in header), len(body))
+    return text, {'rows': len(body), 'columns': len(header)}
 
 
 CONVERTERS = {
@@ -468,7 +594,7 @@ def process_attachment(jira, att, cache, out_dir):
         data = fetch_attachment(jira, att, cache)
         text, extra = CONVERTERS[kind](data)
         info.update(extra)
-        text = text.strip()
+        text = redact_secrets(text.strip())
         if not text:
             info['result'] = 'no text found'
             return info
@@ -507,21 +633,21 @@ def skip_field(name):
     return name in SKIP_FIELD_NAMES or name.startswith(SKIP_FIELD_PREFIXES)
 
 
-def ticket_markdown(issue, field_names, comments, attachments, boilerplate):
+def ticket_markdown(issue, field_names, comments, attachments, boilerplate, media=None):
     f = issue['fields']
     key = issue['key']
     lines = ['# %s: %s' % (key, (f.get('summary') or '').strip()), '']
     for fid, label in SYSTEM_FIELDS:
         if fid == 'summary':
             continue
-        text = links_to_text(f.get(fid)) if fid == 'issuelinks' else value_to_text(f.get(fid))
+        text = links_to_text(f.get(fid)) if fid == 'issuelinks' else value_to_text(f.get(fid), media)
         if text:
             if fid in ('created', 'updated', 'resolutiondate'):
                 text = text[:10]
             lines.append('- **%s:** %s' % (label, text))
     long_fields = []
     for fid in sorted(k for k in f if k.startswith('customfield_')):
-        text = value_to_text(f.get(fid))
+        text = value_to_text(f.get(fid), media)
         label = field_names.get(fid, fid)
         if not text or skip_field(label) or text in boilerplate.get(fid, ()):
             continue
@@ -530,7 +656,7 @@ def ticket_markdown(issue, field_names, comments, attachments, boilerplate):
         else:
             lines.append('- **%s:** %s' % (label, text))
     for fid, label in LONG_SYSTEM_FIELDS:
-        text = value_to_text(f.get(fid))
+        text = value_to_text(f.get(fid), media)
         if text and text not in boilerplate.get(fid, ()):
             long_fields.insert(0, (label, text))
     for label, text in long_fields:
@@ -538,7 +664,7 @@ def ticket_markdown(issue, field_names, comments, attachments, boilerplate):
 
     lines += ['', '## Comments (%d)' % len(comments), '']
     for c in comments:
-        body = adf_to_text(c.get('body')).strip()
+        body = adf_to_text(c.get('body'), media).strip()
         lines += ['### %s, %s' % (value_to_text(c.get('author')) or 'unknown', (c.get('created') or '')[:10]),
                   '', body or '(empty)', '']
 
@@ -553,35 +679,49 @@ def ticket_markdown(issue, field_names, comments, attachments, boilerplate):
     return '\n'.join(lines).rstrip() + '\n'
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
-    ap.add_argument('--env', required=True, help='dotenv file with JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN')
-    ap.add_argument('--cache', required=True, help='folder outside the repo for downloaded originals')
-    ap.add_argument('--project', required=True, help='Jira project key, e.g. VXEP')
-    ap.add_argument('--out', default=None, help='output folder (default data/<project>)')
-    ap.add_argument('--workers', type=int, default=4)
-    ap.add_argument('--jql', default=None, help='extra JQL to narrow the run, for testing')
-    args = ap.parse_args(argv)
+def unnamed_embeds(node):
+    """True if any embed in this Jira value has no file name of its own."""
+    if isinstance(node, list):
+        return any(unnamed_embeds(n) for n in node)
+    if not isinstance(node, dict):
+        return False
+    if node.get('type') in ('media', 'mediaInline') and node.get('attrs', {}).get('type') == 'file':
+        if not node['attrs'].get('alt'):
+            return True
+    return any(unnamed_embeds(v) for v in node.values() if isinstance(v, (dict, list)))
 
-    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    out_root = args.out or os.path.join(repo, 'data', args.project.lower())
-    if os.path.abspath(args.cache).startswith(repo + os.sep):
-        sys.exit('--cache must be outside the repository: originals are never committed')
-    os.makedirs(args.cache, exist_ok=True)
-    os.makedirs(out_root, exist_ok=True)
 
-    jira = Jira(args.env)
-    field_names = {f['id']: f['name'] for f in jira.get('/rest/api/3/field')}
-    print('Searching %s ...' % args.project, file=sys.stderr)
-    jql = 'project = %s' % args.project
-    if args.jql:
-        jql += ' AND (%s)' % args.jql
-    issues = jira.search(jql + ' ORDER BY key ASC')
+class MediaIds:
+    """attachment id -> media file id, cached in --cache: one Jira call per
+    attachment, ever, and only on tickets with embeds that carry no name."""
 
+    def __init__(self, jira, cache):
+        self.jira = jira
+        self.path = os.path.join(cache, 'media_ids.json')
+        self.ids = {}
+        if os.path.exists(self.path):
+            with open(self.path, encoding='utf-8') as f:
+                self.ids = json.load(f)
+
+    def names(self, atts, pool):
+        todo = [a['id'] for a in atts if a['id'] not in self.ids]
+        for att_id, media_id in zip(todo, pool.map(self.jira.media_id, todo)):
+            if media_id:
+                self.ids[att_id] = media_id
+        return {self.ids[a['id']]: a['filename'] for a in atts if a['id'] in self.ids}
+
+    def save(self):
+        with open(self.path, 'w', encoding='utf-8') as f:
+            json.dump(self.ids, f)
+
+
+def export_issues(jira, issues, out_root, cache, field_names, workers):
+    """Write ticket.md and attachments for each issue, then index.jsonl.
+    Returns (index rows, attachment failures, result counts, {key: ticket.md text})."""
     boilerplate = boilerplate_values(issues, field_names)
-    started = datetime.now(timezone.utc)
-    index, failures, counts = [], [], {}
-    pool = ThreadPoolExecutor(max_workers=args.workers)
+    media_ids = MediaIds(jira, cache)
+    index, failures, counts, texts = [], [], {}, {}
+    pool = ThreadPoolExecutor(max_workers=workers)
     for n, issue in enumerate(issues, 1):
         key, f = issue['key'], issue['fields']
         tdir = os.path.join(out_root, key)
@@ -592,14 +732,19 @@ def main(argv=None):
         else:
             os.makedirs(tdir, exist_ok=True)
         comments = jira.all_comments(key, f.get('comment'))
-        results = list(pool.map(lambda a: process_attachment(jira, a, args.cache, adir), atts))
+        media = None
+        if atts and unnamed_embeds([f, [c.get('body') for c in comments]]):
+            media = media_ids.names(atts, pool)
+        results = list(pool.map(lambda a: process_attachment(jira, a, cache, adir), atts))
         results.sort(key=lambda a: (a['created'], a['filename']))
         for a in results:
             counts[a['result']] = counts.get(a['result'], 0) + 1
             if a['result'] == 'failed':
                 failures.append({'ticket': key, 'filename': a['filename'], 'error': a['error']})
+        text = redact_secrets(ticket_markdown(issue, field_names, comments, results, boilerplate, media))
+        texts[key] = text
         with open(os.path.join(tdir, 'ticket.md'), 'w', encoding='utf-8', newline='\n') as fh:
-            fh.write(ticket_markdown(issue, field_names, comments, results, boilerplate))
+            fh.write(text)
         index.append({
             'key': key, 'summary': f.get('summary'), 'status': value_to_text(f.get('status')),
             'issuetype': value_to_text(f.get('issuetype')),
@@ -612,22 +757,132 @@ def main(argv=None):
         })
         if n % 50 == 0:
             print('  %d / %d tickets written' % (n, len(issues)), file=sys.stderr)
+            media_ids.save()
     pool.shutdown()
+    media_ids.save()
+    return index, failures, counts, texts, boilerplate
 
+
+def write_index(out_root, index, manifest):
     with open(os.path.join(out_root, 'index.jsonl'), 'w', encoding='utf-8', newline='\n') as fh:
         for row in index:
             fh.write(json.dumps(row, ensure_ascii=False) + '\n')
-    manifest = {
-        'project': args.project, 'exported_at': started.isoformat(timespec='seconds'),
-        'tickets': len(issues), 'attachment_results': counts, 'failures': failures,
-        'max_chars_per_attachment': MAX_CHARS, 'max_chars_per_text_attachment': MAX_CHARS_TEXT,
-        'max_rows_per_sheet': MAX_SHEET_ROWS,
-        'boilerplate_skipped': {field_names.get(k, k): len(v) for k, v in boilerplate.items() if v},
-    }
     with open(os.path.join(out_root, 'manifest.json'), 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(manifest, fh, indent=2, ensure_ascii=False)
     print(json.dumps({k: manifest[k] for k in ('tickets', 'attachment_results')}, indent=2))
-    print('%d attachment failures; see manifest.json' % len(failures))
+    print('%d attachment failures; see %s' % (len(manifest['failures']), os.path.join(out_root, 'manifest.json')))
+
+
+def linked_keys(jira, project, index, texts):
+    """{other-project key: [incident keys that point to it]}, from Jira links
+    and from keys written in the text. Only real project keys count, so tail
+    numbers like VXE-622 and part numbers are not mistaken for tickets."""
+    projects, start = set(), 0
+    while True:
+        page = jira.get('/rest/api/3/project/search', startAt=start, maxResults=100)
+        projects |= {p['key'] for p in page.get('values', [])}
+        start += len(page.get('values', []))
+        if page.get('isLast', True):
+            break
+    projects.discard(project)
+    pattern = re.compile(r'\b(%s)-\d+\b' % '|'.join(sorted(projects, key=len, reverse=True)))
+    refs = {}
+    for row in index:
+        if row['issuetype'] == INCIDENT_TYPE:
+            for k in sorted(set(m.group(0) for m in pattern.finditer(texts[row['key']]))):
+                refs.setdefault(k, []).append(row['key'])
+    return refs
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
+    ap.add_argument('--env', required=True, help='dotenv file with JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN')
+    ap.add_argument('--cache', required=True, help='folder outside the repo for downloaded originals')
+    ap.add_argument('--project', required=True, help='Jira project key, e.g. VXEP')
+    ap.add_argument('--out', default=None, help='output folder (default data/<project>)')
+    ap.add_argument('--linked', action='store_true',
+                    help='also export the other-project tickets that incidents point to, to data/linked')
+    ap.add_argument('--linked-out', default=None, help='output folder for --linked (default data/linked)')
+    ap.add_argument('--linked-only', action='store_true',
+                    help='with --linked: skip the project export and use the one already in --out')
+    ap.add_argument('--workers', type=int, default=4)
+    ap.add_argument('--jql', default=None, help='extra JQL to narrow the run, for testing')
+    args = ap.parse_args(argv)
+
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    out_root = args.out or os.path.join(repo, 'data', args.project.lower())
+    linked_root = args.linked_out or os.path.join(repo, 'data', 'linked')
+    if os.path.abspath(args.cache).startswith(repo + os.sep):
+        sys.exit('--cache must be outside the repository: originals are never committed')
+    os.makedirs(args.cache, exist_ok=True)
+    os.makedirs(out_root, exist_ok=True)
+
+    jira = Jira(args.env)
+    field_names = {f['id']: f['name'] for f in jira.get('/rest/api/3/field')}
+    if args.linked_only:
+        if not args.linked:
+            sys.exit('--linked-only needs --linked')
+        with open(os.path.join(out_root, 'index.jsonl'), encoding='utf-8') as fh:
+            index = [json.loads(line) for line in fh]
+        texts = {}
+        for row in index:
+            with open(os.path.join(out_root, row['key'], 'ticket.md'), encoding='utf-8') as fh:
+                texts[row['key']] = fh.read()
+    else:
+        print('Searching %s ...' % args.project, file=sys.stderr)
+        jql = 'project = %s' % args.project
+        if args.jql:
+            jql += ' AND (%s)' % args.jql
+        issues = jira.search(jql + ' ORDER BY key ASC')
+        started = datetime.now(timezone.utc)
+        index, failures, counts, texts, boilerplate = export_issues(
+            jira, issues, out_root, args.cache, field_names, args.workers)
+        write_index(out_root, index, {
+            'project': args.project, 'exported_at': started.isoformat(timespec='seconds'),
+            'tickets': len(issues), 'attachment_results': counts, 'failures': failures,
+            'max_chars_per_attachment': MAX_CHARS, 'max_chars_per_text_attachment': MAX_CHARS_TEXT,
+            'max_rows_per_sheet': MAX_SHEET_ROWS,
+            'boilerplate_skipped': {field_names.get(k, k): len(v) for k, v in boilerplate.items() if v},
+        })
+    if not args.linked:
+        return
+
+    refs = linked_keys(jira, args.project, index, texts)
+    print('Fetching %d linked tickets ...' % len(refs), file=sys.stderr)
+    linked, moved, missing = jira.issues_by_key(refs)
+    # A moved key's references belong to the ticket it became. One that moved
+    # into this project is already exported there, so it is only listed.
+    own = {row['key'] for row in index}
+    by_key = {}
+    for old, new in moved.items():
+        by_key.setdefault(new, []).append(old)
+    linked = [i for i in linked if i['key'] not in own]
+    if os.path.isdir(linked_root):              # nothing stale from an earlier run
+        import shutil
+        shutil.rmtree(linked_root)
+    os.makedirs(linked_root)
+    started = datetime.now(timezone.utc)
+    index, failures, counts, _, boilerplate = export_issues(
+        jira, linked, linked_root, args.cache, field_names, args.workers)
+    for row in index:
+        olds = by_key.get(row['key'], [])
+        row['referenced_by'] = sorted(set(refs.get(row['key'], []) + [r for o in olds for r in refs[o]]))
+        if olds:
+            row['moved_from'] = olds
+    write_index(linked_root, index, {
+        'project': 'tickets in other projects that %s %s tickets point to' % (args.project, INCIDENT_TYPE),
+        'exported_at': started.isoformat(timespec='seconds'),
+        'tickets': len(linked), 'attachment_results': counts, 'failures': failures,
+        # Text still says the old key; this is where each one is now
+        'moved': [{'key': old, 'now': new,
+                   'folder': '%s/%s' % (args.project.lower() if new in own else 'linked', new),
+                   'referenced_by': refs[old]} for old, new in sorted(moved.items())],
+        # Deleted or not visible to this account; listed so none are lost silently
+        'not_returned_by_jira': [{'key': k, 'referenced_by': refs[k]} for k in missing],
+        'max_chars_per_attachment': MAX_CHARS, 'max_chars_per_text_attachment': MAX_CHARS_TEXT,
+        'max_rows_per_sheet': MAX_SHEET_ROWS,
+        'boilerplate_skipped': {field_names.get(k, k): len(v) for k, v in boilerplate.items() if v},
+    })
 
 
 if __name__ == '__main__':

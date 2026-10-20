@@ -43,6 +43,43 @@ Aside from using flight firmware multiple iterations and flight-safety warnings 
 
 ## Comments (26)
 
+### Greg Fryer, 2024-10-21
+
+@Scott Whitney Is there anyone free who could do a data pull and then analysis? (Can be separate people… 🙂 ) We’ll hear from Sean when it’s avaialable.
+
+### Sean Odell, 2024-10-22
+
+@Scott Whitney @Greg Fryer @Pat Wells Aircraft evaluated (Paperwork in case) and delivered to Engineering for your investigation efforts.
+
+NOTE: Aircraft is in VXE-501 Case!
+
+### Scott Whitney, 2024-10-24
+
+@Greg Fryer - after initial investigation the vehicle was running firmware that could date back to 2022 (Jason’s findings below). Based on this, I asked Jason to hold off on any further investigation. Let me know how you want to handle this.
+
+https://jenaero.atlassian.net/browse/FS2-2451?focusedCommentId=43345 
+Vehicle was running old firmware. I checked with John and the VTOL/XComm versions were released before Edge Autonomy. Best guess is ~2022. The Fixed Wing is the same version that we were using when I started around September last year.
+Based on initial analysis the fixed wing ap issued a land abort due to exceeding attitude limits during transition to VTOL for landing. VTOL data stops updating on XComm logs about the same time as CAN timeouts are recorded for both VTOL and Air data. This is about the impact time. Prior to the stale VTOL data and CAN timeouts an airspeed fault is logged. The Airspeed and Ground speed data in the FDR differ a decent amount. I did see IAS data dropouts in the FDR during the fixed wing flight phase. Could be a bad ADP. Overall battery and current levels look ok.
+Bottom line. Something bad happened during transition from fixed wing to VTOL which caused the vehicle to fall quickly. VTOL throttles looked ok, until they stopped.
+Based on the old firmware it sounds like we might not need to look any further. Standing by for further direction on this ticket.
+Firmware Versions
+- AP 6.05m
+- XComm: 4.60
+- VTOL: 1.44
+
+### Greg Fryer, 2024-10-24
+
+@Scott Whitney Definitely halt investigation.
+@Pat Wells See below on ancient firmware configuration. Need to escalate to PM (though I’m sure they are tired of issuing this message…). I’m guessing from location and it being a Gunny, this is @J Vo ?
+
+### Pat Wells, 2024-10-25
+
+@Greg Fryer yes this is Gunny Powell’s work. We’re tracking that most, if probably not all, of his aircraft that he crashed we’re running mismatched firmware. Customer is aware.  Working with @David Grosher to release one consolidated report for all of Gunny’s mishaps outlining the severity of the software mismatch etc.  I concur with halting the investigation on this aircraft.
+
+### J Vo, 2024-10-28
+
+@Greg Fryer PMA is aware that operators are not updating software as instructed.  Technically, the non-updated vehicles should be downed, but these are non-aviation centric entities doing their own thing.  Definitely discussion topic for the FoSUAS visit to Huntsville next month.
+
 ### Pat Wells, 2024-12-05
 
 @Greg Fryer @David Grosher do we intend to investigate this further or will it be closed based on the software mismatch issues?
@@ -96,7 +133,7 @@ Seems like there is a payload installed and operated during the flight. I base t
 - Network connection to diag2 (XComm switch 1 port 2) is connected until the incident. I believe this port is the payload Ethernet port.
 
 For a quick look, here is the retract current compared to the Ethernet drops of both Diag (Payload?) and CW. 
-[embedded image-20250217-171650.png]
+[embedded: image-20250217-171650.png]
 
 ### Cameron Chapman, 2025-02-18
 
@@ -106,7 +143,7 @@ For a quick look, here is the retract current compared to the Ethernet drops of 
 ### Jason Scherer, 2025-02-18
 
 @Cameron Chapman @Connor Peebles I zoomed in on the data and added the payload voltage. The retract current seems to occur directly after the network drop on the CW/Payload. But, it does all happen within a few hundred milliseconds. I’ve updated the slides.
-[embedded image-20250218-180656.png]
+[embedded: image-20250218-180656.png]
 
 ### Cameron Chapman, 2025-02-18
 
@@ -120,40 +157,10 @@ For a quick look, here is the retract current compared to the Ethernet drops of 
 
 I found this one that was more recently worked that just seems like retract was coincidentally at the beginning of cascading failure: [VXEP-427] VXE 430 abnormal landing behavior - Jira
 The one I worked on where I_retract went above 1A was [VIT2-252] VXE 444 Crash in Landing Pattern - Jira, 
-[embedded image-20250218-181914.png]
+[embedded: image-20250218-181914.png]
 “Spike in current is seen when payload retract is activated which is very similar when a functioning C20 is shorted open with a low value resistor. It could be a defect elsewhere in the xcomm or AP that causes this spike, and that spike induces a ripple that makes it to C20. This electrical stress could lead to a short on C20.
 When swapping a known good xcomm with 444’s xcomm - and vice-versa with the AP – we do not see that same retract spike when it is good xcomm + 444AP, while we do see that same retract spike when it is 444 xcomm + good AP. So, the defect that is causing the retract spike is somewhere in 444’s xcomm.“
 However, we weren’t able to conclusively pin the C20 failure on this at the time. @Cameron Chapman @Jason Scherer
-
-### Jason Scherer, 2025-02-18
-
-@Cameron Chapman @Connor Peebles I added a timeline to the slide with retract current. The park command is sent before the Ethernet connections are lost. Then the voltage fault occurs, then the current spike.
-2786.061 – Transition to hovering flight
-2786.072 - A Trillium park command is logged on the XComm event log.
-2789.376 – Payload Ethernet connection lost
-2789.576 – CW Ethernet connection lost
-2789.879 – Payload Voltage fault recorded (Voltage drops below 12V)
-2790.494 - The XComm data log shows an increase in the payload retract current.
-
-### Jason Scherer, 2025-02-18
-
-I guess my updates were local and not uploaded. They are saved now.
-
-### Jason Scherer, 2025-03-22
-
-Report added to the 29 Palms software mismatch report.
-
-### Jason Scherer, 2025-03-22
-
-@Cameron Chapman I believe all software investigations have been complete. CW failure cause unknown.
-
-### Christa Meck, 2025-08-05
-
-@Cameron Chapman Where are we at on this investigation?
-
-### David Grosher, 2026-01-14
-
-@Drew Hildreth I think we should consider closing this incident.
 
 ### Jason Scherer, 2025-02-18
 

@@ -21,13 +21,13 @@ Existing inventory needs a scrub. See  https://jenaero.sharepoint.com/:x:/r/sit
 By determining these to be Suspect Counterfeit parts we now have an obligation for Quarantine as well as Customer Notification. 
 LM:
 https://www.lockheedmartin.com/en-us/suppliers/faqs/counterfeits.html 
-[embedded file]
+[embedded: image-20231204-224648.png]
 
 ## Comments (3)
 
 ### Cameron Chapman, 2023-12-01
 
-[embedded file]
+[embedded: image-20231201-181223.png]
 
 ### Matt Philley, 2023-12-01
 
@@ -37,7 +37,7 @@ I will work on a Quality Alert or something next week with more details. This is
 ### Matt Philley, 2023-12-04
 
 Quality Alert distributed by email to the following:
-[embedded file]
+[embedded: image-20231204-224730.png]
 
 ## Attachments (4)
 

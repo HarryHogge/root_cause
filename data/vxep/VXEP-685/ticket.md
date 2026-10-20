@@ -15,7 +15,6 @@
 - **Parent:** VXEP-681 Practice Build - 126-116212-02, X-Kit Fuse Drop Payload Harness
 - **Epic Link:** VXEP-681
 - **Start date:** 2024-09-29
-- **Issue color:** purple
 
 ## Comments (1)
 

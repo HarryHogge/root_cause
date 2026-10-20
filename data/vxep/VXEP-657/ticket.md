@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-662 VXE30 55lb 15lb payload concept review
 - **Links:** relates to VA-444 (Evaluate replacing VXE30 ESCs)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (2)
 

@@ -9,9 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Josh Adams
 - **Parent:** VXEP-1786 UAP Block 30 Adv Nav Hardware
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 
 ## Comments (0)
 

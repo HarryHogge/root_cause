@@ -47,7 +47,7 @@ Currently, the VXE30 Stalker System is quarantined until the issue is identified
 
 @Alexander Alan Arnold @Scott Whitney @David Grosher pretty wild, I’ve never seen this but it looks like it must have been hanging out in an updraft.  All the altitude estimates (GPS/Baro) agree that the vehicle was climbing, and it barely touched the throttle.  This plot below is almost a full hour and it barely touched the throttle but still climbed several thousand feet even at dash speeds.  Current draw agrees that front prop and vtol motors were not on during this time.  Nothing wrong with the airplane as far as I can tell, we just don’t make enough drag to descend in these conditions.
 
-[embedded image-20261015-205909.png]
+[embedded: image-20261015-205909.png]
 
 ## Attachments (6)
 

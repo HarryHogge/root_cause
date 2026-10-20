@@ -11,7 +11,6 @@
 - **Assignee:** Camron Richardson
 - **Creator:** Camron Richardson
 - **Impact:** Extensive / Widespread
-- **Issue color:** purple
 - **Plan:** Look at incoming RMA’s and inspect for corrosion
 - **Impacted Disciplines:** Hardware
 - **Impacted Core Subsystems:** Aircraft

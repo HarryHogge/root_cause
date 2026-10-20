@@ -11,9 +11,6 @@
 - **Assignee:** Jack Waeschle
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-792 Visual Based Navigation (VBN)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 
 ## Description
 

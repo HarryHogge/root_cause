@@ -11,9 +11,6 @@
 - **Assignee:** Camron Richardson
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1453 New E140 Assemblies DCDC getting hot during operation.
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Leadership Stakeholder:** Mike DeJesus
 - **Issue Status:** Duplicated here. Closing.
 

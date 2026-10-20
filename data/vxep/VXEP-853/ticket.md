@@ -9,9 +9,6 @@
 - **Resolved:** 2025-01-03
 - **Reporter:** Charles David Madewell
 - **Creator:** Charles David Madewell
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Description
 

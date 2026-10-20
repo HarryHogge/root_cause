@@ -58,6 +58,37 @@ See report here.
 
 ## Comments (24)
 
+### David Grosher, 2024-03-29
+
+@Cameron Chapman @Greg Fryer It seems like this could be another combination of multiple events. A power fault and then the SW fails to properly abort.  On the SW side @Jason Scherer  is currently working on the fix.  
+[09:30:09.289 6428.289] DebugMsg Climb abort, lift system fault
+[09:30:09.290 6428.290] VT pwr fault: min pwr  0x21
+
+### Everett Werner, 2024-04-01
+
+This is my interpretation of what seems to have happened in the overshoot.
+Summary: The vehicle failed to bleed off enough speed in the initial deceleration and then never fully corrected for it. The VTOL system was slow to help when it became enabled as the airspeed was still too high for it to take over and had to wait for the vehicle to decelerate enough to take over. I believe it is possible that there are some issues with our airspeed control during the initial slowdown, I am working on confirming this.
+
+LAND_HOLD (6)
+The vehicle pitches up to slow down in fixed wing flight but only decreases its groundspeed to 30 fps. The vehicle pitched up sharply and lost much of its speed and then pitched back down and stopped the deceleration. This slowdown phase is a set length of time. By the end of this phase the vehicle is just short of the LZ and is traveling at an airspeed of 45 fps and a groundspeed of 32 fps.
+LAND_WAITCMDLZ-LAND_TRANS (7-13)
+Powers on the VTOL and powers off the fixed wing motor. Informs the VTOL what is happening.
+LAND_WAITTRANS (14)
+At the entry to this state the vehicle has an airspeed of 40fps and a groundspeed of 30fps and is right at the LZ. Typically the velocities are starting to near 0 at this point. The VTOL system has started to spin up but with very little control. This state holds until the vehicle airspeed has fallen under a threshold or until a timer has runout. In this flight the airspeed didn't drop and the timer ran out. At the end of this phase the AV airspeed is 42fps and groundspeed is 32fps, it is 500 ft past the target landing point.
+LAND_WAITLZCMD (15)
+Waiting for an LZ acknowledgement from the VTOL before taxiing to the LZ, this happened quickly as expected.
+LAND_WAITLZ (16)
+This phase is ideally the final taxi to the LZ in VTOL flight. We entered this phase in fixed wing flight at an airspeed of 40fps and a groundspeed of 30fps 500ft past our target landing point. The vehicle continued to pitch up, airspeed and groundspeed finally dropped significantly at the VTOL took over and flew back to the landing point after 10 seconds in this mode. During the pitch up deceleration while the VTOL was waiting to take over the vehicle continued another 500ft to reach a final overshoot of 1000ft.
+
+### Eric Brewer, 2024-04-02
+
+Added some notes to this powerpoint - AV459_LandingOvershoot.pptx.  There appears to be an estimation error in pitch that contributes to the overshoot, along with a design/logic bug in the fixed-wing helper implementation.
+Do we still have access to the VTOL autopilot? If so, it may be worth running it on the rate table to check the performance of the pitch rate gyro.  The pitch gyro bias estimate was drifting while the vehicle was stationary on the ground and the pitch estimation performance was poor throughout the flight.
+
+### Cameron Chapman, 2024-04-02
+
+@Everett Werner @Eric Brewer , please upload link to ppt in the description, rather than uploading the ppt. Links enable others to add questions and details. Uploaded files cannot be edited. See https://jenaero.atlassian.net/wiki/spaces/EF/pages/13467649/Flight+Data+Processing+and+Review . Updates welcome.
+
 ### Eric Brewer, 2024-04-02
 
 @Cameron Chapman done.  @Everett Werner @David Grosher FYI.
@@ -123,23 +154,6 @@ My interpretation of your findings is that the customer should not continue to f
 
 @Sean Odell  see below. Engineering team does not need aircraft. 
 Please proceed with repairs.
-
-### Sean Odell, 2024-10-10
-
-@David Grosher Does your team need any of the hardware from this incident. We need the transit cases in Final Assembly to get prepped and cleaned for the replacement.  
-@Cameron Chapman @Greg Fryer FYSA
-
-### David Grosher, 2024-10-10
-
-@Sean Odell No, we have completed the investigation.
-
-### Eric Brewer, 2025-02-28
-
-@David Grosher @Sean Odell updated powerpoint based upon what we learned over the past few months.  Adjusted to use latest template.
-
-### David Grosher, 2025-02-28
-
-@Pat Wells See the updated report.
 
 ### Sean Odell, 2024-10-10
 

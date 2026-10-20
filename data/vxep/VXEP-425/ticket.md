@@ -17,7 +17,7 @@
 Stephanie H: “We have an item that could become a real issue soon, possibly Production Stoppage.  This item is MOQ is at 240 and is a Category A item, at $137 each.  This item has a long lead time of 36 weeks.  I pulled the demand for this item and we need 53 total to complete the end of 2024.  240 qty would be a 4-year supply.  Our rep has provided us with an alternative, please review the MFN: ME150A1851N01, Description: AC/DC DESKTOP ADAPTER 18V 150W.  The vendor has stock of the alternative and we can have 40 qty here by next week. “
 https://www.mouser.com/ProductDetail/Inventus-Power/MWA220018A-13A?qs=7lbZhNg3b16DoJM3CHQzew%3D%3D 
 https://www.mouser.com/ProductDetail/Condor-SL-Power/ME150A1851N01?qs=MLItCLRbWswC4zyXqLmppg%3D%3D 
-[embedded file]
+[embedded: image-20231020-154612.png]
 
 ## Comments (10)
 

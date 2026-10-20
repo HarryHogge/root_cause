@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** relates to VXEP-169 (Testing gaps for MOD Payload); relates to VA-1807 (Hole Dim & Tolerance Needed for MOD Payload Wire Passthrough in Fuselage); relates to ENG-3356 (ECN - 111-105025 Mod Payload Harness Needs CAD, Drawing, and BOM)
-- **Issue color:** purple
 
 ## Comments (1)
 

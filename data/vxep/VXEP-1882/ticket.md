@@ -25,7 +25,7 @@ VXE 909’s Novatel intermittently has a heartbeat timeout every ~30 seconds to 
 
 ### Stephan Johnson, 2026-05-06
 
-[embedded file]
+[embedded: v909_v910.zip]
 
 ### Michael Mohr, 2026-06-05
 

@@ -12,7 +12,6 @@
 - **Creator:** Scott Whitney
 - **Labels:** Investigation-Priority
 - **Links:** relates to FS2-3188 (VXEP-1222: v826 Investigation and CAs); relates to VXEP-1462 (VXE 895 Loss of GPS after VTOL motor checks.); relates to ENG-3477 (SW 6.5.1 Release - Patch for NovAtel Failures)
-- **Is this ticket a Design Project?:** No
 - **Key Stakeholder(s):** David Grosher, Eric Brewer, Greg Fryer
 
 ## Description

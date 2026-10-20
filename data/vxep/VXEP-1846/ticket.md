@@ -22,7 +22,7 @@
 - During flight #10 the aircraft crashed. This flight was launched to see if the issue from flight #1 could be duplicated. It was not duplicated. After that test, the HIL was left unattended while the aircraft flew the rest of the mission. At 36 minutes elapsed time numerous warnings from VCSi were heard. The aircraft was observed in a hard, lefthand spiral (78 m radius), just before impacting terrain. After impact, the cartoon aircraft in XPlane “teleported” back to the launch point.
 
  
-[embedded download.png]
+[embedded: download.png]
 
 ## Comments (1)
 

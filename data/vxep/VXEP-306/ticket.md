@@ -59,6 +59,64 @@ Data review and Physical inspection complete. Result is that PCA0120 Main Contro
 
 ## Comments (33)
 
+### Pat Wells, 2024-04-04
+
+@Sean Wendling please see comments in Plan above.  I believe your team already has started something on this.
+
+### Sean Wendling, 2024-04-05
+
+Hey @Pat Wells & @Cameron Chapman, appreciate the feedback about battery behavior. I will revisit the data and the linked page about proper reporting and update with questions or discoveries. Thank you!
+
+### Sean Wendling, 2024-04-12
+
+Hey @Pat Wells & @Cameron Chapman , I had a chance to review the data again. After looking at the Data it appears as though the data stream from the fuel cell was lost at some point during VTOL takeoff or immediately after. Prior to the data stream loss, as the customer reported, fuel cell was functioning properly and appeared healthy. One possibility of the loss is a failure within the MCU on the D450. 
+I am wondering what other information/actions the customer would be able to perform for us to help gather more info. Are they normally open to assist in information gathering? Or would they prefer to return the Fuel Cell and Battery for us to review? If possible, we could rule out MCU failure by connecting the fuel cell to power, and observing that the status lights on the board are functioning. Additionally, they could attempt to connect to the fuel cell within GCS to see if data will stream again. 
+Either way, I created an investigation file and will begin to populate it with information as I gather it, and update this group with root causes once identified.
+(@Tom Westrich ~CC’d)
+
+### Cameron Chapman, 2024-04-16
+
+@Pat Wells mentioned a similar incident happened on the same aircraft in battery configuration. I recommend grounding the aircraft until further notice.
+
+### Cameron Chapman, 2024-04-16
+
+@Sean Wendling are you referring to fuel cell or aircraft logs? Are you familiar with how to view aircraft logs? https://jenaero.atlassian.net/wiki/spaces/EF/pages/13467649/Flight+Data+Processing+and+Review You many need a VPN to SLO to get the site to work.
+You should be able to view things like fuel cell current, battery and cell voltages, etc. Take a look at those articles and try viewing the data, then Dave or I can help answer questions.
+
+### Sean Wendling, 2024-04-16
+
+Hey @Cameron Chapman , thank you for the update. I was primarily curious about whether they could help us physically inspect the Fuel Cell unit to see if upon connecting the system any lights would flash. I usually view the logs of the raw fuel cell data in order to make assessments, but in this AAR, our data stream freezes while the fuel cell appears to be operating normally. I am not sure why we lost comms as the rest of the log data in the AAR appears to still be streaming. If we would like to do a deeper review of the fuel cell and they want to return it to Ann Arbor or attempt to troubleshoot in the field I am happy to assist. 
+I read the confluence article on the Flight Data software and it looks extremely helpful. As of now I have been using raw FDR/AAR data only in order to review failure reports. I submitted a ticket with IT in order to see if I can get access to Edge Secure so I can get connected to those tools. 
+Once I get access I will take another look, I may need a crash course at some point to assist in understanding some of the less obvious aircraft data, but I will reach out once I can get connected. Thank you.
+
+### Cameron Chapman, 2024-04-23
+
+@Sean Wendling did you contact SLO helpdesk about server access? Did they respond? Can you please cc me on the email? Thank you.
+
+### Sean Wendling, 2024-04-23
+
+Hey @Cameron Chapman Yes, I was able to get local access to the tool last week. They aren't planning to connect us to Condor until Ann Arbor moves to the new building later this year. I was able to use the software and confirm it is functional.
+
+### Sean Wendling, 2024-04-23
+
+I had a chance to take a look at this flight data again with the tool, and as far as I can see the fuel cell is operating normally prior to loosing comms. The fuel cell data stream freezes roughly when the forward flight starts, and we don’t see any more signals in the AAR. I am happy to look at any more info that we can gather. If we could physically get the fuel cell or have someone that would be able to do some assessment I could better assess whether there is damage.
+
+### Cameron Chapman, 2024-04-23
+
+Thanks @Sean Wendling . In that case, are you available to perform the actions in the plan field above and update those fields  as you proceed?
+
+### Sean Wendling, 2024-04-23
+
+Hey @Cameron Chapman , yes I can, I already have a folder & presentation in the flight safety SharePoint, I will update with my findings.
+
+### Cameron Chapman, 2024-04-23
+
+Thanks @Sean Wendling please paste a link to that folder in the description field above and let us know when ready to review.
+
+### Sean Wendling, 2024-04-24
+
+@Cameron Chapman @Pat Wells @Tom Westrich Hello Team, report is ready to review, and notes are made above. Please let me know if there is more information or additional steps I missed. This is relatively new to Ann Arbor. Thanks!
+
 ### Cameron Chapman, 2024-04-24
 
 Pasting teams chat with Sean.
@@ -97,7 +155,7 @@ oh ok. So you think it stops communicating when the line goes flat. That would m
 [Wednesday 10:47 AM] Cameron Chapman
 I think the plotter tool has some info on each variable
 [Wednesday 10:48 AM] Cameron Chapman
-# How to Decipher Data
+**How to Decipher Data**
 
 VXE Documentation - Most complete list of log glossaries, other information.
 VXE-FCD-VTOL Log Glossary.docx
@@ -137,7 +195,7 @@ Hey @Cameron Chapman , apologies for the delay on this. I will review the items 
 Thank you @Sean Wendling. Please always keep these fields above updated as well: (Ex: what are the next steps planned in the investigation, potential and confirmed causes, status and location of the fuel cell, etc.)
 See https://jenaero.atlassian.net/wiki/spaces/EF/pages/23363854/Incident+Troubleshooting+and+Resolution+Tracking.  for more info.
 
-[embedded image-20240603-165547.png]
+[embedded: image-20240603-165547.png]
 
 ### Cameron Chapman, 2024-06-04
 
@@ -157,87 +215,6 @@ Issue looked at by Ann Arbor team feedback from @Sean Wendling  below:
 The fuel cell appears to be operating as it should be, so I am wondering if someone in SLO could speak to the health of the HLB based on the data. The behavior of the fuel cell leads me to think that it is tapering down the output wattage as the battery isnt accepting it. It could help to know if this issue occurs with a different HLB installed. 
 - @Sean Wendling  responding to your comment in the description. The connection to the HLB is directly to the terminals. There is no charge limiting. If the battery was not charging, it would be reflected by a higher voltage (which the low SOC reading seems to refute). The issue is likely in the XCOM which tells the fuel cell what to charge to, the fuel cell, or a voltage sensor somewhere. -Cam
 - Thanks Cam, Add’tl validation will proceed. Link to Incident report is below.
-
-### Sean Wendling, 2024-06-04
-
-@Cameron Chapman , I got more clarity on this issue in speaking with my team here. I was incorrect in my thought that the fuel cell will not charge the battery when it is not receiving signal. Fuel cell should have reverted to its default output target until the battery returned to full charge or signal was restored. 
-I think it was a good call to return the fuel cell. I will add to the plan diving a bit deeper into the data on my end to try to see exactly what power target the fuel cell was after before it depleted prior to receiving it here in Ann Arbor. There are a handful of checks we can complete here to see if there is something more is going on, but at the very least we can say with significantly more confidence that this fuel cell is safe to operate.
-
-### Cameron Chapman, 2024-06-04
-
-@Sean Wendling what is the default power output? What would the fuel cell do if aircraft demand was higher than the default power output? Would it increase its output power based on measured output voltage?
-
-### Sean Wendling, 2024-06-05
-
-Default is 450W, so the fact that the battery drained is strange. Considering apPower was ~ 250W throughout the fixed wing flight something went wrong here. 
-Is apPower the primary consumer during fixed wing flight or is there other variables I should be looking a?. I looked through the glossary lastnight, and there were alot of power related variables. I guess i didnt include payload power utilization, though I was suspecting that it wasnt alot.
-
-### Sean Wendling, 2024-06-05
-
-@Cameron Chapman It will cap out at 500W of power output. If the required power exceeds what the fuel cell is capable of outputting, then the HLB will slowly drain.
-
-### Cameron Chapman, 2024-06-05
-
-@Sean Wendling in fuel cell configuration, the fuel cell and HLB power both the fixed wing (apPower on the XCOM log) and VTOL system (vtPbatt), so you would need to add those for total power consumption. In fixed wing flight, it should be mostly apPower, so it does sound like something on the fuel cell side went wrong. There are a lot of fuel cell parameters on the XCOM log that could be useful to review, such as psOut                   Fuel cell output power to command. Of course, these would not mean much if the comm link to the fuel cell was not working.
-
-### Sean Wendling, 2024-06-06
-
-@Cameron Chapman Yeah, once I get the fuel cell back I can review whether there was a failure on the serial communication from the fuel cell. I will take a look at those metrics in particular, and evaluate the total power consumption for the vehicle throughout the flight and put together a timeline while we wait to get it back. Thanks for the info!
-
-### Cyrus Blevins, 2024-06-11
-
-@Sean Wendling @Cameron Chapman I am unable to test the fuel cell serial link, as there is not an accessible fuel cell here. You might want to hand this off to someone else (Raj was given this VXE plane originally so you could ask him). I was able to power the VXE through the battery and extracted some of the most recent files. They are uploaded to the Sharepoint > VXE 439 DATA.
-
-(I will paste these details to my linked ticket for easy access in case this comment gets drowned out later https://jenaero.atlassian.net/browse/VXEP-430 )
-2024/06/11 files generated: [XCL00814, XCL00815, XCL00816, FDRRECOV].csv, XCEVLOG.txt
-I also grabbed some older files just in case
-2024/04/15 files generated: [XCL00813, FDR00813, XCL00809, FDR00809].csv
-
-As per advice by@Brandon Slater FDRRECOV.csv, XCEVLOG.txt, and the most recent XCL files are probably the most important.
-
-### Sean Wendling, 2024-06-14
-
-Hey All, the fuel cell has been received in Ann Arbor. Our team will begin to investigate and get back to you with feedback about what we find and how that might guide the investigation on the aircraft side. @Cameron Chapman , I updated the plan and Issue Status to reflect actions and included @Robert Redfield who is responsible for incoming RMA review in AA. (Let me know if you would like me to create or include VA tasks for this review). Thanks!
-
-### Robert Redfield, 2024-06-14
-
-It was observed that the fuel cell would not power on. No LED activity observed.
-No signs of physical damage to control board. (deformation, electrical scorching, or otherwise)
-Unable to pull cycle count/hours
-Unable to extract calibration file
-Root cause of the main control board failure indicates an electrical short of the 3.3vdc circuit. Failure of this circuit will prevent the microcontroller of the circuit board to function. There is also the potential that a failure/defect within the microcontroller could damage the 3.3vdc circuit. It is unknown at this time which failure could have happened first. (the chicken or egg scenario)
-It should be mentioned that a complete control board failure mid operation could cause damage to the fuel cells within the stack due the system not being able to perform it’s cooldown operation successfully.
-
-### Dylan Peters, 2024-06-18
-
-Failure analysis for the PCA0120:
-
-The PCA0120 has two 3V3 sources. The original 3V3 that is always on and goes to flight critical parts of the board (Tiva, Comm). It also has another 3V3 source, which we switch on/off (we refer to this as 3V3_SW). The 3V3_SW powers all other aspects, including current sensors, ADCs, thermistors, motor control, etc.
-
-Initially probing, the 3V3 and 3V3_SW were shorted together. I removed the P-Channel Mosfet Q3. 3V3 was no longer shorted to GND and only 3V3_SW was shorted to GND. When removing components to find the short, I removed U13 and its coupling capacitors and the 3V3 short was gone.
-
-Unfortunately, I can’t speak for what caused the failure. I can’t be for sure if a 3V3/3V3_SW surge caused a chip failure or if a chip failure caused the short to GND. U13 is a BLDC motor driving chip that is only used on the D450XR. It only handles signal and is primarily hall-effect driven. 
-
-This is the only failure I’ve seen in this case and is also obsolete now. We changed our software to drive our BLDC motors using separate LIN on the D450+ (PCA0130).
-
-### Sean Wendling, 2024-06-18
-
-@Cameron Chapman , Update to the ticket made following physical inspection. @Robert Redfield is leading the repair along with my support in documenting and developing corrective actions. We should understand what the lead-time for return of the fuel cell sometime this week.
-
-### Robert Redfield, 2024-06-18
-
-I cannot, at this time, commit to a 1-week turnaround for this fuel cell.   Fuel cell failure analysis is still in progress and I do not yet know stack health for this fuel cell.   I will update ticket as I know more.
-
-### Sean Wendling, 2024-06-18
-
-Moving these notes to the comments as they were completed and the issue status has been updated. 
---
-- Additional Info required for Fuel Cell Assessment.
-- Flight logs to be reviewed by Dave G and VXE Team under https://jenaero.atlassian.net/browse/VXEP-366
-- Power Budget and HLB depletion will be reviewed by Sean W and Ann Arbor Team to better understand fuel cell behavior.
-- Battery health assessment complete.
-
-Cycle count was reading 28, which included multiple hot swap “cycles” in that count.  True Thermal cycle count is known to be less but the exact figure is unknown.
 
 ### Sean Wendling, 2024-06-04
 

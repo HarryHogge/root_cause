@@ -179,7 +179,7 @@ Redwire Proprietary Information
 90
 Navigate on the IronBird laptop to the XCOMM interface at 10.128.1.2 using a web browser.
 Log in using default credentials.
-Username: stalker		Password: $talkerXE240
+Username: stalker		Password: [password removed]
 Verify the system time field says a minimum of 6 hours.
 Any less than 6 hours, as pictured above, is considered a failure and requires a retest or NCR.
 13

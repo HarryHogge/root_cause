@@ -85,9 +85,9 @@ We’ve moved this issue to the new incident/problem log (see the linked issue) 
 
 @matthew.curran sorry to revive a dead horse, but i was wondering if you ever got approval from JHU that HW V3 (specifically HW3.2) of the AHRS is compatible with MOD payload? Also, do you know if they provided new configuration/firmware specifications?
 The firmware specified in the MOD payload design standard (rev. 5.0 from May 2021) is NOT compatible with HW 3.2 of the AHRS, as stated by the SBG rep i have been in contact with. 
-[embedded file]
+[embedded: image-20230613-210415.png]
 We have config files in the vault for each hw version, but i am not sure if they were approved by MOD payload. Are you or anyone else able to confirm this?
-[embedded file]
+[embedded: image-20230613-212514.png]
 If you dont have this info, could you provide me the contact that i could reach out to in order to find this, as to not burden you? Thanks!
 
 ### matthew.curran, 2023-06-13

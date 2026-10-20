@@ -17,7 +17,7 @@
 ## Description
 
 In the VTOL AP release build Edge macros are used to take and give semaphores.  In these macros, there are checks if the provided semaphore is null and if it is then it won’t request to take/give the semaphore.  No error is thrown and the program continues.  This means that if a semaphore is null then the program will not fail and will not protect shared resources between tasks and presents the possibility of random “low rate” (needs to be defined) memory corruption.  
-[embedded file]
+[embedded: image-20230919-031537.png]
 In Debug builds of the VTOL AP, these macros are not used. The result is that uninitialized or null semaphores can be identified and fixed. However, when attempting to run tests in debug mode a null semaphore was identified in the airdata task (UPDATE 9/26) FwAero.c component. This indicates that proper tests with the Debug build have never been executed or were executed with an improper configuration that masks exceptions from the null semaphore.  
 Further, the current debug methodology specifically configures the application to ignore these exceptions. 
 The full impact of this issue is unclear and is currently being prioritized.  

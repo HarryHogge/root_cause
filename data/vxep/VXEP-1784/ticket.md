@@ -59,7 +59,7 @@ Waiting on Customer to provide Data
 ### David Grosher, 2026-04-16
 
 The system appears to be fine, but I would like to have the AA team look at it, @Christopher Ridgard. It seems that the FC was throttled because the HLB was full. I suspect this was interpreted as it having stopped. It appears to be ramping back up ~400 seconds after power drops off. As it is ramping up the system transitions to VTOL for recovery. All of this happened enroute to the PLZ while it was descending. There are no changes to the FC fault bits or state to indicate that anything abnormal happened. 
-[embedded image-20260416-215626.png]
+[embedded: image-20260416-215626.png]
 
 ### David Grosher, 2026-04-16
 
@@ -81,7 +81,7 @@ The system appears to be fine, but I would like to have the AA team look at it, 
 
 Here is the observed orbit prior to landing. It appears to be IP1 in the landing pattern. Did not land far from (0,0), need to confirm that the origin does not change with a new mission plan. 
 
-[embedded image-20260417-161743.png]
+[embedded: image-20260417-161743.png]
 
 ### David Grosher, 2026-04-17
 

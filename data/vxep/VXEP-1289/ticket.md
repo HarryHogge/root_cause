@@ -27,14 +27,14 @@ During flight the Operator commanded a 400 ft AGL loiter and the commanded altit
 ### Cody Smisek, 2025-05-19
 
 Looks like a case of glider doing glider things. Throttle zero, and still climbing. 
-[embedded image-20250519-165805.png]
+[embedded: image-20250519-165805.png]
 
 ### Cody Smisek, 2025-05-19
 
 Local AWOS reporting wind shift w/ gusts of 18kt 1hr prior to launch. Suggesting winds extremely variable in the area. 
-[embedded image-20250519-171424.png]
+[embedded: image-20250519-171424.png]
 Colorado springs (10nm away) reporting peak winds of 37kt in same time period
-[embedded image-20250519-171930.png]
+[embedded: image-20250519-171930.png]
 
 ### David Grosher, 2025-05-19
 

@@ -15,13 +15,12 @@
 - **Parent:** VXEP-681 Practice Build - 126-116212-02, X-Kit Fuse Drop Payload Harness
 - **Epic Link:** VXEP-681
 - **Start date:** 2024-10-05
-- **Issue color:** purple
 
 ## Description
 
 redlines 11/13
 the view of the generic connector pins is confusing because it doesn’t match the actual pinout - can we either create a view with the specific pinout or note that the view is for referencing pin location only?
-[embedded image-20241113-223558.png]
+[embedded: image-20241113-223558.png]
 
 ## Comments (1)
 

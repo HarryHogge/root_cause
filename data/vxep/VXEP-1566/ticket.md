@@ -29,11 +29,11 @@ during transtion from fixed wing to VTOL aircraft appeared to be delayed causing
 
 ### Jackson Riley Curvin, 2025-10-21
 
-[embedded image-20251021-230050.png]
+[embedded: image-20251021-230050.png]
 
 ### Jackson Riley Curvin, 2025-10-21
 
-[embedded image-20251021-230140.png]
+[embedded: image-20251021-230140.png]
 
 ### Jackson Riley Curvin, 2025-10-21
 
@@ -42,7 +42,7 @@ during transtion from fixed wing to VTOL aircraft appeared to be delayed causing
 ### David Grosher, 2025-10-21
 
 @Jackson Riley Curvin It looks like the lift motors are on but low throttle because we are actually above the target altitude. Then we have an attitude disturbance (probably due to wind) and they ramp up to stabilize the air vehicle. It looks like there is a bit of overshoot. @Eric Brewer FYSA
-[embedded image-20251021-235229.png]
+[embedded: image-20251021-235229.png]
 
 ### David Grosher, 2026-01-14
 
@@ -51,7 +51,7 @@ during transtion from fixed wing to VTOL aircraft appeared to be delayed causing
 ### Eric Brewer, 2026-01-15
 
 @David Grosher CAN looks fine. This looks like a case of the motor delay after the LR throttle was low on transition. 
-[embedded image-20260115-161623.png]
+[embedded: image-20260115-161623.png]
 
 ### David Grosher, 2026-01-15
 

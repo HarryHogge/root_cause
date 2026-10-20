@@ -26,7 +26,7 @@ Quick status:  no root cause found yet.  I spent a little time with Jackson pe
 
 ### Alan Burnsworth, 2025-12-16
 
-### Diagnosing the issue:
+**Diagnosing the issue:**
 
 I ran the following command to check the allocated disk space for the “/” partition labeled “APP”.
 sudo parted -l
@@ -49,7 +49,7 @@ The output of that command showed roughly half of the allocated partition space 
 /dev/nvme0n1p1    422G  404G  161M 100% /
 
 
-### Fixing the issue: 
+**Fixing the issue:**
 
 To resize the “APP” partition so that it utilizes the full allotted space, run the following command using the device path as seen in the previous “df”. 
 sudo resize2fs /dev/nvme0n1p1

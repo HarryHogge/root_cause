@@ -11,7 +11,6 @@
 - **Assignee:** Samuel Lopez
 - **Creator:** Connor Peebles
 - **Links:** Cannot finish until linked issue is finished. AV-779 (VBN not working on 797); blocks VXEP-1703 (2121520-02 - Rev F Avionics V4 Payload Harness); relates to XKIT-5368 (2131111 - WIRE HARNESS, AVIONICS V4 PAYLOAD HARNESS WITH SCHMITT TRIGGER)
-- **Issue color:** dark_blue
 - **Plan:** Follow design guide: Printed Circuit Board (PCB) Design Guide and Specifications - Electrical Engineering - Confluence
 
 ## Description

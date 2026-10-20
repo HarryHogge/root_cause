@@ -11,7 +11,6 @@
 - **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
 - **Links:** relates to FS2-1766 (WCA Stanag Alert Messages); relates to BAT-960 (B40 Define and test operational envelope of main battery (Load profiles including 28V load throughout OAT range) )
 - **Epic Link:** VXEP-1549
-- **Issue color:** dark_green
 - **Plan:** - Get source docs. Create shared excel sheet.
 
 ## Description

@@ -30,8 +30,8 @@ Upon transition a VTOL error appeared and the aircraft auto aborted Link to data
 Exceeded accuracy thresholds during launch.
 Would help to have entire VTOL logs (for history of system) given they’ve already provided all XCOMM. Follow on questions, is this a 1 off event (could be determined via full VTOL log set)? Any reason to believe GNSS issues in the area of the flight? 
 If 1 off event, try again.
-[embedded image-20260605-170948.png]
-[embedded image-20260605-165654.png]
+[embedded: image-20260605-170948.png]
+[embedded: image-20260605-165654.png]
 
 ### Jackson Riley Curvin, 2026-06-05
 

@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Stephan Johnson
 - **Labels:** RCCA, TIQUILA, Weekly-incident-tracker
-- **Issue color:** dark_blue
 - **Asset type:** VXE30
 - **Part Number(s):** 107-111718
 - **Vehicle Tail Number:** VXE-622

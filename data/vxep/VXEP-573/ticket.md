@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Labels:** valid
 - **Parent:** SP-58 Stalker Un-assessed or Crit. 1&2 investigation
-- **Current Sprint Priority:** 27.0
 - **Product/Tech Owner:** David Grosher
 - **Program (Marquee):** VXE30 Incident Investigation
 - **Job Number:** J100084 - VXE Incident Investigation

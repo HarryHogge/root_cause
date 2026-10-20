@@ -26,10 +26,10 @@ aircraft was approaching IP5 you can see the front motor shut off but the VTOL m
 
 ### Cody Smisek, 2026-06-05
 
-[embedded image-20260605-160114.png]
-[embedded image-20260605-160126.png]
+[embedded: image-20260605-160114.png]
+[embedded: image-20260605-160126.png]
 
-[embedded image-20260605-160220.png]
+[embedded: image-20260605-160220.png]
 
 VTOL was commanding all 4 motors. Appears right side may have powered on while left side did not.
 
@@ -39,7 +39,7 @@ VTOL was commanding all 4 motors. Appears right side may have powered on while l
 Additionally, apRollTrim is at limits during fixed wing flight. Given issue with left boom motors not starting during transition, this could point towards left aileron servo not receiving commands. 
 Suspect left boom data cable not full seated andor some intermittent issue with that connection. 
 
-[embedded image-20260605-163136.png]
+[embedded: image-20260605-163136.png]
 
 ### Alexander Alan Arnold, 2026-06-24
 

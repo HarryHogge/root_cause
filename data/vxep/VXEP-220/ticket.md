@@ -19,7 +19,7 @@
 
 ## Description
 
-[embedded file]
+[embedded: image-20231212-222157.png]
 
 ## Plan
 
@@ -104,7 +104,7 @@ It's a message found in the XComm debug message log, which can viewed on the web
 ### Jason Scherer, 2023-12-12
 
 Here is where to find the messages. The fault link should show up after connecting the GCS software (VXE SUAV) the first time to the avionics.
-[embedded file]
+[embedded: image-20231212-225458.png]
 
 ### Cameron Chapman, 2024-02-27
 

@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Michael Mohr
 - **Labels:** GS_Closed, Industrial_SD-Card_Installed, SOCOM
-- **Issue color:** dark_grey
 - **Customer:** SOCOM
 - **Vehicle Tail Number:** 698
 

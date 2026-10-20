@@ -21,7 +21,7 @@ Laptops were SCO’d with 6.4 but then were reimaged and shipped prior to second
 
 ### Carl Graf, 2025-08-04
 
-[embedded image-20250805-003749.png]
+[embedded: image-20250805-003749.png]
 
 ## Attachments (1)
 

@@ -19,7 +19,7 @@
 
 Drive full release of the Block 40 Wing Utility Pylon assembly (PN: 2123650-01) and all associated subcomponents required for production and delivery.
 This effort expands beyond ME-RELEASED status and ensures all required components are fully released (ENG/ME/QA as applicable) and aligned with the latest drawing line items prior to CCB approval.
-### Scope
+**Scope**
 
 - Top Level Assembly:
 2123650-01 - STALKER BLK40 CONFIG, WING UTILITY DROP SYSTEM

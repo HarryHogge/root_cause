@@ -31,23 +31,23 @@ As the aircraft was transitioning to fixed-wing flight, an air data fault was in
 
 ### Jackson Riley Curvin, 2025-10-30
 
-[embedded image-20251030-190752.png]
+[embedded: image-20251030-190752.png]
 
 ### Jackson Riley Curvin, 2025-10-30
 
-[embedded image-20251030-190846.png]
+[embedded: image-20251030-190846.png]
 
 ### Jackson Riley Curvin, 2025-10-30
 
-[embedded image-20251030-190935.png]
+[embedded: image-20251030-190935.png]
 
 ### Jackson Riley Curvin, 2025-10-30
 
-[embedded image-20251030-192219.png]
+[embedded: image-20251030-192219.png]
 
 ### Jackson Riley Curvin, 2025-10-30
 
-[embedded image-20251030-192303.png]
+[embedded: image-20251030-192303.png]
 
 ### Eric Brewer, 2025-10-31
 

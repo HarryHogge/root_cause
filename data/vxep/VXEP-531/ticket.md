@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Shauna Marquez
 - **Project Tier:** Tier 1
 - **Project Deliverables:** Revised drawing/part definition with equivalent parts.

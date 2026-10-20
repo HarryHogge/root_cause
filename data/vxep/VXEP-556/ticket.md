@@ -35,7 +35,7 @@ Moved to @Ted Trowbridge to investigate and log potential bug.
 
 ### Ted Trowbridge, 2024-09-05
 
-### Preliminary Findings:
+**Preliminary Findings:**
 
 Simulation was run and passed. Launch Wizard was run. Mission Check passed. A few screens later mission (and DTED) was uploaded to V600. GCS was disconnected from the aircraft.
 
@@ -68,7 +68,7 @@ What would the aircraft do if launched with no W1?
 
 - I don’t see a way the vehicle could get into this state.  Will need to follow up with the embedded team and/or run a HIL test with a special GCS build to determine what would happen in this unlikely situation
 
-### Questions:
+**Questions:**
 
 - Which GCS was the AAR generated from?  GCS1 or GCS2?
 - Do they know the times or name of the mission in question so we can associate it with a point in the logs?
@@ -103,7 +103,7 @@ From looking at the Event.txt, it appears that they started up the GCS software,
 
 ### Ted Trowbridge, 2024-09-17
 
-### Update
+**Update**
 
 Further investigation has shown it is possible to launch the vehicle without W1 if the waypoint is deleted after the launch wizard mission checkout step is completed.  We were unable to determine the exact cause of W1 being deleted in this case, but an errant keypress or mission file corruption are possible explanations.
 We were able to reproduce a similar situation in the HIL by purposefully deleting W1 after the mission checkout step but before downloading the mission to the vehicle.  The mission simulation passes without flagging any errors. (Only the launch wizard mission checkout page will check for the presence of two launch waypoints)

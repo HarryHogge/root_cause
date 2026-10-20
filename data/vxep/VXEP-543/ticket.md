@@ -41,7 +41,7 @@ Here are some vendors I think we should compare for the initial cable tester boa
 
  
 Thank you,
-| [embedded external] | Cameron Chapman Electrical Engineer Edge Autonomy – SLO (formerly Jennings Aeronautics) Mobile: +1 970-389-5904 Email: cchapman@edgeautonomy.io |
+| [embedded file, not matched to an attachment] | Cameron Chapman Electrical Engineer Edge Autonomy – SLO (formerly Jennings Aeronautics) Mobile: +1 970-389-5904 Email: cchapman@edgeautonomy.io |
 
 Places to try?
 - TTM technology-sudeshna

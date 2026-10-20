@@ -34,11 +34,11 @@ Cycle Count:22
 
 ### Jackson Riley Curvin, 2025-07-18
 
-[embedded image-20250718-194248.png]
+[embedded: image-20250718-194248.png]
 
 ### Jackson Riley Curvin, 2025-07-18
 
-[embedded image-20250718-194436.png]
+[embedded: image-20250718-194436.png]
 
 ### Pat Wells, 2025-07-18
 
@@ -55,12 +55,12 @@ Cycle Count:22
 ### Jackson Riley Curvin, 2025-07-18
 
 T95_V674_250715_134057_pack.zip
-[embedded image-20250718-203239.png]
+[embedded: image-20250718-203239.png]
 
 ### Jackson Riley Curvin, 2025-07-18
 
 T95_V674_250630_115454_pack.zip
-[embedded image-20250718-203546.png]
+[embedded: image-20250718-203546.png]
 
 ### Jackson Riley Curvin, 2025-07-18
 

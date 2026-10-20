@@ -36,7 +36,7 @@ Objective:
 ### Eric Cain, 2025-07-24
 
 Estimates for a 55lbs aircraft come from Blk35/40 design work and Blk40x below. Assuming +150W for avionics and payload power indicates ~620W cruise power at MSL, ~720W at 15kft.
-[embedded image-20250724-144457.png]
+[embedded: image-20250724-144457.png]
 
 ## Attachments (1)
 

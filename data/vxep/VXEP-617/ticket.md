@@ -11,9 +11,6 @@
 - **Assignee:** Spenser Bracken
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Job Number:** J100084 - VXE Incident Investigation
 
 ## Comments (4)

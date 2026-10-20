@@ -38,10 +38,10 @@ A pull-up resistor connects the sensor output line to 3.3 V.
 
 Without the pull-up, the output line would “float” when the sensor is off — meaning the voltage could randomly drift high or low, causing unreliable readings.
 The flying leads of the sensors are connected to molex microlock plus connectors. Since there are 2 sensors in the assembly, one of them is a 3pin connector and the other is a 4pin connector to avoid mismating. The pinout and pn for the connectors can be see below. 
-[embedded image-20251013-210951.png]
-[embedded image-20251013-211006.png]
-[embedded image-20251013-211030.png]
-[embedded image-20251013-211041.png]
+[embedded: image-20251013-210951.png]
+[embedded: image-20251013-211006.png]
+[embedded: image-20251013-211030.png]
+[embedded: image-20251013-211041.png]
 
 ## Comments (2)
 

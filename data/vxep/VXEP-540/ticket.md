@@ -12,7 +12,6 @@
 - **Creator:** Hayden Jeanor
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** relates to VXEP-539 (Main battery (s/n: 3-1976) connector heated up while plugged into V692); relates to VA-1903 (VXE695 - Main Battery Harness Connector Sparking when Main Battery Mate); relates to ENG-2655 (107-102189 Pin Depth Tolerance Issue); relates to VXEP-326 (AS150 pin connectors diagnosing the reason the parts are OOS when assembled (could be pin dimensions, threads too deep, etc).  Identify long term C/CAs and short term workarounds. Ex 107-102189 114-106508); relates to VXEP-473 (Replacement for AS150 Connections, VXE30); relates to JA-136 (Convert Problem to Major Problem - Link + data loss questions); relates to VXEP-621 (Overnight parts to HSV); relates to VXEP-834 (VXE 567 Low battery warning during mission and link loss during RTB resulted in crash ); relates to VXEP-985 (VXE 560 Main battery connector was extremely hot after software upgrades); relates to VXEP-999 (VXE 598 with VXE 596 Center Wing. Lost connection to VTOL AP and ADB and crashed. ); relates to VXEP-761 (VXE 557 Smoking Smell from Fuselage after connecting main battery); relates to VXEP-553 (AS150 Plug/Pin Connector Issue Systemic Collector)
-- **Issue color:** purple
 - **Production Stakeholder:** Trevor Gronner
 - **Supply Chain Stakeholder:** Kenneth Weber
 - **Other Stakeholder (as required):** Steve Stack
@@ -122,127 +121,136 @@ Just talked with Kyle.  We will rework the remaining batteries (that aren’t c
 
 ## Comments (43)
 
-### Cameron Chapman, 2024-08-29
+### Hayden Jeanor, 2024-08-15
 
-@Ryan Stafford @Brad Crampton could you please paste a link to the action tracker so that I can link it here?
+@Artis Bertulis @Ruysser Gabler please let me know if you have noticed any Main Batteries that are unable to depress their connection fully (like shown below) or harder to connect than normal. Especially if they are from Ann arbor.
+[embedded: image-20240815-225520.png]
 
-### Cameron Chapman, 2024-08-29
+### Artis Bertulis, 2024-08-16
 
-8/29 Meeting Notes:
-- Please record socket diameters in the same sheet as the pull force so we can correlate that information https://jenaero.sharepoint.com/:x:/r/sites/FlightSafety/Shared%20Documents/Incident%20Reports/VXEP-540%20%20%20%20Manufacturing%20defect%20in%20AS150%20Connectors%20from%20EAES%20causing%20intermittency%20and%20difficulty%20to%20connect%20and%20disconnect%20correctly%20and%20safely/AS150%20Connector%20Screening%20Data.xlsx?d=w22c23ca903634ca09795efcfd7f8b9bd&csf=1&web=1&e=zu4Sxw
-- Need to confirm we are screening and checking diameter of every socket.
+@Hayden Jeanor we have 4 main batteries
 
-### Cameron Chapman, 2024-08-29
+- 3-2040
+- 3-2028
+- 3-1310
+- 3-1678
 
-@John Gober helpful analysis thank you. @Matt Weber see below. 
-- It makes sense stretching contacts in the housing may not be feasible. Thank you for the analysis.
-- If the battery is dismantled, we would just replace the entire pigtail/connector. They are not serviceable.
-- I think the team tried silicone grease on the housings, but not the contacts. We could evaluate if it is possible/helpful to lubricate the contacts with anything without reducing current capacity or increasing the amount of dirt they pickup.
+[embedded: image-20240816-153119.png]
 
-### John Gober, 2024-08-29
+The ones with S/N 3-20…. both are real difficult to engage the connector fully.
 
-I’ll take a look for some products to try and evaluate the risks.
+Also looking at the connectors, I can see that for the “new” ones there’s some shiny stuff in them, which I don’t see in the “old” ones, see below
+”new”:
+[embedded: image-20240816-153403.png]
 
-### Brad Crampton, 2024-08-29
+“old”
 
-@Cameron Chapman I added a snapshot or correlation data we collected yesterday: ID CorrelationData-1    More to come.
+[embedded: image-20240816-153417.png]
 
-### John Gober, 2024-08-29
+### Matt Philley, 2024-08-16
 
-NYOGEL 760G seems to be the gold standard.  Product Overview - NyoGel 760G_23(.indd (nyelubricants.com)
-It is approved by Ford, GM, Toyota, Chrysler, Daimler, Freightliner, Trane, Black & Decker, Honeywell and others.
-The manufacturer claims the product does not affect conductivity. Does Grease Affect Conductivity? | Nye Lubricants
-Temp Range is -40 to 135 C
-It is expensive and difficult to get. The factory will only accept orders over $750.  Small quantiles can be ordered here:
-NYOGEL 760G 100 GRAM TUBE | Next Generation Services (nextgenstore.com)
+@Marc Richardson @Steve Stack FYSA we may have a Customer Containment activity on our hands. SLO has found multiple Main Batteries where we are unable to fully seat the AS150 connector.
+This appears to be the cause of the overheated connector issue on AC 692 recently.
+Here is the Jira where Hayden is logging his investigation. This was just discovered like…. yesterday so nothing formal has been kicked off but may need some QE support sooner rather than later to understand the impact. 
+I am not able to tag Wayne, so I will leave it to yall to connect those dots.
 
-They also have a product, UNIFLOR 8961MT, which is recommended for Aerospace connectors and meets MIL-PRF-27617, but the cost is $1,500 / 50 grams.  The only benefit I see is the temp range is extended to -80 to 200 C.
+### Artis Bertulis, 2024-08-16
 
-### Brad Crampton, 2024-08-29
+@Matt Philley @Hayden Jeanor now that I think about it, I think the same thing is happening with HLBs. But I don’t see the “shiny” stuff in there. Might be a tolerance issue.
+See the picture below, old 2-2015 vs new 2-3441. The new one is much more difficult to engage. It’s doable but requires a lot of force, and the same for disengaging, definitely causing some bloody fingers and chipped fuselages. Looking at the connectors, they look similar.
 
-@Matt Weber I don’t know if this is a crazy idea or not but a slight hydraulic expansion of the inner diameter while the connector is in the battery might offer a solution to rework batteries.  Looks like it comes with a 1/4” fitting.  
-https://www.youtube.com/watch?v=0iZONUECpXA
+[embedded: image-20240816-154900.png]
 
-### Cameron Chapman, 2024-08-29
 
-Thanks @John Gober . 
-- Do you have equipment in HSV to test contacts up to 200A and examples of hard to mate connectors, or are they all in SLO?
-- Did you see the temp rating of NYOGEL 760G? @Laszlo Juhasz could be answer how hot our contacts get during discharge. It may be that hot.
-- Do you think that grease would pickup a lot of dust and degrade the connector performance?
 
-Please order to evaluate if either/both sounds like a good option to test. Here is our purchasing process. I am not sure if it is the same for HSV. https://jenaero.atlassian.net/wiki/spaces/EF/pages/7307274/Buying+Stuff?search_id=d4617e60-d0bf-48c9-96f1-2ae3bc449551
+2-2015
+[embedded: image-20240816-155140.png]
+2-3441
+[embedded: image-20240816-155145.png]
 
-### John Gober, 2024-08-30
+### Marc Richardson, 2024-08-16
 
-- Equipment: 
-- I did find a wire terminal pull tester I believe can be adapted to measure contact removal force.  DataSheetWT3-201.pdf (mark-10.com)
-- 200 Amp test in HSV is a no go.  The only bench supply we have here is a 10 Amp model and we have a 30 Amp electronic DC load.
-- Eric has nine (9) 107-102189-1 assemblies in quarantine.  
-- Contacts in stock @ HSV
-- 100-100804 / Qty.  2,170
-- 100-102571 / Qty.  292
-- 100-104254 / Qty.  2,290
-- Why would we test at 200 Amps? The cable assembly I’ve been looking at has an XT90 connector on the battery end which is rated for 90A instantaneous and 40 Amps continuous. The assembly uses a 10AWG, 200C wire which I would rate about 50A when bundled.  
-- Unless the AS150 contacts are used elsewhere in a higher current application I’m not aware of, I would recommend test parameters more in line with how we are actually using the contacts. I think our actual maximum continuous and instantaneous currents plus say a 20% margin would be a sufficient test.  I need someone to confirm those max values, but based on the information I’ve seen, I would frame the test around 50A continuous / 100A instantaneous.
-- Temperature Ranges
-- NYOGEL 760G: -40 to 135 C
-- UNIFLOR 8961MT:  -80 to 200 C.
-- Performance with dielectric grease 
-- Common sense is telling me if we apply any type of film, it will catch more dust than if we hadn’t. There are too many variables for a conversation on how much additional dust would collect and at what point accumulated dust would adversely affect performance to be anything more than speculation. I think we would be ok with normal use and care, but we have to consider extremes like desert dust storms as well as abuse, neglect, and untrained personnel. Obviously, with the potting and O-ring, these connections should be near IP6x (dust proof) when mated. Do we not supply dust covers to install when the connections are not in use?
+@Wayne Houston
 
-### John Gober, 2024-09-05
+### Brad Crampton, 2024-08-22
 
-I circled back with @Laszlo Juhasz on the temperatures seen by the AS150 contacts.
-He reported applications where the AS150 contacts see in excess of 200 Amps and can see temperatures of 240C. 
-240C is beyond the max temp of all the lubricants I surveyed.
-Let’s recap…
-- Three times the contact manufacturer’s rated continuous current of 70 Amps
-- Double the contact manufacturer’s operating temperature range of 120C
-- 40 degrees beyond the deflection temperature (200C) of the housing material (Ultem)
-- 40 degrees beyond the melting point of PTFE wire insulation (200C)
-- 25 degrees past the melting point of lead-free solder (215 to 240C)
+@Hayden Jeanor @Steve Stack @Marc Richardson @Kevin Aban @Greg Fryer @Cameron Chapman @Wayne Houston @Sloan Payne 
+Please see attached report of recent battery investigation: ExperimentOne 8-22-24 and pics: ConnectorGap, Vdrop.
+- further investigate root cause - what in the connector failed? The AS150 pins do not fit the AS150 receptacles. The inner diameter of the receptacle is too small for the outer diameter of the pin. It is more of a press fit than a slip fit.
 
-I would not recommend introducing dielectric grease or any other compound into this situation.
+- identify the defect in any WIP/asset units: . The defect is the connector sits too high above the plug and does not fully engage.
+- implement a corrective action: Improving the connector is quite simple. Specify on the pin and receptacle drawings the outer diameter of the pin and the inner diameter of the receptacle so that the pin will fit into the receptacle with about a .001” gap. These pins are made on a CNC lathe so this is not overly difficult. The proper gap results in a very nice fit and feel. Have these pins made by a reputable, U.S. manufacturer that can deliver specified quality.
 
-### Cameron Chapman, 2024-09-13
+### Cameron Chapman, 2024-08-22
 
-@John Gober I think the 240C measurement was when subjected to a longer than realistic profile. The contacts do not reach 240C in the flight profiles they are exposed to (~30 sec max at that current)https://jenaero.atlassian.net/wiki/spaces/EE/pages/11272193/Power+and+Temperature+Profiles, but I agree they are being stressed beyond their designed limits and dielectric grease would add risk.
+@Brad Crampton these pins a COTS from a Chinese hobby company. We do not have the design information, IP, or ability to manufacture them. We are planning to replace them ASAP https://jenaero.atlassian.net/browse/VA-573 . Improving receiving inspections and adding inspection tolerances is doable.
 
-### Charles David Madewell, 2024-11-01
+### Artis Bertulis, 2024-08-23
 
-This effort is complete, and manufacturing has resumed.  The long term fix for the issue is being worked in another JIRA task.
+@Cameron Chapman @Hayden Jeanor @Matt Philley @Ruysser Gabler 
+Because of the recent amount of flights, we’ve almost run out of old (easy to engage) HLBs, and now more than half of the new ones are extremely difficult to engage/remove the connector. Seems like every single one of the new ones is like that. They are dangerous to use as they sometimes can’t be fully engaged. We need a quick short-term solution to be able to keep flying. Out of 12 HLBs, we have 5 that feel “normal”, we’re about to run out of good usable batteries.
+I’ll request more from inventory but I’m not very hopeful they’ll be better.
 
-### Cameron Chapman, 2024-11-18
+The same thing with the main batteries - we’re only using the 2 old ones we have, 2 new ones are too difficult to engage so we just don’t use them.
 
-Reopening. This is not done, but could use some cleanups
+### Artis Bertulis, 2024-08-23
 
-### Brad Crampton, 2025-01-08
+I’ve attached a teams video of us trying to disconnect it
 
-@Cameron Chapman @Hayden Jeanor @Sloan Payne @Wayne Houston I have added a proposed drawing change for 114-106509 because we are still getting a high percentage of rejects due to this cable in the battery.
+### Cameron Chapman, 2024-08-23
 
-### Cameron Chapman, 2025-01-09
+Trying to escalate in teams. Will report more back. 
+“Hi Tom and Stephen, are you aware of this issue? https://jenaero.atlassian.net/browse/VXEP-540 I think it should be high priority. We will likely need to do more investigation, develop more tests/inspections/procedures, but reports from our FLOPs team are that they are much harder to mate/demate than usual, which is causing issues. If those experienced operators are raising red flags, our customers certainly will. Do you have any ideas/people to identify the C/CAs for this issue? Please add anyone you would like to this chat. “
 
-This looks good to me. @Gary Angelus can you please create a linked eng change task to update that drawing, and check Jira to see if needs any other updates?
+### Hayden Jeanor, 2024-08-23
 
-### David Grosher, 2025-05-20
+Opening scope of ticket to encompass Main batteries and HLBs
 
-@Cameron Chapman What is the status of this investigation? It isn’t assigned to anyone.
+### Cameron Chapman, 2024-08-26
 
-### Cameron Chapman, 2025-05-20
+@John Gober once you have completed onboarding, this could be a good project to start on. Please coordinate with @Laszlo Juhasz and @Brad Crampton to determine the cause and corrective actions for why these connectors are harder to use than normal. FYI @Charles David Madewell
 
-@David Grosher The issue will be resolved for B35/40 aircraft. We will need to decide if it is a manpower priority to address remaining B30 issues. Assigning to @Greg Fryer  to determine if we should allocate manpower to resolve the B30 issues. Guessing no currently. Updated plan.
+### Brad Crampton, 2024-08-27
 
-### Greg Fryer, 2025-05-21
+@Cameron Chapman @Sloan Payne Data is posted. I measured a few different batteries and found that an inner diameter on the receptacle of .273 or less will cause a defect. Has to be measured with a pin gage.
 
-@David Grosher @Cameron Chapman I’m going to close this after I write up what we’ve done, which is what we can do. Thanks for bringing it up.
+### Nina Menon, 2024-08-28
 
-### Greg Fryer, 2025-05-21
+@Cameron Chapman @Laszlo Juhasz can we investigate whether the pin gages may be scratching/damaging the receptacle plating?
 
-See linked incident
+### Cameron Chapman, 2024-08-28
 
-### Cameron Chapman, 2025-08-12
+@Nina Menon yes, you are welcome to. Good idea
 
-@Greg Fryer Which ticket? We have a linked one for pin issues, but I don’t see one for sockets. While it needs a lot of cleanup, this issue seems to have the most info for that.
+### Ryan Stafford, 2024-08-28
+
+Attached action items list that we’re using in daily stand up meetings.
+*Removed because it doesn’t seem to be an editable Excel format, just a useless unformatted table
+
+### Greg Fryer, 2024-08-28
+
+@Christa Meck Can you verify that if I change this Problem into a Major Problem (which is appropriate) we won’t lose any data? I want to update it, and then link it to https://jenaero.atlassian.net/browse/VXEP-444 as a child (thanks to your prior updates).
+(Others - no change/impact. Just proper categorizing and tracking.)
+
+### Cameron Chapman, 2024-08-28
+
+8/28 Criteria meeting. @Kyle DeBernardi @Brad Crampton @Hayden Jeanor @Ryan Stafford  @John Gober @Charles David Madewell 
+- Still need to correlate pull force to connector differences (terminal differences, date of manufacturer, location, batch, distributor, etc). Suggest adding such data to the same sheet where we are tracking pull forces.
+- Does removing the o-ring make a difference? That could help indicate if it is a factor. No.
+- Need to further investigate potential workarounds. Contact/housing grease. @John Gober are you able to test this? 
+- Dry film lubricant may pick up less dust.
+- Can the contacts be purposefully stretched/deformed to make this issue better without reducing contact performance or life
+- Do we have any serial number/source tracking?
+
+### Cameron Chapman, 2024-08-28
+
+Next steps
+- Sort through WIP to perform force test.
+- Hayden document process and try to bring in additional help.
+
+### Ryan Stafford, 2024-08-28
+
+@Brad Crampton Please attach pin size vs pull force measurements for record keeping
 
 ### Cameron Chapman, 2024-08-28
 
@@ -266,7 +274,7 @@ Latest data from pull test has been posted as PinDiametStuy.xksx.  Old versions 
 
 Cameron, 
 
-[embedded Plug Assembled.jpg]
+[embedded: Plug Assembled.jpg]
 
 On stretching the contacts… In theory, we could forcefully insert an oversized pin gauge into the female contact and then test the contact retention force. The process would be repeated with progressively larger pins until the retention force falls to an acceptable level.
 However, I don’t believe this procedure could be done with assembled connectors. With the female contact assembled in the plug housing, there is little room between the wall of the housing and the contact (see attached photo).

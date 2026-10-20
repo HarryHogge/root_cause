@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** SP-197 LRR
 - **Links:** Cannot finish until linked issue is finished. XKIT-2781 (MAGNSS Productization); Cannot finish until linked issue is finished. VXEP-610 (Release of 6.4 Software)
-- **Issue color:** purple
 
 ## Comments (0)
 

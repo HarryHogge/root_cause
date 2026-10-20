@@ -28,9 +28,9 @@ Will add to backlog vs. other improvements.
 
 Conflicting MFG PNs for 100-105528 - 222K121-25/86-0 is also associated with 100-109329.
 
-[embedded image-20240528-182428.png]
+[embedded: image-20240528-182428.png]
 
-[embedded image-20240528-183156.png]
+[embedded: image-20240528-183156.png]
 @Emalee Johnson @Luca Lauritzen  FYA @Steve Stack @Brad Crampton I have 800 of the 202A111-25-0 at receiving inspection.
 
 ## Attachments (2)

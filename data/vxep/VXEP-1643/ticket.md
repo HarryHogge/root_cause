@@ -15,8 +15,8 @@
 ## Description
 
 - D13 and D12 must be flipped 180 degrees and connected to GND not PWR. 
-[embedded image-20251215-230624.png]
-[embedded image-20251215-230722.png]
+[embedded: image-20251215-230624.png]
+[embedded: image-20251215-230722.png]
 - match magnetics circuitry
 - change BOM to have the A part for the MCU - Speak to @John Clark for more info 
 - PN: DSPIC30F6010A/PF-ND

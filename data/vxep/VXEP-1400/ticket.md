@@ -26,9 +26,9 @@ Measure VBN module and updated 35Y profile in CAD.Design foam cut template for s
 
 ### Brendan Palmer, 2025-07-24
 
-[embedded Image (23).jpg]
-[embedded Image (22).jpg]
-[embedded Image (21).jpg]
+[embedded: Image (23).jpg]
+[embedded: Image (22).jpg]
+[embedded: Image (21).jpg]
 
 ### Brendan Palmer, 2025-07-24
 

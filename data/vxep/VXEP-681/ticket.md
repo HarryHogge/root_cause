@@ -11,11 +11,7 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Practice Build - 126-116212-02, X-Kit Fuse Drop Payload Harness
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
 - **Start date:** 2024-09-29
-- **Issue color:** purple
 
 ## Comments (0)
 

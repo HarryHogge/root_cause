@@ -12,10 +12,6 @@
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
 - **Links:** is blocked by VXEP-701 (101-115866-01, VXE30 Std Config, Wing Utility "Pylon" - Inspection Sheet)
-- **Epic Name:** Practice Build - 101-115866-01, VXE30 Std Config, Wing Utility "Pylon"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

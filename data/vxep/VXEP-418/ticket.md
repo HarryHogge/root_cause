@@ -11,7 +11,6 @@
 - **Assignee:** Tom Westrich
 - **Creator:** Greg Fryer
 - **Links:** relates to JA-120 (Add Parent link)
-- **Issue color:** purple
 
 ## Description
 

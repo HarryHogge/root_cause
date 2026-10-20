@@ -68,112 +68,142 @@ Root cause of calibration errors is unclear.  Leading theory is operator error, 
 
 ## Comments (43)
 
-### Pat Wells, 2024-05-08
+### Pat Wells, 2024-04-18
 
-@Cameron Chapman @Jason Scherer 
-Any updates?  The customer reached out this morning inquiring.
+@David Grosher Added additional information from operator in description.
+Note: This is a deployed operational asset and they have ceased flight ops pending resolution of this issue.
 
-### David Grosher, 2024-05-10
+### Tom Westrich, 2024-04-19
 
-@Cameron Chapman FYI, this issue has new data on the FWD propulsion that was pulling too much power.
+All,
+ 
+The fuel cell from V523’s AAR  seems to be working well.  I see good power output after takeoff with a reasonable stack voltage and fuel consumption.  I do not understand where the ‘reporting [of] battery current of “-10”’ is coming from in the vehicle software, but I do not see any indication of negative current in the fuel cell files.  I did see that the comparison of HLB voltage (as measured at the fuel cell) and the HLB state of charge seems to be very noisy, and perhaps scaled inaccurately?
+ 
+Fuel Cell Power Graph (Output Power and HLB SOC vs time):
+[embedded: image-20240419-114014.png]
+HLB Voltage – SOC graph:
+[embedded: image-20240419-114026.png]
+For comparison, here is the same graph for V541 (recent data from Dana at Ft Carson):
+[embedded: image-20240419-114047.png]
+I’ll add this information to the Jira ticket and tag Dave @David Grosher  for his SA. 
+Tom
 
-### Cameron Chapman, 2024-05-14
+### Jason Scherer, 2024-04-19
 
-@Eric Brewer discussing with @David Grosher , can you please look into the new AAR and my questions below? We are trying to determine what variables caused the throttle to be higher than normal, and if the replacement nose cone resolved the issue (which would isolate it to the nose cone). @Pat Wells mentioned it was very high priority, as the customer is unable to perform important missions without this aircraft. 
+@Tom Westrich Should I interpret your chart below as indicating that the fuel cell provided 450+ Watts after the launch. Are those time units correct? 5000 seconds to launch (~83 minutes)?
+
+### Tom Westrich, 2024-04-19
+
+Jason,
+This is correct. I have set time = 0 to the start command timestamp. We can see the fuel cell shift into operate at about 1000sec, or 16min after start.  This is a reasonable start time for the fuel cell.
+All of this data came from the fuelcelllog.csv file.
+Tom
+
+### Jason Scherer, 2024-04-19
+
+@David Grosher @Cameron Chapman @Pat Wells I created an investigation slide deck and uploaded to SharePoint (link in the ticket description). My initial look at the data indicates the forward motor is consuming a lot more power which higher throttles than normal. I believe the SoC data is accurate. It also looks like the fuel cell is functional based on Tom’s look at the data/comment below. I added a slide with data from one of the SCO flights for this vehicle which shows a lot less power consumption and lower throttles at a higher elevation. Seems like the forward propulsion is struggling now for some reason.
+
+### Pat Wells, 2024-04-19
+
+@Jason Scherer would there be any benefit to the operators exchanging the nose cone LRU with a new unit?  
+I ask because they are still unable to support missions.
+
+### Jason Scherer, 2024-04-19
+
+@Pat Wells I would like to get @Cameron Chapman to weigh in. I’m mainly looking at this from a software perspective. Cameron might be a different take on the data. I do understand the urgency. @David Grosher would be the person to ask about the exchange.
+
+### Cameron Chapman, 2024-04-19
+
+Good investigation @Jason Scherer. 
+- I am thinking they could run a ground test of this nosecone, then swap it and compare the result. If the power is much higher for the same throttle, that should prove it is a problem in the nose. (Hopefully not damage caused by something in the vehicle). Given their remote location, I think this is worth the low risk. 
+- @Michael Berger @Jason Scherer is there a motor test page like there is in VTOL? If so, they could use that. I am thinking launch wizard might be too quick and high throttle for a good comparison.
+- @Jason Scherer is there any logic to stop climbing, alert operator, and/or RTB if the HLB is too low and not charging during fuel cell operations?
+
+FYI @Pat Wells
+
+### Pat Wells, 2024-04-20
+
+@Cameron Chapman @Michael Berger @Jason Scherer 
+All received on the potential ground testing.  Will standby for confirmation that we want to attempt this and the procedure to pass along to the operator.
+
+### Pat Wells, 2024-04-20
+
+@Cameron Chapman @Michael Berger @Jason Scherer .
+Update passed your proposed ground test along to the guys and they took the initiative to run a comparison test between the existing cruise motor and a spare known good cruise motor.  Files they provided are attached.  If those aren’t the correct files please let me know and I’ll reach back out to them.  
+Edit 4/22  Customer only conducted tests with known good motor.  They do not have spare nose cone assemblies on site.
+
+xx50.CSV is the test prior to replacement
+xx52.CSV is with the replacement in place
+
+### Michael Berger, 2024-04-22
+
+@Cameron Chapman In the GCS there is the Propulsion Test. Tools>Propulsion Test.
+
+[embedded: image-20240422-200853.png]
+[embedded: image-20240422-200645.png]
+WIth the default gcs.ini settings it runs for forward prop for up to 60 seconds as 50%.
+
+### Cameron Chapman, 2024-04-22
+
+@Jeremy Kostel @Hayden Jeanor or @Rajesh Budhabhatti  are either of you available to plot the referenced tests run by the operator, add to the ppt linked above, determine if that proves the issue is in the nose, and save the files with plots to the same sharepoint location? 
+This is pretty hot, as they do not have spare aircraft. Please coordinate with each other to ensure someone works on this. 
 Thank you.
 
-### Eric Brewer, 2024-05-14
+### Rajesh Budhabhatti, 2024-04-22
 
-@Cameron Chapman apologies I had shared some IM’s with @Jason Scherer on the side but did not update this issue.  This looked to me like a bad airdata calibration.  The groundspeed is consistently well above the airspeed.  We saw something similar happen on AV477 (I linked that issue above also).  Unfortunately I don’t have TAS in the xcomm log and I don’t see a VTOL log with this, but unless it was an extremely hot day I suspect a bad airdata cal.
+Can do. I just finished the VXE-438 investigation tasks so will jump on to this right away.
+Thanks
+Raj
 
-[embedded image-20240514-183851.png]
+### Jason Scherer, 2024-04-23
 
-### Cameron Chapman, 2024-05-14
+@Cameron Chapman “is there any logic to stop climbing, alert operator, and/or RTB if the HLB is too low and not charging during fuel cell operations?” I’ll look into this. I believe there is some logic that pertains to that. I do know that the XComm will command the “emergency” level of output (500W) from the fuel cell based on SoC and range to waypoint. The data shows this occurred during the flight.
 
-Thanks @Eric Brewer 
-- Can you please update the fields above and the incident report with your findings and what you recommend next.
-- Do you know why we do not have a VTOL log? AAR run after CW was removed? Should we request it from the customer to confirm?
-- Can the operators in the field recalibrate the air data, or does that need to be done here? Is that the shield pitot, push pitot step in the pre-flight?
+### Jason Scherer, 2024-04-23
 
-### Eric Brewer, 2024-05-14
+One thing I did find interesting is that the vehicle seems to be consuming almost “Dash” level of power. So, I took a look at the FDR to make sure it wasn’t in dash mode the whole flight. The vehicle started in speed mode 3 (climb) and quickly transitioned to mode 2 (cruise). Mode 4 is dash. So, the vehicle was not operating in dash mode during the flight.
+Below are the gain values for expected power consumption during cruise/dash in watts from the AAR. The vehicle is consuming almost dash level of power in cruise.
+[embedded: image-20240423-182909.png]
+Charts below (from FW FDR data log) show speed mode, commanded altitude, and real altitude. X-Axis is UTC time.
 
-@Cameron Chapman 
-- will do
-- I do not, probably worth confirming if the logs are available.
-- Yes the calibration is the shield/push step.  If you take a look at https://jenaero.atlassian.net/browse/VXEP-292 I had suggested some procedures to test if the software is inducing more delay than normal.  I find it suspicious that both incidents were with the new software.
+[embedded: image-20240423-183448.png]
 
-### Pat Wells, 2024-05-15
+### Pat Wells, 2024-04-23
 
-@Eric Brewer @Cameron Chapman 
-Here’s my proposed path forward. 
-I will notify the operator informing them that there were no issues discovered with their fuel cell or forward propulsion system.
-The cause of the anomaly was a bad air data calibration.
-Instruct the operator to perform a new air data calibration.  Informing them that a reading above 60 knots on the pitot check is a “GO” and they are clear to fly.
+@Cameron Chapman should I ask the operators to replace nose cone assembly and continue flight operations?
 
-Is this ok?
+### Cameron Chapman, 2024-04-23
 
-### Eric Brewer, 2024-05-15
+@Pat Wells I have heard some indications, but have not seen proof that a new nose cone would work. Do they have a new nose cone to test? Didn’t you say earlier they just tested with a new motor on the same nose cone?
 
-@Pat Wells I took a quick look at some data and depending how they are doing the air data calibration there are some that look “successful” but only go to 54 knots or so.  Let me do a little more digging and get you a more concrete answer this afternoon if that’s OK.
+### Cameron Chapman, 2024-04-23
 
-### Pat Wells, 2024-05-15
+@Jason Scherer what does the aircraft set throttle based on during flight? Target airspeed and altitude, or ground speed? How do the air speeds compare? 
+The plots in your ppt show an increased throttle and power setting, so the motor may be responding appropriately to the commanded throttle. We could run these datapoints through the expected vs actual power vs throttle calculation.  
+The power: throttle ratio is not linear for VTOL. Likely not FW, but I do not have that curve currently. 
+VTOL below. https://jenaero.atlassian.net/wiki/spaces/EF/pages/163446841/Common+Data+Review+Tasks+Comparisons FYI @Rajesh Budhabhatti 
+| VtThr | PWM | Power per motor W | Power:Throttle |
+| 0 | 1000 | 15.1 | #DIV/0! |
+| 0.116959 | 1100 | 24.32 | 207.936 |
+| 0.233918 | 1200 | 79.54 | 340.0335 |
+| 0.350877 | 1300 | 180.76 | 515.166 |
+| 0.467836 | 1400 | 327.98 | 701.0573 |
+| 0.584795 | 1500 | 521.2 | 891.252 |
+| 0.701754 | 1600 | 760.42 | 1083.599 |
+| 0.818713 | 1700 | 1045.64 | 1277.175 |
+| 0.935673 | 1800 | 1376.86 | 1471.519 |
+| 1.052632 | 1900 | 1754.08 | 1666.376 |
+| 1.169591 | 2000 | 2177.3 | 1861.592 |
 
-@Eric Brewer got it.
-Standing by.
+### Pat Wells, 2024-04-24
 
-### Eric Brewer, 2024-05-15
+@Cameron Chapman they do not currently have a spare nose cone but they be able to have one shipped to them from a spares package.  Just looking to give them options if in fact we determine that to be the problem.
 
-@Pat Wells per our discussion find summary slides at the end of the ppt (slides 13-18). Let me know if the slides are clear.  If everyone is OK with the content we can export those slides specifically to .pdf and send. 
-I did mention in the slides that we’ve seen this on another aircraft, that will likely be news to the customer and could potentially raise more questions.  If we can I’d recommend we expedite trying to run the in-house testing I mentioned below.
-@David Grosher @Cameron Chapman FYI.
+### Pat Wells, 2024-04-24
 
-### Pat Wells, 2024-05-15
-
-@Eric Brewer great report and summary!  Thank you!
-I will adjust slightly and send over to the operators today.
-
-### Cameron Chapman, 2024-05-17
-
-I asked flight team if they could perform the test in the linked incident.
-
-### Eric Brewer, 2024-05-21
-
-@David Grosher @Cameron Chapman I ran a query in the database:
-SELECT M.flight_id, M.tail_number, M.date, M.time
-FROM missions AS M
-INNER JOIN xcomm_data as X on (X.flight_id = M.flight_id )
-WHERE X."apgpsGs">100 AND X."apIas" < 50
-Group by M.flight_id, M.tail_number, M.date, M.time
-This returned 5 flights total.  One was incident 523, 3 were windy days (no indications of bad airdata cal), and one was consistent with a bad airdata cal (T95_V465_220804_111608_pack)
-Based upon that result it looks the bad airdata cal is pretty rare event (at least for the log sets we have) which makes it more suspicious we’ve had a few more recently with the latest software.
-
-### David Grosher, 2024-09-24
-
-@Ted Trowbridge Another Airspeed Cal related issue. See the CAs, they are probably duplicate.
-
-### Alexander Alan Arnold, 2024-12-10
-
-@Ted Trowbridge Can this item be closed out?
-
-### Josh Burrell, 2025-01-07
-
-New verbiage has been added to the OPS manual to clarify what a correct Pitot test should look like.
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Josh Burrell Since the verbage has been added can we close this out @Ted Trowbridge
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Pat Wells review final report please.
-
-### Pat Wells, 2025-01-10
-
-@Alexander Alan Arnold we sent a report to the customer on this shortly after it happened in Apr 24.  If the corrective action has been implemented then we should move to close this out.
-
-### Jason Scherer, 2025-03-22
-
-Completed subtask https://jenaero.atlassian.net/browse/VXEP-377. Low Energy RTB would also apply to fuel cell configurations. So, if the HLB s low during fixed wing flight, the fixed wing processor would stop climbing, RTB, and alert the operator.
+@Cameron Chapman the operators asked me if they could fly a mission with a main battery (with reduced endurance) rather than a fuel cell.  Note this problem was first experienced while they were flying in fuel cell configuration. 
+My first thought is no-go on this idea as something is likely to completely fail at this point.  
+They are obviously desperate to support their missions right now.
 
 ### Cameron Chapman, 2024-04-30
 
@@ -206,7 +236,7 @@ Thank you.
 
 @Cameron Chapman apologies I had shared some IM’s with @Jason Scherer on the side but did not update this issue.  This looked to me like a bad airdata calibration.  The groundspeed is consistently well above the airspeed.  We saw something similar happen on AV477 (I linked that issue above also).  Unfortunately I don’t have TAS in the xcomm log and I don’t see a VTOL log with this, but unless it was an extremely hot day I suspect a bad airdata cal.
 
-[embedded image-20240514-183851.png]
+[embedded: image-20240514-183851.png]
 
 ### Cameron Chapman, 2024-05-14
 

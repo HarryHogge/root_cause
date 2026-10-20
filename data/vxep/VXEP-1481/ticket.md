@@ -35,13 +35,13 @@ Customer had 2 Nero archer drones one on each wing they only dropped one of the 
 
 ### Jackson Riley Curvin, 2025-08-20
 
-[embedded image-20250820-191314.png]
+[embedded: image-20250820-191314.png]
 
 ### David Grosher, 2025-08-20
 
 It looks like the system may have been in some sort of override mode because the elevator command was constant. Then there is a big jump when the munition was dropped, which would imply that the placement of the mass was not near the Xcg of the aircraft. Ideally the mass should be centered on the Xcg line projected out towards the wings. 
 
-[embedded image-20250820-213148.png]
+[embedded: image-20250820-213148.png]
 This is in the FDR file.
 
 ### Jackson Riley Curvin, 2025-08-20
@@ -89,8 +89,8 @@ Also get some confirmation on their statement. Pretty much nose-dived and only b
 Screenshot below for x-axis relative to time instead of row. 
 The corresponding xcomm log also shows vtol throttles at beginning and end of log file (indicating normal VTOL landing). 
 Given this, I would recommend the ticket is cancelled or put in a different bucket until someone provides information that can be correlated to the logs that were provided so we don’t have to hunt around. @Jackson Riley Curvin @Drew Hildreth @Jeremy White  
-[embedded image-20251006-205454.png]
-[embedded image-20251006-210119.png]
+[embedded: image-20251006-205454.png]
+[embedded: image-20251006-210119.png]
 
 ## Attachments (6)
 

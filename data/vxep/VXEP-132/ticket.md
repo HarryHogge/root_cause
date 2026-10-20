@@ -30,7 +30,7 @@ Discussed with @Ben Hansen . Update procedure to pot to the ridge above part num
 
 @Cameron Chapman I clarified the potting instructions on step 7. This is one of many procedures on my list to overhaul eventually. For now, I think the updated text will suffice.
 
-[embedded file]
+[embedded: image-20231012-001834.png]
 
 ## Attachments (2)
 

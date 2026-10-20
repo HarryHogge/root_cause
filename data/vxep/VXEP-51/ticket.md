@@ -109,7 +109,7 @@ a.	What does land immediately do if lift motors not working.
 
 You can see in this log that V450 has few flights compared to V438. V438 has quite a high flight count. I am wondering if they were using the booms from V450 on V438 at some point, perhaps while attempting to adhere to the 150 flight cycle limit on the booms that is in the maintenance manual.
 
-[embedded file]
+[embedded: image-20230726-215659.png]
 
 ### Cameron Chapman, 2023-08-03
 

@@ -10,7 +10,6 @@
 - **Reporter:** Grant Goodman
 - **Assignee:** Grant Goodman
 - **Creator:** Grant Goodman
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 1
 - **Planned Milestone(s):**  Kickoff/Stakeholder Review, Concept Design Review (CoDR)
 - **Estimated Finish Date:** 2025-08-01

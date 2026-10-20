@@ -11,9 +11,6 @@
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-1512 SB40 Software (Release 6.7.0)
 - **Links:** relates to XKIT-5356 (OGCS Main battery Voltage unavailable after landing)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Comments (1)
 

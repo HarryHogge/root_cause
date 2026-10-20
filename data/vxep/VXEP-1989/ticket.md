@@ -48,6 +48,10 @@ System is in SLO RMA (9/21/2026)
 
 ## Comments (21)
 
+### Michael Lindsay, 2026-09-17
+
+@Alexander Alan Arnold @Jackson Riley Curvin @Drew Hildreth I completed a full pull of the data from 932, this aircraft was a mix of 932 Fuselage adn 933 Center wing this the files are labelled 932 and 933.  I sla  ved in a nose cone to get the data as there is nothing left of the nose.  We will be shipping it back to SLO tomorrow which we have the shipping details I will provide them.
+
 ### Alexander Alan Arnold, 2026-09-17
 
 @David Grosher @Eric Brewer weve gotten some data in here is any of it useable for you guys? @Jeremy Kostel date of incident was reported as 1 september, we received notification a few days after incident
@@ -59,14 +63,14 @@ xcomm 138 seems to be the one. seems like we don’t have the relevant xcomm eve
 ### Eric Brewer, 2026-09-17
 
 @Cody Smisek I believe it’s this one, it mentions that same .csv file. 
-[embedded image-20260917-161850.png]
+[embedded: image-20260917-161850.png]
 
 ### Eric Brewer, 2026-09-17
 
 @Cody Smisek @Michael Lindsay @Alexander Alan Arnold it looks to me like an airspeed sensor issue.  The airspeed measurement is varying pretty wildly during preflight, and then shortly after transition the airspeed measurement goes to 0.  
-[embedded image-20260917-165948.png]
+[embedded: image-20260917-165948.png]
 There is some logic in fixed-wing that will detect landing if the airspeed is too low, it looks like this triggered:
-[embedded image-20260917-170027.png]
+[embedded: image-20260917-170027.png]
 The interesting part is that the vtol and xcomm event logs cut off almost immediately after that event.  It is somewhat typical for the xcomm logs to cut off before impact, but usually the vtol will continue writing for a bit longer, so it makes me suspicious if there was a potential power issue also, not sure.
 Xcomm logs:
 XCL00138.CSV'); % event log xc000101.T10
@@ -113,7 +117,7 @@ IN the building awaiting intake. @David Grosher where would you like this sent o
 ### Jeremy Kostel, 2026-09-21
 
 Quick look at the logs doesn’t show anything immediately concerning on the power train. From the logs, looks like FWD motor appropriately responded to throttle commands. Battery voltages and currents look healthy with FWD motor pulling ~1500W
-[embedded image-20260921-200255.png]
+[embedded: image-20260921-200255.png]
 
 ### Mathew Papaleo, 2026-09-21
 
@@ -122,12 +126,12 @@ Quick look at the logs doesn’t show anything immediately concerning on the pow
 ### Michael Lindsay, 2026-09-23
 
 @Eric Brewer @Alexander Alan Arnold @David Grosher I have attached some pictures of the faults that they received during the launch wizard.  They didn’t change anything to correct this, only power cycled the air vehicle.  They reported no issues when they complete the airspeed measurement check prior to takeoff.  The fuselage/center wing are mismatched by error as a new member of the team  just grabbed a wing and fuselage and didn’t look at the serial numbers.  weather was sunny and they don’t recall the exact winds but they were within OEM limits.
-[embedded IMG_0750.jpg]
-[embedded IMG_0749.jpg]
-[embedded IMG_0748.jpg]
-[embedded 9370D33D-9E3F-4D6A-97E5-F6E7826C1956.jpg]
-[embedded 72950042-CBBF-4133-81E5-3A2167C3E858.jpg]
-[embedded 31F004C0-B6AD-4025-9A9B-04FB2116EAC3.jpg]
+[embedded: IMG_0750.jpg]
+[embedded: IMG_0749.jpg]
+[embedded: IMG_0748.jpg]
+[embedded: 9370D33D-9E3F-4D6A-97E5-F6E7826C1956.jpg]
+[embedded: 72950042-CBBF-4133-81E5-3A2167C3E858.jpg]
+[embedded: 31F004C0-B6AD-4025-9A9B-04FB2116EAC3.jpg]
 
 ### Jackson Riley Curvin, 2026-10-12
 
@@ -143,7 +147,7 @@ Quick look at the logs doesn’t show anything immediately concerning on the pow
 I previously worked on an investigation to VXE 512 for which root cause was inconclusive.  The crux is, 512 went into vertical take-off, ascended, transitioned to fixed wing, and six seconds later, lost all power.
 Then I looked at 932 and it looked similar (as shown below).  Although the airspeed is a defect, I also wonder if it's incidentally related to the reason the aircraft lost power and not causal.   If so, then we are looking in the wrong place.
 
-[embedded image-20261015-183021.png]
+[embedded: image-20261015-183021.png]
 
 ### Jeremy Kostel, 2026-10-15
 
@@ -153,13 +157,8 @@ Then I looked at 932 and it looked similar (as shown below).  Although the airs
 - Eric mentioned the IAS reading zero triggered some sort of landing command. (@Eric Brewer @Everett Werner can you explain a little more what you would have expected the aircraft to do with the IAS dropout? Or does the outcome align pretty closely with expectations)
 - FWD motor looks to be operating properly (unless we’re missing data when things went wrong) is there any explanation for the aggressive pitch deviation?
 
-[embedded image-20261015-185633.png]
-[embedded image-20261015-193452.png]
-
-### Samuel Lopez, 2026-10-15
-
-@Jeremy Kostel 
-the only point I was trying to make was that in both cases, shortly after fixed wing flight begins, the logs abruptly stop and the two cases looked similar in that aspect.
+[embedded: image-20261015-185633.png]
+[embedded: image-20261015-193452.png]
 
 ### Samuel Lopez, 2026-10-15
 

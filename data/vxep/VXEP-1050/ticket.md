@@ -11,9 +11,6 @@
 - **Assignee:** William Doupis
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1008 Mod Payload A-Kit Gen 2 design/release/test (Long term issue resolution)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 - **Production Stakeholder:** Trevor Gronner
 - **Other Stakeholder (as required):** Mike DeJesus
 - **Leadership Stakeholder:** Charles David Madewell
@@ -47,13 +44,13 @@ POC:
 
 
 Pictures from Hayden:
-[embedded image-20250225-205740.png]
-[embedded image-20250225-205756.png]
-[embedded image-20250225-205814.png]
-[embedded image-20250225-205824.png]
-[embedded image-20250225-205835.png]
-[embedded image-20250225-205844.png]
-[embedded image-20250225-205853.png]
+[embedded: image-20250225-205740.png]
+[embedded: image-20250225-205756.png]
+[embedded: image-20250225-205814.png]
+[embedded: image-20250225-205824.png]
+[embedded: image-20250225-205835.png]
+[embedded: image-20250225-205844.png]
+[embedded: image-20250225-205853.png]
 
 ## Comments (2)
 

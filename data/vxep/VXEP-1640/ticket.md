@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Links:** relates to PLD-140 (E140 GNSS issues Dec 2025)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 
 ## Description
 

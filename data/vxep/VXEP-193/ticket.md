@@ -44,7 +44,7 @@ Correction to prior comment, this needs to be done by 10/6 date, prior to submis
 ### Cameron Chapman, 2023-08-31
 
 Updated schedule. Apparently we need a mechanical and electrical integration estimate by Friday with no documentation to base it from. @Carl Graf @Kat Gulstad @Greg Fryer how can we prevent this (get more advanced notice of deadlines) in the future?
-[embedded file]
+[embedded: image-20230831-205540.png]
 Questions we need to answer. 
 - Do we have a POC for the FLIR payloads?
 

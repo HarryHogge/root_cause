@@ -88,12 +88,12 @@ Logs were recovered and distributed on 6/7 by removing avionics box and connecti
 
 Was a launch abort commanded?
 
-[embedded image-20240610-162708.png]
+[embedded: image-20240610-162708.png]
 
 ### Artis Bertulis, 2024-06-10
 
 Added a picture of HLB connector after the crash
-[embedded Image.jpg]
+[embedded: Image.jpg]
 
 ### Artis Bertulis, 2024-06-10
 

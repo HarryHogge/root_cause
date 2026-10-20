@@ -13,9 +13,6 @@
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
 - **Links:** is cloned by VXEP-1262 (Build & Integrate 1x LM HIL Systems)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 - **Target start:** 2025-04-07
 
 ## Description
@@ -24,7 +21,7 @@ Assemble and test three HIL units, ensuring they meet functional and performance
 
 ## Plan
 
-#### Deliverables:
+**Deliverables:**
 
 3 LRR HIL systems fully assembled [2/3 BUILT] Initial functional tests completed
 

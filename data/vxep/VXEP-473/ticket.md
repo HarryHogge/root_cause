@@ -11,7 +11,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-386 Develop Replacement for AS150 Connections
 - **Links:** relates to VXEP-540 (Recent AS150 Connectors causing intermittency and difficulty to connect and disconnect correctly and safely (AS150 Socket Issues))
-- **Issue color:** blue
 
 ## Comments (0)
 

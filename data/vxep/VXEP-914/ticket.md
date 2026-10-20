@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-667 Sustainment: Ground Hardware
-- **Is this ticket a Design Project?:** Yes
 - **Product/Tech Owner:** Greg Fryer
 - **Program (Marquee):** Ground Hardware Sustainment
 - **Job Number:** J100082 - Sustainment: Ground Hardware

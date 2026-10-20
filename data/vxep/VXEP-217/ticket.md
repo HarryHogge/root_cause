@@ -11,7 +11,6 @@
 - **Assignee:** Nadia Brown
 - **Creator:** Matt Philley
 - **Links:** relates to VXEP-1021 (Update note 16 for 107-101631 Drawing)
-- **Issue color:** purple
 - **Part Number(s):** 107-101631-1, 107-101631-2
 
 ## Description
@@ -21,7 +20,7 @@ We would like to define that the correct thing is to use the foam holders.
 This may also be an opportunity to define a catalog PN versus internal PN since these are a catalog item. 
 
 Packaging:
-[embedded file]
+[embedded: image-20231212-155016.png]
 
 ## Comments (5)
 
@@ -42,7 +41,7 @@ Packaging:
 @Cameron Chapman @Nadia Brown we have been requesting packaging requirements to be defined on BOM/Drawing when they are “non-standard”. 
 Most spares and stuff that is ordered separate just gets foam and/or bubble wrap and put in a plastic bag that is labeled. However, a few things have more specific requirements like these or like batteries and laptops with specific shipping labeling requirements. 
 For example, on the TCI-1 Kit Drawing a number of flag notes define how we package various items (including these Motor & ESC’s) so we can be consistent and also verify the packaging prior to delivery. 
-[embedded file]
+[embedded: image-20231221-150202.png]
 
 ### Nina Menon, 2024-05-24
 

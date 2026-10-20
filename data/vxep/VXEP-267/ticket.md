@@ -10,7 +10,6 @@
 - **Reporter:** Matt Philley
 - **Assignee:** Matt Philley
 - **Creator:** Matt Philley
-- **Issue color:** purple
 - **Production Stakeholder:** Trevor Gronner
 - **Other Stakeholder (as required):** Wesley Lilienthal
 

@@ -43,99 +43,101 @@ Aircraft left at RMA due to after hours troubleshooting/mag checking. Recommend 
 
 ## Comments (47)
 
-### Pat Wells, 2025-03-26
+### Greg Fryer, 2025-02-04
 
-@David Grosher correct. Standard procedure is to always replace on RMA’s if it hasn’t already been done.  Regardless of if its corrupt or not.
+@Scott Whitney Is someone available to review the attached log, see if there is anything obvious? They state no payload. 
+@Pat Wells Assume they have checked for environmental factors (e.g. use the compass in the kit, change launch location)?
+@Cody Smisek @David Grosher FYI.
 
-### Alexander Alan Arnold, 2025-03-26
+### Alexander Alan Arnold, 2025-02-04
 
-“received A/C in HSV on 3/10/25,
-tried doing a MAG CAL multiple times every time it was done it seemed to make it worse and kept failing stabilization. Enroute to SLO for further evaluation”
+I have attached an AAR from a failed preflight associated with this aircraft. They said they experienced these issues with two different trillium cameras. An HD40 and an HD45. @Greg Fryer
 
-added Jacksons comments from RMA ticket @Eric Brewer @Cody Smisek
+### Scott Whitney, 2025-02-04
 
-### Pat Wells, 2025-03-27
+@Eric Brewer - can you take a look?
 
-@Cody Smisek @Eric Brewer aircraft is back in RMA as I understand now.  What are the next steps please?
+### Eric Brewer, 2025-02-04
 
-@Drew Hildreth
+@Alexander Alan Arnold @Greg Fryer can you clarify - comments above state no payloads, but comment below says they experienced issues with HD40 and HD45.  The data indicates good vtol mag but erroneous fixed-wing mag.
 
-### Cody Smisek, 2025-03-27
+### Alexander Alan Arnold, 2025-02-04
 
-Replace SD cards. @Pat Wells
+I added a screenshot of the email from the customer saying they had issues while flying with gimbals. @Eric Brewer
 
-### Eric Brewer, 2025-03-27
+### Cody Smisek, 2025-02-04
 
-@Alexander Alan Arnold the fixed-wing mag calibration looks like it’s back to a very similar value to what it was when it left here:
+@Eric Brewer @Alexander Alan Arnold The texts I received were copy/pasted into the original description. Not sure why Chris' answer has now changed to indicate that a payload is being used.
 
-[embedded image-20250327-154352.png]
-Vs when it left:
-[embedded image-20250327-154416.png]
-When we tested it in the lab here Carson thought the mag cal was good compared to what it normally leaves the factory with, although we did see some drift in the fixed-wing mag.  Are you able to share any logs from your failed stabilization tests?
+### Eric Brewer, 2025-02-04
 
-### Alexander Alan Arnold, 2025-03-27
+Got it - have we flown with this type of gimbal before? Both flight logs and ground test indicate significant issues with the fixed-wing mag.  Have they tried the recalibration procedures with the payload installed?
+@Cody Smisek @Alexander Alan Arnold @Greg Fryer
 
-@Eric Brewer We did the testing on March 11th if you would like to pull the logs from the fuselage. I don’t see the logs on my machine here.
+### Alexander Alan Arnold, 2025-02-04
 
-### Eric Brewer, 2025-03-27
+I will ask if they have done the cal procedure with either gimbal installed @Eric Brewer
 
-@Alexander Alan Arnold thanks.  @Pat Wells @Drew Hildreth are you able to pull off the flight logs before the SD cards are replaced? @Cody Smisek FYI.
+### Alexander Alan Arnold, 2025-02-04
 
-### Alexander Alan Arnold, 2025-03-27
+@Eric Brewer @Cody Smisek please review the most recent attachment tilted Chris Joyce traffic (2)
 
-Yes, you can pull logs before the card is replaced. Just connect to the aircraft then access the Xcomm file explorer page via <ftp://stalker:$talkerXE240@<YOUR_XCOMM_IP @Eric Brewer 
+### Eric Brewer, 2025-02-04
 
-Pat and Drew are in Huntsville with me. So, they can't pull data. The fuselage is in SLO.
+@Alexander Alan Arnold @Cody Smisek thanks. Do we have other aircraft that fly in this configuration with the same gimbals? It’s possible there is just interference from the gimbal itself, and the ‘intermittent-ness’ of the issues they are seeing are just due to the gimbal positioning.
+Before having them send the unit back - do we have anyone internally here that knows if we’ve flown this configuration before? If not, do we have those gimbals in house we can test?  If they are having the issues with two airplanes I’m inclined to believe it’s specific to those payloads rather than any hardware fault.
+@Greg Fryer @David Grosher FYI.
 
-### Eric Brewer, 2025-03-27
+### Cody Smisek, 2025-02-04
 
-@Alexander Alan Arnold Got it - didn’t realize Pat and Drew were in Huntsville also.  Cody is out at flight testing so we’d need to find someone else to pull the logs.
+@Eric Brewer Based on the response from Chris, it is still unclear to me what configuration was being flown and when in the troubleshooting things were occuring. 
+I can’t recall if we’ve flown preMagnss or MAGNSS with HD40 and/or HD45. Flight ops has a trillium payload.
 
-### Greg Fryer, 2025-04-01
+### David Grosher, 2025-02-04
 
-@Eric Brewer There’s a comment in the linked RMA ticket calling for “mag repair”, but I don’t see us concluding that. Was that just an assumption, based on bad mag data? Should we consider just directing avionics replacement for the RMA, we can investigate the logs separately rather than keep the plane in work? (I may be too optomistic)
+@Cody Smisek @Alexander Alan Arnold @Eric Brewer Given that they performed some calibrations it might be good to compare the new cals with some old calibrations in old AARs if available. Perhaps the new cals were performed near some source of noise.
 
-### Eric Brewer, 2025-04-01
+### Eric Brewer, 2025-02-04
 
-@Greg Fryer the fixed-wing mag was recalibrated in Huntsville but they still reported issues with heading mismatch.  The mags passed Carson’s checkout in SLO but looked off in the informal testing that Cody did.  At this point since we have to swap SD cards it may not be a bad idea to swap out avionics while we’re at it. @David Grosher FYI.
+@David Grosher good idea.  This is the cal when it left here:
 
-### Greg Fryer, 2025-04-02
+[embedded: image-20250205-001512.png]
+And here is the cal in their latest logs:
+[embedded: image-20250205-001541.png]
+That’s a huge delta in the offsets and the z span.  It’s possible it’s related to the payloads they have installed or could be specific to their site or the way they are calibrating the birds.  It may make sense to have a quick call with Chris if he’s available as we can talk through his setup.
 
-@Cody Smisek I think you left the last comment about re-doing full calibration, did that happen and no joy? I have put in replacing avionics if that doesn’t pass, in an effort to get the plane to closure.
+### David Grosher, 2025-02-04
 
-### Cody Smisek, 2025-04-02
+@Alexander Alan Arnold @Pat Wells See below, you might try to set up a call between Chris and Eric.
 
-Last instructions to everyone was to replace SD cards then conduct mag cals. Mag cals have not been completed to my knowledge and I'm unsure and not tracking status of SD card replacements
+### David Grosher, 2025-02-14
 
-### Alexander Alan Arnold, 2025-04-08
+@Alexander Alan Arnold I just wanted to follow up on this. Have we discussed the calibration procedure with Chris Joyce?
 
-@David Grosher Is this still in D2, or can we potentially have this moved to D4/6?
+### Alexander Alan Arnold, 2025-02-18
 
-### Christa Meck, 2025-04-17
+@Eric Brewer Are you available tomorrow at 1230 EST. Chris can jump on a call and have the aircraft set up so we can have him conduct  a mag cal and pull the logs for us.
 
-Removed parent to prep for Incident hierarchy change.  Parent is linked as Linked issue.
+FYSA @Pat Wells @David Grosher
 
-### Rodney Linch, 2025-05-27
+### Eric Brewer, 2025-02-18
 
-@Greg Fryer - Carson verified mag issue is resolved.  Can we close this out?  Carson’s notes: It seems the issue with GCS communication was solved by the standard SD swap process. Magnetometer has been verified, and it doesn't require a flight. Wing has been sealed, so I think we just need to push it to CofC (need NCR closed before we can) and it should be good.
+@Alexander Alan Arnold yes I can be available at that time.  
+@David Grosher FYI that will be during standup but I can send an update ahead of time.
+@Pat Wells FYI.
 
-### Greg Fryer, 2025-05-28
+### Alexander Alan Arnold, 2025-02-19
 
-@Rodney Linch Seems like the RMA can move forward. I’ll reassign the investigation to Dave, see if he has enough info to agree we got to root cause and close.
+Meeting with Chris is scheduled on teams @Eric Brewer
 
-### Greg Fryer, 2025-05-28
+### Alexander Alan Arnold, 2025-02-19
 
-@David Grosher This one looks done, assuming we sorted out the SD card questions/issues. If not, can you pass to whoever has the ball there?
+Added the files from 465 and 464 from the testing done today @Eric Brewer
 
-### Drew Hildreth, 2025-06-03
+### Eric Brewer, 2025-02-25
 
-@Greg Fryer Per Carsons notes this seemed to have been resolved by the SD Card swap. Unless somebody disagrees with me, I would like to close this one. I will update the plan above.
-
-Shipping has already been requested for the RMA.
-
-### Greg Fryer, 2025-06-03
-
-@Drew Hildreth It’s fine for the RMA to complete, even if the investigation is still open. Need to get Dave G. to agree/approve the root cause is sufficient before closing the incident.
+@Alexander Alan Arnold, Carson and I met with Chris and Kendal today.  465 has a bad SD card and is being sent back to Huntsville for warranty repairs.  We will check out the magnetometers when it returns. 
+@David Grosher @Pat Wells FYI.
 
 ### Cody Smisek, 2025-03-26
 
@@ -194,9 +196,9 @@ Replace SD cards. @Pat Wells
 
 @Alexander Alan Arnold the fixed-wing mag calibration looks like it’s back to a very similar value to what it was when it left here:
 
-[embedded image-20250327-154352.png]
+[embedded: image-20250327-154352.png]
 Vs when it left:
-[embedded image-20250327-154416.png]
+[embedded: image-20250327-154416.png]
 When we tested it in the lab here Carson thought the mag cal was good compared to what it normally leaves the factory with, although we did see some drift in the fixed-wing mag.  Are you able to share any logs from your failed stabilization tests?
 
 ### Alexander Alan Arnold, 2025-03-27
@@ -209,7 +211,7 @@ When we tested it in the lab here Carson thought the mag cal was good compared t
 
 ### Alexander Alan Arnold, 2025-03-27
 
-Yes, you can pull logs before the card is replaced. Just connect to the aircraft then access the Xcomm file explorer page via <ftp://stalker:$talkerXE240@<YOUR_XCOMM_IP @Eric Brewer 
+Yes, you can pull logs before the card is replaced. Just connect to the aircraft then access the Xcomm file explorer page via <ftp://stalker:[password removed]@<YOUR_XCOMM_IP @Eric Brewer 
 
 Pat and Drew are in Huntsville with me. So, they can't pull data. The fuselage is in SLO.
 

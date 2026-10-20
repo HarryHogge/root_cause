@@ -19,7 +19,7 @@
 BT1 on both VTOL and XCOMM, MFG PN: MS621FE-FL11E
 https://www.sii.co.jp/en/me/files/2024/01/MicroBattery_E_20230330_rev05-security.pdf
 
-[embedded image-20241028-221941.png]
+[embedded: image-20241028-221941.png]
 
 ## Comments (4)
 
@@ -36,7 +36,7 @@ Note that this Coincell batt can fall below minumum voltage after sitting in sto
 
 @Adrian Garcia I would like you to measure the current on all the data lines going to the SD card, when the XCOMM is powered and un-powered. We are looking for leakage currents from BT1 to the SD card datalines
 
-[embedded image-20241101-173435.png]
+[embedded: image-20241101-173435.png]
 
 ### Connor Peebles, 2025-02-05
 

@@ -35,14 +35,14 @@ Delivered the incorrect harness to production and awaiting its return.
 
 @Rajesh Budhabhatti A photo of the actual build was included to show what we were actually looking at vs. the drawing. QC is clear on reading the datasheet and the connector marking of POS 1.
 Please review FLIR J1 - REAR. Red/black color code is swapped. Red should be in POS 1.
-[embedded image-20250711-231932.png]
+[embedded: image-20250711-231932.png]
 
 ### Catherine Wagner, 2025-07-14
 
 REV C - CAM J1 - REAR VIEW does not match supplied part.  
-[embedded image-20250714-163804.png]
+[embedded: image-20250714-163804.png]
 Note also that supplied part (DCHM9S6N5-36.0MN-HT1) is standardized color code starting with Black, so superseding that with drawing (yellow as POS 1) may cause confusion.
-[embedded image-20250714-164134.png]
+[embedded: image-20250714-164134.png]
 @Kevin Aban @Nina Menon @Rajesh Budhabhatti
 
 ### Nina Menon, 2025-07-14

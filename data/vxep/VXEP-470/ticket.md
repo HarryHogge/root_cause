@@ -12,7 +12,6 @@
 - **Labels:** valid
 - **Parent:** VXEP-466 IRAD: Unified Autopilot
 - **Links:** relates to ENG-1752 (1409P01D VTOL AP improvements); relates to ENG-1774 (Replace obsolete MPU-9250 accelerometer (FW AP and ADP). ); relates to FS2-252 (Unified Autopilot non-MVP features); relates to FS2-3831 (ADP to support UAP); relates to VXEP-466 (IRAD: Unified Autopilot)
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 3
 - **Planned Milestone(s):** Preliminary Design Review (PDR), Detailed Design/Critical Design Review (CDR)
 - **Project Folder Link (Sharepoint):** https://jenaero.sharepoint.com/:f:/s/IRAD/EtG227nEnnhPsusNICXhIy4BLj7incPZB4-Ij9mjfdJVlA?e=3uaPae

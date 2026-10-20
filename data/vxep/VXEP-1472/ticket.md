@@ -38,7 +38,7 @@ The Humidity was much higher at 92-94% Other days were closer to 80% This seems 
 ### Tom Westrich, 2025-08-18
 
 @Michael Mohr , I’ve also gotten this image from @Addison Osborn .  Do we have any other evidence on this ticket?  I am particularly interested in the operational details during failure here.  For example, this image shows a failure of the input power DCDC chip in the charger, which would happen if the charger was on and the AC power supply was cycling on & off, or if the power supplies were hot swapped onto chargers before they were told to stop charging.
-[embedded 3bc468fe-9136-4630-b7c0-323c46191e38.jpg]
+[embedded: 3bc468fe-9136-4630-b7c0-323c46191e38.jpg]
 @Addison Osborn , my initial suspicion is that humidity was not a factor here, but I need more information to determine the root cause.
 
 ### Addison Osborn, 2025-08-18

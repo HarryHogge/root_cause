@@ -13,7 +13,7 @@
 ## Plan
 
 - we don't have anything on the drawing specifying loading SW onto the E140 int board. Can you please add a note like this to 2129132 when you update it for the new MANI PCB? 
-[embedded image-20261002-160036.png]
+[embedded: image-20261002-160036.png]
 - Can you please add Cam to the reviewer list?
 - Change name to something like Payload Assy Epsilon 140Z G2, this is an assembly, not a mount.
 - Add expected weight and tolerance. Record weights for each built.

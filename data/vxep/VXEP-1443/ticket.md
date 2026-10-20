@@ -59,7 +59,7 @@ The last flight appears to be in the datafiles VTL00073.csv and XCL00052.csv. An
 
 ### David Grosher, 2025-07-23
 
-[embedded file]
+[embedded: Investigation 676.pdf]
 Preliminary investigation.
 
 ### David Grosher, 2025-07-23
@@ -131,7 +131,7 @@ Downgraded severity, there is no indication that any of the observed behaviors w
 Let me know if you need anything else.
 
 
-[embedded image-20260115-145714.png]
+[embedded: image-20260115-145714.png]
 
 ### Eric Brewer, 2026-01-15
 

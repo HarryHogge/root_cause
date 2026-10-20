@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Pat Wells
 - **Labels:** USASOC, Weekly-incident-tracker
-- **Issue color:** purple
 - **Customer:** USASOC
 - **Vehicle Tail Number:** 549
 

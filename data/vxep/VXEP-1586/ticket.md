@@ -64,7 +64,7 @@ Awaiting additional information from the customer to begin RCA. I think due to t
 
 @David Grosher there is a pretty significant disturbance in the mag readings right when the vtol system spools up.  The attitude estimate on vtol becomes inaccurate leading to the abort.  Close to touchdown the mag readings ramp up even further before the magnetometer is (correctly) declared failed.  
 
-[embedded image-20251017-150806.png]
+[embedded: image-20251017-150806.png]
 I double-checked the SCO logs when this bird went out and the mag readings look clean.  I’d be curious about the following:
 1. When the vehicle is powered back on, do the mag readings now look normal?
 2. Could there have been an electrical issue? Either with the VTOL system or potentially the E140 ground loop issue?  Does the ground loop issue affect the vtol mag? I thought it was typically limited to the fixed-wing mag.  The throttles have already ramped up to 75% or so before the mag magnitude increases.

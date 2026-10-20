@@ -51,8 +51,8 @@ This unit did get a GPS fix
 Errors: None
 
 EPS8090 Results on VXEP-1637
-[embedded image-20251222-181509.png]
-[embedded IMG_2720.MOV]
+[embedded: image-20251222-181509.png]
+[embedded: IMG_2720.MOV]
 
 ### Jackson Riley Curvin, 2026-01-14
 
@@ -61,7 +61,7 @@ Test conditions
 Power source: E95 quick connect bench cable
 Connection: Serial and Ethernet
 video was still jerky, still had GPS fix motors worked as expected.
-[embedded MicrosoftTeams-video (4).mp4]
+[embedded: MicrosoftTeams-video (4).mp4]
 
 ### Cody Smisek, 2026-01-22
 

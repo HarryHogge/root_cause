@@ -16,9 +16,9 @@
 ## Description
 
 Plug in connections the wrong way using proposed pinout designs to ensure no failures: LEMB pinouts.xlsx
-- [embedded image-20250311-165822.png]
-- [embedded image-20250311-165837.png]
-- [embedded image-20250214-204601.png]
+- [embedded: image-20250311-165822.png]
+- [embedded: image-20250311-165837.png]
+- [embedded: image-20250214-204601.png]
 
 ## Issue Status
 
@@ -40,9 +40,9 @@ Copy and pasted from Issue Status field:
 
  To safely replicate scenario 1 I removed BP1 (the white lead of the connector) from the housing. The first image shows that cell reads when BP1 is not connected. It shows cell 0 to have 2.02V and cell 1 to be 4.15V with the rest at ~3.1V. When putting the charger in charge mode an error appears and does not allow charging as shown in photo 2. 
 In short, by not connecting BP1, the charger will not charge the battery, thus the proposed pinout should work.  
-[embedded image-20250214-231114.png]
+[embedded: image-20250214-231114.png]
 Cell voltages when BP1 disconnected 
-[embedded image-20250214-231218.png]
+[embedded: image-20250214-231218.png]
 Charging attempt when BP1 is not connected
 
 ### Hayden Jeanor, 2025-02-17
@@ -57,10 +57,10 @@ Charging attempt when BP1 is not connected
 
 @Hayden Jeanor I swapped BP1 (white wire) and BP0 (grey wire)
 
-[embedded image-20250307-191452.png]
+[embedded: image-20250307-191452.png]
 and here are the results of that: 
-[embedded image-20250307-191514.png]
-[embedded image-20250307-191524.png]
+[embedded: image-20250307-191514.png]
+[embedded: image-20250307-191524.png]
 
 ### Hayden Jeanor, 2025-03-11
 

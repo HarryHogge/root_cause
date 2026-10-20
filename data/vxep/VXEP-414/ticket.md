@@ -42,16 +42,16 @@ Report: VXEP-414 VXE 468 Crash After Transition to Forward Flight.pptx
 Boost board: 
 Elevator boost board was not showing responding the Iron bird’s and 468 avionics box when connected. 
 
-[embedded image-20240912-152903.png]
+[embedded: image-20240912-152903.png]
 
 ODU’s boot was slipping down so I removed it and when I did the connectors were not attached to it 
-[embedded image-20240912-153938.png]
+[embedded: image-20240912-153938.png]
 When inspecting the ODUs it is evident that the harness was ripped from the connector. This leads to the question whether it was caused from the crash or if it was from stress from disconnecting and connecting the elevator from the tail.  
 - Given the receipt inspection damage and that all 3 wires are ripped off, it seems likely this damage was from the crash. 
-[embedded image-20240913-164156.png]
+[embedded: image-20240913-164156.png]
 
-[embedded image-20240912-154516.png]
-[embedded image-20240912-154525.png]
+[embedded: image-20240912-154516.png]
+[embedded: image-20240912-154525.png]
 After finding that the ODUs were torn off, I conducted a series of tests
 - I used a servo controller to check if a servo would respond to the boost board. It did not
 - I put the boost board onto the iron bird and tried to control the servo by moving around the avionics box. Using the Iron bird and 468’s avionics box, the servos were not responding to the servo
@@ -59,15 +59,15 @@ After finding that the ODUs were torn off, I conducted a series of tests
 - test completed and with newly terminated output harness the boost board worked as intended
 
 After these tests were performed, I cut the heat shrink incasing the boost board and saw that it was covered in the tough seal potting material. 
-[embedded image-20240912-155217.png]
-[embedded image-20240912-155222.png]
+[embedded: image-20240912-155217.png]
+[embedded: image-20240912-155222.png]
 I proceeded to carefully remove the the potting material by dumping it into alcohol to soften it and using tweezer and an exacto knife. I came to a point where I was satisfied to begin probing and testing connections. 
 - Looking at the schematic and I did a continuity test on the switching regulator and everything had continuity
 - I checked the output voltage. I inputted 6V and measured the output and it measured 6.2V , which is expected.
 - Using a servo controller, I checked the signal output voltage and when increasing and decreasing the PWM the voltage would range from 0.18V-0.5V (0.18V when the servo controller was at the lowest pulse width and 0.5V when it was at the highest pulse width). This voltage range was compared to a known good elevator boost board and was consistent.
 
 After these tests were done the output wires ripped off from the board due to handling
-[embedded image-20240912-160334.png]
+[embedded: image-20240912-160334.png]
 9/16/2024: 
 re-terminated output side of boost board with new wires and ODU and board is functioning properly
 Connected a servo controller to the boost board and a servo to the output and the servo was responding to the controller 
@@ -82,6 +82,79 @@ Possible root causes
 - This is evident by seeing the ripped ODU, however this is still inconclusive because this could be a symptom from crashing but seems like the most likely cause.
 
 ## Comments (35)
+
+### David Grosher, 2024-06-18
+
+@Sean Odell Who has this vehicle? I would like to get access to the data.
+
+### Sean Odell, 2024-06-19
+
+@David Grosher It just arrived yesterday. Currently in my queue for induction and inventory before heading over to engineering. Due to UK MOD coming today, it might be slightly delayed. I will let you know when I deliver it.
+
+### Sean Odell, 2024-06-25
+
+@David Grosher @Pat Wells @Cameron Chapman VXE-468 has been photographed and delivered to Engineering Rack. Due to damage I only took some photos. Lots of sharp material and gloves are recommended.  Photos on the RMA ticket.
+
+### David Grosher, 2024-06-25
+
+@Kurt Burian @John Clark Can one of you pull the data off of this aircraft? Thanks.
+
+### John Clark, 2024-06-25
+
+@Kurt Burian , @David Grosher , I’ll do it.
+
+### John Clark, 2024-06-25
+
+Notes: AC has suffered severe damage to fuselage. Avionics box was recovered and transferred to open Iron Bird for data recovery. Center-wing suffered rapid disassembly and VTOL AP will need to be transferred to a doner HIL for data recovery.
+
+### John Clark, 2024-06-25
+
+Attached all XComm Flight logs from the incident date. VTOL logs almost completely missing.
+
+### David Grosher, 2024-06-26
+
+@John Clark It looks like the earliest XCOMM datalog is from 5/24 but the event appears to have occurred on 5/21 in the event log. Are there additional datalogs on the SD card?
+
+### John Clark, 2024-06-26
+
+@David Grosher Have examined and confirmed logs exist on incident date UTC suggests XCL00590 may have been the incident flight. There is no corresponding FDR for that I can find as all FDR’s seem to have an earlier UTC. I think all analysis will have to originate from the XComm at this time as no VTOL logs exist. Attached are a few plots. It seems as if forward flight doesn't engage and the AC pitches over. Let me know if you would like me to write this up, or if someone else should. Note there was a VTOL fault found on the XComm as well.
+
+[embedded: image-20240626-223907.png]
+
+[embedded: image-20240626-223845.png]
+
+[embedded: image-20240626-223813.png]
+
+[embedded: image-20240626-223744.png]
+
+### David Grosher, 2024-06-26
+
+Some quick notes: 
+It looks like the FW AP took control of the AC, but promptly proceeded to crash. Some things to track down, elevator failure, airspeed calibration issue, fwd ESC/motor assembly.
+[embedded: image-20240626-234231.png]
+
+[embedded: image-20240626-234550.png]
+
+### David Grosher, 2024-06-26
+
+@Ben Triplett Can you look into this incident. There are a few notes below on the files with data and some initial ideas.
+
+### Pat Wells, 2024-07-30
+
+Moved to closed on customer tracker due to inconclusive findings.  
+Per @David Grosher suspected mechanical failure but unable to determine due to extensive aircraft damage.
+
+### David Grosher, 2024-08-15
+
+@Ryan Christino Can you take a look at this investigation. See some observations in the notes below.
+
+### Ryan Christino, 2024-08-26
+
+@David Grosher @Pat Wells Not a whole lot to add to this one. Was able to document a few variables indicating control surfaces were likely not at fault and found a few that were a bit suspicious but nothing that confirms the cause of this incident. I documented the investigation here for reference: VXEP-414 VXE 468 Crash After Transition to Forward Flight.pptx
+
+### David Grosher, 2024-09-05
+
+@Pat Wells @Cameron Chapman The EE team should inspect the elevator and FWD ESC/Motor to determine if there was a hardware issue. Otherwise, there is nothing noteworthy to report from the data on this flight.
 
 ### Cameron Chapman, 2024-09-05
 
@@ -106,15 +179,15 @@ Quick findings:
 - ODU connector on FWD ESC is bent, likely caused by the crash
 
 
-[embedded image-20240905-180655.png]
+[embedded: image-20240905-180655.png]
 
-[embedded image-20240905-180706.png]
+[embedded: image-20240905-180706.png]
 
-[embedded image-20240905-180714.png]
+[embedded: image-20240905-180714.png]
 
-[embedded image-20240905-180721.png]
+[embedded: image-20240905-180721.png]
 
-[embedded image-20240905-180729.png]
+[embedded: image-20240905-180729.png]
 
 ### Sean Odell, 2024-09-05
 
@@ -144,80 +217,8 @@ Thanks @Adrian Garcia please work with the EE team to see if you can determine i
 ### Adrian Garcia, 2024-09-10
 
 Servo was opened and trying to currently remove potting 
-[embedded 710afe58-08ae-46f4-a545-ae22a8f7b5bd.jpg]
-[embedded e2aaab6d-4aa0-4e71-b862-ee80ff360075.jpg]
-
-### Adrian Garcia, 2024-09-12
-
-@Cameron Chapman Stepping away for a few days to focus on SD card issues and getting havoc IB functional. I updated the issue status with all my findings on the boost board
-
-### Cameron Chapman, 2024-09-13
-
-Actions and questions for @Adrian Garcia. 
-- This seems higher priority than havoc IB. Please continue with this investigation.
-- Please always keep the plan field updated, especially when transitioning to another task.
-- Please combine information from the status and the attached doc into an investigation report. Please see steps and template here and update the investigation checklist with the locations. https://jenaero.atlassian.net/wiki/spaces/EF/pages/23363854/Incident+Investigation+Troubleshooting+and+Resolution+Tracking
-- Please update your plan and root cause fields.
-- See comments above in plan. Specifically:
-- Please repair ODU, PCB, and repeat functional test with all aircraft parts including XCOM, intermediate harnesses and elevator servo.
-- Please reinforce solder joints (tape, etc) and handle evidence more carefully in the future.
-
-### Adrian Garcia, 2024-09-19
-
-@Ryan Christino I added a hardware section to your investigation report, let me know if you want me to reformat or something else, if not it is ready for review @Cameron Chapman
-
-### Cody Smisek, 2024-10-07
-
-Hardware is currently stored under the engineering stairwell area. Ready to return to RMA when appropriate.
-
-### Cody Smisek, 2024-12-23
-
-@Adrian Garcia @Cameron Chapman what's next for this issue? I see CA added but ticket is D4.
-
-### Cameron Chapman, 2024-12-23
-
-@Adrian Garcia please update root cause field. Does it seem like the connector was the likely cause of the issue, potential, unlikely but possible, etc. How likely is it that the connector broke during flight and caused this issue, or would it likely have been caught pre-flight if caused by that?
-
-### Christa Meck, 2025-08-05
-
-@Lauren Velasquez and/or @Pat Wells What is the status of this investigation?  
-Leaving open until 12 Aug for feedback then canceling.
-
-### Pat Wells, 2025-08-05
-
-@Drew Hildreth @Jackson Riley Curvin @Alexander Alan Arnold See below from Christa
-Please advise and close out if necessary.
-
-### Alexander Alan Arnold, 2025-08-05
-
-@Pat Wells This was the silver surfer aircraft do we want to keep this open since we know the config was not one we had tested
-
-### David Grosher, 2025-08-15
-
-@Drew Hildreth This investigation did not produce a conclusive root cause.  Therefor there are no near term corrective actions. The only corrective actions are for long term requirements in next generation designs. I suggest closing this ticket as Bremuda Triangle.
-
-### Cameron Chapman, 2024-09-07
-
-@Adrian Garcia “second tail servo booster does not have continuity across the power line. Logs indicate that tail servos were getting power so discontinuity is likely a cause from the crash”
-- The logs are measurements of voltages at the XCOM. Nothing is measured at the servos. A fault in the boost board could absolutely cause this issue. Please try to determine if there is any evidence of a fault in the boost boards before the crash.
-
-### Ryan Christino, 2024-09-09
-
-@Cameron Chapman  Thanks for the feedback on the report, I implemented your feedback and can help update the report when the hardware investigation is wrapped up.
-
-### Adrian Garcia, 2024-09-09
-
-@Cameron Chapman suspicious boosted board did not pass any tests. The first test conducted was using it with a servo controller and the servo did not perform as excepted. Second test was to put it on Iron Bird and it did not work either. Last test was a load test and it was not giving any/accurate voltage on the output side.
-
-### Cameron Chapman, 2024-09-09
-
-Thanks @Adrian Garcia please work with the EE team to see if you can determine if it was damaged from the crash or malfunctioning before (remove potting carefully and inspect components).
-
-### Adrian Garcia, 2024-09-10
-
-Servo was opened and trying to currently remove potting 
-[embedded 710afe58-08ae-46f4-a545-ae22a8f7b5bd.jpg]
-[embedded e2aaab6d-4aa0-4e71-b862-ee80ff360075.jpg]
+[embedded: 710afe58-08ae-46f4-a545-ae22a8f7b5bd.jpg]
+[embedded: e2aaab6d-4aa0-4e71-b862-ee80ff360075.jpg]
 
 ### Adrian Garcia, 2024-09-12
 

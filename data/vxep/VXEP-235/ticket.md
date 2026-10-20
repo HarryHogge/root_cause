@@ -67,7 +67,7 @@ The links are for Amazon, Newegg, and memory4less respectively. These sites, (es
 
 To the best of my knowledge from the external sites, the important specs to compare are ~80MB/s transfer speed and an operating temperature of -25C-85C. The only info about life cycles (that I could find) are the warranties offered.
 I compiled a small sheet that has a few alternatives, which I did manually. Logan can probably find better alternatives but it’s a start. Most likely it will be useful to just look through the SanDisk alternatives, but I put a few microSD’s from other manufacturers just in case.
-[embedded file]
+[embedded: Microsd Comparisons.xlsx]
 Just a few things to note about the sheet, most, if not all, of the SD’s listed offer a larger storage. Also, I did not include a price column since I can’t compare the pricing to the original, but I can add it later if that would be of use. The test function in the top right corner is just a more reliable way than comparing by eye to check two ID’s, you can just copy and paste a SanDisk part ID in the Test column and it will compare the two values.
 I will continue trying to dig a little deeper and find the original part data sheet, but I hope this can help further things along.
 

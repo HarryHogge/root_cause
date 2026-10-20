@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Sloan Payne
 - **Creator:** Cameron Chapman
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 
 ## Description
 

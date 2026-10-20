@@ -11,7 +11,6 @@
 - **Assignee:** Michael Mohr
 - **Creator:** Michael Mohr
 - **Labels:** TIQUILA, Weekly-incident-tracker
-- **Issue color:** purple
 - **Customer:** TIQUILA
 - **Vehicle Tail Number:** 767
 - **Impacted Disciplines:** Software

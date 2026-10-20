@@ -10,7 +10,6 @@
 - **Creator:** Matt Philley
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** relates to VA-1917 (107-101122 - Forward Blade Processed - Add Packaging Note for Part Protection (Cust Complaint Response))
-- **Issue color:** purple
 - **Part Number(s):** 100-101122, 107-101122, 107-101598, 107-101598-1, 107-101600, 107-101600-1
 - **Product/Tech Owner:** Greg Fryer
 - **Program (Marquee):** VXE30 Aircraft Sustainment
@@ -24,13 +23,13 @@ Ticket created for Engineering & Team to determine if there is any allowance for
 Forward Blade:
 - COTS: 100-101122
 - Processed: 107-101122
-- [embedded file]
+- [embedded: image-20240102-235244.png]
 
 Lift Blades:
 - CW: 107-101598/-1
 - CCW: 107-101600/-1
 - Current notes that may be applied to chips…?
-[embedded file]
+[embedded: image-20240102-235202.png]
 
 
 Misc Notes from Matt P talking with Flight Test Team:
@@ -50,11 +49,11 @@ Last note is that the trailing edges on both blade styles are very thin and shar
   
 Maintenance manual has some guidance but not a firm criteria:
   
-[embedded file]
+[embedded: image-20240102-234932.png]
  
-[embedded file]
+[embedded: image-20240102-234945.png]
  
-[embedded file]
+[embedded: image-20240102-234959.png]
 
 ## Comments (5)
 

@@ -85,8 +85,8 @@ AAR file name is not listed within the spreadsheet. Possibly due to issues we we
 
 @Cody Smisek The place where the AARs were linked does not seem to work for me.
 
-[embedded file]
-[embedded file]
+[embedded: image-20230911-161812.png]
+[embedded: image-20230911-161917.png]
 
 ### Cody Smisek, 2023-09-11
 

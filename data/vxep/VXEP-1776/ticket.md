@@ -60,6 +60,27 @@ FWAP Gyro Bias caused AHRS to report an inaccurate roll.  That in turn caused th
 
 ## Comments (25)
 
+### Michael Mohr, 2026-03-17
+
+@David Grosher Customer is working to get power to the aircraft and download data.
+
+### Jackson Riley Curvin, 2026-03-18
+
+@Scott Lovett @David Grosher  AAR has just been uploaded.
+
+### David Grosher, 2026-03-18
+
+@Eric Brewer Can you take a look at this incident. It appears to spiral depart during a loiter around 7380 XCOMM CpuTime.
+
+### Eric Brewer, 2026-03-18
+
+[embedded: image-20260318-161533.png]
+Logs appear consistent with a gyro failure on the FWAP.  VTOL attitude estimate shows roll left matching reports, while fixed-wing ap shows roll going to the right.  Gyro measurements from FWAP show a roll rate bias of about 20 deg/s around the time of the event.
+
+### Drew Hildreth, 2026-03-20
+
+@Eric Brewer @David Grosher Are you both comfortable with me tell Dhruti it was most likely a FWAP failure? She just called the Bat Phone asking for an update.
+
 ### Eric Brewer, 2026-03-20
 
 @Drew Hildreth yes to me looks like a gyro failure.  @David Grosher FYI.
@@ -88,14 +109,14 @@ She wants to know if this is a Tail issue or a Fleet issue as well. Alex and I t
 
 AAR pulled with Matt on 2026-03-31 with an FDR retrieval error aar plus the manually downloaded xcomm logs.
 
-[embedded file] [embedded file]
+[embedded: T95_V641_260331_151321_02_pack_failed_getfdr.zip] [embedded: xcomm_files_v641_03_31_2026.zip]
 
 ### Eric Brewer, 2026-04-01
 
 @Ryan Smith thanks.  The roll rate and roll rate bias appear within normal limits (roll rate bias < 1 deg/s).  Pitch rate bias is just under 2 deg/s which is a little larger than typical but not out of what would be considered flyable.  Whatever happened to the gyro looks like something transient during the flight.  Note it is not atypical that a gyro might read normal in a lab setting despite having an issue in flight.
 
 
-[embedded image-20260401-203915.png]
+[embedded: image-20260401-203915.png]
 
 ### Matthew Aguirre, 2026-04-01
 
@@ -108,7 +129,7 @@ Main findings:
 
 
 @Eric Brewer not too sure if the deviation in the yaw axis is normal behavior, would like to confirm to continue investigation. Any ideas or tips on how to proceed would be greatly appreciated!
-[embedded file]
+[embedded: TestReport4-1-26.zip]
 
 ### Matthew Aguirre, 2026-04-03
 
@@ -145,28 +166,6 @@ https://jenaero.sharepoint.com/:p:/r/sites/FlightSafety/_layouts/15/Doc.aspx?sou
 ### Drew Hildreth, 2026-04-27
 
 @Eric Brewer This is great! Thank you!
-
-### Eric Brewer, 2026-05-05
-
-@Drew Hildreth are we good to close this one out?
-
-### Drew Hildreth, 2026-05-05
-
-@Eric Brewer I am good with it to be closed.
-
-### Eric Brewer, 2026-05-05
-
-Root cause found to be FWAP gyro failure.
-
-### Cameron Chapman, 2026-05-20
-
-@Eric Brewer should this investigation be closed? We know it failed due to the FWAP gyro, but we don’t know why it failed.
-- Should we keep investigating, or list that the FWAP IMU is going obsolete with advanced nav becoming default, often fails, and is not priority to investigation?
-- We could list in CA that  FWAP IMU is going obsolete with advanced nav becoming default.
-
-### Eric Brewer, 2026-05-20
-
-@Cameron Chapman I think it should be closed.  These do not fail often, and it is one of many single points of failure in the system. If we get in a bunch more of a similar failure mode we can look into it but for now I vote we close the investigation.
 
 ### Eric Brewer, 2026-05-05
 

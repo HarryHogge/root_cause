@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** Electronics_Drafting
 - **Parent:** VXEP-1786 UAP Block 30 Adv Nav Hardware
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
-- **Issue color:** dark_purple
 
 ## Description
 

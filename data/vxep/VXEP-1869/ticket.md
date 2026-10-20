@@ -15,7 +15,7 @@
 
 Locations here https://redwireglobal.sharepoint.com/:u:/s/IRAD/IQCL4aXxAehRQqgI6e1CVUkiAepBhfSNn3rr_ci2WQqBOUU?e=mY8euK
 @Scott Whitney@David Grosher  here is the request for 28V payload power on/off in the various locations. Could we add those features to the roadmap for a future release? The parent ticket has some related power commands that would increase operator experience and safety (ex: 56V on/off, all off) 
-[embedded image-20260904-215410.png]
+[embedded: image-20260904-215410.png]
 
 ## Plan
 

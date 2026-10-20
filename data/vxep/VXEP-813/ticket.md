@@ -15,7 +15,6 @@
 - **Root Cause:** Power return pins seem common with gimbal housing (not ideal, common cause of ground loops)
 - **Incident Type:** Mission Failure/Abort
 - **Severity:** 2 - Degraded Performance - No Workaround
-- **Current Sprint Priority:** 9.1
 - **LRR Desired Delivery Date:** 2025-02-01
 - **LRR Required Delivery Date:** 2025-03-01
 - **Product/Tech Owner:** Charles David Madewell

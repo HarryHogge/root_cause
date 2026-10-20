@@ -38,8 +38,8 @@ Have customer try with another battery, awaiting operator statement. recomend RM
 
 
 
-[embedded image-20260729-175331.png]
-[embedded image-20260729-175258.png]
+[embedded: image-20260729-175331.png]
+[embedded: image-20260729-175258.png]
 
 ### Alexander Alan Arnold, 2026-08-10
 
@@ -48,10 +48,10 @@ Have customer try with another battery, awaiting operator statement. recomend RM
 ### Eric Brewer, 2026-08-10
 
 @Alexander Alan Arnold I see the RF motor pegged in this log T95_V742_260709_125115_pack_unzipped\T95_VT742_260709_125115_vtl00652.csv
-[embedded image-20260810-184621.png]
+[embedded: image-20260810-184621.png]
 While this log shows the low voltage (T95_V742_260709_081426_pack_unzipped\T95_VT742_260709_081426_vtl00645.csv) and different motors pegged throughout:
 
-[embedded image-20260810-184843.png]
+[embedded: image-20260810-184843.png]
 
 ## Attachments (6)
 

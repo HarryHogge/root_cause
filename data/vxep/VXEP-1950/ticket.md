@@ -11,9 +11,6 @@
 - **Assignee:** Collin Ayres
 - **Creator:** Tom Westrich
 - **Parent:** VXEP-1557 VXE 930 Main battery to avionics power chain led to emergency landing
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 
 ## Description
 

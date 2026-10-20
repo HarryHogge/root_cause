@@ -66,7 +66,7 @@ We were unable to nudge until like 20 ft AGL or so
 ### Alexander Alan Arnold, 2025-04-23
 
 @David Grosher I am adding the data we received but it is incomplete they stated after it crashed the CW connector was damaged and did not want to apply power.  
-[embedded image-20250423-183943.png]
+[embedded: image-20250423-183943.png]
 in the debug log we see change active waypoint, Mission Primary LZ 4. 
 We are assuming this is the operator telling the aircraft to go to IP4 instead of entering a full pattern.
 
@@ -101,7 +101,7 @@ FWAP & VTOL log files pulled. Stored in link listed in issue status.
 
 ### Cody Smisek, 2025-04-30
 
-[embedded image-20250430-220627.png]
+[embedded: image-20250430-220627.png]
 
 ### David Grosher, 2025-04-30
 
@@ -114,7 +114,7 @@ I am planning on syncing the data, and will produce some more conclusive graphs,
  
 But with a cursory look I can confirm that multiple LI commands were issued, and the conditions to cause the state bug were there. (Can't confirm vtol did it without time sinc, but all the conditions for it to do it were there.)
 
-[embedded image (1).png]
+[embedded: image (1).png]
 
 What I am looking at is the MESSAGE_VTOL2 <prev> <next>. That is an alert that is generated when the main state variable changes in fwap for vtol stuff. 400s are land abort stuff. It should only ever increase. When I was recreating the bug before the key property was it running through the sequence again. 
  
@@ -125,17 +125,17 @@ From this message I can confirm that the conditions for the dual LI bug were the
 I got the tools together to sync the data between vtol and FDR, so we can overlay the states and events. 
 
 This is the visualization graph. It doesn’t capture all the state transition details because it is restricted to the update rate of the sampled logs. 
-[embedded image-20250514-235219.png]
+[embedded: image-20250514-235219.png]
 Nonetheless, it does show VTOL going into Attitude mode while the FWAP is going into LI mode (states 400 to 500). 
 
 This is the timeline graph: It shows the characteristic decrease of VTOL state characteristic of dual LI requests, but interestingly the dual requests likely didn’t make it to the log. 
-[embedded image-20250515-003229.png]
+[embedded: image-20250515-003229.png]
 We have the sequence in XCEVLOG
 
 There was a LI request and then quickly after an LI abort requested. The system successfully jumped out of the state down to 100, so this probably worked correctly. 
 
 There were high rate logs right in the region we would expect to see the ‘first’ LI request, so likely it wasn’t recorded, but the state transitions from 401 to 407 still happened before the ‘second’ LI request hit and put the system into an error state. 
-[embedded image-20250515-004916.png]
+[embedded: image-20250515-004916.png]
 
 ## Attachments (16)
 

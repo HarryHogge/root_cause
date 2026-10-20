@@ -13,16 +13,13 @@
 - **Labels:** EE-Intern
 - **Parent:** VXEP-1667 New EE/Intern/Specialist Projects
 - **Links:** relates to VXEP-1667 (New EE/Intern/Specialist Projects); relates to ENG-759 (EE Bench Setup and BOM 124-111491 EE Work Bench BOM.xlsx)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Description
 
 See https://jenaero.atlassian.net/browse/ENG-759 
 Add labels like this to all engineering surfaces. 
-[embedded image-20260223-181330.png]
-[embedded image-20260223-181605.png]
+[embedded: image-20260223-181330.png]
+[embedded: image-20260223-181605.png]
 
 ## Plan
 

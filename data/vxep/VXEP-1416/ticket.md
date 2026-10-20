@@ -11,7 +11,6 @@
 - **Assignee:** Samuel Lopez
 - **Creator:** Camron Richardson
 - **Links:** relates to VXEP-1368 (VXE-542 Voltage issues); relates to RMA-721 (VXE-542 RMA # 250630-1)
-- **Issue color:** purple
 
 ## Description
 
@@ -19,7 +18,7 @@ https://jenaero.sharepoint.com/sites/FlightSafety/Shared%20Documents/Forms/AllIt
 Low current readings in VXE - 542 Forward Motor, analysis shows that the Nose is most likely not the issue, however I am not ruling it out as it still showed significantly lower readings. Current plan is to take apart the nose to inspect CSB and ESC, if findings concur everything is fine in the nose, I will work my way back tracing power and ESC Signal to Avionics Box. Initial Assumption is that there is a problem with both CSB and Avionics box as the problem gets worse when using fuse 542 and Nose 542, and get’s slightly better when using alternate fuse. There are no boards/PCBs in between the avionics box and the nose cone, so unless the physical cable is damage, likely suspects are Avionics Box, CSB, or ESC
 
 Would like to verify if actual current draw is consistent with readings on GCS. Verifying low current draw would eliminate current sense board.
-[embedded image-20250717-033410.png]
+[embedded: image-20250717-033410.png]
 
 To rule out avionics box, I believe the best course of action would be to take it out of the plane and plug it in to the Iron Bird in the electronics shop to verify proper readings using equipment proven to be working.
 

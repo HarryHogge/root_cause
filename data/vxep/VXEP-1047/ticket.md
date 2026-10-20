@@ -27,6 +27,27 @@ SharePoint: VXEP-1047 Launch Abort
 
 ## Comments (23)
 
+### Alexander Alan Arnold, 2025-02-24
+
+@Greg Fryer I have attached all data given to us from the customer.
+
+### David Grosher, 2025-02-24
+
+@Alexander Alan Arnold Did we get the correct data? I only see two launch aborts and one was commanded. 
+
+T95_V498_250214_133747_pack - Lost link between GCS and FW AP
+T95_V507_250214_090212_pack - No Launch Abort
+T95_V507_250214_093427_pack - vt lch abort request from gcs
+T95_V507_250214_094952_pack - No Launch abort
+T95_V507_250214_101955_pack - No Launch Abort
+T95_V507_250214_104610_pack - No Launch abort
+T95_V507_250214_111745_pack - No Launch abort
+T95_V507_250214_114958_pack - No Launch Abort
+
+### Alexander Alan Arnold, 2025-02-24
+
+@David Grosher   after the ticket was made we had a similar thought. We’re trying to get in touch with the operator who reported the issue. With it being PMA263 there may be a delay in getting confirmation.
+
 ### Alexander Alan Arnold, 2025-02-25
 
 After speaking with the operator that experienced the issues, he explained 507 was fine and that it is 498 with I believe the 497 CW and 494 with 503 CW that are having the abort issue. Deleted 507 data from ticket. 
@@ -69,7 +90,7 @@ https://jenaero.atlassian.net/browse/VIT2-275
 
 When a GCS message is received on the fixed wing ap, a function called “MaintainLink()” is called which essentially resets a timeout timer. The fixed wing is checking 10 times per second to see if the timeout timer has expired (5 second timeout). So the launch abort would be commanded 5 seconds after the last message received from the GCS. It’s hard to say specifically which part of the link failed without digging further into the data. The link between fixed wing and GCS looks like this:
 Fixed Wing AP<-serial connection->XComm<-Ethernet->XComm Network Switch<-Ethernet->IP Comm Network Switch<-Ethernet->Radio<-RF->Ground Radio<-Ethernet->GCS
-I documented this launch abort message in more detail for a really old NCR, but the slides might be helpful here for reference. [embedded file] This was the very first investigation I was assigned, but it seems like we didn’t have a conclusive reason for the abort. We did conclude that it was a general software issue and not a vehicle specific issue, so the NCR was dispositioned with use as is.
+I documented this launch abort message in more detail for a really old NCR, but the slides might be helpful here for reference. [embedded: AC 533-NCR-240617 Aborted TO after start of transition-Initial-Analysis.pptx] This was the very first investigation I was assigned, but it seems like we didn’t have a conclusive reason for the abort. We did conclude that it was a general software issue and not a vehicle specific issue, so the NCR was dispositioned with use as is.
 Additionally, I have an ongoing general software investigation into issues like this [FS2-2332] Investigate AP Link Loss issues on FW AP - Jira with more information. I’ll link this ticket to that one, to keep track.
 
 ### Pat Wells, 2025-03-17
@@ -78,19 +99,19 @@ Additionally, I have an ongoing general software investigation into issues like 
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-203509.png]
+[embedded: image-20250331-203509.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-203605.png]
+[embedded: image-20250331-203605.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-203702.png]
+[embedded: image-20250331-203702.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
-[embedded image-20250331-203834.png]
+[embedded: image-20250331-203834.png]
 
 ### Jackson Riley Curvin, 2025-03-31
 
@@ -119,18 +140,6 @@ Additionally, I have an ongoing general software investigation into issues like 
 
 @Jackson Riley Curvin @Alexander Alan Arnold See Dave’s comment below. 
 Can we track this down with SOIE?
-
-### Alexander Alan Arnold, 2025-04-07
-
-Jackson already asked the customer for this I believe, it might be worth asking Joe Brown what config PMA263 runs off of and load it onto a gcs in SLO to potentially recreate it. @Pat Wells
-
-### Drew Hildreth, 2025-06-04
-
-Closing due to lack of response from the customer.
-
-### Drew Hildreth, 2025-06-04
-
-Closed due to lack of customer response.
 
 ### Alexander Alan Arnold, 2025-04-07
 

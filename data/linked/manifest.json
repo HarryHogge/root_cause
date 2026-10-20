@@ -1,0 +1,165 @@
+{
+  "project": "tickets in other projects that VXEP Incident (8D) tickets point to",
+  "exported_at": "2026-10-20T17:50:30+00:00",
+  "tickets": 561,
+  "attachment_results": {
+    "converted": 619,
+    "listed only": 3445,
+    "failed": 1,
+    "no text found": 4,
+    "converted (cut)": 9
+  },
+  "failures": [
+    {
+      "ticket": "ENG-3034",
+      "filename": "Vehicle%20450%20incident%20report[1].pptx",
+      "error": "BadZipFile: File is not a zip file"
+    }
+  ],
+  "moved": [
+    {
+      "key": "ENG-1710",
+      "now": "VA-98",
+      "folder": "linked/VA-98",
+      "referenced_by": [
+        "VXEP-628"
+      ]
+    },
+    {
+      "key": "ENG-1711",
+      "now": "VA-99",
+      "folder": "linked/VA-99",
+      "referenced_by": [
+        "VXEP-628"
+      ]
+    },
+    {
+      "key": "ENG-1781",
+      "now": "VA-102",
+      "folder": "linked/VA-102",
+      "referenced_by": [
+        "VXEP-628"
+      ]
+    },
+    {
+      "key": "ENG-2207",
+      "now": "VA-41",
+      "folder": "linked/VA-41",
+      "referenced_by": [
+        "VXEP-41"
+      ]
+    },
+    {
+      "key": "ENG-2530",
+      "now": "VXEP-440",
+      "folder": "vxep/VXEP-440",
+      "referenced_by": [
+        "VXEP-258"
+      ]
+    },
+    {
+      "key": "FS2-2102",
+      "now": "GCSS-362",
+      "folder": "linked/GCSS-362",
+      "referenced_by": [
+        "VXEP-512"
+      ]
+    },
+    {
+      "key": "FS2-2204",
+      "now": "GCSS-465",
+      "folder": "linked/GCSS-465",
+      "referenced_by": [
+        "VXEP-292"
+      ]
+    },
+    {
+      "key": "PLD-29",
+      "now": "VXEP-1315",
+      "folder": "vxep/VXEP-1315",
+      "referenced_by": [
+        "VXEP-1315"
+      ]
+    },
+    {
+      "key": "VA-1004",
+      "now": "SP-206",
+      "folder": "linked/SP-206",
+      "referenced_by": [
+        "VXEP-232"
+      ]
+    },
+    {
+      "key": "VA-1046",
+      "now": "VXEP-389",
+      "folder": "vxep/VXEP-389",
+      "referenced_by": [
+        "VXEP-232"
+      ]
+    },
+    {
+      "key": "VA-1561",
+      "now": "FS2-3286",
+      "folder": "linked/FS2-3286",
+      "referenced_by": [
+        "VXEP-274"
+      ]
+    },
+    {
+      "key": "VA-165",
+      "now": "VXEP-130",
+      "folder": "vxep/VXEP-130",
+      "referenced_by": [
+        "VXEP-15"
+      ]
+    },
+    {
+      "key": "VA-39",
+      "now": "VXEP-51",
+      "folder": "vxep/VXEP-51",
+      "referenced_by": [
+        "VXEP-44"
+      ]
+    },
+    {
+      "key": "VA-473",
+      "now": "VXEP-68",
+      "folder": "vxep/VXEP-68",
+      "referenced_by": [
+        "VXEP-10"
+      ]
+    },
+    {
+      "key": "VA-640",
+      "now": "VXEP-480",
+      "folder": "vxep/VXEP-480",
+      "referenced_by": [
+        "VXEP-51"
+      ]
+    },
+    {
+      "key": "VA-744",
+      "now": "VXEP-162",
+      "folder": "vxep/VXEP-162",
+      "referenced_by": [
+        "VXEP-162"
+      ]
+    },
+    {
+      "key": "VA-82",
+      "now": "VXEP-481",
+      "folder": "vxep/VXEP-481",
+      "referenced_by": [
+        "VXEP-12"
+      ]
+    }
+  ],
+  "not_returned_by_jira": [],
+  "max_chars_per_attachment": 150000,
+  "max_chars_per_text_attachment": 5000000,
+  "max_rows_per_sheet": 300,
+  "boilerplate_skipped": {
+    "Signature Attestation": 1,
+    "CCN + CR Instructions": 1
+  }
+}

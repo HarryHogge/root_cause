@@ -12,15 +12,14 @@
 - **Creator:** Emalee Johnson
 - **Labels:** Electronics_Drafting
 - **Links:** relates to VXEP-217 (Spare Lift Motor BOM Needed to Include Foam Holder)
-- **Issue color:** purple
 - **Issue Status:** Note 16 on page 2 has been removed. Awaiting other issues to be addressed before submitting to review.
 
 ## Description
 
 Update 107-101631 drawing note 16, Magicall labelling stickers will no longer require any removal, they are going to come with no logo moving forward. 
 
-[embedded image-20240508-214549.png]
-[embedded 09527dd3-e8ac-49d6-a31f-1ec496db0dfc.jpg]
+[embedded: image-20240508-214549.png]
+[embedded: 09527dd3-e8ac-49d6-a31f-1ec496db0dfc.jpg]
 
 ## Comments (3)
 

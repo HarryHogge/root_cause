@@ -12,10 +12,7 @@
 - **Assignee:** Matt Weber
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
 - **Start date:** 2025-03-18
-- **Issue color:** dark_purple
 
 ## Description
 

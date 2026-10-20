@@ -10,7 +10,6 @@
 - **Reporter:** Cody Smisek
 - **Assignee:** Cody Smisek
 - **Creator:** Cody Smisek
-- **Issue color:** purple
 - **Target start:** 2024-12-19
 - **Target end:** 2025-01-10
 

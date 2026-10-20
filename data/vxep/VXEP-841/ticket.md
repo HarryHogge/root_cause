@@ -11,11 +11,7 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Catalog Stuff Released
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
 - **Start date:** 2024-12-25
-- **Issue color:** purple
 
 ## Description
 

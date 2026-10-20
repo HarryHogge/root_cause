@@ -11,7 +11,6 @@
 - **Assignee:** Connor Peebles
 - **Creator:** Brad Crampton
 - **Labels:** Electronics_Drafting, jira_escalated
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 - **Target start:** 2024-05-22
 - **Part Number(s):** 1804C02A
@@ -29,7 +28,7 @@
 ### Gary Angelus, 2024-06-28
 
 @Trevor Gronner, created this drawing, for review.  need correct lengths please markup.
-[embedded file]
+[embedded: 1804C20A XE25 PAYLOAD CABLE.pdf]
 
 ### Trevor Gronner, 2024-06-28
 
@@ -49,12 +48,12 @@ Thanks.
 
 @Gary Angelus  A couple notes below:
 - For item 2, 100-106327, this should be the processed Alden connector, we cut down the backshell so 1.5” for that segment is going to be over by at least .5” - .75”. I recommend measuring some of the completed harnesses in inventory since the bend will have a little bit of variation to it.  
-[embedded image-20240715-155429.png]
+[embedded: image-20240715-155429.png]
 - For item 1, 100-106486, the various colors should be these PNs 
-[embedded image-20240715-160229.png]
+[embedded: image-20240715-160229.png]
 
 These are the cut lengths:
-[embedded image-20240715-160600.png]
+[embedded: image-20240715-160600.png]
 - For item 3, 100-106483, can you update the description to include EA E-60NC. I think @Garrett O'Neill has a part library with consistent descriptions for each PN, you could use this for the wire descriptions as well.
 
 This drawing looks super good overall, after these updates are implemented I will ask for a supervisor from production to review and provide any additional feedback.

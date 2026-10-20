@@ -45,7 +45,7 @@ Current ADB is being modified to relocate the OAT sensor. Future improvements ar
 ### Cameron Chapman, 2025-05-05
 
 Closing as duplicate of https://jenaero.atlassian.net/browse/VA-2635
-[embedded file]
+[embedded: 10306]
 
 ### Cameron Chapman, 2025-05-22
 

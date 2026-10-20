@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Stephan Johnson
 - **Labels:** RCCA, TIQUILA, Weekly-incident-tracker
-- **Issue color:** yellow
 - **Asset type:** VXE30
 - **Customer:** TIQUILA
 - **Part Number(s):** 107-111718

@@ -27,18 +27,18 @@ Log review presentation here: https://jenaero.sharepoint.com/:p:/r/sites/FlightS
 
 ### Alexander Alan Arnold, 2026-04-23
 
-[embedded image-20260423-210534.png]
+[embedded: image-20260423-210534.png]
 
 ### Alexander Alan Arnold, 2026-04-23
 
-[embedded image-20260423-210716.png]
+[embedded: image-20260423-210716.png]
 
 ### Eric Brewer, 2026-04-23
 
 @Alexander Alan Arnold thanks for the data.  It definitely has a good bit more vibe than the one reference log I was able to find from FLOPs for that aircraft.  Did a blade maybe get nicked up during a previous landing that would cause it to be out of balance?  Anything else about the config change recently?
 
 
-[embedded image-20260423-211842.png]
+[embedded: image-20260423-211842.png]
 
 ### Alexander Alan Arnold, 2026-04-23
 
@@ -51,7 +51,7 @@ I can also add additional logs from the flights today as i believe it has flow w
 ### Jackson Riley Curvin, 2026-04-23
 
 @Eric Brewer 
-[embedded image-20260423-213459.png]
+[embedded: image-20260423-213459.png]
 
 ### Eric Brewer, 2026-04-23
 

@@ -16,9 +16,9 @@
 ## Description
 
 create a test harness to ‘breakout’ the bulgin payload port of the avionics box. Harness to replicate from production Iron Bird:
-[embedded image-20240920-172343.png]
+[embedded: image-20240920-172343.png]
 
-[embedded image-20240920-172405.png]
+[embedded: image-20240920-172405.png]
 
 ## Plan
 
@@ -45,9 +45,9 @@ create a test harness to ‘breakout’ the bulgin payload port of the avionics 
 ### Cameron Chapman, 2024-09-20
 
 @Hayden Jeanor and @Giovanni Gonzalez a few ideas.
-- This cable or similar is already documented in some ways. [embedded file]
+- This cable or similar is already documented in some ways. [embedded: 107-111892 Bulgin Checkout Harness Pinout.xlsx]
 - Unless you need to test avboxes without the rest of the IB, I'd prefer to build more 111-115715, which does the same thing, is already designed, and is much easier to connect to vehicles. also the bulgin connector is replaced with MAGNSS.
-- We may have some of these in inventory we never plan to use, in which case, you could reterminate to RJ45[embedded file]
+- We may have some of these in inventory we never plan to use, in which case, you could reterminate to RJ45[embedded: 111-105263 BULGIN PAYLOAD CABLE, JUMPER, PINOUT.xlsx]
 
 ### Hayden Jeanor, 2024-09-23
 
@@ -76,7 +76,7 @@ Harnesses are expected to be completed mid-November due to production and electr
 
 ### Giovanni Gonzalez, 2024-09-25
 
-@Gary Angelus We are straying away from replicating the harness from electronics and making a drawing for it. Instead, we are requesting harness [embedded file] which serves the same purpose and is already documented.
+@Gary Angelus We are straying away from replicating the harness from electronics and making a drawing for it. Instead, we are requesting harness [embedded: 111-115715 Mod Payload Port Diagnostic Harness, BOM.xlsx] which serves the same purpose and is already documented.
 
 ## Attachments (5)
 

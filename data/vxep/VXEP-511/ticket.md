@@ -12,11 +12,9 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** SP-128 IMAS Integration Projects
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Tim Muchmore
 - **Project Tier:** Tier 3
 - **Planned Milestone(s):** Concept Design Review (CoDR), Preliminary Design Review (PDR), Detailed Design/Critical Design Review (CDR)
-- **Current Sprint Priority:** 16.0
 - **Contract/Customer First Need:** MOLSON
 - **Product/Tech Owner:** Greg Fryer
 - **Program (Marquee):** APNT Modules
@@ -50,7 +48,7 @@ Clarity on software (e.g. does Ethernet need to be connected, it’s not describ
 ### Tim Muchmore, 2024-08-30
 
 Initial funding through sales order J101723 for Job PC0009. (USD$184,315.75)
-[embedded file][embedded file]
+[embedded: W6399_23_LL90_TA_011.pdf][embedded: Sales Order J101723 Job PC0009 TA 011.pdf]
 Mayflower Communication is not returning my messages. I’m working with MOLSON and 3rd Canadian Space Division to set up a meeting.
 
 ### Greg Fryer, 2024-10-28

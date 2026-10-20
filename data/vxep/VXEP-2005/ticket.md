@@ -61,7 +61,7 @@ linked VXEP 2003 due to similar behavior of link loss of aircraft but operators 
 - 16:50:57.466049 (UTC 23:50:57):  switch to u-drive 
 - XComm time 6691 (23:51:43 UTC), altitude command finally reaches aircraft altitude and aircraft begins to descend.
 
-[embedded image-20260922-130130.png]
+[embedded: image-20260922-130130.png]
 @Scott Whitney @Ted Trowbridge @Everett Werner @David Grosher @Craig Burton
 
 ### Eric Brewer, 2026-09-22

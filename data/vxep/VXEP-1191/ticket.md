@@ -11,9 +11,6 @@
 - **Assignee:** Scott Stuckey
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-887 Create, Test, and Release B40 Wing Utility Pylon (FKA drop payload) PN: 2123650-01
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 - **Issue Status:** Space for Mechanical tasks and actions
 
 ## Description

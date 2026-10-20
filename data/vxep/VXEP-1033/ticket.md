@@ -11,9 +11,6 @@
 - **Assignee:** Carl Graf
 - **Creator:** Carl Graf
 - **Parent:** VXEP-872 Updated Silvus Ground Control Station (SGCS1), increased performance and security
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 - **Sprint:** Havoc 2/12-3/4
 
 ## Plan

@@ -78,7 +78,7 @@ Investigation of watchdog events ongoing.
 ### Jackson Riley Curvin, 2025-11-12
 
 @David Grosher @Logan Wright @Scott Whitney  This is from XCL00098
-[embedded image-20251112-194224.png]
+[embedded: image-20251112-194224.png]
 
 ### David Grosher, 2025-11-12
 
@@ -87,16 +87,16 @@ Investigation of watchdog events ongoing.
 ### David Grosher, 2025-11-21
 
 The system transitioned into descent and then LAND_COMPLETE almost immediately. This is very strange. The data is in XCL0098.csv during the event. Note: the CPU time is hard to track because the XCOMM had a WDT in the middle of the flight. It seems like the landing was detected prematurely resulting in the lift motors being safed.  
-[embedded image-20251121-195302.png]
+[embedded: image-20251121-195302.png]
 
 ### David Grosher, 2025-11-21
 
 VTOL data, that jump in the baro looks suspicious. Maybe the change in the baro offset was the result of the WDT on the XCOMM? The XCOMM CPUTime was 2138 when the landing occurred, which appears to be close to the jump in the offset. 
-[embedded image-20251121-201532.png]
-[embedded image-20251121-201753.png]
+[embedded: image-20251121-201532.png]
+[embedded: image-20251121-201753.png]
 
 Lift Throttles for timing reference: 
-[embedded image-20251121-201657.png]
+[embedded: image-20251121-201657.png]
 
 ### Eric Brewer, 2025-11-24
 

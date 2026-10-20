@@ -8,9 +8,6 @@
 - **Reporter:** Josh Adams
 - **Creator:** Josh Adams
 - **Parent:** VXEP-470 Unified AP for Block 40
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
-- **Issue color:** dark_purple
 
 ## Comments (0)
 

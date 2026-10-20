@@ -11,9 +11,6 @@
 - **Assignee:** Brendan Palmer
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
-- **Issue color:** dark_purple
 - **Production Stakeholder:** Trevor Gronner
 
 ## Description

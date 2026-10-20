@@ -8,14 +8,11 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Mike DeJesus
 - **Creator:** Cameron Chapman
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Description
 
 Multiple similar descriptions released on the vault. I recommend auditing and obsoleting any not latest. 
-[embedded image-20251223-172703.png]
+[embedded: image-20251223-172703.png]
 
 ## Comments (0)
 

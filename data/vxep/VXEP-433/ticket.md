@@ -11,9 +11,6 @@
 - **Creator:** Greg Fryer
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-337 Create, Test, and Release VXE30 Standard Config Wing Utility Drop
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Description
 

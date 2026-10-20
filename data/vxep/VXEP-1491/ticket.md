@@ -29,11 +29,11 @@ Airspeed calibration was incorrect leading to poor lateral tracking and difficul
 
 ### Jackson Riley Curvin, 2025-08-28
 
-[embedded external]
+[embedded file, not matched to an attachment]
 
 ### Jackson Riley Curvin, 2025-08-28
 
-[embedded external]
+[embedded file, not matched to an attachment]
 
 ### Jackson Riley Curvin, 2025-08-28
 
@@ -42,12 +42,12 @@ Awaiting Data
 ### Jackson Riley Curvin, 2025-08-28
 
 averaged around 75 the entire flight
-[embedded image-20250828-213333.png]
+[embedded: image-20250828-213333.png]
 
 ### Jackson Riley Curvin, 2025-08-28
 
 ias averaged above 50 throughout the flight
-[embedded image-20250828-213520.png]
+[embedded: image-20250828-213520.png]
 
 ### Jackson Riley Curvin, 2025-08-28
 
@@ -65,7 +65,7 @@ ias averaged above 50 throughout the flight
 
 @Jackson Riley Curvin There appears to be an airspeed calibration issue on this vehicle. 
 @Eric Brewer Would this result in poor flying qualities when tracking a loiter?
-[embedded image-20251105-162142.png]
+[embedded: image-20251105-162142.png]
 
 ### Eric Brewer, 2025-11-05
 

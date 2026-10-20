@@ -16,23 +16,22 @@
 - **Links:** relates to ENG-2801 (126-117433-01, Drop Payload Board/Harness Assy - Engineering Drawing); is blocked by VXEP-683 (Practice Build - 126-117433-01, Drop Payload Board/Harness Assy)
 - **Epic Link:** VXEP-683
 - **Start date:** 2024-10-31
-- **Issue color:** purple
 
 ## Comments (13)
 
 ### Matt Philley, 2024-10-10
 
-[embedded image-20241010-200204.png]
+[embedded: image-20241010-200204.png]
 
 ### Matt Philley, 2024-10-10
 
 Updated prototype enclosure:
 Will require some adjustments to the wire harnesses. Nina and Liam working on redlines for that. 
-[embedded image-20241010-200242.png]
+[embedded: image-20241010-200242.png]
 
-[embedded image-20241010-200259.png]
+[embedded: image-20241010-200259.png]
 
-[embedded image-20241010-200304.png]
+[embedded: image-20241010-200304.png]
 
 ### Nina Menon, 2024-11-12
 
@@ -59,17 +58,17 @@ Will require some adjustments to the wire harnesses. Nina and Liam working on re
 ### Gerrit Sperling, 2024-12-09
 
 @Nina Menon Hows this look to you?
-[embedded image-20241209-171526.png]
+[embedded: image-20241209-171526.png]
 
 ### Nina Menon, 2024-12-09
 
 @Gerrit Sperling looks great! I also just realized that we’re not clamping the “middle” of the heatshrink length - can we change it to say something more general about ensuring the heatshrink collar is seated at the cable exit? Or just change “middle of the heatshrink length” to “heat shrink collar”? For reference, this is how the HS looks. Thanks!
-[embedded image-20241209-175305.png]
+[embedded: image-20241209-175305.png]
 
 ### Gerrit Sperling, 2024-12-09
 
 @Nina Menon 
-[embedded image-20241209-203151.png]
+[embedded: image-20241209-203151.png]
 
 ### Nina Menon, 2024-12-09
 

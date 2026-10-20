@@ -10,9 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-309 Create Silvus Spectrum Dominance Mod Kit
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-5
-- **Issue color:** dark_teal
 
 ## Comments (0)
 

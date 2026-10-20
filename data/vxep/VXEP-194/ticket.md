@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** VA-872 Aircraft labels are old format and lack Mod Kit space. 
 - **Epic Link:** VA-872
-- **Issue color:** purple
 
 ## Description
 

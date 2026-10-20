@@ -50,6 +50,18 @@ Further data review
 
 ### Alexander Alan Arnold, 2025-02-03
 
+@Greg Fryer I have attached the AAR from the aircraft. The customer is stating that CW is incorrectly reporting HLB status, and they cannot continue through the launch wizard. Pleased let me know if you need anything else.
+
+### Greg Fryer, 2025-02-03
+
+@David Grosher will need a data look to see if we can tell what’s happening
+
+### David Grosher, 2025-02-03
+
+@Alexander Alan Arnold @Pat Wells Can they successfully use a different battery? I just want to understand if the severity is set correctly. It seems like this should be lower.
+
+### Alexander Alan Arnold, 2025-02-03
+
 @David Grosher No this has been happening with a few other batteries. They place the supposed “bad” battery in a different aircraft and the issue does not exist.  I have added two screenshots the customer provided.
 
 ### Ruysser Gabler, 2025-02-04
@@ -66,8 +78,8 @@ The measurement definitely seems off. The log times also don’t match up. The b
 Further data review
 - Vtvbatt is calculated using vref. If that looked abnormal compared to other vehicles, it could indicate a wiring issue.
 
-[embedded image-20250205-045809.png]
-[embedded image-20250205-050221.png]
+[embedded: image-20250205-045809.png]
+[embedded: image-20250205-050221.png]
 
 ### Alexander Alan Arnold, 2025-02-05
 
@@ -85,9 +97,9 @@ Thanks @Alexander Alan Arnold. Understood. The main thing left to test in the fi
 
 Typically Vref follows the inverse curve of VBatt and is in the negative range as seen in the first two graphs. V401 does not follow that. It seems like it reinitializes, but it does not go down to zero so I can not tell if that is the case. Maybe @Jason Scherer might answer that better. My next steps are to try to replicate this first and then check the current sensing harness once the CW is in house. 
 
-[embedded image-20250219-210418.png]
-[embedded image-20250219-210444.png]
-[embedded image-20250219-210459.png]
+[embedded: image-20250219-210418.png]
+[embedded: image-20250219-210444.png]
+[embedded: image-20250219-210459.png]
 
 FYSA @Cameron Chapman @David Grosher
 
@@ -114,7 +126,7 @@ FYSA @Cameron Chapman @David Grosher
 ### Adrian Garcia, 2025-02-25
 
 @Cameron Chapman @David GrosherI tested for continuity across the power and ground bus in the Center Wing and found no continuity in the highlighted harness. This fault closely resembles—if not exactly matches—the issue that @Jeremy Kostel  and I previously investigated, where the 26 AWG wire connecting ground to the CSB was disconnected. I have linked that investigation to this one for reference.https://jenaero.atlassian.net/browse/VXEP-551. 
-[embedded image-20250225-222920.png]
+[embedded: image-20250225-222920.png]
 
 ### Cameron Chapman, 2025-02-25
 
@@ -145,20 +157,7 @@ FYSA @Cameron Chapman @David Grosher
 
 ### Jackson Riley Curvin, 2025-12-01
 
-[embedded file]
-
-### Jackson Riley Curvin, 2026-07-13
-
-Corrective action was canceled, report sent to customer.
-
-### Lauren Velasquez, 2025-03-25
-
-@Adrian Garcia Was there travelers for this?
-@Rodney Linch FYSA
-
-### Jackson Riley Curvin, 2025-12-01
-
-[embedded file]
+[embedded: VXE 401 Centerwing failing to report proper VTOL battery state.pptx]
 
 ### Jackson Riley Curvin, 2026-07-13
 

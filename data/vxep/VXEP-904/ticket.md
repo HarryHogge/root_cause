@@ -21,7 +21,7 @@ Test 2121832-01 for confirmation of temp levels and irreversibility
 ## Plan
 
 Set a profile on our (engineering’s) thermal chamber. This should only take a day with minimal touch time.
-[embedded file]
+[embedded: image-20250124-183700.png]
 - How many steps can we have on that thermal chamber? → Answer: 256
 - Take that answer and divide these levels on this thermal label into that many steps.
 - Set profile for this test:

@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-572 Sustainment: Autopilot & VMS
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 2
 
 ## Description

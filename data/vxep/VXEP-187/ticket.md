@@ -268,7 +268,7 @@ Ideally, the radios would come loaded with 4.0.3.14 so we don’t have to reprog
 
 Victor has requested and Silvus responded that they will send radios configured with SS4 4.0.4 in the future.
 This is still a new firmware for us. 
-[embedded file]
+[embedded: image-20231113-184508.png]
 
 ### Sam Miller, 2023-11-13
 
@@ -277,7 +277,7 @@ I’m working with LM to determine which flavor (4.0.4.X or SS5) we roll out on 
 ### Matt Philley, 2023-11-15
 
 Sam’s notes on decisions made for path forward:
-[embedded file]
+[embedded: image-20231115-152200.png]
 
 ### Matt Philley, 2023-11-29
 
@@ -295,7 +295,7 @@ Current Inventory Counts as of 11/29 from Sharepoint and Packing Slip in QA:
 
 1/17/24 - Silvus replied and there is no issue with rolling these back to v4.0.3.14, so radios were approved and moved to Inventory
 December Delivery arrived with v5.0.0.0 firmware, but still have 172.20 IP addresses. So it looks like we can roll them back to v4.0.3.14 without issue…. but on hold in QA until Silvus replies
-[embedded file]
+[embedded: image-20240103-204839.png]
 
 ### Matt Philley, 2024-01-17
 
@@ -308,11 +308,11 @@ Just a reminder that this Silvus Firmware is included (I think indirectly) on TI
 We will run out of radios with the existing firmware sometime in the next couple months I believe. 
 
 Aircraft:
-[embedded file]
+[embedded: image-20240118-200756.png]
 SGCS1:
-[embedded file]
+[embedded: image-20240118-200820.png]
 SGCS2:
-[embedded file]
+[embedded: image-20240118-200847.png]
 SGCS3 not in scope of TIQUILA yet, but also impacted
 
 ### Matt Philley, 2024-02-01
@@ -321,7 +321,7 @@ SGCS3 not in scope of TIQUILA yet, but also impacted
 January Silvus delivery arrived. Most are still 172.20, IPs, but the first radio that is 172.17 and NO LONGER COMPATIBLE WITH APPROVED SILVUS FIRMWARE has arrived. I will be holding that radio in QA until we have approval for the latest firmware both internally and from our Customers. 
 Now that we have a final Qty of approved radios I think it would be wise for Production and Supply Chain to align on when they will run out, so Engineering and Program Management are aware the due-date for approvals before we start having product on hold for this approval. 
 There has been no status update since November on this topic……
-[embedded file]
+[embedded: image-20240201-185446.png]
 
 ### Greg Fryer, 2024-02-01
 
@@ -353,15 +353,15 @@ I have updated how many are in QA as well. Let me know if you have any questions
 ### Matt Philley, 2024-03-18
 
 @David Grosher @Wesley Lilienthal @Cameron Chapman @Greg Fryer
- [embedded file] 
+ [embedded: StreamScape v4 and v5 Comparison Matrix and Transition Notes v2 (1).pdf] 
 See updated notification from Silvus to clarify the IP range and compatibility with SS4, SS4 Interim, and SS5. This is meant to provide clarification to their original comparison matrix from October 2023.
 
 The primary difference is that it clarifies that SS4 Interim does NOT use the expanded IP range.
 Instead Silvus is shipping radios with 2 IP addresses labeled “SS4” and “SS5” (see image). When the radio is configured to SS4 Interim the radio will operate and report the “SS4” 172.20 IP address, which is a “Duplicate IP” matching something else Silvus has already shipped. 
 Carson and I ran some situations and we did confirm that even with different virtual IPs if two radios have the same 172.20 IP they will still have a network conflict. It did not crash the network, which is good… but the radios did not operate properly. 
 When the radio is updated to SS5 firmware the radio will recognize and use the “SS5” IP address automatically, which is nice. The radio does retain the virtual IP through the update if it was configured on SS4 Interim and then updated to SS5 (like if we shipped it SS4 interim and then a Customer updates it to SS5).
-[embedded file]
-[embedded file]
+[embedded: image-20240318-195320.png]
+[embedded: image-20240318-195345.png]
 
 ### David Grosher, 2024-03-18
 

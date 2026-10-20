@@ -74,9 +74,9 @@ One the next flight everything appeared normal once established in loiter the fu
 ### Charles Sweet, 2026-08-18
 
 @Alexander Alan Arnold 508 suffered a sudden internal short. The weld between the chimney and heat exchanger failed, either from vibration on a poor weld or warping of the bottom plate severing the weld. Molten silver present on the chimney confirms contact here causing the short and conversely the temperature spike causing the fault. 988 is more difficult to tell without a detailed story of the stack's lifetime, cell degradation across the board is evident but the cause of it happening is so few cycles is unable to be determined - early cell failure.
-[embedded image-20260818-160056.png]
-[embedded image-20260818-160041.png]
-[embedded image-20260818-160023.png]
+[embedded: image-20260818-160056.png]
+[embedded: image-20260818-160041.png]
+[embedded: image-20260818-160023.png]
 
 ### Alexander Alan Arnold, 2026-08-25
 

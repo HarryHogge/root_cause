@@ -35,7 +35,7 @@ https://jenaero.atlassian.net/browse/RMA-181
 ### Connor Peebles, 2023-12-07
 
 No evident corrosion underneath shield. BT1 (the coincell battery) is low at 1.745V when it should be at ~3V. 
-[embedded file]
+[embedded: IMG_0577.jpg]
 
 ### Connor Peebles, 2023-12-07
 

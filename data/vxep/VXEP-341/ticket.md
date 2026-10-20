@@ -11,7 +11,6 @@
 - **Assignee:** Mark Squillante
 - **Creator:** Laura Bertule
 - **Links:** relates to ENG-2570 (Test replacement power supply for 100-107017); relates to VA-1562 (18V power supply used in 100-107017 no longer available. 12V replacement supply has been approved. ); relates to VA-1563 (Update test procedure for 100-107017 to accommodate lower voltage supply)
-- **Issue color:** purple
 - **Part Number(s):** 100-107017
 - **Supply Chain Stakeholder:** Laura Bertule
 - **Other Stakeholder (as required):** Perry Richardson
@@ -30,8 +29,8 @@ Used in 96X-3-10-1003 SGCS-2 PoE AC Power Supply
 ### Perry Richardson, 2024-04-11
 
 There are some alternates available. The current output and the Voltage output are a little different.  Not sure what we can be worked with. and absolutely need and cannot be altered.
-[embedded 100-107017 alternate.png]
-[embedded file]
+[embedded: 100-107017 alternate.png]
+[embedded: 100-107017 Current.pdf]
 
 ### Greg Fryer, 2024-04-11
 

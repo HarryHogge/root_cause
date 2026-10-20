@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
-- **Issue color:** purple
 
 ## Comments (0)
 

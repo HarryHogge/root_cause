@@ -25,15 +25,11 @@ Data collection here: 128-117156-01 Rev B SLA Breakout Board - Increment to Rev 
 PPT here: VXEP 730 - 128-117156-01 Rev B SLA Breakout Board - Increment to Rev C.pptx
 Rev C found here: Project 128-117156-01 Revision C
 
-## Cause
-
-SLA Breakout 128-117156-01 Rev B has the Over Voltage Protection pin of both E-Fuses set to ~35V. When plugging in the HLB data cable, transients can occur that may briefly trip the E-Fuse protecting the MCM, which then has the possibility to drop power below the 9V minimum of the MCM.
-
 ## Plan
 
 - 128-117156-01 Rev B SLA Breakout Board - Increment to Rev C
 - see redline for changes
-- [embedded file]
+- [embedded: 128-117156-01-Power Switching_REDLINE_11-25-2024.pdf]
 - Once Rev C FAI are accepted, cut that into production and scrap any remaining Rev B boards
 - Determine feasibility of rework for Rev B boards
 - Re-work considered very arduous
@@ -42,6 +38,10 @@ SLA Breakout 128-117156-01 Rev B has the Over Voltage Protection pin of both E-F
 - We will not be re-working Rev B boards
 
 ## Comments (21)
+
+### Desiray Johnston, 2024-10-18
+
+@Liam Limon Hello Liam, as discussed, this is the change for the SLA breakout board based on the NCR for 724.
 
 ### Connor Peebles, 2024-11-25
 
@@ -126,10 +126,6 @@ Board was released, is in advanced nav planes and will be the go to part going f
 ### Trevor Gronner, 2025-05-01
 
 @Luca Lauritzen Are there implementation actions still needed for this to roll into production?
-
-### Christa Meck, 2025-09-16
-
-@Trevor Gronner
 
 ### Christa Meck, 2025-09-16
 

@@ -9,7 +9,6 @@
 - **Reporter:** Stephanie Sacheen Hershey
 - **Assignee:** Cameron Chapman
 - **Creator:** Stephanie Sacheen Hershey
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 
 ## Description

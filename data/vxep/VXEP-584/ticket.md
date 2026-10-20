@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** SP-81 Maritime Ops (MOLSON)
 - **Links:** is blocked by VXEP-364 (Complete E140 Gimbal VXE30 Development (Move to Gimbal Project when created))
-- **Issue color:** purple
 
 ## Comments (3)
 

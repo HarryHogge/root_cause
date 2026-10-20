@@ -9,7 +9,6 @@
 - **Assignee:** Samuel Raumin
 - **Creator:** Cameron Chapman
 - **Links:** relates to VXEP-1990 (B40 1023 TW power flipped in CW); relates to XKIT-5369 (Ensure all prototype cables and electronics are tested prior to aircraft installation. )
-- **Issue color:** green
 - **Plan:** Added to B40 roadmap. @Eric Cain may work on this after current projects.
 
 ## Description

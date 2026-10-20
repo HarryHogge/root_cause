@@ -13,7 +13,6 @@
 - **Labels:** Bad_Mag_Data, Edge_Asset, Weekly-incident-tracker
 - **Links:** relates to RMA-217 (VXE-406 240212 Edge Asset); relates to VXEP-263 (VXE-604 crash during SCO/ Flight test)
 - **Impact:** Significant / Large
-- **Issue color:** purple
 - **Customer:** Edge_Asset
 - **Vehicle Tail Number:** 406
 - **Vehicle Configuration:** Replacement 406 was delivered in March 2023
@@ -133,7 +132,7 @@ Initial testing results for Center Wing 406:
 - This was the Magnetometer data in response to a metallic object placed nearby the board:
 - Bxyz Live: 0.0358, 1.3615, -0.6670
 - Aligned the Center Wing so that the “nose” of the aircraft pointed south. Center Wing was upside down with the Magnetometer board held level. The heading below (from Instrument Panel) is what was displayed.
-- [embedded file]
+- [embedded: image-20240221-170820.png]
 
 ### Cameron Chapman, 2024-02-21
 

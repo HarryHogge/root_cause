@@ -29,7 +29,7 @@ Sealing the air data pod will make it possible to build the air data board witho
 ### Ryan Ferguson, 2023-02-27
 
 I have attached the project proposal document.  This project can be summarized in two different phases, namely sealing the pod and removing unnecessary adhesives from the subassemblies within.  
-[embedded file]
+[embedded: Improvement  Project Proposal - Sealing Air Data Pod.pptx]
 This project may have some relevance or impact on the heated pitot tube project https://jenaero.atlassian.net/browse/ENGPRJ-215  but for the time being I am treating that as out of scope considering it is still in the early R&D phase.
 
 ### Mark Squillante, 2023-04-17

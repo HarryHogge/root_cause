@@ -15,7 +15,6 @@
 - **Parent:** VXEP-683 Practice Build - 126-117433-01, Drop Payload Board/Harness Assy
 - **Epic Link:** VXEP-683
 - **Start date:** 2024-10-05
-- **Issue color:** purple
 
 ## Comments (0)
 

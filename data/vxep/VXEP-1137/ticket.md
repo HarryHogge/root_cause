@@ -17,10 +17,10 @@
 From Hayden Jeanor 
 ”So i think the battery was at the end of its life because there was a total energy consumption of 4.82Ah when the pack is rated to 6.6Ah (73% pack degradation - 80% is usually the threshold to be considered at the end of its life)
  
-[embedded image (8).png]
+[embedded: image (8).png]
 However, our SoC model should account for this degradation (its the whole reason we base SoC on pack voltage), but it did not react as we would hope. The vehicle was reading <21V (min cutoff voltage), but still reporting >25% SoC - this should never happen if the model was working. Also, SoC continues to drop at the same rate after the vehicle landed indicating something is wrong with the model 
  
-[embedded image (9).png]
+[embedded: image (9).png]
  
 In summary - yes the pack is degraded (as expected after 44 flights), but the vehicle is designed to accommodate for this degradation in its SoC model, but the model is failing to do so for whatever reason. The model might have some dependence on coulomb counting, which might be taking too much precedence on the SoC determination”
 

@@ -9,9 +9,6 @@
 - **Assignee:** Trevor Gronner
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1785 B30 Multiple HLB Voltage Measurements Outside of Voltage Limits. Suspect VTOL AP or voltage sense circuit (harness, ground iso, etc)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Comments (0)
 

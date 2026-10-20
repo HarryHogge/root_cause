@@ -156,7 +156,7 @@ Next step is build and document the xkit version
 ### Adrian Garcia, 2024-07-18
 
 @Cameron Chapman @Jeremy Kostel @Giovanni Gonzalez @Cyrus Blevins Workbenches for both VXE30 and Havoc have been ordered and will approximately ship 7/25. They probably will not come until after I am back from PTO 
-[embedded image-20240718-161922.png]
+[embedded: image-20240718-161922.png]
 
 ### Hayden Jeanor, 2024-09-09
 

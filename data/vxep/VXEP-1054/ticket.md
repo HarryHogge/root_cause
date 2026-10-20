@@ -69,9 +69,9 @@ The one titled Casey CBP Demo. I believe he saved over the mission from the seco
 ### Cody Smisek, 2025-02-27
 
 First Flight
-[embedded image-20250228-013803.png]
+[embedded: image-20250228-013803.png]
 2nd Flight w/ position of antenna marked as W0 (also contains trail of first flight)
-[embedded image-20250228-014214.png]
+[embedded: image-20250228-014214.png]
 
 ### Alexander Alan Arnold, 2025-02-28
 
@@ -80,7 +80,7 @@ Added a .vmis and a .zol to the attachments is that what you need? @Cody Smisek
 ### Cody Smisek, 2025-02-28
 
 Mission file provided with trail overlay
-[embedded image-20250228-164948.png]
+[embedded: image-20250228-164948.png]
 @Alexander Alan Arnold thanks.
 
 ### Cody Smisek, 2025-02-28
@@ -121,8 +121,8 @@ Right now data shows that GCS performed a mission sim/sync after launch prior to
 
 ### Cody Smisek, 2025-03-05
 
-Mission was pulled from vehicle, does not match what was previously provided by operators. Unsure why or if it is relevant to the investigation. [embedded file] 
-[embedded image (9).png]
+Mission was pulled from vehicle, does not match what was previously provided by operators. Unsure why or if it is relevant to the investigation. [embedded: Mission Pulled From Aircraft.vmis] 
+[embedded: image (9).png]
 
 ### Scott Lovett, 2026-01-26
 

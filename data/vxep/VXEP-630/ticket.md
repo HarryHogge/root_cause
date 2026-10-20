@@ -10,9 +10,6 @@
 - **Reporter:** Connor Peebles
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-629 MARSOC Prototype Delivery - URGENT NEED
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Comments (0)
 

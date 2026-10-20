@@ -11,7 +11,6 @@
 - **Assignee:** Cody Smisek
 - **Creator:** Michael Mohr
 - **Labels:** Weekly-incident-tracker
-- **Issue color:** purple
 - **Customer:** Boarder_Patrol
 - **Vehicle Tail Number:** 863
 

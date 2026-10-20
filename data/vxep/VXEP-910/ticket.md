@@ -74,7 +74,7 @@ The MO and I setup fuselauge and wing 562 with the HD45 payload. All components 
 ### Jason Scherer, 2025-02-28
 
 @Alexander Alan Arnold Did we ever get an operator statement other than the title of this investigation? It looks to me like the vehicle was commanded to land now which would result in the immediate transition to VTOL and vertical decent regardless of terrain. I looked at the version of code flown, and the only way to get this log in the flight data is if the GCS sends a land now command.
-[embedded image-20250301-001257.png]
+[embedded: image-20250301-001257.png]
 
 ### Alexander Alan Arnold, 2025-02-28
 

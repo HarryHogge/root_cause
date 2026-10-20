@@ -9,7 +9,6 @@
 - **Resolved:** 2026-03-30
 - **Reporter:** Scott Whitney
 - **Creator:** Scott Whitney
-- **Is this ticket a Design Project?:** No
 - **Project Tier:** Tier 1
 
 ## Comments (0)

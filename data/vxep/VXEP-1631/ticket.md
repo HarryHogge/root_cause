@@ -9,7 +9,6 @@
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
 - **Epic Link:** VXEP-1549
-- **Story Points:** 5.0
 
 ## Description
 

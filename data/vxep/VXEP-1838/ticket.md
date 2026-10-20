@@ -60,7 +60,7 @@ Evidence is consistent with MPU 9250 issue and needs to be replaced
 - MPU-9250 init fails
 - then goes into a while loop and continues to fail Init
 
-[embedded image-20260421-164937.png]
+[embedded: image-20260421-164937.png]
 
 ### Connor Peebles, 2026-04-21
 

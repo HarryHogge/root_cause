@@ -20,7 +20,7 @@
 MAGNSS is our worst-case and we can leverage test data from that development project. Data is attached with summary here.
 
 MAGNSS Thermal Test Plan.xlsx
-[embedded image-20241210-202258.png]
+[embedded: image-20241210-202258.png]
 
 ## Attachments (1)
 

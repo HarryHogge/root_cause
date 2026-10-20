@@ -12,7 +12,6 @@
 - **Creator:** Jack Waeschle
 - **Parent:** SP-124 VXE30 Aircraft Sustainment: Support/Field Improvements
 - **Links:** is duplicated by VXEP-1113 (Update Wet Layup Components to Pre-Preg due to Urethane Obsolescence)
-- **Issue color:** purple
 - **Part Number(s):** 107-100461 107-103816 107-103787
 - **Program (Marquee):** VXE30 Aircraft Sustainment
 - **Job Number:** J100078 - Sustainment: VXE-30

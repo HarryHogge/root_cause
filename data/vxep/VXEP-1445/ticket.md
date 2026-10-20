@@ -14,7 +14,7 @@
 
 OGCS currently uses PayloadMetaGps.MSL that’s nested in NetworkMetadataAll.PayloadMetaAll​ for altitude display on the GCS.  The AGL is calculated using this MSL subtracted from the DTED MSL calculated based upon the current best estimate of position.  
 The issue is that in the case where both GPS and VBN are invalid, the GPS-reported altitude will be incorrect and not what is used by the autopilot.  The autopilot uses a baro-derived altitude referenced to the takeoff point and corrected if GPS is available:
-[embedded image-20250723-132653.png]
+[embedded: image-20250723-132653.png]
 The baro-derived measurement is stored in 'm_currread.ss.Altitude'.  
 The INS-derived MSL should be accurate if we have GPS or VBN available, but to avoid confusing pilots we should use the baro-derived solution.  Note: I believe the ss.Altitude value that comes down is effectively height above launch point, so you will need that GetReferenceElev() call to add back in the reference of the takeoff point (I think) to get a true MSL.
 I’m not clear on what changes this drives into OGCS and/or VSM but lets' discuss.

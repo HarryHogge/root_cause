@@ -11,9 +11,6 @@
 - **Assignee:** Connor Peebles
 - **Creator:** Josh Adams
 - **Parent:** VXEP-470 Unified AP for Block 40
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Comments (0)
 

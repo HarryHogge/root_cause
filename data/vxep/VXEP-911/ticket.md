@@ -14,7 +14,6 @@
 - **Labels:** LRR-March
 - **Parent:** VXEP-902 LRR March Delivery
 - **Links:** relates to VA-2498 (Create LRR Trellisware and Dropper Harness Drawings)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Charles David Madewell, Travis Blaschke, Wesley Lilienthal
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR), Test/Flight Readiness Review (TRR/FRR)

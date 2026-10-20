@@ -10,9 +10,6 @@
 - **Creator:** Jeremy Kostel
 - **Parent:** VXEP-1568 VXE-818 Lift System didn't disengage - Crash - CAN bus error 
 - **Links:** relates to VXEP-1608 (VXE 881 CW not detected but able to access .10 page and GPS Satellites displayed in SUAV); relates to RMA-853 (LEMB 3-0042 RMA 251120-4); relates to VXEP-1999 (B30 ADVNAV CANJAM CAN Issues)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Description
 
@@ -89,11 +86,11 @@ Case 3, the differential only measured from 0V to 1V, meaning something is pulli
 
 *Notes about testing.  This was on the B30 Iron Bird has only two on XCOMM and VTOL which together measure 60 ohms.
 B30
-[embedded B30 Battery.png]
+[embedded: B30 Battery.png]
 B35 with no Data
-[embedded B35 Battery no Data.png]
+[embedded: B35 Battery no Data.png]
 B35 with Data (1Vpp SN 28 and 30)
-[embedded B35 Battery with Data 1.png]
+[embedded: B35 Battery with Data 1.png]
 B35 with Data (may or may not be instrumentation error)
 
 Of the three batteries that came back from the customer, two of them exhibit the behavior described below with a CAN differential of 1 V.  SN 32 worked intermittently.  Half the time, the CAN measured normally at 2V, but it sometimes degraded to 1.4V.   The serial numbers are listed.
@@ -122,7 +119,7 @@ Details
 B30 Advanced Nav - two terminations on XCOMM and VTOL AP.  Battery does not have CAN node.
 B35x Advanced Nav - three terminations on XCOMM, VTOL AP, ADB + an extra CAN node on battery.
 Normal CAN differential voltage ranges from 2V to 2.2V on a healthy CAN bus line that is properly terminated at 60 ohm the way the B30 Iron Bird is.  Per the datasheet of transceiver MAX3051, the minimum differential CAN voltage should be greater than 1.2V.   When B35x battery CAN node is connected to the rest of the architecture, it pulls down the CAN differential voltage to between 1V to 1.4V.  This is likely being caused by something in the B35x CAN hardware.
-[embedded 1.1.jpg]
+[embedded: 1.1.jpg]
 
 ### Jeremy Kostel, 2026-05-27
 
@@ -156,21 +153,21 @@ SN 32 was opened to probe whether the DC regulator is behaving appropriately and
 After removing the charger board and removing epoxy, it is discovered that the ‘open’ is on the input J6 connector itself (see image below).  This does NOT explain CAN irregularities, however, as the Battery Controller board by itself still exhibits abnormal behavior.
 
 Investigation will continue on both SN32 Battery controller board and SN28 battery.
-[embedded image-20260610-214258.png]
+[embedded: image-20260610-214258.png]
 *Note.  Voltage regulation on battery controller board measures 3.265V when 28V is manually applied.  This is true on both SN32 and SN28.  Buck converter is not the problem.
 
 ### Samuel Lopez, 2026-06-10
 
-[embedded image-20260610-232338.png]
+[embedded: image-20260610-232338.png]
 
 It has been determined that the TVS diodes on the battery controller are either malfunctioning, installed backwards, or damaged.  Lab diodes were then added where the two diodes had been removed.
 
 SN32 - with diodes
-[embedded SN32 60 ohm both diodes-20141101-190000.png]
+[embedded: SN32 60 ohm both diodes-20141101-190000.png]
 SN32 - diodes removed 
-[embedded SN32 60 ohms diode removed.png]
+[embedded: SN32 60 ohms diode removed.png]
 SN32 - lab diodes added
-[embedded SN32 120 ohm with diode back in.png]
+[embedded: SN32 120 ohm with diode back in.png]
 
 
 Conclusion: There seems to be a hardware problem related to the diodes.  There are several questions that remain.

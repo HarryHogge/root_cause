@@ -34,15 +34,15 @@ Multiple have fallen apart. Please do the following
 
 ### Cameron Chapman, 2024-09-04
 
-[embedded file]
+[embedded: Re Cable for transponder A_C 430.eml]
 
-[embedded Media (3).jpg]
+[embedded: Media (3).jpg]
 
-[embedded Media.jpg]
+[embedded: Media.jpg]
 
-[embedded Media (1).jpg]
+[embedded: Media (1).jpg]
 
-[embedded Media (2).jpg]
+[embedded: Media (2).jpg]
 
 ### Cameron Chapman, 2024-09-04
 

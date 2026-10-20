@@ -13,7 +13,6 @@
 - **Parent:** VA-960 Composite updates to support workflow
 - **Links:** relates to VXEP-170 (96X-3-14-5101 and -5102 approve white primer on drawing); relates to VXEP-171 (Combine Foam Cores into single PN for Horizontal Stab); relates to ENG-159 (Need to Add to BOM: 107-101331 Mount Hybrid Battery Bulkhead); relates to VA-959 (Incorrect BOM description and vendor PN, incorrect/missing part files on vault)
 - **Epic Link:** VA-960
-- **Issue color:** purple
 
 ## Description
 

@@ -12,7 +12,6 @@
 - **Creator:** Stephan Johnson
 - **Labels:** RCCA, TIQUILA, Weekly-incident-tracker
 - **Start date:** 2026-04-14
-- **Issue color:** dark_blue
 - **Asset type:** VXE30
 - **Customer:** TIQUILA
 - **Part Number(s):** 107-111718

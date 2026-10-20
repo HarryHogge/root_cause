@@ -36,7 +36,7 @@ Shipping request submitted and being processed to get overnighted
 shipping number: 7398 9448 9776
 Items have been delivered
 
-[embedded image-20240910-144711.png]
+[embedded: image-20240910-144711.png]
 
 ## Comments (4)
 

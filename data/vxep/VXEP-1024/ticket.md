@@ -11,7 +11,6 @@
 - **Assignee:** Gary Angelus
 - **Creator:** Ben Norris
 - **Labels:** Electronics_Drafting, Production
-- **Issue color:** purple
 - **Part Number(s):** 107-102066, 107-101141
 - **Production Stakeholder:** Ben Norris
 - **Engineering Change Level:** Level 0 - Scope of change is obvious to assigned engineer
@@ -24,7 +23,7 @@ Moved to Engineering Change. This has been determined to be an Improvement and n
 Change Requested:
 Remove requirement for e20 to be used to “seal” the end of Capacitor C1 on 107-102066 Rev E. Investigation below indicates it is not required. 
 
-[embedded file]
+[embedded: image-20240118-151030.png]
 
 Original Concern:
 Noticed by @Ben Norris that the Capacitor used on the Air Data Pod Harness is sealed with EA-20 on both ends defeating the purpose of the relief features built into the capacitor. Recommend testing to verify whether sealing the capacitor results in catastrophic failure of capacitor casing upon pressure build up in capacitor. @Laszlo Juhasz also observed that sealing the pressure relief feature is likely to cause catastrophic failures.
@@ -34,6 +33,10 @@ ADP Harness PN: 107-102066
 Cap PN: 100-108918, CAPACITOR, ALUMINIUM, 470UF 20% 50V RADIAL
 
 ## Comments (21)
+
+### Matt Philley, 2024-01-08
+
+Ben pulling capacitors from Inventory to apply both TS and E20 so we can test the functional difference
 
 ### Matt Philley, 2024-01-08
 
@@ -134,10 +137,6 @@ At the risk of making it take any longer, could get the drafting team to bring t
 ### Tobi Ogunro, 2025-01-23
 
 @Gary Angelus Should this be transitioned to done?
-
-### Gary Angelus, 2025-01-23
-
-@Tobi Ogunro , yes done.
 
 ### Gary Angelus, 2025-01-23
 

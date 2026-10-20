@@ -24,7 +24,7 @@ These cables are used inside 965-1-01-4900 Silvus Enclosure which is inside the 
 - Inspection requirements (could be satisfied by datasheet in Vault: https://www.pasternack.com/images/ProductPDF/PE3C3937.pdf)
 - Traceability requirements (label method, content)
 
-[embedded file]
+[embedded: image-20231004-181016.png]
 In addition, description specifies 3 in. cable but ordered part number is 3.7 in.
 
 ## Comments (8)
@@ -48,13 +48,13 @@ Related issue: PO 231004-04 is classified as COTS so once received it moved stra
 Received PO 231004-04, QTY 60, and realized we have open orders under 100-108995 for two Pasternack PNs: PE3C3947 & PE3C3937. 
 PE3C3937 has a right angle connector and is correct per Vault; PE3C3947 has straight connectors. 
 Last receipt (QTY 125) and this one match PO not Vault.
-[embedded file]
+[embedded: Screenshot 2023-11-14 160213.jpg]
 
 ### Matt Philley, 2023-11-15
 
 @Catherine Wagner looks like these go into the 965-1-01-4900 Silvus Enclosure which show the right angle connector on the drawing, so any PE3C3947 with straight connector lets get on NCR.
 
-[embedded file]
+[embedded: image-20231115-151738.png]
 
 ### Matt Philley, 2023-11-15
 

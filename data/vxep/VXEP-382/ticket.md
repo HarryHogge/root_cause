@@ -25,6 +25,11 @@ Components are on FAI shelf in quality inspection - not sure who’s responsible
 
 ## Comments (21)
 
+### Matt Philley, 2024-04-29
+
+@Sandra Lopez @Kelly J Furlong FYSA alternates for 100-105620 arrived and are in QA but we dont have approval yet. Looks like these go to MOD Payload harness(es). 
+yall still have Qty 150 in inventory so not sure how urgent this is.
+
 ### Cameron Chapman, 2024-04-30
 
 @Garrett O'Neill is the default assignee to either investigate or delegate. See EE Default assignment list.xlsx
@@ -38,10 +43,10 @@ Components are on FAI shelf in quality inspection - not sure who’s responsible
 @Garrett O'Neill 
 I dont see CINCH DCCM21PSBN in the comments of the data card
 EDIT: I pulled latest and now I see it as the vendor C. All good!
-[embedded image-20240430-200355.png]
+[embedded: image-20240430-200355.png]
 Edit:
 
-[embedded image-20240430-200727.png]
+[embedded: image-20240430-200727.png]
 
 ### Matt Philley, 2024-04-30
 
@@ -57,15 +62,15 @@ Edit:
 
 ### Catherine Wagner, 2024-05-06
 
-[embedded file][embedded file]
+[embedded: 100-105620 Glenair MLDM_L-21PSB.pdf][embedded: 100-105620 Cinch DCCM21PSB.pdf]
 Datasheets attached with annotations useful for inspection.
 
 ### Nina Menon, 2024-05-07
 
 @Matt Philley @Trevor Gronner @Garrett O'Neill Of the 4 alternate connectors that Cat has, 3 are different finishes but the same size (the first 3 listed below) - those are acceptable for production. The Glenair connector (Newark #98AH0737) is not an acceptable alternate, see attached pics. The housing width is smaller so it would not mate properly when Ben N tested it.
-[embedded image-20240507-180631.png]
-[embedded Image (3).jfif]
-[embedded image-20240507-181223.png]
+[embedded: image-20240507-180631.png]
+[embedded: Image (3).jfif]
+[embedded: image-20240507-181223.png]
 
 ### Matt Philley, 2024-05-07
 
@@ -103,21 +108,17 @@ Datasheets attached with annotations useful for inspection.
 
 @Catherine Wagner DCCM21PSBN is approved
 
-[embedded image-20240522-200736.png]
+[embedded: image-20240522-200736.png]
 
 ### Catherine Wagner, 2024-05-24
 
 @Garrett O'Neill Received M83513/01-CC for evaluation. According to Cinch catalog it is equivalent to DCDM21PSB, which has another insulator type. Is this acceptable for 100-105620? I do see it in Vault comments but wanted to confirm.
-[embedded image-20240524-175842.png]
-[embedded image-20240524-180032.png]
+[embedded: image-20240524-175842.png]
+[embedded: image-20240524-180032.png]
 
 ### Garrett O'Neill, 2024-05-24
 
 @Catherine Wagner These should both be acceptable.
-
-### Connor Peebles, 2025-02-17
-
-closing, task was completed by Garret last year
 
 ### Connor Peebles, 2025-02-17
 

@@ -23,7 +23,7 @@ Vault: "C:\JAI Vault 1\Projects\129 - LRR\Electrical Design\Wire Harness\2124771
 ### Connor Peebles, 2025-07-25
 
 assigning @Daniel Herrera to create drawing for following napkin sketch. You’ll have to create the harness document; I have not yet
-[embedded image-20250725-195949.png]
+[embedded: image-20250725-195949.png]
 
 ## Attachments (1)
 

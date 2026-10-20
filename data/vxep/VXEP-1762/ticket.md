@@ -10,9 +10,6 @@
 - **Creator:** Jeremy Kostel
 - **Labels:** EE-Intern
 - **Parent:** VXEP-1667 New EE/Intern/Specialist Projects
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 
 ## Description
 

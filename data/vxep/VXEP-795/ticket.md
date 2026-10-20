@@ -15,7 +15,6 @@
 - **Parent:** VXEP-793 PRR - Open Actions
 - **Epic Link:** VXEP-793
 - **Start date:** 2024-11-23
-- **Issue color:** purple
 
 ## Comments (2)
 

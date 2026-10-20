@@ -21,7 +21,7 @@ This setup will secure the RJ45 interface at the panel, improve durability, and 
 
 ## Plan
 
-#### Deliverables:
+**Deliverables:**
 
 HIL systems fully assembledInitial functional tests completed
 

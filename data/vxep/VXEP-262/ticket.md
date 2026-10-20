@@ -11,7 +11,6 @@
 - **Assignee:** Wesley Lilienthal
 - **Creator:** Cameron Chapman
 - **Links:** relates to VA-1203 (100-106956 data card description update: Is 1.7 - 6GHz, should be 1.7 - 7.2GHz); relates to VA-1291 (Create or update documentation for 100-106956 to meet new processes)
-- **Issue color:** purple
 - **Production Stakeholder:** Trevor Gronner
 - **Supply Chain Stakeholder:** Laura Bertule
 - **Other Stakeholder (as required):** Nadia Brown
@@ -31,6 +30,139 @@ Spec sheet: 1.7 - 7.2 GHz , 5 dBi Peak
 @Wesley Lilienthal since this is for SGCS1 silvus radios, I think you are the best person to answer this. Can you please review the new vs old equipment and determine if they are both acceptable? If so, please coordinate completing the engineering change.
 
 ## Comments (21)
+
+### Cameron Chapman, 2024-01-30
+
+|  | Laura Bertule Procurement Specialist Edge Autonomy – San Luis Obispo, CA Phone: +1-805-592-1814 Email: lbertule@edgeautonomy.io |
+
+ 
+ 
+From: Danny Barkley <dbarkley@mobilemark.com> 
+Sent: Friday, January 26, 2024 6:12 AM
+To: Laura Bertule <lbertule@edgeautonomy.io>
+Subject: Re: Quote
+ 
+|  | You don't often get email from dbarkley@mobilemark.com. Learn why this is important |  |
+
+Hi Laura,
+ 
+This spec sheet looks like it was revised in August last year. The RM-WHF is the base model. Our MGRM-WHF is the magnetic version. We can customize the cable length and connectors as needed. The 3C in the example calls for LL195 cable with a SMA plug. The 3A in the quote calls for LL195 cable with a TNC plug. Let me know if you have any other questions. Thank you!
+ 
+Best regards,
+ 
+Daniel Barkley – Account Manager
+Mobile Mark, Inc.
+1140 W. Thorndale Ave. Itasca, IL 60143
+Email: dbarkley@mobilemark.com
+Website: www.mobilemark.com
+Tel: 847-671-6690 Direct: 847-737-1165
+ 
+| Moving Wireless Forward® |
+
+
+From: Laura Bertule <lbertule@edgeautonomy.io>
+Sent: Thursday, January 25, 2024 6:40 PM
+To: Danny Barkley <dbarkley@mobilemark.com>
+Subject: RE: Quote
+ 
+I was reviewing the spec sheet and I also noticed that the part number on it says RM-WHF-3C-BLK-12 and but the quote says MGRM-WHF-3A-BLK-120, and dBi Peak looks different.
+ 
+I checked our last order from February, and the labels where the same as our info as we have now in to the system..
+ 
+Sorry for so many questions, I just want to make sure that we are on the same page!
+ 
+Thank you so much for your assistance!
+ 
+|  | Laura Bertule Procurement Specialist Edge Autonomy – San Luis Obispo, CA Phone: +1-805-592-1814 Email: lbertule@edgeautonomy.io |
+
+ 
+ 
+From: Danny Barkley <dbarkley@mobilemark.com> 
+Sent: Thursday, January 25, 2024 2:12 PM
+To: Laura Bertule <lbertule@edgeautonomy.io>
+Subject: Re: Quote
+ 
+|  | You don't often get email from dbarkley@mobilemark.com. Learn why this is important |  |
+
+Hi Laura,
+
+Thanks for the response! This is the same antenna; it seems like it might be older information in your records. I attached a copy of the spec sheet for this antenna here. Let me know if you have any questions. Thanks!
+ 
+Best regards,
+ 
+Daniel Barkley – Account Manager
+Mobile Mark, Inc.
+1140 W. Thorndale Ave. Itasca, IL 60143
+Email: dbarkley@mobilemark.com
+Website: www.mobilemark.com
+Tel: 847-671-6690 Direct: 847-737-1165
+ 
+| Moving Wireless Forward® |
+
+
+From: Laura Bertule <lbertule@edgeautonomy.io>
+Sent: Thursday, January 25, 2024 4:06 PM
+To: Danny Barkley <dbarkley@mobilemark.com>
+Subject: RE: Quote
+ 
+Hi Danny,
+ 
+It’s very nice to meet you and I am happy that we will be working together!
+ 
+I was just putting together PO for this part, and I noticed that the part description is a little bit different. Our records still says -Broadband Mag antenna, with 10 ft LL-195 low loss LL-195cable, TNC-plug, (1.7- 6 GHz GHz). And yours shows  1.7-7.2 Ghz.
+ 
+Could you please advise if something has changed, or this is a maybe old info which we are having..
+ 
+Thank you!
+ 
+|  | Laura Bertule Procurement Specialist Edge Autonomy – San Luis Obispo, CA Phone: +1-805-592-1814 Email: lbertule@edgeautonomy.io |
+
+ 
+ 
+From: Danny Barkley <dbarkley@mobilemark.com> 
+Sent: Tuesday, January 23, 2024 2:08 PM
+To: Laura Bertule <lbertule@edgeautonomy.io>
+Subject: Re: Quote
+ 
+|  | You don't often get email from dbarkley@mobilemark.com. Learn why this is important |  |
+
+Hi Laura,
+
+Thanks for reaching out! My name is Danny Barkley. I'll be your new Mobile Mark POC moving forward. Nice to meet you! Please see our quote below. Our lead time is 3 weeks ARO. Let me know if you have any questions. Thank you! 
+ 
+MGRM-WHF-3A-BLK-120 
+Broadband Mag antenna, with 10 ft low loss LL-195 cable, TNC-male, (1.7- 7.2GHz) 
+16-249-UNIT COST: $81.50 
+ 
+Best regards,
+ 
+Daniel Barkley – Account Manager
+Mobile Mark, Inc.
+1140 W. Thorndale Ave. Itasca, IL 60143
+Email: dbarkley@mobilemark.com
+Website: www.mobilemark.com
+Tel: 847-671-6690 Direct: 847-737-1165
+ 
+| Moving Wireless Forward® |
+
+
+ 
+ 
+From: Laura Bertule <lbertule@edgeautonomy.io>
+Sent: Tuesday, January 23, 2024 11:28 AM
+To: Kyle Sertich <ksertich@mobilemark.com>
+Subject: Quote
+ 
+Hello Kyle,
+I hope your day is going well.
+ 
+I would like to request a Quote for part - MGRM-WHF-3A-BLK-120, Qty – 80.
+Please also advise how long would be the lead time for it.
+ 
+Thank you!
+ 
+ 
+|  | Laura Bertule Procurement Specialist Edge Autonomy – San Luis Obispo, CA Phone: +1-805-592-1814 Email: lbertule@edgeautonomy.io |
 
 ### Cameron Chapman, 2024-01-30
 
@@ -54,7 +186,7 @@ Sounds good!
 ### Cameron Chapman, 2024-01-31
 
 @Carson Buckley from the datasheet. “MGRM-WHF ( Mag Mount Model )"I have not looked into how we currently use this part. I think it is used in SGCS1
-[embedded file]
+[embedded: image-20240131-173727.png]
 
 ### Carson Buckley, 2024-01-31
 
@@ -138,17 +270,7 @@ The 3 dBi figure listed in the description of the part in our vault must have co
 In summary, the vendor revised the design, increasing the upper end of the operating frequency range, kept the same part number, and did not notify us of the change. Data describes the change as a net wash if not a net win in performance. No further validation is necessary from my perspective aside from whatever binary pass/fail check we do during SCO prior to shipment. The existing vendor part number stands unchanged: MGRM-WHF-3A-BLK-120
 See https://jenaero.atlassian.net/browse/VA-1203 for ECN process.
 
-[embedded file][embedded file][embedded file][embedded file]
-
-### Wesley Lilienthal, 2024-04-05
-
-The vendor has provided radiation pattern data for both old and new designs. I have reviewed, and the two designs are equivalent to a meaningful degree, with no red flags. Slightly higher peak gain is in fact achieved at some elevation angles with no meaningful degradation elsewhere in the pattern, suggesting improved efficiency.
-Tech sheets, spec sheets, and radiation pattern documents are attached, and are located on the vault here: C:\JAI Vault 1\Shared\COTS Information\MobileMark
-The 3 dBi figure listed in the description of the part in our vault must have come from a description on the price list from the vendor in the paast. This 3 dBi gain figure is called out as typ gain in the radiation pattern document for the old design, beside the 5 dBi peak gain figure.
-In summary, the vendor revised the design, increasing the upper end of the operating frequency range, kept the same part number, and did not notify us of the change. Data describes the change as a net wash if not a net win in performance. No further validation is necessary from my perspective aside from whatever binary pass/fail check we do during SCO prior to shipment. The existing vendor part number stands unchanged: MGRM-WHF-3A-BLK-120
-See https://jenaero.atlassian.net/browse/VA-1203 for ECN process.
-
-[embedded file][embedded file][embedded file][embedded file]
+[embedded: MGRM-WHF-3A-BLK-120 - Tech Sheet (Engineering) - Old Design.pdf][embedded: MGRM-WHF-3A-BLK-120 - Tech Sheet (Engineering) - New Design With Expanded Operating Frequency Range.pdf][embedded: MGRM-WHF-3A-BLK-120 - Antenna Radiation Patterns - Old Design.pdf][embedded: MGRM-WHF-3A-BLK-120 - Antenna Radiation Patterns - New Design With Expanded Operating Frequency Range.pdf]
 
 ## Attachments (7)
 

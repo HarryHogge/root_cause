@@ -34,15 +34,15 @@ Issue seems most likely battery related. See bold below.
 - Aircraft in HSV. Here are some things to check while there.
 - Run forward power (launch wizard check ok). Monitor for voltage drops. -Done. No issues.
 - Attach AAR and review data. Message EE team and discuss next steps. Consider inspecting avbox. -Done. No issues. It seems the wrong AAR was uploaded. Both xcl show baseline current. 
-- [embedded image-20260826-190443.png]
-[embedded image-20260826-190453.png]
+- [embedded: image-20260826-190443.png]
+[embedded: image-20260826-190453.png]
 - Wiggle test and inspect connectors between MB and avbox to see if any power issues. -Done. No issues.
 
 ## Issue Status
 
 Summary here https://jenaero.atlassian.net/wiki/x/PoAfSg 
 - Main battery voltage drops with fwd motor throttle. Suggests intermittent or high resistance connection in the main battery, current sensor, avbox, or harness from main battery to avionics box. 
-[embedded image-20260708-213739.png]
+[embedded: image-20260708-213739.png]
 - Aircraft in SLO. Ready to test. Unsure of battery locations. @Samuel Lopez are you able to inspect this as well. Seems like it will be similar checks as 512.
 - @Scott Whitney do we monitor voltage during launch wizard checks and flag any issues? It seems like doing so may have caught the issue in this case. We can compare to other standard LW runs to establish a limit.
 
@@ -63,23 +63,23 @@ Investigate further to see if it is was an individual cell failure and related t
 
 ### Jackson Riley Curvin, 2026-02-16
 
-[embedded image-20260216-203906.png]
+[embedded: image-20260216-203906.png]
 
 ### Jackson Riley Curvin, 2026-02-16
 
-[embedded image-20260216-203935.png]
+[embedded: image-20260216-203935.png]
 
 ### Jackson Riley Curvin, 2026-02-16
 
-[embedded image-20260216-204013.png]
+[embedded: image-20260216-204013.png]
 
 ### Jackson Riley Curvin, 2026-02-16
 
-[embedded image-20260216-204045.png]
+[embedded: image-20260216-204045.png]
 
 ### Jackson Riley Curvin, 2026-02-16
 
-[embedded image-20260216-204120.png]
+[embedded: image-20260216-204120.png]
 
 ### Scott Lovett, 2026-07-06
 

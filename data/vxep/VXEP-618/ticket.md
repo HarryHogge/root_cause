@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
 - **Links:** is cloned by VXEP-625 (Order, test, and install thermal label tape into avionics boxes and center wings); relates to ENG-2858 (VXE30 Avionics Enclosure needs RTV staking callout)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Job Number:** J100084 - VXE Incident Investigation
 
 ## Issue Status
@@ -24,7 +21,7 @@ Internal PN assigned: 2121832-01
 https://www.mcmaster.com/5957K63/
 https://shop.spotsee.io/THERMAX-10-LEVEL-IRREVERSIBLE-STRIP-RANGE-B-171-261F-10-PACK
  
-[embedded image-20241210-180952.png]
+[embedded: image-20241210-180952.png]
 
 ## Comments (18)
 
@@ -43,7 +40,7 @@ PN info for the label we think is the best candidate so far:
 https://www.mcmaster.com/5957K63/ 
 https://shop.spotsee.io/THERMAX-10-LEVEL-IRREVERSIBLE-STRIP-RANGE-B-171-261F-10-PACK 
 
-[embedded image-20241210-180952.png]
+[embedded: image-20241210-180952.png]
 
 ### Connor Peebles, 2025-01-09
 

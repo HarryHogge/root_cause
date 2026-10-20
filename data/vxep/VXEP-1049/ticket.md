@@ -23,10 +23,10 @@
 - For BOM, Item 17 Shielded HS is not used
 - For BOM, update wire lengths
 
-[embedded image-20250225-161402.png]
-[embedded image-20250225-161500.png]
-[embedded image-20250225-161412.png]
-[embedded image-20250225-161743.png]
+[embedded: image-20250225-161402.png]
+[embedded: image-20250225-161500.png]
+[embedded: image-20250225-161412.png]
+[embedded: image-20250225-161743.png]
 
 ## Comments (10)
 
@@ -49,8 +49,8 @@
 ### Nina Menon, 2025-05-01
 
 @Grant Goodman @Daniel Herrera We will need to rev this dwg to capture one more redline that Chris G found during the FAI process. 3/8” HS is called out for the ODU and the capacitor, but does not fit on the ODU. Production built the FAI batch with 1/2” ADH HS over the ODU. Can we update the drawing to reflect that?
-[embedded image-20250501-191330.png]
-[embedded image-20250501-191457.png]
+[embedded: image-20250501-191330.png]
+[embedded: image-20250501-191457.png]
 
 ### Daniel Herrera, 2025-05-01
 
@@ -67,7 +67,7 @@
 ### Nina Menon, 2025-05-01
 
 @Daniel Herrera @Grant Goodman one more thing to correct, this one is not urgent. item 9’s bubbles didn’t get properly updated - it is now item 10. quality is still going to move the parts forward though
-[embedded image-20250501-225333.png]
+[embedded: image-20250501-225333.png]
 
 ### Daniel Herrera, 2025-05-02
 

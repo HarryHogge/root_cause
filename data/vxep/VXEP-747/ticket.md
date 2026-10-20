@@ -10,9 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-746 Improve ESD procedures
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 - **Production Stakeholder:** Kyle England
 - **Other Stakeholder (as required):** Abel J. Markow
 

@@ -18,11 +18,11 @@
 
 the LEMB is ~2lbs heavier than the VXE MB. So effective stowing of the data connector should be thought through considering some customers might want the lighter battery. My solution that fully retains the extra harnessing while making no other mechanical changes :
  
-[embedded image-20250215-004931.png]
+[embedded: image-20250215-004931.png]
 Instruct the users to stow the harness like so using a zip tie to include the plug in the existing bundle aft of the Fuse bulkhead. Additionally, there is a through hole on the bulkhead for that the FC telemetry cable already uses. If i was a user i would use this during VXE MB operation to stow the ODU plug as well (this would be able to be used during FC operation due to space).
  
-[embedded image-20250215-004947.png]
-[embedded image-20250215-004959.png]
+[embedded: image-20250215-004947.png]
+[embedded: image-20250215-004959.png]
 
 ## Attachments (3)
 

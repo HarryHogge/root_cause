@@ -112,7 +112,7 @@ A summarized sequence of events that would lead to this abort would be the follo
 1.) Fixed Wing is managing the landing by sending commands to VTOL
 2.) The XComm is accumulating error counters based on low power consumption by the lift system. Eventually the error counter reaches the threshold which triggers a low power fault.
 3.) The fixed wing ap has reached the LAND_WAITVTOL state by this time. Once the fault is triggered by XComm the fixed wing autopilot initiates the abort.
-[embedded image-20240711-201820.png]
+[embedded: image-20240711-201820.png]
 The charts and annotations are in the excel file XCL00055-JS.csv which have been uploaded to the SharePoint folder.
 
 ### Eric Brewer, 2024-07-22

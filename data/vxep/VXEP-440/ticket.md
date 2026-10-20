@@ -60,12 +60,12 @@ Application Instruction:
 Apply a small amount (2-3 drops) of 100-107074 Loctite 262 to the threads of the connector. Install backshell and make sure the backshell fully seats to the back of the connector. Clean any excess loctite before proceeding with the next steps.
 - “Break-away” plug style ODU connector: Apply a small amount of loctite to the threads of the connector
 
-[embedded file]
+[embedded: image-20240213-184217.png]
 - “Push-pull” plug style ODU connector: Apply a small amount of loctite to the BACKSHELL. Applying to the connector runs the risk of loctite seeping into the push-pull collar which can cause the collar to get stuck and not function properly.
 
-[embedded file]
+[embedded: image-20240221-184421.png]
  
-[embedded file]
+[embedded: image-20240221-184441.png]
 
 Production Instruction: 
 Apply 100-104074 Loctite 262 to the backshell per the Application Instruction above. Write in “Loctite 262 on Backshell, NCR: XXXX, Lot:____ Exp:_____ ” in notes section of traveler. 
@@ -74,22 +74,26 @@ Inspection Instruction:
 - Verify “Loctite 262 on Backshell, NCR: 2478, Lot:____ Exp:_____ “ has been added to traveler with filled in traceability information
 - For push-pull style connectors verify the plastic collar moves freely and loctite did not flow into the collar.
 
-[embedded file]
+[embedded: image-20240221-184811.png]
 - Verify the backshell is secure by attempting to unscrew the connector from the backshell in the following manner. It is recommended to use gloves available in the vending machines when performing this to reduce hand fatigue. This should be impossible to do by hand if loctite and potting were successful, so only use as much force as seems reasonable without hurting your fingers or risking damage to the connector.
 
 
-[embedded file]
+[embedded: image-20240213-191315.png]
 Acceptable:
-[embedded file]
+[embedded: Connector Twist Check - Acceptable.mp4]
 
 Not Acceptable:
-[embedded file]
+[embedded: Connector Twist Check - Not Acceptable.mp4]
 
 ## Part Number(s)
 
 115-105407 107-103806 107-104993 107-102227 107-102291 107-102238 107-102257 107-102547-L/R 111-104977 112-105827-z 112-105829-z 116-106156 116-106155
 
 ## Comments (21)
+
+### Emalee Johnson, 2024-02-12
+
+@Matt Philley All ODU’s and Assemblies are identified above.
 
 ### Matt Philley, 2024-02-12
 
@@ -176,37 +180,6 @@ This was intended to be a deviation to last until drawings were released though,
 ### Michelle Greenwald, 2025-04-23
 
 @Camron Richardson I just updated the procedure and traveler for 107-102065 as it was not on this list but uses the affected ODUs. Same with 2122465-01
-
-### Christa Meck, 2025-10-24
-
-@Camron Richardson I know you are not currently assigned to this ticket, but I saw you had asked for the drawings to be moved from [ECR]  so you can update them.  I’ve checked every part number referenced in this ticket and put information below.  Whatever drawings need to be updated and released, please make a NEW Engineering Change ticket for them so we don’t get lost in the mess of ancient linked tickets.  Lastly: If you need help getting any other items into an editable state, please reach out.
-100-103070 - COTS part [shared] 
-100-106922 - COTS part [shared]  
-100-100877 - COTS part [shared]  
-100-100801 - COTS part [shared]  
-100-100878 - COTS part [shared]  
-100-100798 - COTS part [shared]  
-100-105682 - COTS part [shared]  
-100-109050 - COTS part [shared]  
-100-101417 - COTS part [shared]  
-100-106471 - COTS part [shared]  
-100-104976 - COTS part [shared]  
-100-100797 - COTS part [shared]  
-100-105256 - COTS part [shared]  
-100-107264 - COTS part [shared]  
-115-105407 - Moved Drawing and Assembly documents to [ME - Edit]  
-107-104993 - Drawing and Assembly documents are already [released] 
-107-102227 - Moved Part document to [ME - Edit] 
-107-102291 - Part document already in [ME - Edit]  
-107-109521 - Drawing and Assembly documents are already [released]  
-107-102238 - Assembly document currently in [ME - released]  
-107-102257 - Assembly document already [released]  
-107-102547 - Assembly document already in [ME - Edit]  
-111-104977 - Drawing and Assembly documents are already [released]  
-112-105827 - Part document currently in [ME - released]  
-112-105829 - Part document currently in [ME - released]  
-116-106156 - Assembly document already in [ME - Edit]  
-116-106155 - Assembly document currently in [ME - released]
 
 ### Christa Meck, 2025-10-24
 

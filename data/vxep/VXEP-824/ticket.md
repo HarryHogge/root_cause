@@ -13,7 +13,6 @@
 - **Key Stakeholder(s):** Cameron Chapman, Greg Fryer, Jeremy White, Tom Westrich
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Concept Design Review (CoDR), Detailed Design/Critical Design Review (CDR)
-- **Current Sprint Priority:** 8.1
 - **LRR Desired Delivery Date:** 2025-03-01
 - **LRR Required Delivery Date:** 2025-03-01
 - **Product/Tech Owner:** Tom Westrich

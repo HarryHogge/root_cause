@@ -11,7 +11,6 @@
 - **Assignee:** Samuel Lopez
 - **Creator:** Samuel Lopez
 - **Parent:** VXEP-1827 Air Data Board - Failures
-- **Issue color:** teal
 
 ## Description
 

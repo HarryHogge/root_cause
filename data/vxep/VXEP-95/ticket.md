@@ -43,6 +43,62 @@ Board QTY wise, we have enough stock going into 2024.
 
 ## Comments (30)
 
+### Connor Peebles, 2023-03-08
+
+@Former user Could we move 1607P01A from Batch 3 to Batch 2? Procurement is desperate to start the transfer process for that board.
+
+### Connor Peebles, 2023-03-15
+
+@Former user See cheat sheet added for targeted boards in this batch
+
+### Connor Peebles, 2023-03-16
+
+sent estimated timeframes to Tan Poh Li 
+EAU = estimated annual usage, FA = first article, MP = manufacturing production
+| Part Number | EAU | Qty Per Order | Request Date for FA | Request Date for MP |
+| 1607P01A | 360 | 200 | June 1st 2023 | August 1st 2023 |
+| 1702P01B | 1,080 | 600 | June 1st 2023 | August 1st 2023 |
+| 1710P01A | 360 | 200 | June 1st 2023 | August 1st 2023 |
+| 1901P01B | 360 | 200 | June 1st 2023 | August 1st 2023 |
+| 1902P01E | 360 | 200 | June 1st 2023 | August 1st 2023 |
+| 1904A01A | 360 | 200 | June 1st 2023 | August 1st 2023 |
+
+@Former user @Victor Vandor let me know if these dates do not work and we can correct them as we progress with this batch with SPM
+
+[embedded: RE RFQ for a new board 1710P01A.msg]
+
+### Connor Peebles, 2023-03-22
+
+overall progress update:
+For all of the boards in this batch, current (old) Jennings Aero format order documents have been sent to SPM for a quote and so they can start sourcing parts.
+Moving onto to creating new relevant or updated documents for conformal coat and/or NHA documents
+
+### Cameron Chapman, 2023-05-24
+
+@Connor Peebles , can you please update the order status here. See notes in the weekly ppt.
+
+### Cameron Chapman, 2023-05-24
+
+Thanks Connor for the update. Please add additional info to the table. 
+Update to indicate states: first article has been ordered, received, approved, production ordered, received, approved. Coated or not for each.
+
+### Cameron Chapman, 2023-06-06
+
+Next step, Connor to create outline and steps to enable handing off document updates to Belcan.
+
+### Cameron Chapman, 2023-06-19
+
+@Madeleine Masiello , please meet with @Connor Peebles to start working on this project. Also @Nadia Brown if you have bandwidth. Depending on our bandwidth, we will probably involve Belcan as well.
+
+### Nadia Brown, 2023-06-19
+
+Alright, that should be no problem. @Cameron Chapman
+
+### Greg Fryer, 2023-06-27
+
+@Connor Peebles @Cameron Chapman Can you confirm we left the FW (Green) AP board out of the batches, since we thought we were obsoleting it? We still are, but it will last longer due to TIQUILA. Please put it in the soonest batch you can, because of the corosion issues the shop is having as part of masking for conformal coat.
+Open to discussion!
+
 ### Connor Peebles, 2023-06-27
 
 @Greg Fryer Confirmed that is what we did. see [ENG-628] Obsolete or being obsoleted - Jira (atlassian.net). We will throw it in the highest priority. Please tell the e-shop to stop using the supposedly corrosive masking agent (I’m sure they have but I’m putting it here anyway!).
@@ -71,9 +127,9 @@ Board QTY wise, we have enough stock going into 2024.
 
 From the latest weekly meeting w/ SPM:
 
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: image-20230816-015208.png]
+[embedded: image-20230816-015243.png]
+[embedded: image-20230816-015311.png]
 @Ryan Stafford These are contingent on if we get them the documentation they need in time, so they may change. @Mike Jercich Is working on if we can expedite ones that we’ve already given them necessary documentation for. I’ll update the Improvement Project Proposal - PCB outsource.pptx tomorrow
 
 ### Ryan Stafford, 2023-08-16
@@ -87,53 +143,6 @@ From the latest weekly meeting w/ SPM:
 ### Ryan Stafford, 2023-08-16
 
 @Mike Jercich Any way to pull these in? Is the vendor waiting on us for anything?
-
-### Connor Peebles, 2023-08-16
-
-@Ryan Stafford To answer your first question they’re waiting on me to inspect them, which will be done before this week is over
-
-### Mike Jercich, 2023-08-16
-
-@Ryan Stafford As Connor said, they are waiting on FAI inspection but as soon as that is ready I will ask them for an updated ETA. I believe the actual delivery dates can be moved up, Jan 1 was an estimate when the orders were placed early this year.
-
-### Cameron Chapman, 2023-08-24
-
-Linking subtasks to parent
-
-### Greg Fryer, 2023-09-19
-
-Moved to VXEP board where projects and problems go. Epics and Tasks remain in VA where they already are.
-
-### Cameron Chapman, 2023-09-21
-
-@Connor Peebles , @Ryan Stafford and production would like to start making progress on these again. Can you please review and update the statuses.  Ex:This is the only remaining task for this board https://jenaero.atlassian.net/browse/VA-195 If it has been ordered, please add a delivery date. If not, or if we don;t have a date, please comment accordingly, and assign to procurement. 
-@Greg Fryer can we put some of these into the current sprint? @Nadia Brown should be available for some of these. After that, we would be pulling people off other high priority incidents and projects.
-
-### Connor Peebles, 2023-09-21
-
-@Cameron Chapman Steady progress has been made on these, see recent ECN’s.
-- I’ve been updating the individual Jiras and been forgoing majorly updating the spreadsheets (3 different places to update after every action seems excessive), but I’ll continue updating as had been before (the summary spreadsheet and Jira projects).
-- I will update any delivery dates.
-- People outside of engineering don’t generally check Jira when Jiras are assigned to them. This becomes a blocker until I recognize later that their task was done and I close it.
-- Nadia help will be greatly appreciated with the [VA-173] 1902P01E VXE FOC-ESC & NHA (107-105730) - Jira (atlassian.net) and [VA-168] 1904A01A VTOL2 Current Sense Board & NHA (PN Creation Needed) - Jira (atlassian.net) updating.
-- After that and all the FA’s are received, this project is getting close to done.
-
-### Greg Fryer, 2023-10-04
-
-@Cameron Chapman Per discussion I reassigned this project to you. If you want to discuss, ping me.
-
-### Cameron Chapman, 2023-10-05
-
-@Greg Fryer I see you have Nadia allocated 100% to your upcoming sprint. Can she work on these updates? She is the only one available without impacting other urgent projects (Connor incidents, Hayden+Jeremy Xkit, Adrian-incidents+as150). We may be able to get some time from Adrian and Jeremy too.  
-FYI @Connor Peebles
-
-### Connor Peebles, 2023-10-05
-
-@Greg Fryer Nadia has been very valuable for this project
-
-### Greg Fryer, 2023-10-05
-
-@Cameron Chapman@Connor Peebles I think that Nadia allocation is just a carry over from last period, please edit appropriately. I will need some amount of her time to address electrical drawing updates for production. So please leave me some!
 
 ### Connor Peebles, 2023-08-16
 

@@ -75,7 +75,7 @@ FLOPS has replaced HLBs without rebooting the MCM in other vehicles.  Out of an 
 
 Initial thought is that there was a transient that exceeded the electronic fuse Over Voltage Protection that is set to 34.9V on the SLA Breakout Board V2.
 
-[embedded image-20241016-164406.png]
+[embedded: image-20241016-164406.png]
 Going to make a breakout pigtail for the Glenair payload to scope the behavior on the payload E-fuse, which has the same over-voltage protection value set. If I am right, we should have the potential for a similar dropout there when swapping HLB’s.
 
 ### Ruysser Gabler, 2024-10-17

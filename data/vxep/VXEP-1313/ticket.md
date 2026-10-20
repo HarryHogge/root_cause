@@ -32,11 +32,11 @@ Investigate the clock roll over, or relative inaccurate timing resulting in a li
 
 ### Jackson Riley Curvin, 2025-06-24
 
-[embedded image-20250624-224535.png]
+[embedded: image-20250624-224535.png]
 
 ### Jackson Riley Curvin, 2025-06-24
 
-[embedded image-20250624-224712.png]
+[embedded: image-20250624-224712.png]
 
 ### David Grosher, 2025-06-24
 
@@ -53,11 +53,11 @@ Investigate the clock roll over, or relative inaccurate timing resulting in a li
 ### Jason Scherer, 2025-06-24
 
 @David Grosher You might be on to something here. The clock updates right before the link drop is declared. The puzzling part is that the link timeouts do not resolve for ~2 minutes (122 seconds). Anyway, I should be able to make the clock update a bunch in the HIL and watch for link drops to see if we can cause the same behavior.
-[embedded image-20250625-015403.png]
+[embedded: image-20250625-015403.png]
 
 As you can see from these two below charts with the x-axis extended, the link does not get better until 20590, and the FW gets a hit of GCS messages around 20501 briefly before timing out again.
-[embedded image-20250625-015502.png]
-[embedded image-20250625-015524.png]
+[embedded: image-20250625-015502.png]
+[embedded: image-20250625-015524.png]
 
 ### Jackson Riley Curvin, 2025-06-25
 

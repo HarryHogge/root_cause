@@ -71,7 +71,7 @@ Some comments after looking at the CAD:
 
 ### Thomas Lovejoy, 2023-03-08
 
-[embedded file]
+[embedded: Tool PN, Associated Part PN Associated Part Description, Tool Description.pptx]
 @Former user Slide Three of the attached file has the format that we have been using for most of the new jigs, fixtures, and tooling being released to the shop floor. The specifics of what each individual component is called is a little more arbitrary so long as the Associated Part PN is included in the file name.
 
 ### Greg Fryer, 2023-11-08

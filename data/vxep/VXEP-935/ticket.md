@@ -11,9 +11,6 @@
 - **Assignee:** Erik Hanson
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-824 Prototype LEMB Project-Long Endurance Main Battery
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-5
-- **Issue color:** dark_teal
 
 ## Issue Status
 

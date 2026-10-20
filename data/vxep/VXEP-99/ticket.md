@@ -34,7 +34,7 @@ Aircraft not recovered.  AAR file not available.
 Files: VIT2-448
 Review provided AAR for Root Cause
 - Review logs before around and before 1375 seconds for if the throttle issue was happening before that, or any other potential causes.   
-- [embedded file]
+- [embedded: image-20231212-192215.png]
 - Record flight hours on ESC and vehicle temps. Does this feed into lifespan calculations?
 
 ## Issue Status

@@ -14,7 +14,7 @@
 
 12/2/2025 NCR 7708 Closed. Repair work was completed, and all 9 cables are repaired with label “Non-Standard”. -NL 
 11/14/25- Update. Natalie Lusk (QE) Found all 9 SNs. NCR 7708. 4 in Final Assembly. 1 in Engineering Bay (Erik H?). 4 in Electronics (potting to dry before putting in Cage 3). 
-[embedded image-20251114-224053.png]
+[embedded: image-20251114-224053.png]
 These are the 9 SNs released by eshop
 | P-S101156 |
 | P-S101157 |

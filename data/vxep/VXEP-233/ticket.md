@@ -13,7 +13,6 @@
 - **Labels:** Land_Abort_Logic
 - **Links:** clones VXEP-231 (VXE-496 with 550 wing set-failure during VTOL transition-AS150 contact issues); relates to RMA-208 (VXE 496 Fuse 550 Wing 231220); relates to FS2-1512 (VTOL Abort logic fix); relates to VXEP-283 (VXE-533 Uncontrolled drift and crash after failed VTOL abort)
 - **Impact:** Significant / Large
-- **Issue color:** purple
 - **Customer:** PMA263
 - **Vehicle Tail Number:** 496
 - **Other Stakeholder (as required):** David Grosher

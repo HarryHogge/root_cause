@@ -12,7 +12,6 @@
 - **Creator:** Catherine Wagner
 - **Labels:** Electronics_Drafting
 - **Links:** relates to ENG-3338 (107-102084 drawing clarification); relates to ENG-3394 (ECN - 107-102084 drawing clarification)
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 - **Part Number(s):** 107-102084
 - **Other Stakeholder (as required):** Brad Crampton
@@ -20,14 +19,41 @@
 ## Description
 
 REF DWG 107-102084, REV B:
-[embedded image-20240523-200221.png]
+[embedded: image-20240523-200221.png]
 RE: Highlighted dimensions 2.5”, 2.5”, and 4” - what to measure and where is not clear. Dimensions are not in procedure and do not align with wire cut length. Please review and update if inspection required.
 
 ## Comments (25)
 
+### Catherine Wagner, 2024-05-23
+
+FYA @Jingle Pina @Carrie Wentzel @Thomas McMillan @Luis A jacinto @Steve Stack @Brad Crampton
+
+### Brad Crampton, 2024-05-23
+
+There are no tolerances on this drawing so it cannot be inspected.
+
+### Trevor Gronner, 2024-06-20
+
+@Gary Angelus This task was approved as part of the sprint allocation meeting under the Production Support section. Please feel free to reach out to me if you have any questions or need any help.
+@Catherine Wagner FYSA
+
+### Gary Angelus, 2024-06-20
+
+updated drawing for review.
+Need lengths to fill in the missing dimensions, “?”.
+[embedded: 107-102084-B1.pdf]
+
+### Gary Angelus, 2024-06-20
+
+Hi Trevor,
+I posted the PDF on Jira, also attached a copy.
+I have 3 dimensions I need someone to provide to me, can you provide or perhaps tell me who I need to see.
+Thanks,
+Gary
+
 ### Gary Angelus, 2024-06-21
 
-[embedded file]
+[embedded: 107-102084-B1 (1512d2ea-54ed-4024-b594-7f7b043eeb17).pdf]
 @Trevor Gronner @Catherine Wagner @Cameron Chapman revised drawing for review.
 
 ### Catherine Wagner, 2024-06-21
@@ -68,7 +94,7 @@ Feedback from production for the drawing:
 
 ### Gary Angelus, 2024-06-25
 
-[embedded file]
+[embedded: 107-102084-B1 (1f98a325-b312-4b76-85ed-06426ca2cdc0).pdf]
 @Emalee Johnson, for review
 
 ### Emalee Johnson, 2024-06-25
@@ -85,7 +111,7 @@ Hi Liam, always like to see where items are installed in the unit, any time  @Li
 
 ### Gary Angelus, 2024-06-25
 
-@Emalee Johnson @Liam Limon @Garrett O'Neill [embedded file] 
+@Emalee Johnson @Liam Limon @Garrett O'Neill [embedded: 107-102084[B1].pdf] 
 Let me know if I missed anything.
 
 ### Emalee Johnson, 2024-06-25
@@ -105,7 +131,7 @@ Approved By Date: 3/23/2020
 
 @Gary Angelus Thank you for adding the BOM to the drawing, can you format it like this and then remove the blank lines? 
 This is the example from drawing 107-102094. 
-[embedded image-20240626-205038.png]
+[embedded: image-20240626-205038.png]
 - Additionally, the balloons for items 3, 5, 6 should say AR on the lower half, they currently say 1.
 
 ### Emalee Johnson, 2024-06-26
@@ -129,36 +155,7 @@ This is the example from drawing 107-102094.
 
 @Gary Angelus thanks for making this update. Please coordinate review with @Garrett O'Neill or another EE when available. Things I can see from a quick review. 
 - Please do not create a new altium file for each drawing. You should update the existing one. “107-102084 Laser Range Finder.SchDoc” The vault will keep the history. Please save over that file and delete the duplicate. 
-[embedded image-20240708-225256.png]
-- This should become rev C. B1 would historically indicate a redline (going away). In Scotts new process, B1 would indicate an engineering release (not for production).
-- CM should transition old revs to obsolete once this is released. @Angela Porto
-- The new format should include the BOM and drawing in one pdf, and delete the excel BOM when released.
-- Please coordinate a template with @Garrett O'Neill and record here. https://jenaero.atlassian.net/wiki/spaces/EE/pages/22183937/EE+Drawing+Templates+Documentation+Information+and+Examples  Please update all relevant confluence pages as the process is finalized. 
-- Examples (mfr pn should be removed from BOM).
-- Please use and add to the harness checklist tab here.  EE Checklists.xlsx
-
-### Emalee Johnson, 2024-06-26
-
-@Gary Angelus  Ok I think the last comment is to just change the 1.3” dimension to be 1.300” please. Thank you so much, this drawing looks way better.
-
-### Garrett O'Neill, 2024-06-27
-
-@Emalee Johnson I had Gary remove the title block info and export notice from the BOM before copying it over, as it’s already present on the drawing sheet.
-
-### Gary Angelus, 2024-06-28
-
-@Garrett O'Neill @Emalee Johnson add PDF for one more review.
-
-### Emalee Johnson, 2024-06-28
-
-@Gary Angelus  Looks good to me, thank you for implementing all the feedback. 
-@Liam Limon Can you glance at this one more time please?
-
-### Cameron Chapman, 2024-07-08
-
-@Gary Angelus thanks for making this update. Please coordinate review with @Garrett O'Neill or another EE when available. Things I can see from a quick review. 
-- Please do not create a new altium file for each drawing. You should update the existing one. “107-102084 Laser Range Finder.SchDoc” The vault will keep the history. Please save over that file and delete the duplicate. 
-[embedded image-20240708-225256.png]
+[embedded: image-20240708-225256.png]
 - This should become rev C. B1 would historically indicate a redline (going away). In Scotts new process, B1 would indicate an engineering release (not for production).
 - CM should transition old revs to obsolete once this is released. @Angela Porto
 - The new format should include the BOM and drawing in one pdf, and delete the excel BOM when released.

@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** SP-67 (Support) ESAD/Fires & Drop Payloads
-- **Issue color:** purple
 
 ## Description
 

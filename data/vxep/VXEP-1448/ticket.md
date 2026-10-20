@@ -11,9 +11,6 @@
 - **Assignee:** Sean Wendling
 - **Creator:** Pat Wells
 - **Labels:** Weekly-incident-tracker
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

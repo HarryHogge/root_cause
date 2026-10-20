@@ -96,12 +96,12 @@ There is a few copies of different times on there. The one with the latest times
 
 ### Logan Wright, 2025-08-20
 
-[embedded image-20250821-010429.png]
+[embedded: image-20250821-010429.png]
 I was able to repro the issue (based on my understanding of the description) as seen with the green flight trail on BLK30 with 6.5.1 builds. I put the PLZ ~20km away from takeoff location, disconnected from vehicle in-flight triggering LOS mission (which is configured to RTB to PLZ), and watched the path in X-Plane. The mission was planned around Camp Roberts and the terrain has some hills, but it’s mostly flat. Here’s a zoomed-out view of the terrain map where the mission covered:
-[embedded image-20250821-010923.png]
+[embedded: image-20250821-010923.png]
 I reconnected the vehicle to the GCS while flying to track the vehicle path and it still performed as described (missed IP1 waypoint). I will try to recreate again in a different direction at Camp Roberts to get to a more mountainous terrain and adjust PLZ orientation. The orientation of my PLZ is currently “worst-case” where IP1 is positioned just outside the orbit and beyond the trajectory of the vehicle. The next flight will target a similar “worst-case” situation where the vehicle will not happen to pass through IP1 on its way to orbit.
 AAR, if desired:
-[embedded file]
+[embedded: T95_V111_250820_172840_pack.zip]
  @Scott Whitney @David Grosher
 
 ### David Grosher, 2025-08-21
@@ -112,7 +112,7 @@ If we do indeed confirm the bug then the next step is to confirm a workaround, w
 ### Jackson Riley Curvin, 2025-08-21
 
 @Logan Wright @David Grosher 
-[embedded file] [embedded file] [embedded file] [embedded file] [embedded file] 
+[embedded: Flight_6.json] [embedded: PersistedLandingPatterns.json] [embedded: AAR_V765_20250821T133456Z.zip] [embedded: archive_20250821_133838.zip] [embedded: Contingency A_3.json] 
 We re ran this again with the same results, part way of the journey to IP1 the active landing moved to IP2, We left the AV flying until it landed. Lucky were we put these landing patterns had a nice valley so the AV didn’t hit terrain but did go down to 400ft AGL
  
 This was all done with VCSi and OGCS. VCSi was just used to upload the landing pattern, route and set loss link action. After that we launched with OGCS waiting for the AV to get into the 1 WP mission of an orbit then released control in OGCS and waited for it to RTB

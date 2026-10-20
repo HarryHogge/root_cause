@@ -12,7 +12,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-618 965-1-01-3100 (obs) & 107-111718 - Add (QTY 1) 2121832-01 to bottom of enclosure
 - **Epic Link:** VXEP-618
-- **Cause:** Need for better understanding of harshest conditions applied while deployed or stored, reviewable upon RMA
 - **Production Stakeholder:** Joseph Young
 - **Supply Chain Stakeholder:** Trevor Gronner
 - **Other Stakeholder (as required):** Matt Philley
@@ -22,12 +21,12 @@
 
 ## Description
 
-[embedded image-20250130-230455.png]
+[embedded: image-20250130-230455.png]
 
 ## Plan
 
 Put here: 
-[embedded image-20250124-191021.png]
+[embedded: image-20250124-191021.png]
 
 ## Comments (7)
 

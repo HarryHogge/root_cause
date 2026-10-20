@@ -51,6 +51,20 @@ Per Mike Mohr: FSK power harness used in this incident was pulled out of one of 
 
 ## Comments (23)
 
+### Alexander Alan Arnold, 2025-02-06
+
+@Rodney Linch Please have this delivered to engineering since there is a problem ticket associated now.
+
+### Greg Fryer, 2025-02-06
+
+@Alexander Alan Arnold @Rodney Linch Is this an RMA (meaning after this did it get come back)? Or is this still in the field? Was going to recommend RMA immediately, as overheating power connectors are a flight safety risk/issue.
+Edit: Just saw the linked RMA! Did we get the plane back already?
+@Cameron Chapman Moving to you, but maybe Laszlo could look at the battery connections?
+
+### Alexander Alan Arnold, 2025-02-06
+
+@Greg Fryer this aircraft is in the building. The RMA ticket has the bird being labeled as delivered to engineering.
+
 ### Cameron Chapman, 2025-02-11
 
 @Adrian Garcia and @Giovanni Gonzalez can you please investigate this today. I would start by measuring the antispark contact for the resistor portion and regular contact impedance.
@@ -113,7 +127,7 @@ FYSA @Cameron Chapman @David Grosher
 ### Giovanni Gonzalez, 2025-03-20
 
 This main battery connector, PN: 107-102189-1, was outsourced from Compass Systems back in 2023. The serial number for this harness is SN: 0141 and is found in the attached invoice below. Incident [VXEP-999] VXE 598 with VXE 596 Center Wing. Lost connection to VTOL AP and ADB and crashed. - Jira also reports an issue with the main battery connector with SN: 0157, this connector was also outsourced and is in the same invoice below. This batch may have other defective connectors.
-[embedded file]
+[embedded: Invoice for PO-220526-11 INV-00001348 (5599-0744-011).pdf]
 @Cameron Chapman @Steve Gonzales
 
 ### Cameron Chapman, 2025-03-21
@@ -129,18 +143,6 @@ This main battery connector, PN: 107-102189-1, was outsourced from Compass Syste
 @Steve Gonzales @Cameron Chapman It seems like the connector is the root cause, this was not involved in a flight incident so we can we potentially send this back to RMA and schedule a replacement for the harness and close this one out 
 
 FYSA @Pat Wells
-
-### Steve Gonzales, 2025-04-15
-
-@Alexander Alan Arnold Agreed.  I will send this vehicle to you today.
-
-### Steve Gonzales, 2025-04-15
-
-@Giovanni Gonzalez please gather vehicle 560 and give to Alexander in RMA across from shipping today. thank you.
-
-### Alexander Alan Arnold, 2025-04-15
-
-@Lauren Velasquez @Rodney Linch Please work with @Giovanni Gonzalez to return this aircraft to rma and schedule the repair the fuselage @Steve Gonzales I am in the huntsville office not SLO
 
 ### Steve Gonzales, 2025-04-15
 

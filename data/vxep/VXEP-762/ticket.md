@@ -9,9 +9,6 @@
 - **Assignee:** Josh Burrell
 - **Creator:** Cameron Chapman
 - **Links:** relates to VXEP-761 (VXE 557 Smoking Smell from Fuselage after connecting main battery); relates to VXEP-1177 (VXE 808 State of Charge discrepancy)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (8)
 
@@ -19,7 +16,7 @@
 
 Likely needs more testing across multiple batteries and getting lower end SoC, but from quick spot checks on charging a main battery from 60%-99% this morning SoC actually appears to track fairly well. Here is a graph showing actual, expected, and % error from a single battery tested today. We see less than a 0.5% error at each interval: 
 
-[embedded image-20241106-212231.png]
+[embedded: image-20241106-212231.png]
 
 ### Christa Meck, 2026-06-01
 
@@ -36,7 +33,7 @@ Likely needs more testing across multiple batteries and getting lower end SoC, b
 ### Josh Burrell, 2026-06-05
 
 @Cameron Chapman Heres what we found
-[embedded checker vs charger.jpg]
+[embedded: checker vs charger.jpg]
 
 ### Cameron Chapman, 2026-06-05
 

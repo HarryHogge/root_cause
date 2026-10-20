@@ -34,7 +34,7 @@ For whoever looks at this when the statement comes in. Why is a forward prop she
 
 ### Cody Smisek, 2026-05-27
 
-[embedded image-20260527-175256.png]
+[embedded: image-20260527-175256.png]
 
 ### Cody Smisek, 2026-05-27
 

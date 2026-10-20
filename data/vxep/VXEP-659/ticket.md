@@ -11,9 +11,6 @@
 - **Assignee:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-662 VXE30 55lb 15lb payload concept review
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 
 ## Comments (1)
 

@@ -9,7 +9,6 @@
 - **Assignee:** Drew Hildreth
 - **Creator:** Mike DeJesus
 - **Links:** relates to XKIT-4777 (2123714-01 SLA Breakout V3 - Rev B); relates to VXEP-1890 (VXE 902 - user power cycled aux 1&2 simultaneously, and lost comms with the A/C for ~2 minutes. CHAOS payload); relates to OGCS-612 (Payload Power Labels Unclear); relates to VXEP-1956 (VXE 880 MCM Reset inflight after gimbal power cycle); relates to VXEP-2005 (VXE 966 MCM reset led to uncommanded climb ); relates to MS-1684 (VSM: Accommodate MCM Restarts in Flight); relates to VXEP-723 (VXE 724 MCM reset when changing HLB, other potential issues); relates to VXEP-844 (VXE724 VTOL Climb Abort Lift System Fault); relates to FS2-3724 (Investigate MCM resets on V912.); relates to PLD-237 (SB30 Adv Nav 1003 - MCM Reset with Hoodtech Gimbal Connected)
-- **Issue color:** dark_green
 - **Severity:** 2 - Degraded Performance - No Workaround
 
 ## Description

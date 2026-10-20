@@ -13,7 +13,6 @@
 - **Labels:** No_crash, PMA263, Software, Weekly-incident-tracker
 - **Links:** relates to RMA-219 (VXE-438 240226)
 - **Impact:** Minor / Localized
-- **Issue color:** purple
 - **Customer:** PMA263
 - **Vehicle Tail Number:** 438
 - **Root Cause:** Limited information possibly pertaining to software related issues

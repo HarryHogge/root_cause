@@ -14,8 +14,7 @@
 
 ## Description
 
-See comments for message chain and summarize here. VXE 674 E140ZG2 gimbals interfere with magnetometer. FYI @Greg Fryer @Mike Gomez @Aleksandrs 
-#
+See comments for message chain and summarize here. VXE 674 E140ZG2 gimbals interfere with magnetometer. FYI @Greg Fryer @Mike Gomez @Aleksandrs
 
 ## Plan
 

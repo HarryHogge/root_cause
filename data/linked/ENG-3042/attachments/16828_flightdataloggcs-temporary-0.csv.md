@@ -1,0 +1,219 @@
+# flightdataloggcs-temporary-0.csv
+
+Attachment 16828, csv, 120 KB, added 2023-10-03 by Pat Wells.
+
+Columns (212):
+- Project Name
+- Location
+- Flight Date
+- Flight Date UTC
+- Flight Number
+- Pilot
+- Ground Crew
+- Instructor
+- A/C Type
+- A/C Mod
+- A/C S/N
+- A/C Comms
+- AP Firmware
+- Gains
+- XCOMM Firmware
+- Weight
+- AP S/N
+- Total Launches
+- Total Flight Hours
+- LW
+- CW
+- RW
+- LB
+- RB
+- TB
+- Stab
+- VT
+- Payload
+- Turret / Drop S/N
+- Pod S/N
+- CT S/N
+- GCS Comms
+- Comms S/N
+- GCS SW Version
+- Main Battery S/N
+- Fuel Cell S/N
+- Fuel Cell Cycles
+- Fuel Tank S/N
+- Energy Source
+- Bungee S/N
+- Launch Ground Wind Speed
+- Launch Ground Wind Direction
+- RTB Winds Aloft
+- RTB Winds Aloft Dir
+- Landing Ground Wind Speed
+- Landing Ground Wind Direction
+- Launch Ground Air Temp
+- RTB Temp Aloft
+- Landing Ground Air Temp
+- Launch Density Altitude
+- Landing Density Altitude
+- Vehicle Density Altitude
+- Mission File Name
+- Time of Launch
+- Time of Launch UTC
+- Planned Duration
+- Actual Duration
+- Auto RTB
+- ReTask
+- Endurance Remaining
+- Launch Battery Percent
+- AAR File Name
+- Launch Fuel Weight
+- Landing Fuel Weight
+- Hybrid Batt <= 50%
+- Landing Approach Deg
+- Pattern Altitude
+- Landing Zone
+- Landing Error Distance
+- Landing Error Direction
+- Nudge
+- Left
+- Right
+- Short
+- Long
+- Landing Abort Count
+- Drop Performed
+- Multi UAV Performed
+- Hand-Off Performed
+- Mobile GCS Performed
+- U-Drive
+- Repair Level
+- Comments
+- Flight ID
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+Data rows: 88 (data not exported)

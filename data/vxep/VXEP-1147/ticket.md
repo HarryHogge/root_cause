@@ -10,9 +10,6 @@
 - **Reporter:** Nina Menon
 - **Creator:** Nina Menon
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 
 ## Description
 

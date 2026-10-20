@@ -12,7 +12,6 @@
 - **Creator:** Pat Wells
 - **Labels:** No_crash, PMA_263, Training, Weekly-incident-tracker
 - **Links:** relates to SMUP-25 (Update all Software generated Warnings/Cautions/Alerts and VTOL Messages )
-- **Issue color:** purple
 - **Vehicle Tail Number:** 439
 - **Root Cause:** Believed to be an operating procedure that needs to be updated to include restarting the wizard
 - **Impacted Core Subsystems:** Aircraft

@@ -102,7 +102,7 @@ Awaiting completion of 909 before starting on 910
 
 @Jeremy Kostel @Carson Buckley you’d be looking for any of these messages in the xcomm event log.
 
-[embedded image-20261005-221821.png]
+[embedded: image-20261005-221821.png]
 From the comments below it looks like we put in a whole new avionics box, is that right? If that’s the case we should be able to just do normal SCO as Jeremy says, if there were similar issues with GPS you’d notice.
 
 ### Stephan Johnson, 2026-10-12

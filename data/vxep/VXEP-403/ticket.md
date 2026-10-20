@@ -11,7 +11,6 @@
 - **Assignee:** David Grosher
 - **Creator:** Ryan Ferguson
 - **Links:** relates to FS2-1808 (Production software cannot flash from webpage)
-- **Issue color:** purple
 - **Part Number(s):** 1409P01D
 - **Production Stakeholder:** Ryan Ferguson
 - **Impacted Disciplines:** Software
@@ -27,11 +26,11 @@ Navigate to the program page of the VTOL autopilot.  Upload the current released
 
 Result:
 The VTEV log will throw an error for the hex file, saying “Bad hex file address range”
-[embedded image-20240501-222254.png]
+[embedded: image-20240501-222254.png]
 Navigating to the index page after this error will also show the autopilot has dismounted the SD card and is now in ROM mode.
-[embedded image-20240501-222341.png]
+[embedded: image-20240501-222341.png]
 The error can also be recreated by navigating to Utilities and clicking the Program from vtol.hex button.  This is supposed to reinstall the firmware from the hex file on the SD card but will also throw a corrupt pop-up message and dismount the SD card, kicking it back to ROM mode.
-[embedded image-20240501-222458.png]
+[embedded: image-20240501-222458.png]
 
 ## Comments (0)
 

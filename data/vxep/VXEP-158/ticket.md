@@ -17,7 +17,7 @@
 
 BOM item #2 (100-106134) HS diameter too large to assemble the LEMO Connector around.
 Suggest changing to 3/8” 3:1 ADH Heat Shrink (100-106125). Techs have been using this for some time.
-[embedded file]
+[embedded: 1803C02A BOM.pdf]
 
 ## Comments (1)
 

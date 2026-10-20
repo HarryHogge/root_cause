@@ -13,7 +13,6 @@
 - **Labels:** Crash, Hardware, PMA263, Weekly-incident-tracker
 - **Links:** relates to RMA-208 (VXE 496 Fuse 550 Wing 231220); is cloned by VXEP-233 (VXE-496 with 550 wing- abnormal behavior after transition to VTOL led to crash); relates to VXEP-12 (TPTR-87 VXE 511 VTOL Connector Issues 516 CW. Contains Main connector/contact C/CAs); relates to XKIT-1958 (Havoc 550 fuse 371 CW - Land Transition Failure 20240423); relates to XKIT-2421 (XKIT - Demo Prep Incident 20240612); relates to VXEP-628 (Systemic VXE30 VTOL ESC Reliability Issues ); relates to XKIT-760 (Main AS150 replacement issue-Develop new battery power connectors for Havoc Block 5)
 - **Impact:** Significant / Large
-- **Issue color:** purple
 - **Customer:** PMA263
 - **Vehicle Tail Number:** 496
 - **Other Stakeholder (as required):** Nadia Brown
@@ -97,7 +96,7 @@ Ex:
 ### Cameron Chapman, 2023-12-20
 
 Data from Xcom log indicates a clear connector issue. 
-[embedded file]
+[embedded: image-20231220-231347.png]
 Next steps. 
 - Separate incidents for connector failure and aircraft behavior after.
 - Get CW out of tree. Send equipment back with RMA. Could send  data back before if they prefer, or we can get when it arrives.

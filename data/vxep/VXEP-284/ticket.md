@@ -73,7 +73,7 @@ I see two problems here:
 ### Cameron Chapman, 2024-02-22
 
 Saved files here VXE540 Mishap After Transition-2024-02-22 1. Does not appear to be a VTOL power fault. Lots more data to check. 
-[embedded file]
+[embedded: image-20240223-000039.png]
 
 ### David Grosher, 2024-02-22
 

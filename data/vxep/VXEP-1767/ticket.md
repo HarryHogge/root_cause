@@ -11,7 +11,6 @@
 - **Assignee:** William Dresser
 - **Creator:** Cameron Chapman
 - **Links:** relates to XKIT-5347 (B40 913 Fuse fan INOP. Discovered actual fuse side fan connector pinout did not match drawings. swapped pins and confirmed functioning); relates to VXEP-1607 (Update cable design process to ensure planning for tooling and cable testers is complete so that they are ready when builds need to happen. )
-- **Issue color:** blue
 
 ## Comments (4)
 

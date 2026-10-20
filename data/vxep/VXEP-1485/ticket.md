@@ -37,7 +37,7 @@ Cycle Count:4
 
 ### Jackson Riley Curvin, 2025-08-22
 
-[embedded image-20250822-141332.png]
+[embedded: image-20250822-141332.png]
 
 ### Jackson Riley Curvin, 2025-08-22
 

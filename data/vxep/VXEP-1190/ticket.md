@@ -11,9 +11,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-887 Create, Test, and Release B40 Wing Utility Pylon (FKA drop payload) PN: 2123650-01
 - **Links:** relates to FS2-3149 (Conduct VSC5634EV evaluation board analysis for Havoc Distro board)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 - **Sprint:** FS2 Sprint 35
 - **Key Stakeholder(s):** Ted Trowbridge
 

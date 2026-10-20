@@ -40,29 +40,29 @@ METAR K9A4 051855Z AUTO 00000KT 10SM BKN044 28/19 A3006 RMK AO2
 - Are you able to gather history of the battery from the operators, logs, etc? Does the bms have any history of how the battery was used and where?
 - Sharepoint folder here:2025-06-05 VXE-758 VXEP-1293 Aborted Launch
 
-[embedded file]
+[embedded: VXEP-1293.pptx]
 
 ## Comments (16)
 
 ### Jackson Riley Curvin, 2025-06-05
 
-[embedded image-20250605-203423.png]
+[embedded: image-20250605-203423.png]
 
 ### Jackson Riley Curvin, 2025-06-05
 
-[embedded image-20250605-203707.png]
+[embedded: image-20250605-203707.png]
 
 ### Alexander Alan Arnold, 2025-06-05
 
-[embedded image-20250605-203820.png]
+[embedded: image-20250605-203820.png]
 
 ### Jackson Riley Curvin, 2025-06-05
 
-[embedded image-20250605-203845.png]
+[embedded: image-20250605-203845.png]
 
 ### Alexander Alan Arnold, 2025-06-05
 
-[embedded image-20250605-204027.png]
+[embedded: image-20250605-204027.png]
 
 ### David Grosher, 2025-06-05
 

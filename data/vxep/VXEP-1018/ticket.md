@@ -11,7 +11,6 @@
 - **Assignee:** Ryan West Jimenez
 - **Creator:** Brad Crampton
 - **Labels:** Electronics_Drafting
-- **Issue color:** purple
 - **Part Number(s):** 107-102095-L and -R
 - **Impacted Core Subsystems:** Aircraft
 
@@ -25,7 +24,7 @@ Nee drawing for 107-102095-L and -R. Boom harness. Need to specify length of cle
 
 @Brad Crampton the 3” of clear heat shrink is mentioned on the 107-102095 Pinout FYI
 Its not a great method of calling it out, but is not totally missing
-[embedded file]
+[embedded: image-20240319-141828.png]
 
 ### Brad Crampton, 2024-03-19
 
@@ -34,7 +33,7 @@ Its not a great method of calling it out, but is not totally missing
 ### Sam Omiotek, 2024-03-20
 
 I added a markup to step 2 and a note to pull from the Kanban in the kitting instructions. I think this is as clear as it can be.
-[embedded file]
+[embedded: image-20240320-162146.png]
 @Brad Crampton @Matt Philley
 
 ### Brad Crampton, 2024-03-20

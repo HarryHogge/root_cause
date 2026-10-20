@@ -39,17 +39,17 @@ Waiting for AV Box replacement (planned before incident) and then will be passed
 
 ### Jeremy Kostel, 2024-08-15
 
-#### Pictures from event
+**Pictures from event**
 
 - Notice screw holding the avionics box
 
 
-[embedded image-20240815-195807.png]
+[embedded: image-20240815-195807.png]
 
-[embedded image-20240815-195744.png]
+[embedded: image-20240815-195744.png]
 - Fuselage Power Harness (p/n: 107-102189-2)
 
-[embedded image-20240815-195725.png]
+[embedded: image-20240815-195725.png]
 
 ### Jeremy Kostel, 2024-08-15
 
@@ -59,7 +59,7 @@ Waiting for AV Box replacement (planned before incident) and then will be passed
 
 ### Jeremy Kostel, 2024-08-15
 
-#### Update 
+**Update**
 
 - Fuse Power harness replaced
 - old harness red tagged and on my workbench

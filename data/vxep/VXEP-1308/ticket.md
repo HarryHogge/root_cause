@@ -9,9 +9,6 @@
 - **Resolved:** 2025-06-13
 - **Reporter:** Carl Graf
 - **Creator:** Carl Graf
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 - **Issue Status:** CANCELED. TICKET CREATED UNDER WRONG PROJECT.
 
 ## Comments (0)

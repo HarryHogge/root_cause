@@ -35,11 +35,11 @@ Operator attempted to connect with the aircraft and was unable to do so. Unknown
 I was able to successfully connect to Avibox 648 on an Ironbird. AAR attached. I will sign off on RMA traveler and return to @Lauren Velasquez 
 Notes from connecting to all TIQ avionics are in https://jenaero.atlassian.net/browse/FS2-4500
 
- [embedded file]
+ [embedded: T95_V648_260414_110442_pack.zip]
 
 ### Jeremy Kostel, 2026-04-23
 
-[embedded image-20260423-155250.png]
+[embedded: image-20260423-155250.png]
 VTOL AP data not populated on the XCOM VTOL page. Usually indicates CAN issue. I isolated the avionics box to a bench and took a look at the CAN messages. Appears that the CAN chip has been damaged somehow. Shown above is a comparison between a known good board (left) and bad V648 board (right). Recommend opening the avionics box and inspecting
 
 ### Scott Whitney, 2026-04-23

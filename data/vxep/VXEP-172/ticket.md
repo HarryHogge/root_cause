@@ -120,7 +120,7 @@ Agenda:
 ### Garrett O'Neill, 2022-12-09
 
 All cable tester documents have been renamed “124-109215 Cable Tester Assembly, <Document Description>”
-[embedded file]
+[embedded: image-20221209-181508.png]
 
 ### Cameron Chapman, 2022-12-15
 
@@ -184,7 +184,7 @@ Questions to be hashed out in short meeting I will schedule soon:
  
  
  
-|  | Matt Philley Production Engineering Supervisor Edge Autonomy – SLO Phone: +1-805-592-1178 Email: mphilley@edgeautonomy.io [embedded file] |
+|  | Matt Philley Production Engineering Supervisor Edge Autonomy – SLO Phone: +1-805-592-1178 Email: mphilley@edgeautonomy.io [embedded: VXE30 Top Level, Harnesses to be Cable Tested - RF 23.03.30.xlsx] |
 
 ### Matt Philley, 2023-04-20
 

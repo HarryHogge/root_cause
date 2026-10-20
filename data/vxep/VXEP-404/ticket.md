@@ -10,7 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Abel J. Markow
 - **Creator:** Cameron Chapman
-- **Issue color:** purple
 
 ## Description
 

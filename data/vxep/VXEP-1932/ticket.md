@@ -10,7 +10,6 @@
 - **Reporter:** Connor Peebles
 - **Assignee:** Daniel Ceja
 - **Creator:** Connor Peebles
-- **Is this ticket a Design Project?:** No
 - **Project Tier:** Tier 1
 
 ## Comments (2)

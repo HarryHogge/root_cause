@@ -13,9 +13,6 @@
 - **Labels:** EndOfLife
 - **Parent:** VXEP-337 Create, Test, and Release VXE30 Standard Config Wing Utility Drop
 - **Links:** relates to VA-1572 (0716P01 Fuselage Drop Payload PCB Improvements); relates to ENG-2174 (Document EA portion of fuselage drop payload. Add to vault. ); relates to VA-1580 (Investigate Edge payload drop firmware, determine if we can modify to allow one drop at a time.); relates to VA-1722 (BMS & Hatchet integration to VXE30 Standard, including “High Payload (lower energy) battery”); relates to VA-1495 (Generate VXE30Std - Wing Utility Drop - Block Diagram (Concept))
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 - **Leadership Stakeholder:** Greg Fryer
 - **Product/Tech Owner:** Tom Westrich
 - **Program (Marquee):** On-Board Heavy Fuel
@@ -95,7 +92,7 @@ It is highly unlikely that we will get an ICD for the Hatchet since the aircraft
 
 @Grant Goodman @Cameron Chapman added this to our Utility Dropper action list since it will prevent us from completing Practice Builds and FAIs until it is resolved.
 Will part of this project be to keep the same form factor and connectors on the board? If not, then this could also trigger redesigns of the126-117433-01 Drop Payload Board/Harness Assy (harnesses and enclosure). 
-[embedded image-20240916-142143.png]
+[embedded: image-20240916-142143.png]
 
 ### Cameron Chapman, 2024-09-16
 

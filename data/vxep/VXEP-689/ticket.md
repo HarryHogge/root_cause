@@ -15,13 +15,12 @@
 - **Parent:** VXEP-682 Practice Build - 101-118005-01 & -02, VXE30 Drop Payload PCB to Harness L & R
 - **Epic Link:** VXEP-682
 - **Start date:** 2024-10-05
-- **Issue color:** purple
 
 ## Description
 
 2nd round of redlines 11/13:
 
-[embedded image-20241113-223220.png]
+[embedded: image-20241113-223220.png]
 
 ## Comments (3)
 

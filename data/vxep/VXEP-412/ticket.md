@@ -12,7 +12,6 @@
 - **Creator:** Pat Wells
 - **Labels:** GNSS-Rate, MARSOC, Software, Weekly-incident-tracker
 - **Links:** relates to VXEP-365 (VXE 426 Slow descent on VTOL landing, crash landing into a fence); relates to FS2-1753 (v426 Investigation (Slow descent, land on fence)); relates to VXEP-315 (VXE 459 Overshoot of LZ Mishap on landing, operator unable to nudge); relates to VXEP-427 (VXE 430 abnormal landing behavior)
-- **Issue color:** purple
 - **Customer:** MARSOC
 - **Vehicle Tail Number:** 426
 - **Plan:** Software update upcoming.

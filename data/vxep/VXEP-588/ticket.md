@@ -23,7 +23,7 @@ Start building a list of the easiest and highest gain legs/assemblies.
 
 ### Connor Peebles, 2023-02-22
 
-[embedded file]
+[embedded: image-20230222-191907.png]
 List by Ryan F. and Liam
 
 One thing to note; ODU will only do these pre-terminated harnesses will all the solder cups terminated. They have jacket and shielding and molded boot options, or just discrete wire. I will contact Jeff Garvais from ODU and ask for clarification on these options. 

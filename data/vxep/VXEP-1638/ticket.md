@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Grant Goodman
 - **Creator:** Cameron Chapman
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 
 ## Comments (0)
 

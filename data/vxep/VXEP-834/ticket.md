@@ -50,9 +50,9 @@ This crashed aircraft was discovered during an FSR visit to the storage facility
 @David Grosher xcomm logs pulled. VTOL logs not recoverable. Did a quick glance and seems like there’s probably enough data for someone to review. 
 Seems power / battery related. 
 
-[embedded image-20241218-190634.png]
+[embedded: image-20241218-190634.png]
 
-[embedded image-20241218-190412.png]
+[embedded: image-20241218-190412.png]
 
 ### Cody Smisek, 2024-12-18
 

@@ -57,7 +57,7 @@ Would suggest a second review of this issue reference findings of https://jenaer
 
 
 AAR in this ticket (1774) shows similar characteristics of 1989. Abnormal airspeed indications preflight and during launch. 
-[embedded image-20260923-151314.png]
+[embedded: image-20260923-151314.png]
 
 ### Zachary Mann, 2026-10-12
 

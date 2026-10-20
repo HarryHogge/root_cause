@@ -12,7 +12,6 @@
 - **Creator:** Michael Mohr
 - **Labels:** Software, TIQUILA
 - **Links:** relates to VXEP-1698 (NCR: IPCOMM Failures)
-- **Issue color:** teal
 - **Asset type:** VXE-30 MAGNSS
 - **Customer:** TIQUILA
 - **Vehicle Tail Number:** VXE-576

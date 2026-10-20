@@ -40,7 +40,7 @@ Nominal Anti Spark Ressitance = 6 Ohms
 
 @Hayden Jeanor I only have a recent example (see below), the top picture is a brand-new cable from stock (5.9 Ohms), and the bottom one (0.7 Ohms) is the one that got replaced.
 
-[embedded image-20240611-165317.png]
+[embedded: image-20240611-165317.png]
 
 ### Hayden Jeanor, 2024-06-11
 
@@ -82,7 +82,7 @@ The current receiving inspection process is outlined in the Inspection Sheet ava
 
 @Cyrus Blevins  i have devised a testing ckt that will help us determine a fail criteria. Can you please perform test with my assistance.  
 
-[embedded Image-20240614-162225.jfif]
+[embedded: Image-20240614-162225.jfif]
 Rough procedure:
 - Build harnesses required for test
 - Safety: there will be sparking in this test. Wear safety glasses and gloves.

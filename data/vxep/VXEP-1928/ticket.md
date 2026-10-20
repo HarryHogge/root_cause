@@ -128,7 +128,7 @@ Note that we don’t see these messages with a HIL, part of the reason for my po
 
 ### Calvin Rogers, 2026-06-22
 
-[embedded file]
+[embedded: frontend-logs-2026-06-22T16-25-16-454Z.tar.gz]
 @Ted Trowbridge
 
 ### Ted Trowbridge, 2026-06-22
@@ -144,7 +144,7 @@ https://jenaero.atlassian.net/browse/OGCS-605 is in work as a CA.
 
 ### Ted Trowbridge, 2026-06-22
 
-[embedded VXEP-1928-T1006-Landing.mp4]
+[embedded: VXEP-1928-T1006-Landing.mp4]
 Here is a recording of the landing and CFIT.  There is one abort back to IP1 after which the vehicle does regain some altitude, but once it captures IP1 it goes back to IP2 and descends rapidly.
 Note: The locations are scrubbed by OGCS so this is shown in a “random location”.  Headings/bearings do not line up so aircraft crab angles during navigation are incorrect.
 

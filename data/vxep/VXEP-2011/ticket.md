@@ -9,9 +9,6 @@
 - **Assignee:** Chandler Clough
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-2009 Inpsection Criteria for Cross-Site RW Products 
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-5
-- **Issue color:** dark_teal
 
 ## Description
 
@@ -20,7 +17,7 @@ Payload list https://redwireglobal.sharepoint.com/:x:/r/sites/IntegrationHub/Sha
 2163486=payload model. No drawing currently. Can we get it. 
 - Check weight, part marking, firmware using SBOM process.
 - Current IQC
-- [embedded image-20261008-220247.png]
+- [embedded: image-20261008-220247.png]
 
 ## Comments (0)
 

@@ -12,7 +12,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-618 965-1-01-3100 (obs) & 107-111718 - Add (QTY 1) 2121832-01 to bottom of enclosure
 - **Epic Link:** VXEP-618
-- **Cause:** Need for better understanding of harshest conditions applied while deployed or stored, reviewable upon RMA
 - **Production Stakeholder:** Kyle England
 - **Other Stakeholder (as required):** Matt Philley
 - **Engineering Change Level:** Level 1 - Scope of change is clear but there is a choice of approaches
@@ -21,12 +20,12 @@
 
 ## Description
 
-[embedded image-20250130-232221.png]
+[embedded: image-20250130-232221.png]
 
 ## Plan
 
 Put here (inside case): 
-[embedded image-20250124-190706.png]
+[embedded: image-20250124-190706.png]
 
 ## Comments (7)
 
@@ -51,10 +50,10 @@ Released to CCB
 Feedback from final assembly regarding label location, I’d like to implement this ASAP:
 @Connor Peebles @Gerrit Sperling @Matt Philley 
 The “top left lid” location depicted in the description of this ticket causes contact with the vehicle stand that seats into the gap in the lid. The vehicle stand rubs against the inside of the lid when closing or opening the lid. This is detrimental to keeping the temp. indicating sticker in place / intact. Not sure if this will require the 107-103460 drawing to be updated or not.
-[embedded image-20250219-224801.png]
+[embedded: image-20250219-224801.png]
 
 Recommended location shown below:
-[embedded image-20250219-224838.png]
+[embedded: image-20250219-224838.png]
 
 ### Connor Peebles, 2025-02-19
 

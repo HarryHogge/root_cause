@@ -15,7 +15,6 @@
 - **Parent:** VXEP-697 Practice Build - 2118737-01, VXE30 Std Config, Wing Utility Drop Kit
 - **Epic Link:** VXEP-697
 - **Start date:** 2024-12-06
-- **Issue color:** purple
 
 ## Description
 

@@ -25,14 +25,14 @@ The aircraft went through the launch wizard nominally. When launch was selected,
 
 ### David Grosher, 2025-11-11
 
-[embedded image-20251111-230953.png]
+[embedded: image-20251111-230953.png]
 @Ted Trowbridge It was reported that there was no RC box, but it went into RC mode before takeoff. I checked a reference flight and there was no similar mode change prior to launch. Could this be a wrong ini file?
 @Jackson Riley Curvin
 
 ### Jackson Riley Curvin, 2025-11-11
 
 @David Grosher @Ted Trowbridge  does this mean that the operator clicked abort?
-[embedded image-20251111-234242.png]
+[embedded: image-20251111-234242.png]
 
 ### Ted Trowbridge, 2025-11-11
 

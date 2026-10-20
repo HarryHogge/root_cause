@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** XKIT-4170 Connector Initiative - LRR
-- **Is this ticket a Design Project?:** No
 - **Program (Marquee):** LRR
 - **Job Number:** J100078 - Sustainment: VXE-30
 

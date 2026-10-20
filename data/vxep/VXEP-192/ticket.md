@@ -11,7 +11,6 @@
 - **Assignee:** Cameron Chapman
 - **Creator:** Liam Limon
 - **Links:** relates to VA-573 (Poor Quality/higher impedance plating on AS150 power contacts - Containment and Corrective Action); relates to VA-623 (Generate contact impedance test procedure for use on contact+wire assemblies in production)
-- **Issue color:** purple
 - **Target end:** 2023-12-31
 - **Part Number(s):** 107-102264
 - **Production Stakeholder:** Liam Limon
@@ -24,6 +23,18 @@ Dual Current Sense harness does not currently have a production procedure for te
 
 ## Comments (21)
 
+### Cameron Chapman, 2023-11-14
+
+Assigning to @Laszlo Juhasz. We should combine this with an impedance measurement of the anti-spark contact.
+It may be worth estimating if the time required to test all of these PCBs vs the risk and cost of replacing a rare failure in SCO. Have we had any failures (other than burnt contacts, which the impedance measurement tests)? @Carson Buckley 
+Test should be something like the following:
+- Connect to eload and power supply.
+- Apply 28V.
+- For the current range that the load can sink, at various points including 0A, test VIOUT1 and 2 calculated vs actual voltages are within U1-2 datasheet tolerances.
+
+@Liam Limon we move all VXE problems to VXEP now, so you are welcome to create issues in that project. Thank you for reporting this gap. 
+@Adrian Garcia and @Mark Squillante
+
 ### Carson Buckley, 2023-11-15
 
 @Cameron Chapman Failures of the CS are rare in SCO, and usually related to a miswired harness.
@@ -35,7 +46,7 @@ Based on the datasheet for the ACS770ECB-200U-PFF-T datasheet, I was able to fin
 
 I also did part of the designs for these harnesses.  They can be seen in this directory:
 C:\JAI Vault 1\Production eng\4 - Electronics\3 - Tooling & Shop Aides\107-111704 Dual Current Sense Test Assembly
-[embedded file]
+[embedded: image-20231115-170247.png]
 The DCS Test Signal Harness is the only part which still needs a pinout made.  It breaks out all of the signal pins from the DF13 connector for probing with a multimeter.  The Pin 6 can probably just be left as another multimeter probe point rather than being tied back to the power input of the DCS like is shown in the diagram above.
 
 ### Ryan Ferguson, 2023-11-15
@@ -69,7 +80,7 @@ We should add the impedance measurement to this test, even if for now it says ha
 I do not think listing test values belongs on the drawing. There are many times where we won’t know the values until a part is built, or we will want to update it faster than a drawing if new info is discovered. 
 I am unaware of a systems eng system to record this info, but we should wait for them to release it before using it. @Travis Storm or @Kat Gulstad do you have something like this in work?
 For now, I think we should keep test criteria in the traveler. You can see previous revs using the history/save function in the vault. If we want all versions available in search, we could/are planning to have pdfs generated of all revs then moving obsolete ones to obsolete state, then ensuring techs can’t view that state. 
-[embedded file]
+[embedded: image-20231116-201000.png]
 
 ### Cameron Chapman, 2023-11-16
 
@@ -138,11 +149,6 @@ We could also add a mfg or quality review state if anyone has bandwidth to suppo
 ### Cameron Chapman, 2023-11-16
 
 @Liam Limon I updated this page. You are welcome to comment/request changes. https://jenaero.atlassian.net/wiki/spaces/EE/pages/22183937/EE+Drawing+Documentation+Information+and+Examples
-
-### Liam Limon, 2023-11-16
-
-@Cameron Chapman Thank you for including the links to those. Perhaps Garrett and I can keep working off of those as we develop our template. I’m definitely happy to help with developing the process and continuing to improve. I know staffing has been an issue, but more cross functional support I think will help alleviate some of the pressure on fixing things like documentation and processes. 
-I think it would be a smart idea to add Manufacturing and Quality review to the release process. I’ve been making myself available to Garrett and Nadia for review of everything we’re taking to Huntsville as well as helping Jack and Maxime review the MCM avionics box documents and I’m happy to continue to do that for future projects. Going forward for general releases we should probably direct the review to the relevant supervisor; so myself for center wing and lift, Ben N, for avionics, GCS, and Batteries, and Ben H for fuselage. For quality the reviewer would probably be Brad C.
 
 ### Liam Limon, 2023-11-16
 

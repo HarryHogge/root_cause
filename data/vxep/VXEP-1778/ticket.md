@@ -54,6 +54,62 @@ Requesting customers use charger to run impedance test on batteries available. W
 
 ## Comments (31)
 
+### Jackson Riley Curvin, 2026-03-19
+
+[embedded: image-20260319-224018.png]
+
+### Jackson Riley Curvin, 2026-03-19
+
+[embedded: image-20260319-224146.png]
+
+### Jackson Riley Curvin, 2026-03-19
+
+[embedded: image-20260319-224309.png]
+
+### Jackson Riley Curvin, 2026-03-19
+
+VXE-SUAV version on 6.3.4 Aircraft on 6.6.1
+
+### Drew Hildreth, 2026-03-25
+
+Waiting on Customer to provide Data
+
+### Jackson Riley Curvin, 2026-04-29
+
+Waiting on customer to RMA aircraft once it arrives RMA team will need to pull data.
+
+### Jackson Riley Curvin, 2026-05-06
+
+@David Grosher Just received data for 512 Xcomm and Vtol logs here: https://jenaero.sharepoint.com/:f:/s/FlightSafety/IgCxCPGFm13XRrMSGH5GnwXNAW6pgoFNwbURht7ruqUS6Ig?e=AfImg4
+
+### Scott Lovett, 2026-05-06
+
+XCOMM & VTOL zips added to attachments here to avoid using Sharepoint which is being slow
+
+### David Grosher, 2026-05-06
+
+Investigation Notes: It appears that the system simply lost power during launch transition. Both the VTOL and XCOMM stop at roughly the same time at altitude. I didn’t see any data in a quick look at the logs that indicate issues in the system prior to the event. 
+
+XCOMM 4.74, 2ae959d
+The incident appears to be in XC000101.T06 and paired with XCL00071.csv
+Event Log Stops at LCH_FLY_ASSIST at CpuTime 2155.530
+Data Log stops at CpuTime 2156.821
+There is no WDT dump to indicate that a reset occurred
+VTOL data log stopped at  VTOL CpuTime 1809.26 and UTC 175136.894
+VTOL event log stopped at VTOL CpuTime  1808.159
+ 
+@Scott Lovett @Jackson Riley Curvin @Drew Hildreth @Cameron Chapman
+
+### Zack Garcia, 2026-06-15
+
+intake complete, awaiting assessment of avionics box @Drew Hildreth
+
+### Drew Hildreth, 2026-06-16
+
+@Zack Garcia Did we conduct the FTP Procedure on this aircraft?
+
+If not, please do so, then I am okay with the avionics going to be evaluated.
+
 ### Alexander Alan Arnold, 2026-06-29
 
 @Lauren Velasquez @Cameron Chapman @Scott Whitney can we have someone looking at the logs or taking a look at the aircraft @Drew Hildreth customer is calling asking for status updates.
@@ -96,77 +152,6 @@ On 7/9
 I powered on the same avionics box on the 512 aircraft and could not log in to the XCOMM webpage.  I took 512 av box back to the iron bird and still could not establish communication using the same laptop/dongle as the day before either with the xcomm webpage or the launch wizard.  However, though we could not talk to the webpage, rotating the avionics box did cause the servos to action.
 
 After 20 minutes, Matt P was able to establish connection with his laptop.  I re-tried with my own laptop and was able to establish connection as well.  I still cannot, however, log in to the ‘log files’ webpage.  It’s unknown how mysterious behavior is correlated with root cause.
-
-### Cameron Chapman, 2026-07-08
-
-@Samuel Lopez thank you. please check the whole harness (MB to current sense board to black alden)
-
-### Samuel Lopez, 2026-07-15
-
-Summary of tests and results
-Tests
-·       Avionics box on the bench is on for 5 minutes with no issues.
-·       Complete fuselage – Motor Test (no blades) of 60fps for five minutes.  Power supply pulled 1.5A.  No failures.
-·       Complete Fuselage – Motor Test (with blades).  Battery pulled 52A for 40 seconds.  No failures.
-Irregularities
-·       Checksum of autopilot is different than when intake occurred.
-·       First and second day of testing avionics box on the iron bird went without incident.  On third day of testing, xcomm and vtol webpages could not be loaded.  After 20 minutes of attempting different setups, connection was mysteriously established.  When xcomm page loaded up, ‘log files’ page would not load.  After a reset, everything was back to normal.  This behavior has not re-occurred.
-
-### Samuel Lopez, 2026-07-16
-
-@Lauren Velasquez and @Zack Garcia 
-
-Can you put the order to open the avionics box be opened for inspection for this aircraft to inspect the xcomm and fwap?
-
-### Lauren Velasquez, 2026-07-16
-
-@Samuel Lopez I believe between the VXEP parameters you are able to open and inspect, But we are able to also do that. What is it that you are looking for? 
-“Putting in an order” would signify we already know the repair scope of work. 
-@Drew Hildreth Please let me know if you have any objections to us cracking this avionics open, given the failure and findings at this time.
-
-### Samuel Lopez, 2026-07-16
-
-@Lauren Velasquez 
-
-We are looking for burn damage in the av box due to a short.  This is likely not root cause, but our due diligence demands an inspection since we can’t find anything else.
-
-@Drew Hildreth 
-Any objections to opening the av box?
-
-### Drew Hildreth, 2026-07-17
-
-@Samuel Lopez I have no objections to this. It will change how we do SCO and Flight Test, but as long as we have good dispo we are good
-
-### Alexander Alan Arnold, 2026-08-10
-
-@Samuel Lopez were you able to find anything while inspecting?
-
-### Samuel Lopez, 2026-08-10
-
-@Alexander Alan Arnold 
-No.  It could either be
-- Microcontroller Failure
-- Bad Battery
-- Improper Mating
-
-
-and it’s probably not
-- Avionics Box Hardware
-- Harness
-
-The customer did not keep track of which battery they used.  They could, however, do a quick check of all their batteries to check for imbalanced cells.
-
-### Drew Hildreth, 2026-08-27
-
-@Lauren Velasquez can you please get a quote request in for this. Also confirm with Jermey that we can quote for an advnaced nav. Brooks emailed about it this morning.
-
-### Lauren Velasquez, 2026-08-27
-
-@Drew Hildreth Has warranty been determined?
-
-### Drew Hildreth, 2026-09-03
-
-@Lauren Velasquez Based on the report. This is Non-warranty.
 
 ### Cameron Chapman, 2026-07-08
 

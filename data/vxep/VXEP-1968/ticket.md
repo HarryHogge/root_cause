@@ -10,7 +10,6 @@
 - **Creator:** Stephan Johnson
 - **Labels:** Investigating, PMA263, RCCA, Weekly-incident-tracker
 - **Impact:** Significant / Large
-- **Issue color:** orange
 - **Asset type:** VXE 824
 - **Customer:** Air_PMO
 - **Vehicle Tail Number:** VXE 824

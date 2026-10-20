@@ -55,7 +55,7 @@ According to this AAR it looks like the vehicle transitioned correctly and the v
 
 
 
-[embedded image-20260924-213907.png]
+[embedded: image-20260924-213907.png]
 A straight in landing was setup and uploaded but then a left turn landing plan at 200ft was uploaded afterwards. I do see a discrepancy between vtol altitude setpoint and fixed wing altitude setpoint (200ft vs 300ft) during the transition however.
 
 ### Everett Werner, 2026-09-24
@@ -66,14 +66,14 @@ A straight in landing was setup and uploaded but then a left turn landing plan a
 
 @Everett Werner @Eric Brewer @David Grosher 
 Here is a recording of the flight replayed through OGCS at 10x speed.  Around 2:40 it looks like the vehicle is nudged aggressively.
-[embedded Screen Recording 2026-09-25 072348.mp4]
+[embedded: Screen Recording 2026-09-25 072348.mp4]
 Note: All the locations are scrambled in recordings so relative headings/bearings are incorrect.  This is corrected in a later version of OGCS.
 
 ### Eric Brewer, 2026-09-25
 
 @Ted Trowbridge thanks - this is super helpful to visualize. This matches what I saw in the autopilot logs.  The vehicle transitions to VTOL normally and tracks to the commanded location, what shows as ‘LZ’ on the screen recording.  During the descent, the operators take over in manual nudge and move the airplane toward “AP” on the map.  Is it possible there was a misunderstanding of the landing definition?@Everett Werner @Jackson Riley Curvin @David Grosher 
 
-[embedded image-20260925-143400.png]
+[embedded: image-20260925-143400.png]
 
 ### Alexander Alan Arnold, 2026-09-28
 

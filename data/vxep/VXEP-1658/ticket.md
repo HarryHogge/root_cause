@@ -11,9 +11,6 @@
 - **Assignee:** Drew Hildreth
 - **Creator:** Jacob Troyer
 - **Parent:** VXEP-1446 VXE-519 Power Fluctuations
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 - **Issue Status:** Initial form in review RMA Hand-OFF FORM Rev A Draft 20260106.docx
 
 ## Description

@@ -9,9 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Jacob Troyer
 - **Parent:** VXEP-1446 VXE-519 Power Fluctuations
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 
 ## Description
 

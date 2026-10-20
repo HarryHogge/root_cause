@@ -12,7 +12,6 @@
 - **Creator:** Michael Mohr
 - **Labels:** TIQUILA, Weekly-incident-tracker
 - **Links:** relates to VXEP-1479 (Loss of link RTB HIL SIM (VXE-765))
-- **Issue color:** purple
 - **Asset type:** SGCS-1
 - **Customer:** TIQUILA
 - **Impacted Disciplines:** Software

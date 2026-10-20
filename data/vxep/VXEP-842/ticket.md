@@ -62,7 +62,7 @@ Operator commanded pause after vehicle already touched down. Hard landing due to
 
 @Cameron Chapman @Hayden Jeanor 
 
-[embedded image-20241220-190003.png]
+[embedded: image-20241220-190003.png]
 
 ### Cody Smisek, 2024-12-20
 

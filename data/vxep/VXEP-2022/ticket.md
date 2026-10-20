@@ -30,7 +30,7 @@ After speaking with @Cody Smisek, it was discovered that some Ping200 units left
 
 ### Stephan Johnson, 2026-10-14
 
-[embedded file]
+[embedded: Ping200 User Manual.pdf]
 Here is the uAvionics user and installation manual
 
 ### Cody Smisek, 2026-10-14

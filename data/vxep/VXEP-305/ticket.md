@@ -167,7 +167,7 @@ FYI @Carl Graf @David Grosher @Sean Odell
 
 With the help of Emalee just found out that, the failed AS150 connector measuring high resistance most likely was never tested for resistance. (at least there is no record of it).
 Also, there is a significant discoloring and indication of heath on the HLB connector, I’m attaching for reference. The battery is located in the battery isolation cabinet.  
-[embedded file]
+[embedded: IMG_20240325_134217975_HDR.jpg]
 
 ### Everett Werner, 2024-03-27
 

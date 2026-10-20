@@ -29,6 +29,19 @@ We do have a fix for the issue but not sharing outside this circle since it requ
 
 ## Comments (22)
 
+### Alexander Alan Arnold, 2026-07-08
+
+Can we get the following questions answered soon please.
+- What is the VLAN tagging doing?
+- What is the difference between 6.5.1 and 6.6.1 that is causing the issue with the same VLAN tagging toggle being ON?
+- Is there a fix for this without going into XCOMM?
+
+@John Clark @Scott Whitney
+
+### Alexander Alan Arnold, 2026-07-08
+
+Linked suspect based on Eric B comment, unsure why work item isn't linking properly
+
 ### John Clark, 2026-07-09
 
 After speaking to @Eric Brewer some history:
@@ -112,14 +125,6 @@ This ticket is already assigned to @David Grosher, my superior. I will discuss t
 ### David Grosher, 2026-08-28
 
 @John Clark @Scott Whitney Do we have a status on this issue?
-
-### Zachary K Malik, 2026-10-13
-
-@John Clark @Scott Whitney Any progress on this so we can keep the ball moving forward?
-
-### Scott Whitney, 2026-10-16
-
-@Zachary K Malik we have identified the issue and will resolve this for Blk30 Std in the 6.8.1 software release, which is currently planned for early (jan/feb) 2027.
 
 ### Zachary K Malik, 2026-10-13
 

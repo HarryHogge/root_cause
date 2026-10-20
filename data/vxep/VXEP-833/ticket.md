@@ -11,9 +11,6 @@
 - **Assignee:** Ryan Babigian
 - **Creator:** Ryan Babigian
 - **Parent:** VXEP-777 TIQUILA Advanced Navigation Task Order - Data Deliverables
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 - **Plan:** See attached Environmental Test Plan
 
 ## Description

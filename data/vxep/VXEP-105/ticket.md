@@ -12,7 +12,7 @@
 ## Description
 
 In the notes section of Drawing 107-103472-01 Tailboom Repair Sleeve, for Note 3, add that both inner and outer surfaces need to be scored, not just the inside surface.
-[embedded file]
+[embedded: image-20230907-145221.png]
 
 ## Comments (0)
 

@@ -9,7 +9,6 @@
 - **Assignee:** Alexander Alan Arnold
 - **Creator:** Stephan Johnson
 - **Labels:** Crash, Hardware, Investigating, PMA263, RCCA, Weekly-incident-tracker
-- **Issue color:** yellow
 - **Asset type:** VXE30
 - **Customer:** Air_PMO
 - **Vehicle Tail Number:** VXE 889

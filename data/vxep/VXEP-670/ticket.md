@@ -12,11 +12,7 @@
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-337 Create, Test, and Release VXE30 Standard Config Wing Utility Drop
-- **Epic Name:** VXE30 Std Wing Utility Drop - Pre-Production - Supply Chain Actions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
 - **Start date:** 2024-09-01
-- **Issue color:** blue
 
 ## Comments (0)
 

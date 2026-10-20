@@ -51,7 +51,7 @@ Hey @Jackson Riley Curvin , do you have any photos of the damaged equipment? Hop
 ### Sean Wendling, 2025-09-05
 
 Quick review confirms the relationship between this issue and the HLB voltage dropout investigation. 
-[embedded image-20250905-124002.png]
+[embedded: image-20250905-124002.png]
 If it is obvious that the fuel Cell and Fuel Cell support kit items will need to be evaluated and repaired, feel free to return them to me as an RMA and I will get new materials out. FYI, our active address is no longer the 5500 S State St. Please send to the new one:
 5855 Interface Dr, Ann Arbor Mi, 48103
 CO Sean Wendling, 8103053244, swendling@edgeautonomy.io

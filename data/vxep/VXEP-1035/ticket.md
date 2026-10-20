@@ -40,17 +40,17 @@ As expected aircraft sustained damage during the crash
 
 ### Adrian Garcia, 2025-02-19
 
-[embedded image-20250219-185630.png]
-[embedded image-20250219-185642.png]
-[embedded image-20250219-185713.png]
+[embedded: image-20250219-185630.png]
+[embedded: image-20250219-185642.png]
+[embedded: image-20250219-185713.png]
 
 ### Adrian Garcia, 2025-02-21
 
 copy from main ticket: I inspected the Main Battery and did not observe any visible damage. I also tested the cell voltages on the harness connected to the cell taps, and the readings aligned with those from the charger. @Hayden Jeanor suggested that a minor short may have occurred after the crash, potentially causing a slow discharge over time, which could explain the current cell voltage levels. @Cody Smisek and @Hayden Jeanor suggested to measure the resistance from the black alden to the fuse power harness so that will be my next steps. However, as highlighted in the root cause section, I believe the root cause is due to bad mating on the main battery. This would explain the brown out at the higher altitude and the voltage drop seen in the logs.
-[embedded image-20250221-211831.png]
-[embedded image-20250221-211840.png]
-[embedded image-20250221-211846.png]
-[embedded image-20250221-211853.png]
+[embedded: image-20250221-211831.png]
+[embedded: image-20250221-211840.png]
+[embedded: image-20250221-211846.png]
+[embedded: image-20250221-211853.png]
 
 ## Attachments (7)
 

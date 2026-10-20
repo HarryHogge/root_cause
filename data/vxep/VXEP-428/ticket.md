@@ -11,9 +11,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-294 Integrate transponder as permanent or as a separate kit, field install removed
 - **Links:** relates to XKIT-2985 (Havoc Transponder, remote ID, IFF, Tracker Port Requirements)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 
 ## Description
 

@@ -8,7 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** Fernando Gomez Gonzalez
 - **Creator:** Cameron Chapman
-- **Issue color:** dark_green
 
 ## Description
 

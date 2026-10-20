@@ -14,7 +14,6 @@
 - **Parent:** VXEP-709 First Article Build - 2118737-01, VXE30 Std Config, Wing Utility Drop Kit
 - **Epic Link:** VXEP-709
 - **Start date:** 2024-12-25
-- **Issue color:** purple
 
 ## Comments (0)
 

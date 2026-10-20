@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1493 VXE-863 Flight anomalies
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 
 ## Description
 
@@ -18,7 +15,7 @@ Starting a thread for LRF issues parent ticket https://jenaero.atlassian.net/bro
 LRF in parent ticket had crazed lens.
 We had one that was bad when these same border patrol guy went through their initial training here in Huntsville. It looked shattered on that inside layer.
  
-[embedded image-20250909-164923.png]
+[embedded: image-20250909-164923.png]
 The distortion in the LRF has gone away. Aren't those supposed to be sealed?
  they are not sealed and i have brought this to Greg's attention a few weeks ago 
  And gone the next time they went to fly.

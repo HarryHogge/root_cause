@@ -69,7 +69,7 @@ See updated plan in this issue for containment and customer notification plan: [
 
 @David Grosher FYI
 I was asked the following last week
-[embedded image-20260515-031820.png]
+[embedded: image-20260515-031820.png]
 I attempted to gather additional information regarding why the question was being asked but was never updated regarding the context. 
 Seems we have the answer now.
 

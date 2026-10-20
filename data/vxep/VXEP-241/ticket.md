@@ -28,6 +28,22 @@ Details from Sam and Aidas. 12/1
 
 ## Comments (21)
 
+### Cameron Chapman, 2022-11-29
+
+Additional items to discuss in the meeting tomorrow. 
+- What documentation level and personnel are required to produce short term option?
+- Short and long term updates needed to operator documentation
+- What issues/difficulties exist in producing or using the current equipment?
+- See short term subtask items.
+- What are time limits, due dates, acceptable end users, etc. of short term and long term solutions?
+- How can we align priorities and schedules of VXE and E140 development between sites?
+- Do we want to stagger long term design improvements? Some are less scope and bigger gain than others. Start with creating subtasks to make decision, then another to do the work if decided.
+- Long term improvements.
+- Expand E140 voltage range (remove prototype regulator)
+- Move connectors to the side of the payload (enables smaller landing gear, better FOV, possible retract/extend).
+- VXE30 landing pad alternatives.
+- List others.
+
 ### Cameron Chapman, 2022-11-30
 
 Creating a subtask for E140MWIR design and integration. Hopefully much of it can be common with E140Z G2, if not, we should break it out as a separate project.
@@ -280,10 +296,6 @@ This ticket and it’s sub-tasks has just been overtaken by events. We are worki
 
 @Greg Fryer Team Latvia has questions about the GSC-03-84820-00 and M27500-26SC2T23 cables sent separately via chat 
 They also need 10x connectors shipped to their facility from the US in order to meet the timeline.
-
-### Greg Fryer, 2024-03-15
-
-Completed by the Riga team!
 
 ### Greg Fryer, 2024-03-15
 

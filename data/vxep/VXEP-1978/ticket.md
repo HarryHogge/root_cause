@@ -58,6 +58,73 @@ Software tasks on xcomm locked due to infinite block inside CycloneTCP.  Unclear
 
 ## Comments (31)
 
+### Alexander Alan Arnold, 2026-08-13
+
+@David Grosher ive added some gcs logs. not sure if they have anything of value, the aircraft should be shipping today
+
+### Mathew Papaleo, 2026-08-17
+
+@Alexander Alan Arnold ive added aar and maint log, and screenshot of basic silvus page. let me know if there is anything else youd like to see
+
+### Drew Hildreth, 2026-08-17
+
+@David Grosher Mat was able to pull some data from 863
+
+### David Grosher, 2026-08-17
+
+@Drew Hildreth The board was not swapped during the RMA as requested. 
+
+XComm startup 2026/08/17 20:00:50.602
+version: 4.74
+git commit hash: 2ae959d
+build: 2025/12/11 16:55:53
+code checksum: DD2DCD89
+cyclone version: 2.0.2
+Vehicle name: Stalker B30
+Vehicle Class: VXE  95
+XC SN: 5-6227
+
+SCO in May 2025
+[19:31:55.844] XComm startup 2025/05/13 19:31:55.844
+[19:31:55.844] version: 4.71
+[19:31:55.844] git commit hash: b0aebe6
+[19:31:55.844] build: 2025/03/03 09:44:32
+[19:31:55.844] code checksum: 5D1AAF76
+[19:31:55.844] cyclone version: 2.0.2
+[19:31:55.844] Vehicle name: VXE30
+[19:31:55.844] Vehicle Class: VXE  95
+[19:31:55.844] Tail number: 863
+[19:31:55.844] XC SN: 5-6227
+
+### Drew Hildreth, 2026-08-17
+
+@David Grosher Thanks
+@Lauren Velasquez Per our discussion, we have to verify that everything is captured. Assumptions are not good enough. This is why we have to use the Material Dispo Form and our Quote Requests are reviewed prior to going to Q&P.
+
+### David Grosher, 2026-08-17
+
+@Drew Hildreth @Lauren Velasquez Also, I couldn’t find any SCO data following the RMA. I’m a bit concerned that it was shipped without proper testing, regardless of the fact that the requested work was not performed.
+
+### Mathew Papaleo, 2026-08-18
+
+@David Grosher there is a vxe30 pre-delivery sco form  dated from january 2026. ill attach it fya @Lauren Velasquez
+
+### David Grosher, 2026-08-18
+
+@Drew Hildreth Can we also pull all of the SD card data as well?
+
+### David Grosher, 2026-08-18
+
+@Eric Brewer In the last AAR there is data from the day of the incident. It seems that the XCOMM event log simply stops while it is flying,  I don’t see any indication of anything happeneing. Can you look into the data to see if you find anything?
+
+### Drew Hildreth, 2026-08-18
+
+@Mathew Papaleo can you work on getting the data from the SD Card? I know the aircraft is in rough shape. If Scott W is in the office today he may be able to assist if we just have to pull SD Cards.
+
+### Mathew Papaleo, 2026-08-18
+
+@Drew Hildreth @Scott Whitney after talking to scott, ive identified the files requested, threw them in a zip folder, and added to attachments on this Jira page.
+
 ### Drew Hildreth, 2026-08-18
 
 @David Grosher Mat was able to pull the SD Card Files.
@@ -97,9 +164,9 @@ The data seems to indicate fixed-wing became unresponsive and likely cut all the
 ### John Clark, 2026-08-21
 
 @Eric Brewer There are a total of seven frames recorded in the fdrrecov provided once the Uplink is lost.
-[embedded image-20260821-151952.png]
+[embedded: image-20260821-151952.png]
 I note some losses in those frames: VertSpd, RCUpdate, PwrInt. After those frames the log ends. PwrInt is an integral term for Power PID. RCUpdate are Remote Cmds (Tagged Pkts). That would be consistant with the Link Loss. VertSpeed is logged ultimately from UpdateVertSpeed in the outer loop. Controlled here:
-[embedded image-20260821-153541.png]
+[embedded: image-20260821-153541.png]
 I did not see a full Debug Log. I cant be certain the FW-AP did not watchdog.
 *One final comment the actual computation of the Uplink State is complex. I did fully decode it.
 
@@ -129,64 +196,9 @@ Seems to indicate FWAP is communicating with xcomm.
 Avionics enclosure shows signs of significant impact. Any hardware defects discovered internally should take into consideration high velocity impact with terrain. 
 @Eric Brewer FYI
 
-[embedded image-20260827-180659.png]
-[embedded image-20260827-180715.png]
-[embedded image-20260827-180727.png]
-
-### Eric Brewer, 2026-08-28
-
-@Cody Smisek @David Grosher @Scott Whitney @John Clark @Scott Hunter @Alexander Alan Arnold I linked an investigation ppt above with the findings so far.  With some help from John and Scott we were able to identify that few software tasks were blocked due to an infinite wait time and the innards of our communication software being locked up.  We don’t know yet if this was more likely to happen with 863’s hardware or if it was just unlucky. We can run the additional testing recommended above and see what we find.  Will also continue analysis and testing to see how we can recover from such a situation in the future.
-
-### Cody Smisek, 2026-08-31
-
-@Eric Brewer can you update the link as it links to the old server and I cannot find the folder in incident reports folder.
-
-### Eric Brewer, 2026-09-04
-
-@Alexander Alan Arnold @David Grosher @Cody Smisek @Scott Whitney quick update on this.  We have been leaving the 863 avionics powered on during this entire week.  We have not observed the same stuck semaphore issue, though we did see an unrelated WDT reset on the xcomm processor. We will continue testing to see if the issue surfaces, but at this point it’s looking like just a really infrequent corner case of the software that can cause this vs. something inherently wrong with 863’s hardware.
-
-### Cody Smisek, 2026-09-08
-
-system was left running over the long weekend. uptime for both webpages shows 123hrs. already previously reported difficulty pulling larger files from the avionics. xcomm event log is now 30mb, file downloading stops during all attempts. unless further direction / instruction on how to pull these larger logs is provided, I’ve discontinued the testing and returned equipment to their respective cases.
-
-### Lauren Velasquez, 2026-09-08
-
-@Drew Hildreth  Let me know how you would like RMA to proceed @Zack Garcia  @Alexander Alan Arnold  FYA
-
-### Drew Hildreth, 2026-09-10
-
-@Lauren Velasquez Hold on any movement with Quotes and such. Most important is to identify Root Cause and have CAs in place. Then we get the report compelted and sent to the customer.
-
-@Alexander Alan Arnold were we able to get anywhere Cody’s inquiry above in regards to the large files?
-
-### Zachary Mann, 2026-10-05
-
-Team is currently working on the software and should be completed on 6.8.1.
-
-### David Grosher, 2026-08-27
-
-@Cody Smisek This is in an active investigation that will likely require some testing of the hardware.
-
-### Eric Brewer, 2026-08-27
-
-@Cody Smisek @David Grosher @Scott Whitney @John Clark @Alexander Alan Arnold sorry Cody the issue status isn’t up to date with what we’re currently investigating, but what we saw is that xcomm appeared to lose communication with a few other subsytems including FWAP.  As a troubleshooting step it’d be good to see if the hardware is currently functioning and communicating with xcomm<->fwap or if that is broken.  IF it’s still broken that points to a hardware failure, if it’s working fine now it would be unclear if we had a software failure in flight or some sort of intermittent hardware issue.
-
-Working on some more investigation today and will update status and next steps above based upon what I find.
-
-### Cody Smisek, 2026-08-27
-
-@Eric Brewer I will take a look at the aircraft and see if it’s in a state to be powered on and check xcomm-fwap
-
-### Cody Smisek, 2026-08-27
-
-Fuselage Avionics was powered via power supply and breakout harness. No other aircraft components connected. FWAP sensors populate and respond to avionics movement. FWAP versions populate on xcomm throughput. 
-Seems to indicate FWAP is communicating with xcomm. 
-Avionics enclosure shows signs of significant impact. Any hardware defects discovered internally should take into consideration high velocity impact with terrain. 
-@Eric Brewer FYI
-
-[embedded image-20260827-180659.png]
-[embedded image-20260827-180715.png]
-[embedded image-20260827-180727.png]
+[embedded: image-20260827-180659.png]
+[embedded: image-20260827-180715.png]
+[embedded: image-20260827-180727.png]
 
 ### Eric Brewer, 2026-08-28
 

@@ -51,12 +51,12 @@ This center wing has been sitting in engineering area untouched for a few months
 
 2x WD 08:26 & 08:33
 
-[embedded image-20241223-200740.png]
+[embedded: image-20241223-200740.png]
 
 ### Cody Smisek, 2024-12-23
 
 lrfFusion is offset
-[embedded newplot (38)-20241223-201709.png]
+[embedded: newplot (38)-20241223-201709.png]
 
 ### David Grosher, 2024-12-23
 

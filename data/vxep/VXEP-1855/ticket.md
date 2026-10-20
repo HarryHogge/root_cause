@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-183 Establish aircraft grounding, bonding, shielding, etc. status and roadmap.
 - **Links:** relates to VXEP-1672 (Status and POC of Colbourne Projects )
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 
 ## Plan
 

@@ -11,7 +11,6 @@
 - **Assignee:** Jackson Riley Curvin
 - **Creator:** Anthony Hansen
 - **Links:** relates to FS2-2616 (Climb abort FC fault but AC did not abort take off); relates to RMA-883 (VXE-674 RMA 260127-2)
-- **Issue color:** purple
 - **Vehicle Tail Number:** 674
 - **Severity:** 1 - Flight Critical
 - **Impacted Core Subsystems:** Aircraft, Payloads
@@ -50,6 +49,18 @@ Several issues within this incident
 
 ## Comments (23)
 
+### Anthony Hansen, 2026-01-08
+
+@Jackson Riley Curvin
+
+### Cody Smisek, 2026-01-08
+
+@Anthony Hansen mentioned here is that the fuel cell was running. How did you perform power cycles after the lost connection? Any check to see if you could reach xcomm, vtol, ipcomm, silvus web pages?
+
+### Anthony Hansen, 2026-01-08
+
+@Cody Smisek We unplugged the main power connection to the HLB to attempt to power cycle the plane. The fuel cell remained running (as well as the fuel cell and nose can fan) since the propane line was still connected. Confirmed we can access the XCOMM page and saw information updating. I did not try any other pages. I will get back to you on the status of the other pages
+
 ### Cody Smisek, 2026-01-08
 
 @Anthony Hansen @Sean Wendling Can you confirm that this is or isn’t an acceptable practice?
@@ -70,15 +81,15 @@ As likely a separate issue, over the course of the flight (just over an hour), t
 - took 674 AV box and installed on Iron Bird still did not work
 - installed Iron Bird AV box in 674 fuselage it worked
 - opened XCOMM throughput on 674 av box, SN populated but no build info. can bus traffic is zero because I did not have center wing connected.
-[embedded Image (20).jpg]
+[embedded: Image (20).jpg]
 - installed 674 AV box back into its fuselage, and fully assembled the Aircraft, when power was applied the servos jumped to home then immediately lost power and would not respond when rolling the aircraft left or right.
 - Went to the Hardware page in the XCOMM and checked the servo power and they were off, so I clicked Override on and turned them on, and the servos responded when I rolled the aircraft left and right. I then turned Override off, and the servo power turned off.
-[embedded Image (21).jpg]
+[embedded: Image (21).jpg]
 - I also replaced the SD card and reformatted it, cycled power with the same results.
 - I checked the smart Battery Status as well as Remote Air Data pages as well see pictures below.
-[embedded Image (23).jpg]
+[embedded: Image (23).jpg]
 
-[embedded Image (24).jpg]
+[embedded: Image (24).jpg]
 
 ### Cody Smisek, 2026-01-08
 
@@ -134,24 +145,6 @@ logs from the SD card removed would be useful. Do not connect SD to another AP, 
 ### Lauren Velasquez, 2026-02-04
 
 @Samuel Lopez  This Avionics and Mag mount antenna (96x-3-14-1019) are in the RMA area
-
-### Ronnie Baker, 2026-02-17
-
-@Samuel Lopez Let me know when you are available to pick this up.
-
-### Samuel Lopez, 2026-04-06
-
-First Observations
-- The XCOMM webpage loads just fine.
-- However, the instrument panel does not display the voltages and other measurements.
-- Opening the XCOMM log file, it’s the fixed wing autopilot that’s not displaying appropriate measurements  as shown below.
-- Servos do not react to movement in the av box.
-- Highly suspect fixed wing autopilot of failure
-- Next step is to open AV box and inspect fixed wing ap.  If nothing can be found wrong, replace Fixed Wing AP.
-
-### Stephan Johnson, 2026-10-07
-
-FWAP replaced
 
 ### Ronnie Baker, 2026-02-17
 

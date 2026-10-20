@@ -11,9 +11,6 @@
 - **Assignee:** Jacob Troyer
 - **Creator:** Jacob Troyer
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-5
-- **Issue color:** dark_teal
 
 ## Description
 

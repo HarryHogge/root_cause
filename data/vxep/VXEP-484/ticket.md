@@ -62,7 +62,7 @@ Investigation Plan:
 ### Ryan Ferguson, 2023-04-03
 
 I have brought all 13 of the failed autopilots I could find in Electronics to @Connor Peebles.  Attached is a spreadsheet of all SN’s left in Electronics so we can track what information exists.  I also wrote up NCR-844 to track the failures there. 
-[embedded file]
+[embedded: GreenAP Root Cause SNs.xlsx]
 
 ### Greg Fryer, 2023-04-04
 

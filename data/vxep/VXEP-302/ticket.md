@@ -19,7 +19,7 @@ GCS Traveler & Procedure call for functional checkout / continuity check that El
 
 ### Catherine Wagner, 2024-03-21
 
-[embedded file]
+[embedded: BA-5590 Pinout.jpg]
 Photo from @Carson Buckley
 
 ### Catherine Wagner, 2024-03-21

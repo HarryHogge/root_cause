@@ -10,7 +10,6 @@
 - **Reporter:** Trevor Gronner
 - **Creator:** Trevor Gronner
 - **Change risk:** Low
-- **Issue color:** purple
 - **Part Number(s):** 100-111056
 - **Production Stakeholder:** Nina Menon
 

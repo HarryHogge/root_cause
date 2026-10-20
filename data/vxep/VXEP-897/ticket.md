@@ -51,11 +51,11 @@ Fixed wing magnetometer interference due to E140ZG2 payload caused disagreement 
 
 ### Cody Smisek, 2025-01-13
 
-[embedded image-20250113-224427.png]
+[embedded: image-20250113-224427.png]
 
 ### Cody Smisek, 2025-01-13
 
-[embedded image-20250113-230009.png]
+[embedded: image-20250113-230009.png]
 
 ## Attachments (3)
 

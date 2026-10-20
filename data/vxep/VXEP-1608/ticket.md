@@ -53,6 +53,22 @@ Introduction of LEMB induced electrical stress to the vehicle’s CAN bus which 
 
 ## Comments (24)
 
+### Cody Smisek, 2025-11-18
+
+That looks like a CAN issue not an SD card issue. Unless SD card issues look like CAN issues.
+
+### Alexander Alan Arnold, 2025-11-20
+
+Aircraft just arrived in HSV. We assembled it and got the same behavior, I was saying that at first, we thought it was CW SD Card issue due to the errors message, this is the first CW I have encountered where the SD card was fine but the aircraft did not recognize the CW as being connected, we will attach another CW to see if it's a possible fuselage cable issue. @Cody Smisek
+
+### Ruysser Gabler, 2025-11-20
+
+@David Grosher this seems like the same issue that we are having on 757 right now
+
+### Alexander Alan Arnold, 2025-11-20
+
+We tried another CW on the fuselage and got the same result. @David Grosher
+
 ### Lauren Velasquez, 2025-11-24
 
 @Alexander Alan Arnold @David Grosher This Fuselage has arrived in SLO
@@ -129,23 +145,7 @@ Steps so far:
 
 ### Brandon Slater, 2026-02-13
 
-attached logs from v881 [embedded file]
-
-### Cameron Chapman, 2026-02-17
-
-We do not seem to have a cable made to do this troubleshooting. Desiray Johnston I discussed with Connor. It seems like damage is likely on the GNSS interface board, and it is most efficient to pull the box, swap the board, and test if working again. Is your team able to support that? I can update JIRA with that dispo
-
-### Connor Peebles, 2026-02-27
-
-Replacing GNSS Interface V3 inside avionics box resolved issue. Will acquire the removed part for further inspection.
-
-### Connor Peebles, 2026-08-05
-
-Vehicle was repaired after replacing all boards on the CAN bus network. All CAN chips were damaged from LEMB stress to the CAN bus network. Further LEMB investigation taking place on linked tasks.
-
-### Brandon Slater, 2026-02-13
-
-attached logs from v881 [embedded file]
+attached logs from v881 [embedded: v881_investigation.zip]
 
 ### Cameron Chapman, 2026-02-17
 

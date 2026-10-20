@@ -13,12 +13,10 @@
 - **Labels:** LRR-March
 - **Parent:** XKIT-4172 Link to VXE30 Advanced Navigation (MAGNSS)
 - **Links:** clones VXEP-1083 (Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator")
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Greg Fryer
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Preliminary Design Review (PDR), Detailed Design/Critical Design Review (CDR), Production Readiness Review (PRR)
 - **Project Deliverables:** QTY: 1 HIL Stalker Block 35X Advanced Navigation Simulator
-- **Current Sprint Priority:** 18.0
 - **Program (Marquee):** VXE30 Advanced Navigation
 - **Job Number:** J100132 - VXE Advanced GPS Follow On
 
@@ -28,7 +26,7 @@ This project focuses on the design, integration, and delivery of a single HIL sy
 The final package will include hardware and software, ensuring the system is user-friendly, professional in appearance, functionally accessible, and QA-ready.
 
 Link to Advance BOM: 500-2121526-01 - LRR Simulator, HIL Pre-Production BOM and Advance Procurement Worksheet.xlsx
-### Deliverables:
+**Deliverables:**
 
 
 1x HIL Unit – Stalker Block 35X Advanced Navigation Simulator (LM)Finalized BOMs (Catalog & Edge Part Numbers) for LM configurationHIL Enclosure Design finalized and documentedIntegrated Software Setup (including Joyride, XPlane, MCM firmware)Packaging solution approved and validated for LM deliveryTraining Manual (PDF) as Appendix in the OPS ManualQA Acceptance Plan – Aligned with LM expectationsMCM Checkout Procedure – Confirmed and documented

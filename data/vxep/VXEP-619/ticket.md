@@ -54,87 +54,99 @@ Create powerpoint here with a few plots.
 
 ## Comments (56)
 
-### Cameron Chapman, 2025-01-17
+### Sean Odell, 2024-09-10
 
-Responded on teams. Hi Pat Wells and Doug Baker. Responding to this comment. How urgent is this request? Worth working the holiday weekend troubleshooting? There is a very good chance we won't be able to replicate the issue with the small amount of evidence available.
+@David Grosher LM has hand delivered the avionics box and the reg AP from the centerwing to my desk. Who would you like me to deliver this too?
+@Pat Wells FYSA
 
-### Pat Wells, 2025-01-21
+### David Grosher, 2024-09-10
 
-@Cameron Chapman checking in for updates.  It looks like their is a bit of updated documentation since last Friday. Are we at a stopping point now or is the team still working on this?
+@Cameron Chapman Can you check out the FW AP board? Specifically the MPU9250.  It looks like one of the gyros may have failed.
 
-### Cameron Chapman, 2025-01-21
+### Cameron Chapman, 2024-09-10
 
-@Pat Wells we are ready to work this again as soon as we can sort out this priority vs LRR projects. See plan field above for next steps.
+@Adrian Garcia @Sean Odell dropped off this equipment on your desk. Please inspect FWAP board and the rest of the avionics box, then if no anomalies carefully power up and test the MPU9250
 
-### Steve Gonzales, 2025-01-21
+### Adrian Garcia, 2024-09-10
 
-General update, we have gathered a list of potential root causes and will be working on specific hardware tests.
+@Cameron Chapman Avionics box passed functional testing. I put the AV on the Iron bird and displayed the accelerometer, magnetometer, and gyroscope to test the MPU9250. All properties were getting updated with values and servos were responding. I am not too sure what the expected values should be but the system was responsive. 
+FWAP board has connectors ripped off, specifically J31(ethernet) and J2(current sense) 
+Note: these two items are government properties
 
-### Pat Wells, 2025-01-23
+### David Grosher, 2024-09-11
 
-Thanks @Steve Gonzales any updates or new info?
+@Adrian Garcia Can you provide an AAR from your test on the bench?
 
-### Steve Gonzales, 2025-01-23
+### David Grosher, 2024-09-11
 
-So far it looks like the capacitive pickoff within the MEMS itself.  An external resonance mode may have attributed to the failure but is still unknown and in process of further study.  Estimating less than 5 days for report out.
+@Adrian Garcia Can you also pull the VTOL logs off of the VTOL SD card. Thanks.
 
-### Pat Wells, 2025-01-24
+### Adrian Garcia, 2024-09-11
 
-Just tagging in a reminder here based on teams chat with @David Grosher 
+[embedded: 644 logs.zip]
+@David Grosher . I included 2 XCOMM logs there were from the test bench and I was able to power on the AP board by using a different ethernet port and included the last few logs (not all of them)
 
-@Steve Gonzales FYSA
+### David Grosher, 2024-09-11
 
-### Liam Limon, 2025-01-27
+@Eric Brewer Can you look at this? We appear to get some saturated gyro values in flight leading to the divergence, but the gyro checked out in testing when it was shipped back to the office.  So I think we need to check that the gyro values actually went bad before we hit the ground and then we need to check as see if we weren’t handling an error condition correctly.
 
-@Steve Gonzales Just a quick update on this AP. I ran it through programming this morning and it’s currently in Burn-in. Tomorrow we should be able to go through Calibration with it and see if anything stands out. My one finding from this morning is that the AP is constantly outputting “short stat msg: 0031 short stat parm1: 0000 short stat parm2: 00000000”. I’ve only seen this on one other autopilot in the past. The reference NCR is in the NCR Archives NCR-230828 - 1430. That AP had passed all of it’s checkouts and then failed the final servo test in electronics. It was pulled from the box and found to be giving the short stat parm message. I don’t believe any further investigation was done to determine what that message means and what causes it, but ultimately that AP was scraped. Perhaps software can provide more insight on what that is and what causes it?
+### Eric Brewer, 2024-09-12
 
-### Pat Wells, 2025-01-27
+@David Grosher I linked a powerpoint above.  It looks like the pitch rate gyro read -1000deg/s for some reason.  The limits in the software on gyro readings appear to be disabled, but even in place I don’t think would have saved the bird (the limits just adjust how we integrate the gyro).
+It seems like if it were an issue with SPI it would have showed up on all 3 gyro readings but initially it only appears that pitch was incorrect and it stays incorrect for the remainder of the flight.  It is possible that the FIR filter would hold onto the high value for a few cycles if we got just one bad reading for the gyro.  I’m not positive on this just with code inspection but we could test it in Speedgoat if desired.
+It’s also possible that axis just went bad at a given temperature or something and it’s now OK back in the lab.
 
-@Liam Limon @Steve Gonzales I had a Teams chat with Dave G last Friday about producing a properly formatted customer report for this.  The request was to have a completed document by close of business today (27Jan)
+### David Grosher, 2024-09-18
 
-### Liam Limon, 2025-01-27
+@Eric Brewer is this an error state of the IMU to report a value that is at it’s max range? Was it even at the max range, the value was changing but basically at the limit of the IMU. Perhaps it was filtered then logged? If it was an error state then perhaps we could catch it and issue a land immediately to try and recover the AV.
 
-@Pat Wells The burn in takes a little over 5 hours, I may be able to get to it this evening. @David Grosher I would like to know more about the short stat parm error though. It’s not a common error and as I said below, the other AP that I’ve seen that error on had a failed servo output and was scraped. It would be good to know what drives that message and if it relates at all to the locked up sensor values in this AP and the servo output failure on the other one. Speculating on Gordon’s naming conventions, that could be calling some kind of statistic parameter that isn’t outputting correctly.
+### Eric Brewer, 2024-09-19
 
-### Steve Gonzales, 2025-01-27
+@David Grosher , I did a little more digging and added a couple more slides to the presentation. It looks like the entire IMU output was frozen at the end of the log, likely indicating a complete failure of the IMU.  I’m not sure I completely understand why the values are frozen where they are.  In any case, I do think that we could put some min/max limit detection and/or jump detection in there.  That would have caught this error and could have thrown on the VTOL system and potentially saved the airplane.
+It’s worth noting that there is an IMU status variable that’s not logged (MagNavStatus), that would be helpful for debugging (and possibly already would have flagged the issue).
 
-@Eric Brewer FYI on below comments from Liam regarding the FWAP pcb I had run through electronics cal and burn in.
+### David Grosher, 2024-09-24
 
-### Liam Limon, 2025-01-27
+@Eric Brewer Is this an error condition for the sensor and can we better handle the bad data so that it is rejected from the INS and reported to the operator.
 
-@Steve Gonzales I talked through what was going on with Eric and we were able to determine that the ‘short stat msg’ and ‘short stat parm' messages in the debug log are a symptom of using an autopilot that is on the newer 6.05 firmware with our old GCS that is on GCS version 2.3. The handling of those messages is different on the old GCS and that’s why it continually displays them every 10 seconds. It seems like this is expected behavior and we can discard it as being a problem for this investigation. I’ll give you an update once the burn-in is complete and I do calibration.
+### Eric Brewer, 2024-09-24
 
-### Steve Gonzales, 2025-01-27
+@David Grosher good idea.  I created and linked a backlog item above.  Let me know if further action is required.
 
-@Eric Brewer FYI, per Brandon the SD on the Xcomm failed upon startup on 1/24. Here are the logs pulled off that card by Jason.  [embedded file]
+### Pat Wells, 2024-09-30
 
-### Cameron Chapman, 2025-01-28
+@David Grosher @Eric Brewer See question below from customer:
 
-@Steve Gonzales per 1/28 meeting. Ok to hold on this investigation.
+”If you have the VTOL AP data, we could take a stab at studying it with you.  The reason for studying the VTOL AP is to determine if it agrees or disagrees with the Fixed Wing.  Things we’d look at are vibration, voltages, rates, accel, and so on.
+The customer is very interested in figuring this out, or putting a timeline on looking into it.”
 
-### David Grosher, 2025-01-28
+### Eric Brewer, 2024-09-30
 
-@Pat Wells I cleaned up the report.
+@Pat Wells as noted above, the fixed-wing autopilot IMU values appear to have frozen, indicating a failure of the fixed-wing IMU.  I have not seen VTOL data from this flight, but the VTOL attitude estimate recorded on the xcomm processor indicates that the VTOL attitude continued to update during the event.
 
-### Steve Gonzales, 2025-01-29
+### Pat Wells, 2024-09-30
 
-Added calibration file from burn in testing.  Abnormality in that it has stored FDR data after cal without header files.
+@Eric Brewer would it be possible to pull the VTOL data from the SD Card? If it is I will provide it to LM so that they can study it as they requested. 
 
-### Steve Gonzales, 2025-01-29
+Understand that we’ve determined root cause and do not have the resources to pursue their additional requests.
 
-Adding soft version of previously performed on paper fishbone.
+### Eric Brewer, 2024-09-30
 
-### Steve Gonzales, 2025-01-29
+@Pat Wells yea we can have someone see if we can get the log files off.  @Cameron Chapman or @Brandon Slater would you be able to help or recommend someone else who can? @David Grosher FYI.
 
-About 10 out of spec workmanship issues found after removing the can on the FWAP daughter card 1710p01a.  No shorts detected with DMM.  Passing calibration confirms no opens, respectively.
+### Cameron Chapman, 2024-09-30
 
-### David Grosher, 2025-02-18
+@Adrian Garcia can you please pull the VTOL files off the VTOL SD card and post them here. Please check with Connor or others if you are unsure how to do this and to make sure plugging into another VTOL AP will not wipe anything. FYI @Eric Brewer
 
-@Pat Wells It is unclear to me what the next required step is here. If the customer is satisfied then it may make sense to close this to the Bermuda triangle as there are still a few open “whys?” that weren’t answered.
+### David Grosher, 2024-09-30
 
-### Pat Wells, 2025-02-19
+@Pat Wells I don’t think we should be providing data to LMCO on this issue. I also don’t think we should be providing a timeline. We are working it and will provide a report.
 
-@David Grosher I concur.  Customer was provided the report summary almost a month ago and didn’t provide any additional feedback.
+### Pat Wells, 2024-09-30
+
+@David Grosher I wasn’t sure if your team was going to even entertain this that’s why I made the suggestion.  It’s Matt Curran asking.
+
+I’ll standby for your group to finish up.
 
 ### Adrian Garcia, 2024-09-30
 
@@ -146,7 +158,7 @@ About 10 out of spec workmanship issues found after removing the can on the FWAP
 
 ### Adrian Garcia, 2024-09-30
 
-@David Grosher @Eric Brewer @Cameron Chapman here is the VTOL logs [embedded file]
+@David Grosher @Eric Brewer @Cameron Chapman here is the VTOL logs [embedded: DATALOG (1).zip]
 
 ### Eric Brewer, 2024-10-01
 
@@ -255,7 +267,7 @@ Just tagging in a reminder here based on teams chat with @David Grosher
 
 ### Steve Gonzales, 2025-01-27
 
-@Eric Brewer FYI, per Brandon the SD on the Xcomm failed upon startup on 1/24. Here are the logs pulled off that card by Jason.  [embedded file]
+@Eric Brewer FYI, per Brandon the SD on the Xcomm failed upon startup on 1/24. Here are the logs pulled off that card by Jason.  [embedded: VXE-644-SDCard-Data.zip]
 
 ### Cameron Chapman, 2025-01-28
 

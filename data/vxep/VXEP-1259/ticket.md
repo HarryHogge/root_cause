@@ -32,7 +32,7 @@ Clone the 500-2121526-01 LRR BOM contentAssign new catalog PN: 500-2120886-01Upd
 ### Tobi Ogunro, 2025-05-14
 
 @Matt Weber In the Prod. Orders List LM HIL is under a different catalog number, 500-2120886-01. This is similar to how we handle the Gimbal setup, one specific for LRR and another for non LRR. 
-[embedded image-20250514-180938.png]
+[embedded: image-20250514-180938.png]
 FYSA @Brendan Palmer @Jo Brown
 
 ## Attachments (1)

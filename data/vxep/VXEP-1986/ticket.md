@@ -11,7 +11,6 @@
 - **Assignee:** Matthew Aguirre
 - **Creator:** Jeremy Kostel
 - **Links:** relates to FS2-4192 (12v Current Sense Scaling Showing Current Overload (2025 ADP Major Contributor) ); relates to VA-2936 (B30 Advanced nav ICD has incorrect information about the APNT port 12V capacity)
-- **Issue color:** dark_purple
 
 ## Description
 
@@ -91,9 +90,9 @@ As a separate note for the GNSS connectivity issues. Since this was a bit more t
 
 ### Jacob Troyer, 2026-08-27
 
-Adding comment about 12V bus power with added equipment beyond CRPAs for future reference. Summary below, excel attached if someone wants to modify: [embedded file] 
+Adding comment about 12V bus power with added equipment beyond CRPAs for future reference. Summary below, excel attached if someone wants to modify: [embedded: U5 12V w CRPA Power Numbers.xlsx] 
 
-[embedded image-20260827-191431.png]
+[embedded: image-20260827-191431.png]
 
 ## Attachments (7)
 

@@ -7,7 +7,6 @@
 - **Updated:** 2025-05-05
 - **Reporter:** Brad Crampton
 - **Creator:** Brad Crampton
-- **Issue color:** purple
 
 ## Description
 

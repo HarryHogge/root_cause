@@ -80,7 +80,7 @@ B30 VTOL ESCs have had multiple failures. Tracking here https://jenaero.atlassia
 
 @Drew Hildreth @David Grosher logs and video show that RR motor never started up after transition.  It is not spinning in the video and the commands for the RR are maxed out.  The autopilot tries to maintain attitude the best it can in these cases - one vtol motor failed is not recoverable unfortunately.
 
-[embedded image-20260331-191058.png]
+[embedded: image-20260331-191058.png]
 
 ### Lawrence Nichols, 2026-04-14
 
@@ -125,7 +125,7 @@ Attached are identical output produced by the configuration file (avrdude.conf) 
 Lastly the two intelhex record files are also attached, also identical
 As a final step I converted one of the two extracted .hex files to the 16byte format used to program the motors in production using the below command/utility. It also compared identically.
 srec_cat input_file.hex -Intel -o output_file.hex -Intel -Output_Block_Size=16
-Please feel free to reach out with any further questions or tests. --jc[embedded file] [embedded file] [embedded file] [embedded file] [embedded file] @Eric Brewer @David Grosher
+Please feel free to reach out with any further questions or tests. --jc[embedded: C-S102221 CCW flash.hex] [embedded: avrdude.conf] [embedded: C-102197 CW flash.hex] [embedded: C-S102197 CW motor ESC flash hex 1.txt] [embedded: C-S102221 CCW motor ESC flash hex 1.txt] @Eric Brewer @David Grosher
 
 ### Drew Hildreth, 2026-06-02
 

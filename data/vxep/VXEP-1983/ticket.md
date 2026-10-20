@@ -34,7 +34,7 @@ Hi @Zachary Mann I am the Engineer assigned to this Ticket. In this case, I am c
 ### John Clark, 2026-08-26
 
 @Alexander Alan Arnold you need a procedure, sir. Do you have documentation? In https://jenaero.atlassian.net/browse/VXEP-1984 @Cody Smisek responds to similar issues.
-[embedded image-20260826-185929.png]
+[embedded: image-20260826-185929.png]
 The WUPs need to be physically configured onto the appropriate Aircraft Type (There are two kinds - Ethernet or Serial) and the OGCS used with the WUP after being powered if they are Ethernet and you have an SSR board. The OGCS may then be used to configure and test the individual droppers.
 There is also the issue of the CWDB (Center-wing Distribution Board) which we should also take some stock of in your particular configuration.
 What I observed in https://jenaero.atlassian.net/browse/VXEP-1984 above appears to be the Pylon never being recognized in any testing.
@@ -43,7 +43,7 @@ In the above test for this Ticket I do not see any detection of WUPs
 ### Jackson Riley Curvin, 2026-08-26
 
 @John Clark In the vsm-event.08.19.2026 line 195 and 206 are these arm commands?
-[embedded image-20260826-222640.png]
+[embedded: image-20260826-222640.png]
 
 ### John Clark, 2026-08-26
 

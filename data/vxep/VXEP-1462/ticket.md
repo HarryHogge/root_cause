@@ -50,7 +50,7 @@ This appears to be the same Novatel reset issue. Hot fox for that issue is being
 
 ### Alexander Alan Arnold, 2025-08-06
 
-[embedded image-20250806-160037.png]
+[embedded: image-20250806-160037.png]
 This is from one of the AARs, it seems like potetinially the NOVATEL is not pushing data to the GCS. I did some digging in the NCR list and 897 presented a similar issue discovered in SCO. NCR List - AdvNav GPS not responding to FW AP query
 After a power cycle the GPS momentarily comes back and is then lost. 
 

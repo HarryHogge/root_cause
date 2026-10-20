@@ -11,10 +11,6 @@
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-337 Create, Test, and Release VXE30 Standard Config Wing Utility Drop
-- **Epic Name:** Practice Build - 101-118007-01 & -02, Wire Harness Extensions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

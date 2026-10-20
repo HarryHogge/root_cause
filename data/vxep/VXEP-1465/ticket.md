@@ -36,7 +36,7 @@ System operating as expected. Uncertainty in GPS resulted in abort of the launch
 
 ### David Grosher, 2025-08-11
 
-[embedded image-20250811-191136.png]
+[embedded: image-20250811-191136.png]
 @Greg Fryer FYI
 
 ## Attachments (6)

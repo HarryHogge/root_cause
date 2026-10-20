@@ -50,7 +50,7 @@ Also, for weather considerations, he did mention that it was drizzling rain slig
 
 ### David Grosher, 2025-08-29
 
-[embedded image-20250829-201508.png]
+[embedded: image-20250829-201508.png]
 
 Baro Altitude appears to have had its calibration adjusted mid flight around where there were some altitude disturbances. I haven’t observed this before and will continue to look into it. @Michael Mohr
 
@@ -69,7 +69,7 @@ Baro Altitude appears to have had its calibration adjusted mid flight around whe
 ### Jackson Riley Curvin, 2025-09-02
 
 @David Grosher  this is a comment from an older ticket about Sim issues does this relate to the issue here?
-[embedded image-20250902-154540.png]
+[embedded: image-20250902-154540.png]
 https://jenaero.atlassian.net/browse/VXEP-220
 
 ### David Grosher, 2025-09-02

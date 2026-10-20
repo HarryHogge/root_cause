@@ -18,10 +18,10 @@
 
 ## Description
 
-## 1.1        Operator Description of the Incident
+**1.1        Operator Description of the Incident**
 
 The trials team arrived on location at approx. 0845 to set up the GCS and support equipment for the day's flying. As we were operating in a new location a magnetometer check was carried out and a subsequent magnetometer swing completed. Following this the UA was used for ground testing for approx. 2 hrs. For the ground testing only the payload and main battery were fitted. On completion of the ground testing the UA was fully assembled with all pre-flight checks and GCS launch wizard completed successfully. These checks include motor checks for all 4 VTOL lift motors and main motor, pitot-static checks, payload operation and control surface operation. The immediate area around the UA was cleared (out to 30m) and it was confirmed that all trial pers and support pers were in the designated area. With no indication of issues or faults the command was given to launch the UA. On launch, the UA's VTOL motors spun up and lifted the UA clear of its cradle, approx. 3ft above ground, but the UA appeared to be underpowered and unstable. The UA then dipped its right wing and travelled backwards (either being blown by the wind or following its automatic abort profile). The right-wing tip impacted the ground and dragged until the aircraft settled on the ground (prior to the RP's commanded abort). The command was given to abort the take-off which the RP carried out using first, the hand controller and then the Ctrl-A keyboard shortcut until the rotors stopped spinning. The UA was made safe and returned to the cradle. The UA was inspected for damage with preliminary minor damage found of the right-wing tip and payload housing. The launch wizard was carried out as a post flight activity and all systems functioned correctly. As the reason for the UA's behavior was still unknown and further investigation required the UA, payload, and batteries were quarantined. The planned sortie was subsequently flown with our second UA without incident.
-# 2        Summary
+**2        Summary**
 
 During a flight test lift-off, the aircraft did not execute a vertical take-off but instead it dragged backwards and failed to lift off. This was caused by the rear-right motor not producing sufficient thrust. Motor-ESC pair were shipped to SLO site and tested on a Dynamometer[CC1] . Upon test, it was determined that the rear-right motor was producing considerably lower torque than expected. While trying to determine if the motor or ESC were malfunctioning, we tested each with a stock Motor or ESC. Both performed normally. When we put them together, the original pair performed normally and the problem was gone.
 Upon further investigation we found the problem with the soft-start circuit and managed to replicate this problem on stock ESC in house. When the soft-start circuit is malfunctioning, it reduced the force delivered by the motor. Thermal imaging indicated that one of the 4 parallel connected MOSFETs was shorted between Source and Drain. This would essentially bypass the current limiting due to disabled soft-start feature and deliver normal current to the motor.  Over time this circuit gets damaged with one or more MOSFETs Q20-Q23 drain-source short. While it does not provide soft-start function, the ESC deliver’s normally rated force.
@@ -32,34 +32,34 @@ At this point we concluded that the issue with VXE545 was a faulty soft-start ci
 
 ## Corrective Action
 
-## 1.1           Replace current ESC with upgraded version from an ESC manufacturer.
+**1.1           Replace current ESC with upgraded version from an ESC manufacturer.**
 
 The current VTOL ESC is old design from when the company and aircraft were smaller. Upgrading the ESC would provide increased reliability and features, but is a large scope project.
 a.      The new ESCs being evaluated[CC1]  require a 5V supply. This will call for either changing the wire harnesses to supply 5 volts or to incorporate an intermediary board to intercept the ESC supply and using a regulator generate 5V.
 b.      Mechanical formfactor of the new ESCs being evaluated differs from current ESC. This would require altering the ESC mounting scheme.
 c.      The heat sink of new ESCs being evaluated is larger than VXE ESC heat sink and would require some mechanical changes to the boom.
 d.      The new ESCs being evaluated could enable CAN commanding and telemetry, which would be more reliable, provide useful data, but require multiple hardware and software changes.
-## 1.2         Include a motor fault flag during the LW spin up test that triggers if the VTOL controller detects current anomaly.
+**1.2         Include a motor fault flag during the LW spin up test that triggers if the VTOL controller detects current anomaly.**
 
 https://jenaero.atlassian.net/browse/VXEP-596 
 https://jenaero.atlassian.net/browse/VXEP-595 
 In this case, comparing the ibatt1/ibatt 2 current with the expected current and flagging a fault if less than expected current is observed would detect this problem.  The software may also have to be changed in order to prevent an operator from running two motors at once during launch wizard.
-## 1.4       Incorporate flyback diodes across MOSFETs Q7, Q13, Q19 and Q20 – ON HOLD
+**1.4       Incorporate flyback diodes across MOSFETs Q7, Q13, Q19 and Q20 – ON HOLD**
 
 The motor back EMF can damage the MOSFETs and cause an intermittent failure. A corrective action would be to incorporate flyback diodes across MOSFETs Q7, Q13, Q19 and Q20.[CC2]  We believe this time would be better spent on CA1 (upgrading and qualifying to new ESCs for VXE30)
-## 1.5       Corrective Recommendations:
+**1.5       Corrective Recommendations:**
 
-### 1.5.1       Improve wire routing and support of VTOL ESCs. – Requirement for upgrade project
+**1.5.1       Improve wire routing and support of VTOL ESCs. – Requirement for upgrade project**
 
 Below are a few recommendations, while not directly related to this issue, they can prevent failures in future:
 Motor uses 10 AWG phase wires. These wires enter the side of ESC case and bends at 0.5” radius to be soldered to the ESC board. This is a stranded conductor 0.15” thick. Per IPC/WHMA-A-620, the minimum bend radius should be 0.9”. Such a short radius on heavy gauge wiring induces considerable stress on the solder joint holding the wire to the ESC board. It is recommended we allow more space for the wires to bend at a larger bend radius. Additionally, we should provide some form of stress relief to the phase wiring inside the ESC housing. This could be used to hold the wires and reduce the stress on the solder joints. A temporary fix would be to solder the phase wires as shown below to achieve 0.9” bend radius.[CC3]  We believe this time would be better spent on CA1 (upgrading and qualifying to new ESCs for VXE30)
  
 
 Figure 12 Suggested Solder position
-### 1.5.2       Increase air flow to VTOL ESC heat sinks – Requirement for upgrade project https://jenaero.atlassian.net/browse/VXEP-638 
+**1.5.2       Increase air flow to VTOL ESC heat sinks – Requirement for upgrade project https://jenaero.atlassian.net/browse/VXEP-638**
 
 Mount the ESC on the top side of the boom. Presently the ESC is mounted on the bottom side of the boom where the heat sink is facing away from the airflow. This should be added as a objective design requirement for the upgraded ESC design project.
-### 1.5.3       Add temperature sensor to VTOL ESCs. Abort launch at limits. Requirement for upgrade project https://jenaero.atlassian.net/browse/VXEP-638 
+**1.5.3       Add temperature sensor to VTOL ESCs. Abort launch at limits. Requirement for upgrade project https://jenaero.atlassian.net/browse/VXEP-638**
 
 Incorporate a temperature sensor in the ESC and have software access to abort a launch in case of excessive temperature rise. VTOL ESC heat dissipation arrangement is fundamentally faulty. The MOSFETs dissipate heat through the metal tab provided at the bottom of the case. In our PCB, this will inject heat into the PCB enclosure. ESC Heat sink is useless because it is positioned on the side of MOSFETs that do not conduct heat. We have had failures because of this issue. Redesign and re-layout the ESC board to position the MOSFET bottom sides in contact with the heat sink. This will be added as a threshold design requirement for the upgraded ESC design project.
 
@@ -81,144 +81,128 @@ Soft-start circuit in theVXE545 position 3 VTOL ESC was permanently OFF (i.e.. M
 
 ## Comments (103)
 
-### Cameron Chapman, 2024-09-16
+### David Grosher, 2024-04-29
 
-@Rajesh Budhabhatti please focus on completing the report first. There are still numerous issues and old information. After that, I can review and we can update the above fields.
+@Pat Wells There is no VTOL data.
 
-### Rajesh Budhabhatti, 2024-09-17
+### Pat Wells, 2024-04-29
 
-- @Rajesh Budhabhatti Have you reviewed the pre-flight launch wizard runs and previous flights to see if this issue could have been caught before this attempt? Looking at AAR report from April 30, it looks like only motor 1 (UTC 156.8) and Motor 3 (UTC 166.8)  were tested during pre-flight launch wizard test. Corresponding VTOL graph ends at UTC 0 so I cannot tell what the ibatt1, ibatt2 currents were when the motors were tested. 
-- Test ideas
-- On a different engineering ESC, Starting with 1 Remove some of the parallel FETs and see if the behavior is repeated.
-- @Mark Squillante mentioned @Connor Peebles mentioned a batch of ESCs that had poor FET soldering. Need to document and link to that. Should there be a containment? Can this be correlated to that batch?
-- @Pat Wells. Report successful flights or any further issue. LM has grounded this aircraft until we provide a report.
-- Finish root cause report and deliver to Pat, who will curate it for the customer: Investigation Report VXE-545.docx
+@David Grosher I did not catch that.  Reaching back out to customer.
 
-### Mark Squillante, 2024-09-17
+### Pat Wells, 2024-04-30
 
-@Rajesh Budhabhatti bad batch of FETs has been documented here: https://jenaero.atlassian.net/browse/VXEP-198 
-Also linking to this Jira incident
+@David Grosher updated AAR file attached. 4/30
 
-### Rajesh Budhabhatti, 2024-09-17
+### Eric Brewer, 2024-04-30
 
-Root cause narrowed down to the soft-start circuit of the ESC assembly in position 3 (right rear).  Aircraft approved for flight with replaced ESC Assy. 
-Determining what corrective actions to implement as a result from the investigation. 
-- VXE545 flight history log here: 
-- VXE545 was involved in a total of 22 flights with 14.1 hours of flight time with the customer. During all these flights it used the same Left and Right Lift booms and lift motors, indicating there were no motor or ESC swaps and these motors performed as expected. As a matter of fact, other than the main and HLB batteries, no other component was swapped throughout the 14.1-hour flight time over 22 flights. Both main and HLB batteries were used in previous successful flights.
+@Pat Wells @David Grosher uploaded initial report, see issue status above for link.
 
-9/4/2024: 
-Additional tests were conducted on stock ESC-Motors by removing one MOSFET on Hi-side and Low-Side to see if the strange behavior was due to defective MOSFET. Tests were negative. The ESC-Motor performed normally. Test results are included in the investigation report.
-9/6/2024
-@Cameron Chapman While probing the 545 ESC I found that Soft-start circuit MOSFETs were shorted. Upon further investigation, it was found that Q20-one of 4 MOSFETs in parallel was shorted. This explains the low torque because the MOSFET starves the motor of current. Trying to find out why there was a glitch at PWM=1500.
-9/10/2024
-Further investigation in Soft-Start circuit:
-A possible scenario to the problem we were seeing in field and earlier testing but have not been able to replicate is this:
-The soft-start circuit was malfunctioning. The R-C circuit (C12, R40, R41) isolates the ground from motor for 0.47s thereby limiting the current to the motor. After the RC time constant, the circuits turns ON the MOSFETs Q20-23 and enables full current to the motor. During the field operations and lab test, this circuit was not turning the MOSFETs ON (or turning them ON after PWM=1500 or  about 16s) thus starving the motor, resulting in lowered torque.
-At some point in time, one of the soft-start MOSFETs (Q20) failed with Source-Drain in shorted state. This bypasses the soft-start function and motor doesn’t see current limiting during the start or normal operations. As a result, in all subsequent tests, motor PWM-Torque/Force resembled a normally functioning motor. 
-Further investigation and questions:
-- What corrective actions needed to prevent this from happening?
-- Confluence document on behavior of good, working soft-start circuit along with signal characteristics.
+### David Grosher, 2024-04-30
 
-Update 9/10/24
-I have managed to replicate the issue on end-of-life ESC. The problem occurs when the soft-start circuit does not come ON. I shorted the gate resistor to ground and took dyno readings before and after the short. After the shorting, I got the Dyno reading precisely what we saw with 545 ESC. Thereafter, I removed the gate short and took one more reading. This reading showed the motor performing normally. 
-Update 9/11/24
-It seems that when soft-start circuit is disabled (MOSFETs Q20-Q23 Off) and the ESC is throttled to PWM>1500, it blows the soft-start MOSFETs. However, AARs show that the 545 m3 was operated at 90% throttle. The Dyno tests were conducted using lab power supply with current limit set to 35A. Is it possible that under HLB power, the ESC with soft-start circuit disabled would continue to produce low force without blowing the mosfets?
-- Test spare EOL ESC on battery HLB power and see if it fails.
+@Greg Fryer @Cameron Chapman FYSA, see Eric’s update.
 
-9/12 Update
-I got a baseline using an EOL ESC with power supply and with HLB. When I tried to run the ESC-Motor with Soft-start circuit disabled, the ESC stopped working. I am not sure if this is because of the ESC-Motor I was using, so I have another pair I will be trying this out tomorrow. Earlier times when the soft-start circuit failed, the ESC-Motor continued to work normally. This time the pair is not operating at all. 
-I found out that the ESC’s Phase MOSFET was damaged and stopped the motor from working.
+### Greg Fryer, 2024-04-30
 
-### Cameron Chapman, 2024-09-18
+@Eric Brewer @David Grosher The first step to investigate the right rear lift assy makes sense. @Pat Wells can you ask them to check? Maybe pre-flight the vehicle again to the point of manual motor check, see if they notice any different performance or sound?
+- Do the logs include the pre-flight test of the system? e.g. could we look and see if that motor behaved differently  than the others? (That may drive something specific in my suggestion above.)
+- Can you pull the current and voltage values on the same timeline? That can help us figure out if the motor was drawing appropriate power for the throttle command.
 
-I think we should review the CAs with Sam and Doug. LM may escalate and ground ESCs until we replace them, but replacing is the best path forward. We may be able to assuage their concerns by highlighting that VTOL ESCs are relatively rare (compared to total number of flights, still too high IMO) and damage in this case was minimized by the aircraft detecting the problem and aborting.
 
-### Rajesh Budhabhatti, 2024-09-19
+Depending on what we find, potential path forward:
+- Review more data (above and similar), action to us. Investigate right-rear lift motor, to include pre-flighting it.
+- If nothing new found, Replace the right-rear lift assy (motor & esc), return for assessment. (assuming they do not find something obviously wrong like fouling, loose blade, or failed bearing)
+- If Step 2 not acceptable, or Step 2 does not resolve the issue, return aircraft.
 
-@Cameron Chapman @Pat Wells Updated investigation here: Investigation Report VXE-545.docx
+### Cameron Chapman, 2024-04-30
 
-### Rajesh Budhabhatti, 2024-09-19
+Agreed with Greg. I recommend:
+- Evaluate logs for pre-flight throttle vs current relationship. (request if needed). Review pass/fail criteria (we should consider flagging motors that are outside of the typical current and voltage profile when run).
+- Compare expected vs actual throttle vs power (will have to sum each side) https://jenaero.atlassian.net/wiki/spaces/EF/pages/163446841/Common+Data+Review+Tasks+Comparisons    
+- We should establish a expected vs actual current to voltage relationship and link it to the confluence above. This would be helpful in many investigations and might be in the battery SOC code already.
+- Review data and discuss.
+- If preflight above looks normal, request customer 
+- Inspect motors and blades for visible damage. Replace blade if damaged.
+- Spin each motor with power off. Report any differences. This can sometimes indicate bearing issues.
+- perform an additional preflight of each motor and send us the data logs. (Can they run an AAR then without an actual flight?)
+- Listen to differences between the motors during these runs. Record video if a clear difference Different sounds can indicate issues.
+- If motor power is not equal for RR, replace and repeat test. Red tag RR motor assembly for further investigation and return to EA.
+- Determine if wingtips are ok for flight or need to be replaced.
+- Confirm with EA ok for flight or not.
 
-This report is for internal use only. Internal Investigation Report VXE-545.docx. I will post a link to the document to be shared with the customer shortly.
+### Cameron Chapman, 2024-04-30
 
-### Rajesh Budhabhatti, 2024-09-19
+Thanks @Eric Brewer for the helpful analysis and updating the status fields.
 
-@Cameron Chapman @Pat Wells Here is the draft of investigation report to share with the customer. Let me know if you want me to make any changes. Investigation Report VXE-545.docx
+### Eric Brewer, 2024-04-30
 
-### Pat Wells, 2024-09-20
+@Cameron Chapman I did not see preflight in the logs (i.e. did not see each rotor spool up individually).  
+I added a plot with current draw for a reference flight, it looks like the current draw on the right side was consistent with a typical flight, while current draw on the left is less than normal (probably expected since left side was spooled down to try to maintain attitude).  At Greg’s recommendation I also reached out to Hayden to try to obtain logs from another flight where a rotor was installed ‘180 out’ for comparison.
 
-@Cameron Chapman @Rajesh Budhabhatti I did a bit of clean up on the customer version of the report that’s located on SharePoint.  
-Converted to PDF (Attached to this ticket). 
-Sending to customer today.  
+### Cameron Chapman, 2024-04-30
 
-Thank you for for all the effort on this.
+@Eric Brewer Thank you for that comparion. “while current draw on the left is less than normal (probably expected since left side was spooled down to try to maintain attitude).” 
+- That is why I recommended the throttle to expected vs actual comparison. It would tell you if each side was behaving as commanded or not. There might be an automatic calculation for this in Liams log tool.
 
-### Rajesh Budhabhatti, 2024-09-20
+### Eric Brewer, 2024-04-30
 
-@Pat Wells Hi Pat, pdf looks good. Thank you.
+@Cameron Chapman thanks, I think I see what you’re asking.  See plots on chart 5.  Are you saying we also have a mapping somewhere of throttle vs. current draw or are the plots I have what you had in mind?
 
-### Rajesh Budhabhatti, 2024-09-20
+### Cameron Chapman, 2024-04-30
 
-@Cameron Chapman Hi Cameron, I have compiled a document per CA to help software evaluate ESC health during LW. Once you approve it, let me know who to share it with. A method for evaluating ESC health through current measurement.docx
+@Eric Brewer yes. See mapping formula here. https://jenaero.atlassian.net/wiki/spaces/EF/pages/163446841/Common+Data+Review+Tasks+Comparisons 
+I think developing a similar mapping for voltage vs current would also be helpful in investigations. It might be in the battery SOC code already.
 
-### Cameron Chapman, 2024-09-20
+### Eric Brewer, 2024-04-30
 
-Thanks @Rajesh Budhabhatti we should follow up with that and other CA in the associated CA task. https://jenaero.atlassian.net/browse/VXEP-596  in this case.  I will follow up there.
+@Cameron Chapman thanks.  I put in power curves using the equations you provided.  It is interesting that the power lines up pretty well on 545 but not as well on the reference flight. 
+Dave also pointed out that the motor test was indeed earlier in the log (I missed it because the throttle spikes were not captured in the vtol logs).  See plots in the ppt, It is interesting that motor 3 drew less power than the other 3 motors.
+I’ll take a look into the voltage/current mapping next.
 
-### Rajesh Budhabhatti, 2024-09-20
+### Eric Brewer, 2024-04-30
 
-Will do. Thanks.
-Get Outlook for iOS<https://aka.ms/o0ukef>
+@Cameron Chapman Added in current calcs as well, they don’t match up quite as nicely.
 
-### Cameron Chapman, 2024-09-26
+### Cameron Chapman, 2024-05-01
 
-@Pat Wells responding to customer questions. We could schedule an internal meeting to review these and any other potential workarounds or CAs. 
-- Have we previously investigated a soft start issue with the ESC’s? Matt Curran @LM thought he recolected that we did.
-- Yes. During VXE30 development, we discovered that 1 soft start FET did not have enough current capacity, so we updated the design to spread the current across 4.
-- For internal reference. Since then, we have discovered other flaws with the cicuit, such as FETs do not have equal impedance, so the load will not always split evenly and can still overload FETs. See details in the internal report.
+@Eric Brewer thank you for plotting those. I think the high RR throttle during launch, low RR current during launch wizard, and described behavior all indicate an issue with the RR assembly.  
+I do not see where you plotted expected vs actual voltage with a certain current or throttle. This will be more complicated, as it also depends on battery SOC. 
+I recommend the following:
+Us:
+- Review prior flights to determine if RR was acting abnormally before, and if we could improve firmware to flag that. We may have to request prior flights or VTOL data dump from customer. We should have SCO on file to compare, but there may have been many flights since then.
+- Update launch wizard or firmware to flag underperforming motors (likely via current and voltage measurement). This could have prevented this issue and possibly other previous incidents. 
+[embedded: image-20240501-205934.png]
+- It sounds like they want to learn how to identify things like Eric did via the logs. @Pat Wells and PM will have to determine how much training we want to give for that. Other LM personnel likely already have this knowledge.
 
-- In the report under Corrective actions we list Remove or bypass soft start circuit. Are we considering this? Would it require new hardware or a software change?
-- Hardware change. As mentioned in the internal report, we believe this time would be better spent on CA1 (upgrading and qualifying to new ESCs for VXE30). I think this information would be ok to share with a customer, but you, Pat, and Sam would know best.
-- Which CA are we chosing to implement?
-- EEs are pursuing:
-- 7.1	Replace current ESC with upgraded version from an ESC manufacturer.
-- 7.5.3	Add temperature sensor to VTOL ESCs. Abort launch at limits. Requirement for upgrade project
-- 7.5.3	Add temperature sensor to VTOL ESCs. Abort launch at limits. Requirement for upgrade project
-- Joint SW/EE task, but may not get priority:  
-- 7.2	Include a motor fault flag during the LW spin up test that triggers if the VTOL controller detects current anomaly.
-- Are there any work arounds from an operator’s perspective. What should they be looking for? Anything to do special or not do?
-- Not currently. Sadly these ESCs are not super reliable. Most would need some SW updates like 7.2. Make sure they are flying within published limits. Potentially extra attention to the sounds and power level readings during the launch wizard spinup.
+Operator Suggested
+- Inspect motors and blades for visible damage. Replace blade if damaged.
+- Spin each motor with power off. Report any differences. This can sometimes indicate bearing issues.
+- Replace motor assembly and repeat launch wizard test. Red tag RR motor assembly for further investigation and return to EA.
+- Send data logs or review to make sure all motor currents are similar during preflight.
+- Determine if wingtips are ok for flight or need to be replaced.
+- Confirm with EA ok for flight or not.
 
-### Pat Wells, 2024-09-26
+### Eric Brewer, 2024-05-02
 
-@Cameron Chapman 
-For question number 3 our customer facing report does not list all of those CA’s that you mentioned from the internal report. 
-With that being said all that I can really reference in the response is 7.2 fault flag CA.
+@Cameron Chapman thanks.  I agree with your recommendations.  The plots of voltage and currrent are on slide 5 (sorry might have been easy to miss since the plots are the same as previous just with a few new lines added).
 
-### Cameron Chapman, 2024-09-27
+### Pat Wells, 2024-05-02
 
-@Pat Wells sorry I did not have time to review the customer version before it was sent. I recommend adding this CA to the customer report as that will be the primary one we will be pursuing, if it is not too late to amend the report. As long as that doesn’t cause them to do anything drastic like ground their fleet until it ESCs are upgraded? 
-- 7.1 Replace current ESC with upgraded version from an ESC manufacturer.
-- For the FET bypass, I recommend stating we believe this time would be better spent on CA1 (upgrading and qualifying to new ESCs for VXE30)
+@Cameron Chapman I’ve passed along your test instructions for the operator.
+@Eric Brewer FYSA
 
-### Alexander Alan Arnold, 2025-01-10
+### Eric Brewer, 2024-05-14
 
-@Pat Wells If the RMA and report has already been completed can we close it?
+@Cameron Chapman added voltage to chart 6.  I calculated it as the reported VBnl minus IBatt*ESR (basically opposite of this line in the fwap c-code).
+vbatt = vbatt + (short)(((long)ibatt * (long)GetBoESR(m_battoverride)) / 10L); // corrected vbatt for no load, mV
 
-### Pat Wells, 2025-01-10
+### Pat Wells, 2024-05-16
 
-@Alexander Alan Arnold it doesn’t look like the CA has been implemented yet. 
-@Cameron Chapman thoughts?
+@Cameron Chapman @Eric Brewer do we have any reason to suspect an issue with the HLB?  Customer is asking and has quarantined the HLB associated with this incident.  
+Note, we are still waiting to receive the AAR post motor swap out test that we asked them to perform.
 
-### Cameron Chapman, 2025-01-10
+### Eric Brewer, 2024-05-16
 
-Agreed. As an organization, we should discuss and decide if we want issues like these with long term CAs to stay open, or to close them and link to a collector project to implement the CA. I think something like ensuring all critical/urgent CAs are implemented or schedules, then closing and linking to longer term could be a good method. 
-This specific issue could use a lot of clean up, but if the customer is satisfied, then effort cleanup may not be worth it. We all know we need new ESCs ASAP.  I think getting that project into the hopper for VXE would be a good priority for our company. 
-@Pat Wells
-
-### Christa Meck, 2025-08-05
-
-Closing per previous comment.
+@Pat Wells I’ll defer to @Cameron Chapman , @Jason Scherer on that one.
 
 ### Pat Wells, 2024-05-17
 
@@ -295,10 +279,10 @@ The AAR added today (V545_15) does not display any VTOL throttle and very low VT
 ### Jeremy Kostel, 2024-07-16
 
 @Pat Wells I am not 100% sure, but to me from these graphs it does look like they spun the VTOL motors and that the file was somehow corrupted 
-[embedded image-20240716-202504.png]
+[embedded: image-20240716-202504.png]
 
 
-[embedded image-20240716-202525.png]
+[embedded: image-20240716-202525.png]
 
 ### Rajesh Budhabhatti, 2024-07-16
 
@@ -320,15 +304,15 @@ I compared the ESC/Motor combination with a standard motor/ESC and found that it
 ### David Grosher, 2024-07-18
 
 @Cameron Chapman I do see a throttle command in the VTOL data log of another flight. Although, I do not see that in the MxM1/2/3/4 signals.
-[embedded image-20240718-173718.png]
+[embedded: image-20240718-173718.png]
 
 ### Jeremy Kostel, 2024-07-18
 
 @Cameron Chapman I pulled AAR’s for two different flights that look as I would expect, below are the comparison graphs of all 3 (VT545 is the key one for this ticket). I am not familiar enough with the launch wizard settings to know if this was a choice to only spin two motors instead of all four, but from this data the motors seem to be acting as expected, though having launch wizard data for all 4 motors would be helpful.
-[embedded image-20240718-181225.png]
+[embedded: image-20240718-181225.png]
 
-[embedded image-20240718-180010.png]
-[embedded image-20240718-180105.png]
+[embedded: image-20240718-180010.png]
+[embedded: image-20240718-180105.png]
 
 ### Pat Wells, 2024-07-18
 
@@ -342,7 +326,7 @@ I compared the ESC/Motor combination with a standard motor/ESC and found that it
 ### Cameron Chapman, 2024-07-18
 
 @Jeremy Kostel the first two looked normal. This third pulse looks strange. It seems to be a motor pulse, but a much different waveform and magnitude than the others. 
-[embedded image-20240718-233317.png]
+[embedded: image-20240718-233317.png]
 
 ### David Grosher, 2024-07-18
 
@@ -352,13 +336,13 @@ I compared the ESC/Motor combination with a standard motor/ESC and found that it
 
 @Cameron Chapman The third pulse you mentioned does not seem to be a motor pulse, although I am not sure what the aircraft is actually doing at that time (Potentially homing?). No throttle is being commanded. It is common across all the AARs I have compared. Here are the 3 AARs from my last comment compared for the last pulse. Note: Vehicle 545 is the only one that dips into negative current after the pulse (min value: ~ -0.3A)
 
-[embedded image-20240719-153411.png]
+[embedded: image-20240719-153411.png]
 
-[embedded image-20240719-153419.png]
+[embedded: image-20240719-153419.png]
 
-[embedded image-20240719-153426.png]
+[embedded: image-20240719-153426.png]
 
-[embedded image-20240719-155412.png]
+[embedded: image-20240719-155412.png]
 
 ### Cameron Chapman, 2024-07-19
 

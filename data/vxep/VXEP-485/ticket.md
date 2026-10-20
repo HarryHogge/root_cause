@@ -122,7 +122,7 @@ Drawing update status: E3 Drawings List.xlsx (sharepoint.com). Please update to 
 
 ### Dan Marano, 2023-09-13
 
-[embedded file]
+[embedded: E3 Drawings List.xlsx]
 @Ryan Stafford Good day! Please see the latest status of our cable drawings in E3. This included schematics, formboard drawings, and BOMS. In the process of creating cables, parts are also being created and added to the library for usage on other cables as well. Those parts can all be viewed in E3, in the “Edge Harness Builder” library.
 
 ### Cameron Chapman, 2024-04-10

@@ -52,8 +52,8 @@ Proposed Rev:
 | 2123717-01 | Wing Utility Pylon Kit — B40 | Released |
 | 2123717-02 | Wing Utility Pylon Kit — B35 (LRR) | Released |
 
-[embedded image-20260414-203714.png]
-[embedded image-20260416-173240.png]
+[embedded: image-20260414-203714.png]
+[embedded: image-20260416-173240.png]
 
 ## Comments (5)
 

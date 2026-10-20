@@ -16,10 +16,8 @@
 - **Change type:** Standard
 - **Change risk:** Low
 - **Start date:** 2024-07-15
-- **Issue color:** blue
 - **Target start:** 2024-07-15
 - **Target end:** 2024-10-31
-- **Is this ticket a Design Project?:** No
 
 ## Description
 

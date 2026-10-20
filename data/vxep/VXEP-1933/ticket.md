@@ -121,7 +121,7 @@ Having said that, despite the CAN bus issues the VTOL still seems to transition 
 Strangely, there is no printout in the VTOL log that says it is braking.  Which seems to indicate that the safe message was not received. I don’t really understand why if we know we are in FW Flight that we wouldn’t check that the motors have been safed, this could easily be done on transition into this mode. At this point we know that the lift system should have been disarmed as that is the VTOL state progression within the FW AP’s VTOL state machine.  Regardless, we should verify this given the MESSAGE_VTOL and MESSAGE_VTOL2 message seen above. 
 
 For context:
-[embedded image-20260625-024656.png]
+[embedded: image-20260625-024656.png]
 
 ### Michael Mohr, 2026-06-25
 
@@ -150,7 +150,7 @@ FYI @David Grosher @Scott Hunter we have 9 V1038 flights from Ft. Carson efforts
 ### Jeremy Kostel, 2026-06-25
 
 @David Grosher 
-[embedded image-20260625-151556.png]
+[embedded: image-20260625-151556.png]
 Heres a summary from a CAN health evaluation tool I have. The pass/fail metric is looking for any bus trouble (fail means any line with a non zero health message)
 battery SN’s shown there as well. Looks like we have the flight right before this one with the same MB and have flown with that same HLB before as well with no issues
 
@@ -163,7 +163,7 @@ Alternatively, I noticed that the Airdata and Magnetometer data was fine, could 
 ### Eric Brewer, 2026-06-25
 
 @David Grosher Looks like there were some errors on the ground before takeoff. 
-[embedded image-20260625-153017.png]
+[embedded: image-20260625-153017.png]
 
 ### David Grosher, 2026-07-15
 

@@ -13,7 +13,6 @@
 - **Creator:** Justin Peterson
 - **Labels:** AION
 - **Links:** is blocked by VXEP-1233 (AION MVP Demo); relates to VXEP-1560 (LRR Software for April 2026 Final Delivery); implements MS-539 (AION Unplanned Work); covered by MS-917 (Scope LRR Release); covers MS-1350 (LRR MCM Integration)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Allen Gardner, David Grosher, Eric Brewer
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Concept Design Review (CoDR), Preliminary Design Review (PDR), Test/Flight Readiness Review (TRR/FRR)

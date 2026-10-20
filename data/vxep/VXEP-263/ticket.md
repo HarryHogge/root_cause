@@ -64,6 +64,15 @@ Also related to https://jenaero.atlassian.net/browse/VIT-31  (old archive so can
 
 ## Comments (22)
 
+### David Grosher, 2024-01-31
+
+@Cameron Chapman @Greg Fryer  Some notes from a first look at the data. There is a current spike as the vtol datalog stops, which is 2 seconds before hitting the ground.  The FW AP recognizes that the airdata board was lost first before anything else. 
+[embedded: V604 VTOL crash notes.pdf]
+
+### Matt Philley, 2024-01-31
+
+added photos of the aircraft post-crash “AC 604 Crash Photos.zip”
+
 ### Greg Fryer, 2024-01-31
 
 Going to see @Artis Bertulis and halt Flight Test until we isolate (I wager he already has, but to be sure). @David Grosher we likely need a pictorial view of the timeline - I am inferring from what you wrote that we lost ADP first?
@@ -140,14 +149,6 @@ What should we do with equipment?
 ### Greg Fryer, 2024-11-08
 
 I’m moving the dispo of the AV off the incident, to linked issue https://jenaero.atlassian.net/browse/VA-2165  so we don’t keep cluttering this up.
-
-### Cody Smisek, 2025-06-05
-
-@David Grosher @Greg Fryer I’m going to start picking parts from this aircraft and putting in official part storage. There’s no Root Cause on this ticket. In the powerpoint, mention of possible mag data issue, then in another linked ticket there’s mention of burst data being the issue. Either of you recall what the cause was? Can avionics be re-used for flight, or only good for iron bird / HILs?
-
-### David Grosher, 2025-06-05
-
-@Cody Smisek Use the hardware for iron birds / HILs. If I remember correctly this incident was related to corruption of the Mag data during context switching to/from tasks doing floating point math but not explicitly declaring FPU support within the task. I think there was also another issue where the bus that the magnetometer was on would crash periodically. Both issues have been resolved.
 
 ### Cody Smisek, 2025-06-05
 

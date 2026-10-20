@@ -10,9 +10,6 @@
 - **Creator:** Thomas McMillan
 - **Labels:** EE-Intern, Electronics_Drafting
 - **Parent:** VXEP-1667 New EE/Intern/Specialist Projects
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 - **Key Stakeholder(s):** Ben Norris, Jeremy Kostel
 
 ## Description

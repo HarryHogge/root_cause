@@ -65,98 +65,94 @@ Specific components for power failure is undetermined however it has been isolat
 
 ## Comments (42)
 
+### Cameron Chapman, 2024-02-21
+
+@David Grosher
+
+### Pat Wells, 2024-02-21
+
+VTOL and XCOM logs attached @Cameron Chapman @David Grosher
+
+### David Grosher, 2024-02-21
+
+@Cameron Chapman There was a power fault that the FW AP triggered during transition to VTOL. There are some interesting voltage fluctuations that don’t coincide with current draw on transition to FW flight.  Mag looks good. No WDT events. XCOMM log has a bunch of power errors.  Given the errors and the issues with VTOL abort there may be a RACE condition present as well.  I’ll keep diving. 
+[embedded: image-20240221-205635.png]
+
+[embedded: image-20240221-205229.png]
+
+### David Grosher, 2024-02-21
+
+@Cameron Chapman Correction the strange power draw does happen on transition to VTOL. It begins in land prep and continues through transition and then back to FW flight. 
+[embedded: image-20240221-212048.png]
+
+### Pat Wells, 2024-02-21
+
+@David Grosher given that this is not related to 604 & 406 are there any concerns with the FLOPS team continuing training with another customer aircraft tomorrow?
+
+### David Grosher, 2024-02-21
+
+@Pat Wells Not from a SW perspective, it is the same amount of risk as previously. Having said that, I do think this incident highlights a potential bug in the mode logic of the SW, in the plot below one can see that the hostState returned to FWflight after the abort was issued, but based on the current draw it seems that the VTOL motors powered up.  I can’t currently explain that. @Jason Scherer @Kurt Burian FYSA    
+Regardless, I would defer to @Cameron Chapman given that the issue appears to be electrical. One question I would ask prior to giving them the green light is whether this aircraft was up to date on SBs and ADs? (Note: The SW was up to date)
+
+### Pat Wells, 2024-02-21
+
+@David Grosher @Cameron Chapman I am 100% certain that the aircraft was up to date on SB’s and AD’s. I personally worked on all of this customers systems back in November 2023 and 533 is on my list.
+
+### Cameron Chapman, 2024-02-21
+
+@David Grosher this one is strange. If it was just based on a failing high resistance contact, then there would be a much larger voltage drop when the current increases. I am wondering if vibration of transition was affecting a loose connection in the voltage sense harness or something similar. I think this could use a timeline for what the aircraft did as this progressed if anyone is available for that. 
+Did we implement the check if VTOL system is working before transition improvement? 
+[embedded: image-20240222-001217.png]
+
+### Cameron Chapman, 2024-02-21
+
+@Pat Wells where is this equipment located, and what condition is it in? We will keep doing data review, but may not be able to identify the cause of the power fault without testing the HLB, fuselage, and CW involved.
+
+### Pat Wells, 2024-02-22
+
+@Cameron Chapman the equipment is currently located at Fort Moore, GA. I am currently working the RMA process.
+
+### Cameron Chapman, 2024-02-22
+
+@Pat Wells thank you. Please include the hlb involved in the incident as well if you can.
+
+### Cameron Chapman, 2024-02-22
+
+Added plots and theories to this document. VXE-533 Uncontrolled drift and crash on landing.docx
+
+### Cameron Chapman, 2024-02-27
+
+Dave: “Grouped with 496”. Compound failure. Power failure led to VTOL abort. In both cases, stuck in a race condition between APs trying to control the vehicle. Building out test matrix to verify fixes for all applicable states.
+
+### Sean Odell, 2024-06-17
+
+Aircraft has been delivered to Engineering for further investigation into electrical system and avionic/Red AP.
+
+### Adrian Garcia, 2024-06-17
+
+@Pat Wells Are you able to attach the AAR file?
+
+### Pat Wells, 2024-06-17
+
+@Sean Odell can you track down the AAR from the recently failed SCO flight and attached to this ticket ASAP?
+@Adrian Garcia assuming that’s the AAR you’re looking for.  If not please clarify.
+
+### Adrian Garcia, 2024-06-17
+
+@Sean Odell @Pat Wells That is correct thank you
+
+### Sean Odell, 2024-06-18
+
+@Adrian Garcia @Pat Wells Unfortunately the Aircraft has been delivered to Engineering.  Engineering will have to pull the AAR files for this Aircraft.  Please let me know if that is not possible Adrian.
+@Brandon Slater If you have some time today, can you assist in this request?
+
+### Brandon Slater, 2024-06-18
+
+@Adrian Garcia @Pat Wells @Sean Odell I can assist, anyone know where I can find the center wing?
+
 ### Adrian Garcia, 2024-06-18
 
-@Brandon Slater Thank you
-
-### Adrian Garcia, 2024-06-19
-
-@Hayden Jeanor
-
-### Adrian Garcia, 2024-06-20
-
-@John Clark Here is the ticket for more reference
-
-### Hayden Jeanor, 2024-06-20
-
-is there any SA cam footage of the incident?
-
-### Pat Wells, 2024-06-21
-
-@Hayden Jeanor no there is not any SA cam video available.
-
-### Adrian Garcia, 2024-06-21
-
-Was given a word doc for documentation and added most of info there but going to continue through ppt per confluence instructions
-
-### Adrian Garcia, 2024-06-21
-
-@Cameron Chapman @Sean Odell Did this vehicle fly again after this incident
-
-### Cameron Chapman, 2024-06-23
-
-@Adrian Garcia the word doc should also be acceptable. Whatever is preferred. Who instructed ppt?
-Yes. See NCR in linked RMA
-
-### Adrian Garcia, 2024-06-24
-
-We are still having a hard time figuring out the root cause of the incident and will not be ready for production any time soon. As of right now the main theories is that we lost connection because we see voltage being read in the BMS but at the same time the VTOL is oscillating. This could also be a grounding issue that Abel is working on right now which can be inferred from the Aux2 and Vref readings 
-[embedded image-20240624-231655.png]
-[embedded image-20240624-231524.png]
-
-### Adrian Garcia, 2024-06-25
-
-The investigation is starting to look inconclusive, Hayden is going to take one last look into the system but as of today nothing new/concrete can be found to definitively say what caused the incident
-
-### Cameron Chapman, 2024-07-05
-
-@Adrian Garcia see comments in red of the investigation.
-
-### Adrian Garcia, 2024-07-12
-
-@Cameron Chapman PPT is ready to review, linked at the top
-
-### Cameron Chapman, 2024-08-06
-
-@Pat Wells Should this issue be added back to the tracker? The HW investigation is not complete.
-
-### Cameron Chapman, 2024-08-06
-
-@Adrian Garcia please update the fields above now and every time you make progress on an investigation. If you have completed all tasks requested, these should not be in the plan. 
-## Plan
-
-- See comments and actions in ppt.
-- These plots do not line up. We should figure out a way to plot them correctly (see if another time stamp could be used, or manually line them up in excel)
-- They should be the same data just saved on different processors/logs/logging rates. The XCOM VTOL voltage being a lot lower seems to indicate a transmission or processor issue. @David Grosher what do you think could cause this?
-
-### Alexander Alan Arnold, 2024-12-10
-
-@Cameron Chapman @Adrian Garcia I have this as D6 on the incident tracker, but the ticket is showing D2. Can I get an accurate status of this investigation?
-
-### Adrian Garcia, 2024-12-10
-
-@Alexander Alan Arnold The power issue for this investigation was deemed inconclusive.
-
-### Alexander Alan Arnold, 2024-12-10
-
-Since it is inconclusive are you going to investigate further or close this item out? @Adrian Garcia
-
-### Cameron Chapman, 2024-12-10
-
-@Adrian Garcia please clean up ppt, plan, status, root cause, linked issues etc. We need to at least have a suspected root cause and justification of why we cannot investigate further. Please have Laszlo assist if helpful.
-
-### Pat Wells, 2025-01-02
-
-@Cameron Chapman any updates on this?
-
-### Adrian Garcia, 2025-01-07
-
-@Pat Wells This aircraft was shipped back to the customer in September 2024 with the following parts replaced: 
-- CW Auto Pilot: 107-101161
-- Harness: 107-102065
-- Current Sense Harness: 107-103302
-- Dual Current Sense Assembly: 107-102264
-- Ground Isolation Board: 107-12264
+@Brandon Slater it is near the stairs on the roller cart
 
 ### Brandon Slater, 2024-06-18
 
@@ -202,8 +198,8 @@ Yes. See NCR in linked RMA
 ### Adrian Garcia, 2024-06-24
 
 We are still having a hard time figuring out the root cause of the incident and will not be ready for production any time soon. As of right now the main theories is that we lost connection because we see voltage being read in the BMS but at the same time the VTOL is oscillating. This could also be a grounding issue that Abel is working on right now which can be inferred from the Aux2 and Vref readings 
-[embedded image-20240624-231655.png]
-[embedded image-20240624-231524.png]
+[embedded: image-20240624-231655.png]
+[embedded: image-20240624-231524.png]
 
 ### Adrian Garcia, 2024-06-25
 
@@ -224,7 +220,7 @@ The investigation is starting to look inconclusive, Hayden is going to take one 
 ### Cameron Chapman, 2024-08-06
 
 @Adrian Garcia please update the fields above now and every time you make progress on an investigation. If you have completed all tasks requested, these should not be in the plan. 
-## Plan
+**Plan**
 
 - See comments and actions in ppt.
 - These plots do not line up. We should figure out a way to plot them correctly (see if another time stamp could be used, or manually line them up in excel)

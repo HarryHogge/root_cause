@@ -16,7 +16,7 @@
 Deviation disposition:
 Avionics box requires RTV around the screws when installing to close out the box. No Loctite of any kind will be used on these screws.
 Reference notes below from drawing rev E: 
-[embedded image-20240613-172728.png]
+[embedded: image-20240613-172728.png]
 
 ## Plan
 

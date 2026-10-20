@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Desiray Johnston, Trevor Gronner
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR), Test/Flight Readiness Review (TRR/FRR), Production Readiness Review (PRR)

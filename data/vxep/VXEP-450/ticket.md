@@ -63,22 +63,22 @@ Needs updates to config procedure and assembly procedure to reflect changes capt
 ### Hayden Jeanor, 2024-12-24
 
 @Nina Menon this procedure needs to be updated to reflect the latest firmware release and configuration changes. Changes tracked here AHRS Design Consideration table.xlsx. New configuration and firmware has been uploaded to the vault C:\JAI Vault 1\Projects\111 - MOD Payload\Electrical Design\111-104685 AHRS Resources but not yet released. I ran into an issue yesterday where some configurations, that @Kurt Burian and i had previously specified, were unconfigurable with the current firmware. once we get approval from Kurt, we are good to solidify the production config and fw
-[embedded image-20241223-235909.png]
+[embedded: image-20241223-235909.png]
 Posting me and Kurt’s conversation for context: 
 another thing we have to determine: 
  
-[embedded image-20241224-182339.png]
+[embedded: image-20241224-182339.png]
 
-[embedded image-20241224-182347.png]
+[embedded: image-20241224-182347.png]
 we approved the configuration in green, but the current firmware wont let the use configure the polarity and duration if direct pps mode is selected. The standard is weird because this is what it specifies, so not sure how that correlates to the configs options
  
-[embedded image-20241224-182357.png]
+[embedded: image-20241224-182357.png]
 also were able to config those with mode set to "event in A"
  
-[embedded image-20241224-182408.png]
+[embedded: image-20241224-182408.png]
 also, these two configs only have the options of "on new data" and "disabled"
 
-[embedded image-20241224-182416.png]
+[embedded: image-20241224-182416.png]
 
 that one im alot more comfortable just changing back to 'on new data'
 

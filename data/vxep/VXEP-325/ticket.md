@@ -9,7 +9,6 @@
 - **Resolved:** 2026-03-30
 - **Reporter:** Eric Brewer
 - **Creator:** Eric Brewer
-- **Issue color:** purple
 
 ## Description
 

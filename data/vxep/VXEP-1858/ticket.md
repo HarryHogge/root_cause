@@ -81,7 +81,7 @@ CA completed
 
 @Alexander Alan Arnold @David Grosher 
 Here is a video of deleting the 3 from 300 and attempting to change it to 2 for 200 but ending up with just 2 . 
-[embedded LandingPatternTwoFtAlt.mp4]
+[embedded: LandingPatternTwoFtAlt.mp4]
 
 ## Attachments (3)
 

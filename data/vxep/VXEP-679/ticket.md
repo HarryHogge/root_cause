@@ -11,11 +11,7 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** Practice Build - Composite Painted Parts
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
 - **Start date:** 2024-09-16
-- **Issue color:** purple
 
 ## Comments (0)
 

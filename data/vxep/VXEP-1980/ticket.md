@@ -61,9 +61,9 @@ Linked Problem is being actively worked.
 ### Jeremy Kostel, 2026-09-01
 
 FYSA @David Grosher, In the linked V974 ticket @Scott Hunter did some analysis about commands not really being sent to the ESC. They arrive at XCOM but no action detected after that. CAN health is clear from both the aircraft and ESC’s perspective. I cant see any signs of trouble in these ESC logs. They go back pretty far and capture what appears to be some flights and plenty of LW spins. There are no times logged on the ESC where it received a command and didn’t spin the motor. Input duty (orange) is command logged by the ESC (from aircraft) and motor duty is corresponding command sent to the motor from the ESC. They all seem to correlate to both current spike and RPM spike. 
-[embedded image-20260901-184412.png]
+[embedded: image-20260901-184412.png]
 This second screenshot includes the last few flights recorded, and the pulse on the very far right I am assuming to be when HSV tried to recreate the issue there. There are 0 instances when the motor/ESC didnt respond to a given command according to ESC logs
-[embedded image-20260901-185442.png]
+[embedded: image-20260901-185442.png]
 
 ### Scott Whitney, 2026-09-01
 
@@ -71,7 +71,7 @@ This second screenshot includes the last few flights recorded, and the pulse on 
 
 ### Scott Hunter, 2026-09-02
 
-I’ve attached a write-up here and to the linked issue explaining why the data log appears to show the system not responding to motor-test commands.[embedded file]
+I’ve attached a write-up here and to the linked issue explaining why the data log appears to show the system not responding to motor-test commands.[embedded: MotorsNoSpinLW_V1021_CsvCapture.md]
 
 ### David Grosher, 2026-09-02
 

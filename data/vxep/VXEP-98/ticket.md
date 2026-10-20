@@ -42,9 +42,9 @@ User expected more explicit instructions or may not have access to troubleshooti
 
 @Greg Fryer While we do have a more generalized messaging enhancement documented in GCSS (GCSS-34), the “GPS Fix Check” dialog within the Launch Wizard already indicates why the LW does not allow a user to proceed.
 In the event of no GPS fix on the vehicle, the user is presented with Status of “Waiting for GPS Fix” in the lower left hand portion of the dialog.  The “Next>” button is disabled in this condition:
-[embedded file]
+[embedded: waiting-for-gps-fix.png]
 When the fix is valid (as reported by the vehicle to GCS), the “Next>” button is enabled and the Status message changes to “GPS Fix Valid“:
-[embedded file]
+[embedded: gps-fix-valid.png]
 
 ### Greg Fryer, 2023-10-06
 
@@ -59,9 +59,9 @@ Either way, you are right this is distinct from the “aircraft aborts after lau
 ### Craig Burton, 2023-10-06
 
 @Greg Fryer The “Troubleshooting Quicksheet” is a section within a PDF manual (“Stalker XE25 Quicksheets Rev B_2021.05.06”) that is installed by the GCS installer:
-[embedded file]
+[embedded: Stalker XE25 Quicksheets Rev B_2021.05.06.pdf]
 The specific section is this:
-[embedded file]
+[embedded: troubleshooting.png]
 
 ### Michael Berger, 2023-10-09
 

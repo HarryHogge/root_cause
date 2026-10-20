@@ -125,13 +125,13 @@ From looking into this I think I have found a workaround until proper Design Eng
 
 @Cameron Chapman it looks like the procedures for the applicable PNs listed on https://jenaero.atlassian.net/browse/VXEP-301 were all updated. I can update the traveler/procedure to have the workaround for 107-102189, and @Brad Crampton can update the inspection sheet. Just to confirm, is there an impact from an electrical standpoint if the pins sit lower? 
 From a mechanical perspective for @Matt Weber 's reference: I measured 20 pins in inventory and they all measure between .892” and .895” in length, with 12 of them at .893”. The longest the hole could be is 1.025” (.755+ .27). With the pins coming in at .893”, we are seeing the dimension between the face of the connector and the tip of the pin (fully screwed in) at about .132, which is outside the current tolerance of .100 +/- .015. 
-[embedded file]
-[embedded file]
+[embedded: image-20240409-163447.png]
+[embedded: image-20240409-164138.png]
 
 ### Cameron Chapman, 2024-08-19
 
 @Nina Menonthe pins are designed to fully mate to the sockets. There is an electrical impact if they do not fully mate. A small deviation is likely ok for any connector other than the HLB one. @Laszlo Juhasz did you ever do any testing for pin insertion vs current capacity? Can you please link it if so? 
-[embedded image-20240819-230729.png]
+[embedded: image-20240819-230729.png]
 
 ### Matt Weber, 2024-08-22
 
@@ -140,7 +140,7 @@ The pin in the male connector bottoms out on a step and is a repeatable operatio
 
 Why don’t we use off the shelf AS150 waterproof connectors?  Potentially avoid these fitment issues and 1/3 the price of our custom Ultem parts.
 
-[embedded image-20240822-163603.png]
+[embedded: image-20240822-163603.png]
 
 ### Cameron Chapman, 2024-08-22
 

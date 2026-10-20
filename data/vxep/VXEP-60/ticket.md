@@ -65,7 +65,7 @@ After talking with Kurt Friday:
 - Yes, this test was performed by precision using the original antennas, here is some information that I got forwarded (see next comment)
 - The link budget should be calculated to get an idea of performance during the test, I attached the calculator here, should be pretty straightforward just need to gather information.
 
-[embedded file]
+[embedded: MN-MIMO Link Budget Calculator-SGCS3.xlsx]
 
 ### Maxime Jeanneau, 2023-05-01
 
@@ -226,9 +226,9 @@ Changes made to limit scope of test to just comparing antenna performance
 ### Cody Smisek, 2023-05-25
 
 @Maxime Jeanneau I received 6 feeds from Precision. 4 are white. 2 appear to be a white version of our current S band feeds. 2 look like a mini version of the current S bands and 2 might be the C bands?
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: MicrosoftTeams-image (5).png]
+[embedded: MicrosoftTeams-image (4).png]
+[embedded: MicrosoftTeams-image (5) (2).png]
 
 ### Maxime Jeanneau, 2023-05-25
 

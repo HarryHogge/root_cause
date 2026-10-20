@@ -18,7 +18,7 @@
 - Propose we remove this from the description
 
 
-[embedded image-20260415-224904.png]
+[embedded: image-20260415-224904.png]
 
 ## Comments (3)
 

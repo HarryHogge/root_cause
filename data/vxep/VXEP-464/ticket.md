@@ -11,8 +11,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** is duplicated by VXEP-446 (Figure out a way to provide a "packing list" inside cases)
-- **Issue color:** purple
-- **Is this ticket a Design Project?:** No
 
 ## Description
 

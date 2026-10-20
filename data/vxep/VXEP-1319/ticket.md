@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Links:** relates to VXEP-1174 (2122839-01 Modified Air Data Board (Replace 1502P01C))
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 - **Plan:** See Edit - 10/7/26 UAP Scope Increase Discussion - VXE Aircraft - Confluence
 
 ## Description

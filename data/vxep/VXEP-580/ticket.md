@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** SP-201 VXE30 Advanced Navigation (MAGNSS)
-- **Issue color:** purple
 
 ## Comments (1)
 

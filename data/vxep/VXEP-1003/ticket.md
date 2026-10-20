@@ -11,9 +11,6 @@
 - **Assignee:** Stephen Peters
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-824 Prototype LEMB Project-Long Endurance Main Battery
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 
 ## Plan
 

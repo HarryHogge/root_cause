@@ -11,13 +11,11 @@
 - **Assignee:** Rajesh Budhabhatti
 - **Creator:** Rajesh Budhabhatti
 - **Parent:** VXEP-93 Replace SA Camera EM18911 (100-100835) and EM19821 (100-101235) are obsolete. due February 2025.
-- **Team:** SLO+HSV Electrical Engineering
 - **Approvers:** Cameron Chapman, Grant Goodman
 - **Impact:** Significant / Large
 - **Change type:** Normal
 - **Change risk:** Medium
 - **Epic Link:** VXEP-93
-- **Issue color:** purple
 - **Target start:** 2024-12-02
 - **Target end:** 2024-12-23
 - **Vehicle Tail Number:** 300
@@ -34,31 +32,31 @@ This ticket tracks the qualification and testing process for new SA Camera.
 
 ## Plan
 
-# 1.  Qualification Testing and Results
+**1.  Qualification Testing and Results**
 
-## 1.    Voltage Testing
+**1.    Voltage Testing**
 
-## 2.    Power Measurement
+**2.    Power Measurement**
 
-## 3.    Temperature Rise-native Heatsink, no air flow
+**3.    Temperature Rise-native Heatsink, no air flow**
 
-## 4.    Thermal Auto-shutoff
+**4.    Thermal Auto-shutoff**
 
-## 5.    Communication protocols
+**5.    Communication protocols**
 
-## 6.    Viewers
+**6.    Viewers**
 
-## 7.    Daylight Image Comparison
+**7.    Daylight Image Comparison**
 
-## 8.    Low light image comparison
+**8.    Low light image comparison**
 
-# 2.  System Integration Issues
+**2.  System Integration Issues**
 
-## ADP Harness
+**ADP Harness**
 
-## ADP-Encoder Harness
+**ADP-Encoder Harness**
 
-## Camera system Wiring Diagram
+**Camera system Wiring Diagram**
 
 ## Comments (1)
 

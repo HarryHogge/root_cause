@@ -37,6 +37,57 @@ At approximately 1542 I commanded the VXE-40 to land at the primary landing zone
 
 ## Comments (30)
 
+### Jackson Riley Curvin, 2026-07-07
+
+@Scott Lovett @David Grosher Still awaiting more information at this time.
+
+### Jackson Riley Curvin, 2026-07-07
+
+@Matt Philley
+
+### Matt Philley, 2026-07-07
+
+@Jackson Riley Curvin appreciate it. We are taking a look here. Extremely bizarre… We dont even know how it would be possible to break a motor free like that from the composite. 
+From that pic it looks like a motor-sized hole is now present in the bottom of the boom in the RR position and the whole motor and cover are missing? At most I would think the motor would just tear out the screws like we have seen when we had an avionics box break free from a composite, but to tear out a whole circle seems very strange. 
+Unfortunately the video is pretty low resolution so nothing we can really get from that.
+
+### Jackson Riley Curvin, 2026-07-07
+
+@Matt Philley in the video you can hear and audible pop right before the language we are curious if the prop struck the lift boom.
+
+### Matt Philley, 2026-07-07
+
+@Jackson Riley Curvin maybe… if the prop struck the boom though I would suspect damage to the boom somewhere around here, which I dont see at least in this picture. 
+Either way super strange and we will need to follow all the normal steps to get the AC somewhere we can get access to it so we can assign folks to step thru the investigation. 
+[embedded: image-20260707-154920.png]
+
+### Jackson Riley Curvin, 2026-07-07
+
+@Ted Trowbridge
+
+### Ruysser Gabler, 2026-07-07
+
+@Matt Philley The statement also notes vibration on take off and landings of previous flights as well as the TO of this one. Is there a potential that the excessive vibrations they were seeing weakened the composite and it finally broke on this landing?
+
+### Greg Fryer, 2026-07-08
+
+@Ruysser Gabler I’m going to put this in the bucket of “not guessing at failure mode in chat, because then it becomes true” 🙂  We’ve got half a dozen theories, but need to see the composite in detail to actually narrow down.
+
+### Pat Wells, 2026-07-08
+
+@Jackson Riley Curvin @Matt Philley  @Greg Fryer 
+This is being overnighted to SLO today.  Who needs it in their hands in SLO tomorrow to investigate the composites?
+
+@Drew Hildreth @Alexander Alan Arnold 
+
+@Lauren Velasquez please add tracking numbers to this ticket and link to RMA ticket.
+
+### Alexander Alan Arnold, 2026-07-08
+
+fedex 874117045670
+
+customer notified me that equipment has been dropped off at Fedex
+
 ### Matt Philley, 2026-07-08
 
 @Pat Wells I just spoke with Greg and @Sanjay Menon will be the focal and I will support him with the admin stuff. If both he and I are notified we can jump on it.
@@ -44,13 +95,13 @@ At approximately 1542 I commanded the VXE-40 to land at the primary landing zone
 ### Sanjay Menon, 2026-07-08
 
 @Matt Philley @Greg Fryer Initial review of the video: a clear "pop" sound followed by a puff of dust and an object travelling away from the vehicle (looks to be a broken piece of propeller).
-[embedded image-20260708-193707.png]
-[embedded image-20260708-193727.png]
-[embedded image-20260708-193757.png]
+[embedded: image-20260708-193707.png]
+[embedded: image-20260708-193727.png]
+[embedded: image-20260708-193757.png]
 
 Afterwards the right rear prop seems to be missing its blade (and/or counterweight? not totally clear in the video) and still rotating. The blade is broken off after impact, and all six screws mounting the motor remain and look like they’re tightened down:
-[embedded image-20260708-193824.png]
-[embedded image-20260708-193903.png]
+[embedded: image-20260708-193824.png]
+[embedded: image-20260708-193903.png]
 
 Motor imbalance/dynamic behavior caused by the broken prop could have then led to the composite fracture. Blade strike seems possible, although as Matt pointed out there isn't a clear mark in the expected location on the boom.
 Same result would be possible if instead the counterweight section of the prop broke first during flight. 
@@ -88,7 +139,7 @@ We will keep the case in RMA until the Fuse arrives to prevent stuff from wander
 
 CW and ESC logs have been pulled, everything is returned to RMA. Logs all located in the sharepoint folder. 
 For anyone looking at data I believe VTL00135 is the incident VTOL log
-[embedded image-20260709-223454.png]
+[embedded: image-20260709-223454.png]
 
 ### Alexander Alan Arnold, 2026-07-10
 
@@ -113,49 +164,7 @@ Who is the RDT focal for that so Sanjay can align on what content and format is 
 
 ### Eric Brewer, 2026-07-10
 
-[embedded image-20260710-185856.png]
-@Alexander Alan Arnold reviewed the flight log, there was definitely a good bit of vibe in the pitch and roll axes on the transition out.  The climb looked on the high side of normal (our abort limits are above 1 for Axyz and 30 for rpy for more than a second, so it was below that during the climbout).  It’s hard to know if the vibe was due to the hardware failure or if the vibe caused the hardware failure.  hopefully physical inspection would yield some clues here.
-
-### Alexander Alan Arnold, 2026-08-12
-
-@Sanjay Menon Has there been any major discoveries found or anything revealed for this investigation?
-
-### Sanjay Menon, 2026-08-17
-
-@Alexander Alan Arnold Narrowed down list of possible root causes currently being investigated is in the powerpoint. Currently the main threads of investigation are focused on prop testing and material analysis
-
-### Jackson Riley Curvin, 2026-10-12
-
-@Sanjay Menon  has there been any updates to this also I do not have access to the PowerPoint any more.
-
-### Sanjay Menon, 2026-10-12
-
-@Jackson Riley Curvin Added new link to the post-migration PPT, testing is still underway to try and recreate the failure
-
-### Jackson Riley Curvin, 2026-10-12
-
-@Sanjay Menon thank you!
-
-### Matt Philley, 2026-07-10
-
-@Alexander Alan Arnold is that need an output from the meeting with them today? 
-Who is the RDT focal for that so Sanjay can align on what content and format is expected for that preliminary report?
-
-### Alexander Alan Arnold, 2026-07-10
-
-@Matt Philley yes, they were pretty adamant about today in the meeting, @Jeremy White @William Doupis are the customer facing PMs. The other FSRs and I can also be pinged on format and content when there is something to go over. Root cause would be incredible but understand what would probably not happen. major concern is just alleviating operator error as contributing factor.
-
-### Jeremy White, 2026-07-10
-
-@Matt Philley Format is whatever is standard for the group.
-
-### Jackson Riley Curvin, 2026-07-10
-
-@Matt Philley @Greg Fryer @Sanjay Menon The Fuselage just arrived in the RMA area.
-
-### Eric Brewer, 2026-07-10
-
-[embedded image-20260710-185856.png]
+[embedded: image-20260710-185856.png]
 @Alexander Alan Arnold reviewed the flight log, there was definitely a good bit of vibe in the pitch and roll axes on the transition out.  The climb looked on the high side of normal (our abort limits are above 1 for Axyz and 30 for rpy for more than a second, so it was below that during the climbout).  It’s hard to know if the vibe was due to the hardware failure or if the vibe caused the hardware failure.  hopefully physical inspection would yield some clues here.
 
 ### Alexander Alan Arnold, 2026-08-12

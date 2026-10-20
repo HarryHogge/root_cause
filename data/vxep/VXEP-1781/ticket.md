@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-470 Unified AP for Block 40
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Comments (0)
 

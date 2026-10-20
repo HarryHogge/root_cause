@@ -25,7 +25,7 @@ Itemized list needs to be created, task to be assigned next sprint. Possibly.
 ### Dana Holley, 2023-09-29
 
 @Greg Fryer The flight ops team did a great job to conduct a gap analysis on what parts aren’t attached to a procedure within the Maintenance Manual. Some of these parts don’t have a description either from what we can find. The red highlights are used to display P/N’s that we deemed significant to have a procedure associated. The grayish-blue highlighted cell’s are items we believe do not need a procedure.   
-[embedded file]
+[embedded: FSK - Gap Analysis.xlsx]
 
 ## Attachments (1)
 

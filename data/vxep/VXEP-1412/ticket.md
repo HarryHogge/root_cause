@@ -28,15 +28,15 @@ Operating Stalkers 398 and 401 out here in the Shoal Water Bay Training Area for
 
 ### Jackson Riley Curvin, 2025-07-16
 
-[embedded image-20250716-131456.png]
+[embedded: image-20250716-131456.png]
 
 ### Jackson Riley Curvin, 2025-07-16
 
-[embedded image-20250716-131534.png]
+[embedded: image-20250716-131534.png]
 
 ### Jackson Riley Curvin, 2025-07-16
 
-[embedded image-20250716-131720.png]
+[embedded: image-20250716-131720.png]
 
 ### Jackson Riley Curvin, 2025-07-16
 
@@ -44,11 +44,11 @@ First look seems to have lost Satellites, around the time of launch @David Grosh
 
 ### Jackson Riley Curvin, 2025-07-16
 
-[embedded image-20250716-132007.png]
+[embedded: image-20250716-132007.png]
 
 ### Jackson Riley Curvin, 2025-07-16
 
-[embedded image-20250716-132059.png]
+[embedded: image-20250716-132059.png]
 
 ### David Grosher, 2025-07-16
 
@@ -64,7 +64,7 @@ First look seems to have lost Satellites, around the time of launch @David Grosh
 
 ### Alexander Alan Arnold, 2025-07-16
 
-[embedded image-20250716-190706.png]
+[embedded: image-20250716-190706.png]
 From the vtevlog, 
 Is the data log line sync buffer indicating a time out? 
 Also, I see the user commanded abort, but they are saying it was aborting before he selected that.

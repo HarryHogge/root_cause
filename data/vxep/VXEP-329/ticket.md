@@ -25,7 +25,7 @@
 ### Cameron Chapman, 2024-04-08
 
 @Ryan West Jimenez search that tile on the vault for the file to update. 
-[embedded image-20240408-182045.png]
+[embedded: image-20240408-182045.png]
 
 ## Attachments (1)
 

@@ -26,6 +26,11 @@ Operator says that they completed launch wizard with no issues and saw no anomal
 
 ## Comments (21)
 
+### Greg Fryer, 2024-09-05
+
+@David Grosher Another AAR read, likely just digging out the error.
+@Alexander Alan Arnold FYI, we are tracking and working the need to improve the error messaging (would hopefully cut down on incident reports, if nothing else!). Unfortunately, the AC and Ground Station don’t have a good “message” system, so we’re having to create that first. (We = SW team, not me. 🙂 )
+
 ### David Grosher, 2024-09-05
 
 @Jason Scherer This looks like another launch abort for a lost link. Can you look into it. 
@@ -95,7 +100,7 @@ What are the next steps here in terms of the operator not being able to launch. 
 ### Jason Scherer, 2024-09-27
 
 @Pat Wells @David Grosher I looked at the last AAR posted and the launch abort this time is due to a gyro fault on the VTOL processor. Previously, it was a link drop abort.
-[embedded image-20240927-214348.png]
+[embedded: image-20240927-214348.png]
 
 ### Pat Wells, 2024-09-27
 
@@ -125,10 +130,6 @@ I suspect this operator has some training deficiences.
 ### Pat Wells, 2024-11-07
 
 @David Grosher receommend we close this with no action. Last report from customer is that aircraft is functioning with no issues.
-
-### David Grosher, 2024-11-07
-
-Aircraft are operating fine.
 
 ### David Grosher, 2024-11-07
 

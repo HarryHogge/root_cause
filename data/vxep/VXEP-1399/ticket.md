@@ -11,9 +11,6 @@
 - **Assignee:** Brendan Palmer
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1333 VBN 35Y for APEX Event
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (6)
 

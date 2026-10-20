@@ -9,9 +9,6 @@
 - **Assignee:** Matthew Aguirre
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1673 Build and document EE ironbirds
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-5
-- **Issue color:** dark_teal
 
 ## Issue Status
 
@@ -30,8 +27,8 @@ Subject: Re: Iron Bird Radio Loads
 Copy. PR01301 submitted for the qty 6 terminators you need plus qty 4 for general R&D use. 
 - Wes
 
-| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded X icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: X icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 NOTICE: This message, and any attachments, contain(s) information that may be confidential, proprietary and/or protected by privilege from disclosure and is intended only for the individual or entity named above. No one else may disclose, copy, distribute or use the contents of this message for any purpose. Its unauthorized use, dissemination or duplication is strictly prohibited and may be unlawful. If you receive this message in error or you otherwise are not an authorized recipient, please immediately delete the message and any attachments and notify the sender.
 From: Cody Smisek <csmisek@edgeautonomy.io>
@@ -51,8 +48,8 @@ Yes, will procure. 
 In addition to full termination of all transmissions, is there also separately any need to have the iron birds communicate with an external Silvus radio / GCS? If so, in-line attenuators can be utilized in a conducted (RF cabled only, not radiated) run between IB radio and bench radio. This allows for comms between only the conductively-cabled radios, with no free space transmissions occurring that could leak to any antenna-equipped radio in the building. If so, I can procure hardware for such a setup as well. 
 - Wes
 
-| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded X icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: X icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 NOTICE: This message, and any attachments, contain(s) information that may be confidential, proprietary and/or protected by privilege from disclosure and is intended only for the individual or entity named above. No one else may disclose, copy, distribute or use the contents of this message for any purpose. Its unauthorized use, dissemination or duplication is strictly prohibited and may be unlawful. If you receive this message in error or you otherwise are not an authorized recipient, please immediately delete the message and any attachments and notify the sender.
 From: Cody Smisek <csmisek@edgeautonomy.io>
@@ -72,8 +69,8 @@ Yes, see the Mini-Circuits TERM-5W-183S+. Qty 2 required per (iron) bird. These 
 Would you like me to procure or do you plan to?
 - Wes
 
-| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded X icon] [embedded youtube icon] [embedded facebook icon] [embedded instagram icon] |
+| Wesley Lilienthal Senior Staff RF Engineer Mobile: 805.704.5344 wesley.lilienthal@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: X icon] [embedded: youtube icon] [embedded: facebook icon] [embedded: instagram icon] |
 
 NOTICE: This message, and any attachments, contain(s) information that may be confidential, proprietary and/or protected by privilege from disclosure and is intended only for the individual or entity named above. No one else may disclose, copy, distribute or use the contents of this message for any purpose. Its unauthorized use, dissemination or duplication is strictly prohibited and may be unlawful. If you receive this message in error or you otherwise are not an authorized recipient, please immediately delete the message and any attachments and notify the sender.
 From: Cody Smisek <csmisek@edgeautonomy.io>
@@ -85,8 +82,8 @@ Subject: Iron Bird Radio Loads
 Hey Wes
 Would you be able to point out an appropriate RF load(s) to purchase for the silvus aircraft radios that we have connected to the IBs? I don't want these radios accidentally connecting to anything else in the building, so I figure best way to do this is put a load on the end.
 Thanks
-| Cody Smisek Flight Test cody.smisek@rdw.com [embedded Redwire] |
-| [embedded linkedin icon] [embedded twitter icon] [embedded facebook icon] [embedded youtube icon] [embedded instagram icon] |
+| Cody Smisek Flight Test cody.smisek@rdw.com [embedded: Redwire] |
+| [embedded: linkedin icon] [embedded: twitter icon] [embedded: facebook icon] [embedded: youtube icon] [embedded: instagram icon] |
 
 ### Matthew Aguirre, 2026-07-14
 

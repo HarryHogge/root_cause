@@ -10,11 +10,9 @@
 - **Creator:** Scott Whitney
 - **Labels:** SB40
 - **Links:** is a parent of FS2-2799 (Utility Pylons (Previously Payload Droppers)); relates to VXEP-1560 (LRR Software for April 2026 Final Delivery); relates to VXEP-1573 (Provide summary of all ADC changes from B30 to Xkit to B40 to Scott H, then audit code changes required); relates to FS2-4133 (B40 Avionics Post MVP)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Cameron Chapman, David Grosher, Greg Fryer
 - **Project Tier:** Tier 1
 - **Charter Link:** https://jenaero.atlassian.net/wiki/spaces/SEIT/pages/885260293/Event+Page+-+Block+40+Sweden+Sverige+Customer+Delivery
-- **Company Priority:** 3.0
 
 ## Description
 

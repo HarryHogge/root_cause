@@ -16,7 +16,6 @@
 - **Production Stakeholder:** Matt Philley
 - **Engineering Change Level:** Level 0 - Scope of change is obvious to assigned engineer
 - **Leadership Stakeholder:** Desiray Johnston
-- **Is this ticket a Design Project?:** No
 - **Link to Engineering Change Notice (ECN):** ECN #53 107-101050 HIL KIT Documentation Release, Mechanical.xlsx
 
 ## Description
@@ -36,8 +35,6 @@ Track and release of the HIL mechanical documentation which was missing.
 - Check if the above includes x-plane license. - contains 100-111117 XPlane
 - Some description of the purpose of each version would be useful.
 - We should create one without a flight simulator, for ironbird, troubleshooting, etc.
-
-#
 
 ## Comments (9)
 
@@ -79,7 +76,7 @@ I am going to update the formatting of the files above, fixing outdated labels/p
 ### Greg Fryer, 2024-09-12
 
 @Gerrit Sperling We already sell the HIL, the catalog lists these numbers:
-[embedded image-20240912-233700.png]
+[embedded: image-20240912-233700.png]
 Regarding the software config, please contact @Jo Brown We have just been establishing how we document the software config of a product, and it is slightly different than our history of adding an image/installer to the BOM.
 We’ll need to decide if we should just revise the existing PN, or if now is the time to make catalog numbers. I believe the SW team is working on HIL 1.1 which will have significantly different software - so it might make sense to change to a Catalog PN when we do that, and just leave the number alone for the existing version. I am flexible.
 

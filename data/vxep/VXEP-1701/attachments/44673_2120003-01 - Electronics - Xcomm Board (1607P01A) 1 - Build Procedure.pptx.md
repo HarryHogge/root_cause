@@ -292,7 +292,7 @@ Using a web browser, navigate to the XCOMM2 page: 10.0.0.200
 Note: if you cannot connect, try this address: 192.168.10.70
 Login to the webpage using the standard credentials:
 Username: stalker
-Password: $talkerXE240
+Password: [password removed]
 2026-02-09
 Redwire Proprietary Information
 19
@@ -581,7 +581,7 @@ Redwire Proprietary Information
 Navigate on the laptop to the XCOMM interface at 10.128.1.2 using a web browser
 Login in using the default credentials
 Username: stalker
-Password: $talkerXE240
+Password: [password removed]
 Verify the system time field says a minimum of 6 hours
 Any less than 6 hours, as pictured above, is considered a failure and requires a retest or NCR
 If testing a batch of boards, ensure you are looking at the matched board and traveler by using the numbers on the burn in harnesses matched with the ethernet ports you are plugged into as you test each board

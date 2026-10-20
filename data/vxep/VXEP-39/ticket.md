@@ -36,7 +36,7 @@ FYSA this issue was brought up internally as well. We coordinated to enlarge the
 https://jenaero.atlassian.net/browse/ENG-1344 
 
 Additionally we have purchased a tool for SCO Flight Test to de-mate the connector so folks dont run their hand into the fuse during the initial “break loose” so if whoever investigates this connectors with Flight Test they should show you that.
-[embedded file]
+[embedded: IMG_0273.MOV]
 
 ### Cameron Chapman, 2023-08-29
 

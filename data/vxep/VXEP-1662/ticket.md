@@ -11,7 +11,6 @@
 - **Assignee:** John Molina
 - **Creator:** Michael Mohr
 - **Labels:** EAASSET, Weekly-incident-tracker
-- **Issue color:** dark_purple
 - **Vehicle Tail Number:** VXE-734
 
 ## Description

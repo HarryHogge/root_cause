@@ -12,9 +12,6 @@
 - **Creator:** Jeremy Kostel
 - **Parent:** VXEP-1667 New EE/Intern/Specialist Projects
 - **Links:** relates to XKIT-5559 (EE B35/B40 V2 Wishlist)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 
 ## Description
 

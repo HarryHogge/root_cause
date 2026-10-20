@@ -54,8 +54,8 @@ Damage to LEMB circuits due to transients created noise on the CAN bus, which le
 Initial Finding is that VTOL was put into RC mode just prior to completing launch. RC mode is supposed to be limited to Engineering. Looking into it further.  Some plots from @Eric Brewer added. RC commands were received. Current suspicion is that U-drive was intended. 
 
 
-[embedded image-20251024-002916.png]
-[embedded image-20251024-002925.png]
+[embedded: image-20251024-002916.png]
+[embedded: image-20251024-002925.png]
 
 
 [13:05:17.451 920.451] rc activated
@@ -73,7 +73,7 @@ Further updates: The RC commands were sent to the VTOL from the FW AP.  It appea
 ### Jeremy Kostel, 2025-11-12
 
 CAN captures with LEMB on the bus:
-[embedded file]
+[embedded: 35X CAN Captures.zip]
 
 ### Eric Brewer, 2026-04-27
 

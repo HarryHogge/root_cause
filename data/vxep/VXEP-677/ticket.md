@@ -15,15 +15,14 @@
 - **Parent:** VXEP-675 Practice Build - 101-118007-01 & -02, Wire Harness Extensions
 - **Epic Link:** VXEP-675
 - **Start date:** 2024-09-30
-- **Issue color:** purple
 
 ## Description
 
 Production Redlines from Practice Build:
 PEEK Braiding PN: 100-106137
-[embedded Image (10).jfif]
+[embedded: Image (10).jfif]
 
-[embedded Image (9).jfif]
+[embedded: Image (9).jfif]
 Switching one of the Black-Blue-Red bundles to another color scheme to reduce confusion. Options below: 
 | WIRE, TWISTED BUNDLE (3), PTFE, 19 STRAND, 600V, 26 AWG, BLACK-ORANGE-GREEN | 100-111437 |
 | WIRE, TWISTED BUNDLE (3), PTFE, 19 STRAND, 600V, 26 AWG, RED-BLACK-SLATE | 100-111428 |

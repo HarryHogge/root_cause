@@ -12,9 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** relates to VXEP-926 (Make VXE30 and Havoc NDAA Compliant); relates to VXEP-872 (Updated Silvus Ground Control Station (SGCS1), increased performance and security); blocks ENG-3251 (Vendor PN RZ06-0356, IPN 100-112998 is obsolete. We have material to cover current loaded demand until Nov 2025. )
-- **Issue color:** purple
-- **Is this ticket a Design Project?:** Yes
-- **Current Sprint Priority:** 10.0
 - **LRR Desired Delivery Date:** 2025-03-01
 - **LRR Required Delivery Date:** 2025-03-01
 - **Product/Tech Owner:** Greg Fryer

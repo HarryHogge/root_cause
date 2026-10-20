@@ -11,7 +11,6 @@
 - **Assignee:** Ryan Babigian
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-902 LRR March Delivery
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR)
 

@@ -17,14 +17,14 @@
 
 Brendan Palmer has been assigned to prepare a semi-finished HIL kit (~75%) to support Matt Weber in the design process. The goal is to provide physical reference points to enhance the accuracy and efficiency of the design work.
 
-### Deliverables:
+**Deliverables:**
 
 
 Semi-finished HIL kit (~75%) delivered to Matt WeberDocumentation of included and missing componentsConfirmation from Matt Weber on kit adequacy for design reference
 
 ## Plan
 
-### Action Items:
+**Action Items:**
 
 - Prepare Semi-Finished HIL Kit:
 - Identify and gather components to assemble a 75% complete HIL kit.

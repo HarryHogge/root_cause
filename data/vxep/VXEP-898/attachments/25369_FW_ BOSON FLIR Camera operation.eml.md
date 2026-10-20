@@ -12,18 +12,17 @@ Latest on what I sent earlier…  The modification to the SLA-3000-FPC is to cut
 Thanks,
 John
 
-From: Nick Whaley <nick.whaley@sightlineapplications.com>
+From: Nick Whaley
 Sent: Monday, December 23, 2024 1:14 PM
-To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io>; SightLine Sales <sales@sightlineapplications.com>
-Cc: John Gober <jgober@edgeautonomy.io>; SightLine Support <support@sightlineapplications.com>
+To: Raj Budhabhatti; SightLine Sales
+Cc: John Gober; SightLine Support
 Subject: RE: BOSON FLIR Camera operation
 
 Hi,
 
-I will get the instructions today. Our fantastic @SightLine Sales<mailto:sales@sightlineapplications.com> group can assist you with getting a quote for MIPI IN board(s).
+I will get the instructions today. Our fantastic @SightLine Sales group can assist you with getting a quote for MIPI IN board(s).
 
 As I understand it, once the traces are cut, you can use the Boson camera on J6 of the 1750-OEM (cam0). I don’t have access to that hardware to test and happy to assist if there are any issues.
-
 
 Rework Instructions:
 Overview
@@ -32,14 +31,13 @@ The 1750-OEM when attached to SLA-3000-FPC and FPC-BOSON adapter board don’t w
 Modifications
 
   1.  Cut the traces as shown in the diagram:
-[cid:image003.png@01DB552B.D18F5D70]
+[cid:[email]]
   2.  Use Humiseal 1A33 or a similar epoxy product to seal over the cut traces.
-
 
 Thanks,
 Nick
 
-Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    +1 858 752 7315 mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399648386%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Zr4t%2BNprAMb5k5EsSznYAPWFMSGtbGezE2IVM3W5ivc%3D&reserved=0>
+Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    [phone] mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399648386%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Zr4t%2BNprAMb5k5EsSznYAPWFMSGtbGezE2IVM3W5ivc%3D&reserved=0>
 
 Please note our NEW PORTLAND ADDRESS is:
 5711 S Hood Ave., Suite A
@@ -48,11 +46,10 @@ Update your records to avoid any delays in mail and shipping.
 
 SightLine's offices will be closed from December 24th-January 1st in celebration of the holidays. Thank you for your understanding and patience.
 
-
-From: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
+From: Raj Budhabhatti
 Sent: Monday, December 23, 2024 11:00 AM
-To: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Nick Whaley
+Cc: John Gober; SightLine Support
 Subject: Re: BOSON FLIR Camera operation
 
 Hi Nick,
@@ -62,48 +59,30 @@ I understand that you will be away 12/24-1/2 and I will be away 12/29-1/10 so I 
 Thank you for your excellent support,
 Raj
 
-
 ________________________________
-From: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
+From: Nick Whaley
 Sent: Monday, December 23, 2024 10:54 AM
-To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Raj Budhabhatti
+Cc: John Gober; SightLine Support
 Subject: RE: BOSON FLIR Camera operation
-
 
 I don’t see the MIPI IN board in your picture. See section 7.3 of EAN-ICD-Adapter Boards<https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsightlineapplications.com%2Fwp-content%2Fuploads%2FICD-Adapter-Boards.pdf%23page%3D18&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399670976%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=o40zvnW32iDdQWznCV8xHLFGPv9w2pCOWG6DtFVpDTo%3D&reserved=0> and the screenshot below.
 
-
-
 I have contacted our hardware group and will follow up with you when I have the instructions. Basically, its cutting a trace.
 
-
-
 If you choose to modify the 3000-FPC by cutting a trace, please note that doing so yourself will void the warranty on the adapter board. However, if we perform the rework for you, the warranty will remain intact.
-
-
 
 Thanks,
 
 Nick
 
+[cid:[email]]
 
-
-[cid:image001.png@01DB552A.5A8CDCD0]
-
-
-
-
-
-
-
-From: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
+From: Raj Budhabhatti
 Sent: Monday, December 23, 2024 10:31 AM
-To: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Nick Whaley
+Cc: John Gober; SightLine Support
 Subject: Re: BOSON FLIR Camera operation
-
-
 
 Thank you Nick!
 
@@ -119,49 +98,27 @@ Thank you Nick,
 
 Raj
 
-
-
-
-
 Get Outlook for iOS<https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2Fo0ukef&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399686264%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=vsMhtLwncg5Ouk89aRkrWeuLZS3JIAWfaGjhnwrvWJc%3D&reserved=0>
 
 ________________________________
 
-From: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
+From: Nick Whaley
 Sent: Monday, December 23, 2024 10:21:24 AM
-To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Raj Budhabhatti
+Cc: John Gober; SightLine Support
 Subject: RE: BOSON FLIR Camera operation
-
-
 
 Hi Raj,
 
-
-
 Happy to help. Keep sending all your questions!
-
-
 
 I would try the MIPI IN board + the 3000-FPC as a workaround for now. Remember, the acquisition settings will need to be for Cam1.
 
-
-
 Would you like the rework instructions for the 3000-FPC mod, or would you like to return the boards so we can rework them?
-
-
-
-
-
-
 
 -Nick
 
-
-
-Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    +1 858 752 7315 mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399700335%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=m2d8rmK65rJXirYWvaIpFzGexn47RDhz9WhU6BEHqaU%3D&reserved=0>
-
-
+Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    [phone] mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399700335%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=m2d8rmK65rJXirYWvaIpFzGexn47RDhz9WhU6BEHqaU%3D&reserved=0>
 
 Please note our NEW PORTLAND ADDRESS is:
 
@@ -171,23 +128,13 @@ Portland, OR 97239
 
 Update your records to avoid any delays in mail and shipping.
 
-
-
 SightLine's offices will be closed from December 24th-January 1st in celebration of the holidays. Thank you for your understanding and patience.
 
-
-
-
-
-
-
-From: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
+From: Raj Budhabhatti
 Sent: Monday, December 23, 2024 9:42 AM
-To: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Nick Whaley
+Cc: John Gober; SightLine Support
 Subject: Re: BOSON FLIR Camera operation
-
-
 
 Hi Nick,
 
@@ -197,51 +144,29 @@ I have attached Boson through 3000-FPC-BOSON-E board. Here is the pic. I will tr
 
 Raj
 
-
-
-
-
 Get Outlook for iOS<https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2Fo0ukef&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399713861%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=M6auMWVu8%2B6PiTJHVMULzJrp7KFV%2Fi55tYRLdCS4idU%3D&reserved=0>
 
 ________________________________
 
-From: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
+From: Nick Whaley
 Sent: Monday, December 23, 2024 8:52:25 AM
-To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>; SightLine Support <support@sightlineapplications.com<mailto:support@sightlineapplications.com>>
+To: Raj Budhabhatti
+Cc: John Gober; SightLine Support
 Subject: RE: BOSON FLIR Camera operation
-
-
 
 Hi Raj,
 
-
-
 I suspect this may be related to the Boson being on Cam0. Can you confirm you're using Cam0 (J6 input on 1750-OEM)? It requires a modified 3000-FPC to support Cam0. As a workaround, you can connect it to Cam1 (if you have the MIPI IN board). Please send a picture of your set up.
 
-
-
-[cid:image002.png@01DB552A.5A8CDCD0]
-
-
+[cid:[email]]
 
 I will follow up with the instructions once I find them 😊.
-
-
-
-
-
-
 
 Best regards,
 
 Nick
 
-
-
-Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    +1 858 752 7315 mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399727293%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=cYlEa4i9wDfE8uM6jPLCxkQxIcXTYb7i2Tfe2MDAD4s%3D&reserved=0>
-
-
+Nick Whaley | Support Group Lead | SightLine Applications, Inc | Onboard Video Processing  he/him    [phone] mobile | www.sightlineapplications.com<https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.sightlineapplications.com%2F&data=05%7C02%7Cggoodman%40edgeautonomy.io%7C981b37ff04a04910a28008dd238b4e20%7C1876f61a3bdb4843ae7075ed0ccb7404%7C0%7C0%7C638705803399727293%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=cYlEa4i9wDfE8uM6jPLCxkQxIcXTYb7i2Tfe2MDAD4s%3D&reserved=0>
 
 Please note our NEW PORTLAND ADDRESS is:
 
@@ -251,23 +176,13 @@ Portland, OR 97239
 
 Update your records to avoid any delays in mail and shipping.
 
-
-
 SightLine's offices will be closed from December 24th-January 1st in celebration of the holidays. Thank you for your understanding and patience.
 
-
-
-
-
-
-
-From: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io<mailto:rbudhabhatti@edgeautonomy.io>>
+From: Raj Budhabhatti
 Sent: Friday, December 20, 2024 4:13 PM
-To: Nick Whaley <nick.whaley@sightlineapplications.com<mailto:nick.whaley@sightlineapplications.com>>
-Cc: John Gober <jgober@edgeautonomy.io<mailto:jgober@edgeautonomy.io>>
+To: Nick Whaley
+Cc: John Gober
 Subject: BOSON FLIR Camera operation
-
-
 
 Hello Nick,
 
@@ -283,25 +198,8 @@ Thank you Nick,
 
 Raj
 
-
-
-
-
 Staff Electrical Engineer
 
 Edge Autonomy
-
-
-
-** WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
-
-
-
-** WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
-
-
-** WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
-
-** WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
 
 Attached to this email (not converted): image001.png, image002.png, image003.png

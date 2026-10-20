@@ -9,7 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Scott Whitney
 - **Links:** relates to VXEP-1512 (SB40 Software (Release 6.7.0)); relates to VXEP-1296 (AION First Customer Release); relates to VXEP-792 (Visual Based Navigation (VBN)); relates to VXEP-1231 (Training Software in the Loop (SIL)); relates to MS-1124 (E140 Payload VSM (PVSM))
-- **Is this ticket a Design Project?:** No
 - **Key Stakeholder(s):** Addison Osborn, David Grosher, Eric Brewer, Greg Fryer, Justin Peterson, Ted Trowbridge, Travis Blaschke
 
 ## Description

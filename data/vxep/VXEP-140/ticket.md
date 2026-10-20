@@ -57,7 +57,7 @@ The excerpt below covers the order of operations for assembly which describes to
 Trevor G and his Production Engineering team currently have the ball to document SCO procedures since SCO is still under Operations. 
 There has not been any communication about a production stoppage related to this, just the NCRs for AC 565 and replacing components now that they have scorch marks. All other aircraft will be assembled and tested the same way unless someone else steps in to say there is a large enough problem to stop and change.
 Right now we just have a single NCR and SCO saying they have not changed they way they are doing things… so unless we have more NCR’s for damaged components or someone else raises a flag then QA does not have reason to put a hold on SCO. 
-[embedded file]
+[embedded: image-20231010-183953.png]
 
 ### Connor Peebles, 2023-10-11
 

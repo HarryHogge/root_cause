@@ -86,7 +86,7 @@ I think this issue will require a high priority SB and/or AD (the definitions se
 We still need to finalize specifics, but the the actions are summarized in slide 3 of this ppt. https://jenaero.sharepoint.com/:p:/s/ContinuousImprovement/EUP5VvyBE09Mte_5wSGWcHUBXCvOKny6UYF6mzoYLSLRWw?e=s3wCj5 . I will create a task to create these documents. 
 
 Latest EA definitions from Dana 
-[embedded file]
+[embedded: image-20230907-150453.png]
 
 ### Matt Philley, 2023-09-07
 
@@ -99,7 +99,7 @@ SB/AD make sure they include:
 ### Cameron Chapman, 2023-09-07
 
 New finding. One of the 511 flights does seem to have much higher current and power than normal. More analysis needed, but this may indicate the cause was more environmental than the connector not being plugged in far enough (both could still contribute). 
-[embedded file]
+[embedded: image-20230907-221852.png]
 
 ### Matt Philley, 2023-09-11
 

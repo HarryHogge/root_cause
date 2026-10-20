@@ -75,12 +75,12 @@ FYI @David Grosher
 ### Cody Smisek, 2024-12-12
 
 Fuel cell ripping 500W. Where’s all the energy going?
-[embedded newplot (3).png]
+[embedded: newplot (3).png]
 
 ### Cody Smisek, 2024-12-12
 
 Now that is some in flight icing!
-[embedded image-20241212-202843.png]
+[embedded: image-20241212-202843.png]
 
 ### Cody Smisek, 2024-12-17
 

@@ -13,7 +13,6 @@
 - **Creator:** Scott Whitney
 - **Labels:** TIQUILA
 - **Links:** relates to VXEP-1444 (OGCS 1.3.1)
-- **Is this ticket a Design Project?:** No
 - **Key Stakeholder(s):** David Grosher, Douglas Baker, Ted Trowbridge
 - **Project Tier:** Tier 2
 - **Project Schedule:** https://jenaero.atlassian.net/wiki/spaces/SEIT/pages/761856210/Project+Charter+-+OGCS+1.3

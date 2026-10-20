@@ -48,21 +48,21 @@ Determine if the Operators Manual or Training needs to be updated so that operat
 ### John Clark, 2024-06-28
 
 FW FDR suggests loss of GPS signal
-[embedded image-20240628-154910.png]
+[embedded: image-20240628-154910.png]
 
-[embedded image-20240628-154821.png]
+[embedded: image-20240628-154821.png]
 
 ### John Clark, 2024-06-28
 
 Also, available in XComm. Note tha DR (Dead Reckoning) is a directive caused by loss of GPS
 
-[embedded image-20240628-160047.png]
+[embedded: image-20240628-160047.png]
 
-[embedded image-20240628-155845.png]
+[embedded: image-20240628-155845.png]
 
-[embedded image-20240628-155639.png]
+[embedded: image-20240628-155639.png]
 
-[embedded image-20240628-155528.png]
+[embedded: image-20240628-155528.png]
 
 ### David Grosher, 2024-08-12
 

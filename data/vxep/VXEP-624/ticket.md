@@ -9,7 +9,6 @@
 - **Resolved:** 2024-09-11
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
-- **Issue color:** purple
 
 ## Comments (0)
 

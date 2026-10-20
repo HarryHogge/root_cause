@@ -35,7 +35,7 @@ SA Cam shows a launch and at a higher altitude ~100ft a pitch up and roll right.
 AAR data confirms at ~100ft a pitch up and roll right (uncommanded) followed by rapid descent in VTOL with uncommanded yaw. 
 Motor 3 throttle is sustained high when issue occurs. Indicating motor 3 (rear right motor) is likely the cause of issue. 
 Additionally, it appears operator commanded a VTOL abort after the initial pitching/rolling (at 793sec). 
-[embedded image-20260806-161340.png]
+[embedded: image-20260806-161340.png]
 
 ## Comments (6)
 

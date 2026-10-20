@@ -18,7 +18,7 @@
 
 ### Carl Graf, 2025-08-04
 
-[embedded image-20250805-003717.png]
+[embedded: image-20250805-003717.png]
 
 ## Attachments (1)
 

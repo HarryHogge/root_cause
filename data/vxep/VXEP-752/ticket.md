@@ -70,7 +70,7 @@ Latest plan (updated 11/19, outdated now, needs an update)
 - Test with full weight config full endurance. 
 - Check previous flight test plan, abort limits, etc. 
 - Update RTB and land immediately voltages for this battery. 
-[embedded image-20241118-191247.png]
+[embedded: image-20241118-191247.png]
 - https://jenaero.atlassian.net/browse/VXEP-782 
 - Manual says 20-32VDC. Custom harness regulator used was 9-36V. Payloads documented here. VXE Payload List.xlsx
 - Ship to HSV for Orbital Integration testing by 1st week of December 2024
@@ -95,7 +95,7 @@ Latest plan (updated 11/19, outdated now, needs an update)
 I reviewed the data and provided a suggested parameter update to resolve the jumps in state of charge. Thanks to @Everett Werner for some help as well.
 Old vs. new with the param update is shown here:
 
-[embedded image-20241031-191830.png]
+[embedded: image-20241031-191830.png]
 
 ### Greg Fryer, 2024-10-31
 
@@ -104,7 +104,7 @@ Looks promising! Need to review (2nd set of eyes who knows how the data is used.
 
 ### Rodney Linch, 2024-11-01
 
-[embedded file]
+[embedded: Prototype Main Battery Test Plan.docx]
 @Connor Peebles , for everyone’s awareness, can you verify that we (SLO) will also conduct ESR testing and forgo Low Voltage Testing?
 
 ### Connor Peebles, 2024-11-01

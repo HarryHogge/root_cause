@@ -11,9 +11,6 @@
 - **Assignee:** Abel J. Markow
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-183 Establish aircraft grounding, bonding, shielding, etc. status and roadmap.
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 
 ## Description
 

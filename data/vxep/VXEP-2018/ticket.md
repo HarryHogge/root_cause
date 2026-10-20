@@ -31,7 +31,7 @@ Logs appear to be xcl00607 and vtl00279
 
 ### Jeremy Kostel, 2026-10-09
 
-[embedded image-20261009-194437.png]
+[embedded: image-20261009-194437.png]
 Quick look at the data, FWD motor did come back on when commanded via the AP
 
 ### Alexander Alan Arnold, 2026-10-12

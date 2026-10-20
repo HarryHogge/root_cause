@@ -30,7 +30,7 @@ Once the schematic is complete, we want to document cables to connect the the tr
 ### Maxime Jeanneau, 2023-04-20
 
 So far have the Multi Board Schematic up and connected, note doted lines are b2b connections, solid ribbon cable. File is saved to One Drive.
-[embedded file]
+[embedded: step1.PNG]
 Awaiting extra information for the transponder/ethernet additions.
 
 ### Maxime Jeanneau, 2023-04-20

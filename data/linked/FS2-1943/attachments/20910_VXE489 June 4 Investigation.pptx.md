@@ -1,0 +1,252 @@
+# VXE489 June 4 Investigation.pptx
+
+Attachment 20910, pptx, 17359 KB, added 2024-06-11 by John Clark.
+
+## Slide 1
+
+Investigation Report
+VXE489 Erratic Landing Behavior 6/4
+
+Author: Flight Systems Team
+June 6, 2024
+[picture]
+[picture]
+
+## Slide 2
+
+VXE30 - Issue Resolution Process
+User
+Creates Incidence Report (IR)
+User Assembles After Action Report (AAR)
+EA Assembles Incidence Response Team (IRT)
+User Secures Aircraft
+User Packages Aircraft and Ships to EA Depot
+EA Receives Aircraft
+IRT reviews IR and AAR
+IRT Inspects Aircraft
+IRT requests additional info from customer
+(phone, email, zoom, etc.)
+IRT releases first-look report (FRP)
+IRT creates list of aircraft tail-numbers affected by the incidents
+IRT creates list of affected customers
+IRT creates Interim Containment Report (ICR)
+IRT creates Airworthiness Directive (AWD)
+IRT publishes AWD
+Affected customers are alerted to AWD
+Is AWD Required
+Yes
+EA Assembles Root Cause Investigation Team (RCIT)
+Investigate Root Cause
+RCIT Releases Root Cause Report (RCR)
+EA Assembles Corrective Action Team (CAT)
+CAT Creates List of Corrective Actions
+Funded
+Fixes
+Unfunded
+Fixes
+Software
+Issue
+Add to Prioritized UFR List
+Estimate Cost & Schedule
+Hardware
+Issue
+Training
+Issue
+Maint
+Issue
+QA
+Issue
+Fix Code
+Bench
+Test
+HIL Test
+Flight
+Test
+Release
+Software
+Upgrade
+Create Service Bulletin
+Alert Users
+Publish Service Bulletin and SW
+Prelim
+Design
+Final
+Design
+Build
+Prototype
+Bench Test
+Prototype
+Flight Test
+Prototype
+Create Service Bulletin
+Ship to Customers
+Publish
+Service
+Bulletin
+Production
+Design
+Production SCM Plan
+Build
+Kits
+Identify Training Gap
+Create
+Operational Supplement
+Update Training Curriculum
+Update User Manual
+Alert Users
+Identify MTBF Gaps
+Update Sparing Plan
+Update Maint
+Manual
+Create Service Bulletin
+Release 
+Updated
+Maint
+Manual
+Publish
+Service
+Bulletin
+D6
+D7
+Create Correction Action Plan (CAP) for SCM and Production
+Implement CAP in SCM and Production
+Add to Lessons
+Learned
+Document
+D1 – Form Team
+D3 – Interim Containment
+D4 – Find Root Cause
+D5 – Define Corrective Action
+D6 – Implement and Verify Corrective Action
+D7 – Prevention
+D8 - Done
+D2 – Define The Problem
+D5
+D3
+D8
+D4
+Debrief Customers
+Closed
+With
+UFRs
+UFR
+Added?
+No
+Yes
+Send UFR Description
+To Customer
+Closed
+Alert Users
+Create and Release Airworthiness Directive (AWR) If Required
+Publish Operational
+Supplement
+Verify Root Cause
+Brief Customer on UFR
+Create HIL/Flight Test Cards
+Update Regression Tests for HIL and Flight Test
+Are Fixes Required?
+CAT Creates Corrective Action Plan and Releases Corrective Action Report (CAR)
+Yes
+No
+D4
+Is Safety Alert Required
+IRT creates
+Safety Alert
+IRT publishes Safety Alert
+Funding Available to Fix Issue
+No
+No
+Yes
+
+## Slide 3
+
+Investigation Overview – Status: INVESTIGATING – D4
+Edge Autonomy Proprietary Information
+Erratic Landing Behavior
+Wind may have caused weathervaning
+and altitude loss at or prior to transition to VTOL
+[picture]
+[picture]
+[picture]
+Investigated but inconclusive
+Not the root cause or contributing factor
+Root cause or contributing factor
+Next Steps:
+Conclusion & Corrective Action:
+
+Winds at altitude were greater than expected
+AC lost altitude at or prior to transition
+AC recovered and landed normally
+Jclark Assigned
+…
+[picture]
+Altitude loss occurred before 
+or during VTOL transition
+Ongoing improvements to 
+Autopilot to improve performance
+Altitude set point was commanded
+by autopilot
+
+## Slide 4
+
+Incident Summary
+Reporter LM FSR
+Severity:
+Comments
+Conclusion
+Edge Autonomy Proprietary Information
+On two successive flights, following the landing transition, the aircraft swapped directions, rapidly lost altitude, and then recovered to a nominal landing. Constraints of the landing zone necessitated landing with a tailwind so weathervaning was expected. Landing on 4 June winds were 7mph. The aircraft’s behavior was the same even with lighter winds. Would like an analysis of this behavior to determine if the aircraft is safe to continue flight operations.
+Winds reported at 7mph.
+Actual winds measured in flight were 10-13mph
+Actual winds measured at VTOL transition were 
+changing direction.
+Wind speed and direction may have been 
+underestimated.
+[chart: apWind measured in Flight]
+
+## Slide 5
+
+Analysis
+From Supplied Data
+Observation
+Edge Autonomy Proprietary Information
+Aircraft heading change Southwesterly to due North at VTOL.
+Heading shift at due North creates the zero drop.
+Yaw and Heading near and at time of VTOL Transition were changing direction.
+[chart: Heading Changes]
+[chart: VTOL Throttles]
+
+Speaker notes:
+SW release workflow, simulated flight hours prior to flight test, phased implementation, GNSS denied testing, regression testing refinement.
+
+## Slide 6
+
+Analysis
+From Supplied Data
+Observed altitude loss prior to VTOL or at transition.
+Observation
+Edge Autonomy Proprietary Information
+VTOL logs suggest altitude loss occurred prior or during, not after transition.
+[chart: Altitude in Flight]
+[chart: Boom Currents]
+
+Speaker notes:
+SW release workflow, simulated flight hours prior to flight test, phased implementation, GNSS denied testing, regression testing refinement.
+
+## Slide 7
+
+Analysis
+From Supplied Data
+Aircraft appears to be in landing pattern in preparation for transition.
+Observation
+Edge Autonomy Proprietary Information
+Altitude loss (blue) prior to VTOL was commanded by the Autopilot (orange).
+[chart: Altitude Loss and Recovery]
+
+Speaker notes:
+SW release workflow, simulated flight hours prior to flight test, phased implementation, GNSS denied testing, regression testing refinement.
+
+## Slide 8
+
+[picture]
+[picture]

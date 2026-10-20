@@ -17,7 +17,7 @@
 Ideas: 
 - Test impedance of mated connector pair with standard mating connector. Inspect for gap as well.
 
-[embedded image-20240823-211909.png]
+[embedded: image-20240823-211909.png]
 Figure 3: MB1976 with Test Harness Connector Depressed as much as Possible – Visible Gap
 
 ## Issue Status

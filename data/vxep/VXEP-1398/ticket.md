@@ -35,7 +35,7 @@ Hey @Alex Senita , any additional information required to triage this battery? L
 
 ### Jackson Riley Curvin, 2025-07-17
 
-[embedded image-20250717-180938.png]
+[embedded: image-20250717-180938.png]
 
 ### Jackson Riley Curvin, 2026-06-30
 

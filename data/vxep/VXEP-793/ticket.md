@@ -12,16 +12,12 @@
 - **Assignee:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Epic Name:** PRR - Open Actions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Description
 
 Epic created to track the open actions from the Production Readiness Review held on 11/22/24 which we agreed to Move Forward with Actions.
 
-[embedded image-20241126-182757.png]
+[embedded: image-20241126-182757.png]
 
 ## Comments (2)
 

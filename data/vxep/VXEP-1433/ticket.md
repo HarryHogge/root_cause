@@ -23,18 +23,18 @@ Vault: "C:\JAI Vault 1\Projects\129 - LRR\Electrical Design\Wire Harness\2124774
 ### Connor Peebles, 2025-07-25
 
 assigning @Daniel Herrera to create drawing for following napkin sketch. You’ll have to create the harness document; I have not yet
-[embedded image-20250725-200753.png]
+[embedded: image-20250725-200753.png]
 
 ### Connor Peebles, 2025-07-31
 
 updated napkin drawing: we want the shield to go all the way between the two connectors and terminate
 @Daniel Herrera 
-[embedded Screenshot 2025-07-31 124554.png]
+[embedded: Screenshot 2025-07-31 124554.png]
 
 ### Connor Peebles, 2025-08-01
 
 Updated napkin drawing: go up to 20” nominal @Daniel Herrera 
-[embedded image-20250801-213348.png]
+[embedded: image-20250801-213348.png]
 
 ## Attachments (3)
 

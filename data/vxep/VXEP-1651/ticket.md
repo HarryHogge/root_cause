@@ -9,9 +9,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** Electronics_Drafting
 - **Parent:** PLD-144 Release Architecture and interconnect diagrams for E95 then E140
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 
 ## Description
 
@@ -20,17 +17,17 @@ Plan: I think we can/should make a universal GSC to be compatible with both E95 
 
 
 Gimbal harness
-[embedded image-20251217-205814.png]
+[embedded: image-20251217-205814.png]
 Branch cable 
-[embedded image-20251217-205832.png]
+[embedded: image-20251217-205832.png]
 
 
 Teams message John Gober: Here is the LV Ground Support Cable revised for use with the new regul... | Octopus Tagup | Microsoft Teams
 Here is the LV Ground Support Cable revised for use with the new regulator/PCB/mount.  Also on the vault.  Two first articles have been made. David was using one for his stand testing. Sending the second to Connor as soon as I can check with Mike. 
 Rework EH-003-012-00 REV - to 2129334-01 REV A1 (Draft-NFP).pdf
  
-[embedded image-20251217-203139.png]
-[embedded image-20251217-203130.png]
+[embedded: image-20251217-203139.png]
+[embedded: image-20251217-203130.png]
 Here is the analysis 
 
  

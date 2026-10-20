@@ -11,9 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Christa Meck
 - **Parent:** VXEP-574 Minor Sustainment: VXE30 fixes and improvements
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 - **Job Number:** J100078 - Sustainment: VXE-30
 
 ## Description

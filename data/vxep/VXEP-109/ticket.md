@@ -21,7 +21,7 @@ We are seeing an increasing number of test failures that may be attributed to th
 Test Procedure: 107-101141 - Final Assembly - Air Data Pod (ADP HIL) - Procedure (Doc# 111270)
 
 Test Setup: 
-[embedded file]
+[embedded: image-20230824-192128 (9ff6f971-1e42-4256-8ca6-b7bf1a396dcf).png]
 
 Issues:
 Tubing shows wear throughout setup

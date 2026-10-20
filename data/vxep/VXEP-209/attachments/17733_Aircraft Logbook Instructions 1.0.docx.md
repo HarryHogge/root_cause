@@ -20,7 +20,7 @@ Aircraft Logbook Instructions
 
 ## Fixed Wing Autopilot FW, Fixed Wing Autopilot S/N, Fixed Wing Checksum, XCOMM FW, XCOMM Checksum, VTOL Autopilot FW, VTOL Autopilot Checksum can all be located on the Help tab > About > About GCS window.
 
-## XCOMM S/N and VTOL Autopilot S/N can be located using the IP Adress Calculator tool. Open Tools>IP Address Calculator to display various system IP addresses, and click “Open” for both XCOMM and VTOL windows. When prompted, log-in with Username: stalker Password: $talkerXE240. The following windows containing XCOMM S/N and VTOL Autopilot S/N will open:
+## XCOMM S/N and VTOL Autopilot S/N can be located using the IP Adress Calculator tool. Open Tools>IP Address Calculator to display various system IP addresses, and click “Open” for both XCOMM and VTOL windows. When prompted, log-in with Username: stalker Password: [password removed] The following windows containing XCOMM S/N and VTOL Autopilot S/N will open:
 
 ## Supplemental Documentation
 

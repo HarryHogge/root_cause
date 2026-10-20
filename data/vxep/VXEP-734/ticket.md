@@ -11,9 +11,6 @@
 - **Assignee:** Dana Holley
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 - **Job Number:** J100084 - VXE Incident Investigation
 
 ## Description

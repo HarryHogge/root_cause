@@ -11,12 +11,12 @@
 - **Creator:** Hayden Jeanor
 - **Parent:** VXEP-1003 LEMB Test Plan and Execution
 - **Epic Link:** VXEP-1003
-- **Issue Status:** [embedded image-20250402-170245.png]
+- **Issue Status:** [embedded: image-20250402-170245.png]
 
 ## Plan
 
 create new variant of BMS board for all future design that leave R31 and R45 unpopulated. leaving EN floating results in always enabled. 
-[embedded image-20250402-183206.png]
+[embedded: image-20250402-183206.png]
 
 ## Comments (2)
 

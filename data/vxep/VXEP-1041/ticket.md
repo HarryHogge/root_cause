@@ -11,9 +11,6 @@
 - **Assignee:** Hayden Jeanor
 - **Creator:** Erik Hanson
 - **Parent:** VXEP-1040 LEMB Integration and Testing
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 
 ## Description
 

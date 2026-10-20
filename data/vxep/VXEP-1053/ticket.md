@@ -14,11 +14,11 @@
 
 ## Description
 
-## MOVED TO VA-2507
+**MOVED TO VA-2507**
 
 Qty 6 new SGCS1 cases arrived (2121965-01) but it is impossible to retrieve the lower 2 Silvus batteries unless they are in a plastic bag. Assuming the customer will take the batteries out of the bag, we need to open up the foam to include thumb slots. 
 Production has reworked 1 case to cut additional 3.5” x .75” slots on the 4 slots surrounding the battery cavities, and that seemed to have worked.
-[embedded image-20250226-193007.png]
+[embedded: image-20250226-193007.png]
 
 ## Comments (2)
 

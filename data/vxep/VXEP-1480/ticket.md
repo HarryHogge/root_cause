@@ -42,11 +42,11 @@ This appears to have been actively landing in VTOL for about 18 minutes. Additio
 ### Eric Brewer, 2025-08-22
 
 @David Grosher this looks like it was outside the wind limits and just couldn’t descend.  It is holding station in VTOL with motors bouncing off the rails low
-[embedded image-20250822-164651.png]
-[embedded image-20250822-164803.png]
+[embedded: image-20250822-164651.png]
+[embedded: image-20250822-164803.png]
 Also do you know if this was in theater? The altitude estimate above takeoff point goes negative - so either they took off from a hill and flew into a valley or the GPS altitude was not right:
 
-[embedded image-20250822-164923.png]
+[embedded: image-20250822-164923.png]
 
 ### David Grosher, 2025-10-28
 

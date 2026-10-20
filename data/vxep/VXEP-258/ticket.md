@@ -22,7 +22,7 @@ one backshell broke off with wires. I suspect DP100 is too viscous or cures too 
 https://jenaero.sharepoint.com/sites/JAI_Operations/Lists/NCR%20List/DispForm.aspx?ID=2321&commentId=1&e=trrIlTPHy0KNMuTuixGm3g&at=15 
 https://jenaero.sharepoint.com/sites/JAI_Operations/Lists/NCR%20List/DispForm.aspx?ID=2308&commentId=2&e=x7Tahf4bME6ZVwOUde-p3Q&at=15 
 https://jenaero.sharepoint.com/sites/JAI_Operations/Lists/NCR%20List/DispForm.aspx?ID=2309&commentId=3&e=b23ps2znOECJQpF8u37ITA&at=15 
-[embedded file]
+[embedded: image-20240124-233250.png]
 
 File location: https://jenaero.sharepoint.com/:f:/r/sites/EngineeringTeam/Shared%20Documents/Investigations/DP100%20ODU%20potting%20issue?csf=1&web=1&e=7VV4Us 
 Test Report: DP100 ODU Detailed Investigation Report.docx
@@ -43,7 +43,7 @@ Test Report: DP100 ODU Detailed Investigation Report.docx
 
 - gauge the severity by potting some wired ODU connectors with DP100 at the beginning of its application window, at the end, some time after, then inspecting the solder cups once cured. Pot from the top of the backshell to see if it wicks down. @Mark Squillante
 
-[embedded file]
+[embedded: obsolete 115-105407-B1 Branch Cable.pdf]
 
 ## Issue Status
 
@@ -79,26 +79,26 @@ Will disassemble them after curing overnight and compare results.
 ### Mark Squillante, 2024-01-26
 
 here are pictures of the one where the backshell was able to be unscrewed by hand. Potting was applied at top of cavity about 4 minutes 30 seconds after mixed in nozzle. This was after fully unscrewing backshell. Wires twisted with backshell but didn't break
-[embedded file]
-[embedded file]
+[embedded: IMG_0628 marked up.jpg]
+[embedded: IMG_0629 marked up.jpg]
 
 ### Mark Squillante, 2024-01-26
 
 3 minutes after DP100 is mixed still shows good flow to bottom of ODU regardless of whether applied at top or bottom of cavity, but 4 minutes 30 seconds after mixing shows poor flow.
 DP100 applied at bottom of cavity 4 minutes 30 seconds after mixed: 
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: Bottom 4.5 min after mix 1.jpg]
+[embedded: Bottom 4.5 min after mix 2.jpg]
+[embedded: Bottom 4.5 min after mix 3.jpg]
 
 DP100 applied at bottom of cavity 3 minutes after mixed: 
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: Bottom 3 min after mix 1.jpg]
+[embedded: Bottom 3 min after mix 2.jpg]
+[embedded: Bottom 3 min after mix 3.jpg]
 
 DP100 applied at top of cavity 3 minutes after mixed:
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: Top 3 min after mix 1.jpg]
+[embedded: Top 3 min after mix 3.jpg]
+[embedded: Top 3 min after mix 2.jpg]
 
 ### Mark Squillante, 2024-01-29
 

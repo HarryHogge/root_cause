@@ -12,9 +12,6 @@
 - **Creator:** Eric Brewer
 - **Parent:** VXEP-792 Visual Based Navigation (VBN)
 - **Links:** Cannot finish until linked issue is finished. XKIT-3576 (VBN Open-Loop Flight Test); Cannot finish until linked issue is finished. XKIT-3584 (VBN Closed Loop Flight Test); relates to VXEP-1248 (Apex Wants); is a child of VXEP-1303 (SB40 Software (Release vTBD)); is a child of VXEP-1444 (OGCS 1.3.1)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-9
-- **Issue color:** orange
 
 ## Comments (0)
 

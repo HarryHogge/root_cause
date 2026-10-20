@@ -12,9 +12,7 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-444 Sustainment: VXE-30 (inc'l minor issues and improvements)
 - **Links:** relates to VXEP-236 (Systemic SD card Investigation VXE-522 XCOM board failures at LM Source inspection); relates to ENG-806 (Corrupt SD cards are reaching Final before being detected); relates to ENG-1881 (No User Notification of Xcomm SD Card Corruption ); relates to ENG-346 (1607P01A Improvements. XCOM / XE240 PWR COMMS BD); is blocked by ENG-2735 (2119470-01 SD card replacement. Replace Red Grey SD Card PN: 100-104382  ); is blocked by ENG-2798 (Implement Solder Mask on Industrial SD Card for Peeling Label)
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 1
-- **Current Sprint Priority:** 1.0
 - **Product/Tech Owner:** David Grosher
 - **Tech Lead:** David Grosher
 - **Program (Marquee):** VXE30 Incident Investigation

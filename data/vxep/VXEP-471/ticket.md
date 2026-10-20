@@ -11,7 +11,6 @@
 - **Assignee:** Connor Peebles
 - **Creator:** Cameron Chapman
 - **Links:** relates to XKIT-2217 (Consolidate servo information into a document or on block diagram (CAN, physical interface, etc.))
-- **Issue color:** purple
 
 ## Description
 

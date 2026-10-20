@@ -27,7 +27,7 @@ E140ZG2
 5P main battery
 
 
-[embedded image-20260617-175703.png]
+[embedded: image-20260617-175703.png]
 
 ## Comments (8)
 
@@ -55,7 +55,7 @@ We recently had an asset wobble and found the Wing Shift Bracket slightly loose 
 We are still collecting data this is not a defined Root Cause. 
 
 Here is video from 914-997 showing the Wing Shift Bracket loose to compare:
-[embedded MicrosoftTeams-video (13).mp4]
+[embedded: MicrosoftTeams-video (13).mp4]
 
 ### Alexander Alan Arnold, 2026-06-24
 

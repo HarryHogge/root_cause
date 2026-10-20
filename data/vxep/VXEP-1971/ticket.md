@@ -47,6 +47,70 @@ https://redwireglobal.sharepoint.com/sites/FlightSafety/Shared%20Documents/Forms
 
 ## Comments (33)
 
+### Alexander Alan Arnold, 2026-07-30
+
+attached data provided by customer, unsure if its what we need. @David Grosher
+
+### Alexander Alan Arnold, 2026-07-30
+
+apologies. I was told the zip was data not just pictures.
+
+### Alexander Alan Arnold, 2026-07-30
+
+@David Grosher I have added the DOD safe zip from an FTP. Please let me know if the team would like me to coordinate getting OGCS logs from the aircraft since this customer uses OGCS. date of incident was yesterday 7/29, customer reported mishap today
+
+### Cody Smisek, 2026-07-30
+
+@Alexander Alan Arnold I don’t think it ever hurts to attempt to capture the full package of logs.
+
+### Cody Smisek, 2026-07-30
+
+Looks like xcomm 418 is the incident flight. xcomm event log XC260729.T01. 
+VTOL 307 and the standard event log
+
+### Eric Brewer, 2026-07-31
+
+Thanks Cody. It looks like a gyro malfunction of some sort.  The gyro bias of the fixed-wing pitch gyro is over 10 degrees per second for most fo the flight, and then around the time of the attitude divergence the gyro reading is constant for tens of seconds.  The log is continuing to update so it’s not that log data is frozen, just the gyro output.
+
+
+[embedded: image-20260731-113127.png]
+The gyro gets a huge bias in it in preflight for some reason, and it looks like the bias is real because the roll and pitch track after the initial transient:
+
+[embedded: image-20260731-113300.png]
+
+### Lauren Velasquez, 2026-09-15
+
+@David Grosher@Cameron Chapman  V885 is in RMA with physical intake complete. Please advise next steps to support this investigation. @Alexander Alan Arnold FYA
+
+### Cameron Chapman, 2026-09-15
+
+@Lauren Velasquez please deliver to engineering. @Jeremy Kostel and @Samuel Lopez  to coordinate investigation. Recommend testing and inspecting connection to FWAP gyro, and FWAP to XCOM
+
+### Lauren Velasquez, 2026-09-15
+
+@Mathew Papaleo @Zack Garcia FYA
+
+### Lauren Velasquez, 2026-09-18
+
+This AC is now back in the RMA area. @Drew Hildreth @Alexander Alan Arnold @Mathew Papaleo
+
+### Samuel Lopez, 2026-09-21
+
+@Jeremy Kostel @Drew Hildreth 
+
+I have started the investigation into this.  Exploring whether it’s the FWAP, macc/accel, or Novatel.
+
+### Cody Smisek, 2026-09-21
+
+@Samuel Lopez 885 is sitting here in engineering. It needs customer tags on the cases. Any hardware that is removed needs to be tagged as customer and part of this investigation. 
+@Jeremy Kostel @Lauren Velasquez
+
+### Drew Hildreth, 2026-09-21
+
+@Samuel Lopez Thank you Sammy. 
+
+@Lauren Velasquez Please make sure that we have this aircraft tagged properly.
+
 ### Lauren Velasquez, 2026-09-21
 
 @Drew Hildreth AC cases have been tagged- if any components are removed, those should also be tagged.  Tags are available in the RMA cell.
@@ -62,8 +126,8 @@ Recommend removing the avionics box from the aircraft and opening it for visual 
 
 
 
-[embedded Instrument Panel - 885.png]
-[embedded image-20260922-215531.png]
+[embedded: Instrument Panel - 885.png]
+[embedded: image-20260922-215531.png]
 
 ### Cameron Chapman, 2026-09-22
 
@@ -168,107 +232,7 @@ At the previous update, the mag/accel from VXE#885 was placed on a working board
 The cover was cut off of the #885 mag/accel board and it was observed there was an excess of flux covering the circuitry (see photos below).  The board was then cleaned using alcohol and the #1091 FWAP re-tested.  After this, the ap sensors worked normally.  
 
 
-[embedded Image (1).jpg]
-I will post the before and after photos in the sharepoint.
-
-### Jackson Riley Curvin, 2026-10-12
-
-@Samuel Lopez  what are the next steps for this investigation?
-
-### Samuel Lopez, 2026-10-13
-
-@David Grosher @Jeremy Kostel 
-Here is the link for the internal Investigation.  Dave, can if this looks satisfactory, I can modify this to make it customer facing.
-
-https://redwireglobal.sharepoint.com/:p:/r/sites/FlightSafety/Shared%20Documents/Active%20Cases/VXE-885%20FWAP%20Crash/VXE-885%20Investigation%20-%20internal.pptx?d=wdb94409e6d4d472b828e46b079521db6&csf=1&web=1&e=uPkgV4
-I am also working with Production Engineering to make a change to the build procedure advising our technicians not to use excess flux.
-@Jackson Riley Curvin the investigation portion is mostly finished.  We are now just wrapping up the reports.
-
-### Drew Hildreth, 2026-10-20
-
-@Jeremy Kostel similar to 884, customer is beating the PM up about this one. Can you take a look at what Sammy provided below and give us a clear RMA Disposition so we can get this moving as well?
-@David Grosher can you also take a look and let us know what you think.
-
-### Jeremy Kostel, 2026-10-20
-
-@Drew Hildreth We have a meeting to review the report with Dave tomorrow, but he may be able to get to it sooner.
-As far as a dispo - this aircraft took substantial damage to pretty much every composite structure as well as some harness damage and we have now opened the avionics box.
-If this is high priority, can we just get them a new aircraft? Turnaround time would likely be faster
-
-### Drew Hildreth, 2026-10-20
-
-@Jeremy Kostel Thank you Jeremy. Yes, it is a high priority. I assumed that it would basically need to be rebuilt.
-
-### Samuel Lopez, 2026-09-30
-
-@David Grosher @Jeremy Kostel 
-
-By ‘breakdown of the microcontoller’, I mean that there is a hardware problem with that component.  The controller has shutdown various parts of the circuit - including the mag/accel board since the buck converter responsible for powering it is disabled by the microcontroller.
-
-By ‘susceptibilities’, as RW has known for some time, this microcontroller is an obsolete part that dates back to the 2000s and long since discontinued.  RW has known for a couple of years now that these are prone to defects due to humidity if improperly stored before assembly.  Even so, for this year, 23% of Fixed Wing APs become scrap.
-
-### David Grosher, 2026-09-30
-
-@Samuel Lopez @Jeremy Kostel To be frank, I don’t see the evidence in the discussion of this ticket or in the report to credibly link humidity, a buck converter, production scrap rate, the obsolescence of the part or anything beyond the failed IMU channel to this incident. The fact that a processor does not work as expected following a crash does not mean that it was the root cause of a crash.
-
-### Jeremy Kostel, 2026-10-01
-
-@David Grosher @Samuel Lopez Agree with Dave’s assessment here. I don’t believe we’ve reached a conclusion on this. While we did have issues related to storage and humidity - our processes have been changed to mitigate this issue. Additionally, I don’t believe the scrap rate applied here is relevant information, as that simply identifies that our production process successfully identifies non-conforming boards and removes them from the facility. I am meeting with Sammy today to talk through next investigation steps.
-
-### Samuel Lopez, 2026-10-01
-
-@Jeremy Kostel @David Grosher 
-
-Thanks for your feedback.  I talked with Jeremy this morning and we have come up with a gameplan moving forward.  Today I will test the mag/accel board to check it’s functionality independent of the FWAP.
-
-### Samuel Lopez, 2026-10-05
-
-@David Grosher and @Jeremy Kostel 
-
-Appreciate both of yours' feedback from last week.  After re-examining, here are the latest results.
-
-The av box for #885 was used for all the following tests.
-·       A test asset Fixed Wing AP with Tail# 1091 was swapped in. The ap sensors and instrument panels now functioned as expected.
-·       The mag/accel board from the #885 FWAP was removed and soldered on to this working #1091 FWAP.  Once again, ap sensors and instrumental panel read zeroes.  This highly suggests that it’s the mag/accel board and not the full FWAP that is malfunctioning.
-·       A fresh mag/accel board was then soldered on to the original #885 FWAP and re-tested on the same av box.  Ap sensors and instrument panels work normally again.  This confirms that the mag/accel board was at fault.
- 
-Initial assessment that microcontroller was defective was incorrect.  Furthermore, per John Clark, if the mag/accel board is defective, “the system almost certainly will not run since that's flight critical.”
-Since there is a cover on the mag/accel board, the PCB is not able to be visually inspected for irregularities.  We can try to cut open the original #885 mag/accel board for visual inspection tomorrow.
-
-### Jeremy Kostel, 2026-10-06
-
-@Samuel Lopez Good findings. A few questions also shared over teams, but better to add info here:
-
-1. I thought you initially reported that two different converters on the FWAP weren’t working? One with an enable pin, and one where the enable pin was left floating.
-    1.1 Do both converters work with the MPU removed?
-    1.2 Do both converters work with the good MPU/do they stop working on the known good FWAP with the bad MPU
-    1.3 Any explanation for why the converter with a floating enable pin would stop working with a bad MPU?
-- Understood the magAcc PCB is difficult to inspect, have you done any testing with the board by itself?
-- Would be good to check for obvious shorts and or power via external supply and see if current draw seems appropriate
-
-Ive also linked two different Jiras (V622 and V655) that are also reported MPU9250 failures
-
-### Samuel Lopez, 2026-10-06
-
-@Jeremy Kostel 
-- Not quite, there are two converters called 5V and VSERVO both are LT1376-5 (of which both are five volt converters).  Only the VSERVO was disabled on the FWAP when the board wasn’t working.
-- No.  Only the 5V works when the MPU is removed.
-- Yes, they both work with the good MPU.  The VSERVO is disabled with the bad MPU.
-- The reason the 5V converter works with the enable pin floating is because the datasheet shows that when floating, the converter will be default on.
-- Inspecting the Mag/Accel PCB is today’s task.  Since it’s under a cover, Ben N advised to cut it open with an exacto knife.  There is a history of solder balls accumulating on the board underneath the cover though it was addressed in the Jira below.  Another thing I can try doing is to power the Mag/Accel board by itself and make sure the two
-- LDOs are functioning.  If they are, that just about reduces it to the MPU 9250.
-
-[VA-59] VXE509 CA - Implement checks on traveler for solder balls, F.O.D., and undried moisture before soldering the shield on. - Jira
-
-### Samuel Lopez, 2026-10-06
-
-October 6, 2026
-@Jeremy Kostel @David Grosher 
-At the previous update, the mag/accel from VXE#885 was placed on a working board #1091.  This caused the #1091 board to no longer work and for the ap sensors and other function to read zeroes.
-The cover was cut off of the #885 mag/accel board and it was observed there was an excess of flux covering the circuitry (see photos below).  The board was then cleaned using alcohol and the #1091 FWAP re-tested.  After this, the ap sensors worked normally.  
-
-
-[embedded Image (1).jpg]
+[embedded: Image (1).jpg]
 I will post the before and after photos in the sharepoint.
 
 ### Jackson Riley Curvin, 2026-10-12

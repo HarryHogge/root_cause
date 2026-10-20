@@ -21,7 +21,7 @@
 - MAGNUSS will need to know the address of the MAIM board. Currently this is hardcoded on the individual MAIM board. We may want to change this behavior to a DHCP-like model where the board autodetects the tail number and assigns itself an expected IP, for example 10.*.*.12. This would still allow the payload port to be assigned the correct address with the MAIM on the same network segment.
 - MAGNUSS should ping for the existence of a MAIM board associated with the fuselage. If found state data should be forwarded to MAIM network port.
 
-[embedded file]
+[embedded: Existing MOD PAYLOAD PVT Messaging.pptx]
 
 
 Requirements: Advanced Navigation for MOD Payload Kit Requirments.xlsx

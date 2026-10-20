@@ -39,7 +39,7 @@ Will work on this.
 ### Cameron Chapman, 2024-09-23
 
 found firmware 
-# How to program 0716P01 Dropper PCB
+**How to program 0716P01 Dropper PCB**
 
 - Install MPLAB X IPE v5.20.
 

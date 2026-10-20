@@ -11,7 +11,6 @@
 - **Assignee:** Mike DeJesus
 - **Creator:** Cameron Chapman
 - **Parent:** XKIT-2119 LRR Flyoff July 18
-- **Issue color:** purple
 - **Target end:** 2024-07-01
 - **Other Stakeholder (as required):** Carl Graf
 

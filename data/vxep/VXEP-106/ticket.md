@@ -15,7 +15,7 @@
 ## Description
 
 The nutplates circled below should be oriented front-to-back with the fuselage (rotated 90 from current orientation) to minimize gap during bonding. These are displayed/oriented correctly on the 107-110925 drawing of the Fuselage but need to be updated for the 965-1-01-7010-1 drawing
-[embedded file]
+[embedded: image-20230815-192245 (9d1aa639-bc7b-4340-95e0-f5c1abb11de9).png]
 
 ## Comments (0)
 

@@ -40,6 +40,71 @@ Suspected defect or damage to transmitting lens of Garmin Lidar-Lite v3HP result
 
 ## Comments (34)
 
+### Cody Smisek, 2025-06-12
+
+@Michael Mohr we see messages regarding user commanded pauses during landing. Can you confirm that this was the case? Also, other details would be appreciated. Such as purpose of flight, aircraft configuration, environmental conditions, geographic location.
+Can you confirm the GCS SN that was in use? Which version of xbox controller?
+
+### Michael Mohr, 2025-06-12
+
+@Cody Smisek There were two flights yesterday with two AARs loaded above. The flights were a part of the Border Patrol training currently going on. The two pictures of the GCS above indicate the crew moving the center wing from flat to angled to show the bad indicated altitude. The second flight was a test, by the Edge operators, to try and replicate the first issue where the aircraft slowed down at 30ft then continued it decent without the pause at 20 ft. The Operator (Edge) expected the anomaly and paused several times during final 20ft to ease the A/V to touchdown. We troubleshoot it down to the ADP (pictured above). We swapped ADPs today with another A/V and expect to fly tomorrow to test. Ground test looks good and is reflecting the expected zero altitude.
+
+### Cody Smisek, 2025-06-12
+
+Working with Eric B to understand discrepancy between gps alt and LRF and why LRF status appears good even though aircraft didn’t arrest descent rate
+[embedded: image-20250612-233935.png]
+
+### Cody Smisek, 2025-06-13
+
+@Michael Mohr @Drew Hildreth 
+the lrfbits data seems to agree with the decision to swap out the ADPs. The bit fields for ‘nogood’ and ‘RFMM’ are flagged. Not entirely sure how that works out for what the VTOL AP starts using, but I’m assuming it’s not giving much credit to the LRF anymore at that point.
+
+### Drew Hildreth, 2025-06-13
+
+@Cody Smisek Thank you for looking into this so quickly and getting back to us. We truly appreciate it. I hate that something is broken but pleased to know that Mike and the FLOPS Team were on the same sheet with what was potentially causing the issue. 
+
+We will continue to provide data when FLOPS gets a chance to fly. Weather here today is not favorable for flying.
+
+### Drew Hildreth, 2025-06-13
+
+@Cody Smisek SGCS SN: SGCSS1-JA11
+Controller: RAZER WOLVERINE V2 SN: PM2041C07400323
+Please let me know if you need anything else from me.
+
+### Cody Smisek, 2025-06-13
+
+@Drew Hildreth Can we get SN from suspected defect ADP and replacement/test ADP
+
+### Drew Hildreth, 2025-06-13
+
+@Cody Smisek Suspected Defective ADP. SN: ADP-VXE30-0122
+Replaced with VXE-808 ADP. SN: ADP-VXE30-0557
+
+### Drew Hildreth, 2025-06-16
+
+@Cody Smisek FLOPS conducted ground checks and test flew VXE-490 today. No issues to report. Jackson will upload the AAR shortly for reference.
+Additionally. Mike Mohr is bringing the suspected broken ADP to SLO with him today.
+
+### Jackson Riley Curvin, 2025-06-16
+
+@Cody Smisek  AAR uploaded from todays flight.
+
+### Cody Smisek, 2025-06-20
+
+@Jackson Riley Curvin any data available from yesterday?
+
+### Jackson Riley Curvin, 2025-06-20
+
+@Cody Smisek unable to fly yesterday due to weather and the team did not get back before I had to leave so I'll get it from them Monday morning.
+
+### Cody Smisek, 2025-06-25
+
+@Jackson Riley Curvin any updates? additionally, where did the ADP end up?
+
+### Jackson Riley Curvin, 2025-06-25
+
+@Cody Smisek I'm still waiting on the team to send me AARs but they haven't had any issues flying it this week @Michael Mohr  took the ADP with him to SLO last week not sure what he did with it. @Rodney Linch do you know what happened to it?
+
 ### Rodney Linch, 2025-06-25
 
 @Jackson Riley Curvin & @Cody Smisek - ADP is with me.  Let me know if you want me to drop it off to you, Cody.
@@ -74,69 +139,6 @@ Thank you for choosing Garmin,
 Leslie
 Product Support
 Garmin International
-
-### Cody Smisek, 2025-06-30
-
-@Jackson Riley Curvin any additional data available to provide?
-
-### Jackson Riley Curvin, 2025-06-30
-
-@Cody Smisek  I uploaded 3 more AARs from last week let me know if you need any more.
-
-### Cody Smisek, 2025-07-01
-
-also observed on ADP SN 0005 - Garmin SN 5HA000700
-ADP SN SAXE-1-0031 - Garmin SN 5HA000681
-
-### David Grosher, 2025-08-15
-
-@Cody Smisek Should the manual be updated to include information on how to clean the lenses? Do we expect to get any other information from Garmin? It sounds like they don’t expect this to have caused the issue, but the response also seems generic and doesn’t address the actual observed artifacts on the lens.
-
-### Cody Smisek, 2025-08-15
-
-@David Grosher I am not expecting any further response from Garmin regarding the root cause. I have sent them the defective units for inspection, that was back in July. We should include in the manual information about what not to use for cleaners around the aircraft, that would be any ammonia based cleaners which are known to cause crazing of acrylic.
-
-### Cody Smisek, 2025-09-02
-
-@Josh Burrell @Pat Wells I’d like to close up this ticket. I’ve recommended corrective actions in the CA section. 
-I asked Garmin again for status update over the weekend, they have responded that they will not be providing any additional information.
-
-### Cody Smisek, 2025-09-02
-
-@Greg Fryer @David Grosher See comment below. Do we want to perform any additional investigation / work on this ticket, or is my CA recommendation sufficient based on current knowledge of the issue?
-
-### David Grosher, 2025-09-02
-
-@Cody Smisek It is sufficient. This can progress to implementation of the manual updates and continue through the process.
-
-### Pat Wells, 2025-09-02
-
-Yes I’m good with closing it.  @Josh Burrell  are you tracking the documentation update?
-
-@Michael Mohr FYSA
-
-### Josh Burrell, 2025-09-02
-
-@Cody Smisek do you have a recommended time frame of when the operators should clean the lens? @Drew Cunnien
-
-### Cody Smisek, 2025-09-02
-
-@Josh Burrell No. The CA of this ticket is simply that if the operator chooses to clean it, they should comply with the correct cleaning chemicals. 
-The frequency of cleaning or lack thereof was not the failure mechanism.
-
-### Josh Burrell, 2025-09-02
-
-@Cody Smisek Thanks, we’ll see what we can come up with.
-
-### Drew Cunnien, 2025-09-02
-
-@Cody Smisek @Josh Burrell You’re correct, but the question is about how to implement it into the manual. Is there a regular interval of cleaning the lens that is recommended during training? Or is this just whenever cleaning occurs?
-There is no mention of cleaning the lens in the manuals that I can find so it’d help if there was a recommended interval so I can determine where to put this CA.
-
-### Cody Smisek, 2025-09-02
-
-@Drew Cunnien 
-inspect every flight
 
 ### Cody Smisek, 2025-06-30
 

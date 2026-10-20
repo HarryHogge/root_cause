@@ -17,7 +17,6 @@
 - **Project Tier:** Tier 2
 - **Planned Milestone(s):** Concept Design Review (CoDR), Detailed Design/Critical Design Review (CDR)
 - **Charter Link:** https://jenaero.atlassian.net/wiki/spaces/PE/pages/499187713/DRAFT+-+Visual+Based+Navigation+VBN
-- **Current Sprint Priority:** 12.0
 - **LRR Desired Delivery Date:** 2025-08-01
 - **Contract/Customer First Need:** Not possible until May at earliest.  Aug only.
 - **Product/Tech Owner:** David Grosher
@@ -39,7 +38,7 @@ Project Name: (not VBN?)
 | PCB SharePoint | 2123665-01 VBN Board |
 | BOM: | PAYLOAD BAY PROTOTYPE VBN BOM.xls |
 
-## Milestones:
+**Milestones:**
 
 - Conceptual Design Review
 - Integration
@@ -50,9 +49,9 @@ Project Name: (not VBN?)
 - Critical Design Review
 - 
 
-## VBN Block 1 (On VXE40 and VXE35)
+**VBN Block 1 (On VXE40 and VXE35)**
 
-### Requirements: VBNRequirements.xlsx
+**Requirements: VBNRequirements.xlsx**
 
 - Ability to execute missions in GPS Denied environments
 - Ability to fly using VBN (OKSI application)
@@ -70,15 +69,15 @@ Project Name: (not VBN?)
 - OKSI states we can use a camera marker to improve accuracy
 - Investigate if we can have operators select a landing point on a map
 
-### Nice to have:
+**Nice to have:**
 
 - Image classification
 - ACTION: Can this be done on GCS/laptop, or does it need to be onboard'
 - Target Tracking
 
-## Additional Information:
+**Additional Information:**
 
-### Hardware
+**Hardware**
 
 - IR and EO camera Trade study (in process - cameras below are likely candidates)
 - Teledyne FLIR BOSON+ 640  (https://www.flircameras.com/22640AS95.htm?search=boson%2B%20640&description=true ) 
@@ -88,13 +87,13 @@ Project Name: (not VBN?)
 - 2x cameras for dev ordered
 - USB Hub (for the 2-camera solution)
 
-### Electrical:
+**Electrical:**
 
 - MAGNSS Avionics supports VBN
 - USB hub? Or is this off the shelf?
 - VBN Harness
 
-### Mechanical:
+**Mechanical:**
 
 - Needs to be integrated
 - as a kit on MAGNSS
@@ -107,7 +106,7 @@ Project Name: (not VBN?)
 - Additional Open Questions:
 - See spreadsheet.
 
-### Software:
+**Software:**
 
 - Architecture - Eric has this in progress
 - Allow camera SW to be updated
@@ -121,22 +120,21 @@ Project Name: (not VBN?)
 - Status Page for VBN
 - When it is on and being used
 
-### Documentation
+**Documentation**
 
 - Operational Manual
 
-### Purchasing
+**Purchasing**
 
 
-### Production
+**Production**
 
 - Camera Calibration
 - Space
 - Tooling
 - 
 
-## 
-OPEN QUESTIONS:
+**OPEN QUESTIONS:**
 
 - IR Camera is export controlled, how does this affect the team, project, product? Correction: After clarification from FLIR, IR camera is not ITAR controlled.
 - IR Cameras are not ITAR controlled

@@ -9,9 +9,6 @@
 - **Assignee:** Ted Trowbridge
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-887 Create, Test, and Release B40 Wing Utility Pylon (FKA drop payload) PN: 2123650-01
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-9
-- **Issue color:** orange
 
 ## Comments (0)
 

@@ -13,9 +13,6 @@
 - **Labels:** EE-Intern
 - **Parent:** VXEP-1667 New EE/Intern/Specialist Projects
 - **Links:** relates to ENG-3733 (2130900- WIRE HARNESS, TAIL CAN DIAGNOSTIC, FDB VERSION); relates to XKIT-5362 (Order more CAN loggers for flight test. Prepare and install for engineering assets. )
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 
 ## Description
 
@@ -60,7 +57,7 @@ FYSA @Cameron Chapman @Ben Norris
 - Handed off 3 of the CAN loggers we have in stock this morning to Jeremy and sent rough sketch w/ part numbers to Will.
 - Part number associated with CANEdge3 custom harness is 2134945.
 - Made PR00763 for 3 11.1V 2200mAh 3S LiPo batteries and two new battery chargers, waiting for approval.
-- Completed inventory and production request for 3 x custom harnesses to be made by Ben Norris. [embedded file] [embedded file]
+- Completed inventory and production request for 3 x custom harnesses to be made by Ben Norris. [embedded: 2134945-BOM.xlsx] [embedded: CANEdge3 Harness Rough Sketch.pdf]
 
 ### Cameron Chapman, 2026-03-19
 
@@ -72,7 +69,7 @@ FYSA @Cameron Chapman @Ben Norris
 
 Initial CAN Logger Harness drawing for review.  @Matthew Aguirre @Jeremy Kostel @Ben Norris if y’all don’t mind double checking pinout and such.  There is a linked task to create each harness as well.
 
-[embedded file]
+[embedded: 2134945_A01 DRAFT FOR REVIEW 3.19.2026.pdf]
 
 ### Matthew Aguirre, 2026-03-20
 

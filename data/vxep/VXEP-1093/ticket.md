@@ -12,9 +12,6 @@
 - **Assignee:** Matt Weber
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1083 Advanced Navigation HIL as "VXE30 Advanced Navigation Simulator"
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-1
-- **Issue color:** dark_grey
 
 ## Description
 
@@ -22,11 +19,11 @@ Develop a user-friendly and professional enclosure that ensures durability, acce
 Link to Block Diagram: New HIL box block diagram.vsdx
 Link to Advance BOM: 500-2121526-01 - LRR Simulator, HIL Pre-Production BOM and Advance Procurement Worksheet.xlsx
 
-[embedded image-20250421-183422.png]
+[embedded: image-20250421-183422.png]
 
 ## Plan
 
-#### Deliverables:
+**Deliverables:**
 
 Validated enclosure design with CAD modelsThermal and structural integrity confirmedFinal enclosure design approved
 

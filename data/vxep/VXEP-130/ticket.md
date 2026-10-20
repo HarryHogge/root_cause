@@ -34,8 +34,8 @@ During investigation of AC 510 it was found we have been adding RTV(?) to seal t
 
 ### Connor Peebles, 2023-08-21
 
-[embedded file]
-[embedded file]
+[embedded: image-20230821-165044.png]
+[embedded: image-20230821-165110.png]
 This board Assy drawing & conformal coating information was updated mid July. I think this is sufficient information to cover this task. LMK what you think @Matt Philley @Cameron Chapman
 
 ### Cameron Chapman, 2023-08-21

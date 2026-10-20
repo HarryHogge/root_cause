@@ -13,7 +13,6 @@
 - **Labels:** Gen1-Utility-Dropper
 - **Parent:** VXEP-724 Practice Build - 2119719-01, Servo Assy Wing Drop
 - **Epic Link:** VXEP-724
-- **Issue color:** purple
 
 ## Comments (0)
 

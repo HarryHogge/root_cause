@@ -11,7 +11,6 @@
 - **Assignee:** Ben Norris
 - **Creator:** Jeremy Kostel
 - **Links:** relates to VXEP-720 (VXE 490 main battery percentage reporting incorrectly during flight with MB's (S/N's 1967 and 1737)); relates to SMUP-50 (Guidance and manual updates for battery checker based on SoC being for wrong battery chemistry)
-- **Issue color:** dark_purple
 
 ## Description
 
@@ -74,7 +73,7 @@ Note for MB: we use a fixed ESR constant along with a lookup table
 Ben and Kurt mentioned battery checkers we sell use a generic discharge curve, and likely arent very accurate for our batteries.
 Discrepancy might come from a mix of voltage checker under reporting and aircraft overreporting. Needs testing to verify
 
-[embedded file][embedded file]
+[embedded: B30_HLB_SoC_Cheat_Sheet.md][embedded: B30_MB_Legacy_SoC_Cheat_Sheet.md]
 
 ### Jeremy Kostel, 2026-10-02
 

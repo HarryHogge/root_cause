@@ -9,7 +9,6 @@
 - **Resolved:** 2026-03-30
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 3
 
 ## Description

@@ -8,7 +8,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** ENG-3674 Link to TIQUILA
-- **Is this ticket a Design Project?:** No
 - **Key Stakeholder(s):** Douglas Baker
 
 ## Description

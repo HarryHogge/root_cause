@@ -16,7 +16,7 @@
 
 ## Description
 
-[embedded image-20250425-173654.png]
+[embedded: image-20250425-173654.png]
 
 ## Plan
 

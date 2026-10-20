@@ -46,7 +46,7 @@ VXE-380 launch abort log, determine cause or if unknown
 ### Jason Scherer, 2023-09-29
 
 @Pat Wells @Greg Fryer Report attached
-[embedded file]
+[embedded: Vehicle Investigation Report VXEP-102 (a4ac957a-11e6-4f51-8ce6-645612679be6).pptx]
 
 ## Attachments (2)
 

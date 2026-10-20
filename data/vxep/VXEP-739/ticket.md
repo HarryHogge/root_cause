@@ -10,7 +10,6 @@
 - **Reporter:** Cody Smisek
 - **Assignee:** David Grosher
 - **Creator:** Cody Smisek
-- **Issue color:** purple
 
 ## Description
 

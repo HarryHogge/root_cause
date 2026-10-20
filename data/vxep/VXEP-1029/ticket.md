@@ -11,7 +11,6 @@
 - **Assignee:** Cameron Chapman
 - **Creator:** Stephanie Sacheen Hershey
 - **Labels:** Electronics_Drafting
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 
 ## Description

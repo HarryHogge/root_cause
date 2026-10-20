@@ -21,7 +21,7 @@ Note:
 - Line Item #4 and Line Item #3 both require the same cable from the vendor. One procurement of this cable will fulfill the needs for both items.
 - Ensure that the vendor is aware of this requirement to avoid duplicate orders.
 
-### Deliverables:
+**Deliverables:**
 
 
 Confirmed Vendor Quote and Lead Time [material due in 4/10 or sooner] Purchase Order SubmittedDelivery ConfirmationProcurement Status Report
@@ -30,7 +30,7 @@ Link to Advance BOM: 500-2121526-01 - LRR Simulator, HIL Pre-Production BOM and 
 
 ## Plan
 
-### Action Items:
+**Action Items:**
 
 - Review and Confirm Requirements:
 - Validate the attached parts list and confirm quantities required for all components.

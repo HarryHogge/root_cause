@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-813 E140 Octopus/VXE30 Isolation Issues: Arcing to Fuselage, mag interference suspected
 - **Links:** relates to VXEP-1452 (New E140 Assemblies video quality issues)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Plan
 

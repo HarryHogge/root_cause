@@ -11,7 +11,6 @@
 - **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
 - **Links:** relates to BAT-420 (There is no indication of HLB being in 'ON' state when removed from charger or aircraft (can be closed when all batteries shut off reliably)); relates to VXEP-1577 (56V on command); relates to XKIT-5125 (Power Button Issues and improvements.); relates to BAT-779 (Battery System Squawk List 2026 + AA support request priority from SLO perspective); relates to XKIT-5456 (Ranked B40 firmware electrical requests)
 - **Epic Link:** VXEP-1549
-- **Issue color:** grey
 
 ## Description
 
@@ -29,7 +28,7 @@ Options
 - use the ailerons as “state identifiers”.  Example: First button press and the flaps rotate up.  Second press and they flap low and then return to normal.  Off and they return to normal, error and one goes high and one goes low.  Meets requirements of a visual indicator that does not involve unwanted noises or lights.
 - During testing and for most customers, I think we should use nav lights to indicate power status, especially when low SOC on ground test, but we would need an option to default these off when customers desired that. (add to ini file or similar?)
 - Use AP Int beeper. This would need a beeper attached to J23
-- [embedded image-20250919-164345.png]
+- [embedded: image-20250919-164345.png]
 Gets signal from VTOL AP.
 - Ben Norris or Jeremy Kostel do you know if pegasus servos can be configured to do anything like beep or move on power up? that might be one of the easier to do items since it would just require a servo config change vs RW FW change
 

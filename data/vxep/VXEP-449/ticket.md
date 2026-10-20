@@ -12,7 +12,6 @@
 - **Labels:** Fuselage
 - **Change type:** Standard
 - **Change risk:** Low
-- **Issue color:** purple
 - **Target start:** 2024-06-17
 - **Target end:** 2024-06-21
 - **Customer:** Unknown

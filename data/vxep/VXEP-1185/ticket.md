@@ -12,9 +12,6 @@
 - **Assignee:** Wesley Lilienthal
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1008 Mod Payload A-Kit Gen 2 design/release/test (Long term issue resolution)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-11
-- **Issue color:** teal
 - **Production Stakeholder:** Trevor Gronner
 - **Leadership Stakeholder:** Greg Fryer
 
@@ -33,14 +30,14 @@ VNA Measurement Results 2025-04-08:
 VNA RF integrity measurements on the CACI rig are complete. All three RF paths in the assembly check out as perfectly healthy when the connection is properly mated. Very well matched across the band, great return loss, insertion loss on par with expectations, and consistent group delay path-to-path. 
 Please find an overview of results below. S-parameter s2p files are also attached for CACI's own plotting and review purposes.
 Red Path "L":
-[embedded image-20250408-222617.png]
-[embedded file]
+[embedded: image-20250408-222617.png]
+[embedded: Red L Path - Port 1 Antenna Mast SSMB - Port 2 Cable Assembly SMPM-T - With Port Extensions.s2p]
 Green Path "F":
-[embedded image-20250408-222633.png]
-[embedded file]
+[embedded: image-20250408-222633.png]
+[embedded: Green F Path - Port 1 Antenna Mast SSMB - Port 2 Cable Assembly SMPM-T - With Port Extensions.s2p]
 Blue Path "R":
-[embedded image-20250408-222646.png]
-[embedded file]
+[embedded: image-20250408-222646.png]
+[embedded: Blue R Path - Port 1 Antenna Mast SSMB - Port 2 Cable Assembly SMPM-T - With Port Extensions.s2p]
 
 ## Comments (3)
 

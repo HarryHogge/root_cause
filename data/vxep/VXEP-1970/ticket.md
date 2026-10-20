@@ -85,9 +85,9 @@ i can ask, not sure what time it is where they are. Also they're on 6.5.0 so uns
 @Alexander Alan Arnold thanks.  Indicated it’s reading about 20fps (13.6mph) on the ground, on the transition the airspeed just never really increased while groundspeed did.  This to me points to an issue with the pitot. If it’s still intact it’s worth inspecting it.
 
 
-[embedded image-20260728-184134.png]
+[embedded: image-20260728-184134.png]
 The preflight pitot push only read 55fps, which is lower than I typically see but given the test is just pushing on a pitot I can’t necessarily say if that’s an issue or not.  FWIW I did spot check another log and it only went to 66fps in preflight so i suspect that’s not related.
-[embedded image-20260728-184240.png]
+[embedded: image-20260728-184240.png]
 
 ### Alexander Alan Arnold, 2026-07-29
 
@@ -97,7 +97,7 @@ added pics of ADP and AAR from ground testing they were able to do this morning.
 
 Coincidentally, this aircraft appears to have had an HLB cell failure during the issue that Eric reported as well.
 @Stephen Peters FYI
-[embedded image-20260803-151236.png]
+[embedded: image-20260803-151236.png]
 
 ### Alexander Alan Arnold, 2026-08-04
 

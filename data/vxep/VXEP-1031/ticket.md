@@ -10,7 +10,6 @@
 - **Reporter:** Sam Omiotek
 - **Creator:** Sam Omiotek
 - **Labels:** Electronics_Drafting
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 - **Part Number(s):** 107-102547
 
@@ -19,7 +18,7 @@
 1/16” clear heat shrink tubing missing from BOM. Production is using clear heat shrink on all 26 AWG JST crimps.
 - 100-106697 - 3 in (6 half-inch segments)
 
-[embedded image-20240403-183137.png]
+[embedded: image-20240403-183137.png]
 
 ## Comments (0)
 

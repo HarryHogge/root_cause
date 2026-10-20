@@ -159,7 +159,7 @@ Reset the board using the reset button near the J10 connector or by cycling the 
 Wait 10 seconds, until you see blinking lights (red, blue, and green).
 14
 Using a web browser, navigate to the Xcomm2 page: 192.168.10.70 or 10.0.0.200Log in to the webpage using the standard log in credentials:
-Username: stalker    Password: $talkerXE240
+Username: stalker    Password: [password removed]
 15
 Verify on the webpage that the correct firmware is listed in the row labeled “Board” under the blue “System Information” section. Record this in the traveler if not done already.
 ➤  Note: On the “Document source” row, which is under the green “HTTP Connection” section, you will see “ROM.” 

@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Ben Norris
 - **Links:** relates to VA-757 (Investigate Hybrid battery weight increase suspected due to potting compound change)
-- **Issue color:** purple
 - **Part Number(s):** 114-106085
 
 ## Description
@@ -30,17 +29,17 @@ Hey @Ryan Christino , Hayden said you would be the best person to help us out wi
 ### Ryan Christino, 2023-11-01
 
 @Emalee Johnson ⁠ @Hayden Jeanor Disposition is added. Ben pointed me in the direction of the weight tracker and I made some plots. It looks like a solid combination of increased non built-up pack weight and the switch in potting compounds are the largest contributors to the weight growth. However, there also appears to be a small but gradual increase in the last 100 or so packs that have been built. I'd like to focus some effort on reducing weight by increasing the tolerances on the lower level assemblies before revaluating the higher specification. I'd recommend a real thorough weight analysis on a quantity of a few packs as a next step. @Emalee Johnson Would you be able to coordinate a weight analysis on a few packs? I can come up with some new weight limitations and try to quantify the expected difference between the potting compounds but I think going through the exercise is going to yield a bit of insight into the issue.
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: RawPackWeightLotsofPacks.png]
+[embedded: RawPackWeightvsBatteryCount.png]
+[embedded: WeightvsBatteryCount.png]
+[embedded: WeightvsBatteryCountZoomed.png]
 
 ### Hayden Jeanor, 2023-11-02
 
 Here's another metric that might be helpful 
 - formula used to generate plot: =IF(AND((CO1-C1)>200, (CO1-C1)<400), (CO1-C1), #N/A)
 
-[embedded file]
+[embedded: image-20231102-171357.png]
 things to also consider. When did we shift to the all weather HLB, and when did we replace TS
 
 ## Attachments (5)

@@ -22,7 +22,7 @@ Design and validate a DC input adapter that converts barrel power to XT60 to ODU
 
 ## Plan
 
-### Action Items:
+**Action Items:**
 
 Create a basic schematic showing barrel-to-XT60-to-ODU layout and routing.Submit schematic to drafters for formal documentation.Verify pinout configuration of the externally mounted adapter.Confirm if the diagnostic cable (as listed) is compatible with this adapter. (male to male RJ45) @Brendan Palmer Check if a standard COTS Ethernet patch cable can be used in this configuration.
 

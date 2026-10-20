@@ -11,9 +11,6 @@
 - **Creator:** Christa Meck
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
 - **Links:** relates to VXEP-236 (Systemic SD card Investigation VXE-522 XCOM board failures at LM Source inspection)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Comments (1)
 

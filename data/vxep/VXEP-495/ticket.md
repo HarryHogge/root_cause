@@ -40,12 +40,12 @@ I apologize for being the bearer of unfavorable news here, I just wanted to take
 Please feel free to let me know if you still have any questions on this.
 Regards,
 Billy“
-[embedded file]
+[embedded: IMG_0258.jpg]
 
 ### Connor Peebles, 2023-04-18
 
 This formatting of chip info, however, is identifiable:
-[embedded file]
+[embedded: 0851week.JPG]
 This chip was made in 2008, 51st week. This chip passed production processes, still had big crack/void
 
 ### Cameron Chapman, 2023-04-24

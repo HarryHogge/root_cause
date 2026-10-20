@@ -12,8 +12,6 @@
 - **Creator:** Greg Fryer
 - **Parent:** SP-122 Mod Payload A-Kit updates (Gen 2) and AdvNav, and related retrofits
 - **Links:** Cannot finish until linked issue is finished. VXEP-1008 (Mod Payload A-Kit Gen 2 design/release/test (Long term issue resolution))
-- **Is this ticket a Design Project?:** No
-- **Current Sprint Priority:** 5.0
 - **Product/Tech Owner:** Charles David Madewell
 - **Program (Marquee):** Mod Payload A-Kit
 - **Job Number:** J100078 - Sustainment: VXE-30

@@ -9,7 +9,6 @@
 - **Assignee:** Jeremy Kostel
 - **Creator:** Cameron Chapman
 - **Links:** relates to XKIT-5113 (B40 Non Flight-blocker flight test issue collector/Squawk List)
-- **Issue color:** dark_teal
 
 ## Description
 

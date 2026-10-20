@@ -40,8 +40,8 @@ Proposed Rev:
 | 500-2124086-01 | B40 Catalog BOM | Released |
 | 500-2123975-01 | B35 Catalog BOM | Rele |
 
-[embedded image-20260416-214546.png]
-[embedded image-20260416-214752.png]
+[embedded: image-20260416-214546.png]
+[embedded: image-20260416-214752.png]
 
 ## Link to Engineering Change Notice (ECN)
 
@@ -53,7 +53,7 @@ https://jenaero.sharepoint.com/:x:/r/sites/JAI_Operations/Shared%20Documents/CCB
 
 @Greg Fryer & @Nigel Goodison Since we now have 2 configurations for the pylon -01/-02 (left/right), how do we want to call that out in the catalog?
 
-[embedded image-20260414-215730.png]
+[embedded: image-20260414-215730.png]
 
 ### Greg Fryer, 2026-04-16
 

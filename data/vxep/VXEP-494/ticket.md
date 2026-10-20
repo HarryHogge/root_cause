@@ -22,7 +22,7 @@ What is the temperature and time profile of the burn-in?
 ### Ryan Ferguson, 2023-04-10
 
 This is documented in the autopilot Burn-In Procedure, document # 110644.  Please see the below chart for the relevant info from that procedure:
-[embedded file]
+[embedded: image-20230410-171409.png]
 
 ### Connor Peebles, 2023-04-10
 

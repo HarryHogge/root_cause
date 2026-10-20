@@ -10,7 +10,6 @@
 - **Reporter:** Matt Philley
 - **Creator:** Matt Philley
 - **Labels:** Gen1-Utility-Dropper
-- **Issue color:** purple
 
 ## Comments (0)
 

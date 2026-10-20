@@ -28,7 +28,7 @@ Pull Request https://bitbucket.org/edgeautonomy/maim/pull-requests/10
 
 Changing ip from 10.*.*.11 to 10.*.*.12
 
-[embedded image-20250205-182827.png]
+[embedded: image-20250205-182827.png]
 
 ### Kurt Burian, 2025-02-05
 

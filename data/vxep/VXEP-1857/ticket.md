@@ -9,9 +9,6 @@
 - **Assignee:** Sanjay Menon
 - **Creator:** Josh Adams
 - **Parent:** VXEP-470 Unified AP for Block 40
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 
 ## Comments (0)
 

@@ -24,11 +24,11 @@ After the aircraft launched, transitioned, and flew through WP1, the aircraft im
 
 ### Jackson Riley Curvin, 2025-11-11
 
-[embedded image-20251111-175551.png]
+[embedded: image-20251111-175551.png]
 
 ### Jackson Riley Curvin, 2025-11-11
 
-[embedded image-20251111-175642.png]
+[embedded: image-20251111-175642.png]
 
 ### David Grosher, 2025-11-11
 
@@ -36,7 +36,7 @@ After the aircraft launched, transitioned, and flew through WP1, the aircraft im
 
 ### Jackson Riley Curvin, 2025-11-11
 
-[embedded image-20251111-175731.png]
+[embedded: image-20251111-175731.png]
 
 ### Greg Fryer, 2025-11-11
 

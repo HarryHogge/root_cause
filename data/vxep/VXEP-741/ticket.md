@@ -55,11 +55,11 @@ I am trying to get into contract with tier 3 support leaving for the day
 
 Summary from ppt SD Card Failure investigation.pptx
 
-[embedded image-20241210-202441.png]
+[embedded: image-20241210-202441.png]
 
-[embedded image-20241210-202455.png]
+[embedded: image-20241210-202455.png]
 
-[embedded image-20241210-202521.png]
+[embedded: image-20241210-202521.png]
 
 ## Attachments (4)
 

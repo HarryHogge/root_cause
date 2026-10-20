@@ -10,7 +10,6 @@
 - **Reporter:** Liam Limon
 - **Assignee:** Greg Fryer
 - **Creator:** Liam Limon
-- **Issue color:** purple
 - **Part Number(s):** 107-102238
 - **Production Stakeholder:** Emalee Johnson
 
@@ -51,7 +50,7 @@ NCR-2834
 @Emalee Johnson This feels like one where I would like you (Prod Eng) to be able to issue a revision (we’d still review like any other), but I’m not sure we have the tools in place.
 @Garrett O'Neill Could we pass to @Nadia Brown with a proposed simplification? Maybe just locate the label off of the board shrink (0.25), and remove the 7.50? Feels like we put too much control on the label location back when. (0.25 so in-contact is ok, and a gap up to 0.5 is ok) Otherwise make it 0.100 (but that tightens the tolerance whichfeels unnecessary).
 If you agree, just ping me and I’ll set the task to Nadia.
-[embedded image-20240409-170506.png]
+[embedded: image-20240409-170506.png]
 
 ### Emalee Johnson, 2024-04-09
 
@@ -62,9 +61,9 @@ My understanding is that the heat shrink label acts as a strain relief once inst
 
 Any dimension updates to this I strongly recommend test fit in wings. 
 There are required dimensions at the Wing Tip level that are influenced by the position of the heat shrink-ish at the servo boost cable level since the zip tie in the pocket is supposed to act as a hard-stop with the heat shrink because folks tend to just yank the whole wing to disconnect the break-away ODU connector when disassembling the wing from the lift boom. 
-[embedded image-20240409-180230.png]
+[embedded: image-20240409-180230.png]
 Wing Tip Drawing 107-100549
-[embedded image-20240409-180109.png]
+[embedded: image-20240409-180109.png]
 
 ### Liam Limon, 2024-04-11
 

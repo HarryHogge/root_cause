@@ -9,7 +9,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** SP-58 Stalker Un-assessed or Crit. 1&2 investigation
-- **Issue color:** purple
 
 ## Comments (0)
 

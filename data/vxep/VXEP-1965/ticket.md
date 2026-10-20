@@ -37,7 +37,7 @@ I will comb through debug and event log.
 
 ### Alexander Alan Arnold, 2026-07-16
 
-[embedded image-20260717-025312.png]
+[embedded: image-20260717-025312.png]
 HLB seems to really drop during landing could this cause the nudge issues?
 
 ### Alexander Alan Arnold, 2026-07-16
@@ -91,13 +91,13 @@ The VTOL telemetry indicates small ovrY (lateral) and ovrR (unused) inputs so it
 ### Eric Brewer, 2026-08-10
 
 @David Grosher pause commands began here, it looks like the voltage was pretty steady for >10s after the pauses started. 
-[embedded image-20260810-210626.png]
+[embedded: image-20260810-210626.png]
 
 ### Eric Brewer, 2026-08-10
 
 @Ted Trowbridge @David Grosher confirm there was nudging present. It appears that the autopilot is responding to the commands (note the position command and feedback slewing per the override inputs). The nudging begin at about 260' AGL.
 
-[embedded image-20260810-211156.png]
+[embedded: image-20260810-211156.png]
 
 ### David Grosher, 2026-08-10
 

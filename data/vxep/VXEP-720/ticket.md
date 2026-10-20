@@ -47,9 +47,52 @@ AAR’s attached
 - open an separate issue regarding the sim inaccuracies
 - create a slide deck to report findings and close out investigation
 - address is the Vlife variance in this flight needs to be further investigated
-[embedded image-20241031-221815.png]
+[embedded: image-20241031-221815.png]
 
 ## Comments (28)
+
+### David Grosher, 2024-10-15
+
+@Everett Werner Can you do the data analysis for this effort?
+
+### Everett Werner, 2024-10-15
+
+@Pat Wells Who in FLOPS can I talk to about this incident? I would like to get some clarification on some order of events. This is my understanding:
+Flight 1: Launched and flew a bit, updated mission with 50%+ battery left and GCS informed that the vehicle did not have enough endurance, landed and tested battery to find only 10-20% remaining. (SOC in the GCS window did not match the actual state of charge in the vehicle, and the GCS sim was aware of this?)
+Flight 2+3: Repeated with same battery fully charged?
+
+### Pat Wells, 2024-10-15
+
+@Everett Werner  you can talk to @Gregory Nichols from FLOPS.
+
+### Everett Werner, 2024-10-15
+
+@David Grosher @Pat Wells  Looking at the indicator window from the photo as well as the data there is something off for the simulation to predict such a large power consumption (the simulation predicts 1462 WH for the 20 minute flight, our battery pack is 1554WH). I suspect an incorrect altitude input in the mission or something incorrect with the simulation (simulation issue more likely). 20 minutes of flight is about right for a 17km mission as predicted in the simulation. For the simulation to predict 1462W of consumption in 20 minutes it would have to be predicting 5000W of consumption.
+Without the actual mission file I cant troubleshoot the mission though.
+
+As far as what appears to be an inaccurate state of charge estimate goes:
+-Integration of the power consumption predicts about a 45% SOC on landing
+-Raw battery voltage predicts around a 45-70% SOC on landing
+-Vehicle internal estimate predicts around a 45% SOC on landing
+This is after about 2 hours of flight and looks consistent with other data I have available.
+
+Is it possible that the battery testers are not calibrated correctly? If they are calibrated and are typically more accurate than the vehicle SOC estimates we may be looking at an error in our SOC algorithm in combination with a degraded battery pack.
+
+### Alexander Alan Arnold, 2024-12-10
+
+@David Grosher Are we still determining corrective action on this?
+
+### David Grosher, 2024-12-10
+
+@Alexander Alan Arnold Updated. I linked 2 CAs related to this. First, is a manual/guidance update. Second, is the upcoming new battery charger.
+
+### Josh Burrell, 2024-12-19
+
+@David Grosher can you define what the manual update is? I’m working on getting as much information as possible for a rev of the OPS and Maintenance manuals. Please and thank you!
+
+### David Grosher, 2024-12-19
+
+@Josh Burrell The battery checker in the FSK assumes the battery chemistry to provide a state of charge in %. This assumption is incorrect. Instead, we will need to provide a mapping of voltage to percent based on the chemistry in these batteries. @Cameron Chapman can provide that mapping.
 
 ### Cameron Chapman, 2024-12-19
 
@@ -119,49 +162,6 @@ I haven’t had any issues with the accuracies of the battery checker (if batter
 ### Cameron Chapman, 2025-02-11
 
 @Tom Westrich can you confirm these checkers will be obsoleted once the new chargers are rolled out? Can you open a subtask to obsolete them in that project and link here if so.
-
-### Drew Cunnien, 2025-03-04
-
-@Josh Burrell @Dana Holley @Cameron Chapman 
-Per @Tom Westrich that is correct: the checkers will be obsoleted once the new chargers are rolled out.
-
-We agree with Dana’s verbiage: I would propose the following as a CAUTION in the MX Man -Battery Charging section and Ops Man- Battery Life section. “ Operators should only use the VXE SUAV Aircraft Status window or appropriate Launch Wizard steps to accurately reference state of charge (SOC) percentage for HLB and main batteries. Do not solely rely on the SOC percentage of the battery checker or charger.”
-
-This seems to be the best way to address this in the manuals while the new stuff is developed.
-@Alex Senita
-
-### Josh Burrell, 2025-03-04
-
-@Drew Cunnien @Dana Holley the proposed wording reads like a NOTE, is there any threat to the aircraft based on what we’re telling them to do? If we want a Caution we need to tell them what will happen if they don’t follow it.
-
-### Drew Cunnien, 2025-03-26
-
-@Josh Burrell @Dana Holley I apologize, there was a decision.
-
-We agree with you Josh, that this should be a NOTE not a CAUTION. As far as we can tell this issue does not pose a significant threat to the aircraft.
-
-Apologies for the late reply!
-
-### Dana Holley, 2025-03-26
-
-@Josh Burrell @Drew Cunnien Josh is correct in that it’s currently written like a NOTE. If the aircraft can crash, which it could, then it must be a CAUTION with the wording that  suggests an aircraft crash may occur if guidance is not followed. Are we putting this in both manuals and the OS?
-
-### Josh Burrell, 2025-03-26
-
-@Dana Holley I’m thinking we need it in all three that way it doesn’t get missed. @Drew Cunnien you want to give us the final version of the Caution to add?
-
-### Christa Meck, 2025-08-05
-
-@Dana Holley @Josh Burrell We got the documentation all sorted?  I see this is related to https://jenaero.atlassian.net/browse/SMUP-50  which isn’t done yet so just checking in.
-
-### Pat Wells, 2026-08-11
-
-@Josh Burrell was the documentation updated to reflect this guidance?
-
-### Josh Burrell, 2026-08-11
-
-@Pat Wells Adding this NOTE: 
-Operators should only use the VXE SUAV Aircraft Status window or appropriate Launch Wizard steps to accurately reference the SOC percentage for HLB and main batteries. Do not solely rely on the SOC percentage of the battery checker or charger.
 
 ### Drew Cunnien, 2025-03-04
 

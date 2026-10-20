@@ -25,7 +25,7 @@ Task to track the creation of a new and/or modified traveler to account for the 
 - etc.
 
 
-[embedded file]
+[embedded: Green AP Recovery Paths - COPY 23.04.28.png]
 
 ## Comments (2)
 

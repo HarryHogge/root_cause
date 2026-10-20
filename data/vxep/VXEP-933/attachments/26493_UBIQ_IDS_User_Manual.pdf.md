@@ -683,7 +683,7 @@ following methods:
 3. After approximately one minute, a new Wi-Fi network named "UBIQ IDS TCU" will 
 appear in the available networks list. 
 4. Connect to this network using the password: 
-CapSense-v12 
+[password removed] 
 5. Open a web browser and enter the following address: 
 ○ http://ids.ubiq/ 
 ○ If this does not work, try: http://192.168.81.1/ 

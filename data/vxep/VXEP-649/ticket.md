@@ -10,9 +10,6 @@
 - **Reporter:** Ryan Babigian
 - **Creator:** Ryan Babigian
 - **Parent:** VXEP-629 MARSOC Prototype Delivery - URGENT NEED
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-6
-- **Issue color:** green
 
 ## Issue Status
 

@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-573 Sustainment: VXE30 Incident Investigation
-- **Issue color:** yellow
 - **Vehicle Configuration:** VXE30 plus Block 35X prototype center wing
 - **Problem Type:** Other (explain in description)
 - **Plan:** Complete
@@ -87,7 +86,7 @@ Corrective Actions:
 @David Grosher I don’t see anything obvious. After looking at both datalogs It looks like the vehicle had a successful transition before the data stops. Can we pull the FDR? That usually has longer data in my experience. If it was a VTOL lift system failure, I think we typically see the data cut out earlier than this data. Given the abrupt end of XComm logs I am inclined to think maybe this is an avionics power issue in which case the FDR won’t help. If the FDR data goes longer than that could be evidence that the avionics power wasn’t disrupted.
 While not too bad, it does seem like the autopilot was having a bit of difficulty achieving stability. Maybe winds? The booms are a bit uneven, and the throttles are a bit divergent. At the same time the pitch/roll are +/- 10 degrees.
 VTOL data during landing for reference.
-[embedded image-20250625-025451.png]
+[embedded: image-20250625-025451.png]
 
 ### David Grosher, 2025-06-25
 
@@ -131,7 +130,7 @@ Correction just the black main harness this avionics box does not have a transpo
 ### Jason Scherer, 2025-06-25
 
 @Greg Fryer This is a look at where each processor stops logging by correlating VTOL Throttles. All logging stops within 5.22 seconds.
-[embedded image-20250625-220127.png]
+[embedded: image-20250625-220127.png]
 
 ### David Grosher, 2025-06-25
 

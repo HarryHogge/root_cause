@@ -11,7 +11,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Labels:** GFProject
-- **Issue color:** purple
 
 ## Description
 

@@ -19,7 +19,7 @@ Update the HIL firmware branch to automatically enable the nose fan during syste
 
 ## Issue Status
 
-### Deliverables:
+**Deliverables:**
 
 
 Updated firmware with nose fan enabled by default

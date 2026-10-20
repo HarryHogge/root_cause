@@ -8,9 +8,6 @@
 - **Reporter:** Cameron Chapman
 - **Assignee:** John Gober
 - **Creator:** Cameron Chapman
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-10
-- **Issue color:** blue
 
 ## Comments (1)
 

@@ -25,7 +25,7 @@
 
 
 The dashed line indicates the aircraft thinks it’s flying racetrack 3 of the uploaded mission but it’s flying the other racetrack 3
-[embedded 23e3ee71-f5e5-434c-9436-a077878115a7.png]
+[embedded: 23e3ee71-f5e5-434c-9436-a077878115a7.png]
 The line from the aircraft shows it as flying a racetrack that is not the uploaded racetrack
 
 ## Comments (1)

@@ -9,9 +9,6 @@
 - **Assignee:** Madeleine Masiello
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-944 VXE 614 Erratic behavior and propulsion failure led to crash 
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-9
-- **Issue color:** orange
 
 ## Comments (1)
 

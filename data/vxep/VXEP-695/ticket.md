@@ -15,7 +15,6 @@
 - **Parent:** VXEP-684 Practice Build - 0716P01 ESD11 Electronics Board
 - **Epic Link:** VXEP-684
 - **Start date:** 2024-10-05
-- **Issue color:** purple
 
 ## Comments (0)
 

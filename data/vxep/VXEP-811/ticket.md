@@ -54,6 +54,15 @@ Based on the throttle (railed for RF) and the current readings (higher for right
 
 ## Comments (22)
 
+### Eric Brewer, 2024-12-04
+
+@David Grosher @Pat Wells @Greg Fryer I took a look through the logs and compiled a report.  The lift system did not have enough power to arrest the descent, I suspect due to a bad connection to one side of the lift system (right side throttles were pegged so I suspect that’s the side that wasn’t able to draw full power).  Recommend inspecting the connections.  @Cameron Chapman FYI.
+It’s also plausible a CG imbalance on descent would look like this - was this a wing drop flight where maybe one side was still remaining on landing?
+
+### Pat Wells, 2024-12-04
+
+@Alexander Alan Arnold please reach out to Frank reference inspecting the connection.
+
 ### Cameron Chapman, 2024-12-04
 
 @Eric Brewer if the connection was bad, the current would drop when the throttles railed. It seems more likely an ESC or prop failure (probably ESC) on the right side. Likely ESC. Plotting commanded vs actual roll and pitch may help. 
@@ -150,14 +159,6 @@ Once we’re good on the report we can move this to closed.
 ### Alexander Alan Arnold, 2025-01-10
 
 @Cameron Chapman @Eric Brewer Can you guys finalize the report when you have some time so we can discuss the incident with the Customer and appropriate PM?
-
-### Cameron Chapman, 2025-01-10
-
-@Pat Wells I think it is pretty clear they were flying overweight. Can your group summarize in a report as needed, and let us know if you have any questions?
-
-### Pat Wells, 2025-01-10
-
-@Alexander Alan Arnold FYSA
 
 ### Cameron Chapman, 2025-01-10
 

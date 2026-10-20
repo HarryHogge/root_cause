@@ -54,11 +54,11 @@ I reached out to Dan and Garret regarding the 3000 foot spikes in commanded alti
 I’m going to dig into the altitudes recorded while flying the landing patterns, but I can’t yet reconcile how the maximum vehicle altitude that I’ve seen so far (482 feet) is less than what was reported by the operator (900 feet and 600 feet).
 The vsm-info log was found to contain binary characters, which affected grep’s extraction of data.  Once that was dealt with, I do now see the altitude spikes that were cited:
 
-[embedded v732-19-Nov-2024.png]
+[embedded: v732-19-Nov-2024.png]
 The rapid climb in altitude that occurred at 12:01:56 is coincident with an operator command to Land ELZ.  The AltitudeSet jumps from 410 to 2863 at 12:00:26.
 A similar jump occurs at 11:12:13 when the vehicle completes its Primary mission of a single waypoint and transitions to Land PLZ automatically, where AltitudeSet goes from 300 to 2873:
 
-[embedded altitude-set.png]
+[embedded: altitude-set.png]
 
 ### Craig Burton, 2024-11-22
 
@@ -94,10 +94,10 @@ Addendum:  how did they ultimately end up landing successfully if the landing pa
 ### Craig Burton, 2024-12-03
 
 @David Grosher In addition to the two previously discussed (unintentionally) commanded climbs (circled in blue), there was a third near the end of the flight (yellow highlight).  During this climb, the vehicle was flying a Primary landing approach.  The VSM’s logs indicate that the Operating Mode was RTB throughout the climb, from 12:20 to 12:21, with a rapid descent from 12:21 to 12:22.  The RTB operating mode results in the VSM commanding the landing, but inhibiting any further commands until a new mode is entered (i.e. all subsequent VCSi commands are filtered until changed).  Thus, this climb was not commanded by the VSM.
-[embedded v732-19-Nov-2024-annotated.png]
+[embedded: v732-19-Nov-2024-annotated.png]
 Looking at the AP logs, specifically the reading OLPwrCom from T95_V732_241119_092746_FDR00074.csv, we can see that during this time interval of 12:20 to 12:22, the commanded power (if I’m reading the column correctly), shows a marked reduction in throttle, dropping from 40% to under 10% for the duration of the rapid climb and descent.
 
-[embedded OLPwrCom.png]
+[embedded: OLPwrCom.png]
 Garret’s notes indicated that there were strong thermals encountered during their tests; I suspect that this uncommanded climb was the result of encountering one of these shortly before landing.
 
 ### David Grosher, 2024-12-04

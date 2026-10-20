@@ -10,7 +10,6 @@
 - **Reporter:** Cameron Chapman
 - **Creator:** Cameron Chapman
 - **Links:** relates to VXEP-663 (Populate 55lb spreadsheet with flight science estimates/previous data )
-- **Issue color:** purple
 - **Leadership Stakeholder:** Sam Miller
 
 ## Description

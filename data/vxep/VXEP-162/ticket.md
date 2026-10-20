@@ -93,15 +93,15 @@ Given the impedance measured is lower than the passing point of the much higher 
 ### Matt Philley, 2023-11-01
 
 Looks like latest batch was a direct from China…? We have ~4500 left in inventory.
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: image-20231101-150027.png]
+[embedded: image-20231101-150125.png]
+[embedded: image-20231101-150234.png]
 
 ### Hayden Jeanor, 2023-11-01
 
 resistance of left contact = 81uOhms
 resistance of right contact = 110uOhms
-[embedded file]
+[embedded: image-20231101-151211.png]
 
 ### Cameron Chapman, 2023-11-01
 

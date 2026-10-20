@@ -58,6 +58,59 @@ Impedance check on CW Power Connector will be performed: Higher impedance platin
 
 ## Comments (27)
 
+### David Grosher, 2024-09-19
+
+@Cameron Chapman I see HLB Voltage and Current dropping off towards the tail end of the VTOL data log. It appears to capture more of the event than the XCOMM datalog. The voltage appears to drop to 21.25V. 
+
+[embedded: image-20240919-210521.png]
+@Pat Wells FYSA
+
+### Cameron Chapman, 2024-09-19
+
+It seems like either a battery or AS150 fault are most likely, considering the sharp voltage drop. @Pat Wells I recommend the following.
+- Where is this located?
+- Ship aircraft back to SLO if feasible. Battery too would be useful, but maybe harder to ship a damaged battery. If shipping is difficult, could perform these steps on site.
+- Measure HLB cell voltages with cell checker if it is accessible. Record HLB SN.
+- Inspect and photograph battery and CW power connectors for damage, burning smell, excess potting that should have been removed and mating indicator added with SB.
+- Continuity check between CW battery and wing power connectors.
+- Measure antispark resistance of the CW power connector. Tip of contact to base of the male contact with a line.
+- Record flight history of this battery and aircraft.
+
+[embedded: image-20240919-213955.png]
+
+
+[embedded: image-20240919-214033.png]
+
+### Pat Wells, 2024-09-19
+
+@Cameron Chapman 
+- Aircraft is currently in Georgia,
+- We are making arrangements to return aircraft to SLO. HLB will be hand carried by FLOPS instructor who drove to the event.  HLB is returning to Huntsville so we’ll have to perform all the testing here. It can not be shipped in it’s current condition.
+
+### Carson Buckley, 2024-09-19
+
+@Cameron Chapman This vehicle was in for service on 2022-12-07, I am adding the AAR files from those flights.
+
+### Pat Wells, 2024-09-20
+
+@Cameron Chapman added witness statement from FLOPS instructor on site.
+
+### Pat Wells, 2024-09-23
+
+@Cameron Chapman we have the HLB here in Huntsville.
+Could you please provide guidance on what tests you’d like performed on the battery.
+
+### Cameron Chapman, 2024-09-23
+
+@Pat Wells see the plan section:
+“
+- Measure HLB cell voltages with cell checker if it is accessible. Record HLB SN.
+- Inspect and photograph battery and CW power connectors for damage, burning smell, excess potting that should have been removed and mating indicator added with SB.
+- Check data logs for software version used.
+- Continuity check between CW battery and wing power connectors. Maybe easiest to hookup to load and measure voltages. Ensure battery is safe to connect and/or discharge
+- Measure antispark resistance of the CW power connector. Tip of contact to base of the male contact with a line.
+- Record flight history of this battery and aircraft. anyone with log access and bandwidth at either site could do this”
+
 ### Pat Wells, 2024-09-23
 
 @Cameron Chapman we’ll handle the tasks specific to the battery here in HSV.
@@ -69,7 +122,7 @@ We do not have the aircraft back in SLO yet.
 
 @Cameron Chapman checked cell voltages.  Looks good to me.
 HLB S/N: 2-2048
-[embedded HLB Cell check.jpg]
+[embedded: HLB Cell check.jpg]
 
 ### Cameron Chapman, 2024-09-24
 
@@ -120,36 +173,6 @@ The aircraft is on it’s way to SLO, this is where the investigation will need 
 ### Alexander Alan Arnold, 2025-01-10
 
 @Giovanni Gonzalez If we are saying the AS150 impedance is the root cause can we move this to D5/6?
-
-### Lauren Velasquez, 2025-02-17
-
-@Pat Wells 
-Back in RMA per your request. - NO RMA TICKET FOR THIS
-
-### Pat Wells, 2025-02-25
-
-@Cameron Chapman we’re basically wrapped with this on the customer side.  Can we close it out on our end?  Not sure if your team still has more tasks to complete.
-
-### Cameron Chapman, 2025-02-25
-
-@Pat Wells see updated plan. It seems close to closure, but I think we should add more detail to C/CA.
-
-### Pat Wells, 2025-03-05
-
-@Cameron Chapman aside from implementing CA’s this looks to be done. Could we start working on a final report?
-
-### Cameron Chapman, 2025-03-05
-
-@Pat Wells assigning to @Steve Gonzales to finalize report.
-
-### Christa Meck, 2025-08-05
-
-@Steve Gonzales What is the status of this investigation?
-Leaving open until Aug 12 for feedback.
-
-### Steve Gonzales, 2025-08-05
-
-@Christa Meck added notes to plan field.  I plan to review next week. thx.
 
 ### Lauren Velasquez, 2025-02-17
 

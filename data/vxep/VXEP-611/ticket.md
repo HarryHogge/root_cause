@@ -36,7 +36,7 @@ Also the CW flown appears to have been a spare that was quite old given the firm
 
 @Pat Wells 
 Initial finding that the versions were changed in the middle of operations on 8/20, but only on the XCOMM.  Similar Mag and LRF issues causing RTL as with 572, perhaps environmental issues in the area of operations. There are no obvious issues with the mag data on the VTOL. GPS looks fine (although CNo is not in the logs in this older version). 
-[embedded image-20240905-215524.png]
+[embedded: image-20240905-215524.png]
 Also strange is that the CW number was 1.
 
 ### David Grosher, 2024-09-06
@@ -46,7 +46,7 @@ Every VTOL CSV file from VXEP-611 would fail the ratio test at margin=0.25 and w
  
 Note: Expected mag field from the event log is logged as [23:28:32.777] field: 0.467139
  
-[embedded image-20240906-143735.png]
+[embedded: image-20240906-143735.png]
 
 ### Cody Smisek, 2024-11-07
 

@@ -20,7 +20,7 @@ Ping for MAIM board on expected address. If found, forward IMU+GPS data to MAIM 
 
 ### Joshua Boren, 2025-01-22
 
-[embedded file][embedded file]
+[embedded: xcomm_202_20250122_090237_361_a8e2e83.zip][embedded: maim_msg.py]
 Using this build on the XComm and this python script to act as the maim, I was able to verify the desired functionality.
 With the correct build on the XComm and the connected dev machine setup with the *.12 IP address based on the XComm’s tail number, the dev host can act like the maim sending the hello message and show that the XComm and the OEM7700 start logging messages to it.
 ** EDIT ** For clarification, the MAGNSS test HIL can’t be in HIL mode.  If the HIL asset is in HIL mode for the XComm, it needs to be taken out of HIL mode.

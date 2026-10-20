@@ -16,7 +16,7 @@ Collector projects for 40B.
 Current scope
 Configuration including projects planned for B35 initial delivery. See https://jenaero.atlassian.net/wiki/spaces/SEIT/pages/961019919 
 List of A-B differences currently being tracked on the whiteboard. 3/13/26 snapshot below. 
-[embedded image-20260428-164850.png]
+[embedded: image-20260428-164850.png]
 - @William Dresser  Greg approved combining IPP and OPP contacts to give more power to the IPP  until we can upgrade the connectors. @Scott Whitney Added here https://jenaero.atlassian.net/browse/VXEP-1869. Track resolution here https://jenaero.atlassian.net/browse/XKIT-5432
 
 ## Comments (0)

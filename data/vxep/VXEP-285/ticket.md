@@ -30,11 +30,11 @@ Reporting to Ryan Christino for this, wild, welcome back Ryan.
 
 Posting photos showing differences in blade geometry from other ticket that is being closed out to consolidate tracking to the current ticket.
 New Blade:
-[embedded file]
+[embedded: image-20240215-185424.png]
 Old Blade:
-[embedded file]
+[embedded: image-20240215-185450.png]
 Side by side:
-[embedded file]
+[embedded: image-20240215-185544.png]
 
 ## Attachments (3)
 

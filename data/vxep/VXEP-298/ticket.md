@@ -14,7 +14,6 @@
 - **Parent:** VA-1802 Short term fixes to Mod Payload Kit
 - **Links:** relates to VA-2140 (111-105025 (Mod Payload Harness) Needs CAD, Drawing, and BOM updates to match improved production process); relates to ENG-3342 (111-105025 (Mod Payload Harness) Needs CAD, Drawing, and BOM updates to match improved production process); relates to ENG-3356 (ECN - 111-105025 Mod Payload Harness Needs CAD, Drawing, and BOM)
 - **Epic Link:** VA-1802
-- **Issue color:** purple
 - **Sprint:** EE Drafting
 - **Production Stakeholder:** Liam Limon
 - **Other Stakeholder (as required):** Sam Omiotek

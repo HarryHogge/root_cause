@@ -21,17 +21,17 @@ See if tiny-micro-cracks seen on some of the production failed boards are also n
 
 ### Connor Peebles, 2023-04-05
 
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
-[embedded file]
+[embedded: IMG_0081.jpg]
+[embedded: IMG_0077.jpg]
+[embedded: IMG_0078.jpg]
+[embedded: IMG_0079.jpg]
+[embedded: IMG_0086.jpg]
+[embedded: IMG_0080.jpg]
+[embedded: IMG_0085.jpg]
+[embedded: IMG_0082.jpg]
+[embedded: IMG_0083.jpg]
+[embedded: IMG_0084.jpg]
+[embedded: IMG_0087.jpg]
 
 ### Connor Peebles, 2023-04-05
 

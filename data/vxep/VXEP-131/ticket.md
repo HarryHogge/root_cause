@@ -101,12 +101,12 @@ When this task gets kicked off please let me know.  There are some nuances to ho
 Today I finished the turn rate sensor for the TAS.  This is a very simplistic device consisting of a microswitch and a Pi Pico programmed to measure the time between presses and convert that into a turn rate which is sent back to the TAS.  To test it, I set up the turntable at 90 deg/s (15 RPM) using the stroboscope.  I tuned it until the lines didn’t walk more than 1 degree over a 10 second period.  I left the system to run for 5 minutes, gathering the min/max/average for the whole period.  Over that period, the turn rate sensor captured the following results in RPM: 
 Min: 14.9925  Avg: 14.9997  Max: 15.00375
 
-[embedded file]
+[embedded: MicrosoftTeams-image (9).png]
 
 Below is a graph of the turn rate over a 1 minute period.  I am unable to provide longer durations of this graph with my current setup but it may help provide some context.
-[embedded file]
+[embedded: image-20231020-224613.png]
 Since the sensor is currently triggering on a Monster Energy Drink can, we can also see the results of that can being slightly bumped during one of the rotations:
-[embedded file]
+[embedded: image-20231020-224953.png]
 
 I think this shows we have a very accurate turn rate using stroboscopes alone.  The above data suggests when configured, the turntable has an accuracy of approximately -0.05%, +0.025%.
 
@@ -130,16 +130,16 @@ Proposed acceptance criteria for gyro and accelerometer verifications
 Accelerometer
 Target value for axis +/- 0.050 g
 Rationale: This is what production has used to pass autopilots this far without direction from Engineering.  As it is wider than the statistically derived results, this wider criteria will be kept until sufficient data is collected to tighten the criteria further in the future.  Current data from the TAS shows that an acceptance criteria of +/- 0.020 g of target would be acceptable, however more data would be beneficial before unnecessarily tightening the criteria.
-[embedded file]
+[embedded: image-20240109-200245.png]
 Current statistics results for the accelerometer SQL query
 
 Gyro
 target value for axis +/- 2.74 deg/s
 Rationale: Production has been operating with an unofficial criteria of +/- 1.0 deg/s which has been excessive.  It is common for techs to recalibrate autopilots many times over to get results to match the data.  The statistics from the gyro script below (num samples = 332 from 17 autopilots) show that this criteria may be excessive and can be opened to +/- 2.74 deg/s to avoid unnecessary fallout.  This acceptance criteria would guarantee an accuracy within approximately 3.04% of the target 90 deg/s.  
-[embedded file]
+[embedded: image-20240109-200346.png]
 Current statistics results for the gyro SQL query
 
-[embedded file][embedded file]
+[embedded: gyro std deviations.sql][embedded: accel std deviations.sql]
 
 ### Ryan Ferguson, 2024-02-13
 

@@ -42,8 +42,8 @@ Thresholds were adjusted and subsequent launches did not abort.  Behavior will b
 
 @Michael Lindsay  @Scott Lovett it is aborting due to a position uncertainty just above the threshold.  The aircraft is tracking less satellites than I’d normally see, so wondering if it has to do with the location they are taking off.  Here is what the terrain around that site looks like, so lots of trees around:
 
-[embedded image-20260612-140312.png]
-[embedded image-20260612-140322.png]
+[embedded: image-20260612-140312.png]
+[embedded: image-20260612-140322.png]
 Also, something that’s probably a little counterintuitive, but it might help to do a position nudge a little bit on the climb out, so just after the ‘pause’ on the climb.  This will allow the INS to converge out some uncertainties.
 @David Grosher FYI.
 
@@ -54,7 +54,7 @@ Also, something that’s probably a little counterintuitive, but it might help t
 ### Michael Lindsay, 2026-06-15
 
 Thresholds for the below have been updated from 15 to 30
-[embedded image-20260616-005123.png]
+[embedded: image-20260616-005123.png]
 
 ### Eric Brewer, 2026-06-16
 
@@ -63,7 +63,7 @@ Thresholds for the below have been updated from 15 to 30
 Here’s a summary of the attached logs.  If we get the logs from the other flights that would be great to review the data.
 
 
-[embedded image-20260616-133545.png]
+[embedded: image-20260616-133545.png]
 
 ### Pat Wells, 2026-08-11
 

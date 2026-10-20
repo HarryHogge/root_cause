@@ -52,8 +52,8 @@ Gimbal makes strange noise when stowed. Changed Stow location – still makes no
 The noise was captured in the video – make sure your volume is turned up. 
  
 EPS8093 Results on https://jenaero.atlassian.net/browse/VXEP-1639
-[embedded image-20251222-181307.png]
-[embedded IMG_2733.MOV]
+[embedded: image-20251222-181307.png]
+[embedded: IMG_2733.MOV]
 
 ### John Gober, 2026-01-14
 

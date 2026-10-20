@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-437 Fuselage Drop Payload systems
-- **Is this ticket a Design Project?:** Yes
 - **Project Tier:** Tier 2
 - **Program (Marquee):** LRR
 
@@ -18,7 +17,7 @@
 
 Likely the same hardware will support Block 35 and Block 40, but the requirement is for Block 35.
 Requirement:
-[embedded image-20250311-211421.png]
+[embedded: image-20250311-211421.png]
 Should be based on Wing Utility Pylon: 500-2121525 (Model 2121930)
 as well as the quick prototype wing canister droppers (w/parachute).
 

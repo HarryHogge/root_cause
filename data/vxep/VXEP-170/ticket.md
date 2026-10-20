@@ -13,7 +13,6 @@
 - **Parent:** VA-960 Composite updates to support workflow
 - **Links:** relates to VXEP-210 (Engineering Requests to Enable Production Scheduling)
 - **Epic Link:** VA-960
-- **Issue color:** purple
 
 ## Description
 

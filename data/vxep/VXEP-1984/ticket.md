@@ -49,9 +49,9 @@ when we performed the limited testing on B35/B40 droppers, it required numerous 
 ### John Clark, 2026-08-21
 
 This is from 1039 and is correct for Pylon 2. The Pylon is now Armed…. Pylon 2 is the Righthand, Starboard (from the pilot’s perspective)
-[embedded image-20260821-185212.png]
+[embedded: image-20260821-185212.png]
 I see a second Arm for Payload 2… and then a Drop
-[embedded image-20260821-190323.png]
+[embedded: image-20260821-190323.png]
 The command was acknowledged so the Dropper should have released its Payload.
 @Zachary Mann I see these too. 
 [18:00:57.519 1216.519] ADVERT SENT

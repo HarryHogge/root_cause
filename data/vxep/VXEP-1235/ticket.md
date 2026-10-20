@@ -15,7 +15,7 @@
 
 ## Description
 
-### 6.6.0/1 - [Complete]  (November 2025)
+**6.6.0/1 - [Complete]  (November 2025)**
 
 - AP
 - File I/O on XCOMM

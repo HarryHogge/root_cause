@@ -13,9 +13,7 @@
 - **Labels:** Drop-ESAD, Gen1-Utility-Dropper
 - **Parent:** VXEP-434 Wing Utility Drop & Integration of ESAD/Fires support
 - **Links:** relates to XKIT-2119 (LRR Flyoff July 18); relates to XKIT-2433 (Produce payload droppers (Fuse & Wing)); relates to XKIT-2440 (Assemble 4 pair (8 units) of VXE30 Wing Droppers with Controller Boxes); relates to VXEP-620 (Metallic D369 connectors to replace current plastic D369s); relates to ENG-2799 (Gen1 Utility Dropper - Track Final Release and CCB of "Production Release" Drawings)
-- **Issue color:** purple
 - **Plan:** Document/Backfill Requirements: Drop Payload Compliance Matrix.xlsx
-- **Is this ticket a Design Project?:** Yes
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR), Test/Flight Readiness Review (TRR/FRR), Production Readiness Review (PRR)
 
 ## Description

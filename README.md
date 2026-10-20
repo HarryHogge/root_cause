@@ -20,6 +20,8 @@ Working rules are in `CLAUDE.md`; decisions in `docs/decisions.md`.
 The sandbox cannot reach Jira, so the tickets are exported on the local
 machine and committed as text under `data/vxep/`: one folder per ticket with
 `ticket.md` and the converted text of its documents in `attachments/`.
+Tickets in other projects that VXEP incidents point to are in `data/linked/`,
+in the same form.
 
 To refresh it (local machine only):
 
@@ -27,10 +29,13 @@ To refresh it (local machine only):
 python -m venv .venv
 .venv/bin/pip install -r requirements-local.txt
 .venv/bin/python scripts/export_jira.py --env <dotenv with JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN> \
-    --cache ../root_cause_local/attachments --project VXEP
+    --cache ../root_cause_local/attachments --project VXEP --linked
 ```
 
 On Windows use `.venv\Scripts\pip` and `.venv\Scripts\python`.
+
+Add `--linked-only` to redo only `data/linked/` from the VXEP export already
+on disk.
 
 Downloaded originals go in `--cache`, which must be outside the repository, so
 a re-run only downloads new attachments. `data/vxep/manifest.json` records

@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** EE-Intern
 - **Links:** relates to VXEP-1667 (New EE/Intern/Specialist Projects)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Issue Status:** (6/11) due to last working day will be reassigning back to @Cameron Chapman to decide what to do with ticket next
 
 ## Description

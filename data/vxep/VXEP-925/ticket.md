@@ -12,7 +12,6 @@
 - **Creator:** Greg Fryer
 - **Labels:** LRR-March
 - **Parent:** VXEP-902 LRR March Delivery
-- **Is this ticket a Design Project?:** No
 - **Project Tier:** Tier 1
 - **Project Deliverables:** Qty 6 drop systems (Qty 2 plus other equipment = 1 system)
 - **Job Number:** J100117 - VXE Wing Drop Payload

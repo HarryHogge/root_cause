@@ -12,9 +12,6 @@
 - **Creator:** Jeremy Kostel
 - **Parent:** VXEP-752 Integrate Amprius Heavy Payload Main Battery for Hatchet+AEWE demos and future use 
 - **Links:** relates to VA-1915 (Find/build a better battery cell voltage/temp logger); blocks FS2-2557 (Heavy Lift Battery Safety of flight test)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 - **Issue Status:** Waiting for battery to be delivered to SLO. Hoping to start test 1 on Monday
 
 ## Description
@@ -72,11 +69,11 @@ Test 1: Vehicle Level ESR Testing
 - Post this happening, ethernet cable was swapped with a different one and connections were checked
 - Battery voltage was ~27.6V at the time this occurred
 - Last recorded point from data logger: 
-[embedded image-20241119-222206.png]
+[embedded: image-20241119-222206.png]
 - While recharging the HPMB - a VXE30 main battery was put into the vehicle to see if issues persisted
 - Connection was successful
 - When running through LW and trying to push ini file to vehicle, this pop up box showed up: 
-[embedded image-20241119-220714.png]
+[embedded: image-20241119-220714.png]
 - Cody and Artis both have never seen this before, indicating it is uncommon
 - “Datalink” at bottom of the screen observed turning yellow at least once during this
 - About 3 minutes into running the motor at ~300W (28V) the FWD motor began to cut in and out
@@ -114,7 +111,7 @@ After another power cycle, able to connect to GCS but still not webpages. Batter
 - using VEHICLE SOC, not battery SOC
 - looking for minimum 500W
 - See SoC curve vs. No load Voltage for 10% and below here: 
-[embedded image-20241120-174418.png]
+[embedded: image-20241120-174418.png]
 
 ### Jeremy Kostel, 2024-11-20
 
@@ -212,10 +209,10 @@ CRITICAL UPDATE
 - It was an immediate value of 0V, indicating more likely a connection failure than a cell failure
 - total pack voltage did not dip
 - Relevant data from cell logger:
-[embedded image-20241122-221752.png]
+[embedded: image-20241122-221752.png]
 - Post testing, we conducted tests to see where the failure occurred
 - pinout of charging harness:
-- [embedded image-20241122-221712.png]
+- [embedded: image-20241122-221712.png]
 - Charging harness proved to still have conductivity but was reterminated anyway. Still has conductivity
 - We were able to see all other cell voltages from the 9pin XHP, indicating it was not a grounding issue and all other cells were still reporting correctly
 - Finally, we probed directly on the ODU connected to the battery. We were able to read cell voltages 1-6 but not cell 7. Total pack voltage was higher than the rest of the cells showed, indicating cell 7 was ~2.8V, the same as the other cells

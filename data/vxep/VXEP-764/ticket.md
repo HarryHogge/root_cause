@@ -12,7 +12,6 @@
 - **Creator:** Laura Bertule
 - **Parent:** VA-630 VXE30 Minor production improvements (collector)
 - **Epic Link:** VA-630
-- **Issue color:** purple
 - **Part Number(s):** 100-113337
 
 ## Description
@@ -25,7 +24,7 @@ Replaced SSD: 1 TB, M.2, PCIe NVMe, SSD, Class 35 [G4Q9CJO] [400-BMRU]
 We have 30 laptops in inventory that would cover us until February if nothing changes on demand report.
 Lead time right now is about 2-3 weeks after we place the order. 
 Please see the attached email below from Dell. 
-[embedded Correspondence - SSD issue.png]
+[embedded: Correspondence - SSD issue.png]
 
 ## Comments (6)
 

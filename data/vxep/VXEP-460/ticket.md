@@ -11,7 +11,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-456 Create list of issues discovered, improvement ideas, tests recommended. Prioritize the list and determine implementation plan
 - **Epic Link:** VXEP-456
-- **Issue color:** purple
 - **Plan:** Maybe fixable with Grey wire removed and bonding wire between batteries (I used a banana cable @ 12 gauge)
 
 ## Description
@@ -27,7 +26,7 @@
 ### Garrett O'Neill, 2024-07-02
 
 AAR logs from Abel’s test:
-[embedded file]
+[embedded: V455 Data.zip]
 
 ## Attachments (1)
 

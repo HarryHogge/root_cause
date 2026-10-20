@@ -12,7 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** SP-206 Improve Power Connector, Contacts, and Signal Connectors
 - **Links:** relates to VXEP-232 (Overheating Battery/Cable (Fuel Cell Support Kit SCO Test Config) -); relates to VXEP-391 (Develop Replacement for cable Signal Connectors); relates to XKIT-3487 (Design SB40 Center Wing Distribution Board (Ethernet plus power switching))
-- **Issue color:** purple
 - **Other Stakeholder (as required):** Connor Peebles
 
 ## Description

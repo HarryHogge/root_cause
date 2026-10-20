@@ -96,7 +96,7 @@ FYSA: @Eric Brewer @Ted Trowbridge
 ### Eric Brewer, 2026-06-23
 
 @Drew Hildreth yes - sorry I responded to Michael directly and didn’t update the ticket.  The AAR contains one good flight (wiht GPS) and a short log before that (~15s) where the aircraft doesn’t have GPS.  15s is around the normal startup time so it wouldn’t be unexpected to not have GPS for that short a time period.  If you can get some logs that are earlier than these ones (assuming that’s when they had the issue?) i can take a look. 
-[embedded image-20260623-134950.png]
+[embedded: image-20260623-134950.png]
 
 ### Michael Lindsay, 2026-06-23
 

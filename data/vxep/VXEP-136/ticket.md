@@ -82,6 +82,10 @@ Questions
 
 ## Comments (21)
 
+### Cameron Chapman, 2022-10-26
+
+Reviewed PCB files and sent feedback
+
 ### Cameron Chapman, 2022-12-19
 
 @Laszlo Juhasz , can you please list the current location for any related documents for this project? 
@@ -94,7 +98,7 @@ Questions
 ### Laszlo Juhasz, 2022-12-19
 
 @Cameron Chapman The control PCBA from Tytorobotics should be back in stock later this month or early in January.
-[embedded file]
+[embedded: image-20221219-225430.png]
 
 ### Cameron Chapman, 2022-12-19
 
@@ -118,7 +122,7 @@ Thanks Laszlo. Looks like a good start. Can you please do the following (see PCB
 What is your suggestion as far as quantity to order?
 
 Thank you,
-[embedded file]
+[embedded: image-20230111-171455.png]
 
 ### Cameron Chapman, 2023-01-11
 
@@ -181,10 +185,6 @@ All - Moved to VXEP and will make some Epics.
 ### Connor Peebles, 2023-11-13
 
 added EE Action 7. a. “Simulate Aircraft wiring associated ripple current, see NCR 1842 as to why.“ as a corrective action for NCR 1842. Though it might interfere with action 7 itself…
-
-### Christa Meck, 2025-03-25
-
-@Laszlo Juhasz and/or @Cameron Chapman Does this work from 2022 still need to be done?
 
 ### Christa Meck, 2025-03-25
 

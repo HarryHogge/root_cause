@@ -22,7 +22,7 @@ Customer did not mention any indication of problem during launch wizard. Aircraf
 
 ### Alexander Alan Arnold, 2026-03-25
 
-[embedded image-20260325-122219.png]
+[embedded: image-20260325-122219.png]
 Does this Primary LZ waypoint one mean someone sent it to landing pattern after take off? @Scott Lovett @David Grosher  
 
 update disregard this comment I See the time stamp is 7 minutes after launch, I am trying to figure out if they generated an AAR after the abort or just sent us the flight data from the following flight.

@@ -10,9 +10,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1512 SB40 Software (Release 6.7.0)
 - **Links:** relates to VXEP-1512 (SB40 Software (Release 6.7.0))
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-3
-- **Issue color:** yellow
 - **Plan:** Assigning to Scott to see if more information is needed/helpful
 
 ## Description
@@ -23,7 +20,7 @@ B40 to 30 DIO+ADC Summary.xlsx
 
 ### Jeremy Kostel, 2025-11-19
 
-[embedded image-20251119-183732.png]
+[embedded: image-20251119-183732.png]
 FYSA @Cameron Chapman 
 Needs more formalized documentation when time is provided. Screenshot directly from conversation with Scott H
 

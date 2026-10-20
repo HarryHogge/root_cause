@@ -23,7 +23,7 @@ During STALKER FAT Testing, one of the D450+ Fuel Cells (SN:510) failed during s
 
 Related to PTR-96 Cathode fan calibration values have been expanded.  CAR in process for updating production fuel cells. 
 See TPTR-58_EAES 8D Failure Analysis_10.9.2023.pptx
-[embedded file]
+[embedded: image-20231108-034517.png]
 
 ## Issue Status
 
@@ -33,7 +33,7 @@ See TPTR-58_EAES 8D Failure Analysis_10.9.2023.pptx
 ## Root Cause
 
 Software issue.  Cathode fan calibration values did not cover all failure modes.
-[embedded file]
+[embedded: image-20231108-034415.png]
 
 See TPTR-58_EAES 8D Failure Analysis_10.9.2023.pptx
 

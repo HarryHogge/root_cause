@@ -13,7 +13,6 @@
 - **Parent:** XKIT-828 AGNSS: Perform Detailed Design Work
 - **Links:** relates to VA-1343 (Heated Pitot V1 Electrical Design); relates to VA-1347 (Summarize power available for heated pitot. ); relates to ENG-346 (1607P01A Improvements. XCOM / XE240 PWR COMMS BD)
 - **Epic Link:** XKIT-828
-- **Issue color:** purple
 - **Other Stakeholder (as required):** David Grosher
 - **Leadership Stakeholder:** Greg Fryer
 

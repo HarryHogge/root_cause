@@ -9,7 +9,6 @@
 - **Assignee:** Greg Fryer
 - **Creator:** Christa Meck
 - **Parent:** SP-197 LRR
-- **Issue color:** purple
 
 ## Comments (0)
 

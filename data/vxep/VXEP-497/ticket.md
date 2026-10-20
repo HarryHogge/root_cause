@@ -35,12 +35,12 @@ Percentage of autopilots reburned: 32 %
 
 @Marc Richardson The attached txt file is the list of all affected autopilots within the date ranges mentioned above.  If I can get some help from quality tomorrow to search through SCO’s records we can try to connect the AP’s in the list with travelers.  I can also provide a significantly longer list if we want to open up the date constraints to cover block 25 as well.
 
-[embedded file][embedded file]
+[embedded: AP Reburn Analysis.py][embedded: AP Reburns 2021 thru apr 27 2023.txt]
 
 ### Ryan Ferguson, 2023-04-28
 
 I have finished compiling the total number of aircraft which currently have autopilots that underwent multiple burn-ins attempts.  The table below contains the list of all affected aircraft affected by this risk.  I have also attached the file which associates tail numbers with autopilot SN’s.  Note that this file may look a bit messy as it was created using the files on Carson’s computer.  It also only covers aircraft going back as far as 2020.  
-[embedded file]
+[embedded: Tail Number to AP Table with Reburns.xlsx]
 | Planes at risk: |
 | 334 |
 | 336 |
@@ -69,7 +69,7 @@ I have finished compiling the total number of aircraft which currently have auto
 
 
 The .txt file below also includes a full history of all AP SN’s that went through two or more burn-ins.  It is the same output of the script I wrote earlier but I took out the time constraints so it can show the data for all Green AP’s going back as far as 2005.  If this analysis has to be done again in the future we can easily copy the files off Dexter again and rerun the script.
-[embedded file]
+[embedded: AP SNs.txt]
 
 ### Cameron Chapman, 2023-05-02
 

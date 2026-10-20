@@ -85,193 +85,127 @@ Possible root cause is a VTOL or VTOL ESC or in circuit wiring intermittent low 
 
 ## Comments (50)
 
-### Steve Gonzales, 2025-04-10
+### Alexander Alan Arnold, 2025-01-31
 
-@Pat Wells @Cameron Chapman Adrian and I have found the failed component.  It was the ethernet switch 1 IC on the Xcomm board that failed, possibly from an ESD event, processing step or other TBD.  Report update planned for 4/11.  I will mssg. you when complete for review.
+This incident has just been brought to our attention. we are working with the customer to retrieve data and equipment at this time and will upload the files once we have them. @Greg Fryer
 
-### Steve Gonzales, 2025-04-15
+### Greg Fryer, 2025-01-31
 
-@Pat Wells I added slide 29 for your review. Correlation with the erratic flight behavior and overall crash still in process. It is possible there is a second/corresponding failure mode we have not yet found.
+@David Grosher Suspect we will need analysis of the logs first. Could of course be a hardware issue with the VTOL, but I’m shifting it over to you for starters. Note no FDR yet (@Pat Wells mentioned in email he is working with them to get the FDR)
+@Alexander Alan Arnold FYI.
 
-### Steve Gonzales, 2025-04-18
+### David Grosher, 2025-02-03
 
-@Pat Wells Updating power point for review by early Monday the 21st.
+@Alexander Alan Arnold @Eric Brewer @Pat Wells Data uploded
 
-### Steve Gonzales, 2025-04-21
+### Pat Wells, 2025-02-03
 
-@Pat Wells @Cameron Chapman @David Grosher Please review 614 PPT and let me know thoughts / what needs to be improved before the customer call tomorrow.
+@David Grosher attached data provided by customer
 
-### Pat Wells, 2025-04-21
+### Cameron Chapman, 2025-03-06
 
-@Steve Gonzales acknowledged and reviewing now.
+@Steve Gonzales this equipment arrived today. Can you please review the investigation and inspect it?
 
-### Rodney Linch, 2025-04-29
+### Rodney Linch, 2025-03-06
 
-@Steve Gonzales - we picked up 614’s fuselage and wing cases. The fuselage case is missing the fuselage.  Can you point me in the right direction as to where I may pick it up?
+@Steve Gonzales - both cases brought to engineering area. RMA intake complete.
 
-### Steve Gonzales, 2025-04-29
+### Pat Wells, 2025-03-11
 
-@Rodney Linch Hi, 2 days ago it was just to the right of the rightmost HIL bench in engineering.  It may have moved but should be in that general area.  I will look around later today.
+@Cameron Chapman Are there any updates on this?
 
-### Rodney Linch, 2025-04-29
+### Cameron Chapman, 2025-03-11
 
-@Steve Gonzales we picked up the cases. The fuselage is missing its avionics box.  Can we get that as well?
+@Steve Gonzales TIQUILA meeting tomorrow. Can you please coordinate investigation today?
 
-### Rodney Linch, 2025-05-07
+### Jason Scherer, 2025-03-11
 
-@Steve Gonzales - I scoured the area and didn’t see it.  Let me know if you find it!
+@Alexander Alan Arnold If we could get GCS logs that would be helpful as well.
 
-### Cameron Chapman, 2025-05-21
+### Alexander Alan Arnold, 2025-03-11
 
-Moving old info from fields above. 
-Plan:
-Investigation Paths
-Servo Function Investigation Plan:​
-- Manually block servo movement. Measuring 6.1VDC line for pulses and possibility to interfere with VTOL power or function. Try recreate spikes seen on servo bus with other scenarios. Ensure logging rates match data​
-- Simulate effect of failed servo and see if it could create failure modes like this. Production has seen stuck servos approximately 1/50. ​
-- Run servo through in-house test procedure developed with servo OEM. Testing planned EOB 4/8/25. 
-- Test ran by Nigel Goodison, left aileron servo passed with no issues
-- Perform visual internal inspection. We have approval to open per Nigel Goodison – QC.
+This happened almost 6 weeks ago is the data still going to be there?  And can you send me the file path you want the data from @Jason Scherer
 
-VTOL AP Power Fault Investigation Plan:​
-- Recreate i12V data​
-- Power V614 Avionics box and CW and physically disconnect ethernet to the SaCam (J31 on VTOL interface board) and the CW Harness. ​
-- Power V614 Avionics box and Center Wing and vibrate CW and try to create an intermittent connection and capture netS1P4SaCam and I12V.​
-- Investigate source of i12V oscillation. Record results in the data log glossary. Compare to other flights and ironbird. ​
-- Do we have logs of blinker status. It powers SA cam and blinkers. Suspecting blinkers causing current oscillation. ​
-- Review data for possible anomalies caused by VTOL motor power ​
-- Abel may have some evidence of this happening in other scenarios. We could have him look at this data and circuit. (Spikes are from ESC/Motors probably not servo motor)​
-- Supported by this statement in the ppt "Left side throttles increase significantly just before VTOL motors power off (indicates roll imbalance)"​
-- 4/4/25 Steve 
-A.  Perform insulation analysis of motor windings, ESC and harness with a megger scheduled for 4/8.
-B.  Vibe if necessary to induce failure mode, scheduled for 4/10 or 4/11.
+### Adrian Garcia, 2025-03-11
 
-General Checks from deep dive 4/9/25:
-- Investigate build of 26 pin ODU - Adrian/Gio
-- Solder Cup to Solder Cup distance on back shell/ solder to solder cup distance
-- Use megger to test the potential between solder joints on 26 pin ODU
-- Pull 52 pin Alden connector 100-107311 from inventory for testing
-- For signals go to around 300V with the megger
-- For power Steven will come up with limit
-- Production test of fuselage signal harness and CW connector 
-- obtain resistance report of test
-- Preflight ground checkout
-- Determine how VTOL motors are read during preflight check. - Steve
-VTOL motors are not read during preflight spin up, visual check only.
-- Determine if ailerons are checked - Steve
-Ailerons, rudder and elevator are checked through visuals only.
-- Confirm power draw of esc matched throttle during flight
-- Right after it took off and was in forward flight aircraft detected a landing - Steve
-May be triggered by low airspeed, or X.  Data path of CAN Bus is from VTOL AP to Xcomm and back to VTOL AP, connection may have been intermittent to allow for comm in one instance and not in another.
-- Possible FWAP/ magnetometer board issue
-- Run FWAP board through production testing - Gio
-- Produce new chart for vibration PPT slide 24 - Steve
-Added chart with Xcomm timing.  High vibration before lost communication occurred.
-- Confirm blinker modes with Jason - Steve
-Blinkers by default are off during take-off and fwd flight, turning on during landing.  They also can be manually turned on.  No other modes readily available.
+@Cameron Chapman I helped @Steve Gonzales with initial inspections today on the aircraft. Here are my gatherings as of now: 
+- Servos are working as intended
+- I tested the servos with a servo controller and they responded accordingly
+- Since servo1 was showing the transient, I set up the right side of the aircraft to measure continuity on signals SERVO1, RAIL, and GND_AIL
 
-Xcomm Failure Found, Investigation Plan 4/10/25:
-Xcomm was powered up with U5, U26 at 0.2V, U18, U19, U25 at 0V, U3 low at 2.0V.  Suspect failed soler/component or FOD around 3.3VDC circuit U3 regulator or U24 microprocessor.
-- Thermal camera Xcomm board.
-- Inspect 3.3VDC U3 circuit, connections and U22 reference voltage.
-- Measure voltage on enable lines.
-- Check for FOD on U26.
-- Replace U3.
+Next steps: 
+- Hook up XCOMM to Iron Bird and check for: 
+- ethernet connection 
+- update: AV Box connected to webpage
+- How servos respond to AV box movement (look more at right aileron)  
+- Update: servos responded as expected
 
-Status:
-4/17/25 Moving task slide from ppt to here:
-1.Inspect servo and adjacent moving parts. Look for clearance of moving surfaces vs normal. Report if abnormal if not.
-2.Artificially blocking servo. Measuring pulses and possibility to interfere with VTOL power or function.
-3.Vibration of XCOM and harness, or whole vehicle.
-4.May be able to open up servo and inspect. Need to check if we have any proprietary restrictions against this. Check with supply chain.
-5.Simulate effect of failed servo and see if it could create issues like this.
-6.It isn't super clear from a quick review of the timeline. How do the spikes on the 12/6V busses compare to when the VTOL AP loses connection. It seems very possible that the VTOL motors kicking on or changing throttle sharply could create power/transient issues to a similar effect.
-1.Abel may have some evidence of this happening in other scenarios. We could have him look at this data and circuit. (Spikes are from ESC/Motors probably not servo motor)
-2.Supported by this statement in the ppt "Left side throttles increase significantly just before VTOL motors power off (indicates roll imbalance)"
-7.I noticed the VTOL AP stops during transition ~10 seconds after the FW abort, transition to VTOL. We have had a lot of issues during transition. Is there any sequence of firmware commands or states that could end in a locked processor, or is it much more likely primarily hardware? Would we have evidence of that if so?
+### Jason Scherer, 2025-03-11
 
-3/11/25
-Servos tested using servo controller and they responded accordingly. They do not seem stuck. 
-Servo1 line power had continuity all across the aircraft. 
-No physical debris present on aileron.
-3/31/25 @Pat Wells 
-Initial HW testing was not able to replicate failure modes seen, due to amount of time spent, test equipment available, and test method maturity.  The below corrective actions are intended to reduce the highest probability failure modes understood by the current evaluation performed by FW/HW.  Replacing the below seeks to reduce failures by:
-- Right aileron stuck:  Lowers risk of failure due to intermittent connection at the servo motor and boost board.  Lowers risk of a faulty motor/boost board.  Eliminates risk of an out of spec mechanical dimension or movement by the aileron linkage.  Harness change lowers the risk of a cabling short/open/high resistance.
-- Loss/Noisy CW power:  Lowers risk of failure of power to the CW from the Xcomm and signal connections.
-- Boost board V spikes:  Lowers risk of spike caused from a VBattt feed connection issue.
-- False landing: Lowers risk of loss of serial communication between Xcomm and FWAP.
-- ADP power/communication:  Lowers risk of communication/pwr issue between the ADP and VTOL and Xcomm.
+@Alexander Alan Arnold Disregard, I didn’t realize this was an incident we had already investigated pretty far. I thought this was an investigation we hadn’t started yet. 
 
-4/4/25
-Completed tests:
-PCB inspection around U26, U5, U1, Xcomm general, VTOL general, FWAP general, Harness connection points from above 1-5, vibrated booster board 25,50,75,100Hz while monitoring 6.1V output to left aileron and actuating, monitored 12.8 output of Xcomm to VTOL pcb at VTOL while vibrating harness at connection with the aforementioned frequencies. Monitored current draw on 28V main while physically moving harnesses.  PWM monitored to left aileron.  Jason updated the timing to match between xcomm and vtol and improved some slides.
-4/9/25
-XCOMM did not connect to webpage and upon closer inspection the majority of the power LEDs did not turn on. This means that a component within the buck’s circuitry was failing. Most notably, the 12V regulators that go to the SaCam and the Vtol Int board were reading 200mV. See https://jenaero.sharepoint.com/:x:/r/sites/FlightSafety/_layouts/15/Doc.aspx?sourcedoc=%7B5BE081FE-49CD-4168-BF88-FDC230682D53%7D&file=V614%20Regulator%20Outputs.xlsx&action=default&mobileredirect=true  for more info
+The GCS would have prompted to create an AAR even if the vehicle wasn’t connected. So, unless they deleted it, the AAR would still be on the GCS that was used for the flight.
 
-### Steve Gonzales, 2025-10-07
+### Adrian Garcia, 2025-03-13
 
-Submitted customer report for review on 10/1/25
+I could not replicate the I12V and netS1P4SaCam seen in the incident on the Iron Bird. Here are my findings: 
+[embedded: image-20250313-164918.png]
+[embedded: image-20250313-164933.png]
+I may have understood the experiment that was asked of, but I physically disconnected the the center wing harness and the SaCam ethernet connector off the VTOL Interface board. 
 
-### Cameron Chapman, 2025-11-04
+ @Cameron Chapman
 
-@Drew Hildreth  I updated the CA tasks. Has the customer accepted the presentation? Do we have any more actions for this?
+### Pat Wells, 2025-03-17
 
-### Drew Hildreth, 2025-11-04
+@Adrian Garcia @Steve Gonzales any further updates on this? I’ll be briefing the customer tomorrow 18 March and they will ask.
 
-@Cameron Chapman Dhruti responded with the following… 
+### Steve Gonzales, 2025-03-17
 
+@Pat Wells Yes, the update is the regulator circuit around U26 on the XComm pcb is suspect.  That circuit provided unstable power to the VTOL board.  Load testing is planned for this week.
 
-- What does at next Revision mean and is there a timeline? I told her that there is no current timeline for a Revision
-- Of the improvements articulated in Slide 11, are any of these likely to be implemented for VXE30? I owe this.. how would you like me to respond?
-- Do EA have an idea of when the Operator Manuals will be updated to cover ‘Hot Mate’? This is already covered in the manual. Looking to clarify on next release.
-- Do EA recommend any additional inspections/actions in the interim for VXE30? I told her no, because the card in internal to the Avionics and they can’t open that, nor would they be able to see it if they tried.
+### Pat Wells, 2025-03-24
 
-### Cameron Chapman, 2025-11-04
+@Steve Gonzales checking in for updates.  Will be briefing customer tomorrow morning.
 
-@Drew Hildreth 
-Of the improvements articulated in Slide 11, are any of these likely to be implemented for VXE30? I owe this.. how would you like me to respond?
-- We are targeting to implement these and other improvements with unified autopilot, but with a small, heavily loaded team, there is a decent chance that the XCOM board will not be updated in the initial version of that. We do not have timeline and scope finalized for that yet. You are welcome to call if easier to discuss.
+### Steve Gonzales, 2025-03-24
 
-### Cameron Chapman, 2025-11-04
+3/24/25 Update, some noise is present on the 12.8VDC line from U26 but is generally stable with a load.  Working on other items this week and did not have a dedicated resource to continue.
+[embedded: image-20250324-233129.png]
 
-@Cameron Chapman It also depends how you define VXE30. Such changes might be categorized as a VXE30 successor depending on the scope (B31 potentially)
+### Steve Gonzales, 2025-03-25
 
-### Cameron Chapman, 2026-03-06
+3/25/25 @Giovanni Gonzalez @Adrian Garcia IPC level inspection of regulator circuit. Load to 7W for 20min min duration and scope. Inspect wiring to VTOL. Measure R from reg to VTOL.  pls complete by 3/26/25
 
-@Madeleine Masiello there was a suspected servo fault at the start of this timeline. Now that we have info on servo issues, are you able to find and report the servos involved in this crash and test them according to the latest pegasus guidance?
+### Giovanni Gonzalez, 2025-03-25
 
-### Madeleine Masiello, 2026-03-09
+12.8V regulator to VTOL unloaded: 
+[embedded: VXE614 12.8 Regulator Unloaded Waveform.png]
+12.8V regulator to VTOL with 7W load for 20 min:
+[embedded: VXE614 12.8 Regulator with load Waveform.png]
+12.8V Air regulator unloaded:
+[embedded: VXE614 12.8 Air Regulator Unloaded Waveform.png]
+12.8V Air regulator with 7W load for 20 min:
+[embedded: VXE614 12.8 Air Regulator with load Waveform.png]
+@Steve Gonzales
 
-@Cameron Chapman RMA has informed me and confirmed that VXE614 has been sourced and went back to the customer 12/01/2025
+### Pat Wells, 2025-03-31
 
-### Cameron Chapman, 2026-03-31
-
-Talked to Maddie. Unable to find servo in engineering.
-
-### Christa Meck, 2026-05-06
-
-@Drew Hildreth @Cameron Chapman @Alexander Alan Arnold  What is needed from the CCB on this item?
-
-### Christa Meck, 2026-05-08
-
-Per conversation with @Drew Hildreth This Incident work item can be closed as the aircraft has been returned to the customer.  
-The Team is still interested in tracking the XCOMM improvements outlined in https://jenaero.atlassian.net/browse/ENG-346 as some of them are corrective actions from this Incident.
-This work item is linked to https://jenaero.atlassian.net/browse/ENG-346 and those XCOMM improvements can be monitored there.
+@Steve Gonzales any updates?  We have a customer brief tomorrow morning.
 
 ### Giovanni Gonzalez, 2025-04-01
 
-[embedded 12.8V Xcomm Regulator Cont..jpg]
-[embedded 12.8V Xcomm Regulator Inductor.jpg]
-[embedded 12.8V Xcomm Regulator Inductor 2.jpg]
-[embedded 12.8V Xcomm Regulator U5.jpg]
-[embedded 12.8V Xcomm Regulator.jpg]
+[embedded: 12.8V Xcomm Regulator Cont..jpg]
+[embedded: 12.8V Xcomm Regulator Inductor.jpg]
+[embedded: 12.8V Xcomm Regulator Inductor 2.jpg]
+[embedded: 12.8V Xcomm Regulator U5.jpg]
+[embedded: 12.8V Xcomm Regulator.jpg]
 From manual inspection and images of the 12.8V Xcomm Regulator there does not appear to be any cold solder joints or visible defects on the hardware. Vibration testing will be performed tomorrow 4/2/25
 
 ### Giovanni Gonzalez, 2025-04-01
 
-[embedded 12.8V Air PWR Regulator 3.jpg]
-[embedded 12.8V Air PWR Regulator 2.jpg]
-[embedded 12.8V Air PWR Regulator.jpg]
+[embedded: 12.8V Air PWR Regulator 3.jpg]
+[embedded: 12.8V Air PWR Regulator 2.jpg]
+[embedded: 12.8V Air PWR Regulator.jpg]
 12.8V Air PWR regulator which goes to CW does not show any visible defects
 
 ### Pat Wells, 2025-04-02
@@ -326,7 +260,7 @@ Pasting complete items from plan field.
 - Measure Servo1 PWM signal from the source and to the end of the Boom
 - Recreate this test on the ironbird. Does SA cam losing ethernet link would cause it to draw less power (less traffic), or will it keep trying to stream even if nothing is receiving it? If the former (my guess) this plot could support the loss of power bone. We could measure on the ironbird normal operation, ethernet unplugged, and CW disconnected and compare logs. (maybe finally figure out why logs oscillate so much while we are at it). Do we have blinker status logged? I am curious if that is what causes these oscillations
 - @Giovanni Gonzalez  are you able to coordinate this testing on the ironbird?
-- [embedded image-20250206-233902.png]
+- [embedded: image-20250206-233902.png]
 - Test servo position if pwm or power removed (when commanded up before)
 - If the servo was hard over it was likely plugged into power but getting a bad pwm signal - although i don’t know that for sure.  It went 100fps so i’d assume it would backdrive toward neutral if completely unpowered
 -

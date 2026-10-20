@@ -9,44 +9,28 @@ Subject: Re: Cable for transponder A/C 430
 
 It looks like the label was smudged. The PN is 117-106184.
 
-@Desiray Johnston<mailto:djohnston@edgeautonomy.io> @Kelly Furlong<mailto:kfurlong@edgeautonomy.io> and @Sandra Lopez<mailto:slopez@edgeautonomy.io>, are you able to have electronics build one or some of these cables? I did not see any on the inventory list.
+@Desiray Johnston @Kelly Furlong and @Sandra Lopez, are you able to have electronics build one or some of these cables? I did not see any on the inventory list.
 
-@Michael Mohr<mailto:mmohr@edgeautonomy.io>, is there a need date or priority for this build?
+@Michael Mohr, is there a need date or priority for this build?
 
 This issue has happened with these connectors previously. I started this project to hopefully find an interchangeable replacement that is more rugged.
-
 
 Thank you,
 
 Cameron Chapman
 
-
-
 ________________________________
-From: Michael Mohr <mmohr@edgeautonomy.io>
+From: Michael Mohr
 Sent: Wednesday, September 4, 2024 7:52 AM
-To: Cameron Chapman <cchapman@edgeautonomy.io>; Matt Weber <mweber@edgeautonomy.io>
-Cc: Pat Wells <pwells@edgeautonomy.io>
+To: Cameron Chapman; Matt Weber
+Cc: Pat Wells
 Subject: Cable for transponder A/C 430
-
-
-
 
 Good morning Cameron,
 
-
-
-Sam said to get with you about getting a replacement cable build for the transponder on A/C 430. The P/N is 117-1061S4 I believe. I am attaching a few pics for reference. @Matt Weber<mailto:mweber@edgeautonomy.io> is getting a sticker pack ready to send me for this aircraft and cases so you could probably just send it out with that. If you have any questions, please let me know.
-
-
+Sam said to get with you about getting a replacement cable build for the transponder on A/C 430. The P/N is 117-1061S4 I believe. I am attaching a few pics for reference. @Matt Weber is getting a sticker pack ready to send me for this aircraft and cases so you could probably just send it out with that. If you have any questions, please let me know.
 
 Mike
-
-
-
-
-
-
 
 [A picture containing icon  Description automatically generated]
 
@@ -56,9 +40,9 @@ UAS and Gimbal Payload
 
 Field Service Technical Support Specialist
 
-+1 (850) 516-5685 (mobile)
+[phone] (mobile)
 
-mmohr@edgeautonomy.io<mailto:kgieske@edgeautonomy.io>
+[email]
 
 170 Jetplex Blvd SW Suite E, Huntsville, AL 35824
 

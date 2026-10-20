@@ -35,7 +35,7 @@ AAR Attached
 @Kurt Burian This looks like the bug you mentioned this morning. 
 I see a crash dump in the T95_VT488_240610_095907_vt240610.txt file.  Which led me to: 
 
-[embedded image-20240628-205312.png]
+[embedded: image-20240628-205312.png]
 Looking at the crash dump it seems that the system hadn’t initialized, so maybe it was a forced crash dump given the history in the log before that. Or perhaps it did reset but the fileI/O had not been up in the previous power cycle.
 
 ### Pat Wells, 2024-07-16

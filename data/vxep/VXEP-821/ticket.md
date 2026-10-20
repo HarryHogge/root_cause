@@ -10,9 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-819 LRR - Top Level decisions, items, and tracking (links to separate projects)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-13
-- **Issue color:** dark_green
 
 ## Comments (0)
 

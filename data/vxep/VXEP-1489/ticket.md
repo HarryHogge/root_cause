@@ -46,13 +46,13 @@ Recommended next steps: @Alexander Alan Arnold  or @Steve Gonzales  are you avai
 
 @Michael Mohr @Cameron Chapman @Connor Peebles It appears to be a power issue, throttle commands are sent on VTOL transition, voltage sags but no current is pulled. There is no indication of a HLB cell issue. 
 
-[embedded image-20250828-155107.png]
-[embedded image-20250828-155457.png]
+[embedded: image-20250828-155107.png]
+[embedded: image-20250828-155457.png]
 
 ### Jackson Riley Curvin, 2025-08-28
 
 @David Grosher   could the aircraft think that it had low battery and glide land?
-[embedded fbc9ed4e-feca-4724-a817-5d605093f440.jpg]
+[embedded: fbc9ed4e-feca-4724-a817-5d605093f440.jpg]
 
 ### Cameron Chapman, 2025-09-08
 

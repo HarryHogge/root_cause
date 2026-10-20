@@ -11,7 +11,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** SP-206 Improve Power Connector, Contacts, and Signal Connectors
 - **Links:** relates to XKIT-1716 (SB40 Vehicle Power Switch)
-- **Issue color:** purple
 
 ## Comments (0)
 

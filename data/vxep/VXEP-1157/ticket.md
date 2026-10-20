@@ -12,9 +12,6 @@
 - **Creator:** Grant Goodman
 - **Parent:** VXEP-266 VXE (all) ADP: Heated Pitot/New SA CAM/Remove other obsolete components
 - **Links:** relates to VXEP-1224 (2121756-01 Updated ADP Document Release for Production); relates to JA-374 (Fix broken links)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-4
-- **Issue color:** dark_blue
 
 ## Comments (4)
 

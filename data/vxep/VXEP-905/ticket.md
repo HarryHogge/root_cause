@@ -13,7 +13,6 @@
 - **Parent:** VXEP-618 965-1-01-3100 (obs) & 107-111718 - Add (QTY 1) 2121832-01 to bottom of enclosure
 - **Links:** relates to ENG-2064 (Minor updates to Avionics Enclosure drawing 107-111718)
 - **Epic Link:** VXEP-618
-- **Cause:** Need for better understanding of harshest conditions applied while deployed or stored, reviewable upon RMA
 - **Production Stakeholder:** Joseph Young
 - **Other Stakeholder (as required):** Matt Philley
 - **Engineering Change Level:** Level 1 - Scope of change is clear but there is a choice of approaches
@@ -28,7 +27,7 @@ Dwg did not roll to E as intended, an extra revision will be created for clarity
 ## Plan
 
 put here 
-[embedded image-20250124-190610.png]
+[embedded: image-20250124-190610.png]
 
 ## Comments (11)
 

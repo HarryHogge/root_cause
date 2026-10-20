@@ -13,10 +13,8 @@
 - **Labels:** LRR-March
 - **Parent:** VXEP-902 LRR March Delivery
 - **Links:** is blocked by VA-2533 (Resolve and Release Mod Payload Standard antenna interface issue.); relates to VXEP-1074 (MOD-A Kit Cable, Connector and AHRS Issues)
-- **Is this ticket a Design Project?:** Yes
 - **Key Stakeholder(s):** Brendan Palmer, Charles David Madewell, Trevor Gronner
 - **Planned Milestone(s):** Detailed Design/Critical Design Review (CDR), Production Readiness Review (PRR)
-- **Current Sprint Priority:** 16.1
 - **LRR Desired Delivery Date:** 2025-03-01
 - **LRR Required Delivery Date:** 2025-03-01
 - **Product/Tech Owner:** Charles David Madewell
@@ -33,23 +31,23 @@ Pre-Production ppt: Advance Navigation for MOD Payload Kit (Slide)- Requirements
 QUAD/Status Chart: Advance Nav MOD Payload - QUAD Chart.pptx
 Process Planner: Advance Navigation-MOD Payload.xlsx
 
-### Action Items:
+**Action Items:**
 
-### Task 1: Take and Update Placard Photo for Advanced Nav MOD Payload Kit
+**Task 1: Take and Update Placard Photo for Advanced Nav MOD Payload Kit**
 
 Description:
 - A new placard photo is needed for the Advanced Nav MOD Payload Kit without AHRS & GPS.
 - The updated image will be used for documentation & labeling.
 
 Subtasks:
-Take a clear, high-resolution photo of the Advanced Nav MOD Payload Kit without AHRS & GPS.Upload and update the placard file.### Task 2: Update Checkout Process for Advanced Nav MOD Payload Kit
+Take a clear, high-resolution photo of the Advanced Nav MOD Payload Kit without AHRS & GPS.Upload and update the placard file.**Task 2: Update Checkout Process for Advanced Nav MOD Payload Kit**
 
 Description:
 - Due to the removal of AHRS & GPS, the checkout process needs to be updated.
 - Ensure test & validation procedures are aligned with the new configuration.
 
 Subtasks:
-Review current checkout procedures.Modify steps to exclude AHRS & GPS checks.Update internal documentation to reflect changes.### Task 3: Send Tech Pubs Redlines for Updated Manual Release
+Review current checkout procedures.Modify steps to exclude AHRS & GPS checks.Update internal documentation to reflect changes.**Task 3: Send Tech Pubs Redlines for Updated Manual Release**
 
 Description:
 - Redlines need to be sent to Technical Publications for an updated manual release.

@@ -106,7 +106,7 @@ Hi all, @Sean Odell , @Pat Wells have created a new support number for Edge: 1-8
 I dont think this change ever went thru CCB (since docs are still not released).
 @Marc Richardson  @Desiray Johnston  FYSA Production appears to be using the new Wing case stickers, but not the Fuse case stickers… so trying to get clarity on what the direction is, so we know what to inspect to. These are TIQUILA aircraft and USASOC aircraft in the shop now if that matters one way or another. 
 
-[embedded file]
+[embedded: IMG_9938.JPG]
 
 ### Matt Philley, 2023-08-03
 

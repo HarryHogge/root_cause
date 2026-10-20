@@ -45,7 +45,7 @@ CAs are already implmented to address this.  Fix I2C initialization timeout and 
 
 ### Eric Brewer, 2024-08-30
 
-[embedded image-20240830-142112.png]
+[embedded: image-20240830-142112.png]
 It definitely had a failure of xmag (when those first 2 bits of IMUSrc are set xmag is valid, when it’s 0 it’s invalid).  We switched over to fixed-wing heading updates for the rest of the flight (confirmed in VTOL debug outputs).  @Scott Hunter any ideas why mag is failed? See above the raw readings look pretty reasonable to me so I don’t think they should have tripped any of our failure detection.  @David Grosher
 
 ### Scott Hunter, 2024-09-05
@@ -64,7 +64,7 @@ Entry 1 indicates the file containing the expected mag field strength was read s
 
 We know the expected field was correctly read as .5253 from the 2nd log entry and we know the 166 Gauss reading for measured mag field strength is impossible since the range of the sensor’s scaling is 4 Gauss.
 Based on the data recorded to the .CSV file there was no excessive mag field. Below is a plot showing the magnitude of the mag field with upper/lower thresholds and the mag validity flag overlayed. You can see the measured mag field does not approach the thresholds and there’s no anomalous data near the good->bad transitions of the mag health flag.
-[embedded image-20240905-192341.png]
+[embedded: image-20240905-192341.png]
 
 This same issue appears to be captured in Jira as https://jenaero.atlassian.net/browse/FS2-2097?atlOrigin=eyJpIjoiNWVhYTgyODE3YjNlNDNmMTgyNjViM2E1YWEzNGRlNmUiLCJwIjoiaiJ9
 

@@ -12,7 +12,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** VXEP-618 965-1-01-3100 (obs) & 107-111718 - Add (QTY 1) 2121832-01 to bottom of enclosure
 - **Epic Link:** VXEP-618
-- **Cause:** Need for better understanding of harshest conditions applied while deployed or stored, reviewable upon RMA
 - **Production Stakeholder:** Kyle England
 - **Other Stakeholder (as required):** Matt Philley
 - **Engineering Change Level:** Level 1 - Scope of change is clear but there is a choice of approaches
@@ -21,13 +20,13 @@
 
 ## Description
 
-[embedded image-20250130-231240.png]
-[embedded image-20250130-231203.png]
+[embedded: image-20250130-231240.png]
+[embedded: image-20250130-231203.png]
 
 ## Plan
 
 Put here: 
-[embedded image-20250124-190950.png]
+[embedded: image-20250124-190950.png]
 
 ## Comments (14)
 
@@ -62,7 +61,7 @@ Assigning to @Scott Stuckey to dole out to someone on his team
 ### Gerrit Sperling, 2025-01-30
 
 @Trevor Gronner should this be obsoleted or is it fine in released state? 
-[embedded image-20250130-230734.png]
+[embedded: image-20250130-230734.png]
 
 ### Trevor Gronner, 2025-01-30
 

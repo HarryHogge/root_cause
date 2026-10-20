@@ -9,7 +9,6 @@
 - **Resolved:** 2025-04-25
 - **Reporter:** Travis Storm
 - **Creator:** Travis Storm
-- **Issue color:** purple
 
 ## Description
 

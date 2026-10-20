@@ -12,7 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Labels:** FlightSystems
 - **Links:** clones VXEP-236 (Systemic SD card Investigation VXE-522 XCOM board failures at LM Source inspection); relates to FS2-1661 (XCOM board failures at LM Source inspection); relates to FS2-310 (VXEP - SD Card file corruption (VXEP-236,237,414)); relates to RMA-276 (VXE-499 Center Wing 240625 Edge Riga FLOPS); relates to RMA-300 (VXE 590 Center Wing 240731-1  MOLSON); relates to RMA-301 (VXE 635 Center Wing 240731-2 MOLSON); relates to RMA-307 (240812-1 Center Wing VXE-595); relates to RMA-236 (VXE 532 Center Wing 240418-1); relates to RMA-286 (VXE-623 TIQ MOD 240703-1); relates to RMA-248 (VXE-548 240516  ); relates to RMA-323 (240823-4 PMA263 VXE-503 Center Wing); relates to RMA-322 (240823-3 Center Wing Tail # 4019 Spare); relates to RMA-321 (240823-2 Center Wing VXE-628); relates to RMA-320 (240823-1 Center Wing VXE-596); relates to RMA-309 (VXE-529  Avionics box 240819); relates to RMA-355 (VXE-540 Center Wing 240923-2); relates to RMA-340 (RMA 240911 VXE-685); relates to RMA-364 (VXE-706 241001); relates to RMA-362 (VXE-633 240926-1)
-- **Issue color:** purple
 - **Customer:** TIQUILA
 - **Vehicle Tail Number:** 522 & 529
 - **Other Stakeholder (as required):** Marc Richardson
@@ -117,7 +116,7 @@ After pushing the bootloader, the XCOMM was no londer in the loop but I haven’
 529:
 529 XCOMM we removed the SD Card and the XCOMM was able to fully boot and make it to the XCOMM webpage:
 We put the SD card back into the XCOMM and could see that some files were corrupted. The SD card was reformatted and it now works again with the SD Card installed.
-[embedded image-20240403-180502.png]
+[embedded: image-20240403-180502.png]
 
 ### Connor Peebles, 2024-04-03
 

@@ -12,9 +12,6 @@
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-612 SD Card Reliability Corrective Actions
 - **Links:** clones VXEP-618 (965-1-01-3100 (obs) & 107-111718 - Add (QTY 1) 2121832-01 to bottom of enclosure)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Job Number:** J100084 - VXE Incident Investigation
 
 ## Comments (3)
@@ -29,7 +26,7 @@
 https://www.mcmaster.com/5957K63/ 
 https://shop.spotsee.io/THERMAX-10-LEVEL-IRREVERSIBLE-STRIP-RANGE-B-171-261F-10-PACK 
 
-[embedded image-20241210-180952.png]
+[embedded: image-20241210-180952.png]
 
 ### Connor Peebles, 2025-02-05
 

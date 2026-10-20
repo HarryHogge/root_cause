@@ -15,7 +15,7 @@
 
 ## Plan
 
-#### Deliverables:
+**Deliverables:**
 
 Approved BOM for Hardware & SoftwareProcurement list finalized and validatedSoftware compatibility confirmed
 

@@ -9,12 +9,11 @@
 - **Assignee:** Kurt Burian
 - **Creator:** Artis Bertulis
 - **Links:** relates to FS2-3868 (Investigate: SA camera flares); relates to XKIT-5226 (SA CAM turned green and was unusable during VTOL landing); relates to XKIT-5113 (B40 Non Flight-blocker flight test issue collector/Squawk List)
-- **Issue color:** purple
 
 ## Description
 
 The new ADP SA camera exhibits noticeable red flares when flying toward the sun. Please see the image below, and I’ve also attached several videos for reference.
-[embedded SA Flare-20251021-192856.png]
+[embedded: SA Flare-20251021-192856.png]
 While the flare is brief, it’s visually disruptive and can be quite distracting for the operator. This issue has been consistently observed across multiple new vehicles equipped with the latest ADP system - it’s not isolated to a specific unit or platform. The attached videos were selected from different vehicles on various days, highlighting how frequently this occurs.
 Although the issue was previously reported via an NCR, the follow-up investigation was minimal and did not result in any significant action. For further details, please refer to the NCR documentation - AC 567 - Flight Test - SA camera flash 
 
@@ -22,17 +21,17 @@ I’d appreciate it if this issue could be investigated further, as I anticipate
 This behavior appears only when the vehicle is facing the sun, so on clear, sunny days, it can affect approximately 20–30% of the flight duration when operating in an orbit.
 
 The first video is one of the worst ones:
-[embedded one of the worst ones.ts]
-[embedded vlc-record-2025-10-21-12h25m12s-MISB-10212025-120133-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h25m53s-MISB-10212025-120133-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h26m38s-MISB-10172025-110007-1-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h27m46s-MISB-10172025-104455-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h28m16s-MISB-10172025-104455-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h29m17s-MISB-10172025-104455-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h31m04s-MISB-10212025-104046-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h31m41s-MISB-10212025-104046-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h33m49s-MISB-10212025-104046-0.mpg-.ts]
-[embedded vlc-record-2025-10-21-12h35m33s-MISB-10212025-120133-0.mpg-.ts]
+[embedded: one of the worst ones.ts]
+[embedded: vlc-record-2025-10-21-12h25m12s-MISB-10212025-120133-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h25m53s-MISB-10212025-120133-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h26m38s-MISB-10172025-110007-1-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h27m46s-MISB-10172025-104455-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h28m16s-MISB-10172025-104455-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h29m17s-MISB-10172025-104455-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h31m04s-MISB-10212025-104046-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h31m41s-MISB-10212025-104046-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h33m49s-MISB-10212025-104046-0.mpg-.ts]
+[embedded: vlc-record-2025-10-21-12h35m33s-MISB-10212025-120133-0.mpg-.ts]
 
 ## Plan
 
@@ -68,7 +67,7 @@ FYSA @Kurt Burian
 ### Cameron Chapman, 2025-12-01
 
 After 12/1 flight test 
-[embedded image-20251201-231227.png]
+[embedded: image-20251201-231227.png]
 
 ### Kurt Burian, 2025-12-08
 

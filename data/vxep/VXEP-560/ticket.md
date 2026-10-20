@@ -23,7 +23,7 @@ Builds with male pins (107-102189-1/-2):
 Builds with female sockets (114-106508, 114-106509, 107-102613):
 - During the soldering process, hold the AS150 socket on the pin until the joint has cooled (reference below image from step 5 of 114-106508 procedure).
 
-[embedded download.png]
+[embedded: download.png]
 Both build types:
 - Using an improved potting jig that locates the pins/sockets to ensure better perpendicularity. Jigs are located in the vault and PNs were sent over on 9/9/2024
 

@@ -74,7 +74,7 @@ Do want us to induce another MCM reset and pull new logs a specific way?
 
 ### Justin Hogan, 2025-08-05
 
-[embedded file][embedded file]
+[embedded: tn880_varlog_20250805.zip][embedded: tn881_varlog_20250805.zip]
 MCM Log files attached here. @Craig Burton @Alexander Alan Arnold
 
 ### Craig Burton, 2025-08-05
@@ -182,10 +182,10 @@ May  5 10:35:13 eamcm0881 kernel: [    0.000000] Booting Linux on physical CPU 0
 @David Grosher There are a series of things that are impacting the MCM reset issue. 
 
 1.) Hot plug the gimbal - Connor is spot on with his analysis that hot plugging the gimbal will cause the MCM to reboot. I don’t see this being an issue with flight due to the connector having a locking mechanism. I would also recommend that we stop hot plugging the gimbal while on ground without turning power of to the gimbal through XCOMM software.  Logs attached below for the Hot plug. 
-[embedded image-20250818-160925.png]
+[embedded: image-20250818-160925.png]
 2.)  PMC Reset error - I believe is tied to MCM partitioning being configured incorrectly. After Alan and I reconfigured the MCM, we haven’t seen the PMC Reset after that in the SYSLog (cd /var/log) .  Below is a look at the PMC reset error and then Also detailed write ups for the partitioning issues from production. I’d like to see someone set a test up with MCM not configured correctly to reproduce this as a step to confirm. 
 https://jenaero.atlassian.net/browse/NCC-174 https://jenaero.atlassian.net/browse/NCC-168 https://jenaero.atlassian.net/browse/NCC-161 
-[embedded image-20250818-161634.png]
+[embedded: image-20250818-161634.png]
 3.)EMI/Grounding issue - John and I noticed this last Friday when doing a final checkout of the cable. Whenever the cable is installed in the Block 30 or Block 30 AdvNav aircrafts the video is fragmented and delayed. I also did a ping test from the MCM to the gimbal on the AdvNav aircraft with shocking results. We experienced 60-40% packet loss over 15 minutes.  We did not experience this issue on the BLOCK 35X aircraft. More testing is still needed to help define the issue here but John has the team creating a cable with shielding. 
 
 4.) DC/DC board overheating - Faulty DC/DC board.

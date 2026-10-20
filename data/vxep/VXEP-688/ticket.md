@@ -15,7 +15,6 @@
 - **Parent:** VXEP-682 Practice Build - 101-118005-01 & -02, VXE30 Drop Payload PCB to Harness L & R
 - **Epic Link:** VXEP-682
 - **Start date:** 2024-09-28
-- **Issue color:** purple
 
 ## Comments (0)
 

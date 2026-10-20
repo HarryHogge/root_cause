@@ -52,7 +52,7 @@ Firmware:
 
 Aircraft was invoiced 8/11/23, and built with parts before that. The improved supplier was established ~Oct 2023. It did pass our resistance check, but that could be evidence that it is batch related (all aircraft before ~Oct/23, so still a lot of aircraft)
 Quick voltage drop measured ~10 seconds before the reported behavior. Need to confirm if this could be the cause or not. It looks like power contacts were inspected and passed the measurement ~10/19.
-[embedded file]
+[embedded: image-20240522-172911 (a579cb85-4463-484b-b3a9-a491aa39a725).png]
  Added powerpoint summary here.
 
 ## Root Cause
@@ -66,6 +66,46 @@ AS150 Pin test Results (<235uOhm is pass):
 Aircraft was invoiced 8/11/23, and built with parts before that. The improved supplier was established ~Oct 2023. It did pass our resistance check, but that could be evidence that it is batch related (all aircraft before ~Oct/23, so still a lot of aircraft)
 
 ## Comments (28)
+
+### Pat Wells, 2024-05-22
+
+@Douglas Baker FYSA issue during TIQ training event.
+
+### David Grosher, 2024-05-22
+
+@Cameron Chapman This looks like an electrical issue given the dip in the HLB to 18 volts. 
+[embedded: image-20240522-172911.png]
+
+### Douglas Baker, 2024-05-22
+
+@Pat Wells Do we think they will ask for a containment plan on this issue?
+
+### Pat Wells, 2024-05-22
+
+@Cameron Chapman pictures of connector added. 
+Comments from LM FSR: The center wing power connector exhibits signs of distress. The HLB for that flight showed no signs. The resistor on the center wing connector was measured at 5.7 ohms.
+
+### Pat Wells, 2024-05-23
+
+@Cameron Chapman FYSA this aircraft is on it’s way back to SLO on an RMA due to the power connector issues.  
+Does your team need the hardware to continue investigating?
+@Sean Odell FYSA
+
+### Cameron Chapman, 2024-05-23
+
+@Pat Wells and @Sean Wendling, yes, we will test when it arrives. This seems to be the difficult and predicted case of contacts that passed initial testing, but then failed later due to increased resistance (possibly due to plating issues or faulty parts). CAs are recorded here 
+https://jenaero.atlassian.net/browse/VXEP-12 
+The main ones that could help with this issue are:
+- the automatic software aborthttps://jenaero.atlassian.net/browse/VA-93
+- Contact inspection and cleaning (these contacts look pretty clean). https://jenaero.atlassian.net/browse/SMU-70
+
+### Sean Wendling, 2024-05-23
+
+Hey @Cameron Chapman, did you mean to ping @Sean Odell ? If there is any support I can provide lmk 🙂
+
+### Cameron Chapman, 2024-05-23
+
+I did. Thanks @Sean Wendling
 
 ### Sean Odell, 2024-05-30
 
@@ -117,50 +157,13 @@ AS150 Pin test Results (<235uOhm is pass):
 
 Thanks @Rajesh Budhabhatti agreed. The main cause seems to be failed contacts. I was asking about the pause and current loading to see if that could have caused the damage to the contacts. So that profile should not overheat anything based on your analysis? It seems closer to 150A on the second half, not 80.  
 
-[embedded image-20240917-220054.png]
+[embedded: image-20240917-220054.png]
 
 ### Rajesh Budhabhatti, 2024-09-17
 
 Yes, I see, 150A with a peak to almost 180A peak for two motors.
 I see the power connector with black plastic peeled and frayed. This makes me think that the power connector was the issue.
 Raj
-
-### Pat Wells, 2024-11-05
-
-@Cameron Chapman can we work on closing this out and getting the aircraft back to RMA for repair?
-
-### Cameron Chapman, 2024-11-06
-
-@Pat Wells electrically, we are ready for RMA. 
-@Eric Brewer , do you think we should investigate these more, or do you recommend sending to RMA? 
-Firmware:
-- Determine why unable to connect to aircraft via radio originally or at all now.
-- Mark was able to connect. Should we troubleshoot this further?
-- does anything in the data indicate the cause of this behavior. “started to descend. At around 20 feet it started to behave erratically, contacted the ground, slid, and then became airborne again before landing. Damage was limited to the aft landing pad.” This seems to have occurred after the voltage returned to normal.
-
-### Pat Wells, 2024-11-06
-
-@Sean Odell FYSA
-
-### Eric Brewer, 2024-11-06
-
-@Cameron Chapman , I took a quick look at the logs and uploaded a summary here.  The rapid descent definitely looks related to the battery issue.  I am less clear on why the pause command was cancelled.  It seems hard to believe it would be coincidental to the voltage drop but I can’t seem to find the logic in the code that might trigger it.  @Ted Trowbridge do you have any ideas on what might have triggered that in the GCS code?
-
-### Alexander Alan Arnold, 2024-12-10
-
-@Rajesh Budhabhatti Is D4 an accurate status for this investigation?
-
-### Alexander Alan Arnold, 2025-01-10
-
-@Rajesh Budhabhatti Any updates?
-
-### Pat Wells, 2025-03-17
-
-@Cameron Chapman what is left to close this out?  We’ve already repaired and returned the aircraft to the customer.
-
-### Cameron Chapman, 2025-03-19
-
-@Pat Wells  I think this is ready to close. CA: replace AS150 contacts in B35.
 
 ### Pat Wells, 2024-11-05
 

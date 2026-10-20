@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-434 Wing Utility Drop & Integration of ESAD/Fires support
-- **Issue color:** purple
 - **Product/Tech Owner:** Charles David Madewell
 - **Program (Marquee):** ESAD/Fires & Drop Payloads
 - **Job Number:** J100129 - VXE Gimbal & Payload Support & Sustainment

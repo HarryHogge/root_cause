@@ -35,7 +35,7 @@ The Templates are blank boards with the cards placed. To use simply add whatever
 
 I think we could start with this project. Essentially, turn the files in this document into specific PCBs. 
 MAGNSS Avionix V2 Test Harness Block Diagram.vsdx
-[embedded image-20240724-223208.png]
+[embedded: image-20240724-223208.png]
 
 ### Kaleb Bellenbaum, 2024-10-10
 

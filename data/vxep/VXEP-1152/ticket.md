@@ -11,9 +11,6 @@
 - **Assignee:** Brendan Palmer
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1008 Mod Payload A-Kit Gen 2 design/release/test (Long term issue resolution)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Comments (0)
 

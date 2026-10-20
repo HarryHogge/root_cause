@@ -11,9 +11,6 @@
 - **Assignee:** Kurt Burian
 - **Creator:** Tobi Ogunro
 - **Parent:** VXEP-1008 Mod Payload A-Kit Gen 2 design/release/test (Long term issue resolution)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-2
-- **Issue color:** dark_yellow
 - **Leadership Stakeholder:** Greg Fryer
 - **Issue Status:** Per @Kurt Burian, waiting to release v30108
 - **Tech Lead:** Kurt Burian
@@ -24,32 +21,32 @@ The AHRS unit is intermittently failing to send GPS data in the required 1PPS fo
 
 ## Plan
 
-### Action Items:
+**Action Items:**
 
-#### 1. Investigate Root Cause of GPS Timestamp Issue
+**1. Investigate Root Cause of GPS Timestamp Issue**
 
 - Analyze SBG unit behavior to determine why some units work while others do not.
 - Identify if the issue is due to configuration settings, software/firmware versions, or hardware inconsistencies.
 - Compare the working vs. non-working SBG units to pinpoint discrepancies.
 
-#### 2. Gather & Review Logs from Huntsville FLoPS Team
+**2. Gather & Review Logs from Huntsville FLoPS Team**
 
 - Coordinate with the FLoPS team in Huntsville to obtain logs from the faulty SBG units.
 - Analyze the logs to identify patterns, errors, or deviations from expected GPS transmission.
 
-#### 3. Determine Corrective Action & Implementation Plan
+**3. Determine Corrective Action & Implementation Plan**
 
 - If the issue is configuration-related, define the correct settings and procedures for resolution.
 - If firmware/software updates are required, identify the versioning discrepancies and necessary patches.
 - Develop and test a proposed solution to validate the fix.
 
-#### 4. Documentation & Communication
+**4. Documentation & Communication**
 
 - Document findings and corrective actions for future troubleshooting.
 - Update relevant BOMs, manuals, and training materials if changes are required.
 - Communicate resolution steps to all stakeholders, including Huntsville FLoPS Team and production teams.
 
-### Deliverables:
+**Deliverables:**
 
 Root cause analysis of GPS timestamp intermittencyLogs from Huntsville FLoPS Team reviewed and analyzedCorrective actions defined and testedUpdates to documentation, BOMs, and manuals as needed
 

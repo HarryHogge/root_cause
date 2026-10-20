@@ -66,100 +66,98 @@ Discuss if external or not.
 
 ## Comments (46)
 
-### Rajesh Budhabhatti, 2025-09-15
+### Drew Hildreth, 2025-08-11
 
-Aircraft was flown with new boom on Wednesday 9/10/2025 and operated normally. Flight team did not download the AAR as requested but rather saved it on GCS which is in customer’s possession.
+@Eric Brewer just wanted to let you know that we opened a ticket for this.
 
-### Cameron Chapman, 2025-09-16
+### Pat Wells, 2025-08-11
 
-9/16 Cam met with raj. Populated plan field. Please execute those tests and report findings.
+Added post mishap lift motor test to the description above.
 
-### Greg Fryer, 2025-10-02
+### Greg Fryer, 2025-08-11
 
-@Rajesh Budhabhatti @Cameron Chapman Can you clarify this sentence? “Root cause seems to be the damaged motor controller inside motor 3 (right rear).” I do not believe there is a “controller” inside the motor, likely just a wrong word?
-Also, report is formally required to LRR. Ergo the report from the vendor must include “what will prevent this from happening again”. e.g. different inspection/test/process by them, by us, etc.
+@Drew Hildreth @Pat Wells Eric looked at the log and the GPS fault was a side effect o the failure, vehicle tilt caused satellite loss, which triggered the message (correctly, but uselessly).
+Trying to track down who has the vehicle so we can move it to investigation.
 
-### Rajesh Budhabhatti, 2025-10-02
+### Drew Hildreth, 2025-08-11
 
-I managed to replicate the fault. I found that during the landing phase even with the throttle active, motor stops running. I flashed the ESC again and fault went away. Motor/ESC work normally. When I checked the traveler for this Motor/ESC pair, there was no indication of misbehavior. To further investigate the issue, I found 8 other motor/ESCs that had homing issue however none of them displayed the behavior this one did before reflashing. I am still investigating what could have done this. Until we identify the issue, I am going to ask production to flash the ESC 3 times (Greg’s suggestion). Meanwhile, I will work on better check-out procedure for production.
+@Greg Fryer we have the aircraft in our RMA cage.
 
-### Greg Fryer, 2025-10-02
+### Pat Wells, 2025-08-11
 
-@Rajesh Budhabhatti Also be sure to have them start a log, separate from just NCRs so we can track. John Clark might be a good POC to do more detailed investigation into ESC firmware loading. (Thought I had after we talked)
+@Greg Fryer we will overnight the aircraft to SLO today so that the lift motor/esc can be investigated.  Additionally the aircraft requires repairs which will need to be prioritized @Drew Hildreth
 
-### Rajesh Budhabhatti, 2025-10-02
+### Greg Fryer, 2025-08-12
 
-@Greg Fryer Good idea. I will report back to you once that is done.
+@Pat Wells Production/RMA is doing an inspection, but I need them to hold on repairs until we verify that something is wrong with the ESC/Motor, on the very outside chance that it is a wiring issue or similar. I will try to crack one of the electrical folks loose today, but they are in high demand for VBN and such. Will advise.
 
-### Greg Fryer, 2025-10-09
+### Pat Wells, 2025-08-12
 
-@Rajesh BudhabhattiWith root cause established, can you please also start finalizing that part of the report (leave root cause alone). Since this will need to go to the customer, it needs to be clear/polished. Since we had to investigate so many potential directions, I think it might be suitable to move the non-root causes to an Appendix, and simply point to them in the main text. e.g. “Possible issue with throttle command due to IMU instability - disproven, see Appendix A.1” or similar. Reading through all the disproven items is informative, but only to the tech savvy folks.
-Also, I put a link to the report doc up at the top of the ticket under description,
+@Drew Hildreth  FYSA
 
-### Rajesh Budhabhatti, 2025-10-09
+### Greg Fryer, 2025-08-12
 
-Hi Greg,
-Thank you for your input. Will do. I have got myself tied up with thermal testing for power budget on 35X. I'll see if I can get report rehashed today.
-Thank you,
-Raj
+@Cameron Chapman @Scott Stuckey can we pull anyone to look at the ESC for obvious failure today 2025-08-12 without breaking priority work? Just enough to verify the issue is within the ESC to free up Tail 829 for full repair and return to FLOPS.
 
-### Rajesh Budhabhatti, 2025-10-15
+### Scott Whitney, 2025-08-12
 
-Latest reports here: 
-Word doc-VXE 829 LRR Asset mishap during VTOL landing-Redone.docx
-Powerpoint: VXE 829 LRR Mishap Investigation Report-VXEP-1464.pptx
+Based on data review and manually spinning the motor, Eric Brewer said the following “yea I'm done with the review, seems like motor failure and if there's crunching on the ground seems like good confirmation”
+[embedded: image-20250812-184302.png]
+“the GPS funny business was mostly after the crash - just some low CN0 which was probably due to the high attitude.” -Eric Brewer  
+[embedded: image-20250812-184358.png]
+FYSA: @Cameron Chapman
 
-### Greg Fryer, 2025-10-29
+### Greg Fryer, 2025-08-12
 
-@Rajesh Budhabhatti - Just checking in, were you able to get back to investigating possible corrective actions for the ESCs based on the 829 incident?
+@Pat Wells  @Drew HildrethI’ve cleared production to start work on 829, we got bad behavior from the suspect ESC running the boom w/o the rest of the plane. From @Jeremy Kostel : 
+”Weird clicking noise at high RPM (cody thinks sounds like a bearing) and motor not homing correctly
+ I would say while we dont know if it is motor or ESC related we are seeing weird behavior with that motor and ESC on the bench. Mark is inspecting further but i have no reason to assume the problem was related to other parts of the aircraft”
 
-### Rajesh Budhabhatti, 2025-10-29
+### Jack Waeschle, 2025-08-12
 
-@Greg Fryer Hi Greg, Yes, I analyzed the VTOL current and there is a way for VTOL software to determine that the motor is not drawing current however that will only tell the VTOL AP that aircraft is crashing. My findings are in the ppt above. I discussed this matter with John Clark and the right way to do this is to identify and fix the bug that locks up the ESC. His concern was that we have the source code but he cannot be sure that the source code we have is indeed the one that created the image file we are using. Is there something further you would like me to do on this issue? The aircraft went through our SCO and successfully flew a few times before this incident happened.
+@Greg Fryer @Desiray Johnston I measured the pure bending and torsional stiffness of the center panel today and found no issues: 
+[embedded: image-20250812-212804.png]
+As the SB35X wing uses a standard VXE30 spar and layup, aside from a few minor differences in trim, it is identical to a VXE30 Std wing. As the highlighted row above shows, post crash this center panel is within 2.6% of a standard wing, which I would expect as well within standard variance. I will coordinate a glue repair of the small crack along the trailing edge, but otherwise this center panel remains flightworthy.
 
-### Greg Fryer, 2025-10-30
+### Mark Squillante, 2025-08-12
 
-@Rajesh Budhabhatti To ask specifically (and the answer may be “no”): With the information we have, is there any change we could make to the SCO flight or other production steps to detect this issue reliably?
-For example, the answer might be “No, the issue occurs randomly, and is triggered by effectively random events/timing, so no adjustment will make us confident we have detected it”
+Removed right aft lift motor and ESC from boom, no obvious problems found.
+Removed cover from ESC and visually inspected, no obvious problems found, although potting prevents thorough visual inspection
+[embedded: ESC.jpg]
 
-### Rajesh Budhabhatti, 2025-10-30
+### Greg Fryer, 2025-08-13
 
-Thank you Greg. I will do so. There are a couple of things I can add.
-Raj
-Get Outlook for iOS<https://aka.ms/o0ukef>
+@Mark Squillante I know we have a teams chat going for fast discussion, but once we craft a plan there (or anywhere) please update the “Plan” field with new steps so everybody can quickly see where we are going. This has LRR customer visibility, so we need to make sure everyone is kept up to date. Thanks!
 
-### Jackson Riley Curvin, 2026-01-20
+### Mark Squillante, 2025-08-13
 
-Report sent to customer closed on Global support side.
+Checked back EMF of motor by measuring voltage across 50 ohm load resistor across boom power leads while manually spinning motor using a hand drill. Compared to the same test run with a known good motor some abnormality was observed. The suspect motor produced not as smooth of a waveform which indicates likely a problem with one of the phase legs in the motor. See attached scope plots of known good vs suspect motor. Known good motor produced 252mV peak to peak of back EMF, suspect motor produced 364mV peak to peak.
+[embedded: Suspect motor-ESC spun with drill, lower frequency, not as smooth.png]
+[embedded: Good motor-ESC spun with drill, lower frequency, smooth.png]
 
-### Pat Wells, 2026-08-11
+### Mark Squillante, 2025-08-13
 
-@Cameron Chapman back to you since this was never re-assigned after Rajesh left.  What is the current status on the CA?
+Tested MOSFETs in ESC to determine whether there was a short in any of them, no indications of damage to FETs.
 
-### Cameron Chapman, 2026-08-11
+### Mark Squillante, 2025-08-13
 
-Completed plan steps 
-Generate the following plots this ESC, motor, prop, vs normalPower vs RPM Thrust vs powertemp profiles during those runsThermal photo of PCB after each run. Electrical efficiency vs rpmTotal efficiency vs rpmScott Whitney is going to add some plots from data review. Scott Whitney or Dave Grosher did we ever implement the pre landing ESC test? If so, were there any anomalies there?
-Almost certainly a hardware failure, but it would be good to look into if we could have detected it and aborted transition/reverted to FWMark Squillante and/or Laszlo Juhasz can you please perform a hardware inspection of this when it arrives. Lid off top of the ESC only for now. We can meet after that to determine next steps.Removed lid from ESC, no obvious problem found.Spin motor on bench, unloaded, checking for abnormal behavior.Replicated homing problem on bench.Dyno test motor and ESC and compare to known good motor/ESCSuspect motor got quite a bit warmer than known good motor during dyno test, using same ramp profile. This indicates likely problem with motor.Check current draw to each motor phase leg while loaded, compare to known good motor.Raj reports ESC 4 is probably cooked. It ran at 95% for 45s on takeoff. Same with other three to a lesser extent.Please add to investigation summary. Talk to FS (Eric B or Everett) We should figure out why. Ex: do we know what configuration it was flying in (overweight or in limits), environmental anomalies, link to the CA to abort based on high current (not implemented yet) Link to previous data indicating safe operational throttle range and duration. Investigate component ratings, temperature etc. Would this throttle profile cause them to be exceeded. Identify if homing fault is on the motor, ESC, or both. Meet with Cam after these steps are done. Replicate the failureFlash the ESC and see if the fault persists.
+Spun motor up on bench, unloaded. No problems observed.
 
-### Cameron Chapman, 2026-08-11
+### Mark Squillante, 2025-08-13
 
-old status: 10/3 Met with John Clark and discussed the issue. He acknowledges that some sort of “bit flipping” can cause this kind of fault. We have an image file that we use to program the ESCs with. The source code that was delivered to us has never been compiled or worked on. We do not know the tool chain used to compile and build the image file we are using. There is a certainty that if this source code was compiled, the image file would not look like the one we are using. 
-9/22 After several runs of AAR flight profiles, we were able to replicate the fault mode observed during the flight incident. During the Dyno test running the incident flight profile, motor stopped rotating during the landing stage same as during the crash. Further investigation is being conducted. Once the ESC was programmed, the problem went away. 
-9/16 Cam met with raj. Populated plan field. Please execute those tests and report findings. 
-Aircraft in SLO ready for inspection. Investigating suspect lift motor/ESC. Motor 3 does not home. We suspect that due to high throttle, motor was overloaded and damaged the motor controller (not the ESC). While the motor #2 exhibited some grinding sound, it does not seem to be the cause of failure.
+Replicated problem of ESC not homing on bench.
 
-### Cameron Chapman, 2026-08-11
+### Mark Squillante, 2025-08-14
 
-@Pat Wells @Drew Hildreth I cleaned up the fields above and some of the report. Report has been sent to the customer and CAs are tracked in the linked systemic issue. Is this ok to close? I think so.
+I tested this motor and ESC on the dyno, no strange noises or behavior observed other than the not properly homing issue. The ESC did not get that hot, about 32C with 10% throttle, 38C with 40% throttle, and 68C with 85% throttle. The motor got to 81C after the 85% throttle test (ramping up over 10 seconds, holding for 10 seconds, ramping back down over 10 seconds), will compare this to a known good motor/ESC.
 
-### Drew Hildreth, 2026-08-11
+### Mark Squillante, 2025-08-15
 
-@Cameron Chapman Thank you for updating all of that. For my awareness, this https://jenaero.atlassian.net/browse/VXEP-628 ticket, should we change that from ‘relates to’ to ‘is fixed by’?
+Running same dyno profile on known good motor/ESC for reference showed the good motor got to 67C, which points to a problem in the motor since the suspect motor got to 81C. Will keep investigating.
 
-### Cameron Chapman, 2026-08-11
+### Mark Squillante, 2025-08-19
 
-@Drew Hildreth we have not been that strict with the linkage type. The issue isn’t fixed by that one until that one is compelte, but for the sake of clarity, fixed by does sound like the most accurate linkage.
+Checked current draw from each motor phase leg, unloaded, and compared to known good motor. Suspect motor draws ~200mA more on each phase leg. Will investigate further while loaded in the dyno room.
 
 ### Mark Squillante, 2025-08-21
 

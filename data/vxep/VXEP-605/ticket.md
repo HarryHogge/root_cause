@@ -60,9 +60,9 @@ FW AP: 6.05m (From GCS - v6.0.1.2)
 
 @Pat Wells Same result as v688. The VTOL aborts triggered in this code (v144 of VTOL) would have passed in the newer releases. One thing to note is that this CW is also numbered 1, which is strange because that would indicate that it is the same as that flown on v688. 
 
-[embedded image-20240906-154852.png]
+[embedded: image-20240906-154852.png]
 
-[embedded image-20240906-154859.png]
+[embedded: image-20240906-154859.png]
 
 ### David Grosher, 2024-09-18
 

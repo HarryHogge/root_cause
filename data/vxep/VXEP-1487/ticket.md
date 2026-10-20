@@ -11,9 +11,6 @@
 - **Assignee:** Mark Squillante
 - **Creator:** Cameron Chapman
 - **Parent:** VXEP-1452 New E140 Assemblies video quality issues
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-8
-- **Issue color:** dark_purple
 
 ## Issue Status
 

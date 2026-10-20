@@ -11,17 +11,16 @@
 - **Assignee:** Connor Peebles
 - **Creator:** Jacob Troyer
 - **Links:** relates to AV-532 (Detailed Electrical Analysis for High Power Radio on B30); relates to AV-564 (2130230-01 IPCOMM V2 - Rev A (replacing 1610P01A)); relates to AV-1431 (IPCOMM V2 thermal review and radio ES-110163 handoff)
-- **Issue color:** dark_blue
 - **Severity:** 2 - Degraded Performance - No Workaround
 
 ## Description
 
-## September 17 update
+**September 17 update**
 
 I've linked AV-1431 for the PCB thermal review and test-radio checks.
 Casey's 60°C/max-data results include converter/inductor temperature comparisons. Cameron said no further PCB testing was needed. Testing was at 2370 MHz, roughly 7.8–8 W RF by API telemetry and up to 44.8 W electrical input—not direct RF verification or confirmed C-band coverage.
 The thermal results alone don't close the trace-current, inductor-saturation or B30 low-voltage concerns. Connor's direction still applies: close this incident once its linked tasks are closed. Engineering's decision and approved operating configuration also need to be recorded through AV-1355.
-## Original incident and analysis
+**Original incident and analysis**
 
 Detailed electrical analysis of the HP Silvus Radio (2124664-01) shows that the following components may exceed their rating:
 B40 and 30
@@ -102,12 +101,12 @@ Options
 ### Laszlo Juhasz, 2026-02-03
 
 @Cameron Chapman Sorry not to respond sooner. The answer is in that freewheeling or body diode. That diode is sometimes not indicated on the SCH level, but it’s there. That means if the Voltage at “VIN” drops below “SW” then the diode will conduct and feeding the VIN from the SW output. In many applications a series diode at WIN might be required to block that and affecting the VIN feeding path.
-[embedded image-20260203-184020.png]
+[embedded: image-20260203-184020.png]
 
 ### Jacob Troyer, 2026-02-19
 
 @Laszlo Juhasz I wish all schematics showed the body diode! Thanks for drawing it in. We should have clarified that SW is a load (without any external battery) and that VIN is our battery, so there’s really no source (beside output capacitance) to backfeed SW into VIN. Furthermore, this is in the IPCOMM board that has a FET with a body diode (drawn on the schematic!) to prevent backfeeding.
-[embedded image-20260219-232008.png]
+[embedded: image-20260219-232008.png]
 
 I reached out to TI and they pointed me to this forum. From my reading, it sounds like Vout will drop with Vin and will turn off occasionally to charge the BOOT capacitor, which I think will add ripple. I added you to the TI email thread. I think we’ll likely need to test to really see what happens.
 

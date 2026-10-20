@@ -13,7 +13,6 @@
 - **Labels:** Crash, PMA263, Software, Weekly-incident-tracker
 - **Links:** relates to RMA-219 (VXE-438 240226); relates to VA-1311 (VXE-438 Lift motor failure resulting in crash); relates to FS2-3286 (Review and update max pause duration during descent. Coordinate with software to implement. ); relates to VA-93 (Record typical, max, and max tested lift current and voltage profiles. Save test data to confluence. Establish and implement limits and abort if exceeding.)
 - **Impact:** Significant / Large
-- **Issue color:** purple
 - **Customer:** PMA263
 - **Vehicle Tail Number:** 438
 - **Other Stakeholder (as required):** Rajesh Budhabhatti
@@ -60,106 +59,124 @@ https://jenaero.atlassian.net/browse/VA-1561
 
 ## Comments (53)
 
-### Cameron Chapman, 2024-04-30
+### Pat Wells, 2024-02-14
 
-@Rajesh Budhabhatti the timelines for the XCOM log and VTOL log don’t always line up. You should compare the vtibatt on the xcom log to the ibatt and ibatt 1-2 on the VTOL log to line up the profiles. In this case, the plots you listed correspond to no current, not landing current.
-@Liam Shaw  or another FW engineer may be able to point to conversion, or explain why the UTC is not for the same time period (it should be). We should log and link  any useful information or conversions in the data review documents. 
-[embedded image-20240430-182040.png]
+@David Grosher FYSA
 
-### Rajesh Budhabhatti, 2024-04-30
+### David Grosher, 2024-02-14
 
-Table 2 in the investigation report lists serial numbers and other details about the ESCs under test.
+Initial insights, it looks like landing was paused continuously from the start of the descent to the moment the VTOL system failed. About 6 seconds before the VTOL AP stopped logging data the landing pauses were ignored due to low energy. Unfortunately, the datalog stopped about 10 senconds earlier, so I don’t know what the voltage was at that time. It had been at ~25V for a while during the pause. 
+@Pat Wells @Cameron Chapman @Greg Fryer FYSA
 
-### Rajesh Budhabhatti, 2024-04-30
+### David Grosher, 2024-02-14
 
-Updated the fishbone diagram and scaled the XCOM-VTOL charts time axis.
+A bit more context from the XCOMM log, it appears the battery was down to 23.6V at one point. 
+[embedded: image-20240214-204501.png]
 
-### Cameron Chapman, 2024-05-07
+### Cameron Chapman, 2024-02-14
 
-Assigning back to @Rajesh Budhabhatti please ensure all Jira fields and sections of the report are updated to the latest status.
+@David Grosher do we have logic that aborts a pause if the battery gets too low? We should if not. I am out until Friday, but I recommend zooming into the pause timeframe and plotting current, throttles vs expected current, etc. Does it seem like the battery died or that a motor assembly gave out?
 
-### Rajesh Budhabhatti, 2024-05-07
+### Cameron Chapman, 2024-02-20
 
-- Took EOL ESC from field return. Tested profile from the incident. They failed due motor wires desoldering. Plotted throttle, and power for this test. See fig. 20 in the report.
+Log says it is ignoring the last couple pauses, then log ends. 6 seconds before impact. VTOL log Data log is ~10 seconds behind. XCOM log is all there.
 
-### Pat Wells, 2024-06-14
+### Cameron Chapman, 2024-02-23
 
-@Cameron Chapman @Rajesh Budhabhatti Any more progress made on determining root cause?
+@Rajesh BudhabhattiCan you work on this when you get a chance. I can give you an intro to the process 
+See actions above. 
+guide here Flight Data Processing and Review - Engineering Function - Confluence
 
-### Rajesh Budhabhatti, 2024-06-14
+### Rajesh Budhabhatti, 2024-02-23
 
-@Pat Wells @Cameron Chapman  Hello Patrick, We replicated the failure mode by running the ESCs under AAR conditions. It looks like the failure was caused by subjecting the AV to extended pauses. We ran further tests using field return ESCs to replicate ESC failure pattern. Based on these experiments, we developed a thermal model and set of guidelines on maximum pause under various conditions such as ambient temperature, heat build-up during take-offs, heat dissipation during cruising, pause and thermal budget for landing. Please see the report here:  VXE-30 Absolute maximum Pause duration.docx
+Yes, love to. I will review the crash data and guide and then reach out to you for an intro on the process.
+Thanks Cameron,
+Raj
+From: Cameron Chapman (Jira) <jira@jenaero.atlassian.net>
+Sent: Friday, February 23, 2024 9:41 AM
+To: Raj Budhabhatti <rbudhabhatti@edgeautonomy.io>
+Subject: [JIRA] Cameron Chapman mentioned you on https://jenaero.atlassian.net/browse/VXEP-274#icft=VXEP-274
+You don't often get email from jira@jenaero.atlassian.net<jira@jenaero.atlassian.net>. Learn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+Cameron Chapman mentioned you on an issue
+VXE Problems/https://jenaero.atlassian.net/browse/VXEP-274#icft=VXEP-274 VXE-438 Lift motor failure resulting in crash  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Cameron Chapman mentioned you on an issue
+VXE Problems<https://jenaero.atlassian.net/browse/VXEP?atlOrigin=eyJpIjoiYWIwNDlkZjFmMjZhNDdjNDhhZWRkOTliM2Y3NGFlNDUiLCJwIjoiaiJ9>
+/
+VXEP-274<https://jenaero.atlassian.net/browse/VXEP-274?atlOrigin=eyJpIjoiYWIwNDlkZjFmMjZhNDdjNDhhZWRkOTliM2Y3NGFlNDUiLCJwIjoiaiJ9>
+VXE-438 Lift motor failure resulting in crash <https://jenaero.atlassian.net/browse/VXEP-274?atlOrigin=eyJpIjoiYWIwNDlkZjFmMjZhNDdjNDhhZWRkOTliM2Y3NGFlNDUiLCJwIjoiaiJ9>
+https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5dca22ba8365670de7e8a759/a707d30b-73bb-45f2-82ad-d614f7f8fce1/128
+Cameron Chapman 9:40 AM PST
+@Rajesh BudhabhattiCan you work on this when you get a chance. I can give you an intro to the process
+See actions above.
+guide here Flight Data Processing and Review - Engineering Function - Confluence<https://jenaero.atlassian.net/wiki/spaces/EF/pages/13467649/Flight+Data+Processing+and+Review>
+[View issue]
+Get Jira notifications on your phone! Download the Jira Cloud app for Android<https://play.google.com/store/apps/details?id=com.atlassian.android.jira.core&referrer=utm_source%3DNotificationLink%26utm_medium%3DEmail> or iOS<https://itunes.apple.com/app/apple-store/id1006972087?pt=696495&ct=EmailNotificationLink&mt=8>.
+Manage notifications<https://jenaero.atlassian.net/jira/settings/personal/notifications?emailPreferences=true&atlOrigin=eyJpIjoiYWIwNDlkZjFmMjZhNDdjNDhhZWRkOTliM2Y3NGFlNDUiLCJwIjoiaiJ9#emailpreferences>  •  Give feedback<https://surveys.atlassian.com/jfe/form/SV_9X3zi1X4q1gKsqF>  •  Privacy policy<https://www.atlassian.com/legal/privacy-policy>
+[cid:image002.png@01DA663D.21575260]
+[cid:image002.png@01DA663D.21575260]
+- - WARNING: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe. **
 
-### Cameron Chapman, 2024-06-17
+### Rajesh Budhabhatti, 2024-02-26
 
-@Rajesh Budhabhatti  please update all fields in this incident, the report, and the subtask and let me know when ready to review.
-FYI @Pat Wells
+Hi Cameron, I have compiled the VXE-438 data in a sharepoint folder and started editing the word/ppt templates. I can use some help figuring out how to use the flight data analysis tool. LMK if you have a moment to show me how to use it. Thank you. Sharepoint link here: Flight Safety - VXE-438 Lift motor failure resulting in crash - All Documents (sharepoint.com)
 
-### Rajesh Budhabhatti, 2024-06-17
+### Cameron Chapman, 2024-02-27
 
-Done
+@Rajesh Budhabhatti this aircraft arrived today. @Sean Odell will perform receiving inspection and deliver to engineering. We can start by inspecting power connections and ESCs. 
 
-### Cameron Chapman, 2024-06-18
+Some indication of ESC2 failure (front right) Can you please post to the report altitude and current on the same plot with the same timeline below this?
+[embedded: image-20240227-191956.png]
 
-@Rajesh Budhabhatti the report is becoming more clear. Thank you for the detailed testing and reports. Some remaining questions, errors, or unclear items: Please correct. 
-Investigation report: 
-- Fishbone says cause 6 is confirmed. List says cause 5.
-- Unclear how cause 5 and 6 are different.
-- The throttle profile in figure doesn't seem to match the flight profile (flight profile throttles go up to 90%, dyno max is 60).
-- Table 2 ESCs under test: wasn’t there a test before this where the ESCs were tested above the flight profile? That should be added for full transparency.
-- It seems like your investigation indicates that a normal aircraft should hover around 50% throttle, but this one averaged around 70%. You should update the applicable parts of the report accordingly. So the next steps of the investigation should be:
-- to confirm those estimates with Everett.
-- identify why this one hovered at a higher throttle (flying over weight limits, extreme conditions, etc).
-- Confirm that the heating profile of a fluctuating throttle and load is similar to a flat profile with a throttle based on the first profiles aveage (via integral). Need to verify that to ensure we establish a good limit.
-- List what the maximum limit should have been for this throttle average (based on your evaluation)
+### Rajesh Budhabhatti, 2024-02-27
 
-Max Pause Duration Report
-- Table 4 should read “Max hover time after X minute cruise”. The tables are not clear to a first time reader and could use some captions or descriptions.
-- We should add a table for 0 cruise time (hover immediately after climb)
+Excellent! Will do. Thanks.
 
-Notes 
-- Average current during the pause was ~30A with large fluctuations, throttle around 60%.
+### Rajesh Budhabhatti, 2024-03-06
 
-### Cameron Chapman, 2024-06-18
+I did some more analysis on power, current and throttle states, comparing the calculated and actual current. Two current peaks seems to match the observed and calculated peaks based on throttle states. Current peaks in as high as 200A+ were observed and matched the calculations. Between UTC 1959-2052, for about a minute and half (93 sec) VXE-438 experienced power draw in excess of 84Wh. (I will calculate exact power if further investigation is required). Also, between UTC 2068 & 2166 VXE-438’s throttle 2 remained at 0.76 while other three were considerably low. This could have flipped the craft and caused a crash. Excessive current could have caused the throttle 2 malfunction resulting in a crash. Here is my updated investigation report: Investigation template VXE-438 Lift Motor failure crash.docx
 
-@Pat Wells I think the current report proves that this aircraft hovered at too high power for too long. Next steps are to determine why it was hovering at such high power, and to implement auto abort limits.
+### Pat Wells, 2024-03-15
 
-### Pat Wells, 2024-07-16
+@Rajesh Budhabhatti @Cameron Chapman any updates on this ?
+Thanks
 
-@Cameron Chapman @Rajesh Budhabhatti sent a note to the customer today.  Asked if there were any special payloads installed or configurations that may have caused the vehicle to be heavier than normal.
+### Rajesh Budhabhatti, 2024-03-15
 
-### Pat Wells, 2024-07-16
+@Pat Wells Hello Patrick, We thoroughly checked this aircraft and did not find anything wrong with the circuitry. All motors were operational and we could connect to fusulage and center wing (Center wing had a different tail number indicating it was swapped) It also appered that customer had done some unauthorized work on the craft. Nose cone was smashed and jammed, both front lift booms were badly damaged. The best guess I have is that the aircraft was stalled for several minutes and caused high current (210A) for extended period of time, This may have caused a failure such that when the operator tried to land the craft, front right lift motor throttle remained high, causing the craft to loose control. It then seemed to topple and crash-land upside down.  We can use some more data from the eye witness to figure out what could have happened.  See the investigation report and flight data analysis here: Investigation template VXE-438 Lift Motor failure crash.docx
 
-@Cameron Chapman @Rajesh Budhabhatti received feedback from customer.  No additional payloads or weight on the aircraft.  Standard battery configuration with Trillium HD45 payload.
+### Pat Wells, 2024-03-15
 
-### Pat Wells, 2024-08-15
+@Rajesh Budhabhatti I have sent a request to the customer for witness statements. 
 
-@Cameron Chapman FYSA
-This case was put into the plan to be worked to closure during the Sprint planning meeting held on 8/14.  8/19-8/23.
+I see that it was submitted on RMA with center wing serial number: 4031  This would be a “spare” center wing.  Is the wing shown in the data not the same? (4031)
 
-### Cameron Chapman, 2024-08-15
+### Rajesh Budhabhatti, 2024-03-15
 
-@Rajesh Budhabhatti please work this issue if you do not have any critical MAGNSS work. See plan above.
+@Pat Wells Thank you, witness statement will help. Correct. The data shown is for wing serial number 4031.
 
-### Alexander Alan Arnold, 2024-12-10
+### Cameron Chapman, 2024-03-19
 
-@Rajesh Budhabhatti Is D5 the appropriate status for this issue?
+Hi @Rajesh Budhabhatti , when you have time to work on this again (after MAGNSS and heated pitot), please do the following. 
+- Your current plot where it reaches 200A has no duration. Duration is very important to heating and failures. Please add a time axis and compare to this https://jenaero.atlassian.net/wiki/spaces/EE/pages/11272193/Power+and+Temperature+Profiles?search_id=ad7224dc-272b-447e-adc7-acdd497e6158. Summarize current and duration for each current level.
+- If the sustained 200A did cause the circuit to fail, it would not heal itself after. The next step may be to run the same current profile on the dyno on a normal ESC, then this ESC to see if either/both survives it without issue.
+- Before the abusive profile, we should run a normal take off and landing with the front right ESC to see if it produces normal thrust and efficiency. Is the front right prop functional or damaged?
+- Please add findings for these to the report when complete.
 
-### Rajesh Budhabhatti, 2024-12-10
+### Rajesh Budhabhatti, 2024-03-19
 
-@Alexander Alan Arnold Yes, the root cause for this incident was excessive pause and high current. We have been able to replicate this failure on dyno tests.
+Good Idea. Will do. Both front motor housings are damaged and front right prop destroyed.
 
-### Alexander Alan Arnold, 2024-12-10
+### Pat Wells, 2024-03-20
 
-@Rajesh Budhabhatti Since we have a corrective action identified shouldn't it be moved to D6 since we are working to implement that CA?
+@Rajesh Budhabhatti @Cameron Chapman Added MISHAP report file from operator with statement.
 
-### David Grosher, 2025-05-19
+### Rajesh Budhabhatti, 2024-04-02
 
-@Pat Wells This task is assigned to you, are you tracking it? Is there a customer request pending?
+Adding investigation report: Investigation template VXE-438 Lift Motor failure crash.docx
 
-### Pat Wells, 2025-05-20
+### Rajesh Budhabhatti, 2024-04-09
 
-@David Grosher CA is complete. Moving to Done.
+Updated Investigation report and added timeline plots, potential causes, fishbone per review actions list. Creating scripts from crash log data files for Dyno system.
 
 ### Cameron Chapman, 2024-04-12
 
@@ -220,7 +237,7 @@ Raj
 Is the profile in figure 24 the same as the ESCs experienced during this incident? If so, you should state that in that section/figure.
 Given that the 438 EScs were ran to failure at a high current before this test, I do not think this is enough to prove that there was an issue with those ESCs that caused the incident. This does seem to prove that normal ESCs should survive a 100s 25A run. 
 @Sean Odell I take back what I said earlier. I do not think we are ready to finish this investigation. Do we have other cases we could use if you need these, or could we issue new cases to the customer?
-[embedded image-20240424-174056.png]
+[embedded: image-20240424-174056.png]
 
 ### Cameron Chapman, 2024-04-24
 
@@ -255,7 +272,7 @@ Raj
 
 @Rajesh Budhabhatti the timelines for the XCOM log and VTOL log don’t always line up. You should compare the vtibatt on the xcom log to the ibatt and ibatt 1-2 on the VTOL log to line up the profiles. In this case, the plots you listed correspond to no current, not landing current.
 @Liam Shaw  or another FW engineer may be able to point to conversion, or explain why the UTC is not for the same time period (it should be). We should log and link  any useful information or conversions in the data review documents. 
-[embedded image-20240430-182040.png]
+[embedded: image-20240430-182040.png]
 
 ### Rajesh Budhabhatti, 2024-04-30
 

@@ -32,6 +32,26 @@ Motion during initialization can cause the INS to disagree with the fixed-wing a
 
 ## Comments (25)
 
+### Jackson Riley Curvin, 2025-10-08
+
+[embedded: image-20251008-232057.png]
+
+### Alexander Alan Arnold, 2025-10-08
+
+added AAR to flight tool 138d4ca9-02de-4ec0-a319-7a5eb702ea3b is the ID
+
+### Alexander Alan Arnold, 2025-10-08
+
+Are the IMU check failed lines in the debug indicating the VTOL sensors fail popup on the GCS Software? @David Grosher
+
+### Jackson Riley Curvin, 2025-10-08
+
+[embedded: image-20251008-234740.png]
+
+### Eric Brewer, 2025-10-09
+
+@Alexander Alan Arnold as we discussed in the chat, the ‘vtol sensor failures’ are caused by a disagreement between the novatel heading and the fwap/vtol ap.  I don’t have a good workaround for this other than a vehicle power cycle right now, but am kicking off an investigation to improve this.
+
 ### Alexander Alan Arnold, 2025-10-09
 
 @Eric Brewer Thank you! if other Adv Nav user report the issue, i will create a seperate ticket and link it to this one.
@@ -95,26 +115,6 @@ Overall investigation will be ongoing but the investigation related to VXE-930 w
 ### Eric Brewer, 2026-02-25
 
 @Tim Muchmore definitely could be - best way to confirm is to review an AAR.  We are working on a fix for this but it’s a little ways out from rolling into the baseline software.
-
-### Tim Muchmore, 2026-02-25
-
-@Eric Brewer Thanks. Is there a way to pull an AAR if you can’t get past the launch wizard? Same process?
-
-### Eric Brewer, 2026-02-25
-
-@Tim Muchmore yep same process in OGCS.  If you’re on legacy GCS it’s tools->produce after action report.
-
-### Scott Lovett, 2026-03-25
-
-Re-opened until a fix is deployed. v-933 exhibited the same issue/symptoms
-
-### Cameron Chapman, 2026-03-25
-
-@Eric Brewer I recommend filling out C/CA and GS reviewing that is acceptable prior to closing issues. FYI @Scott Lovett
-
-### Eric Brewer, 2026-05-05
-
-Corrective action implemented in software version 6.7.1 to be released soon.
 
 ### Tim Muchmore, 2026-02-25
 

@@ -11,9 +11,6 @@
 - **Assignee:** Mike DeJesus
 - **Creator:** Greg Fryer
 - **Parent:** VXEP-891 Create Mod Payload A-Kit for VXE30 Advanced Navigation aircraft (deliveries required for LRR by 23-03-2025)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-14
-- **Issue color:** dark_orange
 - **Other Stakeholder (as required):** Josh Burrell
 - **Plan:** HSV, SLO, with helps from FLOPS to have a working meeting in order to finalize the manuals.
 

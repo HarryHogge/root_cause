@@ -9,7 +9,6 @@
 - **Assignee:** Scott Whitney
 - **Creator:** Jason Scherer
 - **Links:** relates to VXEP-1560 (LRR Software for April 2026 Final Delivery)
-- **Issue color:** blue
 - **Sprint:** FS2 Sprint 31, FS2 Sprint 32, FS2 Sprint 30
 
 ## Description
@@ -18,21 +17,21 @@ Customer Handoff in April 2026
 SharePoint Folder: https://jenaero.sharepoint.com/:f:/r/sites/EngineeringTeam/Shared%20Documents/200%20-%20Software/Training%20SIL?csf=1&web=1&e=XQZsjj 
 Confluence Page: Training SIL - Flight Systems - Confluence
 Charter: LRR - Project Charter: SIMLAT Testing - SEIT Initiatives - Confluence
-## Project Description
+**Project Description**
 
 The project aims to develop a stand-alone software simulation of the Stalker vehicle for training purposes. Focusing on a software-only solution eliminates dependency on physical vehicle hardware. The simulation will replicate the flight dynamics and operational scenarios of the Stalker vehicle. Targeted for the X86 architecture, the software will provide a robust training platform compatible with existing operator interfaces, specifically the Legacy Ground Control Station (GCS) and Onboard GCS (OGCS). It will simulate multiple vehicle configurations, including the VXE-30 Standard Stalker, VXE-30 MAGNSS, and VXE-30 HAVOC configurations, with extensible support for various payloads. An instructor interface will enable real-time control over the simulation, allowing pauses, environmental adjustments, and fault injection to enhance training realism and adaptability.
-## Internal Release Schedule: https://jenaero.atlassian.net/wiki/x/EwD_Pg
+**Internal Release Schedule: https://jenaero.atlassian.net/wiki/x/EwD_Pg**
 
-## Project Requirements
+**Project Requirements**
 
 Software requirements are captured here.
-### General Requirements
+**General Requirements**
 
 - Software-Only Solution: The simulation must operate independently of vehicle hardware, relying solely on software to emulate flight behavior and system interactions.
 - Platform Compatibility: Must run natively on the X86 architecture to ensure accessibility on standard computing hardware.
 - Existing Interface Integration: Seamlessly integrate with the Legacy GCS and OGCS applications, ensuring compatibility with their existing communication protocols and data formats. (OGCS is MVP, Legacy is not MVP)
 
-### Simulation Capabilities
+**Simulation Capabilities**
 
 - Stalker Flight Dynamics: Accurately model Stalker VTOL and Fixed wing flight modes, including transitionary phases, reflecting realistic aerodynamics and control responses.
 - Vehicle Configurations: Support simulation of the following Stalker configurations:
@@ -47,7 +46,7 @@ Software requirements are captured here.
 - Payload Meta Data?
 - INS feeds?
 
-### Instructor Interface
+**Instructor Interface**
 
 - Simulation Control: Provide an intuitive interface allowing instructors to: (This interface may be provided by the CONOPS sim environment)
 - Pause and resume the simulation at any point.
@@ -56,21 +55,21 @@ Software requirements are captured here.
 - Mission Simulations Service for Real Flights
 - User Feedback: Display real-time simulation status and fault conditions to the instructor for effective training management.
 
-### Performance and Usability
+**Performance and Usability**
 
 - Real-Time Performance: Ensure the simulation runs in real-time on X86 hardware, maintaining responsiveness during complex scenarios and transitions.
 - Scalability: Design the software to allow future expansion, such as additional vehicle configurations or advanced training modules, without requiring significant rework.
 - Initialization: The sim should be able to be initialized on the ground or in flight.
 
-### Development and Support
+**Development and Support**
 
 - Documentation: Provide documentation, including user manuals for instructors and technical guides for integration with GCS/OGCS systems.
 - Testing: Validate compatibility with Legacy GCS and OGCS through rigorous testing, ensuring no disruption to existing operator workflows.
 
 System Architecture: AP Firmware Functional Breakdown.vsdx
 Initial Concept (04-01-25) from System Architecture doc above. This is subject to change as system design matures but provides an initial look at the application design.
-[embedded image-20250408-221049.png]
-### Simlat (Products | Simlat)
+[embedded: image-20250408-221049.png]
+**Simlat (Products | Simlat)**
 
 Simulation Environment & Control with synthetic full motion video (FMV) will be provided by Simlat software.
 Simlat uses the gRPC protocol: Introduction to gRPC | gRPC
@@ -108,12 +107,12 @@ Simlat uses the gRPC protocol: Introduction to gRPC | gRPC
 
 ### Jason Scherer, 2025-02-27
 
-[embedded image-20250227-193108.png]
+[embedded: image-20250227-193108.png]
 
 ### Jason Scherer, 2025-02-27
 
 Current definition of a Waypoint in Fixed Wing code. From latlon.h
-[embedded image-20250227-193746.png]
+[embedded: image-20250227-193746.png]
 
 ### Jason Scherer, 2025-02-27
 

@@ -12,7 +12,6 @@
 - **Creator:** Connor Peebles
 - **Parent:** SP-206 Improve Power Connector, Contacts, and Signal Connectors
 - **Links:** relates to XKIT-761 (Evaluate using crimped and locking signal connectors for new X-kit connectors); relates to ENG-2427 (Evaluate alternate connectors for production units); relates to VXEP-389 (Develop Replacement for Troublesome/Non Mil-Stnd Board Mount/PCB Connectors)
-- **Issue color:** purple
 
 ## Description
 

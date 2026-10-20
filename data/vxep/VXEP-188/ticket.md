@@ -32,11 +32,11 @@ During SCO Testing iBatt during Launch Wizard motor run is instable. Log file sh
 SCO is expecting a small jump when motor starts up then a stable value until the motor stops.
 
 Value we are monitoring:
-[embedded file]
+[embedded: image-20230726-172934.png]
 Acceptable:
-[embedded file]
+[embedded: iBatt out of range.MOV]
 Rejection:
-[embedded file]
+[embedded: iBatt expected values.MOV]
 
 Troubleshooting:
 7/25/23

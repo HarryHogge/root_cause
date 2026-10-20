@@ -11,14 +11,13 @@
 - **Assignee:** Cameron Chapman
 - **Creator:** Dana Holley
 - **Labels:** MCWL, PMA263
-- **Issue color:** purple
 - **Customer:** MCWL, PMA263
 - **Other Stakeholder (as required):** Pat Wells
 - **Issue Status:** Test steps sent to operator. Waiting for results.
 
 ## Description
 
-[embedded file]
+[embedded: T95_V453_240122_121810_pack (1).zip]
 USMC MCWL customer was flying VXE30 453.  Endurance for both batteries dropped significantly for a time period of about 1 minute then came back up to normal levels. Occurrence happened once, still awaiting the phase of flight of when it occurred.  Customer would like to fly again ASAP. I had advised them not to fly based on engineering advice. Will advise them to fly again as soon as issue is resolved
 
 @Pat Wells this is a contact prior to you arrival. Could you can take the reigns from here?
@@ -52,7 +51,7 @@ Here is what I recommend.
 ### David Grosher, 2024-01-22
 
 @Pat Wells @Greg Fryer @Cameron Chapman It looks like there was a big drop in the voltage of the main battery.  I would not recommend flying. 
-[embedded file]
+[embedded: image-20240122-230847.png]
 
 ### Cameron Chapman, 2024-01-22
 
@@ -68,7 +67,7 @@ Here is what I recommend.
 - Report results. You can give them my contact info if preferred direct.
 - @David Grosher @Craig Burton we should review flag values for voltage too low during launch wizard or takeoff.
 
-[embedded file]
+[embedded: image-20240122-232817.png]
 
 ### Craig Burton, 2024-01-22
 

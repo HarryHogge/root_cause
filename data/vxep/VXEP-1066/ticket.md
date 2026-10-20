@@ -30,7 +30,7 @@ Presentation Vehicle Investigation VXEP-1066.pptx
 ## Issue Status
 
 Creating presentation with analysis of data. Appears there might have been 3 launch aborts on the same day with this aircraft. Not the originally reported 2, as noted by the GCS log notes below….
-[embedded image-20250321-174244.png]
+[embedded: image-20250321-174244.png]
 
 ## Root Cause
 
@@ -80,7 +80,7 @@ I will add it once they deliver it. @David Grosher
 
 @Michael Mohr 
 creating some slides and have linked the presentation in description field. Here’s quick look at what I’ve found so far that leads me to believe GPS interference. LRF fault might be a symptom of the GPS vertical accuracy being degraded. Need to confirm with code review. 
-[embedded image-20250320-225059.png]
+[embedded: image-20250320-225059.png]
 
 ### Cody Smisek, 2025-03-21
 

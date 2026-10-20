@@ -45,6 +45,46 @@ Recorded link outage correlates with system command failures. Testing failed to 
 
 ## Comments (30)
 
+### Pat Wells, 2024-09-16
+
+@David Grosher checking in for any updates ahead of the Air Worthiness brief with TIQ on Wed 9/18
+
+### David Grosher, 2024-09-16
+
+@Pat Wells No updates
+
+### David Grosher, 2024-10-29
+
+@Jason Scherer can you take a look at this?
+
+### Pat Wells, 2024-11-07
+
+@David Grosher this is the ticket that Dhruti asked us to prioritze during the last airworthiness meeting.
+
+### David Grosher, 2024-11-07
+
+@Pat Wells Jason is on the SD cards and I’m not going to take him off for this. I think her request was that we look at this so that when the FSR came out we could clear this bird to fly. Given that is not happening I’m going to push this out a bit.
+
+### Alexander Alan Arnold, 2024-12-10
+
+@David Grosher Any movement on this item? Do you require us to attempt to get anything from the customer?
+
+### David Grosher, 2024-12-10
+
+@Alexander Alan Arnold No progress on this has occurred.
+
+### Pat Wells, 2025-01-14
+
+@David Grosher aircraft has been delivered to engineering for evaluation.
+
+### David Grosher, 2025-02-18
+
+@Scott Whitney We might need Brandon or Ryan to do ground checks with comms on this bird to try and replicate the issue. This is not a high priority but in the spare time kind of activity while waiting for something else.
+
+### Cody Smisek, 2025-02-21
+
+@David Grosher @Scott Whitney I did some checking on this. Seems like some components are no longer working. Need additional support from someone who knows what the lights circled provide info for.
+
 ### David Grosher, 2025-02-24
 
 @Scott Whitney @Jason Scherer Jason, can you add this above the remaining 29 palms investigations.
@@ -77,13 +117,13 @@ I’m working on this investigation now along with Cody.
 ### Jason Scherer, 2025-02-25
 
 There was an update to the VTOL controller on Oct 22, after the AAR, but before the vehicle arrived at SLO. The VTOL firmware was updated from 1.53 (6.1 release) to 1.54.02 (6.2 release). The fixed wing is also running firmware from 6.2.
-[embedded image-20250225-211109.png]
-[embedded VTOL-Firmware-Update-Oct-22-24.png]
+[embedded: image-20250225-211109.png]
+[embedded: VTOL-Firmware-Update-Oct-22-24.png]
 
 ### Jason Scherer, 2025-02-25
 
 Vehicle firmware has been reverted back to 6.1.2 release versions and configs.
-[embedded image-20250225-212709.png]
+[embedded: image-20250225-212709.png]
 
 ### Jason Scherer, 2025-02-25
 
@@ -92,60 +132,7 @@ Pulled new AAR from vehicle (T95_V600_250225_132526_pack). Added to SharePoint f
 ### Jason Scherer, 2025-03-03
 
 So far, we have been unable to recreate the issues in the original AAR with simple motor tests or air data calibration. After looking deeper into the AAR data the vehicle seems to have been experiencing significant data rates on the (Diag2) Payload port. The data averages 4-5 Mbs, but frequently spikes up to nearly 15mbs. New leading theory is that network data congestion is to blame. 
-[embedded image-20250303-220547.png]
-Next step is to add sensor data and try to recreate the incident issues. 
-Another theory that needs to be looked into is, if multiple links were active and contributing to the issue. The operator reported using a hard link. Need to look for log data that can confirm/dispute if multiple active links (both radio and hard wire) were active. If so, then that could also be a contributing factor.
-
-### Jason Scherer, 2025-03-11
-
-Picking this up again after working on https://jenaero.atlassian.net/browse/VXEP-1061 which had similar syscmd failures.
-
-### Jason Scherer, 2025-03-20
-
-@Pat Wells @David Grosher @Cody Smisek After testing multiple days, I cannot recreate the issue without manually disconnecting link during the surface check part of the launch wizard.
-I have confirmed that:
-- GCS Mission Simulation blocks the GCS from sending any messages to the vehicle which can create a vehicle connection timeout after 50 seconds. I have been able to recreate a timeout on the vehicle with mission simulation alone. This could be a contributing factor to the failed system commands, but testing is not conclusive.
-- Link Inconsistency (simulated by briefly removing Ethernet connection on GCS) prior to advancing to the surface check page on the LW will result in the servo/disarm system command failures that are seen in this vehicles AARs. Due to the expected lossy nature of our ground to vehicle connection, the GCS should better handle dropped system commands (message retries, link health check before sending, etc).
-
-Conclusion: At this point I suspect something on the ground network. Maybe a faulty GCS or Ethernet cables. Since both radio and Ethernet links resulted in this behavior, along with the delayed pitot press, I’m suspecting the GCS.
-Next Steps: I will update the report. Then I propose that we swap SD cards since we have the opportunity. Update firmware to latest release allowed by customer. Have the vehicle run though our SCO process to confirm healthy vehicle function.
-
-### Jason Scherer, 2025-03-20
-
-@Pat Wells @David Grosher I updated the report. Let me know if you have any questions or if you want further details added. I suggest we button this vehicle back up, swap sd cards, and update the firmware. Then have SCO perform flight validation. If you guys concur, then I will deliver the vehicle to RMA.
-
-### Alexander Alan Arnold, 2025-04-08
-
-@Pat Wells Please review Jason's Comments/report.
-
-### Alexander Alan Arnold, 2025-04-22
-
-Moved to D6 based on email traffic with Dave. I am reviewing the report @Jason Scherer
-
-### Alexander Alan Arnold, 2025-04-22
-
-Is this aircraft still needed or do you still believe this can be returned to RMA? @Jason Scherer@David Grosher 
-FYSA
-@Drew Hildreth @Pat Wells
-
-### Alexander Alan Arnold, 2025-04-22
-
-@Jason Scherer The RMA team will be swinging by to remove VXE 600 from your area when they get a chance.
-
-### Christa Meck, 2025-08-05
-
-@Alexander Alan Arnold @David Grosher @Pat Wells What is the status of this investigation?
-Leaving open until 12 Aug for feedback.
-
-### Pat Wells, 2025-08-05
-
-@Drew Hildreth @Jackson Riley Curvin @Alexander Alan Arnold See below from Christa
-Please advise and close out if necessary.
-
-### Jason Scherer, 2025-03-03
-
-So far, we have been unable to recreate the issues in the original AAR with simple motor tests or air data calibration. After looking deeper into the AAR data the vehicle seems to have been experiencing significant data rates on the (Diag2) Payload port. The data averages 4-5 Mbs, but frequently spikes up to nearly 15mbs. New leading theory is that network data congestion is to blame. 
-[embedded image-20250303-220547.png]
+[embedded: image-20250303-220547.png]
 Next step is to add sensor data and try to recreate the incident issues. 
 Another theory that needs to be looked into is, if multiple links were active and contributing to the issue. The operator reported using a hard link. Need to look for log data that can confirm/dispute if multiple active links (both radio and hard wire) were active. If so, then that could also be a contributing factor.
 

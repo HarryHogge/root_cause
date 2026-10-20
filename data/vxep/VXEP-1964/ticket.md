@@ -12,9 +12,6 @@
 - **Creator:** Josh Adams
 - **Parent:** VXEP-1786 UAP Block 30 Adv Nav Hardware
 - **Links:** relates to VA-2712 (100-112838 Hadron Carrier Board Obsolescence)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-12
-- **Issue color:** grey
 
 ## Plan
 
@@ -49,10 +46,10 @@ absolutely but considering our time restraints we probably won't have time to ri
  
 Also thought about utilizing the new Power/Wake switch instead of switching MCM power through the SLA breakout, but turns out it doesn't quite operate the same
  
-[embedded image-20260723-180834.png]
+[embedded: image-20260723-180834.png]
 From ConnectTech:
  
-[embedded image-20260723-180840.png]
+[embedded: image-20260723-180840.png]
 From Nvidia:
 it looks like connect tech forces it to operate that way when it could have been alot more useful to us a different way. If only we designed our own Hadron board
 

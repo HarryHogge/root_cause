@@ -10,7 +10,6 @@
 - **Reporter:** Greg Fryer
 - **Assignee:** Travis Blaschke
 - **Creator:** Greg Fryer
-- **Issue color:** purple
 
 ## Description
 

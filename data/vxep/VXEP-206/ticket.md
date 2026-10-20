@@ -12,7 +12,6 @@
 - **Creator:** Matt Philley
 - **Parent:** VA-932 Review for interference and update Tail Boom and Vert Tail
 - **Epic Link:** VA-932
-- **Issue color:** purple
 - **Part Number(s):** 107-102175, 107-102746, 107-101205, 107-102074
 
 ## Description

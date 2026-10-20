@@ -11,9 +11,6 @@
 - **Assignee:** Eric Brewer
 - **Creator:** Scott Whitney
 - **Parent:** VXEP-792 Visual Based Navigation (VBN)
-- **Epic Status:** To Do
-- **Epic Color:** ghx-label-7
-- **Issue color:** purple
 
 ## Description
 
