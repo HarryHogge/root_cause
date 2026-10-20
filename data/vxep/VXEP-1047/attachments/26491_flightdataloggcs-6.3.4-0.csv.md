@@ -1,0 +1,220 @@
+# flightdataloggcs-6.3.4-0.csv
+
+Attachment 26491, csv, 72 KB, added 2025-02-25 by Alexander Alan Arnold.
+
+Columns (213):
+- Project Name
+- Location
+- Flight Date
+- Flight Date UTC
+- Flight Number
+- Pilot
+- Ground Crew
+- Instructor
+- A/C Type
+- A/C Mod
+- A/C S/N
+- A/C Comms
+- AP Firmware
+- Gains
+- XCOMM Firmware
+- Weight
+- AP S/N
+- Total Launches
+- Total Flight Hours
+- LW
+- CW
+- RW
+- LB
+- RB
+- TB
+- Stab
+- VT
+- Payload
+- Turret / Drop S/N
+- Pod S/N
+- CT S/N
+- GCS Comms
+- Comms S/N
+- GCS SW Version
+- Main Battery S/N
+- Fuel Cell S/N
+- Fuel Cell Cycles
+- Fuel Tank S/N
+- Energy Source
+- Bungee S/N
+- Launch Ground Wind Speed
+- Launch Ground Wind Direction
+- RTB Winds Aloft
+- RTB Winds Aloft Dir
+- Landing Ground Wind Speed
+- Landing Ground Wind Direction
+- Launch Ground Air Temp
+- RTB Temp Aloft
+- Landing Ground Air Temp
+- Launch Density Altitude
+- Landing Density Altitude
+- Vehicle Density Altitude
+- Mission File Name
+- Time of Launch
+- Time of Launch UTC
+- Planned Duration
+- Actual Duration
+- Auto RTB
+- ReTask
+- Endurance Remaining
+- Launch Battery Percent
+- AAR File Name
+- Launch Fuel Weight
+- Landing Fuel Weight
+- Hybrid Batt <= 50%
+- Landing Approach Deg
+- Pattern Altitude
+- Landing Zone
+- Landing Error Distance
+- Landing Error Direction
+- Nudge
+- Left
+- Right
+- Short
+- Long
+- Landing Abort Count
+- Drop Performed
+- Multi UAV Performed
+- Hand-Off Performed
+- Mobile GCS Performed
+- U-Drive
+- Repair Level
+- Comments
+- Flight ID
+- Hybrid Battery S/N
+- ML Name 0
+- ML Date 0
+- ML Count 0
+- ML Time 0
+- ML Name 1
+- ML Date 1
+- ML Count 1
+- ML Time 1
+- ML Name 2
+- ML Date 2
+- ML Count 0
+- ML Time 2
+- ML Name 3
+- ML Date 3
+- ML Count 0
+- ML Time 3
+- ML Name 4
+- ML Date 4
+- ML Count 0
+- ML Time 4
+- ML Name 5
+- ML Date 5
+- ML Count 0
+- ML Time 5
+- ML Name 6
+- ML Date 6
+- ML Count 0
+- ML Time 6
+- ML Name 7
+- ML Date 7
+- ML Count 0
+- ML Time 7
+- ML Name 8
+- ML Date 8
+- ML Count 0
+- ML Time 8
+- ML Name 9
+- ML Date 9
+- ML Count 0
+- ML Time 9
+- ML Name 10
+- ML Date 10
+- ML Count 10
+- ML Time 10
+- ML Name 11
+- ML Date 11
+- ML Count 11
+- ML Time 11
+- ML Name 12
+- ML Date 12
+- ML Count 12
+- ML Time 12
+- ML Name 13
+- ML Date 13
+- ML Count 13
+- ML Time 13
+- ML Name 14
+- ML Date 14
+- ML Count 14
+- ML Time 14
+- ML Name 15
+- ML Date 15
+- ML Count 15
+- ML Time 15
+- ML Name 16
+- ML Date 16
+- ML Count 16
+- ML Time 16
+- ML Name 17
+- ML Date 17
+- ML Count 17
+- ML Time 17
+- ML Name 18
+- ML Date 18
+- ML Count 18
+- ML Time 18
+- ML Name 19
+- ML Date 19
+- ML Count 19
+- ML Time 19
+- ML Name 20
+- ML Date 20
+- ML Count 20
+- ML Time 20
+- ML Name 21
+- ML Date 21
+- ML Count 21
+- ML Time 21
+- ML Name 22
+- ML Date 22
+- ML Count 22
+- ML Time 22
+- ML Name 23
+- ML Date 23
+- ML Time 23
+- ML Time 23
+- ML Name 24
+- ML Date 24
+- ML Count 24
+- ML Time 24
+- ML Name 25
+- ML Date 25
+- ML Count 25
+- ML Time 25
+- ML Name 26
+- ML Date 26
+- ML Count 26
+- ML Time 26
+- ML Name 27
+- ML Date 27
+- ML Count 27
+- ML Time 27
+- ML Name 28
+- ML Date 28
+- ML Count 28
+- ML Time 28
+- ML Name 29
+- ML Date 29
+- ML Count 29
+- ML Time 29
+- ML Name 30
+- ML Date 30
+- ML Count 30
+- ML Time 30
+- ML Name 31
+- ML Date 31
+- ML Count 31
+- ML Time 31
+
+Data rows: 35 (data not exported)

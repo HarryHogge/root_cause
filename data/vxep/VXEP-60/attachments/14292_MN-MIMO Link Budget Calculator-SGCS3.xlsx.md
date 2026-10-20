@@ -1,0 +1,247 @@
+# MN-MIMO Link Budget Calculator-SGCS3.xlsx
+
+Attachment 14292, xlsx, 61 KB, added 2023-05-01 by Maxime Jeanneau.
+
+## Sheet: Mesh Summary
+
+Link	Target Distance (Miles)	User Data Rate (Mbps)	Link Capacity (Mbps)	Link Duty Cycle (%)
+1	150	4
+2
+3
+Total	150	4	0	0
+
+## Sheet: Link 1 Range Budget
+
+User Input:	Value	Unit
+Environment	Air to Ground
+Frequency	2600	MHz
+Max TX power	4	W
+Is PA used?	No
+TX power control	Adaptive
+TX cable loss	1.2	dB
+TX PA gain	0	dB
+TX antenna gain	0	dBi
+Number of RX antennas	4
+RX antenna gain	24	dBi
+RX cable loss	0.4	dB
+RX noise figure	5	dB
+TX antenna height	10000	Feet
+RX antenna height	6	Feet
+Objects in 1st Fresnel Zone?	No
+Target Distance	150	Kilometers
+Safety Margin	5	dB
+User Data Traffic (UDP)	4	Mbps
+X-axis unit	Kilometers
+Fresnel Zone and Horizon Results
+Distance to Horizon	201.92286384715754	Kilometers
+Max 1st Fresnel Zone Radius	65.75463525632476	Meters
+Max 2nd Fresnel Zone Radius	92.99109696839056	Meters
+Max 3rd Fresnel Zone Radius	113.89036909711427	Meters
+Link Performance Results (at target distance):			20MHz		10MHz		5MHz
+			2SS	1SS	2SS	1SS	2SS	1SS
+RSSI			#VALUE!		-96.01855552418942		-97.01855552418942		dBm
+SNR			#VALUE!		2.9814444758105765		4.9814444758105765		dB
+MCS			N/A	0	8	1	9	2
+Link capacity			N/A	4.92	4.96	4.96	4.12	3.09	Mbps
+Duty cycle			#VALUE!	81.30081300813008	80.64516129032259	80.64516129032259	97.0873786407767	129.44983818770228	%
+
+## Sheet: Sheet2
+
+Air to Ground	4200				Ground to Air	4400
+Tx Power	4	W	36	dBm		8		39	dBm
+Tx Cable Loss	1.2	dB	34.8			3.5		35.5
+Vehicle Antenna Gain	0	dB	34.8			0	dB	35.5
+Rx Antennas	4		37.8			2		35.5
+Rx Cable Loss	3.5	dB	34.3			1.2	dB	34.3
+Fade Margin	5	dB	29.299999999999997			5	dB	29.299999999999997
+Path Loss(m)	71000
+					Required Antenna Gain(dBi)
+Freq	Path Loss	Subtotal			10 Mbps UDP	5 Mbps UDP
+4900	-148.12211896155424	-118.82211896155424			28	25
+4650	-147.66725641878304	-118.36725641878304			28	25			Required Antenna Gain(dBi)
+4400	-147.1872508907077	-117.8872508907077			27	24		Freq	Nice to have	Hard Requirement
+2600	-142.6176643204003	-113.31766432040031			23	20		4900	28	25
+2400	-141.9224221952161	-112.62242219521609			22	19		4650	28	25
+2200	-141.1666509774281	-111.86665097742811			21	18		4400	27	24
+								2600	23	20
+								2400	22	19
+								2200	21	18
+
+## Sheet: Link 1 Calculations
+
+Path Loss - Solve for Distance
+BW	MCS	NSS	Modulation	FEC	Sensitivity (dBm)	User Throughput (UDP)	Frequency (MHz)	Path Loss  Exponent	TX Power (dBm)	TX Cable Loss (dB)	PA Gain (dB)	PA Backoff (dB)	TX Antenna Gain (dB)	Fresnel Zone Loss (dB)	RX Antenna Gain (dB)	RX Cable Loss (dB)	RX NF Offset (dB)	RX Diversity Gain Offset (dB)	Safety Margin (dB)	Distance (Meters)	Distance (Depends)	Distance (Miles)
+5	0	1	BPSK	0.5	-102	1.03	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	289671.62443836144	289.67162443836145	289.67162443836145	Meters
+5	1	1	QPSK	0.5	-100	2.06	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	232621.95346814222	232.6219534681422	232.6219534681422	Kilometers		1
+5	2	1	QPSK	0.75	-97	3.09	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	150016.89962071	150.01689962071	150.01689962071	Feet		2
+5	3	1	16-QAM	0.5	-95	4.12	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	96745.25484926884	96.74525484926883	96.74525484926883	Yards		4
+5	4	1	16-QAM	0.75	-92	6.18	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	62390.599722525316	62.390599722525316	62.390599722525316	Miles
+5	5	1	64-QAM	0.6666666666666666	-87	8.25	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	28955.146258167748	28.955146258167748	28.955146258167748	Nautical Miles
+5	6	1	64-QAM	0.75	-85	9.28	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	23252.545700982235	23.252545700982235	23.252545700982235
+5	7	1	64-QAM	0.8333333333333334	-80	10.3	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	13437.92972916707	13.43792972916707	13.43792972916707		3500
+5		1				10.3														0	0	0		3800
+5	8	2	BPSK	0.5	-100	2.06	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	232621.95346814222	232.6219534681422	232.6219534681422		3822
+5	9	2	QPSK	0.5	-97	4.12	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	167404.76435541184	167.40476435541183	167.40476435541183		4200
+5	10	2	QPSK	0.75	-94	6.18	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	107958.61420609105	107.95861420609106	107.95861420609106		4400
+5	11	2	16-QAM	0.5	-91	8.25	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	62390.599722525316	62.390599722525316	62.390599722525316
+5	12	2	16-QAM	0.75	-88	12.38	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	40235.43004565039	40.23543004565039	40.23543004565039
+5	13	2	64-QAM	0.6666666666666666	-84	16.21	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	20837.36880358065	20.837368803580652	20.837368803580652
+5	14	2	64-QAM	0.75	-82	17.62	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	16733.53213530411	16.73353213530411	16.73353213530411
+5	15	2	64-QAM	0.8333333333333334	-77	18.94	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	9670.512289132994	9.670512289132994	9.670512289132994
+5						18.94														0	0	0
+10	0	1	BPSK	0.5	-99	2.48	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	208460.16167684816	208.46016167684817	208.46016167684817
+10	1	1	QPSK	0.5	-97	4.96	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	167404.76435541184	167.40476435541183	167.40476435541183
+10	2	1	QPSK	0.75	-94	7.4	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	107958.61420609105	107.95861420609106	107.95861420609106
+10	3	1	16-QAM	0.5	-92	9.9	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	69622.04705569253	69.62204705569253	69.62204705569253
+10	4	1	16-QAM	0.75	-89	14.8	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	44898.959400977335	44.89895940097733	44.89895940097733
+10	5	1	64-QAM	0.6666666666666666	-85	19.9	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	23252.545700982235	23.252545700982235	23.252545700982235
+10	6	1	64-QAM	0.75	-83	22.4	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	18673.04957659299	18.67304957659299	18.67304957659299
+10	7	1	64-QAM	0.8333333333333334	-77	24	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	9670.512289132994	9.670512289132994	9.670512289132994
+10						24														0	0	0
+10	8	2	BPSK	0.5	-97	4.96	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	167404.76435541184	167.40476435541183	167.40476435541183
+10	9	2	QPSK	0.5	-94	9.9	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	120471.66963856178	120.47166963856178	120.47166963856178
+10	10	2	QPSK	0.75	-91	14.8	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	77691.66281110498	77.69166281110498	77.69166281110498
+10	11	2	16-QAM	0.5	-89	19.9	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	50103.01997526538	50.103019975265376	50.103019975265376
+10	12	2	16-QAM	0.75	-85	29.9	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	28955.146258167748	28.955146258167748	28.955146258167748
+10	13	2	64-QAM	0.6666666666666666	-82	39.7	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	16733.53213530411	16.73353213530411	16.73353213530411
+10	14	2	64-QAM	0.75	-80	43.5	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	13437.92972916707	13.43792972916707	13.43792972916707
+10	15	2	64-QAM	0.8333333333333334	-74	48.1	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	6959.316637241342	6.959316637241342	6.959316637241342
+						48.1														0	0	0
+20	0	1	BPSK	0.5	-96	4.92	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	150016.89962071	150.01689962071	150.01689962071
+20	1	1	QPSK	0.5	-94	9.82	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	120471.66963856178	120.47166963856178	120.47166963856178
+20	2	1	QPSK	0.75	-91	14.73	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	77691.66281110498	77.69166281110498	77.69166281110498
+20	3	1	16-QAM	0.5	-89	19.65	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	50103.01997526538	50.103019975265376	50.103019975265376
+20	4	1	16-QAM	0.75	-86	29.47	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	32311.222592123828	32.311222592123826	32.311222592123826
+20	5	1	64-QAM	0.6666666666666666	-82	39.29	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	16733.53213530411	16.73353213530411	16.73353213530411
+20	6	1	64-QAM	0.75	-80	44.2	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	13437.92972916707	13.43792972916707	13.43792972916707
+20	7	1	64-QAM	0.8333333333333334	-78	47.45	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	10791.383071183895	10.791383071183894	10.791383071183894
+20						47.45														0	0	0
+20	8	2	BPSK	0.5	-94	9.82	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	120471.66963856178	120.47166963856178	120.47166963856178
+20	9	2	QPSK	0.5	-91	19.65	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	86696.59577125176	86.69659577125175	86.69659577125175
+20	10	2	QPSK	0.75	-88	29.47	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	55910.26260148012	55.91026260148012	55.91026260148012
+20	11	2	16-QAM	0.5	-86	39.29	2600	2.1	36.020599913279625	-1.2	0	-3	0	0	24	-0.4	0	0	-5	36056.28844313894	36.05628844313894	36.05628844313894
+20	12	2	16-QAM	0.75	-82	57.04	2600	2.1	36.020599913279625	-1.2	0	-4	0	0	24	-0.4	0	0	-5	20837.36880358065	20.837368803580652	20.837368803580652
+20	13	2	64-QAM	0.6666666666666666	-79	75	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	12042.169546684352	12.042169546684352	12.042169546684352
+20	14	2	64-QAM	0.75	-77	85	2600	2.1	36.020599913279625	-1.2	0	-6	0	0	24	-0.4	0	0	-5	9670.512289132994	9.670512289132994	9.670512289132994
+20	15	2	64-QAM	0.8333333333333334	-75	94	2600	2.1	36.020599913279625	-1.2		-6	0	0	24	-0.4	0	0	-5	7765.943468220106	7.765943468220106	7.765943468220106
+						94														0	0	0
+Path Loss - Solve for SNR
+BW						Distance (m)	Frequency (MHz)	Path Loss Exponent	TX Power (dBm)	TX Cable Loss (dB)	PA Gain (dB)	PA Backoff (dB)	TX Antenna Gain (dB)	Fresnel Zone Loss (dB)	RX Antenna Gain (dB)	RX Cable Loss (dB)	RX NF Offset (dB)	RX Diversity Gain Offset (dB)	Safety Margin (dB)	RSL (dBm)	SNR (dB)
+20						150000	2600	2.1	36.020599913279625	-1.2	0	#VALUE!	0	0	24	-0.4	0	0	-5	#VALUE!	#VALUE!
+10						150000	2600	2.1	36.020599913279625	-1.2	0	0	0	0	24	-0.4	0	0	-5	-96.01855552418942	2.9814444758105765
+5						150000	2600	2.1	36.020599913279625	-1.2	0	-1	0	0	24	-0.4	0	0	-5	-97.01855552418942	4.9814444758105765
+Target Throughput
+BW	MCS	NSS	Modulation	FEC	Sensitivity	User Throughput (UDP)	Frequency		TX Power	TX Cable Loss	PA Gain	PA Backoff	TX Antenna Gain	Fresnel Zone Loss	RX Antenna Gain	RX Cable Loss	RX NF Offset	RX Diversity Gain Offset		Distance (Meters)	Distance (Miles)
+						4															289.67162443836145
+						4														0	0
+Target Distance
+BW	MCS	NSS	Modulation	FEC	Sensitivity	User Throughput (UDP)	Frequency		TX Power	TX Cable Loss	PA Gain	PA Backoff	TX Antenna Gain	Fresnel Zone Loss	RX Antenna Gain	RX Cable Loss	RX NF Offset	RX Diversity Gain Offset			Distance
+						0															150
+5		1				9.28															150
+5		2				17.62															150
+10		1				22.4															150
+10		2				43.5															150
+20		1				47.45															150
+20		2				94															150
+Distance to Horizon Conversions
+TX	RX	Units
+3048	1.8288000000000002	1000
+Max Radius of 1st Fresnel Zone Conversion
+Dis	Freq	Units
+150000	2600	1
+Max Radius of 2nd Fresnel Zone Conversion
+Dis	Freq	Units
+150000	2600	1
+Max Radius of 3rd Fresnel Zone Conversion
+Dis	Freq	Units
+150000	2600	1
+Unit Conversion for table
+factor
+150000
+Noise Figure (dB)					Max BPSK Power Per Antenna (W)
+Freq	SC3500	SC38xx			Freq	SC3500	SC38xx
+425		5			425		0.5
+1370		5			1370		0.25
+2070		6.5			2070		0.5
+2250		6.5			2250		0.25
+2350		6.5			2350		0.25
+2450	5.5	6.5			2450	0.5	0.25
+4550		7			4550		?
+4850		7			4850		?
+4960	5.5	7			4960	0.25
+5200		8			5200	0.5	0.25
+5800	8	8			5800	0.5	0.25
+Target Distance/Horizon
+Target Distance		Horizon
+150000		201922.86384715754
+PA/Radio Backoff
+PA Used?		pa	radio
+No		0	0
+		-1	0
+		-3	-1
+		-4	-3
+		-5	-4
+		-6	-6
+		-8	-6
+		-10	-6
+
+## Sheet: Discrip. for Envir.
+
+Environment	 Typical TX ant height	Typical RX anttena height	LOS Assumed	Notes
+Free Space	NA	NA	Yes	Ideal case, no atenuation from environment
+Air to Ground	~>5000'	~10'	Yes	Usually assume no Fresnel zone or horizon concerns, but there can still be LOS problem on the receive side. Typically uses sectors and blade antennas. Low attenuation.
+Maritime	10'~100'	10'~100'	Yes	Many factor include sea state and weather can have a impact. High gain omnis are no good. The waves will move the ship around causing the narrow beamwidth go out side of the range here and there. Typically 5GHz range works better than 2GHz range in water. Worse performance than air to ground. Low attenuation from environment.
+Rural	10'~100'	10'~100'	Yes	Open area. Trees causing degradation in performance. Worse performance than Air to ground.
+Urban Raised	10'~100'	10'~100'	Yes	City environment, but with enough antenna height, there will be LOS so performance improves.
+Urban Low	6'	6'	No	worst environment. No LOS, interference everywhere in the WIFI band. High attenuation from the environment
+Ground Robotics
+
+## Sheet: Link 2 Range Budget
+
+(empty)
+
+## Sheet: Link 3 Range Budget
+
+(empty)
+
+## Sheet: Lookup Tables
+
+Environment	Path Loss Factor	Path Loss Exponent
+Free Space	20	2
+Air to Ground	21	2.1
+Maritime	22	2.2
+Rural	23	2.3
+Urban - Raised Antennas	24	2.4
+Urban - Low Antennas	32	3.2
+Ground Robotics	28	2.8
+Distance	Target
+Feet
+Yards
+Meters
+Kilometers
+Miles
+Nautical Miles
+Power	TX Power Out
+dBm	36.020599913279625
+W	4
+Frequency	fc
+MHz	2600
+GHz	2.6
+Yes/No
+No
+Yes
+# of Antennas
+2
+4
+TX Power Control
+Fixed
+Adaptive
+
+## Sheet: Coming Soon
+
+Calculate and display path loss whenever the horizon infringing upon any of the 3 Fresnel zones
+Support for multiple links (each link has its own sheet)
+Mesh summary page, showing range, capacity, and duty cycle, and other key statistics for all links in the network
+Support for TX beamforming gains
+Lookup table for NF and Max power, based on frequency and radio type
+Lookup table for TX beamforming based on radio type and antenna type

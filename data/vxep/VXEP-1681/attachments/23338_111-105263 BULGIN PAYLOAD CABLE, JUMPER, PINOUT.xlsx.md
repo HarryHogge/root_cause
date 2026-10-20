@@ -1,0 +1,30 @@
+# 111-105263 BULGIN PAYLOAD CABLE, JUMPER, PINOUT.xlsx
+
+Attachment 23338, xlsx, 54 KB, added 2024-09-20 by Cameron Chapman.
+
+## Sheet: Sheet2
+
+111-105263 BULGIN PAYLOAD CABLE, JUMPER
+Rev	Changes	Released by	Reviewer	Date
+B	Use 26AWG for all wire	E. Sullwold	E. Sullwold	2021-06-10 00:00:00
+A	Original Release	E. Sullwold	E. Sullwold	2021-05-10 00:00:00
+Function	Origin	Primary Connector	Pin #	Wire Color	AWG	Cable Type	Cut Length (in.)	Destination	Secondary Connector	Pin #	Bundle	Notes
+PRIM_PWR GND	NC	NC	NC	NC	NC	NC		AUX J2	K10YBR-P10WCD0-0000	1
+PRIM_PWR_IN	NC	NC	NC	NC	NC	NC		AUX J2	K10YBR-P10WCD0-0000	2
+PRIM_PWR_IN	NC	NC	NC	NC	NC	NC		AUX J2	K10YBR-P10WCD0-0000	3
+AUX_PAYLOAD_RXP	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	11	WHITE	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	4	3
+AUX_PAYLOAD_RXN	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	12	GREEN	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	5	3
+AUX_PAYLOAD_TXP	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	7	YELLOW	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	6	2
+AUX_PAYLOAD_TXN	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	10	ORANGE	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	7	2
+PRIM_PWR GND	NC	NC	NC	NC	NC	NC	NC	AUX J2	K10YBR-P10WCD0-0000	8
+12V PAYLOAD, SWITCHED	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	9	RED	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	9	1
+GND	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	1	BLACK	26 AWG PTFE		17.5	AUX J2	K10YBR-P10WCD0-0000	10	1
+1PPS	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	8					NC	NC	NC
+GCS_RX	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	5	NC	NC	NC		NC	NC	NC
+GCS_TX	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	6	NC	NC	NC		NC	NC	NC
+NC	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	4	NC	NC	NC		NC	NC	NC
+VID_GND	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	3	NC	NC	NC		NC	NC	NC
+VIDEO	PAYLOAD P	Bulgin Buccaneer PX0410/12S/6065 	2	NC	NC	NC		NC	NC	NC
+Populate all positions with terminal pins.
+If finished length exists in cable drawing or this document, cut length is for reference only.									Bulgin Buccaneer PX0410/12S/6065 			K10YBR-P10WCD0-0000
+Twist according to bundle number									Rear view - Termination side			Rear view - Termination side

@@ -1,0 +1,31 @@
+{
+  "project": "VXEP",
+  "exported_at": "2026-10-20T15:50:45+00:00",
+  "tickets": 1791,
+  "attachment_results": {
+    "converted": 540,
+    "listed only": 2776,
+    "failed": 2,
+    "converted (cut)": 4,
+    "no text found": 3
+  },
+  "failures": [
+    {
+      "ticket": "VXEP-99",
+      "filename": "VIT2-448_VXE-482_Investigation[1].pptx",
+      "error": "BadZipFile: File is not a zip file"
+    },
+    {
+      "ticket": "VXEP-706",
+      "filename": "2118266[B].pdf",
+      "error": "PdfReadError: startxref not found"
+    }
+  ],
+  "max_chars_per_attachment": 150000,
+  "max_chars_per_text_attachment": 5000000,
+  "max_rows_per_sheet": 300,
+  "boilerplate_skipped": {
+    "Signature Attestation": 1,
+    "CCN + CR Instructions": 1
+  }
+}

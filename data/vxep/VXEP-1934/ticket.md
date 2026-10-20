@@ -1,0 +1,18 @@
+# VXEP-1934: B30 UAP Power Budget (See Design Plan)
+
+- **Issue type:** Epic
+- **Status:** New
+- **Priority:** Low
+- **Created:** 2026-06-25
+- **Updated:** 2026-06-25
+- **Reporter:** Josh Adams
+- **Assignee:** Connor Peebles
+- **Creator:** Josh Adams
+- **Parent:** VXEP-1786 UAP Block 30 Adv Nav Hardware
+- **Epic Status:** To Do
+- **Epic Color:** ghx-label-11
+- **Issue color:** teal
+
+## Comments (0)
+
+## Attachments (0)

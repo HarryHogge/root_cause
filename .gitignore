@@ -1,0 +1,19 @@
+# Settings and secrets: never committed
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Downloaded attachment originals stay on the local machine (see --cache)
+*.zip
+*.pptx
+*.docx
+*.xlsx
+*.pdf
+*.msg
+
+.DS_Store
+Thumbs.db

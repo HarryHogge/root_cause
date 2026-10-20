@@ -1,0 +1,123 @@
+# VXEP-381: VXE466 Course Deviation and Crash - Internal Investigation
+
+- **Issue type:** Incident (8D)
+- **Status:** D8 - Closed
+- **Resolution:** Done
+- **Priority:** Highest
+- **Created:** 2023-09-06
+- **Updated:** 2024-04-29
+- **Resolved:** 2024-04-29
+- **Reporter:** Connor Peebles
+- **Assignee:** Greg Fryer
+- **Creator:** Connor Peebles
+- **Links:** relates to VA-477 (VXE466 Compile SharePoint list of all potential locations and complete search for missing ADP. ); relates to VA-478 (VXE 466 - Identify C/CAs for missing ADP. Process changes, tagging, handoff logs, etc.  ); relates to VA-486 (VXE466 Test ADP. Production Test, WindTunnel Test, Hot/Cold Test); relates to VA-487 (VXE466 Identify Date 466 ADP was installed on VXE371); relates to ENGPRJA-46 (Air data pod design improvements - heated pitot tube); relates to GCSS-105 (Display warning when aircraft is approaching icing temperatures)
+- **Part Number(s):** VXE
+- **Vehicle Tail Number:** 466
+- **Vehicle Configuration:** VXE
+- **Plan:** - Once path is agreed, we should update the VIT2 ticket, Is there a LM review before closure?
+- **Incident Type:** Aircraft Loss
+- **Monitored flight/event count:** 0.0
+
+## Description
+
+Internal Investigation of [VIT2-227] VXE466 Course Deviation and Crash - Jira (atlassian.net)
+Working Investigation Report (old format) Vehicle 466 incident report .pptx
+
+After 1 hr flight, vehicle hand off was done for recovery. After hand off, vehicle departed mission with motor off. It flew level with power off until it impacted terrain.
+It had started snowing during the flight which lead them to start a landing.
+ 
+From Gordon
+“The XC00037 file shows that something happened around UTC 182300.
+The roll, pitch and power trims are mostly constant leading up to the “event.”  Then the trims take off and full power (over about 1 – 2 minutes) is required to maintain altitude.  Then we hit the ground.
+The “event” is probably a mechanical shift of some sort, like a wing tip that rotates.”
+
+## Corrective Action
+
+- Do not fly outside of approved conditions
+- https://jenaero.atlassian.net/browse/ENGPRJ-200
+- https://jenaero.atlassian.net/browse/GCSS-105
+
+## Issue Status
+
+Investigation complete, Incident Report created ready for Review. Following tests support the snow clogged the pitot tube theory. 
+- Tested normal in production test.
+- Tested normal in WindTunnel test.
+
+## Root Cause
+
+Operation of aircraft outside published environmental limitations. Probable cause snow or freezing rain block the pitot tube
+
+## Comments (14)
+
+### Connor Peebles, 2023-09-11
+
+ADP found on 371CW
+
+### Connor Peebles, 2023-09-11
+
+Assigning to @Mark Squillante with @Madeleine Masiello to work as support. See investigation plan for all the testing I have so far. Please put results and time worked into the relevant linked issues of this Jira. [VA-486] VXE466 Test ADP. Production Test, Hot/Cold Test, WindTunnel Test - Jira (atlassian.net)
+@Cameron Chapman
+
+### Connor Peebles, 2023-09-11
+
+Since [VA-486] VXE466 Test ADP. Production Test, WindTunnel Test, Hot/Cold Test - Jira (atlassian.net) is done, we will add the results of that into the working investigation report Vehicle 466 incident report .pptx
+
+### Connor Peebles, 2023-09-11
+
+Setting this internal investigation to Review and assigning @Cameron Chapman . I have not entered any corrective actions as the incident itself was caused by flying outside stated operating limits.
+
+### Cameron Chapman, 2023-09-11
+
+Good work Connor. A few more corrective action questions for the team. @Greg Fryer @David Grosher 
+- Do we have a record of if any error messages were received by the operators during this event? Should we add any for similar events (when ias doesn't match gps speed?)
+- In that case, should the operator have the choice to select which is likely more correct, or be prompted to execute an immediate landing?
+- Should we list “do not fly outside of approved conditions a corrective action”
+- Should we link future improvement projects like heated pitot to the CA?
+
+### Pat Wells, 2023-09-12
+
+@Connor Peebles   nice work!  Are we clear to share your incident report with the customer?
+
+### Connor Peebles, 2023-09-12
+
+@Pat Wells Feel free to but maybe anticipate them questioning the part about the static probe pulling out. Though it has nothing to do with the incident.
+Also, Cameron updated the ticket with this direction: 
+- Once path is agreed, we should update the VIT2 ticket, Is there a LM review before closure?
+
+### David Grosher, 2023-09-12
+
+@Cameron Chapman A comparison of IAS to ground speed would result in a number of false positives when there was wind. Plus it would require the operator to make a very technically informed decision. Lastly, I would argue that the aircraft should only ever use IAS for control, never ground speed or else we will run the risk of stalling the aircraft.  However, a warning could be generated by the GCS whenever the OAT drops below a threshold that makes icing a risk, such as ~38F.  This would be something similar to what a car does.
+
+### Cameron Chapman, 2023-09-12
+
+Good points. In this case, a warning when power and Gs are both increasing, but ias and altitude are not could help, but would be more complicated and may have issues. Agreed, the potential icing warning and eventually heated pitot would be the main improvements. 
+I will list those.
+
+### Pat Wells, 2023-09-12
+
+@Connor Peebles please do not update the VIT-2 yet as I want to confirm that we are including the loose static probe in the final report to LM.
+
+### Pat Wells, 2023-09-21
+
+@Connor Peebles On your final report could we add a line stating that the ADP completed multiple successful flights on an Edge asset?
+Also two questions on slide 6:
+What does “SB” mean?
+What does “IS” mean?
+
+### Connor Peebles, 2023-09-21
+
+@Pat Wells Yes I will add that.
+“SB” is “should-be”
+“IS” is “is”
+as a way of stating what something should be and the factual state it is as of now.
+
+### Connor Peebles, 2023-09-22
+
+@Pat Wells Added this to the conclusion slide:
+“ADP 0071 was flown on aircraft VXE371 multiple times without incident​“
+
+### Pat Wells, 2023-09-22
+
+I’ve attached a copy of the final report to VIT-227.  Tagged customer (LM).
+
+## Attachments (0)

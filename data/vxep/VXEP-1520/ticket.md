@@ -1,0 +1,16 @@
+# VXEP-1520: OGCS support of RC
+
+- **Issue type:** Task
+- **Status:** New
+- **Priority:** Low
+- **Created:** 2025-09-19
+- **Updated:** 2025-10-14
+- **Reporter:** Cameron Chapman
+- **Creator:** Cameron Chapman
+- **Parent:** VXEP-1549 BLK 40 OPEN REQUESTS (Need to be prioritized)
+- **Epic Link:** VXEP-1549
+- **Issue color:** dark_green
+
+## Comments (0)
+
+## Attachments (0)
