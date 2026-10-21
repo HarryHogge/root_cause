@@ -39,3 +39,4 @@ Scott's decisions for root_cause, with reasons where given. Newest sections at t
 | Images | Start with a trial of 10 tickets from report 02, section 9. Expand only if the trial shows the images change results. |
 | AAR packages | Out of scope for now. AAR data lives in a separate database, and bringing it in is too large a step at present. |
 | Glossary | Scott is looking for a Confluence glossary. The component grouping step waits on it. |
+| HLB | HLB failures have their own investigation. For root_cause, "HLB" is an acceptable finding: do not go further into HLB cells (which cell, cell mechanism) and leave HLB tickets out of the image step. Connectors in the HLB power path (AS150) are not HLB and stay in scope. |

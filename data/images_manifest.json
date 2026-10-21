@@ -1,63 +1,6 @@
 {
   "images": [
     {
-      "ticket": "VXEP-1974",
-      "asked_at": "2026-10-21T12:18:36+00:00",
-      "filename": "image (1).png",
-      "attachment_on": "VXEP-1974",
-      "result": "written",
-      "file": "data/vxep/VXEP-1974/images/63875_image (1).png",
-      "attachment_id": "63875",
-      "same_name_copies": 1,
-      "pixels_before": [
-        706,
-        448
-      ],
-      "pixels_after": [
-        706,
-        448
-      ],
-      "kb": 37
-    },
-    {
-      "ticket": "VXEP-1488",
-      "asked_at": "2026-10-21T12:18:37+00:00",
-      "filename": "vxe-499takeoff.png",
-      "attachment_on": "VXEP-1488",
-      "result": "written",
-      "file": "data/vxep/VXEP-1488/images/31781_vxe-499takeoff.png",
-      "attachment_id": "31781",
-      "same_name_copies": 1,
-      "pixels_before": [
-        931,
-        292
-      ],
-      "pixels_after": [
-        931,
-        292
-      ],
-      "kb": 27
-    },
-    {
-      "ticket": "VXEP-1965",
-      "asked_at": "2026-10-21T12:18:38+00:00",
-      "filename": "image-20260717-025312.png",
-      "attachment_on": "VXEP-1965",
-      "result": "written",
-      "file": "data/vxep/VXEP-1965/images/63541_image-20260717-025312.png",
-      "attachment_id": "63541",
-      "same_name_copies": 1,
-      "pixels_before": [
-        723,
-        352
-      ],
-      "pixels_after": [
-        723,
-        352
-      ],
-      "kb": 31
-    },
-    {
       "ticket": "VXEP-231",
       "asked_at": "2026-10-21T12:18:39+00:00",
       "filename": "image-20231220-231347.png",
@@ -189,6 +132,63 @@
         1568
       ],
       "kb": 318
+    },
+    {
+      "ticket": "VXEP-1066",
+      "asked_at": "2026-10-21T12:21:48+00:00",
+      "filename": "image-20250320-225059.png",
+      "attachment_on": "VXEP-1066",
+      "result": "written",
+      "file": "data/vxep/VXEP-1066/images/27474_image-20250320-225059.png",
+      "attachment_id": "27474",
+      "same_name_copies": 1,
+      "pixels_before": [
+        1805,
+        995
+      ],
+      "pixels_after": [
+        1568,
+        864
+      ],
+      "kb": 244
+    },
+    {
+      "ticket": "VXEP-897",
+      "asked_at": "2026-10-21T12:21:49+00:00",
+      "filename": "image-20250113-230009.png",
+      "attachment_on": "VXEP-897",
+      "result": "written",
+      "file": "data/vxep/VXEP-897/images/25374_image-20250113-230009.png",
+      "attachment_id": "25374",
+      "same_name_copies": 1,
+      "pixels_before": [
+        1118,
+        606
+      ],
+      "pixels_after": [
+        1118,
+        606
+      ],
+      "kb": 91
+    },
+    {
+      "ticket": "VXEP-1462",
+      "asked_at": "2026-10-21T12:21:51+00:00",
+      "filename": "image-20250806-160037.png",
+      "attachment_on": "VXEP-1462",
+      "result": "written",
+      "file": "data/vxep/VXEP-1462/images/31257_image-20250806-160037.png",
+      "attachment_id": "31257",
+      "same_name_copies": 1,
+      "pixels_before": [
+        722,
+        361
+      ],
+      "pixels_after": [
+        722,
+        361
+      ],
+      "kb": 18
     }
   ]
 }
