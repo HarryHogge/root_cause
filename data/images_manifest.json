@@ -1,0 +1,194 @@
+{
+  "images": [
+    {
+      "ticket": "VXEP-1974",
+      "asked_at": "2026-10-21T12:18:36+00:00",
+      "filename": "image (1).png",
+      "attachment_on": "VXEP-1974",
+      "result": "written",
+      "file": "data/vxep/VXEP-1974/images/63875_image (1).png",
+      "attachment_id": "63875",
+      "same_name_copies": 1,
+      "pixels_before": [
+        706,
+        448
+      ],
+      "pixels_after": [
+        706,
+        448
+      ],
+      "kb": 37
+    },
+    {
+      "ticket": "VXEP-1488",
+      "asked_at": "2026-10-21T12:18:37+00:00",
+      "filename": "vxe-499takeoff.png",
+      "attachment_on": "VXEP-1488",
+      "result": "written",
+      "file": "data/vxep/VXEP-1488/images/31781_vxe-499takeoff.png",
+      "attachment_id": "31781",
+      "same_name_copies": 1,
+      "pixels_before": [
+        931,
+        292
+      ],
+      "pixels_after": [
+        931,
+        292
+      ],
+      "kb": 27
+    },
+    {
+      "ticket": "VXEP-1965",
+      "asked_at": "2026-10-21T12:18:38+00:00",
+      "filename": "image-20260717-025312.png",
+      "attachment_on": "VXEP-1965",
+      "result": "written",
+      "file": "data/vxep/VXEP-1965/images/63541_image-20260717-025312.png",
+      "attachment_id": "63541",
+      "same_name_copies": 1,
+      "pixels_before": [
+        723,
+        352
+      ],
+      "pixels_after": [
+        723,
+        352
+      ],
+      "kb": 31
+    },
+    {
+      "ticket": "VXEP-231",
+      "asked_at": "2026-10-21T12:18:39+00:00",
+      "filename": "image-20231220-231347.png",
+      "attachment_on": "VXEP-231",
+      "result": "written",
+      "file": "data/vxep/VXEP-231/images/17998_image-20231220-231347.png",
+      "attachment_id": "17998",
+      "same_name_copies": 1,
+      "pixels_before": [
+        1580,
+        466
+      ],
+      "pixels_after": [
+        1568,
+        462
+      ],
+      "kb": 84
+    },
+    {
+      "ticket": "VXEP-1489",
+      "asked_at": "2026-10-21T12:18:40+00:00",
+      "filename": "image-20250828-155107.png",
+      "attachment_on": "VXEP-1489",
+      "result": "written",
+      "file": "data/vxep/VXEP-1489/images/31853_image-20250828-155107.png",
+      "attachment_id": "31853",
+      "same_name_copies": 1,
+      "pixels_before": [
+        1145,
+        1088
+      ],
+      "pixels_after": [
+        1145,
+        1088
+      ],
+      "kb": 64
+    },
+    {
+      "ticket": "VXEP-426",
+      "asked_at": "2026-10-21T12:18:41+00:00",
+      "filename": "image-20250919-190452 (9c8ca7cf-53e2-4748-af48-6cafbe1da696).png",
+      "attachment_on": "VXEP-426",
+      "result": "written",
+      "file": "data/vxep/VXEP-426/images/33486_image-20250919-190452 (9c8ca7cf-53e2-4748-af48-6cafbe1da696).png",
+      "attachment_id": "33486",
+      "same_name_copies": 1,
+      "pixels_before": [
+        369,
+        333
+      ],
+      "pixels_after": [
+        369,
+        333
+      ],
+      "kb": 29
+    },
+    {
+      "ticket": "VXEP-1977",
+      "asked_at": "2026-10-21T12:18:42+00:00",
+      "filename": "image-20260806-161340.png",
+      "attachment_on": "VXEP-1977",
+      "result": "written",
+      "file": "data/vxep/VXEP-1977/images/63916_image-20260806-161340.png",
+      "attachment_id": "63916",
+      "same_name_copies": 1,
+      "pixels_before": [
+        1048,
+        419
+      ],
+      "pixels_after": [
+        1048,
+        419
+      ],
+      "kb": 82
+    },
+    {
+      "ticket": "VXEP-1458",
+      "asked_at": "2026-10-21T12:18:45+00:00",
+      "filename": "MAIN fire (1).jpeg",
+      "attachment_on": "VXEP-1458",
+      "result": "written",
+      "file": "data/vxep/VXEP-1458/images/31078_MAIN fire (1).jpg",
+      "attachment_id": "31078",
+      "same_name_copies": 1,
+      "pixels_before": [
+        2048,
+        1536
+      ],
+      "pixels_after": [
+        1568,
+        1176
+      ],
+      "kb": 488
+    },
+    {
+      "ticket": "VXEP-538",
+      "asked_at": "2026-10-21T12:18:46+00:00",
+      "filename": "QORASWCAWE-744NAS2024002 Tile 2 - Broken snips - break.jpg",
+      "attachment_on": "VXEP-538",
+      "result": "written",
+      "file": "data/vxep/VXEP-538/images/22414_QORASWCAWE-744NAS2024002 Tile 2 - Broken snips - break.jpg",
+      "attachment_id": "22414",
+      "same_name_copies": 1,
+      "pixels_before": [
+        4080,
+        3072
+      ],
+      "pixels_after": [
+        1568,
+        1181
+      ],
+      "kb": 181
+    },
+    {
+      "ticket": "VXEP-279",
+      "asked_at": "2026-10-21T12:18:58+00:00",
+      "filename": "image-20240217-054529.png",
+      "attachment_on": "VXEP-279",
+      "result": "written",
+      "file": "data/vxep/VXEP-279/images/18813_image-20240217-054529.jpg",
+      "attachment_id": "18813",
+      "same_name_copies": 1,
+      "pixels_before": [
+        2113,
+        2113
+      ],
+      "pixels_after": [
+        1568,
+        1568
+      ],
+      "kb": 318
+    }
+  ]
+}

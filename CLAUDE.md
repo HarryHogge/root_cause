@@ -45,6 +45,7 @@ Plain language for a mechanical engineer, not a software engineer. No em dashes 
 | `data/vxep/<KEY>/ticket.md` | One ticket: fields, every comment, a table of attachments |
 | `data/vxep/<KEY>/attachments/*.md` | Text pulled from one attachment |
 | `data/vxep/index.jsonl` | One line per ticket: key, summary, status, dates, labels, attachment counts |
+| `data/vxep/<KEY>/images/` | Shrunk copies of images chosen for review, on a few tickets only. `data/images_manifest.json` lists each one and the ticket it came from |
 | `data/vxep/manifest.json` | When the export ran, attachment results, every conversion failure |
 | `data/linked/<KEY>/` | Tickets in other projects (VA, FS2, RMA, ENG, XKIT ...) that VXEP incidents point to, written the same way. `data/linked/index.jsonl` gives `referenced_by` for each; `manifest.json` lists any Jira did not return |
 | `docs/decisions.md` | Scott's decisions, with reasons |

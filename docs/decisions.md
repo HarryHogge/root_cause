@@ -30,3 +30,12 @@ Scott's decisions for root_cause, with reasons where given. Newest sections at t
 | Scope of the full run | The 409 Incident (8D) tickets only. |
 | AAR packages | A later step, after the full text run: look at what a few packages hold, then decide whether a text summary of their logs is worth exporting. |
 | Linked tickets in other projects | Export only the specific tickets that VXEP incidents point to (VA, FS2, RMA, ENG, XKIT and others), not whole projects. They go in `data/linked/`. |
+
+## October 21, 2026: after report 02
+
+| Topic | Decision |
+| --- | --- |
+| Sandbox budget | The sandbox account hits session limits. Prompts are kept small, and larger steps start with a trial. |
+| Images | Start with a trial of 10 tickets from report 02, section 9. Expand only if the trial shows the images change results. |
+| AAR packages | Out of scope for now. AAR data lives in a separate database, and bringing it in is too large a step at present. |
+| Glossary | Scott is looking for a Confluence glossary. The component grouping step waits on it. |
