@@ -163,6 +163,8 @@ def main(argv):
                 targets.append((os.path.join(ROOT, 'results', '02', 'batch_%s.jsonl' % b), batches.get(b)))
             else:
                 p = os.path.abspath(a)
+                if not os.path.exists(p) and os.path.exists(os.path.join(ROOT, a)):
+                    p = os.path.join(ROOT, a)
                 m = re.search(r'batch_(\d{3})\.jsonl$', p)
                 targets.append((p, batches.get(m.group(1)) if m else all_keys))
     else:
