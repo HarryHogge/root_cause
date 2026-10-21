@@ -68,6 +68,10 @@ MAX_SHEET_ROWS = 300
 # Lines kept from above a CSV's header row (logger name, serial, firmware...).
 MAX_CSV_PREAMBLE = 200
 
+# "VXE" was once a Jira project key, but in ticket text "VXE-30" is the
+# aircraft and "VXE-622" a tail number, never a ticket.
+NOT_TICKET_PREFIXES = {'VXE'}
+
 # With --linked, tickets in other projects that this issue type points to
 # (by Jira link or by key in the text) are exported to data/linked/.
 INCIDENT_TYPE = 'Incident (8D)'
@@ -209,10 +213,17 @@ class Jira:
         for k in keys:
             if k in got:
                 continue
-            try:                                # Jira follows a moved key to its new one
-                moved[k] = self.get('/rest/api/3/issue/%s' % k, fields='summary')['key']
+            # Jira follows a moved key to its new one. Search also leaves out
+            # tickets in some archived projects that a direct fetch returns.
+            try:
+                issue = self.get('/rest/api/3/issue/%s' % k, fields='*all')
             except requests.HTTPError:
                 missing.append(k)
+                continue
+            if issue['key'] == k:
+                issues.append(issue)
+            else:
+                moved[k] = issue['key']
         return issues, moved, missing
 
     def download(self, url):
@@ -774,9 +785,11 @@ def write_index(out_root, index, manifest):
 
 
 def linked_keys(jira, project, index, texts):
-    """{other-project key: [incident keys that point to it]}, from Jira links
-    and from keys written in the text. Only real project keys count, so tail
-    numbers like VXE-622 and part numbers are not mistaken for tickets."""
+    """{key: [incident keys that point to it]}, from Jira links and from keys
+    written in the text. A prefix counts only if Jira knows it as a project
+    key, current or former (VIT2, SMU...), so tail numbers like VXE-622 and
+    part numbers are not mistaken for tickets. Keys of this project count
+    when they are not in its export: they belong to tickets moved elsewhere."""
     projects, start = set(), 0
     while True:
         page = jira.get('/rest/api/3/project/search', startAt=start, maxResults=100)
@@ -784,13 +797,34 @@ def linked_keys(jira, project, index, texts):
         start += len(page.get('values', []))
         if page.get('isLast', True):
             break
-    projects.discard(project)
-    pattern = re.compile(r'\b(%s)-\d+\b' % '|'.join(sorted(projects, key=len, reverse=True)))
+    incidents = [row['key'] for row in index if row['issuetype'] == INCIDENT_TYPE]
+    candidate = re.compile(r'\b([A-Z][A-Z0-9]{1,9})-[1-9]\d*\b')
+    cited = {}
+    for k in incidents:
+        for m in candidate.finditer(texts[k]):
+            if m.group(1) not in projects and m.group(1) not in NOT_TICKET_PREFIXES:
+                cited.setdefault(m.group(1), set()).add(m.group(0))
+    former = set()
+    for prefix in sorted(cited):
+        # Jira answers to a project's old keys, and follows a ticket's old key
+        # even when its old project key is gone (VIT2-227 is now ENG-2970)
+        for path in ['/rest/api/3/project/%s' % prefix] + [
+                '/rest/api/3/issue/%s' % k for k in sorted(cited[prefix])[:3]]:
+            try:
+                jira.get(path)
+                former.add(prefix)
+                break
+            except requests.HTTPError:
+                pass
+    if former:
+        print('Former project keys found in the text: %s' % ', '.join(sorted(former)), file=sys.stderr)
+    known = (projects | former) - NOT_TICKET_PREFIXES
+    own = {row['key'] for row in index}
     refs = {}
-    for row in index:
-        if row['issuetype'] == INCIDENT_TYPE:
-            for k in sorted(set(m.group(0) for m in pattern.finditer(texts[row['key']]))):
-                refs.setdefault(k, []).append(row['key'])
+    for k in incidents:
+        for m in sorted(set(m.group(0) for m in candidate.finditer(texts[k]) if m.group(1) in known)):
+            if m not in own:
+                refs.setdefault(m, []).append(k)
     return refs
 
 
@@ -856,7 +890,8 @@ def main(argv=None):
     by_key = {}
     for old, new in moved.items():
         by_key.setdefault(new, []).append(old)
-    linked = [i for i in linked if i['key'] not in own]
+    # A moved key and the key it moved to can both be cited: keep one copy
+    linked = list({i['key']: i for i in linked if i['key'] not in own}.values())
     if os.path.isdir(linked_root):              # nothing stale from an earlier run
         import shutil
         shutil.rmtree(linked_root)

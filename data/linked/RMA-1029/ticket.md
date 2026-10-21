@@ -4,7 +4,7 @@
 - **Status:** SCO
 - **Priority:** Highest
 - **Created:** 2026-05-28
-- **Updated:** 2026-10-15
+- **Updated:** 2026-10-20
 - **Due:** 2026-09-18
 - **Reporter:** Lauren Velasquez
 - **Assignee:** Lauren Velasquez
@@ -33,7 +33,7 @@ CW gives erroneous HLB voltages. Verified through controlled substitution.
 107-102264 DUAL CURRENT SENSE HARNESS
 107-103302 CURRENT SENSE HARNESS
 
-## Comments (21)
+## Comments (22)
 
 ### Lauren Velasquez, 2026-06-11
 
@@ -125,6 +125,10 @@ YES@Drew Hildreth Odoo - HSV-NCR-00699
 ### Hank Shelton Hasemeier, 2026-10-06
 
 @Thomas Price @Lauren Velasquez Upon testing, avionics board assembly (107-101161) is faulty. New assembly has been ordered from SLO.
+
+### Thomas Price, 2026-10-20
+
+@Thomas Price  Needs launch aborts from Dave
 
 ## Attachments (2)
 

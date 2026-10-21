@@ -1,14 +1,15 @@
 # RMA-1112: VXE-978 RMA 260928-1
 
 - **Issue type:** Aircraft
-- **Status:** Evaluate
+- **Status:** Queue Quote or Production
 - **Priority:** High
 - **Created:** 2026-09-28
-- **Updated:** 2026-10-15
+- **Updated:** 2026-10-20
 - **Reporter:** Zack Garcia
 - **Assignee:** Zack Garcia
 - **Creator:** Zack Garcia
 - **Links:** relates to VXEP-2007 (VXE 978 lost link after struggling to maintain altitude and crashed); relates to RMA-1113 (EPS6508 RMA 260928-2)
+- **Location:** RMA_Area
 - **Customer:** SOCOM(SUMS)
 - **Part Number(s):** 107-102560
 - **Vehicle Tail Number:** 978
@@ -17,13 +18,13 @@
 - **Site Name:** SLO
 - **Site Location:** SAN LUIS OBISPO
 - **Received Date:** 2026-10-05
-- **Warranty Status:** TBD
+- **Warranty Status:** Out of Warranty
 
 ## Description
 
 incident av
 
-## Comments (6)
+## Comments (7)
 
 ### Lauren Velasquez, 2026-09-29
 
@@ -48,6 +49,10 @@ SHIPPING LABELS PROVIDED
 ### Drew Hildreth, 2026-10-15
 
 @Matthew Aguirre All good.
+
+### Lauren Velasquez, 2026-10-20
+
+Pending Report- Non Warranty- Prepare RFQ
 
 ## Attachments (21)
 

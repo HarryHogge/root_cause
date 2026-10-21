@@ -2,9 +2,9 @@
 
 - **Issue type:** Aircraft
 - **Status:** Evaluate
-- **Priority:** Low
+- **Priority:** Highest
 - **Created:** 2026-09-08
-- **Updated:** 2026-10-15
+- **Updated:** 2026-10-20
 - **Reporter:** Zack Garcia
 - **Assignee:** Zack Garcia
 - **Creator:** Zack Garcia

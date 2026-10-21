@@ -1,10 +1,10 @@
 {
   "project": "tickets in other projects that VXEP Incident (8D) tickets point to",
-  "exported_at": "2026-10-20T17:50:30+00:00",
-  "tickets": 561,
+  "exported_at": "2026-10-21T11:59:12+00:00",
+  "tickets": 574,
   "attachment_results": {
-    "converted": 619,
-    "listed only": 3445,
+    "converted": 631,
+    "listed only": 3503,
     "failed": 1,
     "no text found": 4,
     "converted (cut)": 9
@@ -58,6 +58,30 @@
       ]
     },
     {
+      "key": "ENGINF-195",
+      "now": "VXEP-209",
+      "folder": "vxep/VXEP-209",
+      "referenced_by": [
+        "VXEP-199"
+      ]
+    },
+    {
+      "key": "ENGINF-275",
+      "now": "JA-126",
+      "folder": "linked/JA-126",
+      "referenced_by": [
+        "VXEP-500"
+      ]
+    },
+    {
+      "key": "ENGPRJ-200",
+      "now": "ENGPRJA-46",
+      "folder": "linked/ENGPRJA-46",
+      "referenced_by": [
+        "VXEP-381"
+      ]
+    },
+    {
       "key": "FS2-2102",
       "now": "GCSS-362",
       "folder": "linked/GCSS-362",
@@ -79,6 +103,39 @@
       "folder": "vxep/VXEP-1315",
       "referenced_by": [
         "VXEP-1315"
+      ]
+    },
+    {
+      "key": "SMU-134",
+      "now": "SMUP-70",
+      "folder": "linked/SMUP-70",
+      "referenced_by": [
+        "VXEP-366"
+      ]
+    },
+    {
+      "key": "SMU-135",
+      "now": "SMUP-68",
+      "folder": "linked/SMUP-68",
+      "referenced_by": [
+        "VXEP-604"
+      ]
+    },
+    {
+      "key": "SMU-136",
+      "now": "SMUP-53",
+      "folder": "linked/SMUP-53",
+      "referenced_by": [
+        "VXEP-645"
+      ]
+    },
+    {
+      "key": "SMU-70",
+      "now": "SMUP-54",
+      "folder": "linked/SMUP-54",
+      "referenced_by": [
+        "VXEP-12",
+        "VXEP-415"
       ]
     },
     {
@@ -152,9 +209,220 @@
       "referenced_by": [
         "VXEP-12"
       ]
+    },
+    {
+      "key": "VIT-31",
+      "now": "ENG-3149",
+      "folder": "linked/ENG-3149",
+      "referenced_by": [
+        "VXEP-263"
+      ]
+    },
+    {
+      "key": "VIT2-189",
+      "now": "ENG-3015",
+      "folder": "linked/ENG-3015",
+      "referenced_by": [
+        "VXEP-41"
+      ]
+    },
+    {
+      "key": "VIT2-225",
+      "now": "ENG-3162",
+      "folder": "linked/ENG-3162",
+      "referenced_by": [
+        "VXEP-146"
+      ]
+    },
+    {
+      "key": "VIT2-227",
+      "now": "ENG-2970",
+      "folder": "linked/ENG-2970",
+      "referenced_by": [
+        "VXEP-381"
+      ]
+    },
+    {
+      "key": "VIT2-237",
+      "now": "ENG-3241",
+      "folder": "linked/ENG-3241",
+      "referenced_by": [
+        "VXEP-51"
+      ]
+    },
+    {
+      "key": "VIT2-239",
+      "now": "ENG-2998",
+      "folder": "linked/ENG-2998",
+      "referenced_by": [
+        "VXEP-118"
+      ]
+    },
+    {
+      "key": "VIT2-252",
+      "now": "ENG-2992",
+      "folder": "linked/ENG-2992",
+      "referenced_by": [
+        "VXEP-732"
+      ]
+    },
+    {
+      "key": "VIT2-275",
+      "now": "ENG-3041",
+      "folder": "linked/ENG-3041",
+      "referenced_by": [
+        "VXEP-1047"
+      ]
+    },
+    {
+      "key": "VIT2-281",
+      "now": "ENG-3061",
+      "folder": "linked/ENG-3061",
+      "referenced_by": [
+        "VXEP-628"
+      ]
+    },
+    {
+      "key": "VIT2-284",
+      "now": "ENG-3084",
+      "folder": "linked/ENG-3084",
+      "referenced_by": [
+        "VXEP-628"
+      ]
+    },
+    {
+      "key": "VIT2-320",
+      "now": "ENG-3064",
+      "folder": "linked/ENG-3064",
+      "referenced_by": [
+        "VXEP-31"
+      ]
+    },
+    {
+      "key": "VIT2-321",
+      "now": "ENG-3067",
+      "folder": "linked/ENG-3067",
+      "referenced_by": [
+        "VXEP-21"
+      ]
+    },
+    {
+      "key": "VIT2-322",
+      "now": "ENG-2983",
+      "folder": "linked/ENG-2983",
+      "referenced_by": [
+        "VXEP-12"
+      ]
+    },
+    {
+      "key": "VIT2-323",
+      "now": "ENG-2979",
+      "folder": "linked/ENG-2979",
+      "referenced_by": [
+        "VXEP-17"
+      ]
+    },
+    {
+      "key": "VIT2-327",
+      "now": "ENG-3034",
+      "folder": "linked/ENG-3034",
+      "referenced_by": [
+        "VXEP-51"
+      ]
+    },
+    {
+      "key": "VIT2-448",
+      "now": "ENG-3065",
+      "folder": "linked/ENG-3065",
+      "referenced_by": [
+        "VXEP-99"
+      ]
+    },
+    {
+      "key": "VIT2-451",
+      "now": "ENG-3042",
+      "folder": "linked/ENG-3042",
+      "referenced_by": [
+        "VXEP-101"
+      ]
+    },
+    {
+      "key": "VIT2-501",
+      "now": "ENG-3125",
+      "folder": "linked/ENG-3125",
+      "referenced_by": [
+        "VXEP-786"
+      ]
+    },
+    {
+      "key": "VXEP-269",
+      "now": "FS2-1423",
+      "folder": "linked/FS2-1423",
+      "referenced_by": [
+        "VXEP-265"
+      ]
+    },
+    {
+      "key": "VXEP-270",
+      "now": "VA-1261",
+      "folder": "linked/VA-1261",
+      "referenced_by": [
+        "VXEP-265"
+      ]
+    },
+    {
+      "key": "VXEP-322",
+      "now": "FS2-1697",
+      "folder": "linked/FS2-1697",
+      "referenced_by": [
+        "VXEP-315"
+      ]
+    },
+    {
+      "key": "VXEP-323",
+      "now": "FS2-1696",
+      "folder": "linked/FS2-1696",
+      "referenced_by": [
+        "VXEP-315"
+      ]
+    },
+    {
+      "key": "VXEP-542",
+      "now": "ENG-2944",
+      "folder": "linked/ENG-2944",
+      "referenced_by": [
+        "VXEP-946"
+      ]
+    },
+    {
+      "key": "VXEP-551",
+      "now": "ENG-2946",
+      "folder": "linked/ENG-2946",
+      "referenced_by": [
+        "VXEP-946"
+      ]
     }
   ],
-  "not_returned_by_jira": [],
+  "not_returned_by_jira": [
+    {
+      "key": "VIT-2",
+      "referenced_by": [
+        "VXEP-381"
+      ]
+    },
+    {
+      "key": "VIT-227",
+      "referenced_by": [
+        "VXEP-381"
+      ]
+    },
+    {
+      "key": "VIT-320",
+      "referenced_by": [
+        "VXEP-31"
+      ]
+    }
+  ],
   "max_chars_per_attachment": 150000,
   "max_chars_per_text_attachment": 5000000,
   "max_rows_per_sheet": 300,

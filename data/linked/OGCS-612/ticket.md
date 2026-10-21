@@ -4,11 +4,12 @@
 - **Status:** To Do
 - **Priority:** Low
 - **Created:** 2026-05-28
-- **Updated:** 2026-09-23
+- **Updated:** 2026-10-20
 - **Reporter:** Cameron Chapman
 - **Assignee:** Ted Trowbridge
 - **Creator:** Cameron Chapman
-- **Labels:** B40-Flight-Test-Squawks, OGCS
+- **Labels:** B40-Flight-Test-Squawks, OGCS, Triaged
+- **Fix versions:** 1.5.0
 - **Links:** relates to VXEP-1315 (B30 Systemic MCM Resets due to payload power); relates to OGCS-619 (Make plan for future OGCS payload port interfaces (needed for upcoming switchable B40 ports) ); relates to OGCS-626 (Configurable Power Items); relates to XKIT-5438 (Physically label payload ports and other connectors operators interact with )
 
 ## Description
